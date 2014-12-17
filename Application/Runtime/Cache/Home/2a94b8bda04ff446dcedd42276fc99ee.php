@@ -15,72 +15,66 @@
 <script type="text/javascript" id="bdshare_js" data="type=tools" ></script>
 <script type="text/javascript" id="bdshell_js"></script>
 </head>
-
-<body>	
-	<div id="header">
+<body>
+<div id="header">
 	<!-- 页面顶部 -->
 <div class="top1">
-	<p class="fl" style="background:url(./public/images/hot.png) 107px 10px no-repeat; padding-right:35px;"><span class="blue">专业的IT培训机构！</span></p>
-	<p class="fr"><a href="http://www.itcast.cn/channel/job.shtml" target="_blank">就业宣言</a><a href="http://www.itcast.cn/channel/flow.shtml" target="_blank">报名流程</a><a href="http://open.itcast.cn" target="_blank">免费公开课</a><a href="http://dvd.itcast.cn" target="_blank">免费学习光盘</a><a href="http://www.itcast.cn/channel/book.shtml" target="_blank">原创教材</a><a href="http://bbs.itcast.cn/zine.php" target="_blank">传智特刊</a><a target="_blank" href="http://www.itcast.cn/channel/personnel.shtml">人才服务</a><a href="http://bbs.itcast.cn" target="_blank">技术论坛</a></p>
+	<p style="background:url(./public/images/hot.png) 107px 10px no-repeat; padding-right:35px;" class="fl"><span class="blue">专业的IT培训机构！</span></p>
+	<p class="fr"><a target="_blank" href="http://www.itcast.cn/channel/job.shtml">就业宣言</a><a target="_blank" href="http://www.itcast.cn/channel/flow.shtml">报名流程</a><a target="_blank" href="http://open.itcast.cn">免费公开课</a><a target="_blank" href="http://dvd.itcast.cn">免费学习光盘</a><a target="_blank" href="http://www.itcast.cn/channel/book.shtml">原创教材</a><a target="_blank" href="http://bbs.itcast.cn/zine.php">传智特刊</a><a target="_blank" href="http://bbs.itcast.cn">技术论坛</a></p>
 </div>
 
 	<div class="clear"></div>
 	<div class="top2">
-		<h1 class="fl"><a href="http://www.itcast.cn"><img src="./public/images/logo.jpg" alt="传智播客php培训学院" border="0"  class="png"/></a></h1>
+		<h1 class="fl"><a href="http://www.itcast.cn"><img border="0" class="png" alt="传智播客php培训学院" src="./public/images/logo.jpg"></a></h1>
 		<div class="fl toubu">
 		<div class="toubu-font1">PHP学院</div>
 			 <!-- 校区 -->
-<p><a href="http://www.itcast.cn" target="_blank">北京校区</a></p>
-<p><a target="_blank" href="http://sh.itcast.cn">上海校区</a></p>
-<p><a href="http://gz.itcast.cn" target="_blank">广州校区</a></p><br />
-<p><a target="_blank" href="http://wh.itcast.cn">武汉校区</a></p>
-<p><a href="http://cd.itcast.cn" target="_blank">成都校区</a></p>
-<p><a href="http://zz.itcast.cn" target="_blank">郑州校区</a></p><br />
-<p><a href="http://xa.itcast.cn" target="_blank">西安校区</a></p>
+<p><a target="_blank" href="http://www.itcast.cn">北京校区</a></p>
+<p><a href="http://sh.itcast.cn" target="_blank">上海校区</a></p>
+<p><a target="_blank" href="http://gz.itcast.cn">广州校区</a></p><br>
+<p><a href="http://wh.itcast.cn" target="_blank">武汉校区</a></p>
+<p><a target="_blank" href="http://cd.itcast.cn">成都校区</a></p>
+<p><a target="_blank" href="http://zz.itcast.cn">郑州校区</a></p><br>
+<p><a target="_blank" href="http://xa.itcast.cn">西安校区</a></p>
 <!-- 校区 --> 
 		</div>
-		<p class="fr"><img src="./public/images/topword.gif" alt="改变中国教育，我们正在行动..." class="png"/></p>
+		<p class="fr"><img class="png" alt="改变中国教育，我们正在行动..." src="/public/images/topword.gif"></p>
 	</div>
 	<div class="clear"></div>
 		<ul id="nav">
-	<li><a href="./index.php" id="nav_main">首 页</a></li>
-	<li class="widt"><a href="./index.php/home/index/jiuye" id="nav_course">PHP培训课程</a> </li> 
-	<li class="widt"><a href="http://php.itcast.cn/php/video.shtml" id="nav_videodl">PHP视频下载</a> </li>
-    <li id="nav_personnel"><a href="http://www.itcast.cn/channel/personnel.shtml">人才服务</a></li>
-    <li id="nav_life"><a href="http://www.itcast.cn/channel/campus.shtml">校园生活</a> </li>
-    <li id="nav_teacher"><a href="http://php.itcast.cn/php/teacher.shtml">师资力量</a> </li>
-    <li id="nav_job"><a href="http://php.itcast.cn/php/jyjb.shtml">就业信息</a> </li>
-    <li id="nav_flow"><a href="http://www.itcast.cn/channel/flow.shtml">报名流程</a> </li>
-    <li id="nav_book"><a href="http://www.itcast.cn/channel/book.shtml">原创教材</a> </li>
-	<li id="nav_question"><a href="/php/question.shtml">常见问题</a></li>
-	<li><a href="http://www.itcast.cn/channel/contact.shtml">来校路线</a></li>
-	<li><a href="http://bbs.itcast.cn" target="_blank">技术论坛 </a></li>
+	<li><a id="nav_main" href="index.php">首 页</a></li>
+	<li class="widt"><a id="nav_course" href="index.php/Home/project/index">PHP培训课程</a> </li> 
+	<li class="widt"><a id="nav_videodl" href="index.php/Home/video/index">PHP视频下载</a></li>
+    <li id="nav_teacher"><a href="index.php/Home/teacher/index">师资力量</a> </li>
+    <li id="nav_job"><a href="index.php/Home/message/index">就业信息</a> </li>
+	<li id="nav_question"><a href="index.php/Home/problem/index">常见问题</a></li>
+	<li><a target="_blank" href="index.php/Home/video/index" target="_blank">技术论坛 </a></li>
 </ul>
 	</div>
-		
-	<div id="box">
-		    <div class="mbx">
-			<!-- Baidu share BEGIN -->
-    <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
-        <span class="bds_more">分享到：</span>
-        <a class="bds_sqq">QQ好友</a>
-		<a class="bds_qzone">QQ空间</a>
-		<a class="bds_tqq">腾讯微博</a>
-		<a class="bds_tsina">新浪微博</a>
-		<a class="bds_tieba">百度贴吧</a>
-		<a class="shareCount"></a>
-    </div>
+
+<div id="box">
+		<div class="mbx">
+		<!-- Baidu share BEGIN -->
+<div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+	<span class="bds_more">分享到：</span>
+	<a class="bds_sqq">QQ好友</a>
+	<a class="bds_qzone">QQ空间</a>
+	<a class="bds_tqq">腾讯微博</a>
+	<a class="bds_tsina">新浪微博</a>
+	<a class="bds_tieba">百度贴吧</a>
+	<a class="shareCount"></a>
+</div>
 <!-- Baidu share END 需在页面底部添加baidushare.js -->
-			   <div style="padding-left:60px;float:left; _padding-top:8px;">
-			     	<b>其它学院入口：</b><img src="./public/images/sanjiao.jpg" /> <a href="http://java.itcast.cn" target="_blank">java学院</a> <img src="./public/images/sanjiao.jpg" /> <a href="http://net.itcast.cn" target="_blank">.net学院</a><img src="./public/images/sanjiao.jpg" /> <a href="http://ios.itcast.cn">ios学院</a> <img src="./public/images/sanjiao.jpg" /> <a href="http://c.itcast.cn">c/c++学院</a><img src="./public/images/sanjiao.jpg" /> <a href="http://icd.itcast.cn" target="_blank">网页平面设计学院</a>
-			   	</div>
+		   <div style="padding-left:60px;float:left; _padding-top:8px;">
+				<b>其它学院入口：</b><img src="./public/images/sanjiao.jpg" /> <a href="http://java.itcast.cn" target="_blank">java学院</a> <img src="./public/images/sanjiao.jpg" /> <a href="http://net.itcast.cn" target="_blank">.net学院</a><img src="./public/images/sanjiao.jpg" /> <a href="http://ios.itcast.cn">ios学院</a> <img src="./public/images/sanjiao.jpg" /> <a href="http://c.itcast.cn">c/c++学院</a><img src="./public/images/sanjiao.jpg" /> <a href="http://icd.itcast.cn" target="_blank">网页平面设计学院</a>
 			</div>
-			  <div id="left" class="fl"  style="margin-top:3px;">
-			   
-			<div><img src="./public/images/lefttop.gif"  /></div>
-			<div class="left_content2">
-			  <h4 class="title1"><span style="font-size:14px;float:right;padding-right:20px;">今天我终于来到了心中向往已久的神圣学府--传智播客，开始了改变命运的征途</span><span class="STYLE3">我们开学啦</span></h4>
-				<div class="ganyan1 huodong1" style="clear: both">
+		</div>
+		  <div id="left" class="fl"  style="margin-top:3px;">
+		   
+		<div><img src="./public/images/lefttop.gif"  /></div>
+		<div class="left_content2">
+		  <h4 class="title1"><span style="font-size:14px;float:right;padding-right:20px;">今天我终于来到了心中向往已久的神圣学府--传智播客，开始了改变命运的征途</span><span class="STYLE3">我们开学啦</span></h4>
+			<div class="ganyan1 huodong1" style="clear: both">
 <div class="fl">
 <div class="imagecontainer" id="idTransformView2">
 <ul class="slider slider2" id="idSlider2">
@@ -539,9 +533,7 @@
 </div>
 </div>
 </div>
-<!-- 友情链接 -->
 
-        <!-- 页面底部 -->
 <div id="footer">
   <div class="footer_info">
     <p class="fl mar"><!--<img src="/images/footlogo.jpg" />--></p>
