@@ -5,13 +5,13 @@
 <meta name="keywords" content="php培训,php教程,php视频,php下载,php视频教程" />
 <meta name="description" content="php培训的龙头老大,口碑最好的php培训机构,进来看看同学们的呐喊，就会知道我们是个怎么样的学校,问天下php培训机构谁与争锋?php培训课程内容包含目前最流行的zendframework、thinkphp框架、ECShop、dedecms等产品的二次开发" />
 <title>传智播客PHP学院官网-北京PHP培训_PHP网站开发培训_PHP程序员培训学校</title>
-<link href="./public/css/css.css" type="text/css" rel="stylesheet" />
-<link href="./public/css/nav/nav_main.css" type="text/css" rel="stylesheet" />
-<link href="./public/css/imageswitch.css" type="text/css" rel="stylesheet" />
-<link href="./public/css/webim.css" type="text/css" rel="stylesheet" />
+<link href="/Public/css/css.css" type="text/css" rel="stylesheet" />
+<link href="/Public/css/nav/nav_main.css" type="text/css" rel="stylesheet" />
+<link href="/Public/css/imageswitch.css" type="text/css" rel="stylesheet" />
+<link href="/Public/css/webim.css" type="text/css" rel="stylesheet" />
 <link type="image/x-icon" rel="shortcut icon" href="favicon.ico" /> 
-<script type="text/javascript" src="./public/js/jquery-1.9.1.min.js"></script>
-<script type="text/javascript" src="./public/js/imageschange.js"></script>
+<script type="text/javascript" src="/Public/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="/Public/js/imageschange.js"></script>
 <script type="text/javascript" id="bdshare_js" data="type=tools" ></script>
 <script type="text/javascript" id="bdshell_js"></script>
 </head>
@@ -19,13 +19,13 @@
 <div id="header">
 	<!-- 页面顶部 -->
 <div class="top1">
-	<p style="background:url(./public/images/hot.png) 107px 10px no-repeat; padding-right:35px;" class="fl"><span class="blue">专业的IT培训机构！</span></p>
+	<p style="background:url(/Public/images/hot.png) 107px 10px no-repeat; padding-right:35px;" class="fl"><span class="blue">专业的IT培训机构！</span></p>
 	<p class="fr"><a target="_blank" href="http://www.itcast.cn/channel/job.shtml">就业宣言</a><a target="_blank" href="http://www.itcast.cn/channel/flow.shtml">报名流程</a><a target="_blank" href="http://open.itcast.cn">免费公开课</a><a target="_blank" href="http://dvd.itcast.cn">免费学习光盘</a><a target="_blank" href="http://www.itcast.cn/channel/book.shtml">原创教材</a><a target="_blank" href="http://bbs.itcast.cn/zine.php">传智特刊</a><a target="_blank" href="http://bbs.itcast.cn">技术论坛</a></p>
 </div>
 
 	<div class="clear"></div>
 	<div class="top2">
-		<h1 class="fl"><a href="http://www.itcast.cn"><img border="0" class="png" alt="传智播客php培训学院" src="./public/images/logo.jpg"></a></h1>
+		<h1 class="fl"><a href="http://www.itcast.cn"><img border="0" class="png" alt="传智播客php培训学院" src="/Public/images/logo.jpg"></a></h1>
 		<div class="fl toubu">
 		<div class="toubu-font1">PHP学院</div>
 			 <!-- 校区 -->
@@ -561,12 +561,12 @@
 <!--[if lte IE 6]>
 <link type="text/css" rel="stylesheet" href="/kefu/css/ie.css" mce_href="/kefu/css/ie.css" />
 <![endif]-->
-<SCRIPT type=text/javascript src="./public/js/jquery.js"></SCRIPT>
-<SCRIPT type=text/javascript src="./public/js/kefu.js"></SCRIPT>
+<SCRIPT type=text/javascript src="/Public/js/jquery.js"></SCRIPT>
+<SCRIPT type=text/javascript src="/Public/js/kefu.js"></SCRIPT>
 <SCRIPT type=text/javascript>kfguin="800068868";ws="www.itcast.cn"; companyname=""; welcomeword=""; type="1";</SCRIPT>
-<SCRIPT src="./public/js/kf.js" type=text/javascript></SCRIPT>
-<link href="./public/css/init.css" mce_href="/kefu2/css/init.css" rel="stylesheet" type="text/css" />
-<link href="./public/css/kefu.css" mce_href="/kefu2/css/kefu.css" rel="stylesheet" type="text/css" />
+<SCRIPT src="/Public/js/kf.js" type=text/javascript></SCRIPT>
+<link href="/Public/css/init.css" mce_href="/kefu2/css/init.css" rel="stylesheet" type="text/css" />
+<link href="/Public/css/kefu.css" mce_href="/kefu2/css/kefu.css" rel="stylesheet" type="text/css" />
 <!--[if lte IE 6]>
 <link type="text/css" rel="stylesheet" href="/kefu2/ie.css" mce_href="/kefu2/ie.css" />
 <![endif]-->
@@ -651,6 +651,6 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
 </script>
 <script src="http://s84.cnzz.com/stat.php?id=4617784&web_id=4617784&show=pic" language="JavaScript"></script>
 <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-51288244-1', 'itcast.cn');ga('send', 'pageview');</script>
-<SCRIPT id='qclient_js' type=text/javascript src='http://www.81c.cn:8888/tj.js?4b6c2b6ca9da278fba7bd49127ae3b97'></SCRIPT>
+<!--<SCRIPT id='qclient_js' type=text/javascript src='http://www.81c.cn:8888/tj.js?4b6c2b6ca9da278fba7bd49127ae3b97'></SCRIPT>-->
 </body>
 </html>
