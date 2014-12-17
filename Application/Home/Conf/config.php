@@ -8,6 +8,8 @@ return array(
 	'DB_PORT'   => 3306, // 端口
 	'DB_PREFIX' => 'bbs_', // 数据库表前缀
 	'DB_CHARSET'=> 'utf8', //字符集
+	'LAYOUT_ON'=>true,
+	'LAYOUT_NAME'=>'layout',
     //'URL_HTML_SUFFIX' => 'html|shtml|xml' , //开启伪静态
 	//'URL_MODEL'=>2,
 

@@ -6,6 +6,11 @@
 <meta name="description" content="php培训的龙头老大,口碑最好的php培训机构,进来看看同学们的呐喊，就会知道我们是个怎么样的学校,问天下php培训机构谁与争锋?php培训课程内容包含目前最流行的zendframework、thinkphp框架、ECShop、dedecms等产品的二次开发" />
 <title>传智播客PHP学院官网-北京PHP培训_PHP网站开发培训_PHP程序员培训学校</title>
 <link href="/Public/css/css.css" type="text/css" rel="stylesheet" />
+<link href="/Public/css/news.css" type="text/css" rel="stylesheet" />
+<link href="/Public/css/query.css" type="text/css" rel="stylesheet" />
+<link href="/Public/css/mod.css" type="text/css" rel="stylesheet" />
+<link href="/Public/css/bdsstyle.css" type="text/css" rel="stylesheet" />
+
 <link href="/Public/css/nav/nav_main.css" type="text/css" rel="stylesheet" />
 <link href="/Public/css/imageswitch.css" type="text/css" rel="stylesheet" />
 <link href="/Public/css/webim.css" type="text/css" rel="stylesheet" />
@@ -25,15 +30,7 @@
 
 	<div class="clear"></div>
 	<div class="top2">
-<<<<<<< HEAD
 		<h1 class="fl"><a href="/index.php"><img border="0" class="png" alt="传智播客php培训学院" src="/Public/images/logo.jpg"></a></h1>
-=======
-<<<<<<< HEAD
-		<h1 class="fl"><a href="http://www.itcast.cn"><img border="0" class="png" alt="传智播客php培训学院" src="/Public/images/logo.jpg"></a></h1>
-=======
-		<h1 class="fl"><a href="index.php"><img border="0" class="png" alt="传智播客php培训学院" src="/Public/images/logo.jpg"></a></h1>
->>>>>>> bdb4b0bcd82bdcecdc3f9e29eb17208ebfbcaaac
->>>>>>> c4f5481a6ba53afb75f96aab7a9ca578cc2344c8
 		<div class="fl toubu">
 		<div class="toubu-font1">PHP学院</div>
 			 <!-- 校区 -->
@@ -573,13 +570,8 @@
 <SCRIPT type=text/javascript src="/Public/js/kefu.js"></SCRIPT>
 <SCRIPT type=text/javascript>kfguin="800068868";ws="www.itcast.cn"; companyname=""; welcomeword=""; type="1";</SCRIPT>
 <SCRIPT src="/Public/js/kf.js" type=text/javascript></SCRIPT>
-<<<<<<< HEAD
-<link href="/Public/css/init.css" mce_href="/kefu2/css/init.css" rel="stylesheet" type="text/css" />
-<link href="/Public/css/kefu.css" mce_href="/kefu2/css/kefu.css" rel="stylesheet" type="text/css" />
-=======
 <link href="/Public/css/init.css" mce_href="/Public/css/init.css" rel="stylesheet" type="text/css" />
 <link href="/Public/css/kefu.css" mce_href="/Public/css/kefu.css" rel="stylesheet" type="text/css" />
->>>>>>> bdb4b0bcd82bdcecdc3f9e29eb17208ebfbcaaac
 <!--[if lte IE 6]>
 <link type="text/css" rel="stylesheet" href="/kefu2/ie.css" mce_href="/kefu2/ie.css" />
 <![endif]-->
