@@ -38,7 +38,7 @@
 <p><a target="_blank" href="http://xa.itcast.cn">西安校区</a></p>
 <!-- 校区 --> 
 		</div>
-		<p class="fr"><img class="png" alt="改变中国教育，我们正在行动..." src="/public/images/topword.gif"></p>
+		<p class="fr"><img class="png" alt="改变中国教育，我们正在行动..." src="/Public/images/topword.gif"></p>
 	</div>
 	<div class="clear"></div>
 		<ul id="nav">
