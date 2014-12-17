@@ -8,4 +8,7 @@ class ProjectController extends Controller {
 	public function jichu(){
         $this->display('jichu');
     }
+	public function kecheng(){
+        $this->display('kecheng');
+    }
 }
