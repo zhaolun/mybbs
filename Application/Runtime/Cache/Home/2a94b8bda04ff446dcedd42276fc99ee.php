@@ -42,13 +42,13 @@
 	</div>
 	<div class="clear"></div>
 		<ul id="nav">
-	<li><a id="nav_main" href="index.php">首 页</a></li>
-	<li class="widt"><a id="nav_course" href="index.php/Home/project/index">PHP培训课程</a> </li> 
-	<li class="widt"><a id="nav_videodl" href="index.php/Home/video/index">PHP视频下载</a></li>
-    <li id="nav_teacher"><a href="index.php/Home/teacher/index">师资力量</a> </li>
-    <li id="nav_job"><a href="index.php/Home/message/index">就业信息</a> </li>
-	<li id="nav_question"><a href="index.php/Home/problem/index">常见问题</a></li>
-	<li><a target="_blank" href="index.php/Home/video/index" target="_blank">技术论坛 </a></li>
+	<li><a id="nav_main" href="/index.php">首 页</a></li>
+	<li class="widt"><a id="nav_course" href="/index.php/Home/project/index">PHP培训课程</a> </li> 
+	<li class="widt"><a id="nav_videodl" href="/index.php/Home/video/index">PHP视频下载</a></li>
+    <li id="nav_teacher"><a href="/index.php/Home/teacher/index">师资力量</a> </li>
+    <li id="nav_job"><a href="/index.php/Home/message/index">就业信息</a> </li>
+	<li id="nav_question"><a href="/index.php/Home/problem/index">常见问题</a></li>
+	<li><a target="_blank" href="/index.php/Home/video/index" target="_blank">技术论坛 </a></li>
 </ul>
 	</div>
 

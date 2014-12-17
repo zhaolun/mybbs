@@ -25,7 +25,7 @@
 
 	<div class="clear"></div>
 	<div class="top2">
-		<h1 class="fl"><a href="http://www.itcast.cn"><img border="0" class="png" alt="传智播客php培训学院" src="/Public/images/logo.jpg"></a></h1>
+		<h1 class="fl"><a href="index.php"><img border="0" class="png" alt="传智播客php培训学院" src="/Public/images/logo.jpg"></a></h1>
 		<div class="fl toubu">
 		<div class="toubu-font1">PHP学院</div>
 			 <!-- 校区 -->
@@ -42,12 +42,12 @@
 	</div>
 	<div class="clear"></div>
 		<ul id="nav">
-	<li><a id="nav_main" href="index.php">首 页</a></li>
-	<li class="widt"><a id="nav_course" href="index.php/Home/project/index">PHP培训课程</a> </li> 
-	<li class="widt"><a id="nav_videodl" href="index.php/Home/video/index">PHP视频下载</a></li>
-    <li id="nav_teacher"><a href="index.php/Home/teacher/index">师资力量</a> </li>
-    <li id="nav_job"><a href="index.php/Home/message/index">就业信息</a> </li>
-	<li id="nav_question"><a href="index.php/Home/problem/index">常见问题</a></li>
+	<li><a id="nav_main" href="/index.php">首 页</a></li>
+	<li class="widt"><a id="nav_course" href="/index.php/Home/project/index">PHP培训课程</a> </li> 
+	<li class="widt"><a id="nav_videodl" href="/index.php/Home/video/index">PHP视频下载</a></li>
+    <li id="nav_teacher"><a href="/index.php/Home/teacher/index">师资力量</a> </li>
+    <li id="nav_job"><a href="/index.php/Home/message/index">就业信息</a> </li>
+	<li id="nav_question"><a href="/index.php/Home/problem/index">常见问题</a></li>
 	<li><a target="_blank" href="index.php/Home/video/index" target="_blank">技术论坛 </a></li>
 </ul>
 	</div>
@@ -328,8 +328,8 @@ class="blue">课程</SPAN>咨询</SPAN></H4>
 <SCRIPT type=text/javascript src="/Public/js/kefu.js"></SCRIPT>
 <SCRIPT type=text/javascript>kfguin="800068868";ws="www.itcast.cn"; companyname=""; welcomeword=""; type="1";</SCRIPT>
 <SCRIPT src="/Public/js/kf.js" type=text/javascript></SCRIPT>
-<link href="/Public/css/init.css" mce_href="/kefu2/css/init.css" rel="stylesheet" type="text/css" />
-<link href="/Public/css/kefu.css" mce_href="/kefu2/css/kefu.css" rel="stylesheet" type="text/css" />
+<link href="/Public/css/init.css" mce_href="/Public/css/init.css" rel="stylesheet" type="text/css" />
+<link href="/Public/css/kefu.css" mce_href="/Public/css/kefu.css" rel="stylesheet" type="text/css" />
 <!--[if lte IE 6]>
 <link type="text/css" rel="stylesheet" href="/kefu2/ie.css" mce_href="/kefu2/ie.css" />
 <![endif]-->
@@ -345,13 +345,13 @@ class="blue">课程</SPAN>咨询</SPAN></H4>
 				</li>
 				<li class="fr_c2_li3" style="padding:6px 0 0 12px; height:30px; width:90px; border-bottom:none;">
 					<!-- WPA Button Begin -->
-					<a href="http://cnrdn.com/iP66" target="_blank"><img src="/kefu2/images/wpa_preview_a02.png"/></a>
+					<a href="http://cnrdn.com/iP66" target="_blank"><img src="/Public/images/wpa_preview_a02.png"/></a>
 					<!-- WPA Button End -->
 				</li>
 			</ul>
 		</div>
 		<div class="fr_c3">
-			<a href="http://cnrdn.com/iP66" target="_blank"><img src="/kefu2/images/right_float_web.png" width="122" height="50" /></a>
+			<a href="http://cnrdn.com/iP66" target="_blank"><img src="/Public/images/right_float_web.png" width="122" height="50" /></a>
 		</div>
 		<div class="fr_c4">
 			<ul>
