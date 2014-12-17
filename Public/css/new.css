@@ -1,0 +1,4 @@
+#nav{width:960px; margin:0 auto;}
+#nav li{margin-right:19px;}
+#nav li.new a:link, #nav li.new a:visited{color:#fff; display:block; height:47px; width:90px;}
+#nav li.new a:hover{background: url("/images/nav_7.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0); display: block; height: 42px; width: 90px;}
