@@ -5,7 +5,7 @@ class ProjectController extends Controller {
     public function index(){
         $this->display('index');
     }
-	public function jiuye(){
-        $this->display('jiuye');
+	public function jichu(){
+        $this->display('jichu');
     }
 }

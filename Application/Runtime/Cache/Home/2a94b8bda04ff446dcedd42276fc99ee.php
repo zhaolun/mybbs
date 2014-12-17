@@ -26,10 +26,14 @@
 	<div class="clear"></div>
 	<div class="top2">
 <<<<<<< HEAD
+		<h1 class="fl"><a href="/index.php"><img border="0" class="png" alt="传智播客php培训学院" src="/Public/images/logo.jpg"></a></h1>
+=======
+<<<<<<< HEAD
 		<h1 class="fl"><a href="http://www.itcast.cn"><img border="0" class="png" alt="传智播客php培训学院" src="/Public/images/logo.jpg"></a></h1>
 =======
 		<h1 class="fl"><a href="index.php"><img border="0" class="png" alt="传智播客php培训学院" src="/Public/images/logo.jpg"></a></h1>
 >>>>>>> bdb4b0bcd82bdcecdc3f9e29eb17208ebfbcaaac
+>>>>>>> c4f5481a6ba53afb75f96aab7a9ca578cc2344c8
 		<div class="fl toubu">
 		<div class="toubu-font1">PHP学院</div>
 			 <!-- 校区 -->

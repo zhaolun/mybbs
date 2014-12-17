@@ -25,7 +25,7 @@
 
 	<div class="clear"></div>
 	<div class="top2">
-		<h1 class="fl"><a href="index.php"><img border="0" class="png" alt="传智播客php培训学院" src="/Public/images/logo.jpg"></a></h1>
+		<h1 class="fl"><a href="/index.php"><img border="0" class="png" alt="传智播客php培训学院" src="/Public/images/logo.jpg"></a></h1>
 		<div class="fl toubu">
 		<div class="toubu-font1">PHP学院</div>
 			 <!-- 校区 -->
@@ -48,7 +48,7 @@
     <li id="nav_teacher"><a href="/index.php/Home/teacher/index">师资力量</a> </li>
     <li id="nav_job"><a href="/index.php/Home/message/index">就业信息</a> </li>
 	<li id="nav_question"><a href="/index.php/Home/problem/index">常见问题</a></li>
-	<li><a target="_blank" href="index.php/Home/video/index" target="_blank">技术论坛 </a></li>
+	<li><a target="_blank" href="/index.php/Home/video/index" target="_blank">技术论坛 </a></li>
 </ul>
 	</div>
 

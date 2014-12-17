@@ -74,7 +74,7 @@ class="bds_tieba">百度贴吧</A><A class="shareCount"></A></DIV><!-- Baidu sha
 <UL>
   <LI style="width: 141px;" class="fl"><IMG src="/Public/images/phpjc.jpg"></LI>
   <LI style="width: 470px;" class="fl jyjb-11-font1"><B class="jyjb-11-font2"><A 
-  href="http://php.itcast.cn/php/course/base.shtml" 
+  href="http://www.bbs.com/index.php/Home/project/jichu" 
   target="_blank">PHP基础班</A></B>
   <P>本课程适合没有任何软件编程基础和网页设计经验，想先从基础入手的PHP开发爱好者。课程重点培养掌握HTML、CSS、Javascript等网站开发所必备的基础知识，另外帮助学员快速入门Apache服务器搭建、MySQL数据库和PHP编程基础，为以后深入学习PHP就业课程打下坚实基础。</P>
   </LI></UL>
