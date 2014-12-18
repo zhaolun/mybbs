@@ -5,7 +5,7 @@
 <script src="/Public/admin/js/prototype.lite.js" type="text/javascript"></script>
 <script src="/Public/admin/js/moo.fx.js" type="text/javascript"></script>
 <script src="/Public/admin/js/moo.fx.pack.js" type="text/javascript"></script>
-<script src="/Public/js/jquery.js" type="text/javascript"></script>
+
 <link href="/Public/admin/css/skin.css" rel="stylesheet" type="text/css">
 <link href="/Public/admin/css/main.css" rel="stylesheet" type="text/css">
 <script type="text/javascript">
@@ -224,7 +224,6 @@ H1 a {
 							<li><a href="/admin.php/home/position/lists" >职位列表</a></li>
 							</ul>
 							</div>
-
 							<h1 class="type"><a>常见问题</a></h1>
 							<div class="content">
 							<table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -243,7 +242,7 @@ H1 a {
 			</table>
 		</td>
 		<td width="87%" valign="top">
-			<div style="margin:10px;padding:10px;">
+			<div>
 				<link href="/Public/admin/css/skin.css" rel="stylesheet" type="text/css" />
 <table width="100%" border="0" cellpadding="0" cellspacing="0">
   <tr>
