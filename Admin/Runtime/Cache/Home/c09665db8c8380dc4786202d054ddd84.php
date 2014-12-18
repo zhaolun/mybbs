@@ -5,7 +5,9 @@
 <script src="/Public/admin/js/prototype.lite.js" type="text/javascript"></script>
 <script src="/Public/admin/js/moo.fx.js" type="text/javascript"></script>
 <script src="/Public/admin/js/moo.fx.pack.js" type="text/javascript"></script>
+<script src="/Public/js/jquery.js" type="text/javascript"></script>
 <link href="/Public/admin/css/skin.css" rel="stylesheet" type="text/css">
+<link href="/Public/admin/css/main.css" rel="stylesheet" type="text/css">
 
 <style>
 body {
@@ -145,7 +147,7 @@ H1 a {
 		<td width="39%" valign="top">
 			<table width="100%" border="0" cellspacing="0" cellpadding="0">
 				<tr>
-					<td width="74%" height="38" class="admin_txt">管理员：<b><%=session("admin_name")%></b> 您好,感谢登陆使用！</td>
+					<td width="74%" height="38" class="admin_txt">管理员：<b><?php echo ($_SESSION["username"]); ?></b> 您好,感谢登陆使用！</td>
 					<td width="22%"><a href="#" target="_self" onClick="logout();"><img src="/Public/admin/images/out.gif" alt="安全退出" width="46" height="20" border="0"></a></td>
 					<td width="4%">&nbsp;</td>
 				</tr>
@@ -162,6 +164,12 @@ H1 a {
 			<table width="100%" height="auto" border="0" cellpadding="0" cellspacing="0" bgcolor="#EEF2FB" style="margin-top:0px;">
 				<tr>
 					<td width="182" valign="top">
+					<script type="text/javascript">
+						var contents = document.getElementsByClassName('content');
+						var toggles = document.getElementsByClassName('type');
+						var myAccordion = new fx.Accordion(toggles, contents, {opacity: true, duration:400});
+						myAccordion.showThisHideOpen(contents[0]);
+					</script>
 						<div id="container">
 							<h1 class="type"><a>首页信息</a></h1>
 							<div class="content">
@@ -236,14 +244,9 @@ H1 a {
 				</tr>
 			</table>
 		</td>
-		<script type="text/javascript">
-			var contents = document.getElementsByClassName('content');
-			var toggles = document.getElementsByClassName('type');
-			var myAccordion = new fx.Accordion(toggles, contents, {opacity: true, duration:400});
-			myAccordion.showThisHideOpen(contents[0]);
-		</script>
-		<td width="89%" valign="top">
-			<link href="/Public/admin/css/skin.css" rel="stylesheet" type="text/css" />
+		<td width="87%" valign="top">
+			<div style="margin:10px;padding:10px;">
+				<link href="/Public/admin/css/skin.css" rel="stylesheet" type="text/css" />
 <table width="100%" border="0" cellpadding="0" cellspacing="0">
   <tr>
     <td valign="middle" background="/Public/admin/images/mail_leftbg.gif">&nbsp;</td>
@@ -517,6 +520,7 @@ cellPadding=0 width=100% border=0>
 
 </table>
 </body>
+			</div>
 		</td>
 	</tr>
 </table>

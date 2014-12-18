@@ -5,10 +5,26 @@
 <META http-equiv=Content-Type content="text/html; charset=utf-8">
 <LINK 
 href="/Public/admin/css/login1.css" type="text/css" rel=stylesheet>
+<script type="text/javascript" src="/Public/js/jquery.js"></script>
 <STYLE type="text/css">
+
 </STYLE>
 <META content="MSHTML 6.00.2900.5848" name=GENERATOR>
 </HEAD>
+<script type="text/javascript">
+<!--
+	function sub(){
+		var status=true;
+		$("input").each(function(i){
+			if($(this).val()=="")
+				status=false;
+		})
+		if(status)
+			return true;
+		return false;
+	}
+//-->
+</script>
 <BODY>
 <DIV id=div1>
   <TABLE id=login height="100%" cellSpacing=0 cellPadding=0 width=800 
@@ -16,7 +32,7 @@ align=center>
     <TBODY>
       <TR id=main>
         <TD>
-		<form method="post" action="">	
+		<form method="post" action="/admin.php/Home/index/login" onsubmit="return sub()">	
           <TABLE height="100%" cellSpacing=0 cellPadding=0 width="100%">
             <TBODY>
               <TR>
@@ -40,16 +56,15 @@ align=center>
                 <TD>密　码：</TD>
                 <TD>
                   <INPUT class="textbox" type="password" 
-            name="pwd">
+            name="password">
                 </TD>
                 <TD width=120>&nbsp;</TD>
               </TR>
               <TR height=40>
                 <TD>验证码：</TD>
                 <TD vAlign=center colSpan=2>
-                  <INPUT id=txtSN size=4 name=txtSN>
-                  &nbsp; <IMG src="css/default.gif" border=0> <A id=LinkButton1 
-            href="#">不清楚，再来一张</A></TD>
+                  <INPUT id=txtSN size=5 name="yzm">
+                  &nbsp; <IMG src="/admin.php/Home/index/yzm" id="captcha"> <A style="cursor:pointer" onclick="$('#captcha').attr('src','/admin.php/Home/index/yzm?count=Math.random()');">不清楚，再来一张</A></TD>
               </TR>
               <TR height=40>
                 <TD></TD>
