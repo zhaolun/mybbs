@@ -227,7 +227,7 @@ H1 a {
 							</tr>
 							</table>
 							<ul class="MM">
-							<li><a href="/admin.php/home/problem/list" >问题管理</a></li>
+							<li><a href="/admin.php/home/problem/lists" >问题管理</a></li>
 							<li><a href="/admin.php/home/problem/add" >添加问题</a></li>
 							</ul>
 							</div>

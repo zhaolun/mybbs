@@ -213,9 +213,9 @@ H1 a {
 							</table>
 							<ul class="MM">
 							<li><a href="/admin.php/home/teacher/add" >添加讲师</a></li>
-							<li><a href="/admin.php/home/teacher/list" >讲师列表</a></li>
+							<li><a href="/admin.php/home/teacher/lists" >讲师列表</a></li>
 							<li><a href="/admin.php/home/position/add" >职位添加</a></li>
-							<li><a href="/admin.php/home/position/list" >职位列表</a></li>
+							<li><a href="/admin.php/home/position/lists" >职位列表</a></li>
 							</ul>
 							</div>
 
@@ -227,7 +227,7 @@ H1 a {
 							</tr>
 							</table>
 							<ul class="MM">
-							<li><a href="/admin.php/home/problem/list" >问题管理</a></li>
+							<li><a href="/admin.php/home/problem/lists" >问题管理</a></li>
 							<li><a href="/admin.php/home/problem/add" >添加问题</a></li>
 							</ul>
 							</div>
