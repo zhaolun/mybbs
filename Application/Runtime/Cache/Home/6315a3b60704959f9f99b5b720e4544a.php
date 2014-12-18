@@ -96,6 +96,7 @@
 		<a class="bds_tsina">新浪微博</a>
 		<a class="bds_tieba">百度贴吧</a>
 		<a class="shareCount"></a>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="fanhui" href='/index.php/Home/problem/index'>返回目录</a>
     </div>
 <!-- Baidu share END 需在页面底部添加baidushare.js -->	  
 	  </div>
@@ -307,7 +308,7 @@
 <script type="text/javascript">
   var arr = new Array(); 
 
-       arr[0] = {title:"yi利一组：有实力就是任性",link:"http://bbs.itcast.cn/thread-22528-1-1.html?h201",img:"/Public/images/104914z8lary1qv9vvv8fz.jpg"};
+       arr[0] = {title:"yi利一组：有实力就是任性",link:"/index.php",img:"/Public/images/104914z8lary1qv9vvv8fz.jpg"};
 
   var randIndex = Math.floor(Math.random()*arr.length);
   var obj = arr[randIndex];

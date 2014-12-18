@@ -6,6 +6,11 @@
 <meta name="description" content="php培训的龙头老大,口碑最好的php培训机构,进来看看同学们的呐喊，就会知道我们是个怎么样的学校,问天下php培训机构谁与争锋?php培训课程内容包含目前最流行的zendframework、thinkphp框架、ECShop、dedecms等产品的二次开发" />
 <title>传智播客PHP学院官网-北京PHP培训_PHP网站开发培训_PHP程序员培训学校</title>
 <link href="/Public/css/css.css" type="text/css" rel="stylesheet" />
+<link href="/Public/css/news.css" type="text/css" rel="stylesheet" />
+<link href="/Public/css/query.css" type="text/css" rel="stylesheet" />
+<link href="/Public/css/mod.css" type="text/css" rel="stylesheet" />
+<link href="/Public/css/bdsstyle.css" type="text/css" rel="stylesheet" />
+
 <link href="/Public/css/nav/nav_main.css" type="text/css" rel="stylesheet" />
 <link href="/Public/css/imageswitch.css" type="text/css" rel="stylesheet" />
 <link href="/Public/css/webim.css" type="text/css" rel="stylesheet" />
@@ -421,13 +426,13 @@
 </dl>
 <dl>
 	<dd>
-		<a href="" id="webim_link" target="_blank"><img id="webim_img" src="" style="width: 280px; height: 188px" /></a></dd>
+		<a href="/Public/images/104914z8lary1qv9vvv8fz.jpg" id="webim_link" target="_blank"><img id="webim_img" src="" style="width: 280px; height: 188px" /></a></dd>
 </dl>
 </div>
 <script type="text/javascript">
   var arr = new Array(); 
 
-       arr[0] = {title:"手把手教你如何打动面试官",link:"http://bbs.itcast.cn/thread-22528-1-1.html?h201",img:"http://bbs.itcast.cn/data/attachment/common/cf/104914z8lary1qv9vvv8fz.jpg"};
+       arr[0] = {title:"yi利一组：有实力就是任性",link:"/index.php",img:"/Public/images/104914z8lary1qv9vvv8fz.jpg"};
 
   var randIndex = Math.floor(Math.random()*arr.length);
   var obj = arr[randIndex];

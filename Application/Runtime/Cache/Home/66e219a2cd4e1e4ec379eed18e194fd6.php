@@ -178,13 +178,13 @@
 </dl>
 <dl>
 	<dd>
-		<a href="" id="webim_link" target="_blank"><img id="webim_img" src="" style="width: 280px; height: 188px" /></a></dd>
+		<a href="/Public/images/104914z8lary1qv9vvv8fz.jpg" id="webim_link" target="_blank"><img id="webim_img" src="" style="width: 280px; height: 188px" /></a></dd>
 </dl>
 </div>
 <script type="text/javascript">
   var arr = new Array(); 
 
-       arr[0] = {title:"手把手教你如何打动面试官",link:"http://bbs.itcast.cn/thread-22528-1-1.html?h201",img:"http://bbs.itcast.cn/data/attachment/common/cf/104914z8lary1qv9vvv8fz.jpg"};
+       arr[0] = {title:"yi利一组：有实力就是任性",link:"/index.php",img:"/Public/images/104914z8lary1qv9vvv8fz.jpg"};
 
   var randIndex = Math.floor(Math.random()*arr.length);
   var obj = arr[randIndex];
