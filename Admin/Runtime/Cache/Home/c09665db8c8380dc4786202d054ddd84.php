@@ -176,7 +176,7 @@ H1 a {
         </ul>
       </div>
       
-							<h1 class="type"><a>PHP培训课程</a></h1>
+							<h1 class="type"><a>培训课程</a></h1>
 							<div class="content">
         <table width="100%" border="0" cellspacing="0" cellpadding="0">
           <tr>
@@ -184,19 +184,14 @@ H1 a {
           </tr>
         </table>
         <ul class="MM">
-          <li><a href="http://www.865171.cn">信息分类</a></li>
-          <li><a href="http://www.865171.cn">信息类型</a></li>
-          <li><a href="http://www.865171.cn">资讯分类</a></li>
-          <li><a href="http://www.865171.cn">地区设置</a></li>
-          <li><a href="http://www.865171.cn">市场联盟</a></li>
-          <li><a href="http://www.865171.cn">商家类型</a></li>
-          <li><a href="http://www.865171.cn">商家星级</a></li>
-          <li><a href="http://www.865171.cn">商品分类</a></li>
-          <li><a href="http://www.865171.cn">商品类型</a></li>
+          <li><a href="/admin.php/home/class/add">添加班级</a></li>
+          <li><a href="/admin.php/home/intro/add">添加课程</a></li>
+          <li><a href="/admin.php/home/class/addlist">班级列表</a></li>
+          <li><a href="/admin.php/home/intro/addlist">课程列表</a></li>
         </ul>
       </div>
 
-							<h1 class="type"><a>就业信息管理</a></h1>
+							<h1 class="type"><a>就业信息</a></h1>
 								<div class="content">
         <table width="100%" border="0" cellspacing="0" cellpadding="0">
           <tr>
@@ -204,12 +199,12 @@ H1 a {
           </tr>
         </table>
         <ul class="MM">
-		  <li><a href="http://www.865171.cn" >公司管理</a></li>
-          <li><a href="http://www.865171.cn" >毕业院校</a></li>
-          <li><a href="http://www.865171.cn" >学生信息</a></li>
+		  <li><a href="/admin.php/home/message/company" >公司管理</a></li>
+          <li><a href="/admin.php/home/message/school" >毕业院校</a></li>
+          <li><a href="/admin.php/home/message/student" >学生信息</a></li>
         </ul>
       </div>
-							<h1 class="type"><a>注册用户管理</a></h1>
+							<h1 class="type"><a>师资力量</a></h1>
 							<div class="content">
 							<table width="100%" border="0" cellspacing="0" cellpadding="0">
 							<tr>
@@ -217,12 +212,23 @@ H1 a {
 							</tr>
 							</table>
 							<ul class="MM">
-							<li><a href="http://www.865171.cn" >会员管理</a></li>
-							<li><a href="http://www.865171.cn" >留言管理</a></li>
-							<li><a href="http://www.865171.cn" >回复管理</a></li>
-							<li><a href="http://www.865171.cn" >订单管理</a></li>
-							<li><a href="http://www.865171.cn" >举报管理</a></li>
-							<li><a href="http://www.865171.cn" >评论管理</a></li>
+							<li><a href="/admin.php/home/teacher/add" >添加讲师</a></li>
+							<li><a href="/admin.php/home/teacher/lists" >讲师列表</a></li>
+							<li><a href="/admin.php/home/position/add" >职位添加</a></li>
+							<li><a href="/admin.php/home/position/lists" >职位列表</a></li>
+							</ul>
+							</div>
+
+							<h1 class="type"><a>常见问题</a></h1>
+							<div class="content">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+							<td><img src="/Public/admin/images/menu_topline.gif" width="182" height="5" /></td>
+							</tr>
+							</table>
+							<ul class="MM">
+							<li><a href="/admin.php/home/problem/list" >问题管理</a></li>
+							<li><a href="/admin.php/home/problem/add" >添加问题</a></li>
 							</ul>
 							</div>
 						</div>
@@ -247,6 +253,7 @@ H1 a {
         <td>&nbsp;</td>
         <td valign="top">&nbsp;</td>
       </tr>
+      
       <tr>
         <td colspan="2" valign="top"><span class="left_bt">感谢您使用 商家信息网 网站管理系统程序</span><br>
               <br>

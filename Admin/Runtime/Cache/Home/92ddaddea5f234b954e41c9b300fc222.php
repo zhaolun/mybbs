@@ -1,4 +1,4 @@
-<html>
+<?php if (!defined('THINK_PATH')) exit();?><html>
 <head>
 <title>MyBBS后台管理</title>
 </head>
@@ -184,10 +184,15 @@ H1 a {
           </tr>
         </table>
         <ul class="MM">
-          <li><a href="/admin.php/home/class/add">添加班级</a></li>
-          <li><a href="/admin.php/home/intro/add">添加课程</a></li>
-          <li><a href="/admin.php/home/class/addlist">班级列表</a></li>
-          <li><a href="/admin.php/home/intro/addlist">课程列表</a></li>
+          <li><a href="http://www.865171.cn">信息分类</a></li>
+          <li><a href="http://www.865171.cn">信息类型</a></li>
+          <li><a href="http://www.865171.cn">资讯分类</a></li>
+          <li><a href="http://www.865171.cn">地区设置</a></li>
+          <li><a href="http://www.865171.cn">市场联盟</a></li>
+          <li><a href="http://www.865171.cn">商家类型</a></li>
+          <li><a href="http://www.865171.cn">商家星级</a></li>
+          <li><a href="http://www.865171.cn">商品分类</a></li>
+          <li><a href="http://www.865171.cn">商品类型</a></li>
         </ul>
       </div>
 
@@ -212,10 +217,12 @@ H1 a {
 							</tr>
 							</table>
 							<ul class="MM">
-							<li><a href="/admin.php/home/teacher/add" >添加讲师</a></li>
-							<li><a href="/admin.php/home/teacher/lists" >讲师列表</a></li>
-							<li><a href="/admin.php/home/position/add" >职位添加</a></li>
-							<li><a href="/admin.php/home/position/lists" >职位列表</a></li>
+							<li><a href="http://www.865171.cn" >会员管理</a></li>
+							<li><a href="http://www.865171.cn" >留言管理</a></li>
+							<li><a href="http://www.865171.cn" >回复管理</a></li>
+							<li><a href="http://www.865171.cn" >订单管理</a></li>
+							<li><a href="http://www.865171.cn" >举报管理</a></li>
+							<li><a href="http://www.865171.cn" >评论管理</a></li>
 							</ul>
 							</div>
 
@@ -227,8 +234,12 @@ H1 a {
 							</tr>
 							</table>
 							<ul class="MM">
-							<li><a href="/admin.php/home/problem/list" >问题管理</a></li>
-							<li><a href="/admin.php/home/problem/add" >添加问题</a></li>
+							<li><a href="http://www.865171.cn" >会员管理</a></li>
+							<li><a href="http://www.865171.cn" >留言管理</a></li>
+							<li><a href="http://www.865171.cn" >回复管理</a></li>
+							<li><a href="http://www.865171.cn" >订单管理</a></li>
+							<li><a href="http://www.865171.cn" >举报管理</a></li>
+							<li><a href="http://www.865171.cn" >评论管理</a></li>
 							</ul>
 							</div>
 						</div>
@@ -243,7 +254,7 @@ H1 a {
 			myAccordion.showThisHideOpen(contents[0]);
 		</script>
 		<td width="89%" valign="top">
-			{__CONTENT__}
+			
 		</td>
 	</tr>
 </table>
