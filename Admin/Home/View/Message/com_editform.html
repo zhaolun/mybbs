@@ -1,5 +1,5 @@
 <head>
-<title>添加公司信息</title>
+<title>编辑公司信息</title>
 <meta name="robots" content="noindex, nofollow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="/Public/admin/css/general.css" rel="stylesheet" type="text/css" />
@@ -9,33 +9,36 @@
 </head>
 <body>
 <h1>
-<span class="action-span1">添加公司信息</span><span id="search_id" class="action-span1"></span>
+<span class="action-span1">编辑公司信息</span><span id="search_id" class="action-span1"></span>
 <div style="clear:both"></div>
 </h1>
  
 <!-- 添加新闻类别 -->
 <div class="list-div">
-<form method="post" action="com_add">
+<form method="post" action="/admin.php/home/message/com_edit">
 	<table cellspacing='1' cellpadding='3'>
 		<tr>
+			<td><input type="hidden" name="com_id" value="<?php echo $list['com_id']?>"></td>
+		</tr>
+		<tr>
 			<td align='right'>公司名称：</td>
-			<td><input type="text" name="com_name"></td>
+			<td><input type="text" name="com_name" value="<?php echo $list['com_name']?>"></td>
 		</tr>
 		<tr>
 			<td align='right'>创建时间：</td>
-			<td><input type="text" name="r_time" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd',autoPickDate:true,skin:'default'})"   value="" /></td>
+			<td><input type="text" name="r_time" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd',autoPickDate:true,skin:'default'})"  value="<?php echo $list['r_time']?>" /></td>
 		</tr>
 		<tr>
 			<td align='right'>公司网址：</td>
-			<td><input name="r_url"></td>
+			<td><input name="r_url" value="<?php echo $list['r_url']?>"></td>
 		</tr>
 		<tr>
 			<td align='right'>招收人数：</td>
-			<td><input name="r_num"></td>
+			<td><input name="r_num" value="<?php echo $list['r_num']?>"></td>
 
 		</tr>
 		<tr>
-			<td align="right"><input type="submit" value='添加公司信息'></td>	
+			<td align="right"><input type="submit" value='编辑公司信息'></td>	
 			<td></td>
 		</tr>
 	</table>
