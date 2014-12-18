@@ -1,4 +1,4 @@
-<html>
+<?php if (!defined('THINK_PATH')) exit();?><html>
 <head>
 <title><%= title %> - 管理页面</title>
 <script language=JavaScript>

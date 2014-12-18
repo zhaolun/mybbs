@@ -1,9 +1,8 @@
 <?php
 namespace Home\Controller;
 use Think\Controller;
-class IndexController extends Controller {
+class AdminController extends Controller {
     public function index(){
-		layout(false);
         $this->display('index');
     }
 }
