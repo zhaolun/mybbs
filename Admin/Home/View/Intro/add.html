@@ -1,5 +1,5 @@
 <head>
-<title>添加新闻类别</title>
+<title>添加新闻</title>
 <meta name="robots" content="noindex, nofollow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="../css/general.css" rel="stylesheet" type="text/css" />
@@ -9,25 +9,35 @@
 </head>
 <body>
 <h1>
-<span class="action-span1">添加新闻类别</span><span id="search_id" class="action-span1"></span>
+<span class="action-span1">添加新闻</span><span id="search_id" class="action-span1"></span>
 <div style="clear:both"></div>
 </h1>
  
-<!-- 添加新闻类别 -->
+<!-- 添加新闻 -->
 <div class="list-div">
 <form method="post" action="./sport_list.html">
 	<table cellspacing='1' cellpadding='3'>
 		<tr>
-			<td align='right'>类别名称：</td>
+			<td align='right'>标题：</td>
 			<td><input type="text" name="sportname" size=80></td>
 		</tr>
 		<tr>
-			<td align='right'>类别描述：</td>
+			<td align='right'>内容：</td>
 			<td><textarea name="sportcontent" rows="20" cols="100"></textarea></td>
 		</tr>
-		
 		<tr>
-			<td align='center' colspan=2><input type="submit" value='添加新闻类别'></td>	
+			<td align='right'>类别：</td>
+			<td>
+				<select>
+					<option>--请选择新闻类别--</option>
+					<option>军事新闻</option>
+					<option>体育新闻</option>
+					<option>财经新闻</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td align='center' colspan=2><input type="submit" value='添加新闻'></td>	
 		</tr>
 	</table>
 </form>

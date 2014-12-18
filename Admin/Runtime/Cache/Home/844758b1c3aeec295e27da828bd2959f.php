@@ -6,6 +6,7 @@
 <script src="/Public/admin/js/moo.fx.js" type="text/javascript"></script>
 <script src="/Public/admin/js/moo.fx.pack.js" type="text/javascript"></script>
 <link href="/Public/admin/css/skin.css" rel="stylesheet" type="text/css">
+<link href="/Public/admin/css/main.css" rel="stylesheet" type="text/css">
 
 <style>
 body {
@@ -242,82 +243,59 @@ H1 a {
 			var myAccordion = new fx.Accordion(toggles, contents, {opacity: true, duration:400});
 			myAccordion.showThisHideOpen(contents[0]);
 		</script>
-		<td width="89%" valign="top">
-			<head>
-<title>新闻列表</title>
+		<td width="87%" valign="top">
+			<div style="margin:10px;padding:10px;">
+				<head>
+<title>添加公司信息</title>
 <meta name="robots" content="noindex, nofollow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="/Public/admin/css/general.css" rel="stylesheet" type="text/css" />
 <link href="/Public/admin/css/main.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="../js/transport.js"></script>
-<script type="text/javascript" src="./js/common.js"></script>
+<script type="text/javascript" src="/Public/admin/js/transport.js"></script>
+<script type="text/javascript" src="/Public/admin/js/common.js"></script>
 </head>
 <body>
 <h1>
-<span class="action-span1">新闻列表</span><span id="search_id" class="action-span1"></span>
+<span class="action-span1">添加公司信息</span><span id="search_id" class="action-span1"></span>
 <div style="clear:both"></div>
 </h1>
-<!-- 新闻搜索 -->
-<center>标题：<input type="text" name="" size=40><input type="button" value="ajax搜索" onclick=""></center>
-<!-- 新闻列表 -->
+ 
+<!-- 添加新闻类别 -->
 <div class="list-div">
-<table cellspacing='1' cellpadding='3'>
-  <tr>
-	<th  class="group-title"><input type="checkbox" name="">全选/反选</th>
-    <th  class="group-title">编号</th>
-	<th  class="group-title">标题</th>
-	<th  class="group-title">内容</th>
-	<th  class="group-title">作者</th>
-	<th  class="group-title">时间</th>
-	<th  class="group-title">类别</th>
-  </tr>
-  <tr class="table_tr">
-	<td width="5%"><input type="checkbox" name=""></td>
-    <td width="5%">1</td>
-    <td width="20%">好好学习，天天向上</td>
-    <td width="35%">我们的学子好好学习，努力八千</td>
-    <td width="10%">张三</td>
-	<td width="10%">2013-9-23</td>
-	<td width="10%">军事新闻</td>
-  </tr>
+<form method="post" action="com_add">
+	<table cellspacing='1' cellpadding='3'>
+		<tr>
+			<td align='right'>公司名称：</td>
+			<td><input type="text" name="com_name"></td>
+		</tr>
+		<tr>
+			<td align='right'>创建时间：</td>
+			<td><input type="text" name="r_time" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd',autoPickDate:true,skin:'default'})"   value="" /></td>
+		</tr>
+		<tr>
+			<td align='right'>公司网址：</td>
+			<td><input name="r_url"></td>
+		</tr>
+		<tr>
+			<td align='right'>招收人数：</td>
+			<td><input name="r_num"></td>
 
-  <tr class="table_tr">
-	<td width="5%"><input type="checkbox" name=""></td>
-    <td width="5%">2</td>
-    <td width="20%">大飞机哪去了</td>
-    <td width="35%">我们的学子好好学习，努力八千</td>
-    <td width="10%">张三</td>
-	<td width="10%">2013-9-23</td>
-	<td width="10%">财经新闻</td>
-  </tr>
-
-  <tr class="table_tr">
-    <td width="5%"><input type="checkbox" name=""></td>
-    <td width="5%">3</td>
-    <td width="20%">好好学习，天天向上</td>
-    <td width="35%">我们的学子好好学习，努力八千</td>
-    <td width="10%">张三</td>
-	<td width="10%">2013-9-23</td>
-	<td width="10%">体育新闻</td>
-  </tr>
-  <tr align="center">
-	<td colspan=7>
-		<input type="button" value="全选" onclick="">
-		<input type="button" value="反选" onclick="">
-		<input type="button" value="全不选" onclick="">
-		<input type="button" value="添加" onclick="">
-		<input type="button" value="修改" onclick="">
-		<input type="button" value="ajax删除" onclick="">
-	</td>
-  </tr>
-  
-</table>
+		</tr>
+		<tr>
+			<td align="right"><input type="submit" value='添加公司信息'></td>	
+			<td></td>
+		</tr>
+	</table>
+</form>
 </div>
 <br />
+<script type="text/javascript" src="/Public/js/My97DatePicker/WdatePicker.js"></script>
+
 <div id="footer">
 版权所有 &copy; 八维研修学院软件工程学院1302phpA班，并保留所有权利。</div>
 </body>
 </html>
+			</div>
 		</td>
 	</tr>
 </table>
