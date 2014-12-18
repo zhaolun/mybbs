@@ -3564,6 +3564,7 @@ ERR: 无法加载控制器:Video
 >>>>>>> 63c03cb8090ceaafa2c3ac5b33e5ec6e3bf19f7e
 
 >>>>>>> ba0edab447db0d69a7d516736882548e8eb2adea
+<<<<<<< HEAD
 [ 2014-12-18T11:14:57+08:00 ] 192.168.1.7 /index.php/Home/problem/xq?id=2
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
@@ -3635,6 +3636,9 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
 
 [ 2014-12-18T11:15:15+08:00 ] 192.168.1.7 /index.php
+=======
+[ 2014-12-18T11:46:49+08:00 ] 127.0.0.1 /
+>>>>>>> 09f2f21b8d2b6560e3be2003e6949b793be66b9b
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
@@ -3645,6 +3649,7 @@ INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
 INFO: [ view_filter ] --START--
@@ -3667,6 +3672,10 @@ INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+=======
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+>>>>>>> 09f2f21b8d2b6560e3be2003e6949b793be66b9b
 INFO: [ view_filter ] --START--
 INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
 INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
@@ -3674,7 +3683,11 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
 
+<<<<<<< HEAD
 [ 2014-12-18T11:18:41+08:00 ] 192.168.1.7 /index.php
+=======
+[ 2014-12-18T11:47:34+08:00 ] 127.0.0.1 /
+>>>>>>> 09f2f21b8d2b6560e3be2003e6949b793be66b9b
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
@@ -3685,6 +3698,7 @@ INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016000s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
 INFO: [ view_filter ] --START--
@@ -3731,6 +3745,10 @@ INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023002s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.024002s ]
+=======
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+>>>>>>> 09f2f21b8d2b6560e3be2003e6949b793be66b9b
 INFO: [ view_filter ] --START--
 INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
 INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
@@ -3738,6 +3756,7 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
 
+<<<<<<< HEAD
 [ 2014-12-18T14:30:48+08:00 ] 192.168.1.7 /index.php/Home/problem/index
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
@@ -3763,12 +3782,16 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
 
 [ 2014-12-18T14:30:51+08:00 ] 192.168.1.7 /index.php/Home/problem/xq?id=6
+=======
+[ 2014-12-18T11:48:36+08:00 ] 127.0.0.1 /
+>>>>>>> 09f2f21b8d2b6560e3be2003e6949b793be66b9b
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+<<<<<<< HEAD
 NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\BBS\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
 SQL: SHOW COLUMNS FROM `bbs_question` [ RunTime:0.008000s ]
 SQL: SELECT * FROM `bbs_question` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.003001s ]
@@ -3880,6 +3903,14 @@ INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+=======
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+>>>>>>> 09f2f21b8d2b6560e3be2003e6949b793be66b9b
 INFO: [ view_filter ] --START--
 INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
 INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
@@ -3887,11 +3918,16 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
 
+<<<<<<< HEAD
 [ 2014-12-18T14:33:18+08:00 ] 192.168.1.7 /index.php/Home/problem/xq?id=6
+=======
+[ 2014-12-18T14:21:18+08:00 ] 127.0.0.1 /index.php/home/message/company
+>>>>>>> 09f2f21b8d2b6560e3be2003e6949b793be66b9b
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
 INFO: [ app_begin ] --START--
+<<<<<<< HEAD
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
 NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\BBS\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
@@ -3963,10 +3999,18 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
 
 [ 2014-12-18T14:36:55+08:00 ] 192.168.1.7 /index.php/Home/problem/xq?id=6
+=======
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Message
+
+[ 2014-12-18T14:21:44+08:00 ] 127.0.0.1 /index.php/home/message/company
+>>>>>>> 09f2f21b8d2b6560e3be2003e6949b793be66b9b
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
 INFO: [ app_begin ] --START--
+<<<<<<< HEAD
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
 NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\BBS\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
@@ -4099,4 +4143,9 @@ INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
 INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+=======
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+ERR: 无法加载控制器:Message
+>>>>>>> 09f2f21b8d2b6560e3be2003e6949b793be66b9b
 
