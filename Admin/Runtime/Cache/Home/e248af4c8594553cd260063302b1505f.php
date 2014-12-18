@@ -244,7 +244,7 @@ H1 a {
 			myAccordion.showThisHideOpen(contents[0]);
 		</script>
 		<td width="87%" valign="top">
-			<div style="margin:10px;padding:10px;" id="" class="">
+			<div style="margin:10px;padding:10px;">
 				<head>
 <title>新闻列表</title>
 <meta name="robots" content="noindex, nofollow">
