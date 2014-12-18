@@ -65,18 +65,14 @@
 				<h3 class="title2">热点问题</h3>
 				<ul class="links">
 ﻿<ul>
-
-<li><a href="http://www.itcast.cn/news/b391b18e/f306/44ab/aea2/649d74354f91.shtml" target="_blank">sdfdgfdfg</a>345345</li>
-
+<?php if(is_array($info)): foreach($info as $key=>$it): ?><li><a href="/index.php/Home/problem/xq?id=<?php echo ($it["id"]); ?>" target="_blank"><?php echo ($it["title"]); ?></a><?php echo ($it["time"]); ?></li><?php endforeach; endif; ?>
 </ul>
  
 				</ul>
 				<h3 class="title2">PHP相关问题</h3>
 				<ul class="links">
 <ul>
-
-<li><a href="http://php.itcast.cn/news/20130409/11151678932.shtml" target="_blank">jklfhjk</a><img height="15" src="/Public/images/new.gif" width="29" /></li>
-
+<?php if(is_array($list)): foreach($list as $key=>$it): ?><li><a href="/index.php/Home/problem/xq?id=<?php echo ($it["id"]); ?>"><?php echo ($it["title"]); ?></a><img height="15" src="/Public/images/new.gif" width="29" /></li><?php endforeach; endif; ?>
 </ul>
 
 			</ul>

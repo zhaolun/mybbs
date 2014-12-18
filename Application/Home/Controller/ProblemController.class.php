@@ -11,7 +11,15 @@ class ProblemController extends Controller {
 		$this->assign('info',$data);
 		$this->assign('list',$data1);
         $this->display('index');
-
-
-    }
+ }
+	public function xq(){
+        $id=$_GET["id"];
+        $model = M("question");
+        $data["q"] = $model->where("id=$id")->find();
+        $data["s"] = $model->where("id<$id")->order("id desc")->find();
+        $data["x"] = $model->where("id>$id")->order("id asc")->find();
+        $this->assign("data",$data);
+        $this->display('xq');
+		
+	}
 }
