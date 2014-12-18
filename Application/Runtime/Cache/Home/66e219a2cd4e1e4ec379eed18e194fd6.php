@@ -6,6 +6,11 @@
 <meta name="description" content="php培训的龙头老大,口碑最好的php培训机构,进来看看同学们的呐喊，就会知道我们是个怎么样的学校,问天下php培训机构谁与争锋?php培训课程内容包含目前最流行的zendframework、thinkphp框架、ECShop、dedecms等产品的二次开发" />
 <title>传智播客PHP学院官网-北京PHP培训_PHP网站开发培训_PHP程序员培训学校</title>
 <link href="/Public/css/css.css" type="text/css" rel="stylesheet" />
+<link href="/Public/css/news.css" type="text/css" rel="stylesheet" />
+<link href="/Public/css/query.css" type="text/css" rel="stylesheet" />
+<link href="/Public/css/mod.css" type="text/css" rel="stylesheet" />
+<link href="/Public/css/bdsstyle.css" type="text/css" rel="stylesheet" />
+
 <link href="/Public/css/nav/nav_main.css" type="text/css" rel="stylesheet" />
 <link href="/Public/css/imageswitch.css" type="text/css" rel="stylesheet" />
 <link href="/Public/css/webim.css" type="text/css" rel="stylesheet" />
@@ -25,7 +30,7 @@
 
 	<div class="clear"></div>
 	<div class="top2">
-		<h1 class="fl"><a href="http://www.itcast.cn"><img border="0" class="png" alt="传智播客php培训学院" src="/Public/images/logo.jpg"></a></h1>
+		<h1 class="fl"><a href="/index.php"><img border="0" class="png" alt="传智播客php培训学院" src="/Public/images/logo.jpg"></a></h1>
 		<div class="fl toubu">
 		<div class="toubu-font1">PHP学院</div>
 			 <!-- 校区 -->
@@ -42,17 +47,17 @@
 	</div>
 	<div class="clear"></div>
 		<ul id="nav">
-	<li><a id="nav_main" href="index.php">首 页</a></li>
-	<li class="widt"><a id="nav_course" href="index.php/Home/project/index">PHP培训课程</a> </li> 
-	<li class="widt"><a id="nav_videodl" href="index.php/Home/video/index">PHP视频下载</a></li>
-    <li id="nav_teacher"><a href="index.php/Home/teacher/index">师资力量</a> </li>
-    <li id="nav_job"><a href="index.php/Home/message/index">就业信息</a> </li>
-	<li id="nav_question"><a href="index.php/Home/problem/index">常见问题</a></li>
-	<li><a target="_blank" href="index.php/Home/video/index" target="_blank">技术论坛 </a></li>
+	<li><a id="nav_main" href="/index.php">首 页</a></li>
+	<li class="widt"><a id="nav_course" href="/index.php/Home/project/index">PHP培训课程</a> </li> 
+	<li class="widt"><a id="nav_videodl" href="/index.php/Home/video/index">PHP视频下载</a></li>
+    <li id="nav_teacher"><a href="/index.php/Home/teacher/index">师资力量</a> </li>
+    <li id="nav_job"><a href="/index.php/Home/message/index">就业信息</a> </li>
+	<li id="nav_question"><a href="/index.php/Home/problem/index">常见问题</a></li>
+	<li><a target="_blank" href="/index.php/Home/video/index" target="_blank">技术论坛 </a></li>
 </ul>
 	</div>
 
-	<div id="box">
+<div id="box">
 		<div id="left" class="fl">
 			<div><img src="/Public/images/lefttop.gif"/></div>
 			<div class="left_content">
@@ -60,7 +65,8 @@
 				<h3 class="title2">热点问题</h3>
 				<ul class="links">
 ﻿<ul>
-<li><a href="http://www.itcast.cn/news/b391b18e/f306/44ab/aea2/649d74354f91.shtml" target="_blank">上课是全天授课吗？每天的上课时间安排？</a> 2012.06.05</li>
+
+<li><a href="http://www.itcast.cn/news/b391b18e/f306/44ab/aea2/649d74354f91.shtml" target="_blank">sdfdgfdfg</a>345345</li>
 
 </ul>
  
@@ -68,7 +74,8 @@
 				<h3 class="title2">PHP相关问题</h3>
 				<ul class="links">
 <ul>
-<li><a href="http://php.itcast.cn/news/20130409/11151678932.shtml" target="_blank">PHP的就业前景到底怎么样？</a><img height="15" src="/Public/images/new.gif" width="29" /></li>
+
+<li><a href="http://php.itcast.cn/news/20130409/11151678932.shtml" target="_blank">jklfhjk</a><img height="15" src="/Public/images/new.gif" width="29" /></li>
 
 </ul>
 
@@ -110,8 +117,8 @@
 <SCRIPT type=text/javascript src="/Public/js/kefu.js"></SCRIPT>
 <SCRIPT type=text/javascript>kfguin="800068868";ws="www.itcast.cn"; companyname=""; welcomeword=""; type="1";</SCRIPT>
 <SCRIPT src="/Public/js/kf.js" type=text/javascript></SCRIPT>
-<link href="/Public/css/init.css" mce_href="/kefu2/css/init.css" rel="stylesheet" type="text/css" />
-<link href="/Public/css/kefu.css" mce_href="/kefu2/css/kefu.css" rel="stylesheet" type="text/css" />
+<link href="/Public/css/init.css" mce_href="/Public/css/init.css" rel="stylesheet" type="text/css" />
+<link href="/Public/css/kefu.css" mce_href="/Public/css/kefu.css" rel="stylesheet" type="text/css" />
 <!--[if lte IE 6]>
 <link type="text/css" rel="stylesheet" href="/kefu2/ie.css" mce_href="/kefu2/ie.css" />
 <![endif]-->
@@ -127,13 +134,13 @@
 				</li>
 				<li class="fr_c2_li3" style="padding:6px 0 0 12px; height:30px; width:90px; border-bottom:none;">
 					<!-- WPA Button Begin -->
-					<a href="http://cnrdn.com/iP66" target="_blank"><img src="/kefu2/images/wpa_preview_a02.png"/></a>
+					<a href="http://cnrdn.com/iP66" target="_blank"><img src="/Public/images/wpa_preview_a02.png"/></a>
 					<!-- WPA Button End -->
 				</li>
 			</ul>
 		</div>
 		<div class="fr_c3">
-			<a href="http://cnrdn.com/iP66" target="_blank"><img src="/kefu2/images/right_float_web.png" width="122" height="50" /></a>
+			<a href="http://cnrdn.com/iP66" target="_blank"><img src="/Public/images/right_float_web.png" width="122" height="50" /></a>
 		</div>
 		<div class="fr_c4">
 			<ul>
