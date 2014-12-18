@@ -12,18 +12,11 @@ $Id: main.css 13991 2008-01-17 06:17:23Z maruitao $
   display:none;
 }
 
-body {
-  background: #DDEEF2;
-  padding: 10px;
-}
-
 h1 {
   background: #F4FAFB;
   border: 1px solid #BBDDE5;
   color: #9CACAF;
   font-size: 14px;
-  padding: 7px 10px;
-  margin: 0 0 10px 0;
   overflow:hidden;
 }
 
