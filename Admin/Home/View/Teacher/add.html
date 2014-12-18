@@ -35,7 +35,7 @@
 				<select name="p_id">
 					<option>--请选择职位名称--</option>
 				<foreach name="list" item="vo" >
-					<option>{$vo.position}</option>
+					<option value={$vo.p_id}>{$vo.position}</option>
 			   </foreach>
 				</select>
 			</td>

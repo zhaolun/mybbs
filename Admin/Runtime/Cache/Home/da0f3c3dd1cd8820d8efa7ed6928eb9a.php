@@ -281,7 +281,7 @@ H1 a {
 			<td>
 				<select name="p_id">
 					<option>--请选择职位名称--</option>
-				<?php if(is_array($list)): foreach($list as $key=>$vo): ?><option><?php echo ($vo["position"]); ?></option><?php endforeach; endif; ?>
+				<?php if(is_array($list)): foreach($list as $key=>$vo): ?><option value=<?php echo ($vo["p_id"]); ?>><?php echo ($vo["position"]); ?></option><?php endforeach; endif; ?>
 				</select>
 			</td>
 		</tr>
