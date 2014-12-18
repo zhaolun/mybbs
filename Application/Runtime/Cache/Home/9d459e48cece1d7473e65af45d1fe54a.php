@@ -6,6 +6,11 @@
 <meta name="description" content="php培训的龙头老大,口碑最好的php培训机构,进来看看同学们的呐喊，就会知道我们是个怎么样的学校,问天下php培训机构谁与争锋?php培训课程内容包含目前最流行的zendframework、thinkphp框架、ECShop、dedecms等产品的二次开发" />
 <title>传智播客PHP学院官网-北京PHP培训_PHP网站开发培训_PHP程序员培训学校</title>
 <link href="/Public/css/css.css" type="text/css" rel="stylesheet" />
+<link href="/Public/css/news.css" type="text/css" rel="stylesheet" />
+<link href="/Public/css/query.css" type="text/css" rel="stylesheet" />
+<link href="/Public/css/mod.css" type="text/css" rel="stylesheet" />
+<link href="/Public/css/bdsstyle.css" type="text/css" rel="stylesheet" />
+
 <link href="/Public/css/nav/nav_main.css" type="text/css" rel="stylesheet" />
 <link href="/Public/css/imageswitch.css" type="text/css" rel="stylesheet" />
 <link href="/Public/css/webim.css" type="text/css" rel="stylesheet" />
@@ -83,7 +88,7 @@ class="bds_tieba">百度贴吧</A><A class="shareCount"></A></DIV><!-- Baidu sha
   <TBODY>
   <TR>
     <TD>PHP基础班课程名称</TD>
-    <TD><STRONG><A href="http://php.itcast.cn/php/course/base.shtml" target="_blank">点击查看PHP基础班课程详细介绍</A></STRONG></TD></TR>
+    <TD><STRONG><a href="http://www.bbs.com/index.php/Home/project/kecheng" target="_blank">点击查看PHP基础班课程详细介绍</a></STRONG></TD></TR>
   <TR>
     <TD width="22%"><BR>	第一阶段:(前台网页开发基础)</TD>
     <TD width="78%">
@@ -121,7 +126,7 @@ class="bds_tieba">百度贴吧</A><A class="shareCount"></A></DIV><!-- Baidu sha
   <TBODY>
   <TR>
     <TD>PHP就业班课程名称</TD>
-    <TD><STRONG><A href="http://php.itcast.cn/php/course/php.shtml" target="_blank">点击查看PHP就业班课程详细介绍</A></STRONG></TD></TR>
+    <TD><STRONG><A href="http://www.bbs.com/index.php/Home/project/kecheng" target="_blank">点击查看PHP就业班课程详细介绍</A></STRONG></TD></TR>
   <TR>
     <TD width="22%"><BR>	第一阶段:(PHP+MySQL核心编程)</TD>
     <TD width="78%">
