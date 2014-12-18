@@ -1,5 +1,5 @@
 <head>
-<title>新闻列表</title>
+<title>添加新闻</title>
 <meta name="robots" content="noindex, nofollow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="../css/general.css" rel="stylesheet" type="text/css" />
@@ -9,64 +9,38 @@
 </head>
 <body>
 <h1>
-<span class="action-span1">新闻列表</span><span id="search_id" class="action-span1"></span>
+<span class="action-span1">添加新闻</span><span id="search_id" class="action-span1"></span>
 <div style="clear:both"></div>
 </h1>
-<!-- 新闻搜索 -->
-<center>标题：<input type="text" name="" size=40><input type="button" value="ajax搜索" onclick=""></center>
-<!-- 新闻列表 -->
+ 
+<!-- 添加新闻 -->
 <div class="list-div">
-<table cellspacing='1' cellpadding='3'>
-  <tr>
-	<th  class="group-title"><input type="checkbox" name="">全选/反选</th>
-    <th  class="group-title">编号</th>
-	<th  class="group-title">标题</th>
-	<th  class="group-title">内容</th>
-	<th  class="group-title">作者</th>
-	<th  class="group-title">时间</th>
-	<th  class="group-title">类别</th>
-  </tr>
-  <tr class="table_tr">
-	<td width="5%"><input type="checkbox" name=""></td>
-    <td width="5%">1</td>
-    <td width="20%">好好学习，天天向上</td>
-    <td width="35%">我们的学子好好学习，努力八千</td>
-    <td width="10%">张三</td>
-	<td width="10%">2013-9-23</td>
-	<td width="10%">军事新闻</td>
-  </tr>
-
-  <tr class="table_tr">
-	<td width="5%"><input type="checkbox" name=""></td>
-    <td width="5%">2</td>
-    <td width="20%">大飞机哪去了</td>
-    <td width="35%">我们的学子好好学习，努力八千</td>
-    <td width="10%">张三</td>
-	<td width="10%">2013-9-23</td>
-	<td width="10%">财经新闻</td>
-  </tr>
-
-  <tr class="table_tr">
-    <td width="5%"><input type="checkbox" name=""></td>
-    <td width="5%">3</td>
-    <td width="20%">好好学习，天天向上</td>
-    <td width="35%">我们的学子好好学习，努力八千</td>
-    <td width="10%">张三</td>
-	<td width="10%">2013-9-23</td>
-	<td width="10%">体育新闻</td>
-  </tr>
-  <tr align="center">
-	<td colspan=7>
-		<input type="button" value="全选" onclick="">
-		<input type="button" value="反选" onclick="">
-		<input type="button" value="全不选" onclick="">
-		<input type="button" value="添加" onclick="">
-		<input type="button" value="修改" onclick="">
-		<input type="button" value="ajax删除" onclick="">
-	</td>
-  </tr>
-  
-</table>
+<form method="post" action="./sport_list.html">
+	<table cellspacing='1' cellpadding='3'>
+		<tr>
+			<td align='right'>标题：</td>
+			<td><input type="text" name="sportname" size=80></td>
+		</tr>
+		<tr>
+			<td align='right'>内容：</td>
+			<td><textarea name="sportcontent" rows="20" cols="100"></textarea></td>
+		</tr>
+		<tr>
+			<td align='right'>类别：</td>
+			<td>
+				<select>
+					<option>--请选择新闻类别--</option>
+					<option>军事新闻</option>
+					<option>体育新闻</option>
+					<option>财经新闻</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td align='center' colspan=2><input type="submit" value='添加新闻'></td>	
+		</tr>
+	</table>
+</form>
 </div>
 <br />
 <div id="footer">
