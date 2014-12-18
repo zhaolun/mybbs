@@ -419,16 +419,11 @@
 <li><a href="http://php.itcast.cn/news/20130409/11334990300.shtml" target="_blank">前端的东西能学多少，有哪些？</a></li>
 <li><a href="http://php.itcast.cn/news/20130409/14473489532.shtml" target="_blank">PHP学完就业时都能出哪些类型的网站？</a></li>
 <li><a href="http://php.itcast.cn/news/20130409/14524497859.shtml" target="_blank">官网上为什么公布那么少PHP的招生公司？</a></li>
-<li><a href="http://php.itcast.cn/news/20130409/14543187053.shtml" target="_blank">用PHP做出来的比较有名气的网站或者作品？</a></li>
-<!--<li><a href="http://php.itcast.cn/news/20130409/14565887024.shtml" target="_blank">怎么在短时间内充分掌握老师讲解的知识？</a></li>
-<li><a href="http://php.itcast.cn/news/20130409/14580258105.shtml" target="_blank">基础班学完以后可以做什么?</a></li>
-<li><a href="http://php.itcast.cn/news/20130409/15025732993.shtml" target="_blank">PHP入门简单是不是后期学习难？</a></li>
-<li><a href="http://php.itcast.cn/news/20130723/1156494103.shtml" target="_blank">传智播客PHP培训远程班学费与课程安排？</a></li>
-<li><a href="http://php.itcast.cn/news/20130409/15001772469.shtml" target="_blank">学php需要具备哪些条件？</a></li>--></ul>
+<li><a href="http://php.itcast.cn/news/20130409/14543187053.shtml" target="_blank">用PHP做出来的比较有名气的网站或者作品？</a></li></ul>
 
           </ul> 
 			<div class="clear"></div>
-				 <p class="text-r"><a href="/php/question.shtml"><img src="./public/images/jiantoumore.gif"  border="0" /></a></p>
+				 <p class="text-r"><a href="/index.php/Home/problem/index"><img src="./public/images/jiantoumore.gif"  border="0" /></a></p>
 		  </div>
 			<div class="rightbottom"><img src="./public/images/bottom1.gif"  /></div>
 			
@@ -641,7 +636,11 @@
 <script type="text/javascript">
   var arr = new Array(); 
 
+<<<<<<< HEAD
+       arr[0] = {title:"yi利一组：有实力就是任性",link:"/index.php",img:"/Public/images/104914z8lary1qv9vvv8fz.jpg"};
+=======
        arr[0] = {title:"yi利一组：有实力就是任性",link:"http://bbs.itcast.cn/thread-22528-1-1.html?h201",img:"/Public/images/104914z8lary1qv9vvv8fz.jpg"};
+>>>>>>> 09f2f21b8d2b6560e3be2003e6949b793be66b9b
 
   var randIndex = Math.floor(Math.random()*arr.length);
   var obj = arr[randIndex];
