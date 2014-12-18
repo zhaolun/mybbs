@@ -1,4 +1,4 @@
-<html>
+<?php if (!defined('THINK_PATH')) exit();?><html>
 <head>
 <title>MyBBS后台管理</title>
 </head>
@@ -213,9 +213,9 @@ H1 a {
 							</table>
 							<ul class="MM">
 							<li><a href="/admin.php/home/teacher/add" >添加讲师</a></li>
-							<li><a href="/admin.php/home/teacher/lists" >讲师列表</a></li>
+							<li><a href="/admin.php/home/teacher/list" >讲师列表</a></li>
 							<li><a href="/admin.php/home/position/add" >职位添加</a></li>
-							<li><a href="/admin.php/home/position/lists" >职位列表</a></li>
+							<li><a href="/admin.php/home/position/list" >职位列表</a></li>
 							</ul>
 							</div>
 
@@ -227,7 +227,7 @@ H1 a {
 							</tr>
 							</table>
 							<ul class="MM">
-							<li><a href="/admin.php/home/problem/lists" >问题管理</a></li>
+							<li><a href="/admin.php/home/problem/list" >问题管理</a></li>
 							<li><a href="/admin.php/home/problem/add" >添加问题</a></li>
 							</ul>
 							</div>
@@ -243,7 +243,66 @@ H1 a {
 			myAccordion.showThisHideOpen(contents[0]);
 		</script>
 		<td width="89%" valign="top">
-			{__CONTENT__}
+			<head>
+<title>新闻类别列表</title>
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="/public/css/general.css" rel="stylesheet" type="text/css" />
+<link href="/public/css/main.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<h1>
+<span class="action-span1">新闻类别列表</span><span id="search_id" class="action-span1"></span>
+<div style="clear:both"></div>
+</h1>
+<!-- 新闻类别搜索 -->
+<center>类别名称：<input type="text" name="" size=40><input type="button" value="ajax搜索" onclick=""></center>
+<!-- 新闻类别列表 -->
+<div class="list-div">
+<table cellspacing='1' cellpadding='3'>
+  <tr>
+	<th  class="group-title"><input type="checkbox" name="">全选/反选</th>
+    <th  class="group-title">编号</th>
+	<th  class="group-title">类别名称</th>
+	<th  class="group-title">类别描述</th>
+  </tr>
+  <tr class="table_tr">
+	<td width="5%"><input type="checkbox" name=""></td>
+    <td width="5%">1</td>
+    <td width="20%">体育新闻</td>
+    <td width="35%">ddddddddddd</td>
+  </tr>
+
+  <tr class="table_tr">
+	<td width="5%"><input type="checkbox" name=""></td>
+    <td width="5%">2</td>
+    <td width="20%">军事新闻</td>
+    <td width="35%">ddddddddddd</td>
+  </tr>
+  <tr class="table_tr">
+	<td width="5%"><input type="checkbox" name=""></td>
+    <td width="5%">3</td>
+    <td width="20%">财新新闻</td>
+    <td width="35%">ddddddddddd</td>
+  </tr>
+  <tr align="center">
+	<td colspan=7>
+		<input type="button" value="全选" onclick="">
+		<input type="button" value="反选" onclick="">
+		<input type="button" value="全不选" onclick="">
+		<input type="button" value="添加" onclick="">
+		<input type="button" value="修改" onclick="">
+		<input type="button" value="ajax删除" onclick="">
+	</td>
+  </tr>
+  
+</table>
+</div>
+<br />
+<div id="footer">
+版权所有 &copy; 八维研修学院软件工程学院1308phpA班，并保留所有权利。</div>
+</body>
+</html>
 		</td>
 	</tr>
 </table>

@@ -1,4 +1,4 @@
-<html>
+<?php if (!defined('THINK_PATH')) exit();?><html>
 <head>
 <title>MyBBS后台管理</title>
 </head>
@@ -213,9 +213,9 @@ H1 a {
 							</table>
 							<ul class="MM">
 							<li><a href="/admin.php/home/teacher/add" >添加讲师</a></li>
-							<li><a href="/admin.php/home/teacher/lists" >讲师列表</a></li>
+							<li><a href="/admin.php/home/teacher/list" >讲师列表</a></li>
 							<li><a href="/admin.php/home/position/add" >职位添加</a></li>
-							<li><a href="/admin.php/home/position/lists" >职位列表</a></li>
+							<li><a href="/admin.php/home/position/list" >职位列表</a></li>
 							</ul>
 							</div>
 
@@ -227,7 +227,7 @@ H1 a {
 							</tr>
 							</table>
 							<ul class="MM">
-							<li><a href="/admin.php/home/problem/lists" >问题管理</a></li>
+							<li><a href="/admin.php/home/problem/list" >问题管理</a></li>
 							<li><a href="/admin.php/home/problem/add" >添加问题</a></li>
 							</ul>
 							</div>
@@ -243,7 +243,45 @@ H1 a {
 			myAccordion.showThisHideOpen(contents[0]);
 		</script>
 		<td width="89%" valign="top">
-			{__CONTENT__}
+			<head>
+<title>添加新闻类别</title>
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="../css/general.css" rel="stylesheet" type="text/css" />
+<link href="../css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/transport.js"></script>
+<script type="text/javascript" src="./js/common.js"></script>
+</head>
+<body>
+<h1>
+<span class="action-span1">添加新闻类别</span><span id="search_id" class="action-span1"></span>
+<div style="clear:both"></div>
+</h1>
+ 
+<!-- 添加新闻类别 -->
+<div class="list-div">
+<form method="post" action="./sport_list.html">
+	<table cellspacing='1' cellpadding='3'>
+		<tr>
+			<td align='right'>类别名称：</td>
+			<td><input type="text" name="sportname" size=80></td>
+		</tr>
+		<tr>
+			<td align='right'>类别描述：</td>
+			<td><textarea name="sportcontent" rows="20" cols="100"></textarea></td>
+		</tr>
+		
+		<tr>
+			<td align='center' colspan=2><input type="submit" value='添加新闻类别'></td>	
+		</tr>
+	</table>
+</form>
+</div>
+<br />
+<div id="footer">
+版权所有 &copy; 八维研修学院软件工程学院1302phpA班，并保留所有权利。</div>
+</body>
+</html>
 		</td>
 	</tr>
 </table>
