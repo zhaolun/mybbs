@@ -244,15 +244,6 @@ H1 a {
 				</tr>
 			</table>
 		</td>
-<<<<<<< HEAD
-=======
-		<script type="text/javascript">
-			var contents = document.getElementsByClassName('content');
-			var toggles = document.getElementsByClassName('type');
-			var myAccordion = new fx.Accordion(toggles, contents, {opacity: true, duration:400});
-			myAccordion.showThisHideOpen(contents[0]);
-		</script>
->>>>>>> master
 		<td width="87%" valign="top">
 			<div style="margin:10px;padding:10px;">
 				<link href="/Public/admin/css/skin.css" rel="stylesheet" type="text/css" />
