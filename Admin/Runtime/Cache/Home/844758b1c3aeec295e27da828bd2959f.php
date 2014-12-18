@@ -262,7 +262,7 @@ H1 a {
  
 <!-- 添加新闻类别 -->
 <div class="list-div">
-<form method="post" action="./sport_list.html">
+<form method="post" action="com_add">
 	<table cellspacing='1' cellpadding='3'>
 		<tr>
 			<td align='right'>公司名称：</td>
@@ -270,17 +270,15 @@ H1 a {
 		</tr>
 		<tr>
 			<td align='right'>创建时间：</td>
-			<td><input name="r_time"></td>
+			<td><input type="text" name="r_time" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd',autoPickDate:true,skin:'default'})"   value="" /></td>
 		</tr>
 		<tr>
 			<td align='right'>公司网址：</td>
 			<td><input name="r_url"></td>
 		</tr>
 		<tr>
-			<td align='right'>招收时间：</td>
-			<td><input name="r_num">
-			<input type="text" name="end_time" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd',autoPickDate:true,skin:'default'})"   value="" />
-			</td>
+			<td align='right'>招收人数：</td>
+			<td><input name="r_num"></td>
 
 		</tr>
 		<tr>
