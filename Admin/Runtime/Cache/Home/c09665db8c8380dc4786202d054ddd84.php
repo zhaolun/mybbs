@@ -6,6 +6,7 @@
 <script src="/Public/admin/js/moo.fx.js" type="text/javascript"></script>
 <script src="/Public/admin/js/moo.fx.pack.js" type="text/javascript"></script>
 <link href="/Public/admin/css/skin.css" rel="stylesheet" type="text/css">
+
 <style>
 body {
 	font:12px Arial, Helvetica, sans-serif;
@@ -136,120 +137,123 @@ H1 a {
 }
 </style>
 <body>
-<div id="" class="">
-	<table width="100%" height="64" border="0" cellpadding="0" cellspacing="0" class="admin_topbg">
-  <tr style="background:url('/Public/admin/images/top-right.gif')">
-    <td width="61%" height="64"><img src="/Public/admin/images/logo.gif" width="262" height="64"></td>
-    <td width="39%" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr>
-        <td width="74%" height="38" class="admin_txt">管理员：<b><%=session("admin_name")%></b> 您好,感谢登陆使用！</td>
-        <td width="22%"><a href="#" target="_self" onClick="logout();"><img src="/Public/admin/images/out.gif" alt="安全退出" width="46" height="20" border="0"></a></td>
-        <td width="4%">&nbsp;</td>
-      </tr>
-      <tr>
-        <td height="19" colspan="3">&nbsp;</td>
-        </tr>
-    </table></td>
-  </tr>
+<table width="100%" height="64" border="0" cellpadding="0" cellspacing="0" class="admin_topbg">
+	<tr style="background:url('/Public/admin/images/top-right.gif')">
+		<td width="61%" height="64">
+			<img src="/Public/admin/images/logo.gif" width="262" height="64">
+		</td>
+		<td width="39%" valign="top">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td width="74%" height="38" class="admin_txt">管理员：<b><%=session("admin_name")%></b> 您好,感谢登陆使用！</td>
+					<td width="22%"><a href="#" target="_self" onClick="logout();"><img src="/Public/admin/images/out.gif" alt="安全退出" width="46" height="20" border="0"></a></td>
+					<td width="4%">&nbsp;</td>
+				</tr>
+				<tr>
+					<td height="19" colspan="3">&nbsp;</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
 </table>
-</div>
-<div id="" class="">
-	<div style="float:left;" class="">
-		<table width="100%" height="280" border="0" cellpadding="0" cellspacing="0" bgcolor="#EEF2FB">
-  <tr>
-    <td width="182" valign="top"><div id="container">
-      <h1 class="type"><a>网站常规管理</a></h1>
-      <div class="content">
+<table width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+		<td width="10%" valign="top">
+			<table width="100%" height="auto" border="0" cellpadding="0" cellspacing="0" bgcolor="#EEF2FB" style="margin-top:0px;">
+				<tr>
+					<td width="182" valign="top">
+						<div id="container">
+							<h1 class="type"><a>网站常规管理</a></h1>
+							<div class="content">
         <table width="100%" border="0" cellspacing="0" cellpadding="0">
           <tr>
             <td><img src="/Public/admin/images/menu_topline.gif" width="182" height="5" /></td>
           </tr>
         </table>
         <ul class="MM">
-          <li><a href="http://www.865171.cn" target="main">基本设置</a></li>
-          <li><a href="http://www.865171.cn" target="main">邮件设置</a></li>
-          <li><a href="http://www.865171.cn" target="main">广告设置</a></li>
-          <li><a href="http://www.865171.cn" target="main">114增加</a></li>
-          <li><a href="http://www.865171.cn" target="main">114管理</a></li>
-          <li><a href="http://www.865171.cn" target="main">联系方式</a></li>
-          <li><a href="http://www.865171.cn" target="main">汇款方式</a></li>
-          <li><a href="http://www.865171.cn" target="main">增加链接</a></li>
-          <li><a href="http://www.865171.cn" target="main">管理链接</a></li>
+          <li><a href="http://www.865171.cn">基本设置</a></li>
+          <li><a href="http://www.865171.cn">邮件设置</a></li>
+          <li><a href="http://www.865171.cn">广告设置</a></li>
+          <li><a href="http://www.865171.cn">114增加</a></li>
+          <li><a href="http://www.865171.cn">114管理</a></li>
+          <li><a href="http://www.865171.cn">联系方式</a></li>
+          <li><a href="http://www.865171.cn">汇款方式</a></li>
+          <li><a href="http://www.865171.cn">增加链接</a></li>
+          <li><a href="http://www.865171.cn">管理链接</a></li>
         </ul>
       </div>
-      <h1 class="type"><a>栏目分类管理</a></h1>
-      <div class="content">
+      
+							<h1 class="type"><a>栏目分类管理</a></h1>
+							<div class="content">
         <table width="100%" border="0" cellspacing="0" cellpadding="0">
           <tr>
             <td><img src="/Public/admin/images/menu_topline.gif" width="182" height="5" /></td>
           </tr>
         </table>
         <ul class="MM">
-          <li><a href="http://www.865171.cn" target="main">信息分类</a></li>
-          <li><a href="http://www.865171.cn" target="main">信息类型</a></li>
-          <li><a href="http://www.865171.cn" target="main">资讯分类</a></li>
-          <li><a href="http://www.865171.cn" target="main">地区设置</a></li>
-          <li><a target="main" href="http://www.865171.cn">市场联盟</a></li>
-          <li><a href="http://www.865171.cn" target="main">商家类型</a></li>
-          <li><a href="http://www.865171.cn" target="main">商家星级</a></li>
-          <li><a href="http://www.865171.cn" target="main">商品分类</a></li>
-          <li><a href="http://www.865171.cn" target="main">商品类型</a></li>
+          <li><a href="http://www.865171.cn">信息分类</a></li>
+          <li><a href="http://www.865171.cn">信息类型</a></li>
+          <li><a href="http://www.865171.cn">资讯分类</a></li>
+          <li><a href="http://www.865171.cn">地区设置</a></li>
+          <li><a href="http://www.865171.cn">市场联盟</a></li>
+          <li><a href="http://www.865171.cn">商家类型</a></li>
+          <li><a href="http://www.865171.cn">商家星级</a></li>
+          <li><a href="http://www.865171.cn">商品分类</a></li>
+          <li><a href="http://www.865171.cn">商品类型</a></li>
         </ul>
       </div>
-      <h1 class="type"><a>栏目内容管理</a></h1>
-      <div class="content">
+
+							<h1 class="type"><a>栏目内容管理</a></h1>
+								<div class="content">
         <table width="100%" border="0" cellspacing="0" cellpadding="0">
           <tr>
             <td><img src="/Public/admin/images/menu_topline.gif" width="182" height="5" /></td>
           </tr>
         </table>
         <ul class="MM">
-		  <li><a href="http://www.865171.cn" target="main">信息管理</a></li>
-          <li><a href="http://www.865171.cn" target="main">张贴管理</a></li>
-          <li><a href="http://www.865171.cn" target="main">增加商家</a></li>
-          <li><a href="http://www.865171.cn" target="main">管理商家</a></li>
-          <li><a href="http://www.865171.cn" target="main">发布资讯</a></li>
-          <li><a href="http://www.865171.cn" target="main">资讯管理</a></li>
-          <li><a href="http://www.865171.cn" target="main">市场联盟</a></li>
-          <li><a href="http://www.865171.cn" target="main">名片管理</a></li>
-          <li><a href="http://www.865171.cn" target="main">商城管理</a></li>
-          <li><a href="http://www.865171.cn" target="main">商品管理</a></li>
-          <li><a href="http://www.865171.cn" target="main">商城留言</a></li>
-          <li><a href="http://www.865171.cn" target="main">商城公告</a></li>
+		  <li><a href="http://www.865171.cn" >信息管理</a></li>
+          <li><a href="http://www.865171.cn" >张贴管理</a></li>
+          <li><a href="http://www.865171.cn" >增加商家</a></li>
+          <li><a href="http://www.865171.cn" >管理商家</a></li>
+          <li><a href="http://www.865171.cn" >发布资讯</a></li>
+          <li><a href="http://www.865171.cn" >资讯管理</a></li>
+          <li><a href="http://www.865171.cn" >市场联盟</a></li>
+          <li><a href="http://www.865171.cn" >名片管理</a></li>
+          <li><a href="http://www.865171.cn" >商城管理</a></li>
+          <li><a href="http://www.865171.cn" >商品管理</a></li>
+          <li><a href="http://www.865171.cn" >商城留言</a></li>
+          <li><a href="http://www.865171.cn" >商城公告</a></li>
         </ul>
       </div>
-      <h1 class="type"><a>注册用户管理</a></h1>
-      <div class="content">
-        <table width="100%" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td><img src="/Public/admin/images/menu_topline.gif" width="182" height="5" /></td>
-          </tr>
-        </table>
-        <ul class="MM">
-          <li><a href="http://www.865171.cn" target="main">会员管理</a></li>
-          <li><a href="http://www.865171.cn" target="main">留言管理</a></li>
-          <li><a href="http://www.865171.cn" target="main">回复管理</a></li>
-          <li><a href="http://www.865171.cn" target="main">订单管理</a></li>
-          <li><a href="http://www.865171.cn" target="main">举报管理</a></li>
-          <li><a href="http://www.865171.cn" target="main">评论管理</a></li>
-        </ul>
-      </div>
-    </div>
-        <script type="text/javascript">
-		var contents = document.getElementsByClassName('content');
-		var toggles = document.getElementsByClassName('type');
-	
-		var myAccordion = new fx.Accordion(
-			toggles, contents, {opacity: true, duration: 400}
-		);
-		myAccordion.showThisHideOpen(contents[0]);
-	</script>
-        </td>
-  </tr>
-</table>
-	</div>
-	<div id="" class="" style="margin-left:10px;float:left;">
-		<link href="/Public/admin/css/skin.css" rel="stylesheet" type="text/css" />
+							<h1 class="type"><a>注册用户管理</a></h1>
+							<div class="content">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+							<td><img src="/Public/admin/images/menu_topline.gif" width="182" height="5" /></td>
+							</tr>
+							</table>
+							<ul class="MM">
+							<li><a href="http://www.865171.cn" >会员管理</a></li>
+							<li><a href="http://www.865171.cn" >留言管理</a></li>
+							<li><a href="http://www.865171.cn" >回复管理</a></li>
+							<li><a href="http://www.865171.cn" >订单管理</a></li>
+							<li><a href="http://www.865171.cn" >举报管理</a></li>
+							<li><a href="http://www.865171.cn" >评论管理</a></li>
+							</ul>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<script type="text/javascript">
+			var contents = document.getElementsByClassName('content');
+			var toggles = document.getElementsByClassName('type');
+			var myAccordion = new fx.Accordion(toggles, contents, {opacity: true, duration:400});
+			myAccordion.showThisHideOpen(contents[0]);
+		</script>
+		<td width="89%" valign="top">
+			<link href="/Public/admin/css/skin.css" rel="stylesheet" type="text/css" />
 <table width="100%" border="0" cellpadding="0" cellspacing="0">
   <tr>
     <td valign="middle" background="/Public/admin/images/mail_leftbg.gif">&nbsp;</td>
@@ -522,7 +526,8 @@ cellPadding=0 width=100% border=0>
 
 </table>
 </body>
-	</div>
-</div>
+		</td>
+	</tr>
+</table>
 </body>
 </html>
