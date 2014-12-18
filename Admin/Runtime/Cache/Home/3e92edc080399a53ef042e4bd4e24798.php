@@ -6,6 +6,7 @@
 <script src="/Public/admin/js/moo.fx.js" type="text/javascript"></script>
 <script src="/Public/admin/js/moo.fx.pack.js" type="text/javascript"></script>
 <link href="/Public/admin/css/skin.css" rel="stylesheet" type="text/css">
+<link href="/Public/admin/css/main.css" rel="stylesheet" type="text/css">
 
 <style>
 body {
@@ -227,7 +228,7 @@ H1 a {
 							</tr>
 							</table>
 							<ul class="MM">
-							<li><a href="/admin.php/home/problem/list" >问题管理</a></li>
+							<li><a href="/admin.php/home/problem/lists" >问题管理</a></li>
 							<li><a href="/admin.php/home/problem/add" >添加问题</a></li>
 							</ul>
 							</div>
@@ -242,8 +243,9 @@ H1 a {
 			var myAccordion = new fx.Accordion(toggles, contents, {opacity: true, duration:400});
 			myAccordion.showThisHideOpen(contents[0]);
 		</script>
-		<td width="89%" valign="top">
-			<head>
+		<td width="87%" valign="top">
+			<div style="margin:10px;padding:10px;">
+				<head>
 <title>添加新闻类别</title>
 <meta name="robots" content="noindex, nofollow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -260,7 +262,7 @@ H1 a {
  
 <!-- 添加新闻类别 -->
 <div class="list-div">
-<form method="post" action="./sport_list.html">
+<form method="post" action="/admin.php/home/position/addpro">
 	<table cellspacing='1' cellpadding='3'>
 		<tr>
 			<td align='right'>职位名称：</td>
@@ -282,6 +284,7 @@ H1 a {
 版权所有 &copy; 八维研修学院软件工程学院1302phpA班，并保留所有权利。</div>
 </body>
 </html>
+			</div>
 		</td>
 	</tr>
 </table>

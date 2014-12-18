@@ -20,11 +20,16 @@
 	<th  class="group-title">职位名称</th>
 	<th  class="group-title">职位描述</th>
   </tr>
+
+<foreach name="list" item="vo" >
+
   <tr class="table_tr">
-    <td width="5%">1</td>
-    <td width="20%">体育新闻</td>
-    <td width="35%">ddddddddddd</td>
+    <td width="5%">{$vo.p_id}</td>
+    <td width="20%">{$vo.position}</td>
+    <td width="35%">{$vo.p_desc}</td>
   </tr>
+ </foreach>
+
 </table>
 </div>
 <br />

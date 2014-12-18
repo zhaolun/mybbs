@@ -262,7 +262,7 @@ H1 a {
  
 <!-- 添加新闻 -->
 <div class="list-div">
-<form method="post" action="./sport_list.html">
+<form method="post" action="/admin.php/home/teacher/addpro" enctype="multipart/form-data" >
 	<table cellspacing='1' cellpadding='3'>
 		<tr>
 			<td align='right'>讲师照片：</td>
@@ -279,11 +279,9 @@ H1 a {
 		<tr>
 			<td align='right'>职位名称：</td>
 			<td>
-				<select>
+				<select name="p_id">
 					<option>--请选择职位名称--</option>
-					<option>国内著名的软件培训高级讲师</option>
-					<option>高级讲师、企业培训讲师</option>
-					<option>高级讲师、高级软件架构师</option>
+				<?php if(is_array($list)): foreach($list as $key=>$vo): ?><option><?php echo ($vo["position"]); ?></option><?php endforeach; endif; ?>
 				</select>
 			</td>
 		</tr>
