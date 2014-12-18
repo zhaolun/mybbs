@@ -246,11 +246,16 @@ H1 a {
 		<td width="87%" valign="top">
 			<div style="margin:10px;padding:10px;">
 				<head>
+<<<<<<< HEAD:Admin/Runtime/Cache/Home/3e92edc080399a53ef042e4bd4e24798.php
 <title>添加新闻类别</title>
+=======
+<title>新闻类别列表</title>
+>>>>>>> 243b9bad086473f67c02e4dc72fd550b39bf666b:Admin/Runtime/Cache/Home/92ddaddea5f234b954e41c9b300fc222.php
 <meta name="robots" content="noindex, nofollow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="/Public/admin/css/general.css" rel="stylesheet" type="text/css" />
 <link href="/Public/admin/css/main.css" rel="stylesheet" type="text/css" />
+<<<<<<< HEAD:Admin/Runtime/Cache/Home/3e92edc080399a53ef042e4bd4e24798.php
 <script type="text/javascript" src="../js/transport.js"></script>
 <script type="text/javascript" src="./js/common.js"></script>
 </head>
@@ -282,6 +287,52 @@ H1 a {
 <br />
 <div id="footer">
 版权所有 &copy; 八维研修学院软件工程学院1302phpA班，并保留所有权利。</div>
+=======
+<script type="text/javascript" src="/Public/admin/js/transport.js"></script>
+<script type="text/javascript" src="/Public/admin/js/common.js"></script>
+</head>
+<body>
+<h1>
+<span class="action-span1">公司信息</span><span id="search_id" class="action-span1"></span>
+<div style="clear:both"></div>
+</h1>
+<!-- 新闻类别搜索 -->
+<form>
+  公司名称：
+  <input type="text" name="">
+  <input type="submit" value="查询">
+</form>
+<a href="/admin.php/home/message/com_addform">添加公司</a>
+<br>
+<!-- 新闻类别列表 -->
+<div class="list-div">
+<table cellspacing='1' cellpadding='3'>
+  <tr align="center">
+         <th>公司编号</th>
+         <th>公司名称</th>
+         <th>创办时间</th>
+         <th>公司网站</th>
+         <th>招收人数</th>
+         <th>操作</th>
+      </tr>
+      <?php foreach ($list as $key => $val) { ?>
+          <tr align="center">
+             <td><?php echo ($val["com_id"]); ?></td>
+             <td><?php echo ($val["com_name"]); ?></td>
+             <td><?php echo ($val["r_time"]); ?></td>
+             <td><?php echo ($val["r_url"]); ?></td>
+             <td><?php echo ($val["r_num"]); ?></td>
+
+          </tr>
+      <?php } ?>
+  
+  
+</table>
+</div>
+<br />
+<div id="footer">
+版权所有 &copy; 八维研修学院软件工程学院1308phpA班，并保留所有权利。</div>
+>>>>>>> 243b9bad086473f67c02e4dc72fd550b39bf666b:Admin/Runtime/Cache/Home/92ddaddea5f234b954e41c9b300fc222.php
 </body>
 </html>
 			</div>

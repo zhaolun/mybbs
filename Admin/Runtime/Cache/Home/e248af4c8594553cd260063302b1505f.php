@@ -244,13 +244,13 @@ H1 a {
 			myAccordion.showThisHideOpen(contents[0]);
 		</script>
 		<td width="87%" valign="top">
-			<div style="margin:10px;padding:10px;" id="" class="">
+			<div style="margin:10px;padding:10px;">
 				<head>
 <title>新闻列表</title>
 <meta name="robots" content="noindex, nofollow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="../css/general.css" rel="stylesheet" type="text/css" />
-<link href="../css/main.css" rel="stylesheet" type="text/css" />
+<link href="/Public/admin/css/general.css" rel="stylesheet" type="text/css" />
+<link href="/Public/admin/css/main.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="../js/transport.js"></script>
 <script type="text/javascript" src="./js/common.js"></script>
 </head>
