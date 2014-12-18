@@ -1,7 +1,8 @@
 <?php
 return array(
 	//'配置项'=>'配置值'
-	// 服务器地址
+	'DB_TYPE'   => 'mysql', // 数据库类型
+	'DB_HOST'   => '192.168.1.2', // 服务器地址
 	'DB_NAME'   => 'bbs', // 数据库名
 	'DB_USER'   => 'root', // 用户名
 	'DB_PWD'    => '940614', // 密码
