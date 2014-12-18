@@ -432,7 +432,11 @@
 <script type="text/javascript">
   var arr = new Array(); 
 
+<<<<<<< HEAD
        arr[0] = {title:"yi利一组：有实力就是任性",link:"http://bbs.itcast.cn/thread-22528-1-1.html?h201",img:"/Public/images/104914z8lary1qv9vvv8fz.jpg"};
+=======
+       arr[0] = {title:"yi利一组：有实力就是任性",link:"/index.php",img:"/Public/images/104914z8lary1qv9vvv8fz.jpg"};
+>>>>>>> 834d4fbad664af21e5e0a23a6572527f6a39e6e9
 
   var randIndex = Math.floor(Math.random()*arr.length);
   var obj = arr[randIndex];
