@@ -4,7 +4,7 @@ use Think\Controller;
 class TeacherController extends Controller {
     public function lists(){
     	$model=M("teacher");
-        $data=$model->select();
+        $data=$model->query("select * from bbs_teacher join bbs_position on bbs_teacher.p_id = bbs_position.p_id");
         $this->assign('list',$data);
         $this->display('list');
     }

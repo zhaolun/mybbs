@@ -19,6 +19,7 @@
     <th  class="group-title">编号</th>
 	<th  class="group-title">职位名称</th>
 	<th  class="group-title">职位描述</th>
+	<th  class="group-title">操作</th>
   </tr>
 
 <foreach name="list" item="vo" >
@@ -27,10 +28,18 @@
     <td width="5%">{$vo.p_id}</td>
     <td width="20%">{$vo.position}</td>
     <td width="35%">{$vo.p_desc}</td>
-  </tr>
+	<td width="10%">
+	<a href="/admin.php/home/position/del/id/{$vo.p_id}">删除</a>|
+	<a href="/admin.php/home/position/up/id/{$vo.p_id}">编辑</a>
+	</td>  </tr>
  </foreach>
 
 </table>
+<center>
+	<div>
+		{$page}
+	</div>
+</center>
 </div>
 <br />
 <div id="footer">

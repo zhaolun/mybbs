@@ -264,15 +264,15 @@ H1 a {
   <tr>
     <th  class="group-title">编号</th>
 	<th  class="group-title">讲师姓名</th>
-	<th  class="group-title">讲师介绍</th>
 	<th  class="group-title">职位名称</th>
+	<th  class="group-title">讲师介绍</th>
   </tr>
-  <tr class="table_tr">
-    <td width="5%">1</td>
-    <td width="20%">姚欣</td>
-    <td width="35%">姚欣，多年从事Java EE、PHP以及富客户端技术开发,曾参与并主持开发检察院系统的软件及罪犯管理系统,成功帮助北京263企业邮箱,广州易方达，北京智诚创想等多家企业完成富客户端系统架构升级与改造,热衷于前台技术的研究，蓝源RIA快速开发框架总设计师。擅长技术：Spring,Struts,Hibernate,Jpa,JavaScript,PHP,JQuery, ExtJs，AJAX。精通ExtJS、Flex等多种富客户端技术。</td>
-    <td width="10%">高级讲师、高级软件架构师</td>
-  </tr>
+  <?php if(is_array($list)): foreach($list as $key=>$vo): ?><tr class="table_tr">
+    <td width="5%"><?php echo ($vo["id"]); ?></td>
+    <td width="20%"><?php echo ($vo["t_name"]); ?></td>
+    <td width="35%"><?php echo ($vo["position"]); ?></td>
+    <td width="10%"><?php echo ($vo["t_desc"]); ?></td>
+  </tr><?php endforeach; endif; ?>
 
 </table>
 </div>

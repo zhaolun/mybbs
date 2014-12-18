@@ -266,15 +266,24 @@ H1 a {
     <th  class="group-title">编号</th>
 	<th  class="group-title">职位名称</th>
 	<th  class="group-title">职位描述</th>
+	<th  class="group-title">操作</th>
   </tr>
 
 <?php if(is_array($list)): foreach($list as $key=>$vo): ?><tr class="table_tr">
     <td width="5%"><?php echo ($vo["p_id"]); ?></td>
     <td width="20%"><?php echo ($vo["position"]); ?></td>
     <td width="35%"><?php echo ($vo["p_desc"]); ?></td>
-  </tr><?php endforeach; endif; ?>
+	<td width="10%">
+	<a href="/admin.php/home/position/del/id/<?php echo ($vo["p_id"]); ?>">删除</a>|
+	<a href="">编辑</a>
+	</td>  </tr><?php endforeach; endif; ?>
 
 </table>
+<center>
+	<div>
+		<?php echo ($page); ?>
+	</div>
+</center>
 </div>
 <br />
 <div id="footer">
