@@ -246,7 +246,7 @@ H1 a {
 		<td width="87%" valign="top">
 			<div style="margin:10px;padding:10px;">
 				<head>
-<title>新闻类别列表</title>
+<title>添加公司信息</title>
 <meta name="robots" content="noindex, nofollow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="/Public/admin/css/general.css" rel="stylesheet" type="text/css" />
@@ -256,45 +256,45 @@ H1 a {
 </head>
 <body>
 <h1>
-<span class="action-span1">公司信息</span><span id="search_id" class="action-span1"></span>
+<span class="action-span1">添加公司信息</span><span id="search_id" class="action-span1"></span>
 <div style="clear:both"></div>
 </h1>
-<!-- 新闻类别搜索 -->
-<form>
-  公司名称：
-  <input type="text" name="">
-  <input type="submit" value="查询">
-</form>
-<a href="/admin.php/home/message/com_addform">添加公司</a>
-<br>
-<!-- 新闻类别列表 -->
+ 
+<!-- 添加新闻类别 -->
 <div class="list-div">
-<table cellspacing='1' cellpadding='3'>
-  <tr align="center">
-         <th>公司编号</th>
-         <th>公司名称</th>
-         <th>创办时间</th>
-         <th>公司网站</th>
-         <th>招收人数</th>
-         <th>操作</th>
-      </tr>
-      <?php foreach ($list as $key => $val) { ?>
-          <tr align="center">
-             <td><?php echo ($val["com_id"]); ?></td>
-             <td><?php echo ($val["com_name"]); ?></td>
-             <td><?php echo ($val["r_time"]); ?></td>
-             <td><?php echo ($val["r_url"]); ?></td>
-             <td><?php echo ($val["r_num"]); ?></td>
+<form method="post" action="./sport_list.html">
+	<table cellspacing='1' cellpadding='3'>
+		<tr>
+			<td align='right'>公司名称：</td>
+			<td><input type="text" name="com_name"></td>
+		</tr>
+		<tr>
+			<td align='right'>创建时间：</td>
+			<td><input name="r_time"></td>
+		</tr>
+		<tr>
+			<td align='right'>公司网址：</td>
+			<td><input name="r_url"></td>
+		</tr>
+		<tr>
+			<td align='right'>招收时间：</td>
+			<td><input name="r_num">
+			<input type="text" name="end_time" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd',autoPickDate:true,skin:'default'})"   value="" />
+			</td>
 
-          </tr>
-      <?php } ?>
-  
-  
-</table>
+		</tr>
+		<tr>
+			<td align="right"><input type="submit" value='添加公司信息'></td>	
+			<td></td>
+		</tr>
+	</table>
+</form>
 </div>
 <br />
+<script type="text/javascript" src="/Public/js/My97DatePicker/WdatePicker.js"></script>
+
 <div id="footer">
-版权所有 &copy; 八维研修学院软件工程学院1308phpA班，并保留所有权利。</div>
+版权所有 &copy; 八维研修学院软件工程学院1302phpA班，并保留所有权利。</div>
 </body>
 </html>
 			</div>

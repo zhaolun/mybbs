@@ -1,0 +1,32 @@
+<html>
+<head>
+</head>
+<style type="text/css">
+body{ font-size:12px; margin:0 auto;background:white;}
+</style>
+<body>
+
+<h2>公司信息</h2>
+<div id="box">
+  <table>
+  	  <tr align="center">
+  	  	 <th>公司编号</th>
+  	  	 <th>公司名称</th>
+  	  	 <th>创办时间</th>
+  	  	 <th>公司网站</th>
+  	  	 <th>招收人数</th>
+  	  </tr>
+  	  <?php foreach ($list as $key => $val) { ?>
+  	  	  <tr align="center">
+  	  	  	 <td>{$val.com_id}</td>
+  	  	  	 <td>{$val.com_name}</td>
+  	  	  	 <td>{$val.r_time}</td>
+  	  	  	 <td>{$val.r_url}</td>
+  	  	  	 <td>{$val.r_num}</td>
+  	  	  </tr>
+  	  <?php } ?>
+
+  </table>
+  </div>
+</body>
+</html>

@@ -10,8 +10,18 @@ class MessageController extends Controller {
         $this->assign('list',$data);
         $this->display('company');
     }
+    public function com_addform()
+    {
+    	//echo "234";
+    	$this->display();
+    }
     public function school()
     {
     	echo "123";
     }
+    public function student()
+    {
+    	echo "df";
+    }
+
 }
