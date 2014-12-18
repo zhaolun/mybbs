@@ -176,7 +176,7 @@ H1 a {
         </ul>
       </div>
       
-							<h1 class="type"><a>PHP培训课程</a></h1>
+							<h1 class="type"><a>培训课程</a></h1>
 							<div class="content">
         <table width="100%" border="0" cellspacing="0" cellpadding="0">
           <tr>
@@ -196,7 +196,7 @@ H1 a {
         </ul>
       </div>
 
-							<h1 class="type"><a>就业信息管理</a></h1>
+							<h1 class="type"><a>就业信息</a></h1>
 								<div class="content">
         <table width="100%" border="0" cellspacing="0" cellpadding="0">
           <tr>
@@ -209,7 +209,24 @@ H1 a {
           <li><a href="http://www.865171.cn" >学生信息</a></li>
         </ul>
       </div>
-							<h1 class="type"><a>注册用户管理</a></h1>
+							<h1 class="type"><a>师资力量</a></h1>
+							<div class="content">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+							<td><img src="/Public/admin/images/menu_topline.gif" width="182" height="5" /></td>
+							</tr>
+							</table>
+							<ul class="MM">
+							<li><a href="http://www.865171.cn" >会员管理</a></li>
+							<li><a href="http://www.865171.cn" >留言管理</a></li>
+							<li><a href="http://www.865171.cn" >回复管理</a></li>
+							<li><a href="http://www.865171.cn" >订单管理</a></li>
+							<li><a href="http://www.865171.cn" >举报管理</a></li>
+							<li><a href="http://www.865171.cn" >评论管理</a></li>
+							</ul>
+							</div>
+
+							<h1 class="type"><a>常见问题</a></h1>
 							<div class="content">
 							<table width="100%" border="0" cellspacing="0" cellpadding="0">
 							<tr>
