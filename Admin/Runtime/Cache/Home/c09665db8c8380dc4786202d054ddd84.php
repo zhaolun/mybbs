@@ -6,6 +6,7 @@
 <script src="/Public/admin/js/moo.fx.js" type="text/javascript"></script>
 <script src="/Public/admin/js/moo.fx.pack.js" type="text/javascript"></script>
 <link href="/Public/admin/css/skin.css" rel="stylesheet" type="text/css">
+<link href="/Public/admin/css/main.css" rel="stylesheet" type="text/css">
 
 <style>
 body {
@@ -242,8 +243,9 @@ H1 a {
 			var myAccordion = new fx.Accordion(toggles, contents, {opacity: true, duration:400});
 			myAccordion.showThisHideOpen(contents[0]);
 		</script>
-		<td width="89%" valign="top">
-			<link href="/Public/admin/css/skin.css" rel="stylesheet" type="text/css" />
+		<td width="87%" valign="top">
+			<div style="margin:10px;padding:10px;">
+				<link href="/Public/admin/css/skin.css" rel="stylesheet" type="text/css" />
 <table width="100%" border="0" cellpadding="0" cellspacing="0">
   <tr>
     <td valign="middle" background="/Public/admin/images/mail_leftbg.gif">&nbsp;</td>
@@ -517,6 +519,7 @@ cellPadding=0 width=100% border=0>
 
 </table>
 </body>
+			</div>
 		</td>
 	</tr>
 </table>
