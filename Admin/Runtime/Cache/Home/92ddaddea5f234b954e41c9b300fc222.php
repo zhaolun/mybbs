@@ -6,6 +6,7 @@
 <script src="/Public/admin/js/moo.fx.js" type="text/javascript"></script>
 <script src="/Public/admin/js/moo.fx.pack.js" type="text/javascript"></script>
 <link href="/Public/admin/css/skin.css" rel="stylesheet" type="text/css">
+<link href="/Public/admin/css/main.css" rel="stylesheet" type="text/css">
 
 <style>
 body {
@@ -184,15 +185,10 @@ H1 a {
           </tr>
         </table>
         <ul class="MM">
-          <li><a href="http://www.865171.cn">信息分类</a></li>
-          <li><a href="http://www.865171.cn">信息类型</a></li>
-          <li><a href="http://www.865171.cn">资讯分类</a></li>
-          <li><a href="http://www.865171.cn">地区设置</a></li>
-          <li><a href="http://www.865171.cn">市场联盟</a></li>
-          <li><a href="http://www.865171.cn">商家类型</a></li>
-          <li><a href="http://www.865171.cn">商家星级</a></li>
-          <li><a href="http://www.865171.cn">商品分类</a></li>
-          <li><a href="http://www.865171.cn">商品类型</a></li>
+          <li><a href="/admin.php/home/class/add">添加班级</a></li>
+          <li><a href="/admin.php/home/intro/add">添加课程</a></li>
+          <li><a href="/admin.php/home/class/addlist">班级列表</a></li>
+          <li><a href="/admin.php/home/intro/addlist">课程列表</a></li>
         </ul>
       </div>
 
@@ -217,12 +213,10 @@ H1 a {
 							</tr>
 							</table>
 							<ul class="MM">
-							<li><a href="http://www.865171.cn" >会员管理</a></li>
-							<li><a href="http://www.865171.cn" >留言管理</a></li>
-							<li><a href="http://www.865171.cn" >回复管理</a></li>
-							<li><a href="http://www.865171.cn" >订单管理</a></li>
-							<li><a href="http://www.865171.cn" >举报管理</a></li>
-							<li><a href="http://www.865171.cn" >评论管理</a></li>
+							<li><a href="/admin.php/home/teacher/add" >添加讲师</a></li>
+							<li><a href="/admin.php/home/teacher/lists" >讲师列表</a></li>
+							<li><a href="/admin.php/home/position/add" >职位添加</a></li>
+							<li><a href="/admin.php/home/position/lists" >职位列表</a></li>
 							</ul>
 							</div>
 
@@ -234,12 +228,8 @@ H1 a {
 							</tr>
 							</table>
 							<ul class="MM">
-							<li><a href="http://www.865171.cn" >会员管理</a></li>
-							<li><a href="http://www.865171.cn" >留言管理</a></li>
-							<li><a href="http://www.865171.cn" >回复管理</a></li>
-							<li><a href="http://www.865171.cn" >订单管理</a></li>
-							<li><a href="http://www.865171.cn" >举报管理</a></li>
-							<li><a href="http://www.865171.cn" >评论管理</a></li>
+							<li><a href="/admin.php/home/problem/lists" >问题管理</a></li>
+							<li><a href="/admin.php/home/problem/add" >添加问题</a></li>
 							</ul>
 							</div>
 						</div>
@@ -253,8 +243,61 @@ H1 a {
 			var myAccordion = new fx.Accordion(toggles, contents, {opacity: true, duration:400});
 			myAccordion.showThisHideOpen(contents[0]);
 		</script>
-		<td width="89%" valign="top">
-			
+		<td width="87%" valign="top">
+			<div style="margin:10px;padding:10px;">
+				<head>
+<title>新闻类别列表</title>
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="/Public/admin/css/general.css" rel="stylesheet" type="text/css" />
+<link href="/Public/admin/css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/Public/admin/js/transport.js"></script>
+<script type="text/javascript" src="/Public/admin/js/common.js"></script>
+</head>
+<body>
+<h1>
+<span class="action-span1">公司信息</span><span id="search_id" class="action-span1"></span>
+<div style="clear:both"></div>
+</h1>
+<!-- 新闻类别搜索 -->
+<form>
+  公司名称：
+  <input type="text" name="">
+  <input type="submit" value="查询">
+</form>
+<a href="/admin.php/home/message/com_addform">添加公司</a>
+<br>
+<!-- 新闻类别列表 -->
+<div class="list-div">
+<table cellspacing='1' cellpadding='3'>
+  <tr align="center">
+         <th>公司编号</th>
+         <th>公司名称</th>
+         <th>创办时间</th>
+         <th>公司网站</th>
+         <th>招收人数</th>
+         <th>操作</th>
+      </tr>
+      <?php foreach ($list as $key => $val) { ?>
+          <tr align="center">
+             <td><?php echo ($val["com_id"]); ?></td>
+             <td><?php echo ($val["com_name"]); ?></td>
+             <td><?php echo ($val["r_time"]); ?></td>
+             <td><?php echo ($val["r_url"]); ?></td>
+             <td><?php echo ($val["r_num"]); ?></td>
+
+          </tr>
+      <?php } ?>
+  
+  
+</table>
+</div>
+<br />
+<div id="footer">
+版权所有 &copy; 八维研修学院软件工程学院1308phpA班，并保留所有权利。</div>
+</body>
+</html>
+			</div>
 		</td>
 	</tr>
 </table>
