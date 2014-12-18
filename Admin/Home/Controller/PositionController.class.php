@@ -7,11 +7,9 @@ class PositionController extends Controller {
         $this->display('add');
     }
     public function lists(){
-		/*
         $model=M("position");
         $data=$model->select();
-        //var_dump($data);
-        $this->assign('list',$data);*/
+        $this->assign('list',$data);
 		$this->display('list');
     }
 }

@@ -184,15 +184,10 @@ H1 a {
           </tr>
         </table>
         <ul class="MM">
-          <li><a href="http://www.865171.cn">信息分类</a></li>
-          <li><a href="http://www.865171.cn">信息类型</a></li>
-          <li><a href="http://www.865171.cn">资讯分类</a></li>
-          <li><a href="http://www.865171.cn">地区设置</a></li>
-          <li><a href="http://www.865171.cn">市场联盟</a></li>
-          <li><a href="http://www.865171.cn">商家类型</a></li>
-          <li><a href="http://www.865171.cn">商家星级</a></li>
-          <li><a href="http://www.865171.cn">商品分类</a></li>
-          <li><a href="http://www.865171.cn">商品类型</a></li>
+          <li><a href="/admin.php/home/class/add">添加班级</a></li>
+          <li><a href="/admin.php/home/intro/add">添加课程</a></li>
+          <li><a href="/admin.php/home/class/addlist">班级列表</a></li>
+          <li><a href="/admin.php/home/intro/addlist">课程列表</a></li>
         </ul>
       </div>
 
@@ -217,12 +212,10 @@ H1 a {
 							</tr>
 							</table>
 							<ul class="MM">
-							<li><a href="http://www.865171.cn" >会员管理</a></li>
-							<li><a href="http://www.865171.cn" >留言管理</a></li>
-							<li><a href="http://www.865171.cn" >回复管理</a></li>
-							<li><a href="http://www.865171.cn" >订单管理</a></li>
-							<li><a href="http://www.865171.cn" >举报管理</a></li>
-							<li><a href="http://www.865171.cn" >评论管理</a></li>
+							<li><a href="/admin.php/home/teacher/add" >添加讲师</a></li>
+							<li><a href="/admin.php/home/teacher/lists" >讲师列表</a></li>
+							<li><a href="/admin.php/home/position/add" >职位添加</a></li>
+							<li><a href="/admin.php/home/position/lists" >职位列表</a></li>
 							</ul>
 							</div>
 
@@ -234,12 +227,8 @@ H1 a {
 							</tr>
 							</table>
 							<ul class="MM">
-							<li><a href="http://www.865171.cn" >会员管理</a></li>
-							<li><a href="http://www.865171.cn" >留言管理</a></li>
-							<li><a href="http://www.865171.cn" >回复管理</a></li>
-							<li><a href="http://www.865171.cn" >订单管理</a></li>
-							<li><a href="http://www.865171.cn" >举报管理</a></li>
-							<li><a href="http://www.865171.cn" >评论管理</a></li>
+							<li><a href="/admin.php/home/problem/list" >问题管理</a></li>
+							<li><a href="/admin.php/home/problem/add" >添加问题</a></li>
 							</ul>
 							</div>
 						</div>
@@ -254,7 +243,60 @@ H1 a {
 			myAccordion.showThisHideOpen(contents[0]);
 		</script>
 		<td width="89%" valign="top">
-			
+			<head>
+<title>添加新闻</title>
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="/Public/admin/css/general.css" rel="stylesheet" type="text/css" />
+<link href="/Public/admin/css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/transport.js"></script>
+<script type="text/javascript" src="./js/common.js"></script>
+</head>
+<body>
+<h1>
+<span class="action-span1">添加讲师信息</span><span id="search_id" class="action-span1"></span>
+<div style="clear:both"></div>
+</h1>
+ 
+<!-- 添加新闻 -->
+<div class="list-div">
+<form method="post" action="./sport_list.html">
+	<table cellspacing='1' cellpadding='3'>
+		<tr>
+			<td align='right'>讲师照片：</td>
+			<td><input type="file" name="filename" size=80></td>
+		</tr>
+		<tr>
+			<td align='right'>讲师名字：</td>
+			<td><input type="text" name="t_name" size=80></td>
+		</tr>
+		<tr>
+			<td align='right'>讲师介绍：</td>
+			<td><textarea name="t_desc" rows="20" cols="100"></textarea></td>
+		</tr>
+		<tr>
+			<td align='right'>职位名称：</td>
+			<td>
+				<select>
+					<option>--请选择职位名称--</option>
+					<option>国内著名的软件培训高级讲师</option>
+					<option>高级讲师、企业培训讲师</option>
+					<option>高级讲师、高级软件架构师</option>
+				</select>
+			</td>
+		</tr>
+
+		<tr>
+			<td align='center' colspan=2><input type="submit" value='添加讲师信息'></td>	
+		</tr>
+	</table>
+</form>
+</div>
+<br />
+<div id="footer">
+版权所有 &copy; 八维研修学院软件工程学院1302phpA班，并保留所有权利。</div>
+</body>
+</html>
 		</td>
 	</tr>
 </table>

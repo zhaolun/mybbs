@@ -1,17 +1,16 @@
 <?php
 namespace Home\Controller;
 use Think\Controller;
-class MessageController extends Controller {
-    public function company()
+class TeacherController extends Controller {
+    public function lists()
     {
-    	$model=M("company");
+    	$model=M("teacher");
         $data=$model->select();
-        //var_dump($data);
         $this->assign('list',$data);
-        $this->display('company');
+        $this->display('list');
     }
-    public function school()
+    public function add()
     {
-    	echo "123";
+    	$this->display('add');
     }
 }
