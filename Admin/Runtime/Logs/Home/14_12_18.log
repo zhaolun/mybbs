@@ -12013,6 +12013,7 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
 >>>>>>> 838e653437c650186af106dc9fbfcf267c961840
 
+<<<<<<< HEAD
 [ 2014-12-18T16:38:26+08:00 ] 127.0.0.1 /admin.php/home/index/yzm
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
@@ -19634,6 +19635,9 @@ INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
 NOTIC: [8] A session had already been started - ignoring session_start() G:\mybbs\admin.php 第 26 行.
 
 [ 2014-12-18T20:02:01+08:00 ] 127.0.0.1 /admin.php/Home/admin/index
+=======
+[ 2014-12-18T20:03:40+08:00 ] 127.0.0.1 /admin.php/Home/admin/index
+>>>>>>> master
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
@@ -19650,6 +19654,7 @@ INFO: [ view_filter ] --START--
 INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
 INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
 INFO: [ app_end ] --START--
+<<<<<<< HEAD
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
 NOTIC: [8] A session had already been started - ignoring session_start() G:\mybbs\admin.php 第 26 行.
@@ -19713,10 +19718,13 @@ INFO: [ view_filter ] --START--
 INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
 INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
 INFO: [ app_end ] --START--
+=======
+>>>>>>> master
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
 NOTIC: [8] A session had already been started - ignoring session_start() G:\mybbs\admin.php 第 26 行.
 
+<<<<<<< HEAD
 [ 2014-12-18T20:02:03+08:00 ] 127.0.0.1 /admin.php/Home/admin/index
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
@@ -19760,6 +19768,9 @@ INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
 NOTIC: [8] A session had already been started - ignoring session_start() G:\mybbs\admin.php 第 26 行.
 
 [ 2014-12-18T20:02:51+08:00 ] 127.0.0.1 /admin.php/Home/admin/index
+=======
+[ 2014-12-18T20:03:43+08:00 ] 127.0.0.1 /admin.php/Home/admin/index
+>>>>>>> master
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
@@ -19770,7 +19781,10 @@ INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
 NOTIC: [8] Undefined index: username G:\mybbs\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 150 行.
+=======
+>>>>>>> master
 INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
 INFO: [ view_filter ] --START--
@@ -19781,6 +19795,7 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
 NOTIC: [8] A session had already been started - ignoring session_start() G:\mybbs\admin.php 第 26 行.
 
+<<<<<<< HEAD
 [ 2014-12-18T20:04:14+08:00 ] 127.0.0.1 /admin.php/Home/admin/index
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
@@ -19825,3 +19840,5 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
 NOTIC: [8] A session had already been started - ignoring session_start() G:\mybbs\admin.php 第 26 行.
 
+=======
+>>>>>>> master
