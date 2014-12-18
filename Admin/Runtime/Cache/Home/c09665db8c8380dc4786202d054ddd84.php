@@ -1,59 +1,11 @@
 <?php if (!defined('THINK_PATH')) exit();?><html>
 <head>
 <title>MyBBS后台管理</title>
-<script language=JavaScript>
-function logout(){
-	if (confirm("您确定要退出控制面板吗？"))
-	top.location = "out.asp";
-	return false;
-}
-</script>
-<script language=JavaScript1.2>
-function showsubmenu(sid) {
-	var whichEl = eval("submenu" + sid);
-	var menuTitle = eval("menuTitle" + sid);
-	if (whichEl.style.display == "none"){
-		eval("submenu" + sid + ".style.display=\"\";");
-	}else{
-		eval("submenu" + sid + ".style.display=\"none\";");
-	}
-}
-</script>
-<meta http-equiv=Content-Type content="text/html;" charset=gb2312>
-<meta http-equiv="refresh" content="60">
-<script language=JavaScript1.2>
-function showsubmenu(sid) {
-	var whichEl = eval("submenu" + sid);
-	var menuTitle = eval("menuTitle" + sid);
-	if (whichEl.style.display == "none"){
-		eval("submenu" + sid + ".style.display=\"\";");
-	}else{
-		eval("submenu" + sid + ".style.display=\"none\";");
-	}
-}
-</script>
-<base target="main">
-<link href="/Public/admin/css/skin.css" rel="stylesheet" type="text/css">
 </head>
-<body leftmargin="0" topmargin="0">
-<table width="100%" height="64" border="0" cellpadding="0" cellspacing="0" class="admin_topbg">
-  <tr style="background:url('/Public/admin/images/top-right.gif')">
-    <td width="61%" height="64"><img src="/Public/admin/images/logo.gif" width="262" height="64"></td>
-    <td width="39%" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr>
-        <td width="74%" height="38" class="admin_txt">管理员：<b><%=session("admin_name")%></b> 您好,感谢登陆使用！</td>
-        <td width="22%"><a href="#" target="_self" onClick="logout();"><img src="/Public/admin/images/out.gif" alt="安全退出" width="46" height="20" border="0"></a></td>
-        <td width="4%">&nbsp;</td>
-      </tr>
-      <tr>
-        <td height="19" colspan="3">&nbsp;</td>
-        </tr>
-    </table></td>
-  </tr>
-</table>
 <script src="/Public/admin/js/prototype.lite.js" type="text/javascript"></script>
 <script src="/Public/admin/js/moo.fx.js" type="text/javascript"></script>
 <script src="/Public/admin/js/moo.fx.pack.js" type="text/javascript"></script>
+<link href="/Public/admin/css/skin.css" rel="stylesheet" type="text/css">
 <style>
 body {
 	font:12px Arial, Helvetica, sans-serif;
@@ -183,8 +135,27 @@ H1 a {
 	text-decoration: none;
 }
 </style>
-<div width="10%"  style="float:left">
-	<table width="100%" height="280" border="0" cellpadding="0" cellspacing="0" bgcolor="#EEF2FB">
+<body>
+<div id="" class="">
+	<table width="100%" height="64" border="0" cellpadding="0" cellspacing="0" class="admin_topbg">
+  <tr style="background:url('/Public/admin/images/top-right.gif')">
+    <td width="61%" height="64"><img src="/Public/admin/images/logo.gif" width="262" height="64"></td>
+    <td width="39%" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="74%" height="38" class="admin_txt">管理员：<b><%=session("admin_name")%></b> 您好,感谢登陆使用！</td>
+        <td width="22%"><a href="#" target="_self" onClick="logout();"><img src="/Public/admin/images/out.gif" alt="安全退出" width="46" height="20" border="0"></a></td>
+        <td width="4%">&nbsp;</td>
+      </tr>
+      <tr>
+        <td height="19" colspan="3">&nbsp;</td>
+        </tr>
+    </table></td>
+  </tr>
+</table>
+</div>
+<div id="" class="">
+	<div style="float:left;" class="">
+		<table width="100%" height="280" border="0" cellpadding="0" cellspacing="0" bgcolor="#EEF2FB">
   <tr>
     <td width="182" valign="top"><div id="container">
       <h1 class="type"><a>网站常规管理</a></h1>
@@ -276,8 +247,9 @@ H1 a {
         </td>
   </tr>
 </table>
-</div>
- <div width="85%" style="float:left"><link href="/Public/admin/css/skin.css" rel="stylesheet" type="text/css" />
+	</div>
+	<div id="" class="" style="margin-left:10px;float:left;">
+		<link href="/Public/admin/css/skin.css" rel="stylesheet" type="text/css" />
 <table width="100%" border="0" cellpadding="0" cellspacing="0">
   <tr>
     <td valign="middle" background="/Public/admin/images/mail_leftbg.gif">&nbsp;</td>
@@ -549,6 +521,8 @@ cellPadding=0 width=100% border=0>
   </tr>
 
 </table>
-</body></div>
+</body>
+	</div>
+</div>
 </body>
 </html>
