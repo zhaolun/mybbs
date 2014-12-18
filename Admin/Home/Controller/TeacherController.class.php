@@ -27,7 +27,7 @@ class TeacherController extends Controller {
         $data['t_desc']=$_POST['t_desc'];
         $data['p_id']=$_POST['p_id'];
 		$data['img']='/Public/Uploads/'.$_FILES['filename']['name'];
-		var_dump($data);die;
+		//var_dump($data);die;
 		$info = $upload->upload();
 		if($info){
 			if($model->add($data)){
