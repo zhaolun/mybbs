@@ -309,7 +309,7 @@ H1 a {
     <td width="10%">雷金涛</td>
 	<td width="10%">21</td>
     <td width="10%">男</td>
-	<td width="15%">妻管严，不让找小三</td>
+	<td width="15%">爱媳妇，不找小三</td>
 	<td width="10%">算了</td>
 	<td width="10%">已有</td>
 	</tr>
