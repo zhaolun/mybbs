@@ -1,4 +1,4 @@
-<html>
+<?php if (!defined('THINK_PATH')) exit();?><html>
 <head>
 <title>MyBBS后台管理</title>
 </head>
@@ -233,18 +233,6 @@ H1 a {
 							<li><a href="/admin.php/home/problem/add" >添加问题</a></li>
 							</ul>
 							</div>
-
-							<h1 class="type"><a>yi利一组</a></h1>
-							<div class="content">
-							<table width="100%" border="0" cellspacing="0" cellpadding="0">
-							<tr>
-							<td><img src="/Public/admin/images/menu_topline.gif" width="182" height="5" /></td>
-							</tr>
-							</table>
-							<ul class="MM">
-							<li><a href="/admin.php/home/one/lists" >一组信息</a></li>
-							</ul>
-							</div>
 						</div>
 					</td>
 				</tr>
@@ -258,7 +246,59 @@ H1 a {
 		</script>
 		<td width="87%" valign="top">
 			<div style="margin:10px;padding:10px;">
-				{__CONTENT__}
+				<head>
+<title>新闻类别列表</title>
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="/Public/admin/css/general.css" rel="stylesheet" type="text/css" />
+<link href="/Public/admin/css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/Public/admin/js/transport.js"></script>
+<script type="text/javascript" src="/Public/admin/js/common.js"></script>
+</head>
+<body>
+<h1>
+<span class="action-span1">公司信息</span><span id="search_id" class="action-span1"></span>
+<div style="clear:both"></div>
+</h1>
+<!-- 新闻类别搜索 -->
+<form>
+  公司名称：
+  <input type="text" name="com_name">
+  <input type="submit" value="查询">
+</form>
+<a href="/admin.php/home/message/com_addform">添加公司</a>
+<br>
+<!-- 新闻类别列表 -->
+<div class="list-div">
+<table cellspacing='1' cellpadding='3'>
+  <tr align="center">
+         <th>公司编号</th>
+         <th>公司名称</th>
+         <th>创办时间</th>
+         <th>公司网站</th>
+         <th>招收人数</th>
+         <th>操作</th>
+      </tr>
+     <?php if(is_array($list)): foreach($list as $key=>$val): ?><tr align="center">
+             <td><?php echo ($val["com_id"]); ?></td>
+             <td><?php echo ($val["com_name"]); ?></td>
+             <td><?php echo ($val["r_time"]); ?></td>
+             <td><?php echo ($val["r_url"]); ?></td>
+             <td><?php echo ($val["r_num"]); ?></td>
+             <td><a href="/admin.php/home/message/com_del/com_id/<?php echo $val['com_id'];?>">【删除】</a>
+             <a href="/admin.php/home/message/com_editform/com_id/<?php echo $val['com_id']; ?>">【编辑】</a></td>
+          </tr><?php endforeach; endif; ?>
+</table>
+
+</div>
+<div class="pagination">
+　　<?php echo ($page); ?>
+</div>
+<br />
+<div id="footer">
+版权所有 &copy; 八维研修学院软件工程学院1308phpA班，并保留所有权利。</div>
+</body>
+</html>
 			</div>
 		</td>
 	</tr>

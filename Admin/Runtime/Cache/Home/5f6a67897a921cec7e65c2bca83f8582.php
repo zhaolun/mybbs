@@ -233,6 +233,18 @@ H1 a {
 							<li><a href="/admin.php/home/problem/add" >添加问题</a></li>
 							</ul>
 							</div>
+
+							<h1 class="type"><a>yi利一组</a></h1>
+							<div class="content">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+							<td><img src="/Public/admin/images/menu_topline.gif" width="182" height="5" /></td>
+							</tr>
+							</table>
+							<ul class="MM">
+							<li><a href="/admin.php/home/one/lists" >一组信息</a></li>
+							</ul>
+							</div>
 						</div>
 					</td>
 				</tr>
@@ -246,7 +258,87 @@ H1 a {
 		</script>
 		<td width="87%" valign="top">
 			<div style="margin:10px;padding:10px;">
-				
+				<head>
+<title>问题列表</title>
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="../css/general.css" rel="stylesheet" type="text/css" />
+<link href="../css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/transport.js"></script>
+<script type="text/javascript" src="./js/common.js"></script>
+</head>
+<body>
+<h1>
+<div style="clear:both"></div>
+</h1>
+<!-- 新闻类别搜索 -->
+<center>yi组信息列表</center>
+<!-- 新闻类别列表 -->
+<div class="list-div">
+<table cellspacing='1' cellpadding='3'>
+  <tr>
+    <th  class="group-title">编号</th>
+	<th  class="group-title">姓名</th>
+	<th  class="group-title">年龄</th>
+	<th  class="group-title">性别</th>
+	<th  class="group-title">联系电话</th>
+	<th  class="group-title">QQ</th>
+    <th  class="group-title">婚姻状况</th>
+	
+  </tr>
+  <tr class="table_tr">
+    <td width="5%">1</td>
+    <td width="10%">赵伦</td>
+	<td width="10%">20</td>
+    <td width="10%">男</td>
+	<td width="15%">妻管严，不让找小三</td>
+	<td width="10%">算了</td>
+	<td width="10%">已有</td>
+	</tr>
+	<tr class="table_tr">
+    <td width="5%">2</td>
+    <td width="10%">刘俊</td>
+	<td width="10%">20</td>
+    <td width="10%">女</td>
+	<td width="15%">夫管严，不让找小三</td>
+	<td width="10%">算了</td>
+	<td width="10%">已有</td>
+	</tr>
+	<tr class="table_tr">
+    <td width="5%">3</td>
+    <td width="10%">雷金涛</td>
+	<td width="10%">21</td>
+    <td width="10%">男</td>
+	<td width="15%">妻管严，不让找小三</td>
+	<td width="10%">算了</td>
+	<td width="10%">已有</td>
+	</tr>
+    <tr class="table_tr">
+    <td width="5%">4</td>
+    <td width="10%">张肖云</td>
+	<td width="10%">21</td>
+    <td width="10%">男</td>
+	<td width="15%">已经名花有主，不要打主意了。</td>
+	<td width="10%">算了</td>
+	<td width="10%">已有</td>
+	</tr>
+	<tr class="table_tr">
+    <td width="5%">5</td>
+    <td width="10%">崔萌泽</td>
+	<td width="10%">19</td>
+    <td width="10%">男</td>
+	<td width="17%">*********(可以找本人单独要哦)</td>
+	<td width="15%">*********(可以找本人单独要哦)</td>
+	<td width="10%">木有</td>
+	</tr>
+ 
+</table>
+</div>
+<br />
+<div id="footer">
+版权所有 &copy; 八维研修学院软件工程学院1308phpA班yi利小组，并保留所有权利。</div>
+</body>
+</html>
 			</div>
 		</td>
 	</tr>

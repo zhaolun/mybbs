@@ -247,53 +247,40 @@ H1 a {
 		<td width="87%" valign="top">
 			<div style="margin:10px;padding:10px;">
 				<head>
-<title>添加新闻</title>
+<title>学生列表</title>
 <meta name="robots" content="noindex, nofollow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="/Public/admin/css/general.css" rel="stylesheet" type="text/css" />
 <link href="/Public/admin/css/main.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="../js/transport.js"></script>
-<script type="text/javascript" src="./js/common.js"></script>
+<script type="text/javascript" src="/Public/admin/js/transport.js"></script>
+<script type="text/javascript" src="/Public/admin/js/common.js"></script>
 </head>
 <body>
 <h1>
-<span class="action-span1">添加讲师信息</span><span id="search_id" class="action-span1"></span>
+<span class="action-span1">学生列表</span><span id="search_id" class="action-span1"></span>
 <div style="clear:both"></div>
 </h1>
- 
-<!-- 添加新闻 -->
-<div class="list-div">
-<form method="post" action="/admin.php/home/teacher/uppro" enctype="multipart/form-data" >
-	<table cellspacing='1' cellpadding='3'>
-		<tr>
-			<td align='right'>讲师照片：</td>
-			<td><input type="file" name="filename" size="80"></td>
-		</tr>
-		<tr>
-			<td align='right'>讲师名字：</td>
-			<td><input type="text" name="t_name" size=80 value="<?php echo ($list["t_name"]); ?>"></td>
-		</tr>
-		<tr>
-			<td align='right'>讲师介绍：</td>
-			<td><textarea name="t_desc" rows="20" cols="100"><?php echo ($list["t_desc"]); ?></textarea></td>
-		</tr>
-		<tr>
-			<td align='right'>职位名称：</td>
-			<td>
-				<select name="p_id">
-					<option>--请选择职位名称--<?php echo ($list["p_id"]); ?></option>
-				<?php if(is_array($info)): foreach($info as $key=>$vo): if($vo["p_id"] == $list.p_id): ?><option value="<?php echo ($vo["p_id"]); ?>" selected><?php echo ($vo["position"]); ?></option>
-					<?php else: ?>
-					<option value="<?php echo ($vo["p_id"]); ?>"><?php echo ($vo["position"]); echo ($vo["p_id"]); ?></option><?php endif; endforeach; endif; ?>
-				</select>
-			</td>
-		</tr>
-
-		<tr>
-			<td align='center' colspan=2><input type="submit" value='添加讲师信息'></td>	
-		</tr>
-	</table>
+<!-- 新闻类别搜索 -->
+<form>
+学生名称：<input type="text" name="" size=40><input type="button" value="搜索" onclick="">
 </form>
+<a href="/admin.php/home/message/stu_addform">添加学生</a><br>
+<!-- 新闻类别列表 -->
+<div class="list-div">
+<table cellspacing='1' cellpadding='3'>
+  <tr>
+    <th  class="group-title">学生编号</th>
+    <th  class="group-title">学生名称</th>
+    <th  class="group-title">毕业学校</th>
+    <th  class="group-title">入职时间</th>
+    <th  class="group-title">所属公司</th>
+    <th  class="group-title">期望月薪</th>
+    <th  class="group-title">学生视屏</th>
+    <th  class="group-title">添加时间</th>
+    <th  class="group-title">操作</th>
+  </tr>
+ 
+</table>
 </div>
 <br />
 <div id="footer">

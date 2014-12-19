@@ -247,50 +247,42 @@ H1 a {
 		<td width="87%" valign="top">
 			<div style="margin:10px;padding:10px;">
 				<head>
-<title>添加阶段</title>
+<title>新闻类别列表</title>
 <meta name="robots" content="noindex, nofollow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="/Public/admin/css/general.css" rel="stylesheet" type="text/css" />
 <link href="/Public/admin/css/main.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="../js/transport.js"></script>
-<script type="text/javascript" src="./js/common.js"></script>
+<script type="text/javascript" src="/Public/admin/js/transport.js"></script>
+<script type="text/javascript" src="/Public/admin/js/common.js"></script>
 </head>
 <body>
 <h1>
-<span class="action-span1">添加阶段</span><span id="search_id" class="action-span1"></span>
+<span class="action-span1">新闻类别列表</span><span id="search_id" class="action-span1"></span>
 <div style="clear:both"></div>
 </h1>
-<!-- 添加新闻 -->
-<div class="list-div">
-<form method="post" action="addlist_pro">
-	<table cellspacing='1' cellpadding='3'>
-		<tr>
-			<td align='right'>课程名称：</td>
-			<td>
-				<select name="kecheng">
-				 <?php if(is_array($info)): foreach($info as $key=>$vo): ?><option value="<?php echo ($vo["bbs_id"]); ?>"><?php echo ($vo["bbs_name"]); ?></option><?php endforeach; endif; ?>
-				</select>
-			</td>
-		</tr>
-		<tr>
-			<td align='right'>阶段名称：</td>
-			<td><input type="text" name="jieduan" size=80></td>
-		</tr>
-		<tr>
-			<td align='right'>阶段内容：</td>
-			<td><textarea name="neirong" rows="10" cols="80"></textarea></td>
-		</tr>
-		<tr>
-			<td align='right'>学习目标</td>
-			<td><textarea name="mubiao" rows="10" cols="80"></textarea></td>
-		</tr>
-		<tr>
-			<td align='center' colspan=2><input type="submit" value='添加阶段'></td>	
-		</tr>
-	</table>
+<!-- 新闻类别搜索 -->
+<form>
+学校名称：<input type="text" name=""><input type="button" value="ajax搜索" onclick="">
 </form>
+<!-- 新闻类别列表 -->
+<div class="list-div">
+<a href="/admin.php/home/message/sch_addform">添加学校</a>
+<table cellspacing='1' cellpadding='3'>
+  <tr>
+      <th>学校编号</th>
+      <th>学校名称</th>
+      <th>操作</th>
+  </tr>
+  <?php if(is_array($list)): foreach($list as $key=>$val): ?><tr>  
+      <td><?php echo ($val["s_id"]); ?></td>
+      <td><?php echo ($val["s_name"]); ?></td>
+      <td><a href="/admin.php/home/message/sch_del/s_id/<?php echo ($val["s_id"]); ?>">【删除】</a>
+<a href="/admin.php/home/message/sch_editform/s_id/<?php echo ($val["s_id"]); ?>">【编辑】</a></td>
+    </tr><?php endforeach; endif; ?>
+  
+</table>
 </div>
-<br/>
+<br />
 <div id="footer">
 版权所有 &copy; 八维研修学院软件工程学院1302phpA班，并保留所有权利。</div>
 </body>

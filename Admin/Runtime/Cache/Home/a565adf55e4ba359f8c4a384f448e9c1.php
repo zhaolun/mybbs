@@ -247,42 +247,37 @@ H1 a {
 		<td width="87%" valign="top">
 			<div style="margin:10px;padding:10px;">
 				<head>
-<title>添加班级</title>
+<title>编辑学校</title>
 <meta name="robots" content="noindex, nofollow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="/Public/admin/css/general.css" rel="stylesheet" type="text/css" />
 <link href="/Public/admin/css/main.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="../js/transport.js"></script>
-<script type="text/javascript" src="./js/common.js"></script>
+<script type="text/javascript" src="/Public/admin/js/transport.js"></script>
+<script type="text/javascript" src="/Public/admin/js/common.js"></script>
 </head>
 <body>
 <h1>
-<span class="action-span1">添加班级</span><span id="search_id" class="action-span1"></span>
+<span class="action-span1">编辑学校</span><span id="search_id" class="action-span1"></span>
 <div style="clear:both"></div>
 </h1>
-<!-- 添加新闻 -->
+ 
+<!-- 添加新闻类别 -->
 <div class="list-div">
-<form method="post" action="add_pro" enctype="multipart/form-data">
+<form method="post" action="/admin.php/home/message/sch_edit">
 	<table cellspacing='1' cellpadding='3'>
+		<input type="hidden" value="<?php echo ($list['s_id']); ?>" name="s_id">
 		<tr>
-			<td align='right'>班级图标：</td>
-			<td><input type="file" name="myfiles"></td>
+			<td align="right">学校名称：</td>
+			<td><input type="text" name="s_name" value="<?php echo ($list['s_name']); ?>"></td>
 		</tr>
 		<tr>
-			<td align='right'>班级名称：</td>
-			<td><input type="text" name="classname" size=80></td>
-		</tr>
-		<tr>
-			<td align='right'>课程介绍：</td>
-			<td><textarea name="jianjie" rows="20" cols="100"></textarea></td>
-		</tr>	
-		<tr>
-			<td align='center' colspan=2><input type="submit" value='添加新闻'></td>	
+			<td align="right"><input type="submit" value='编辑学校'></td>	
+			<td></td>
 		</tr>
 	</table>
 </form>
 </div>
-<br/>
+<br />
 <div id="footer">
 版权所有 &copy; 八维研修学院软件工程学院1302phpA班，并保留所有权利。</div>
 </body>
