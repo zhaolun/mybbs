@@ -162,16 +162,36 @@ class MessageController extends Controller {
     public function sch_add()
     {
         //var_dump($_POST);
-        $modle=M("school");
+        $model=M("school");
         $data=$model->create();
-        $sch=$model->add();
+        $sch=$model->add($data);
         if($sch)
         {
             $this->redirect("/admin.php/home/message/school");
         }else
         {
-            $this->error();
+            $this->error("添加失败");
         }
+    }
+    //学校删除
+    public function sch_del()
+    {
+        //var_dump($_GET);
+        $s_id=$_GET['s_id'];
+        $model=M('school');
+        $del=$model->where("s_id=$s_id")->delete();
+        if($del)
+        {
+            $this->redirect("/admin.php/home/message/school");
+        }else
+        {
+            $this->error("删除失败");
+        }
+    }
+    //显示编辑form
+    public function sch_edit()
+    {
+        $this->display();
     }
     public function student()
     {

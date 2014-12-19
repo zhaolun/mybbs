@@ -28,14 +28,14 @@ class ProblemController extends Controller {
 	}
 	public function add_do(){
 		header("content-type:text/html;charset=utf-8");
-		print_r($_POST);die;
+		//print_r($_POST);die;
 		$user = M('question');
-		$data = $_POST['status'];
-		$data = $_POST['title'];
-        $data = $_POST['content'];
-		$data = time();
-		//print_r($data);die;
-        if ($user->add($data)){
+		$data['status'] = $_POST['status'];
+		$data['title'] = $_POST['title'];
+        $data['content'] = $_POST['content'];
+		$data['time'] = time();
+		print_r($data[]);die;
+        if ($user->add($data[])){
 	
              $this->redirect('/admin.php/Home/problem/lists', "", 2, '添加成功  页面跳转中...请等待。');
          }else{
