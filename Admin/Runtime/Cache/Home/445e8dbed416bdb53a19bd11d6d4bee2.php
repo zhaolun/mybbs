@@ -187,8 +187,9 @@ H1 a {
         <ul class="MM">
           <li><a href="/admin.php/home/class/add">添加班级</a></li>
           <li><a href="/admin.php/home/intro/add">添加课程</a></li>
+		  <li><a href="/admin.php/home/intro/addlist">添加阶段</a></li>
           <li><a href="/admin.php/home/class/addlist">班级列表</a></li>
-          <li><a href="/admin.php/home/intro/addlist">课程列表</a></li>
+          <li><a href="/admin.php/home/intro/kechenglist">课程列表</a></li>
         </ul>
       </div>
 
@@ -246,7 +247,7 @@ H1 a {
 		<td width="87%" valign="top">
 			<div style="margin:10px;padding:10px;">
 				<head>
-<title>添加公司信息</title>
+<title>新闻类别列表</title>
 <meta name="robots" content="noindex, nofollow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="/Public/admin/css/general.css" rel="stylesheet" type="text/css" />
@@ -256,41 +257,32 @@ H1 a {
 </head>
 <body>
 <h1>
-<span class="action-span1">添加公司信息</span><span id="search_id" class="action-span1"></span>
+<span class="action-span1">新闻类别列表</span><span id="search_id" class="action-span1"></span>
 <div style="clear:both"></div>
 </h1>
- 
-<!-- 添加新闻类别 -->
-<div class="list-div">
-<form method="post" action="com_add">
-	<table cellspacing='1' cellpadding='3'>
-		<tr>
-			<td align='right'>公司名称：</td>
-			<td><input type="text" name="com_name"></td>
-		</tr>
-		<tr>
-			<td align='right'>创建时间：</td>
-			<td><input type="text" name="r_time" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd',autoPickDate:true,skin:'default'})"   value="" /></td>
-		</tr>
-		<tr>
-			<td align='right'>公司网址：</td>
-			<td><input name="r_url"></td>
-		</tr>
-		<tr>
-			<td align='right'>招收人数：</td>
-			<td><input name="r_num"></td>
-
-		</tr>
-		<tr>
-			<td align="right"><input type="submit" value='添加公司信息'></td>	
-			<td></td>
-		</tr>
-	</table>
+<!-- 新闻类别搜索 -->
+<form>
+学校名称：<input type="text" name=""><input type="button" value="ajax搜索" onclick="">
 </form>
+<!-- 新闻类别列表 -->
+<div class="list-div">
+<a href="/admin.php/home/message/sch_addform">添加学校</a>
+<table cellspacing='1' cellpadding='3'>
+  <tr>
+      <th>学校编号</th>
+      <th>学校名称</th>
+      <th>操作</th>
+  </tr>
+  <?php if(is_array($list)): foreach($list as $key=>$val): ?><tr>  
+      <td><?php echo ($val["s_id"]); ?></td>
+      <td><?php echo ($val["s_name"]); ?></td>
+      <td><a href="/admin.php/home/message/sch_del/s_id/<?php echo ($val["s_id"]); ?>">【删除】</a>
+<a href="/admin.php/home/message/sch_editform/s_id/<?php echo ($val["s_id"]); ?>">【编辑】</a></td>
+    </tr><?php endforeach; endif; ?>
+  
+</table>
 </div>
 <br />
-<script type="text/javascript" src="/Public/js/My97DatePicker/WdatePicker.js"></script>
-
 <div id="footer">
 版权所有 &copy; 八维研修学院软件工程学院1302phpA班，并保留所有权利。</div>
 </body>

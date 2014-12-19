@@ -247,7 +247,7 @@ H1 a {
 		<td width="87%" valign="top">
 			<div style="margin:10px;padding:10px;">
 				<head>
-<title>课程列表</title>
+<title>添加新闻类别</title>
 <meta name="robots" content="noindex, nofollow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="/Public/admin/css/general.css" rel="stylesheet" type="text/css" />
@@ -257,45 +257,28 @@ H1 a {
 </head>
 <body>
 <h1>
-<span class="action-span1">课程列表</span><span id="search_id" class="action-span1"></span>
+<span class="action-span1">添加职位类别</span><span id="search_id" class="action-span1"></span>
 <div style="clear:both"></div>
 </h1>
-<!-- 新闻搜索 -->
-<center>标题：<input type="text" name="" size=40><input type="button" value="ajax搜索" onclick=""></center>
-<!-- 新闻列表 -->
-<div class="list-div">
-<table cellspacing='1' cellpadding='3'>
-  <tr>
-	<th  class="group-title"><input type="checkbox" name="">全选/反选</th>
-    <th  class="group-title">编号</th>
-	<th  class="group-title">课程名称</th>
-	<th  class="group-title">阶段</th>
-	<th  class="group-title">阶段内容</th>
-	<th  class="group-title">目标</th>
-	<th  class="group-title">操作</th>
-  </tr>
-  <?php if(is_array($info)): foreach($info as $key=>$vo): ?><tr class="table_tr">
-	<td width="15%"><input type="checkbox"></td>
-	<td width="15%"><?php echo ($vo["bbs_id"]); ?></td>
-    <td width="15%"><?php echo ($vo["bbs_jieduan"]); ?></td>
-	 <td width="15%"><?php echo ($vo["neirong"]); ?></td>
-    <td width="15%"><?php echo ($vo["mubiao"]); ?></td>
-	 <td width="15%"><?php echo ($vo["bbs_name"]); ?></td>
-	<td width="10%">删除|编辑</td>
-  </tr><?php endforeach; endif; ?>
  
-  <tr align="center">
-	<td colspan=7>
-		<input type="button" value="全选" onclick="">
-		<input type="button" value="反选" onclick="">
-		<input type="button" value="全不选" onclick="">
-		<input type="button" value="添加" onclick="">
-		<input type="button" value="修改" onclick="">
-		<input type="button" value="ajax删除" onclick="">
-	</td>
-  </tr>
-  
-</table>
+<!-- 添加新闻类别 -->
+<div class="list-div">
+<form method="post" action="/admin.php/home/position/addpro">
+	<table cellspacing='1' cellpadding='3'>
+		<tr>
+			<td align='right'>职位名称：</td>
+			<td><input type="text" name="p_name" size=80></td>
+		</tr>
+		<tr>
+			<td align='right'>职位描述：</td>
+			<td><textarea name="p_desc" rows="20" cols="100"></textarea></td>
+		</tr>
+		
+		<tr>
+			<td align='center' colspan=2><input type="submit" value='添加职位类别'></td>	
+		</tr>
+	</table>
+</form>
 </div>
 <br />
 <div id="footer">

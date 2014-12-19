@@ -187,8 +187,9 @@ H1 a {
         <ul class="MM">
           <li><a href="/admin.php/home/class/add">添加班级</a></li>
           <li><a href="/admin.php/home/intro/add">添加课程</a></li>
+		  <li><a href="/admin.php/home/intro/addlist">添加阶段</a></li>
           <li><a href="/admin.php/home/class/addlist">班级列表</a></li>
-          <li><a href="/admin.php/home/intro/addlist">课程列表</a></li>
+          <li><a href="/admin.php/home/intro/kechenglist">课程列表</a></li>
         </ul>
       </div>
 
@@ -246,54 +247,53 @@ H1 a {
 		<td width="87%" valign="top">
 			<div style="margin:10px;padding:10px;">
 				<head>
-<title>编辑公司信息</title>
+<title>添加新闻</title>
 <meta name="robots" content="noindex, nofollow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="/Public/admin/css/general.css" rel="stylesheet" type="text/css" />
 <link href="/Public/admin/css/main.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="/Public/admin/js/transport.js"></script>
-<script type="text/javascript" src="/Public/admin/js/common.js"></script>
+<script type="text/javascript" src="../js/transport.js"></script>
+<script type="text/javascript" src="./js/common.js"></script>
 </head>
 <body>
 <h1>
-<span class="action-span1">编辑公司信息</span><span id="search_id" class="action-span1"></span>
+<span class="action-span1">添加讲师信息</span><span id="search_id" class="action-span1"></span>
 <div style="clear:both"></div>
 </h1>
  
-<!-- 添加新闻类别 -->
+<!-- 添加新闻 -->
 <div class="list-div">
-<form method="post" action="/admin.php/home/message/com_edit">
+<form method="post" action="/admin.php/home/teacher/addpro" enctype="multipart/form-data" >
 	<table cellspacing='1' cellpadding='3'>
 		<tr>
-			<td><input type="hidden" name="com_id" value="<?php echo $list['com_id']?>"></td>
+			<td align='right'>讲师照片：</td>
+			<td><input type="file" name="filename" size=80></td>
 		</tr>
 		<tr>
-			<td align='right'>公司名称：</td>
-			<td><input type="text" name="com_name" value="<?php echo $list['com_name']?>"></td>
+			<td align='right'>讲师名字：</td>
+			<td><input type="text" name="t_name" size=80></td>
 		</tr>
 		<tr>
-			<td align='right'>创建时间：</td>
-			<td><input type="text" name="r_time" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd',autoPickDate:true,skin:'default'})"  value="<?php echo $list['r_time']?>" /></td>
+			<td align='right'>讲师介绍：</td>
+			<td><textarea name="t_desc" rows="20" cols="100"></textarea></td>
 		</tr>
 		<tr>
-			<td align='right'>公司网址：</td>
-			<td><input name="r_url" value="<?php echo $list['r_url']?>"></td>
+			<td align='right'>职位名称：</td>
+			<td>
+				<select name="p_id">
+					<option>--请选择职位名称--</option>
+				<?php if(is_array($list)): foreach($list as $key=>$vo): ?><option value=<?php echo ($vo["p_id"]); ?>><?php echo ($vo["position"]); ?></option><?php endforeach; endif; ?>
+				</select>
+			</td>
 		</tr>
-		<tr>
-			<td align='right'>招收人数：</td>
-			<td><input name="r_num" value="<?php echo $list['r_num']?>"></td>
 
-		</tr>
 		<tr>
-			<td align="right"><input type="submit" value='编辑公司信息'></td>	
-			<td></td>
+			<td align='center' colspan=2><input type="submit" value='添加讲师信息'></td>	
 		</tr>
 	</table>
 </form>
 </div>
 <br />
-<script type="text/javascript" src="/Public/js/My97DatePicker/WdatePicker.js"></script>
-
 <div id="footer">
 版权所有 &copy; 八维研修学院软件工程学院1302phpA班，并保留所有权利。</div>
 </body>

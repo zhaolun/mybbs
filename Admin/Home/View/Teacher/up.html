@@ -1,0 +1,58 @@
+<head>
+<title>添加新闻</title>
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="/Public/admin/css/general.css" rel="stylesheet" type="text/css" />
+<link href="/Public/admin/css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/transport.js"></script>
+<script type="text/javascript" src="./js/common.js"></script>
+</head>
+<body>
+<h1>
+<span class="action-span1">添加讲师信息</span><span id="search_id" class="action-span1"></span>
+<div style="clear:both"></div>
+</h1>
+ 
+<!-- 添加新闻 -->
+<div class="list-div">
+<form method="post" action="/admin.php/home/teacher/uppro" enctype="multipart/form-data" >
+	<table cellspacing='1' cellpadding='3'>
+		<tr>
+			<td align='right'>讲师照片：</td>
+			<td><input type="file" name="filename" size="80"></td>
+		</tr>
+		<tr>
+			<td align='right'>讲师名字：</td>
+			<td><input type="text" name="t_name" size=80 value="{$list.t_name}"></td>
+		</tr>
+		<tr>
+			<td align='right'>讲师介绍：</td>
+			<td><textarea name="t_desc" rows="20" cols="100">{$list.t_desc}</textarea></td>
+		</tr>
+		<tr>
+			<td align='right'>职位名称：</td>
+			<td>
+				<select name="p_id">
+					<option>--请选择职位名称--{$list.p_id}</option>
+				<foreach name="info" item="vo" >
+					<if condition="$vo.p_id eq $list.p_id">
+					<option value="{$vo.p_id}" selected>{$vo.position}</option>
+					<else />
+					<option value="{$vo.p_id}">{$vo.position}{$vo.p_id}</option>
+					</if>
+			   </foreach>
+				</select>
+			</td>
+		</tr>
+
+		<tr>
+			<td align='center' colspan=2><input type="submit" value='添加讲师信息'></td>	
+		</tr>
+	</table>
+</form>
+</div>
+<br />
+<div id="footer">
+版权所有 &copy; 八维研修学院软件工程学院1302phpA班，并保留所有权利。</div>
+</body>
+</html>
