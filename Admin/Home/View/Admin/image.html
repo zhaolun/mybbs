@@ -1,0 +1,46 @@
+<head>
+<title>前台幻灯片列表</title>
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="/Public/admin/css/general.css" rel="stylesheet" type="text/css" />
+<link href="/Public/admin/css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/Public/admin/js/transport.js"></script>
+<script type="text/javascript" src="./js/common.js"></script>
+</head>
+<body>
+<h1>
+<span class="action-span1">前台幻灯片列表</span><span id="search_id" class="action-span1"></span>
+<div style="clear:both"></div>
+</h1>
+<!-- 新闻类别列表 -->
+<div class="list-div">
+<table cellspacing='1' cellpadding='3'>
+  <tr>
+    <th  class="group-title">编号</th>
+	<th  class="group-title">幻灯片</th>
+	<th  class="group-title">幻灯片名称</th>
+	<th  class="group-title">幻灯片介绍</th>
+	<th  class="group-title">操作</th>
+  </tr>
+  <foreach name="info" item="vo">
+  <tr class="table_tr">
+	<td width="10%">{$vo.img_id}</td>
+    <td width="10%">{$vo.img_path}</td>
+    <td width="30%">{$vo.img_name}</td>
+    <td width="40%">{$vo.img_desc}</td>
+	<td width="20%"><a href="/admin.php/Home/admin/delnav/id/{$vo.img_id}">删除</a>||<a href="/admin.php/Home/admin/upnav/id/{$vo.img_id}">编辑</a></td>
+  </tr>
+  </foreach>
+  <tr align="center">
+	<td colspan=4>
+		<input type="button" value="看哪个幻灯片不爽?去添加一个" onclick="location.href='/admin.php/Home/admin/add_image'">
+	</td>
+  </tr>
+  
+</table>
+</div>
+<br />
+<div id="footer">
+版权所有 &copy; 八维研修学院软件工程学院1302phpA班，并保留所有权利。</div>
+</body>
+</html>
