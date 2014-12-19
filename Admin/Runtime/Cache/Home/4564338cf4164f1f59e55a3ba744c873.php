@@ -282,11 +282,11 @@ H1 a {
  
 <!-- 添加新闻类别 -->
 <div class="list-div">
-<form method="post" action="/admin.php/Home/admin/nav_addpro">
+<form method="post" action="/admin.php/Home/admin/img_addpro" enctype="multipart/form-data">
 	<table cellspacing='1' cellpadding='3'>
 		<tr>
 			<td align='right'>幻灯片名称：</td>
-			<td><input type="text" name="nav_name" size=40></td>
+			<td><input type="text" name="img_title" size=40></td>
 		</tr>
 		<tr>
 			<td align='right'>幻灯片文件：</td>
@@ -294,10 +294,10 @@ H1 a {
 		</tr>
 		<tr>
 			<td align='right'>幻灯片简介：</td>
-			<td><textarea name="nav_link" rows="15" cols="80"></textarea></td>
+			<td><textarea name="img_desc" rows="15" cols="80"></textarea></td>
 		</tr>
 		<tr>
-			<td align='center' colspan=2><input type="submit" value='添加导航'></td>	
+			<td align='center' colspan=2><input type="submit" value='添加幻灯片'></td>	
 		</tr>
 	</table>
 </form>

@@ -1,6 +1,7 @@
 <?php
 namespace Home\Controller;
 use Think\Controller;
+use \Think\Upload;
 class AdminController extends Controller {
 	//主页信息
     public function index(){
@@ -67,6 +68,38 @@ class AdminController extends Controller {
 
 	//添加幻灯片
 	function add_image(){
+		$this->display();
+	}
+
+
+	function img_addpro(){
+		$db=M("slide_image");
+		$data=$db->create();
+		$upload = new Upload();
+		$upload->maxSize = 3145728;
+		$upload->exts = array('jpg','gif','png','jpeg');
+		$upload->rootPath = './Public';
+		$upload->savePath = '/images/slide_image/';
+		$upload->saveName = substr($_FILES['myfile']['name'],0,strrpos($_FILES['myfile']['name'],"."));
+		$data['img_path']='/Public/images/slide_image/'.date('Y-m-d',time()).'/'.$_FILES['myfile']['name'];
+		if($upload->upload()&&$db->add($data))
+			$this->success('添加成功,正在跳转...','/admin.php/Home/admin/image',2);
+		else
+			$this->error('添加失败,正在跳转...','/admin.php/Home/admin/image',2);
+	}
+
+	//删除幻灯片
+	function delimg(){
+		$db=M("slide_image");
+		//echo $_GET['id'];die;
+		if($db->where("img_id=".$_GET['id'])->delete())
+			$this->success('删除成功,正在跳转...');
+		else
+			$this->error('删除失败,正在跳转...');
+	}
+
+	//首页LOGO设计
+	function logo(){
 		$this->display();
 	}
 	
