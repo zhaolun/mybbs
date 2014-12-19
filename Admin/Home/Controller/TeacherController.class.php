@@ -14,8 +14,8 @@ class TeacherController extends Controller {
         $this->assign('list',$data);
     	$this->display('add');
     }
-	public function addpro(){
-
+	public function addpro()
+	{
 		$upload = new \Think\Upload();// 实例化上传类
 		$upload->maxSize = 3145728 ;// 设置附件上传大小
 		$upload->exts = array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型 // 设置附件上传根目录

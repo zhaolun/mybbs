@@ -189,13 +189,55 @@ class MessageController extends Controller {
         }
     }
     //显示编辑form
-    public function sch_edit()
+    public function sch_editform()
     {
+        $s_id=$_GET['s_id'];
+        //echo $s_id;die;
+        $model=M("school");
+        $data=$model->find($s_id);
+        //echo "<pre>";var_dump($data['s_id']);die;
+        $this->assign("list",$data);
         $this->display();
     }
+    //执行编辑
+    public function sch_edit()
+    {
+        //var_dump($_POST);
+        $s_id=$_POST['s_id'];
+        //echo $s_id;
+        $model=M('school');
+        $data['s_name']=$_POST['s_name'];
+        $update=$model->where("s_id=$s_id")->save($data);
+        if($update)
+        {
+            $this->redirect("/admin.php/home/message/school");
+        }else
+        {
+            $this->error("编辑失败");
+        }
+    }
+    //显示学生列表
     public function student()
     {
-    	echo "df";
+    	$this->display();
     }
 
+    //显示添加学生form
+    public function stu_addform()
+    {
+        $modle=M("company");
+        $com=$modle->select();
+        $this->assign('com',$com);
+
+        $model1=M('school');
+        $sch=$model1->select();
+        $this->assign('sch',$sch);
+
+        $this->display();
+    }
+    //执行学生添加
+    public function stu_add()
+    {
+        echo "<pre>";var_dump($_POST);
+    }
 }

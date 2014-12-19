@@ -1,5 +1,5 @@
 <head>
-<title>新闻类别列表</title>
+<title>学生列表</title>
 <meta name="robots" content="noindex, nofollow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="/Public/admin/css/general.css" rel="stylesheet" type="text/css" />
@@ -9,50 +9,29 @@
 </head>
 <body>
 <h1>
-<span class="action-span1">新闻类别列表</span><span id="search_id" class="action-span1"></span>
+<span class="action-span1">学生列表</span><span id="search_id" class="action-span1"></span>
 <div style="clear:both"></div>
 </h1>
 <!-- 新闻类别搜索 -->
-<center>类别名称：<input type="text" name="" size=40><input type="button" value="ajax搜索" onclick=""></center>
+<form>
+学生名称：<input type="text" name="" size=40><input type="button" value="搜索" onclick="">
+</form>
+<a href="/admin.php/home/message/stu_addform">添加学生</a><br>
 <!-- 新闻类别列表 -->
 <div class="list-div">
 <table cellspacing='1' cellpadding='3'>
   <tr>
-  <th  class="group-title"><input type="checkbox" name="">全选/反选</th>
-    <th  class="group-title">编号</th>
-  <th  class="group-title">类别名称</th>
-  <th  class="group-title">类别描述</th>
+    <th  class="group-title">学生编号</th>
+    <th  class="group-title">学生名称</th>
+    <th  class="group-title">毕业学校</th>
+    <th  class="group-title">入职时间</th>
+    <th  class="group-title">所属公司</th>
+    <th  class="group-title">期望月薪</th>
+    <th  class="group-title">学生视屏</th>
+    <th  class="group-title">添加时间</th>
+    <th  class="group-title">操作</th>
   </tr>
-  <tr class="table_tr">
-  <td width="5%"><input type="checkbox" name=""></td>
-    <td width="5%">1</td>
-    <td width="20%">体育新闻</td>
-    <td width="35%">ddddddddddd</td>
-  </tr>
-
-  <tr class="table_tr">
-  <td width="5%"><input type="checkbox" name=""></td>
-    <td width="5%">2</td>
-    <td width="20%">军事新闻</td>
-    <td width="35%">ddddddddddd</td>
-  </tr>
-  <tr class="table_tr">
-  <td width="5%"><input type="checkbox" name=""></td>
-    <td width="5%">3</td>
-    <td width="20%">财新新闻</td>
-    <td width="35%">ddddddddddd</td>
-  </tr>
-  <tr align="center">
-  <td colspan=7>
-    <input type="button" value="全选" onclick="">
-    <input type="button" value="反选" onclick="">
-    <input type="button" value="全不选" onclick="">
-    <input type="button" value="添加" onclick="">
-    <input type="button" value="修改" onclick="">
-    <input type="button" value="ajax删除" onclick="">
-  </td>
-  </tr>
-  
+ 
 </table>
 </div>
 <br />
