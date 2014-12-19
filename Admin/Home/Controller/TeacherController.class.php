@@ -20,13 +20,14 @@ class TeacherController extends Controller {
 		$upload->maxSize = 3145728 ;// 设置附件上传大小
 		$upload->exts = array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型 // 设置附件上传根目录
 		$upload->rootPath = './Public/';
-		$upload->savePath = '/Uploads/'; 
+		$upload->savePath = '/Uploads/';
+		$upload->saveName=substr($_FILES['filename']['name'],0,strrpos($_FILES['filename']['name'],"."));
 		// 上传文件
 		$model=M('teacher');
         $data['t_name']=$_POST['t_name'];
         $data['t_desc']=$_POST['t_desc'];
         $data['p_id']=$_POST['p_id'];
-		$data['img']='/Public/Uploads/'.$_FILES['filename']['name'];
+		$data['img']='/Public/Uploads/'.date("Y-m-d",time()).'/'.$_FILES['filename']['name'];
 		//var_dump($data);die;
 		$info = $upload->upload();
 		if($info){

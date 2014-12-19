@@ -1,4 +1,4 @@
-<html>
+<?php if (!defined('THINK_PATH')) exit();?><html>
 <head>
 <title>MyBBS后台管理</title>
 </head>
@@ -233,18 +233,6 @@ H1 a {
 							<li><a href="/admin.php/home/problem/add" >添加问题</a></li>
 							</ul>
 							</div>
-
-							<h1 class="type"><a>yi利一组</a></h1>
-							<div class="content">
-							<table width="100%" border="0" cellspacing="0" cellpadding="0">
-							<tr>
-							<td><img src="/Public/admin/images/menu_topline.gif" width="182" height="5" /></td>
-							</tr>
-							</table>
-							<ul class="MM">
-							<li><a href="/admin.php/home/one/lists" >一组信息</a></li>
-							</ul>
-							</div>
 						</div>
 					</td>
 				</tr>
@@ -258,7 +246,54 @@ H1 a {
 		</script>
 		<td width="87%" valign="top">
 			<div style="margin:10px;padding:10px;">
-				{__CONTENT__}
+				<head>
+<title>添加问题</title>
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="../css/general.css" rel="stylesheet" type="text/css" />
+<link href="../css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/transport.js"></script>
+<script type="text/javascript" src="./js/common.js"></script>
+</head>
+<body>
+<h1>添加问题</h1>
+<a href='/admin.php/Home/problem/lists'>问题列表</a>
+
+<!-- 添加新闻类别 -->
+<div class="list-div">
+<form method="post" action="/admin.php/Home/problem/add_do">
+	<table cellspacing='1' cellpadding='3'>
+	    <tr>
+			<td align='right'>问题类别：</td>
+			<td><select name="status">
+			    <option selected>-请选择-</option>
+				<option value="1" >热点问题</option>
+				<option value="0">PHP相关问题</option>
+			</select></td>
+		</tr>
+
+		<tr>
+			<td align='right'>问题名称：</td>
+			<td><input type="text" name="title" size=80></td>
+		</tr>
+		
+		<tr>
+			<td align='right'>问题答案：</td>
+			<td>
+			<textarea name="content" rows="10" cols="40"></textarea>
+		</tr>
+
+		<tr>
+			<td align='center' colspan=2><input type="submit" value='添加'></td>	
+		</tr>
+	</table>
+</form>
+</div>
+<br />
+<div id="footer">
+版权所有 &copy; 八维研修学院软件工程学院1308phpA班yi利小组，并保留所有权利。</div>
+</body>
+</html>
 			</div>
 		</td>
 	</tr>

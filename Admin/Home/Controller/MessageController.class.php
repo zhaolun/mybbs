@@ -114,10 +114,7 @@ class MessageController extends Controller {
     	//var_dump($data['com_id']);die;
     	$this->assign('list',$data);
     	$this->display();
-    }/*
-    $User = M("User"); // 实例化User对象// 要修改的数据对象属性赋值
-    $data['name'] = 'ThinkPHP';$data['email'] = 'ThinkPHP@gmail.com';
-    $User->where('id=5')->save($data); // 根据条件更新记录*/
+    }
     //执行编辑
     public function com_edit()
     {
