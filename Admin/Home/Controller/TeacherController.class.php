@@ -37,4 +37,39 @@ class TeacherController extends Controller {
 			$this->error($upload->getError());
 		}
     }
+		public function del(){
+		$id=$_GET['id'];	
+		$model=M('teacher');
+		$arr=$model->delete($id);
+		//echo $arr;die;
+		if($arr){
+			$this->success("删除成功",U("/admin.php/home/teacher/lists"));
+		}else{
+			$this->error();
+		}
+	}
+	public function up(){
+		$id=$_GET['id'];
+		$model=M("teacher");
+        $data=$model->find($id);
+		$res=M("position");
+        $arr=$res->select();
+		$this->assign('info',$arr);
+        $this->assign('list',$data);
+		$this->display('up');
+	}
+	/*
+	public function uppro(){
+		$id=$_POST['id'];
+		$model=M('teacher');
+		$data['position']=$_POST['p_name'];
+		$data['p_desc']=$_POST['p_desc'];
+		$arr=$model->where("p_id=$id")->save($data);
+		if($arr){
+			$this->success('编辑成功',U('/admin.php/home/teacher/lists'));
+		}else{
+			$this->error();
+		}
+	}
+*/
 }
