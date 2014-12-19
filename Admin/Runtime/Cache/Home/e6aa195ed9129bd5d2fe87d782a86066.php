@@ -187,8 +187,9 @@ H1 a {
         <ul class="MM">
           <li><a href="/admin.php/home/class/add">添加班级</a></li>
           <li><a href="/admin.php/home/intro/add">添加课程</a></li>
+		  <li><a href="/admin.php/home/intro/addlist">添加阶段</a></li>
           <li><a href="/admin.php/home/class/addlist">班级列表</a></li>
-          <li><a href="/admin.php/home/intro/addlist">课程列表</a></li>
+          <li><a href="/admin.php/home/intro/kechenglist">课程列表</a></li>
         </ul>
       </div>
 
@@ -232,6 +233,18 @@ H1 a {
 							<li><a href="/admin.php/home/problem/add" >添加问题</a></li>
 							</ul>
 							</div>
+
+							<h1 class="type"><a>yi利一组</a></h1>
+							<div class="content">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+							<td><img src="/Public/admin/images/menu_topline.gif" width="182" height="5" /></td>
+							</tr>
+							</table>
+							<ul class="MM">
+							<li><a href="/admin.php/home/one/list" >一组信息</a></li>
+							</ul>
+							</div>
 						</div>
 					</td>
 				</tr>
@@ -269,13 +282,15 @@ H1 a {
 	<th  class="group-title"><input type="checkbox" name="">全选/反选</th>
     <th  class="group-title">编号</th>
 	<th  class="group-title">问题名称</th>
+	<th  class="group-title">时间</th>
 	<th  class="group-title">来源</th>
     <th  class="group-title">操作</th>
   </tr>
 <?php if(is_array($data[user])): foreach($data[user] as $key=>$it): ?><tr class="table_tr">
 	<td width="5%"><input type="checkbox" name=""></td>
     <td width="5%"><?php echo ($it["id"]); ?></td>
-    <td width="35%"><?php echo ($it["title"]); ?></td>
+    <td width="30%"><?php echo ($it["title"]); ?></td>
+	<td width="30%"><?php echo ($it["time"]); ?></td>
     <td width="10%">yi利小组</td>
 	<td width="10%">
 	<a href='/admin.php/Home/problem/del?id=<?php echo ($it["id"]); ?>'>删除</a>

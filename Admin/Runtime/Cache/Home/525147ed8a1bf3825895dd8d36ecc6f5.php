@@ -187,8 +187,9 @@ H1 a {
         <ul class="MM">
           <li><a href="/admin.php/home/class/add">添加班级</a></li>
           <li><a href="/admin.php/home/intro/add">添加课程</a></li>
+		  <li><a href="/admin.php/home/intro/addlist">添加阶段</a></li>
           <li><a href="/admin.php/home/class/addlist">班级列表</a></li>
-          <li><a href="/admin.php/home/intro/addlist">课程列表</a></li>
+          <li><a href="/admin.php/home/intro/kechenglist">课程列表</a></li>
         </ul>
       </div>
 
@@ -266,8 +267,8 @@ H1 a {
 			<td align='right'>问题类别：</td>
 			<td><select name="status">
 			    <option selected>-请选择-</option>
-				<option value="热点问题" >热点问题</option>
-				<option value="PHP相关问题">PHP相关问题</option>
+				<option value="1" >热点问题</option>
+				<option value="0">PHP相关问题</option>
 			</select></td>
 		</tr>
 
@@ -278,7 +279,8 @@ H1 a {
 		
 		<tr>
 			<td align='right'>问题答案：</td>
-			<td><input type="text" name="content" size=80></td>
+			<td>
+			<textarea name="content" rows="10" cols="40"></textarea>
 		</tr>
 
 		<tr>
