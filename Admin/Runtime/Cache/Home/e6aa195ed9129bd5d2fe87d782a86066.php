@@ -242,7 +242,7 @@ H1 a {
 							</tr>
 							</table>
 							<ul class="MM">
-							<li><a href="/admin.php/home/one/list" >一组信息</a></li>
+							<li><a href="/admin.php/home/one/lists" >一组信息</a></li>
 							</ul>
 							</div>
 						</div>
@@ -279,7 +279,6 @@ H1 a {
 <div class="list-div">
 <table cellspacing='1' cellpadding='3'>
   <tr>
-	<th  class="group-title"><input type="checkbox" name="">全选/反选</th>
     <th  class="group-title">编号</th>
 	<th  class="group-title">问题名称</th>
 	<th  class="group-title">时间</th>
@@ -287,7 +286,6 @@ H1 a {
     <th  class="group-title">操作</th>
   </tr>
 <?php if(is_array($data[user])): foreach($data[user] as $key=>$it): ?><tr class="table_tr">
-	<td width="5%"><input type="checkbox" name=""></td>
     <td width="5%"><?php echo ($it["id"]); ?></td>
     <td width="30%"><?php echo ($it["title"]); ?></td>
 	<td width="30%"><?php echo ($it["time"]); ?></td>
@@ -297,16 +295,6 @@ H1 a {
     <a href='/admin.php/Home/problem/upd?id=<?php echo ($it["id"]); ?>'>修改</a>
     </td>
 	</tr><?php endforeach; endif; ?>
-  <tr align="center">
-	<td colspan=7>
-		<input type="button" value="全选" onclick="">
-		<input type="button" value="反选" onclick="">
-		<input type="button" value="全不选" onclick="">
-		<input type="button" value="添加" onclick="">
-		<input type="button" value="修改" onclick="">
-	</td>
-  </tr>
-  
 </table>
 <div id='page_list' align='center'>
         <?php echo ($data['page']); ?>
