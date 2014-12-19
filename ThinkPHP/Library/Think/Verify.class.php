@@ -87,19 +87,24 @@ class Verify {
         // 验证码不能为空
         $secode = session($key);
         if(empty($code) || empty($secode)) {
+			echo 1;
             return false;
         }
         // session 过期
         if(NOW_TIME - $secode['verify_time'] > $this->expire) {
-            session($key, null);
+            session($key.$id, null);
+			echo 2;
             return false;
         }
-
+var_dump($this->authcode(strtoupper($code)));
+echo "<hr>";
+var_dump($secode['verify_code']);
+die;
         if($this->authcode(strtoupper($code)) == $secode['verify_code']) {
             $this->reset && session($key, null);
             return true;
         }
-
+		echo 3;
         return false;
     }
 
