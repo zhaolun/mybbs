@@ -1,4 +1,4 @@
-<html>
+<?php if (!defined('THINK_PATH')) exit();?><html>
 <head>
 <title>MyBBS后台管理</title>
 </head>
@@ -246,7 +246,58 @@ H1 a {
 		</script>
 		<td width="87%" valign="top">
 			<div style="margin:10px;padding:10px;">
-				{__CONTENT__}
+				<head>
+<title>新闻列表</title>
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="/Public/admin/css/general.css" rel="stylesheet" type="text/css" />
+<link href="/Public/admin/css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/transport.js"></script>
+<script type="text/javascript" src="./js/common.js"></script>
+</head>
+<body>
+<h1>
+<span class="action-span1">新闻列表</span><span id="search_id" class="action-span1"></span>
+<div style="clear:both"></div>
+</h1>
+<!-- 新闻搜索 -->
+<center>标题：<input type="text" name="" size=40><input type="button" value="ajax搜索" onclick=""></center>
+<!-- 新闻列表 -->
+<div class="list-div">
+<table cellspacing='1' cellpadding='3'>
+  <tr>
+	<th  class="group-title"><input type="checkbox" name="">全选/反选</th>
+    <th  class="group-title">编号</th>
+	<th  class="group-title">班级名称</th>
+	<th  class="group-title">课程介绍</th>
+	<th  class="group-title">操作</th>
+  </tr>
+  <?php if(is_array($info)): foreach($info as $key=>$vo): ?><tr class="table_tr">
+	<td width="5%"><input type="checkbox"></td>
+	<td width="5%"><?php echo ($vo["pei_id"]); ?></td>
+    <td width="20%"><?php echo ($vo["pei_class"]); ?></td>
+    <td width="35%"><?php echo ($vo["pei_intro"]); ?></td>
+	<td width="35%">删除|编辑</td>
+  </tr><?php endforeach; endif; ?>
+ 
+  <tr align="center">
+	<td colspan=7>
+		<input type="button" value="全选" onclick="">
+		<input type="button" value="反选" onclick="">
+		<input type="button" value="全不选" onclick="">
+		<input type="button" value="添加" onclick="">
+		<input type="button" value="修改" onclick="">
+		<input type="button" value="ajax删除" onclick="">
+	</td>
+  </tr>
+  
+</table>
+</div>
+<br />
+<div id="footer">
+版权所有 &copy; 八维研修学院软件工程学院1302phpA班，并保留所有权利。</div>
+</body>
+</html>
 			</div>
 		</td>
 	</tr>

@@ -1,4 +1,4 @@
-<html>
+<?php if (!defined('THINK_PATH')) exit();?><html>
 <head>
 <title>MyBBS后台管理</title>
 </head>
@@ -246,7 +246,43 @@ H1 a {
 		</script>
 		<td width="87%" valign="top">
 			<div style="margin:10px;padding:10px;">
-				{__CONTENT__}
+				<head>
+<title>添加课程</title>
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="../css/general.css" rel="stylesheet" type="text/css" />
+<link href="../css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/transport.js"></script>
+<script type="text/javascript" src="./js/common.js"></script>
+</head>
+<body>
+<h1>
+<span class="action-span1">添加课程</span><span id="search_id" class="action-span1"></span>
+<div style="clear:both"></div>
+</h1>
+ 
+<!-- 添加新闻 -->
+<div class="list-div">
+<form method="post" action="add_pro">
+	<table cellspacing='1' cellpadding='3'>
+	<select name="id">
+	 <?php if(is_array($info)): foreach($info as $key=>$vo): ?><option value="<?php echo ($vo["pei_id"]); ?>"><?php echo ($vo["pei_class"]); ?></option><?php endforeach; endif; ?>
+	</select>
+		<tr>
+			<td align='right'>课程名称：</td>
+			<td><input type="text" name="kecheng" size=80></td>
+		</tr>	
+		<tr>
+			<td align='center' colspan=2><input type="submit" value='添加课程'></td>	
+		</tr>
+	</table>
+</form>
+</div>
+<br />
+<div id="footer">
+版权所有 &copy; 八维研修学院软件工程学院1302phpA班，并保留所有权利。</div>
+</body>
+</html>
 			</div>
 		</td>
 	</tr>
