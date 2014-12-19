@@ -266,12 +266,17 @@ H1 a {
 	<th  class="group-title">讲师姓名</th>
 	<th  class="group-title">职位名称</th>
 	<th  class="group-title">讲师介绍</th>
+	<th  class="group-title">操作</th>
   </tr>
   <?php if(is_array($list)): foreach($list as $key=>$vo): ?><tr class="table_tr">
     <td width="5%"><?php echo ($vo["id"]); ?></td>
     <td width="20%"><?php echo ($vo["t_name"]); ?></td>
     <td width="35%"><?php echo ($vo["position"]); ?></td>
     <td width="10%"><?php echo ($vo["t_desc"]); ?></td>
+	<td width="10%">
+	<a href="">删除</a>|
+	<a href="">编辑</a>
+	</td>
   </tr><?php endforeach; endif; ?>
 
 </table>

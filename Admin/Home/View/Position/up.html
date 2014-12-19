@@ -9,25 +9,29 @@
 </head>
 <body>
 <h1>
-<span class="action-span1">添加职位类别</span><span id="search_id" class="action-span1"></span>
+<span class="action-span1">编辑职位类别</span><span id="search_id" class="action-span1"></span>
 <div style="clear:both"></div>
 </h1>
  
 <!-- 添加新闻类别 -->
 <div class="list-div">
-<form method="post" action="/admin.php/home/position/addpro">
+<form method="post" action="/admin.php/home/position/uppro">
+<input type="hidden" name="id" value="{$list.p_id}">
 	<table cellspacing='1' cellpadding='3'>
 		<tr>
 			<td align='right'>职位名称：</td>
-			<td><input type="text" name="p_name" size=80></td>
+			<td><input type="text" name="p_name" size=80 value="<?php echo $list['position'];?>"></td>
 		</tr>
 		<tr>
 			<td align='right'>职位描述：</td>
-			<td><textarea name="p_desc" rows="20" cols="100"></textarea></td>
+			<td><textarea name="p_desc" rows="20" cols="100">
+				<?php echo $list['position'];?>
+			</textarea>
+			</td>
 		</tr>
 		
 		<tr>
-			<td align='center' colspan=2><input type="submit" value='添加职位类别'></td>	
+			<td align='center' colspan=2><input type="submit" value='编辑职位类别'></td>	
 		</tr>
 	</table>
 </form>

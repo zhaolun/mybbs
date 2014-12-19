@@ -246,7 +246,7 @@ H1 a {
 		<td width="87%" valign="top">
 			<div style="margin:10px;padding:10px;">
 				<head>
-<title>新闻类别列表</title>
+<title>添加新闻类别</title>
 <meta name="robots" content="noindex, nofollow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="/Public/admin/css/general.css" rel="stylesheet" type="text/css" />
@@ -256,34 +256,32 @@ H1 a {
 </head>
 <body>
 <h1>
-<span class="action-span1">职位类别列表</span><span id="search_id" class="action-span1"></span>
+<span class="action-span1">编辑职位类别</span><span id="search_id" class="action-span1"></span>
 <div style="clear:both"></div>
 </h1>
-<!-- 新闻类别列表 -->
+ 
+<!-- 添加新闻类别 -->
 <div class="list-div">
-<table cellspacing='1' cellpadding='3'>
-  <tr>
-    <th  class="group-title">编号</th>
-	<th  class="group-title">职位名称</th>
-	<th  class="group-title">职位描述</th>
-	<th  class="group-title">操作</th>
-  </tr>
-
-<?php if(is_array($list)): foreach($list as $key=>$vo): ?><tr class="table_tr">
-    <td width="5%"><?php echo ($vo["p_id"]); ?></td>
-    <td width="20%"><?php echo ($vo["position"]); ?></td>
-    <td width="35%"><?php echo ($vo["p_desc"]); ?></td>
-	<td width="10%">
-	<a href="/admin.php/home/position/del/id/<?php echo ($vo["p_id"]); ?>">删除</a>|
-	<a href="/admin.php/home/position/up/id/<?php echo ($vo["p_id"]); ?>">编辑</a>
-	</td>  </tr><?php endforeach; endif; ?>
-
-</table>
-<center>
-	<div>
-		<?php echo ($page); ?>
-	</div>
-</center>
+<form method="post" action="/admin.php/home/position/uppro">
+<input type="hidden" name="id" size=80 value="<?php echo ($list["p_id"]); ?>">
+	<table cellspacing='1' cellpadding='3'>
+		<tr>
+			<td align='right'>职位名称：</td>
+			<td><input type="text" name="p_name" size=80 value="<?php echo $list['position'];?>"></td>
+		</tr>
+		<tr>
+			<td align='right'>职位描述：</td>
+			<td><textarea name="p_desc" rows="20" cols="100">
+				<?php echo $list['position'];?>
+			</textarea>
+			</td>
+		</tr>
+		
+		<tr>
+			<td align='center' colspan=2><input type="submit" value='编辑职位类别'></td>	
+		</tr>
+	</table>
+</form>
 </div>
 <br />
 <div id="footer">

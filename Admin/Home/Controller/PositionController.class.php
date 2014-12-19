@@ -15,7 +15,6 @@ class PositionController extends Controller {
 		}else{
 			$this->error();
 		}
-
 	}
     public function lists(){
 		$User = M('position'); // 实例化User对象
@@ -48,9 +47,21 @@ class PositionController extends Controller {
 	public function up(){
 		$id=$_GET['id'];
 		$model=M("position");
-        $data=$model->where("p_id='$id'")->select();
+        $data=$model->find($id);
+		//var_dump($data[0]['position']);die;
         $this->assign('list',$data);
 		$this->display('up');
 	}
-
+	public function uppro(){
+		$id=$_POST['id'];
+		$model=M('position');
+		$data['position']=$_POST['p_name'];
+		$data['p_desc']=$_POST['p_desc'];
+		$arr=$model->where("p_id=$id")->save($data);
+		if($arr){
+			$this->success('编辑成功',U('/admin.php/home/position/lists'));
+		}else{
+			$this->error();
+		}
+	}
 }
