@@ -1,10 +1,11 @@
 <?php
 namespace Home\Controller;
 use Think\Controller;
+use Home\Model\UserModel;
 class MessageController extends Controller {
     public function company()
     {
-    	$model = M('company'); //实例化User对象
+    	/*$model = M('company'); //实例化User对象
 		$count= $model->count();//查询满足要求的总记录数
 		$Page = new \Think\Page($count,2);//实例化分页类 传入总记录数和每页显示的记录数
 		$show= $Page->show();//分页显示输出
@@ -15,14 +16,57 @@ class MessageController extends Controller {
 		$this->assign('list',$list);// 赋值数据集
 		$this->assign('page',$show);// 赋值分页输出
 		$this->display(); // 输出模板
-    	/*
+    	 */
     	$model=M("company");
         $data=$model->select();
-        var_dump($data);die;
+       // var_dump($data);die;
         $this->assign('list',$data);
         $this->display();
-        */
+       
     }
+    public function sphinx()
+    {
+   		require_once("/Public/sphinxapi.php");
+        $model = M("company");
+        $search=$_POST['com_name'];
+        //echo $search;
+        //$model = new Model(); 
+        $sphinx = new \SphinxClient();
+        //var_dump($sphinx);die;
+		$sphinx->SetServer("192.168.1.2",9312);
+		$sphinx->SetMatchMode(SPH_MATCH_ANY);
+		var_dump($j);die;
+		$result = $sphinx->query($search,'*');
+        $key = array_keys($result['matches']);
+        //$id = implode(',',$key);
+        //var_dump($result);die;
+        $ids = join(',',$key);
+        $where= '';
+        if($search == '')
+        {
+            $where.='1=1';
+        }else
+        {
+            $where.="com_id in ($key)";
+        }
+        $data = $model->where($where)->select();
+        //$data=$model->query("select * from bbs_company where com_name like '%".$where."%'");
+        var_dump($data);die;
+        $this->assign('list',$data); 
+        $this->display();
+ 	
+    }
+    /*
+		if($keywords) {
+		$where .= " and goods_id in($ids)";
+		}
+		if($brand_id) {
+			$where .= " and brand_id = $brand_id";
+		}
+		if($cat_id) {
+			$where .= " and cat_id = $cat_id";
+		}
+    */
     //显示公司添加表单
     public function com_addform()
     {
@@ -100,9 +144,34 @@ class MessageController extends Controller {
 
 
     }
+    //显示学院列表
     public function school()
     {
-    	echo "123";
+        $model=M("school");
+        $data=$model->select();
+        $this->assign("list",$data);
+        $this->display();
+        //echo "123";
+    }
+    //显示学校添加form
+    public function sch_addform()
+    {
+        $this->display();
+    }
+    //执行添加学校
+    public function sch_add()
+    {
+        //var_dump($_POST);
+        $modle=M("school");
+        $data=$model->create();
+        $sch=$model->add();
+        if($sch)
+        {
+            $this->redirect("/admin.php/home/message/school");
+        }else
+        {
+            $this->error();
+        }
     }
     public function student()
     {

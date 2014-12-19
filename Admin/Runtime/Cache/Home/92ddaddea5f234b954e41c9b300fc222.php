@@ -187,8 +187,9 @@ H1 a {
         <ul class="MM">
           <li><a href="/admin.php/home/class/add">添加班级</a></li>
           <li><a href="/admin.php/home/intro/add">添加课程</a></li>
+		  <li><a href="/admin.php/home/intro/addlist">添加阶段</a></li>
           <li><a href="/admin.php/home/class/addlist">班级列表</a></li>
-          <li><a href="/admin.php/home/intro/addlist">课程列表</a></li>
+          <li><a href="/admin.php/home/intro/kechenglist">课程列表</a></li>
         </ul>
       </div>
 
