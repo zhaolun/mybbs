@@ -109,7 +109,7 @@ window.onload=function(){
 	
 	var objs2 = ItcastImageSwitch("idNum2").getElementsByTagName("li");
 	
-	var tv2 = new TransformView("idTransformView2", "idSlider2", 297, 3, {
+	var tv2 = new TransformView("idTransformView2", "idSlider2", 297, 5, {
 		onStart: function(){ Each(objs2, function(o, i){ o.className = tv2.Index == i ? "on" : ""; }) },//按钮样式
 		Up: false
 	});

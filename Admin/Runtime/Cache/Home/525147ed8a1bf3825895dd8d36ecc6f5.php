@@ -246,56 +246,50 @@ H1 a {
 		<td width="87%" valign="top">
 			<div style="margin:10px;padding:10px;">
 				<head>
-<title>新闻类别列表</title>
+<title>添加问题</title>
 <meta name="robots" content="noindex, nofollow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="/Public/admin/css/general.css" rel="stylesheet" type="text/css" />
-<link href="/Public/admin/css/main.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="/Public/admin/js/transport.js"></script>
-<script type="text/javascript" src="/Public/admin/js/common.js"></script>
+<link href="../css/general.css" rel="stylesheet" type="text/css" />
+<link href="../css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/transport.js"></script>
+<script type="text/javascript" src="./js/common.js"></script>
 </head>
 <body>
-<h1>
-<span class="action-span1">公司信息</span><span id="search_id" class="action-span1"></span>
-<div style="clear:both"></div>
-</h1>
-<!-- 新闻类别搜索 -->
-<form>
-  公司名称：
-  <input type="text" name="com_name">
-  <input type="submit" value="查询">
-</form>
-<a href="/admin.php/home/message/com_addform">添加公司</a>
-<br>
-<!-- 新闻类别列表 -->
-<div class="list-div">
-<table cellspacing='1' cellpadding='3'>
-  <tr align="center">
-         <th>公司编号</th>
-         <th>公司名称</th>
-         <th>创办时间</th>
-         <th>公司网站</th>
-         <th>招收人数</th>
-         <th>操作</th>
-      </tr>
-     <?php if(is_array($list)): foreach($list as $key=>$val): ?><tr align="center">
-             <td><?php echo ($val["com_id"]); ?></td>
-             <td><?php echo ($val["com_name"]); ?></td>
-             <td><?php echo ($val["r_time"]); ?></td>
-             <td><?php echo ($val["r_url"]); ?></td>
-             <td><?php echo ($val["r_num"]); ?></td>
-             <td><a href="/admin.php/home/message/com_del/com_id/<?php echo $val['com_id'];?>">【删除】</a>
-             <a href="/admin.php/home/message/com_editform/com_id/<?php echo $val['com_id']; ?>">【编辑】</a></td>
-          </tr><?php endforeach; endif; ?>
-</table>
+<h1>添加问题</h1>
+<a href='/admin.php/Home/problem/lists'>问题列表</a>
 
-</div>
-<div class="pagination">
-　　<?php echo ($page); ?>
+<!-- 添加新闻类别 -->
+<div class="list-div">
+<form method="post" action="/admin.php/Home/problem/add_do">
+	<table cellspacing='1' cellpadding='3'>
+	    <tr>
+			<td align='right'>问题类别：</td>
+			<td><select name="status">
+			    <option selected>-请选择-</option>
+				<option value="热点问题" >热点问题</option>
+				<option value="PHP相关问题">PHP相关问题</option>
+			</select></td>
+		</tr>
+
+		<tr>
+			<td align='right'>问题名称：</td>
+			<td><input type="text" name="title" size=80></td>
+		</tr>
+		
+		<tr>
+			<td align='right'>问题答案：</td>
+			<td><input type="text" name="content" size=80></td>
+		</tr>
+
+		<tr>
+			<td align='center' colspan=2><input type="submit" value='添加'></td>	
+		</tr>
+	</table>
+</form>
 </div>
 <br />
 <div id="footer">
-版权所有 &copy; 八维研修学院软件工程学院1308phpA班，并保留所有权利。</div>
+版权所有 &copy; 八维研修学院软件工程学院1308phpA班yi利小组，并保留所有权利。</div>
 </body>
 </html>
 			</div>
