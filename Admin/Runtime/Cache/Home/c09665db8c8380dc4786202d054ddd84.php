@@ -146,8 +146,17 @@ H1 a {
 		<td width="39%" valign="top">
 			<table width="100%" border="0" cellspacing="0" cellpadding="0">
 				<tr>
-					<td width="74%" height="38" class="admin_txt">管理员：<b><%=session("admin_name")%></b> 您好,感谢登陆使用！</td>
+					<td width="74%" height="38" class="admin_txt">管理员：<b><?php echo ($_SESSION["username"]); ?></b> 您好,感谢登陆使用！</td>
 					<td width="22%"><a href="#" target="_self" onClick="logout();"><img src="/Public/admin/images/out.gif" alt="安全退出" width="46" height="20" border="0"></a></td>
+					<script type="text/javascript">
+					<!--
+						function logout(){
+							if(confirm("确认退出后台管理?"))
+								location.href="/admin.php/Home/admin/loginout";
+							return false;
+						}
+					//-->
+					</script>
 					<td width="4%">&nbsp;</td>
 				</tr>
 				<tr>
@@ -172,8 +181,8 @@ H1 a {
           </tr>
         </table>
         <ul class="MM">
-          <li><a href="http://www.865171.cn">导航管理</a></li>
-          <li><a href="http://www.865171.cn">幻灯片管理</a></li>
+          <li><a href="/admin.php/Home/admin/nav">导航管理</a></li>
+          <li><a href="/admin.php/Home/admin/image">幻灯片管理</a></li>
         </ul>
       </div>
       
