@@ -172,8 +172,8 @@ H1 a {
           </tr>
         </table>
         <ul class="MM">
-          <li><a href="http://www.865171.cn">导航管理</a></li>
-          <li><a href="http://www.865171.cn">幻灯片管理</a></li>
+          <li><a href="/admin.php/Home/admin/nav">导航管理</a></li>
+          <li><a href="/admin.php/Home/admin/image">幻灯片管理</a></li>
         </ul>
       </div>
       
