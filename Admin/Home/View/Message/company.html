@@ -15,7 +15,7 @@
 <!-- 新闻类别搜索 -->
 <form>
   公司名称：
-  <input type="text" name="">
+  <input type="text" name="com_name">
   <input type="submit" value="查询">
 </form>
 <a href="/admin.php/home/message/com_addform">添加公司</a>
@@ -31,19 +31,22 @@
          <th>招收人数</th>
          <th>操作</th>
       </tr>
-      <?php foreach ($list as $key => $val) { ?>
+     <foreach name="list" item="val">
           <tr align="center">
              <td>{$val.com_id}</td>
              <td>{$val.com_name}</td>
              <td>{$val.r_time}</td>
              <td>{$val.r_url}</td>
              <td>{$val.r_num}</td>
-
+             <td><a href="/admin.php/home/message/com_del/com_id/<?php echo $val['com_id'];?>">【删除】</a>
+             <a href="/admin.php/home/message/com_editform/com_id/<?php echo $val['com_id']; ?>">【编辑】</a></td>
           </tr>
-      <?php } ?>
-  
-  
+      </foreach>
 </table>
+
+</div>
+<div class="pagination">
+　　{$page}
 </div>
 <br />
 <div id="footer">
