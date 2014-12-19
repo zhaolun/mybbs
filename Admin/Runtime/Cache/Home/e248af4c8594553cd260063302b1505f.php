@@ -187,8 +187,9 @@ H1 a {
         <ul class="MM">
           <li><a href="/admin.php/home/class/add">添加班级</a></li>
           <li><a href="/admin.php/home/intro/add">添加课程</a></li>
+		  <li><a href="/admin.php/home/intro/addlist">添加阶段</a></li>
           <li><a href="/admin.php/home/class/addlist">班级列表</a></li>
-          <li><a href="/admin.php/home/intro/addlist">课程列表</a></li>
+          <li><a href="/admin.php/home/intro/kechenglist">课程列表</a></li>
         </ul>
       </div>
 
@@ -244,7 +245,7 @@ H1 a {
 			myAccordion.showThisHideOpen(contents[0]);
 		</script>
 		<td width="87%" valign="top">
-			<div style="margin:10px;padding:10px;" id="" class="">
+			<div style="margin:10px;padding:10px;">
 				<head>
 <title>新闻列表</title>
 <meta name="robots" content="noindex, nofollow">
@@ -267,41 +268,18 @@ H1 a {
   <tr>
 	<th  class="group-title"><input type="checkbox" name="">全选/反选</th>
     <th  class="group-title">编号</th>
-	<th  class="group-title">标题</th>
-	<th  class="group-title">内容</th>
-	<th  class="group-title">作者</th>
-	<th  class="group-title">时间</th>
-	<th  class="group-title">类别</th>
+	<th  class="group-title">班级名称</th>
+	<th  class="group-title">课程介绍</th>
+	<th  class="group-title">操作</th>
   </tr>
-  <tr class="table_tr">
-	<td width="5%"><input type="checkbox" name=""></td>
-    <td width="5%">1</td>
-    <td width="20%">好好学习，天天向上</td>
-    <td width="35%">我们的学子好好学习，努力八千</td>
-    <td width="10%">张三</td>
-	<td width="10%">2013-9-23</td>
-	<td width="10%">军事新闻</td>
-  </tr>
-
-  <tr class="table_tr">
-	<td width="5%"><input type="checkbox" name=""></td>
-    <td width="5%">2</td>
-    <td width="20%">大飞机哪去了</td>
-    <td width="35%">我们的学子好好学习，努力八千</td>
-    <td width="10%">张三</td>
-	<td width="10%">2013-9-23</td>
-	<td width="10%">财经新闻</td>
-  </tr>
-
-  <tr class="table_tr">
-    <td width="5%"><input type="checkbox" name=""></td>
-    <td width="5%">3</td>
-    <td width="20%">好好学习，天天向上</td>
-    <td width="35%">我们的学子好好学习，努力八千</td>
-    <td width="10%">张三</td>
-	<td width="10%">2013-9-23</td>
-	<td width="10%">体育新闻</td>
-  </tr>
+  <?php if(is_array($info)): foreach($info as $key=>$vo): ?><tr class="table_tr">
+	<td width="5%"><input type="checkbox"></td>
+	<td width="5%"><?php echo ($vo["pei_id"]); ?></td>
+    <td width="20%"><?php echo ($vo["pei_class"]); ?></td>
+    <td width="35%"><?php echo ($vo["pei_intro"]); ?></td>
+	<td width="35%">删除|编辑</td>
+  </tr><?php endforeach; endif; ?>
+ 
   <tr align="center">
 	<td colspan=7>
 		<input type="button" value="全选" onclick="">
