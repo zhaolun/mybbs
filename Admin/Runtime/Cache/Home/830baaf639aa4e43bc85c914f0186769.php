@@ -6,6 +6,7 @@
 <script src="/Public/admin/js/moo.fx.js" type="text/javascript"></script>
 <script src="/Public/admin/js/moo.fx.pack.js" type="text/javascript"></script>
 <link href="/Public/admin/css/skin.css" rel="stylesheet" type="text/css">
+<link href="/Public/admin/css/main.css" rel="stylesheet" type="text/css">
 
 <style>
 body {
@@ -186,8 +187,9 @@ H1 a {
         <ul class="MM">
           <li><a href="/admin.php/home/class/add">添加班级</a></li>
           <li><a href="/admin.php/home/intro/add">添加课程</a></li>
+		  <li><a href="/admin.php/home/intro/addlist">添加阶段</a></li>
           <li><a href="/admin.php/home/class/addlist">班级列表</a></li>
-          <li><a href="/admin.php/home/intro/addlist">课程列表</a></li>
+          <li><a href="/admin.php/home/intro/kechenglist">课程列表</a></li>
         </ul>
       </div>
 
@@ -242,8 +244,9 @@ H1 a {
 			var myAccordion = new fx.Accordion(toggles, contents, {opacity: true, duration:400});
 			myAccordion.showThisHideOpen(contents[0]);
 		</script>
-		<td width="89%" valign="top">
-			<head>
+		<td width="87%" valign="top">
+			<div style="margin:10px;padding:10px;">
+				<head>
 <title>添加班级</title>
 <meta name="robots" content="noindex, nofollow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -257,41 +260,34 @@ H1 a {
 <span class="action-span1">添加班级</span><span id="search_id" class="action-span1"></span>
 <div style="clear:both"></div>
 </h1>
- 
 <!-- 添加新闻 -->
 <div class="list-div">
-<form method="post" action="./sport_list.html">
+<form method="post" action="add_pro" enctype="multipart/form-data">
 	<table cellspacing='1' cellpadding='3'>
 		<tr>
-			<td align='right'>标题：</td>
-			<td><input type="text" name="sportname" size=80></td>
+			<td align='right'>班级图标：</td>
+			<td><input type="file" name="myfiles"></td>
 		</tr>
 		<tr>
-			<td align='right'>内容：</td>
-			<td><textarea name="sportcontent" rows="20" cols="100"></textarea></td>
+			<td align='right'>班级名称：</td>
+			<td><input type="text" name="classname" size=80></td>
 		</tr>
 		<tr>
-			<td align='right'>类别：</td>
-			<td>
-				<select>
-					<option>--请选择新闻类别--</option>
-					<option>军事新闻</option>
-					<option>体育新闻</option>
-					<option>财经新闻</option>
-				</select>
-			</td>
-		</tr>
+			<td align='right'>课程介绍：</td>
+			<td><textarea name="jianjie" rows="20" cols="100"></textarea></td>
+		</tr>	
 		<tr>
 			<td align='center' colspan=2><input type="submit" value='添加新闻'></td>	
 		</tr>
 	</table>
 </form>
 </div>
-<br />
+<br/>
 <div id="footer">
 版权所有 &copy; 八维研修学院软件工程学院1302phpA班，并保留所有权利。</div>
 </body>
 </html>
+			</div>
 		</td>
 	</tr>
 </table>
