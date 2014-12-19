@@ -29,17 +29,15 @@ class MessageController extends Controller {
    		require_once("/Public/sphinxapi.php");
         $model = M("company");
         $search=$_POST['com_name'];
-        //echo $search;
-        //$model = new Model(); 
+        echo $search;
         $sphinx = new \SphinxClient();
         //var_dump($sphinx);die;
 		$sphinx->SetServer("192.168.1.2",9312);
 		$sphinx->SetMatchMode(SPH_MATCH_ANY);
-		var_dump($j);die;
 		$result = $sphinx->query($search,'*');
         $key = array_keys($result['matches']);
         //$id = implode(',',$key);
-        //var_dump($result);die;
+        var_dump($result);die;
         $ids = join(',',$key);
         $where= '';
         if($search == '')
@@ -51,7 +49,7 @@ class MessageController extends Controller {
         }
         $data = $model->where($where)->select();
         //$data=$model->query("select * from bbs_company where com_name like '%".$where."%'");
-        var_dump($data);die;
+       // var_dump($data);die;
         $this->assign('list',$data); 
         $this->display();
  	
@@ -219,9 +217,13 @@ class MessageController extends Controller {
     //显示学生列表
     public function student()
     {
+        $model=M("student");
+        $data=$model->query("select * from bbs_student");
+        //var_dump($data);die;
+        //      $sql = " select * from rec_resume as rec_resume,rec_company as rec_company,rec_user_deliver as rec_user_deliver where rec_company.com_id='$com_id' and rec_user_deliver.add_time between '$addtime' and '$add1time' and rec_resume.res_id=rec_user_deliver.res_id and rec_company.com_id=rec_user_deliver.com_id ";
+
     	$this->display();
     }
-
     //显示添加学生form
     public function stu_addform()
     {
@@ -238,6 +240,29 @@ class MessageController extends Controller {
     //执行学生添加
     public function stu_add()
     {
-        echo "<pre>";var_dump($_POST);
+        $model=M('student');
+        //上传文件
+        $upload=new \Think\Upload();
+        $upload->maxSize = 3145728;
+        $upload->saveName = 'time';
+        $upload->exts= array('jpg','gif','png','jpeg');// 设置附件上传类型    
+        $upload->savePath  ='/Uploads';//设置附件上传目录
+        $info=$upload->upload();
+        //执行添加
+        $data['stu_name']=$_POST['stu_name'];
+        $data['school']=$_POST['school'];
+        $data['work_time']=$_POST['r_time'];
+        $data['company']=$_POST['company'];
+        $data['money']=$_POST['money'];
+        $data['pic']=$info['pic']['savename'];//获取文件保存的名称
+        $stu=$model->add($data);
+        //echo "<pre>";var_dump($info['pic']['savename']);die; 
+        if($info&&$stu) 
+        {
+            $this->redirect("/admin.php/home/message/student");
+        }else
+        {  
+            $this->error($upload->getError());    
+        }
     }
 }

@@ -263,7 +263,7 @@ H1 a {
  
 <!-- 添加新闻类别 -->
 <div class="list-div">
-<form method="post" action="/admin.php/home/message/stu_add">
+<form method="post" action="/admin.php/home/message/stu_add" enctype="multipart/form-data">
 	<table cellspacing='1' cellpadding='3'>
 		<tr>
 			<td align="right">学生名称</td>
@@ -299,7 +299,7 @@ H1 a {
 		</tr>
 		<tr>
 			<td align="right">学生视屏</td>
-			<td><input type="text" name="video"></td>
+			<td><input type='file' name='pic'></td>
 		</tr>
 		<tr>
 			<td></td>
