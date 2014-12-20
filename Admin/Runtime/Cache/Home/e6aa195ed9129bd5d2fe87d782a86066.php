@@ -242,7 +242,7 @@ H1 a {
 							</tr>
 							</table>
 							<ul class="MM">
-							<li><a href="/admin.php/home/one/list" >一组信息</a></li>
+							<li><a href="/admin.php/home/one/lists" >一组信息</a></li>
 							</ul>
 							</div>
 						</div>
