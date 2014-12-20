@@ -146,8 +146,17 @@ H1 a {
 		<td width="39%" valign="top">
 			<table width="100%" border="0" cellspacing="0" cellpadding="0">
 				<tr>
-					<td width="74%" height="38" class="admin_txt">管理员：<b><%=session("admin_name")%></b> 您好,感谢登陆使用！</td>
+					<td width="74%" height="38" class="admin_txt">管理员：<b><?php echo ($_SESSION["username"]); ?></b> 您好,感谢登陆使用！</td>
 					<td width="22%"><a href="#" target="_self" onClick="logout();"><img src="/Public/admin/images/out.gif" alt="安全退出" width="46" height="20" border="0"></a></td>
+					<script type="text/javascript">
+					<!--
+						function logout(){
+							if(confirm("确认退出后台管理?"))
+								location.href="/admin.php/Home/admin/loginout";
+							return false;
+						}
+					//-->
+					</script>
 					<td width="4%">&nbsp;</td>
 				</tr>
 				<tr>
@@ -172,8 +181,8 @@ H1 a {
           </tr>
         </table>
         <ul class="MM">
-          <li><a href="http://www.865171.cn">导航管理</a></li>
-          <li><a href="http://www.865171.cn">幻灯片管理</a></li>
+          <li><a href="/admin.php/Home/admin/nav">导航管理</a></li>
+          <li><a href="/admin.php/Home/admin/image">幻灯片管理</a></li>
         </ul>
       </div>
       
@@ -187,12 +196,10 @@ H1 a {
         <ul class="MM">
           <li><a href="/admin.php/home/class/add">添加班级</a></li>
           <li><a href="/admin.php/home/intro/add">添加课程</a></li>
-		  <li><a href="/admin.php/home/intro/addlist">添加阶段</a></li>
           <li><a href="/admin.php/home/class/addlist">班级列表</a></li>
-          <li><a href="/admin.php/home/intro/kechenglist">课程列表</a></li>
+          <li><a href="/admin.php/home/intro/addlist">课程列表</a></li>
         </ul>
       </div>
-
 							<h1 class="type"><a>就业信息</a></h1>
 								<div class="content">
         <table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -220,7 +227,6 @@ H1 a {
 							<li><a href="/admin.php/home/position/lists" >职位列表</a></li>
 							</ul>
 							</div>
-
 							<h1 class="type"><a>常见问题</a></h1>
 							<div class="content">
 							<table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -231,18 +237,6 @@ H1 a {
 							<ul class="MM">
 							<li><a href="/admin.php/home/problem/lists" >问题管理</a></li>
 							<li><a href="/admin.php/home/problem/add" >添加问题</a></li>
-							</ul>
-							</div>
-
-							<h1 class="type"><a>yi利一组</a></h1>
-							<div class="content">
-							<table width="100%" border="0" cellspacing="0" cellpadding="0">
-							<tr>
-							<td><img src="/Public/admin/images/menu_topline.gif" width="182" height="5" /></td>
-							</tr>
-							</table>
-							<ul class="MM">
-							<li><a href="/admin.php/home/one/lists" >一组信息</a></li>
 							</ul>
 							</div>
 						</div>
@@ -259,84 +253,44 @@ H1 a {
 		<td width="87%" valign="top">
 			<div style="margin:10px;padding:10px;">
 				<head>
-<title>问题列表</title>
+<title>修改导航</title>
 <meta name="robots" content="noindex, nofollow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="../css/general.css" rel="stylesheet" type="text/css" />
-<link href="../css/main.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="../js/transport.js"></script>
+<link href="/Public/admin/css/general.css" rel="stylesheet" type="text/css" />
+<link href="/Public/admin/css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/Public/admin/js/transport.js"></script>
 <script type="text/javascript" src="./js/common.js"></script>
 </head>
 <body>
 <h1>
+<span class="action-span1">修改导航</span><span id="search_id" class="action-span1"></span>
 <div style="clear:both"></div>
 </h1>
-<!-- 新闻类别搜索 -->
-<center>yi组信息列表</center>
-<!-- 新闻类别列表 -->
-<div class="list-div">
-<table cellspacing='1' cellpadding='3'>
-  <tr>
-    <th  class="group-title">编号</th>
-	<th  class="group-title">姓名</th>
-	<th  class="group-title">年龄</th>
-	<th  class="group-title">性别</th>
-	<th  class="group-title">联系电话</th>
-	<th  class="group-title">QQ</th>
-    <th  class="group-title">婚姻状况</th>
-	
-  </tr>
-  <tr class="table_tr">
-    <td width="5%">1</td>
-    <td width="10%">赵伦</td>
-	<td width="10%">20</td>
-    <td width="10%">男</td>
-	<td width="15%">妻管严，不让找小三</td>
-	<td width="10%">算了</td>
-	<td width="10%">已有</td>
-	</tr>
-	<tr class="table_tr">
-    <td width="5%">2</td>
-    <td width="10%">刘俊</td>
-	<td width="10%">20</td>
-    <td width="10%">女</td>
-	<td width="15%">夫管严，不让找小三</td>
-	<td width="10%">算了</td>
-	<td width="10%">已有</td>
-	</tr>
-	<tr class="table_tr">
-    <td width="5%">3</td>
-    <td width="10%">雷金涛</td>
-	<td width="10%">21</td>
-    <td width="10%">男</td>
-	<td width="15%">爱媳妇，不找小三</td>
-	<td width="10%">算了</td>
-	<td width="10%">已有</td>
-	</tr>
-    <tr class="table_tr">
-    <td width="5%">4</td>
-    <td width="10%">张肖云</td>
-	<td width="10%">21</td>
-    <td width="10%">男</td>
-	<td width="15%">已经名花有主，不要打主意了。</td>
-	<td width="10%">算了</td>
-	<td width="10%">已有</td>
-	</tr>
-	<tr class="table_tr">
-    <td width="5%">5</td>
-    <td width="10%">崔萌泽</td>
-	<td width="10%">19</td>
-    <td width="10%">男</td>
-	<td width="17%">*********(可以找本人单独要哦)</td>
-	<td width="15%">*********(可以找本人单独要哦)</td>
-	<td width="10%">木有</td>
-	</tr>
  
-</table>
+<!-- 添加新闻类别 -->
+<div class="list-div">
+<form method="post" action="/admin.php/Home/admin/nav_uppro">
+	<table cellspacing='1' cellpadding='3'>
+		<tr>
+			<td align='right'>导航名称：</td>
+			<input type="hidden" name="h_id" value="<?php echo ($info["nav_id"]); ?>">
+			<td><input type="text" name="nav_name" size=80 value="<?php echo ($info["nav_name"]); ?>"></td>
+		</tr>
+		<tr>
+			<td align='right'>导航链接：</td>
+			<td>
+			<textarea name="nav_link" rows="20" cols="100"><?php echo ($info["nav_link"]); ?></textarea></td>
+		</tr>
+		
+		<tr>
+			<td align='center' colspan=2><input type="submit" value='修改导航'></td>	
+		</tr>
+	</table>
+</form>
 </div>
 <br />
 <div id="footer">
-版权所有 &copy; 八维研修学院软件工程学院1308phpA班yi利小组，并保留所有权利。</div>
+版权所有 &copy; 八维研修学院软件工程学院1308phpA班，并保留所有权利。</div>
 </body>
 </html>
 			</div>

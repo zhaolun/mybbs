@@ -91,7 +91,7 @@ class Verify {
         }
         // session 过期
         if(NOW_TIME - $secode['verify_time'] > $this->expire) {
-            session($key.$id, null);
+            session($key, null);
             return false;
         }
         if($this->authcode(strtoupper($code)) == $secode['verify_code']) {

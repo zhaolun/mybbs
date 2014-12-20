@@ -146,8 +146,17 @@ H1 a {
 		<td width="39%" valign="top">
 			<table width="100%" border="0" cellspacing="0" cellpadding="0">
 				<tr>
-					<td width="74%" height="38" class="admin_txt">管理员：<b><%=session("admin_name")%></b> 您好,感谢登陆使用！</td>
+					<td width="74%" height="38" class="admin_txt">管理员：<b><?php echo ($_SESSION["username"]); ?></b> 您好,感谢登陆使用！</td>
 					<td width="22%"><a href="#" target="_self" onClick="logout();"><img src="/Public/admin/images/out.gif" alt="安全退出" width="46" height="20" border="0"></a></td>
+					<script type="text/javascript">
+					<!--
+						function logout(){
+							if(confirm("确认退出后台管理?"))
+								location.href="/admin.php/Home/admin/loginout";
+							return false;
+						}
+					//-->
+					</script>
 					<td width="4%">&nbsp;</td>
 				</tr>
 				<tr>
@@ -172,8 +181,8 @@ H1 a {
           </tr>
         </table>
         <ul class="MM">
-          <li><a href="http://www.865171.cn">导航管理</a></li>
-          <li><a href="http://www.865171.cn">幻灯片管理</a></li>
+          <li><a href="/admin.php/Home/admin/nav">导航管理</a></li>
+          <li><a href="/admin.php/Home/admin/image">幻灯片管理</a></li>
         </ul>
       </div>
       
@@ -187,12 +196,10 @@ H1 a {
         <ul class="MM">
           <li><a href="/admin.php/home/class/add">添加班级</a></li>
           <li><a href="/admin.php/home/intro/add">添加课程</a></li>
-		  <li><a href="/admin.php/home/intro/addlist">添加阶段</a></li>
           <li><a href="/admin.php/home/class/addlist">班级列表</a></li>
-          <li><a href="/admin.php/home/intro/kechenglist">课程列表</a></li>
+          <li><a href="/admin.php/home/intro/addlist">课程列表</a></li>
         </ul>
       </div>
-
 							<h1 class="type"><a>就业信息</a></h1>
 								<div class="content">
         <table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -220,7 +227,6 @@ H1 a {
 							<li><a href="/admin.php/home/position/lists" >职位列表</a></li>
 							</ul>
 							</div>
-
 							<h1 class="type"><a>常见问题</a></h1>
 							<div class="content">
 							<table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -247,69 +253,45 @@ H1 a {
 		<td width="87%" valign="top">
 			<div style="margin:10px;padding:10px;">
 				<head>
-<title>添加新闻类别</title>
+<title>前台幻灯片列表</title>
 <meta name="robots" content="noindex, nofollow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="/Public/admin/css/general.css" rel="stylesheet" type="text/css" />
 <link href="/Public/admin/css/main.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="/Public/admin/js/transport.js"></script>
-<script type="text/javascript" src="/Public/admin/js/common.js"></script>
+<script type="text/javascript" src="./js/common.js"></script>
 </head>
 <body>
 <h1>
-<span class="action-span1">添加新闻类别</span><span id="search_id" class="action-span1"></span>
+<span class="action-span1">前台幻灯片列表</span><span id="search_id" class="action-span1"></span>
 <div style="clear:both"></div>
 </h1>
- 
-<!-- 添加新闻类别 -->
+<!-- 新闻类别列表 -->
 <div class="list-div">
-<form method="post" action="/admin.php/home/message/stu_add">
-	<table cellspacing='1' cellpadding='3'>
-		<tr>
-			<td align="right">学生名称</td>
-			<td><input type="text" name="stu_name"></td>
-		</tr>
-		<tr>
-			<td align="right">毕业学校</td>
-			<td>
-				<select name="school">
-					<?php if(is_array($sch)): foreach($sch as $key=>$sch): ?><option value="<?php echo ($sch["s_id"]); ?>"><?php echo ($sch["s_name"]); ?></option><?php endforeach; endif; ?>
-				</select>
-			</td>
-		</tr>
-		<tr>
-			<td align="right">入职时间</td>
-			<td>
-				<input type="text" name="r_time" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd',autoPickDate:true,skin:'default'})"   value="" />
-			</td>
-		</tr>
-		
-		<tr>
-			<td align="right">所属公司</td>
-			<td>
-				<select name="company">
-					<?php if(is_array($com)): foreach($com as $key=>$val): ?><option value="<?php echo ($val["com_id"]); ?>"><?php echo ($val["com_name"]); ?></option><?php endforeach; endif; ?>
-				</select>
-
-			</td>
-		</tr>
-		<tr>
-			<td align="right">期望月薪</td>
-			<td><input type="text" name="money"></td>
-		</tr>
-		<tr>
-			<td align="right">学生视屏</td>
-			<td><input type="text" name="video"></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td align="left"><input type="submit" value="提交"></td>	
-		</tr>
-	</table>
-</form>
+<table cellspacing='1' cellpadding='3'>
+  <tr>
+    <th  class="group-title">编号</th>
+	<th  class="group-title">幻灯片</th>
+	<th  class="group-title">幻灯片名称</th>
+	<th  class="group-title">幻灯片介绍</th>
+	<th  class="group-title">操作</th>
+  </tr>
+  <?php if(is_array($info)): foreach($info as $key=>$vo): ?><tr class="table_tr">
+	<td width="10%"><?php echo ($vo["img_id"]); ?></td>
+    <td width="10%"><?php echo ($vo["img_path"]); ?></td>
+    <td width="30%"><?php echo ($vo["img_name"]); ?></td>
+    <td width="40%"><?php echo ($vo["img_desc"]); ?></td>
+	<td width="20%"><a href="/admin.php/Home/admin/delnav/id/<?php echo ($vo["img_id"]); ?>">删除</a>||<a href="/admin.php/Home/admin/upnav/id/<?php echo ($vo["img_id"]); ?>">编辑</a></td>
+  </tr><?php endforeach; endif; ?>
+  <tr align="center">
+	<td colspan=4>
+		<input type="button" value="看哪个幻灯片不爽?去添加一个" onclick="location.href='/admin.php/Home/admin/add_image'">
+	</td>
+  </tr>
+  
+</table>
 </div>
 <br />
-<script type="text/javascript" src="/Public/js/My97DatePicker/WdatePicker.js"></script>
 <div id="footer">
 版权所有 &copy; 八维研修学院软件工程学院1302phpA班，并保留所有权利。</div>
 </body>
