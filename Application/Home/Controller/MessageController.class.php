@@ -14,7 +14,13 @@ class MessageController extends Controller {
     }
     public function video()
     {
-    	$this->display();
+        $stu_id=$_GET["stu_id"];
+        //echo $stu_id;
+        $model=M('student');                                       
+        $data=$model->query("select * from bbs_student,bbs_company,bbs_school where bbs_student.school=bbs_school.s_id and bbs_student.company=bbs_company.com_id and stu_id=$stu_id");
+    	//var_dump($data[0]['stu_name']);die;
+        $this->assign("list",$data);
+        $this->display();
     }
 	
 }
