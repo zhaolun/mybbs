@@ -98,6 +98,35 @@ class AdminController extends Controller {
 			$this->error('删除失败,正在跳转...');
 	}
 
+	//幻灯片修改
+	function upimg(){
+		$db=M("slide_image");
+		$this->info=$db->where("img_id=".$_GET['id'])->find();
+		$this->display();
+	}
+
+	//幻灯片修改操作数据库
+	function img_uppro(){
+		$db=M("slide_image");
+		$data=$db->create();
+		if(empty($_FILES['myfile']['name']))
+			$data['img_path']=$_POST['h_img_path'];
+		else{
+			$upload = new Upload();
+			$upload->maxSize = 3145728;
+			$upload->exts = array('jpg','gif','png','jpeg');
+			$upload->rootPath = './Public';
+			$upload->savePath = '/images/slide_image/';
+			$upload->saveName = 'time';
+			$data['logo_path']='/Public/images/slide_image/'.date('Y-m-d',time()).'/'.time().substr($_FILES['myfile']['name'],strrpos($_FILES['myfile']['name'],"."));
+			$upload->upload();
+		}
+		if($db->save($data))
+			$this->success('修改成功,正在跳转...','/admin.php/Home/admin/image',2);
+		else
+			$this->error('修改失败,正在跳转...','/admin.php/Home/admin/image',2);
+	}
+
 	//首页LOGO设计
 	function logo(){
 		$db=M("logo");
@@ -107,7 +136,32 @@ class AdminController extends Controller {
 
 	//logo更换
 	function logo_up(){
-		echo $_GET['id'];
+		//echo $_GET['id'];
+		$db=M("logo");
+		$this->info=$db->where("id=".$_GET['id'])->find();
+		//print_r($this->info);die;
+		$this->display();
+	}
+
+	//logo更换操作数据库
+	function logo_uppro(){
+		if(empty($_FILES['myfile']['name'])){
+			$this->success("您尚未进行任何操作",'/admin.php/Home/admin/logo',2);
+			die;
+		}
+		$db=M("logo");
+		$data=$db->create();
+		$upload = new Upload();
+		$upload->maxSize = 3145728;
+		$upload->exts = array('jpg','gif','png','jpeg');
+		$upload->rootPath = './Public';
+		$upload->savePath = '/images/logo/';
+		$upload->saveName = 'time';
+		$data['logo_path']='/Public/images/logo/'.date('Y-m-d',time()).'/'.time().substr($_FILES['myfile']['name'],strrpos($_FILES['myfile']['name'],"."));
+		if($upload->upload()&&$db->save($data))
+			$this->success('修改成功,正在跳转...','/admin.php/Home/admin/logo',2);
+		else
+			$this->error('修改失败,正在跳转...','/admin.php/Home/admin/logo',2);
 	}
 	
 	//退出

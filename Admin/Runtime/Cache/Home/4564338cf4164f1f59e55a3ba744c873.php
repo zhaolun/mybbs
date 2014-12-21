@@ -183,6 +183,7 @@ H1 a {
         <ul class="MM">
           <li><a href="/admin.php/Home/admin/nav">导航管理</a></li>
           <li><a href="/admin.php/Home/admin/image">幻灯片管理</a></li>
+		  <li><a href="/admin.php/Home/admin/logo">LOGO管理</a></li>
         </ul>
       </div>
       
@@ -291,6 +292,10 @@ H1 a {
 		<tr>
 			<td align='right'>幻灯片文件：</td>
 			<td><input type="file" name="myfile"></td>
+		</tr>
+		<tr>
+			<td align='right'>幻灯片链接：</td>
+			<td><input type="text" name="img_link"></td>
 		</tr>
 		<tr>
 			<td align='right'>幻灯片简介：</td>

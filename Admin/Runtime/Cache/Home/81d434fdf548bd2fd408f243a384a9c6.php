@@ -267,7 +267,7 @@ H1 a {
 		<td width="87%" valign="top">
 			<div style="margin:10px;padding:10px;">
 				<head>
-<title>修改导航</title>
+<title>修改<?php echo ($info["logo_name"]); ?></title>
 <meta name="robots" content="noindex, nofollow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="/Public/admin/css/general.css" rel="stylesheet" type="text/css" />
@@ -277,27 +277,27 @@ H1 a {
 </head>
 <body>
 <h1>
-<span class="action-span1">修改导航</span><span id="search_id" class="action-span1"></span>
+<span class="action-span1">修改<?php echo ($info["logo_name"]); ?></span><span id="search_id" class="action-span1"></span>
 <div style="clear:both"></div>
 </h1>
  
 <!-- 添加新闻类别 -->
 <div class="list-div">
-<form method="post" action="/admin.php/Home/admin/nav_uppro">
+<form method="post" action="/admin.php/Home/admin/logo_uppro" enctype="multipart/form-data">
 	<table cellspacing='1' cellpadding='3'>
 		<tr>
-			<td align='right'>导航名称：</td>
-			<input type="hidden" name="h_id" value="<?php echo ($info["nav_id"]); ?>">
-			<td><input type="text" name="nav_name" size=80 value="<?php echo ($info["nav_name"]); ?>"></td>
+			<td align='right'>LOGO名称：</td>
+			<input type="hidden" name="id" value="<?php echo ($info["id"]); ?>">
+			<td><input type="text" name="logo_name" size=80 value="<?php echo ($info["logo_name"]); ?>"></td>
 		</tr>
 		<tr>
-			<td align='right'>导航链接：</td>
+			<td align='right'>当前LOGO：</td>
 			<td>
-			<textarea name="nav_link" rows="20" cols="100"><?php echo ($info["nav_link"]); ?></textarea></td>
+			<img src="<?php echo ($info["logo_path"]); ?>"><input type="file" name="myfile"></td>
 		</tr>
 		
 		<tr>
-			<td align='center' colspan=2><input type="submit" value='修改导航'></td>	
+			<td align='center' colspan=2><input type="submit" value='修改<?php echo ($info["logo_name"]); ?>'></td>	
 		</tr>
 	</table>
 </form>

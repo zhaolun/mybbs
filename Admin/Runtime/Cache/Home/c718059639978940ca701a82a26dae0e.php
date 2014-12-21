@@ -288,17 +288,19 @@ H1 a {
 	<th  class="group-title">幻灯片</th>
 	<th  class="group-title">幻灯片名称</th>
 	<th  class="group-title">幻灯片介绍</th>
+	<th  class="group-title">幻灯片链接</th>
 	<th  class="group-title">操作</th>
   </tr>
   <?php if(is_array($info)): foreach($info as $key=>$vo): ?><tr class="table_tr">
 	<td width="10%"><?php echo ($vo["img_id"]); ?></td>
     <td width="10%"><img src="<?php echo ($vo["img_path"]); ?>" width=50></td>
-    <td width="30%"><?php echo ($vo["img_title"]); ?></td>
-    <td width="40%"><?php echo ($vo["img_desc"]); ?></td>
+    <td width="15%"><?php echo ($vo["img_title"]); ?></td>
+    <td width="15%"><?php echo ($vo["img_desc"]); ?></td>
+	<td width="30%"><?php echo ($vo["img_link"]); ?></td>
 	<td width="20%"><a href="/admin.php/Home/admin/delimg/id/<?php echo ($vo["img_id"]); ?>">删除</a>||<a href="/admin.php/Home/admin/upimg/id/<?php echo ($vo["img_id"]); ?>">编辑</a></td>
   </tr><?php endforeach; endif; ?>
   <tr align="center">
-	<td colspan=5>
+	<td colspan=6>
 		<input type="button" value="看哪个幻灯片不爽?去添加一个" onclick="location.href='/admin.php/Home/admin/add_image'">
 	</td>
   </tr>
