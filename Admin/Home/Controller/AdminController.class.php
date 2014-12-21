@@ -100,7 +100,14 @@ class AdminController extends Controller {
 
 	//首页LOGO设计
 	function logo(){
+		$db=M("logo");
+		$this->info=$db->select();
 		$this->display();
+	}
+
+	//logo更换
+	function logo_up(){
+		echo $_GET['id'];
 	}
 	
 	//退出

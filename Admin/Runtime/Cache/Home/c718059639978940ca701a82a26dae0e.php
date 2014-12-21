@@ -183,6 +183,7 @@ H1 a {
         <ul class="MM">
           <li><a href="/admin.php/Home/admin/nav">导航管理</a></li>
           <li><a href="/admin.php/Home/admin/image">幻灯片管理</a></li>
+		  <li><a href="/admin.php/Home/admin/logo">LOGO管理</a></li>
         </ul>
       </div>
       

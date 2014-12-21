@@ -284,16 +284,16 @@ H1 a {
 <div class="list-div">
 <table cellspacing='1' cellpadding='3'>
   <tr>
-    <th  class="group-title">编号</th>
-	<th  class="group-title">导航名称</th>
+    <th  class="group-title"></th>
+	<th  class="group-title">　</th>
   </tr>
   <tr class="table_tr">
-    <td width="50%">1</td>
-    <td width="50%">1</td>
+    <td colspan=2 width="50%"><?php echo ($info["0"]["logo_name"]); ?><input type="button" value="更换" onclick="location.href='/admin.php/Home/admin/logo_up/id/<?php echo ($info["0"]["id"]); ?>'"><br><img height="150" src="<?php echo ($info["0"]["logo_path"]); ?>"></td>
+    
   </tr>
   <tr class="table_tr">
-    <td width="50%">1</td>
-    <td width="50%">1</td>
+    <td width="50%"><?php echo ($info["2"]["logo_name"]); ?><input type="button" value="更换" onclick="location.href='/admin.php/Home/admin/logo_up/id/<?php echo ($info["2"]["id"]); ?>'"><br><img height="150" src="<?php echo ($info["2"]["logo_path"]); ?>"></td>
+    <td width="50%"><?php echo ($info["1"]["logo_name"]); ?><input type="button" value="更换" onclick="location.href='/admin.php/Home/admin/logo_up/id/<?php echo ($info["1"]["id"]); ?>'"><br><img height="150" src="<?php echo ($info["1"]["logo_path"]); ?>"></td>
   </tr>
   <tr align="center">
 
