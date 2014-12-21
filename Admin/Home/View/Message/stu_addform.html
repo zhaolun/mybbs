@@ -15,7 +15,7 @@
  
 <!-- 添加新闻类别 -->
 <div class="list-div">
-<form method="post" action="/admin.php/home/message/stu_add">
+<form method="post" action="/admin.php/home/message/stu_add" enctype="multipart/form-data">
 	<table cellspacing='1' cellpadding='3'>
 		<tr>
 			<td align="right">学生名称</td>
@@ -25,6 +25,7 @@
 			<td align="right">毕业学校</td>
 			<td>
 				<select name="school">
+					<option value="0">-请选择-</option>
 					<foreach name="sch" item="sch">
 						<option value="{$sch.s_id}">{$sch.s_name}</option>
 					</foreach>
@@ -42,6 +43,7 @@
 			<td align="right">所属公司</td>
 			<td>
 				<select name="company">
+					<option value="0">-请选择-</option>
 					<foreach name="com" item="val">
 						<option value="{$val.com_id}">{$val.com_name}</option>
 					</foreach>
@@ -55,7 +57,7 @@
 		</tr>
 		<tr>
 			<td align="right">学生视屏</td>
-			<td><input type="text" name="video"></td>
+			<td><input type='file' name='pic'></td>
 		</tr>
 		<tr>
 			<td></td>

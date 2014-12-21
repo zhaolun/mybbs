@@ -1,0 +1,41 @@
+<head>
+<title>修改导航</title>
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="/Public/admin/css/general.css" rel="stylesheet" type="text/css" />
+<link href="/Public/admin/css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/Public/admin/js/transport.js"></script>
+<script type="text/javascript" src="./js/common.js"></script>
+</head>
+<body>
+<h1>
+<span class="action-span1">修改导航</span><span id="search_id" class="action-span1"></span>
+<div style="clear:both"></div>
+</h1>
+ 
+<!-- 添加新闻类别 -->
+<div class="list-div">
+<form method="post" action="/admin.php/Home/admin/nav_uppro">
+	<table cellspacing='1' cellpadding='3'>
+		<tr>
+			<td align='right'>导航名称：</td>
+			<input type="hidden" name="h_id" value="{$info.nav_id}">
+			<td><input type="text" name="nav_name" size=80 value="{$info.nav_name}"></td>
+		</tr>
+		<tr>
+			<td align='right'>导航链接：</td>
+			<td>
+			<textarea name="nav_link" rows="20" cols="100">{$info.nav_link}</textarea></td>
+		</tr>
+		
+		<tr>
+			<td align='center' colspan=2><input type="submit" value='修改导航'></td>	
+		</tr>
+	</table>
+</form>
+</div>
+<br />
+<div id="footer">
+版权所有 &copy; 八维研修学院软件工程学院1308phpA班，并保留所有权利。</div>
+</body>
+</html>
