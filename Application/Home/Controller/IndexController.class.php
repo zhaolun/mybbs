@@ -10,6 +10,8 @@ class IndexController extends Controller {
 		$userd = M('liujun');
 		$usere = M('php');
 		$userf = M('mingshi');
+		$useraa = M('zhaopin');
+		$userbb = M('question');
 		$data = $user->select();
 		$data1 = $usera->select();
 		$data2 = $userb->select();
@@ -17,6 +19,8 @@ class IndexController extends Controller {
 		$data4 = $userd->select();
 		$data5 = $usere->select();
 		$data6 = $userf->select();
+		$data7 = $useraa->select();
+		$data8 = $userbb->where('status=0')->select();
 		//print_r($data);die;
 		$this->assign('info',$data);
 		$this->assign('infoa',$data1);
@@ -25,6 +29,8 @@ class IndexController extends Controller {
 		$this->assign('infod',$data4);
 		$this->assign('infoe',$data5);
 		$this->assign('infof',$data6);
+		$this->assign('infoaa',$data7);
+		$this->assign('infobb',$data8);
         $this->display('index');
     }
 	public function jiuye(){
