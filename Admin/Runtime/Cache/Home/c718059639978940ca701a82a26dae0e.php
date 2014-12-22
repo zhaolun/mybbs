@@ -183,10 +183,7 @@ H1 a {
         <ul class="MM">
           <li><a href="/admin.php/Home/admin/nav">导航管理</a></li>
           <li><a href="/admin.php/Home/admin/image">幻灯片管理</a></li>
-<<<<<<< HEAD
-=======
 		  <li><a href="/admin.php/Home/admin/logo">LOGO管理</a></li>
->>>>>>> bf02bc724649f0adca619cc041470a10efaa1be8
         </ul>
       </div>
       
@@ -291,23 +288,11 @@ H1 a {
 	<th  class="group-title">幻灯片</th>
 	<th  class="group-title">幻灯片名称</th>
 	<th  class="group-title">幻灯片介绍</th>
-<<<<<<< HEAD
-=======
 	<th  class="group-title">幻灯片链接</th>
->>>>>>> bf02bc724649f0adca619cc041470a10efaa1be8
 	<th  class="group-title">操作</th>
   </tr>
   <?php if(is_array($info)): foreach($info as $key=>$vo): ?><tr class="table_tr">
 	<td width="10%"><?php echo ($vo["img_id"]); ?></td>
-<<<<<<< HEAD
-    <td width="10%"><?php echo ($vo["img_path"]); ?></td>
-    <td width="30%"><?php echo ($vo["img_name"]); ?></td>
-    <td width="40%"><?php echo ($vo["img_desc"]); ?></td>
-	<td width="20%"><a href="/admin.php/Home/admin/delnav/id/<?php echo ($vo["img_id"]); ?>">删除</a>||<a href="/admin.php/Home/admin/upnav/id/<?php echo ($vo["img_id"]); ?>">编辑</a></td>
-  </tr><?php endforeach; endif; ?>
-  <tr align="center">
-	<td colspan=4>
-=======
     <td width="10%"><img src="<?php echo ($vo["img_path"]); ?>" width=50></td>
     <td width="15%"><?php echo ($vo["img_title"]); ?></td>
     <td width="15%"><?php echo ($vo["img_desc"]); ?></td>
@@ -316,7 +301,6 @@ H1 a {
   </tr><?php endforeach; endif; ?>
   <tr align="center">
 	<td colspan=6>
->>>>>>> bf02bc724649f0adca619cc041470a10efaa1be8
 		<input type="button" value="看哪个幻灯片不爽?去添加一个" onclick="location.href='/admin.php/Home/admin/add_image'">
 	</td>
   </tr>
