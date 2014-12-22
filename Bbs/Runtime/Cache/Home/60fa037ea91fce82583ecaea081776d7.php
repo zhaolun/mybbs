@@ -69,7 +69,7 @@ window.onerror = killErrors;
 </div>
  
       
-      <a class="top_login" href="member.php?mod=logging&amp;action=login&amp;referer=" onClick="showWindow('login', this.href);return false;"  title="登录" > 登录 </a> <a class="top_reg"  href="member.php?mod=register"  title="Register" > 注册会员 </a> <a class="top_find_psw" href="javascript:;" onClick="showWindow('login', 'member.php?mod=logging&action=login&viewlostpw=1')"> 找回密码 </a> 
+      <a class="top_login" href="http://www.mybbs.com/bbs.php/Home/login/login" title="登录" > 登录 </a> <a class="top_reg"  href="member.php?mod=register"  title="Register" > 注册会员 </a> <a class="top_find_psw" href=""> 找回密码 </a> 
   
     </div>
   </div>
@@ -145,14 +145,14 @@ initSearchmenu('scbar', 'http://search.itcast.cn/f/discuz');
             <li id="mn_forum" ><a href="http://www.mybbs.com/bbs.php/Home/forum/forum" title="技术论坛"  >技术论坛<span>技术论坛</span></a></li>
        
        
-            <li><a href="/bbs.php/home/ask/ask" title="技术问题在线求助"  >IT问答精灵<span>技术问题在线求助</span></a></li>
+            <li><a href="http://www.mybbs.com/bbs.php/home/ask/ask" title="技术问题在线求助"  >IT问答精灵<span>技术问题在线求助</span></a></li>
        
        
-            <li id="mn_N18f5" ><a href="/bbs.php/home/zine/zine" hidefocus="true"  >传智特刊</a></li>
+            <li id="mn_N18f5" ><a href="http://www.mybbs.com/bbs.php/home/zine/zine" hidefocus="true"  >传智特刊</a></li>
        
        
-            <li id="mn_Ne30e" ><a href="/bbs.php/home/plugin/plugin" hidefocus="true" title="金币积分兑换礼品" target="_blank"  >积分商城<span>金币积分兑换礼品</span></a></li>
-            <li id="mn_N23a1" ><a href="/bbs.php/home/draw/draw" hidefocus="true" title="金币积分抽奖"  >积分抽奖<span>金币积分抽奖</span></a></li>
+            <li id="mn_Ne30e" ><a href="http://www.mybbs.com/bbs.php/home/plugin/plugin" hidefocus="true" title="金币积分兑换礼品" target="_blank"  >积分商城<span>金币积分兑换礼品</span></a></li>
+            <li id="mn_N23a1" ><a href="http://www.mybbs.com/bbs.php/home/draw/draw" hidefocus="true" title="金币积分抽奖"  >积分抽奖<span>金币积分抽奖</span></a></li>
        
        
     </ul>

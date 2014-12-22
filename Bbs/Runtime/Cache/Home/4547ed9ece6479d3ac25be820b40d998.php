@@ -69,7 +69,7 @@ window.onerror = killErrors;
 </div>
  
       
-      <a class="top_login" href="http://www.mybbs.com/bbs.php/Home/login/login" onClick="showWindow('login', this.href);return false;"  title="登录" > 登录 </a> <a class="top_reg"  href="member.php?mod=register"  title="Register" > 注册会员 </a> <a class="top_find_psw" href="javascript:;" onClick="showWindow('login', 'member.php?mod=logging&action=login&viewlostpw=1')"> 找回密码 </a> 
+      <a class="top_login" href="http://www.mybbs.com/bbs.php/Home/login/login" title="登录" > 登录 </a> <a class="top_reg"  href="member.php?mod=register"  title="Register" > 注册会员 </a> <a class="top_find_psw" href=""> 找回密码 </a> 
   
     </div>
   </div>
@@ -243,7 +243,8 @@ www.veikei.com
 </div>
   </div>
 
-				<div id="wp" class="wp">
+				
+<div id="wp" class="wp">
 <!--
 <style type="text/css">
 .ie6 .module { position: static;}
@@ -304,7 +305,7 @@ www.veikei.com
 
 <div id="ct" class="wp cl">
 <div id="chart" class="bm bw0 cl">
-<p class="chart z">今日: <em>496</em><span class="pipe">|</span>昨日: <em>629</em><span class="pipe">|</span>帖子: <em>306524</em><span class="pipe">|</span>会员: <em>174003</em><span class="pipe">|</span>欢迎新会员: <em><a href="space-username-%E7%A7%8B%E7%8C%AB%E9%BB%91.html" target="_blank" class="xi2">秋猫黑</a></em></p>
+<p class="chart z">今日: <em>509</em><span class="pipe">|</span>昨日: <em>629</em><span class="pipe">|</span>帖子: <em>306537</em><span class="pipe">|</span>会员: <em>174011</em><span class="pipe">|</span>欢迎新会员: <em><a href="space-username-nhgfdtr4cZl.html" target="_blank" class="xi2">nhgfdtr4cZl</a></em></p>
 <div class="y">
 <a href="forum.php?mod=guide&amp;view=new" title="最新回复" class="xi2">最新回复</a></div>
 </div>
@@ -793,8 +794,8 @@ runslideshow();
 <a href="thread-28067-1-1.html" title="版块: 干货分享
 标题: 特供精品.Net基础全套视频教程2014版 -- 04Winform应
 发表: 小Z_ (2014-08-14 10:23)
-浏览:  13816 次 回复: 2216 次
-回复: sunforce (2014-12-21 20:32)"   target="_blank" name="xxx">特供精品.Net基础全套视频教程2014版 -- 04Winform应</a>
+浏览:  13857 次 回复: 2218 次
+回复: xqz2020 (2014-12-22 14:35)"   target="_blank" name="xxx">特供精品.Net基础全套视频教程2014版 -- 04Winform应</a>
 
 </div>
 </div>
@@ -1241,7 +1242,7 @@ runslideshow();
 <dl>
 <dt><a href="forum-178-1.html">免费公开课</a><em class="xw0 xi1" title="今日"> (16)</em></dt>
 <dd> <span class="xi2"> 229</span> <span class="xg1"> /<span title="47188">4万</span></span> </dd><dd>
-<a href="forum.php?mod=redirect&amp;tid=25330&amp;goto=lastpost#lastpost">最后发表: <span title="2014-12-22 14:28">8&nbsp;分钟前</span></a>
+<a href="forum.php?mod=redirect&amp;tid=25330&amp;goto=lastpost#lastpost">最后发表: <span title="2014-12-22 14:28">23&nbsp;分钟前</span></a>
 </dd>
 </dl>
 </td>
@@ -1258,7 +1259,7 @@ runslideshow();
 </td>
 <td class="fl_g" width="32.9%">
 <div class="fl_icn_g">
-<a href="forum-200-1.html"><img src="static/image/common/forum_new.gif" alt="传智特刊" /></a>
+<a href="forum-200-1.html"><img src="static/image/common/forum.gif" alt="传智特刊" /></a>
 </div>
 <dl>
 <dt><a href="forum-200-1.html">传智特刊</a></dt>
@@ -1284,20 +1285,20 @@ runslideshow();
 <a href="forum-217-1.html"><img src="static/image/common/forum_new.gif" alt="电商广告网络班" /></a>
 </div>
 <dl>
-<dt><a href="forum-217-1.html">电商广告网络班</a><em class="xw0 xi1" title="今日"> (294)</em></dt>
-<dd> <span class="xi2"> 22</span> <span class="xg1"> /222</span> </dd><dd>
-<a href="forum.php?mod=redirect&amp;tid=49621&amp;goto=lastpost#lastpost">最后发表: <span title="2014-12-22 14:28">8&nbsp;分钟前</span></a>
+<dt><a href="forum-217-1.html">电商广告网络班</a><em class="xw0 xi1" title="今日"> (297)</em></dt>
+<dd> <span class="xi2"> 25</span> <span class="xg1"> /225</span> </dd><dd>
+<a href="forum.php?mod=redirect&amp;tid=49625&amp;goto=lastpost#lastpost">最后发表: <span title="2014-12-22 14:50">2&nbsp;分钟前</span></a>
 </dd>
 </dl>
 </td>
 <td class="fl_g" width="32.9%">
 <div class="fl_icn_g">
-<a href="forum-216-1.html"><img src="static/image/common/forum_new.gif" alt="PS基础网络班" /></a>
+<a href="forum-216-1.html"><img src="static/image/common/forum.gif" alt="PS基础网络班" /></a>
 </div>
 <dl>
 <dt><a href="forum-216-1.html">PS基础网络班</a><em class="xw0 xi1" title="今日"> (6)</em></dt>
 <dd> <span class="xi2"> 141</span> <span class="xg1"> /492</span> </dd><dd>
-<a href="forum.php?mod=redirect&amp;tid=48549&amp;goto=lastpost#lastpost">最后发表: <span title="2014-12-22 13:46">半小时前</span></a>
+<a href="forum.php?mod=redirect&amp;tid=48549&amp;goto=lastpost#lastpost">最后发表: <span title="2014-12-22 13:46">1&nbsp;小时前</span></a>
 </dd>
 </dl>
 </td>
@@ -1318,9 +1319,9 @@ runslideshow();
 <a href="forum-182-1.html"><img src="static/image/common/forum_new.gif" alt="技术答疑" /></a>
 </div>
 <dl>
-<dt><a href="forum-182-1.html">技术答疑</a><em class="xw0 xi1" title="今日"> (8)</em></dt>
-<dd> <span class="xi2"> 4268</span> <span class="xg1"> /<span title="20707">2万</span></span> </dd><dd>
-<a href="forum.php?mod=redirect&amp;tid=49599&amp;goto=lastpost#lastpost">最后发表: <span title="2014-12-22 12:56">1&nbsp;小时前</span></a>
+<dt><a href="forum-182-1.html">技术答疑</a><em class="xw0 xi1" title="今日"> (9)</em></dt>
+<dd> <span class="xi2"> 4268</span> <span class="xg1"> /<span title="20708">2万</span></span> </dd><dd>
+<a href="forum.php?mod=redirect&amp;tid=7807&amp;goto=lastpost#lastpost">最后发表: <span title="2014-12-22 14:44">8&nbsp;分钟前</span></a>
 </dd>
 </dl>
 </td>
@@ -1329,15 +1330,15 @@ runslideshow();
 <a href="forum-181-1.html"><img src="static/image/common/forum_new.gif" alt="干货分享" /></a>
 </div>
 <dl>
-<dt><a href="forum-181-1.html">干货分享</a><em class="xw0 xi1" title="今日"> (134)</em></dt>
-<dd> <span class="xi2"> 3321</span> <span class="xg1"> /<span title="185490">18万</span></span> </dd><dd>
-<a href="forum.php?mod=redirect&amp;tid=28067&amp;goto=lastpost#lastpost">最后发表: <span title="2014-12-22 14:35">1&nbsp;分钟前</span></a>
+<dt><a href="forum-181-1.html">干货分享</a><em class="xw0 xi1" title="今日"> (141)</em></dt>
+<dd> <span class="xi2"> 3321</span> <span class="xg1"> /<span title="185497">18万</span></span> </dd><dd>
+<a href="forum.php?mod=redirect&amp;tid=7795&amp;goto=lastpost#lastpost">最后发表: <span title="2014-12-22 14:50">1&nbsp;分钟前</span></a>
 </dd>
 </dl>
 </td>
 <td class="fl_g" width="32.9%">
 <div class="fl_icn_g">
-<a href="forum-209-1.html"><img src="static/image/common/forum_new.gif" alt="网页平面UI设计学员作品展示" /></a>
+<a href="forum-209-1.html"><img src="static/image/common/forum.gif" alt="网页平面UI设计学员作品展示" /></a>
 </div>
 <dl>
 <dt><a href="forum-209-1.html">网页平面UI设计学员作品展示</a><em class="xw0 xi1" title="今日"> (1)</em></dt>
@@ -1360,7 +1361,7 @@ runslideshow();
 <table cellspacing="0" cellpadding="0" class="fl_tb">
 <tr><td class="fl_g" width="32.9%">
 <div class="fl_icn_g">
-<a href="forum-171-1.html"><img src="static/image/common/forum_new.gif" alt="IT资讯" /></a>
+<a href="forum-171-1.html"><img src="static/image/common/forum.gif" alt="IT资讯" /></a>
 </div>
 <dl>
 <dt><a href="forum-171-1.html">IT资讯</a><em class="xw0 xi1" title="今日"> (3)</em></dt>
@@ -1371,7 +1372,7 @@ runslideshow();
 </td>
 <td class="fl_g" width="32.9%">
 <div class="fl_icn_g">
-<a href="forum-172-1.html"><img src="static/image/common/forum_new.gif" alt="就业薪资" /></a>
+<a href="forum-172-1.html"><img src="static/image/common/forum.gif" alt="就业薪资" /></a>
 </div>
 <dl>
 <dt><a href="forum-172-1.html">就业薪资</a><em class="xw0 xi1" title="今日"> (1)</em></dt>
@@ -1405,12 +1406,12 @@ runslideshow();
 <table cellspacing="0" cellpadding="0" class="fl_tb">
 <tr><td class="fl_g" width="32.9%">
 <div class="fl_icn_g">
-<a href="forum-184-1.html"><img src="static/image/common/forum_new.gif" alt="衣食住行" /></a>
+<a href="forum-184-1.html"><img src="static/image/common/forum.gif" alt="衣食住行" /></a>
 </div>
 <dl>
 <dt><a href="forum-184-1.html">衣食住行</a><em class="xw0 xi1" title="今日"> (3)</em></dt>
 <dd> <span class="xi2"> 192</span> <span class="xg1"> /707</span> </dd><dd>
-<a href="forum.php?mod=redirect&amp;tid=49617&amp;goto=lastpost#lastpost">最后发表: <span title="2014-12-22 13:46">半小时前</span></a>
+<a href="forum.php?mod=redirect&amp;tid=49617&amp;goto=lastpost#lastpost">最后发表: <span title="2014-12-22 13:46">1&nbsp;小时前</span></a>
 </dd>
 </dl>
 </td>
@@ -1419,15 +1420,15 @@ runslideshow();
 <a href="forum-185-1.html"><img src="static/image/common/forum_new.gif" alt="热门活动" /></a>
 </div>
 <dl>
-<dt><a href="forum-185-1.html">热门活动</a><em class="xw0 xi1" title="今日"> (12)</em></dt>
-<dd> <span class="xi2"> 416</span> <span class="xg1"> /2618</span> </dd><dd>
-<a href="forum.php?mod=redirect&amp;tid=46775&amp;goto=lastpost#lastpost">最后发表: <span title="2014-12-22 13:58">半小时前</span></a>
+<dt><a href="forum-185-1.html">热门活动</a><em class="xw0 xi1" title="今日"> (14)</em></dt>
+<dd> <span class="xi2"> 417</span> <span class="xg1"> /2620</span> </dd><dd>
+<a href="forum.php?mod=redirect&amp;tid=49624&amp;goto=lastpost#lastpost">最后发表: <span title="2014-12-22 14:45">6&nbsp;分钟前</span></a>
 </dd>
 </dl>
 </td>
 <td class="fl_g" width="32.9%">
 <div class="fl_icn_g">
-<a href="forum-207-1.html"><img src="static/image/common/forum_new.gif" alt="吹牛专区" /></a>
+<a href="forum-207-1.html"><img src="static/image/common/forum.gif" alt="吹牛专区" /></a>
 </div>
 <dl>
 <dt><a href="forum-207-1.html">吹牛专区</a><em class="xw0 xi1" title="今日"> (6)</em></dt>
@@ -1450,7 +1451,7 @@ runslideshow();
 <table cellspacing="0" cellpadding="0" class="fl_tb">
 <tr><td class="fl_g" width="32.9%">
 <div class="fl_icn_g">
-<a href="forum-175-1.html"><img src="static/image/common/forum_new.gif" alt="站务公告" /></a>
+<a href="forum-175-1.html"><img src="static/image/common/forum.gif" alt="站务公告" /></a>
 </div>
 <dl>
 <dt><a href="forum-175-1.html">站务公告</a><em class="xw0 xi1" title="今日"> (3)</em></dt>
@@ -1461,7 +1462,7 @@ runslideshow();
 </td>
 <td class="fl_g" width="32.9%">
 <div class="fl_icn_g">
-<a href="forum-176-1.html"><img src="static/image/common/forum_new.gif" alt="版主会议室" /></a>
+<a href="forum-176-1.html"><img src="static/image/common/forum.gif" alt="版主会议室" /></a>
 </div>
 <dl>
 <dt><a href="forum-176-1.html">版主会议室</a><em class="xw0 xi1" title="今日"> (2)</em></dt>
@@ -1487,7 +1488,7 @@ runslideshow();
 <strong>
 在线会员
 </strong>
-<span class="xs1">- 总计 <strong>394</strong> 人在线
+<span class="xs1">- 总计 <strong>425</strong> 人在线
 - 最高记录是 <strong>1205</strong> 于 <strong>2014-6-21</strong>.</span>
 </h3>
 </div>
@@ -1513,7 +1514,7 @@ runslideshow();
 _attachEvent(window, 'load', getForbiddenFormula, document);
 function getForbiddenFormula() {
 var toGetForbiddenFormulaFIds = function () {
-ajaxget('plugin.php?id=cloudsearch&formhash=236e01fb');
+ajaxget('plugin.php?id=cloudsearch&formhash=a8c43e0a');
 };
 var a = document.body.getElementsByTagName('a');
 for(var i = 0;i < a.length;i++){
