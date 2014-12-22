@@ -146,17 +146,8 @@ H1 a {
 		<td width="39%" valign="top">
 			<table width="100%" border="0" cellspacing="0" cellpadding="0">
 				<tr>
-					<td width="74%" height="38" class="admin_txt">管理员：<b><?php echo ($_SESSION["username"]); ?></b> 您好,感谢登陆使用！</td>
+					<td width="74%" height="38" class="admin_txt">管理员：<b><%=session("admin_name")%></b> 您好,感谢登陆使用！</td>
 					<td width="22%"><a href="#" target="_self" onClick="logout();"><img src="/Public/admin/images/out.gif" alt="安全退出" width="46" height="20" border="0"></a></td>
-					<script type="text/javascript">
-					<!--
-						function logout(){
-							if(confirm("确认退出后台管理?"))
-								location.href="/admin.php/Home/admin/loginout";
-							return false;
-						}
-					//-->
-					</script>
 					<td width="4%">&nbsp;</td>
 				</tr>
 				<tr>
@@ -181,8 +172,8 @@ H1 a {
           </tr>
         </table>
         <ul class="MM">
-          <li><a href="/admin.php/Home/admin/nav">导航管理</a></li>
-          <li><a href="/admin.php/Home/admin/image">幻灯片管理</a></li>
+          <li><a href="http://www.865171.cn">导航管理</a></li>
+          <li><a href="http://www.865171.cn">幻灯片管理</a></li>
         </ul>
       </div>
       
@@ -196,10 +187,12 @@ H1 a {
         <ul class="MM">
           <li><a href="/admin.php/home/class/add">添加班级</a></li>
           <li><a href="/admin.php/home/intro/add">添加课程</a></li>
+		  <li><a href="/admin.php/home/intro/addlist">添加阶段</a></li>
           <li><a href="/admin.php/home/class/addlist">班级列表</a></li>
-          <li><a href="/admin.php/home/intro/addlist">课程列表</a></li>
+          <li><a href="/admin.php/home/intro/kechenglist">课程列表</a></li>
         </ul>
       </div>
+
 							<h1 class="type"><a>就业信息</a></h1>
 								<div class="content">
         <table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -227,6 +220,7 @@ H1 a {
 							<li><a href="/admin.php/home/position/lists" >职位列表</a></li>
 							</ul>
 							</div>
+
 							<h1 class="type"><a>常见问题</a></h1>
 							<div class="content">
 							<table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -237,6 +231,18 @@ H1 a {
 							<ul class="MM">
 							<li><a href="/admin.php/home/problem/lists" >问题管理</a></li>
 							<li><a href="/admin.php/home/problem/add" >添加问题</a></li>
+							</ul>
+							</div>
+
+							<h1 class="type"><a>yi利一组</a></h1>
+							<div class="content">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+							<td><img src="/Public/admin/images/menu_topline.gif" width="182" height="5" /></td>
+							</tr>
+							</table>
+							<ul class="MM">
+							<li><a href="/admin.php/home/one/lists" >一组信息</a></li>
 							</ul>
 							</div>
 						</div>
@@ -253,44 +259,51 @@ H1 a {
 		<td width="87%" valign="top">
 			<div style="margin:10px;padding:10px;">
 				<head>
-<title>修改导航</title>
+<title>添加问题</title>
 <meta name="robots" content="noindex, nofollow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="/Public/admin/css/general.css" rel="stylesheet" type="text/css" />
-<link href="/Public/admin/css/main.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="/Public/admin/js/transport.js"></script>
+<link href="../css/general.css" rel="stylesheet" type="text/css" />
+<link href="../css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/transport.js"></script>
 <script type="text/javascript" src="./js/common.js"></script>
 </head>
 <body>
-<h1>
-<span class="action-span1">修改导航</span><span id="search_id" class="action-span1"></span>
-<div style="clear:both"></div>
-</h1>
- 
+<h1>添加问题</h1>
+<a href='/admin.php/Home/problem/lists'>问题列表</a>
+
 <!-- 添加新闻类别 -->
 <div class="list-div">
-<form method="post" action="/admin.php/Home/admin/nav_uppro">
+<form method="post" action="/admin.php/Home/problem/add_do">
 	<table cellspacing='1' cellpadding='3'>
-		<tr>
-			<td align='right'>导航名称：</td>
-			<input type="hidden" name="h_id" value="<?php echo ($info["nav_id"]); ?>">
-			<td><input type="text" name="nav_name" size=80 value="<?php echo ($info["nav_name"]); ?>"></td>
+	    <tr>
+			<td align='right'>问题类别：</td>
+			<td><select name="status">
+			    <option selected>-请选择-</option>
+				<option value="1" >热点问题</option>
+				<option value="0">PHP相关问题</option>
+			</select></td>
 		</tr>
+
 		<tr>
-			<td align='right'>导航链接：</td>
-			<td>
-			<textarea name="nav_link" rows="20" cols="100"><?php echo ($info["nav_link"]); ?></textarea></td>
+			<td align='right'>问题名称：</td>
+			<td><input type="text" name="title" size=80></td>
 		</tr>
 		
 		<tr>
-			<td align='center' colspan=2><input type="submit" value='修改导航'></td>	
+			<td align='right'>问题答案：</td>
+			<td>
+			<textarea name="content" rows="10" cols="40"></textarea>
+		</tr>
+
+		<tr>
+			<td align='center' colspan=2><input type="submit" value='添加'></td>	
 		</tr>
 	</table>
 </form>
 </div>
 <br />
 <div id="footer">
-版权所有 &copy; 八维研修学院软件工程学院1308phpA班，并保留所有权利。</div>
+版权所有 &copy; 八维研修学院软件工程学院1308phpA班yi利小组，并保留所有权利。</div>
 </body>
 </html>
 			</div>

@@ -240,15 +240,19 @@ class MessageController extends Controller {
         $upload->maxSize = 3145728;
         $upload->saveName = 'time';
         $upload->exts= array('jpg','gif','png','jpeg');// 设置附件上传类型    
-        $upload->savePath  ='/Uploads';//设置附件上传目录
+        //$upload->rootPath = './Public/';
+        $upload->savePath = '/Uploads/';
+        //$upload->saveName=substr($_FILES['pic']['name'],0,strrpos($_FILES['pic']['name'],"."));
+        // 上传文件
         $info=$upload->upload();
         //执行添加
+         //$data['pic']='/Uploads/Uploads/'.date("Y-m-d",time()).'/'.$_FILES['pic']['name'];
         $data['stu_name']=$_POST['stu_name'];
         $data['school']=$_POST['school'];
         $data['work_time']=$_POST['r_time'];
         $data['company']=$_POST['company'];
         $data['money']=$_POST['money'];
-        $data['pic']=$info['pic']['savename'];//获取文件保存的名称
+        $data['pic']='/Uploads/Uploads/'.date("Y-m-d",time()).'/'.$info['pic']['savename'];//获取文件保存的名称
         $stu=$model->add($data);
         //echo "<pre>";var_dump($info['pic']['savename']);die; 
         if($info&&$stu) 
@@ -297,15 +301,13 @@ class MessageController extends Controller {
     {
         //var_dump($_POST['stu_id']);die;
         $stu_id=$_POST['stu_id'];
-
-
         $model=M('student');
         //上传文件
         $upload=new \Think\Upload();
         $upload->maxSize = 3145728;
         $upload->saveName = 'time';
         $upload->exts= array('jpg','gif','png','jpeg');// 设置附件上传类型    
-        $upload->savePath  ='/Uploads';//设置附件上传目录
+        $upload->savePath  ='/Uploads/';//设置附件上传目录
         $info=$upload->upload();
         //执行添加
         $data['stu_name']=$_POST['stu_name'];
@@ -313,7 +315,9 @@ class MessageController extends Controller {
         $data['work_time']=$_POST['work_time'];
         $data['company']=$_POST['company'];
         $data['money']=$_POST['money'];
-        $data['pic']=$info['pic']['savename'];//获取文件保存的名称
+        $data['pic']='/Uploads/Uploads/'.date("Y-m-d",time()).'/'.$info['pic']['savename'];//获取文件保存的名称
+
+        //$data['pic']=$info['pic']['savename'];//获取文件保存的名称
         //$stu=$model->add($data);
         $update=$model->where("stu_id=$stu_id")->save($data);
         //echo "<pre>";var_dump($info['pic']['savename']);die; 
