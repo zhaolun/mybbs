@@ -139,7 +139,7 @@ initSearchmenu('scbar', 'http://search.itcast.cn/f/discuz');
        
        
        
-            <li class="a" id="mn_portal" ><a href="/bbs.php/home/index/index" hidefocus="true" title="门户首页"  >IT学习社区<span>门户首页</span></a></li>
+            <li class="a" id="mn_portal" ><a href="http://www.mybbs.com/bbs.php/home/index/index" hidefocus="true" title="门户首页"  >IT学习社区<span>门户首页</span></a></li>
        
        
             <li id="mn_forum" ><a href="http://www.mybbs.com/bbs.php/Home/forum/forum" title="技术论坛"  >技术论坛<span>技术论坛</span></a></li>
@@ -486,181 +486,21 @@ runslideshow();
         <td>
         	<img src="source/plugin/study_nge/images/list10.gif" alt="列表"/>
         </td>
-        <td class="nge_list_td">
-        
+        <td class="nge_list_td">       
                 	<div id="study_nge_m_threads_0" class="nge_dis">
-                		<div class="nge_list_div">
-        			<div style="float:right;margin-right:5px;display:inline;overflow:hidden;text-overflow:ellipsis;">
-&nbsp;
-
-        				
-        			
+					<?php if(is_array($info)): foreach($info as $key=>$vo): ?><div class="nge_list_div">
+        			<div style="float:right;margin-right:5px;display:inline;overflow:hidden;text-overflow:ellipsis;">&nbsp;      			
         			</div>
+
         			<div style="display:inline;overflow:hidden;text-overflow:ellipsis;">
         			
-<a href="thread-48273-1-1.html" title="版块: 学员感言
-标题: 感谢传智 让我找到满意的工作
+<a href="http://www.mybbs.com/bbs.php/Home/forum/forum_pro?id=<?php echo ($vo["id"]); ?>" title="<?php echo ($vo["ganyan"]); ?>
 发表: 左泽 (2014-12-18 19:15)
 浏览:  61 次 回复: 5 次
-回复: 格子夕 (2014-12-22 14:03)"   target="_blank" name="xxx">感谢传智 让我找到满意的工作</a>
-
+回复: 格子夕 (2014-12-22 14:03)"   target="_blank" name="xxx"><?php echo ($vo["ganyan"]); ?></a>
 </div>
-</div>
-        		<div class="nge_list_div">
-        			<div style="float:right;margin-right:5px;display:inline;overflow:hidden;text-overflow:ellipsis;">
-&nbsp;
-
-        				
-        			
-        			</div>
-        			<div style="display:inline;overflow:hidden;text-overflow:ellipsis;">
-        			
-<a href="thread-49153-1-1.html" title="版块: 学员感言
-标题: 不知道该不该再重新出去做程序员。。。
-发表: q380472335 (2014-12-21 20:14)
-浏览:  12 次 回复: 1 次
-回复: 格子夕 (2014-12-22 13:54)"   target="_blank" name="xxx">不知道该不该再重新出去做程序员。。。</a>
-
-</div>
-</div>
-        		<div class="nge_list_div">
-        			<div style="float:right;margin-right:5px;display:inline;overflow:hidden;text-overflow:ellipsis;">
-&nbsp;
-
-        				
-        			
-        			</div>
-        			<div style="display:inline;overflow:hidden;text-overflow:ellipsis;">
-        			
-<a href="thread-46689-1-1.html" title="版块: 学员感言
-标题: 【网络营销一期】钱难赚 屎难吃 大龄生物硕士转行记
-发表: darwin (2014-12-11 23:17)
-浏览:  301 次 回复: 11 次
-回复: yixiaoerguo1987 (2014-12-21 15:15)"   target="_blank" name="xxx">【网络营销一期】钱难赚 屎难吃 大龄生物硕士转行记</a>
-
-</div>
-</div>
-        		<div class="nge_list_div">
-        			<div style="float:right;margin-right:5px;display:inline;overflow:hidden;text-overflow:ellipsis;">
-&nbsp;
-
-        				
-        			
-        			</div>
-        			<div style="display:inline;overflow:hidden;text-overflow:ellipsis;">
-        			
-<a href="thread-48555-1-1.html" title="版块: 学员感言
-标题: 来自iOS0512的感谢信
-发表: yunkai (2014-12-19 22:29)
-浏览:  16 次 回复: 1 次
-回复: 马军丰老师 (2014-12-21 10:45)"   target="_blank" name="xxx">来自iOS0512的感谢信</a>
-
-</div>
-</div>
-        		<div class="nge_list_div">
-        			<div style="float:right;margin-right:5px;display:inline;overflow:hidden;text-overflow:ellipsis;">
-&nbsp;
-
-        				
-        			
-        			</div>
-        			<div style="display:inline;overflow:hidden;text-overflow:ellipsis;">
-        			
-<a href="thread-47594-1-1.html" title="版块: 学员感言
-标题: 【网络营销一期】20几
-发表: 一起走过的日子 (2014-12-15 22:50)
-浏览:  105 次 回复: 18 次
-回复: 黎明前的破晓 (2014-12-21 00:16)"   target="_blank" name="xxx">【网络营销一期】20几</a>
-
-</div>
-</div>
-        		<div class="nge_list_div">
-        			<div style="float:right;margin-right:5px;display:inline;overflow:hidden;text-overflow:ellipsis;">
-&nbsp;
-
-        				
-        			
-        			</div>
-        			<div style="display:inline;overflow:hidden;text-overflow:ellipsis;">
-        			
-<a href="thread-48496-1-1.html" title="版块: 学员感言
-标题: 传智网络营销首期班（二）10天后会怎样
-发表: Milk❤ (2014-12-19 16:41)
-浏览:  53 次 回复: 7 次
-回复: Ice_Cream (2014-12-20 22:49)"   target="_blank" name="xxx">传智网络营销首期班（二）10天后会怎样</a>
-
-</div>
-</div>
-        		<div class="nge_list_div">
-        			<div style="float:right;margin-right:5px;display:inline;overflow:hidden;text-overflow:ellipsis;">
-&nbsp;
-
-        				
-        			
-        			</div>
-        			<div style="display:inline;overflow:hidden;text-overflow:ellipsis;">
-        			
-<a href="thread-48264-1-1.html" title="版块: 学员感言
-标题: 原来传智女老师也很霸气也很给力
-发表: yixiaoerguo1987 (2014-12-18 18:03)
-浏览:  146 次 回复: 7 次
-回复: Ice_Cream (2014-12-20 22:47)"   target="_blank" name="xxx">原来传智女老师也很霸气也很给力</a>
-
-</div>
-</div>
-        		<div class="nge_list_div">
-        			<div style="float:right;margin-right:5px;display:inline;overflow:hidden;text-overflow:ellipsis;">
-&nbsp;
-
-        				
-        			
-        			</div>
-        			<div style="display:inline;overflow:hidden;text-overflow:ellipsis;">
-        			
-<a href="thread-43095-1-1.html" title="版块: 学员感言
-标题: 【.Net】应届生高薪就业的背后，看到第3条我惊呆了！
-发表: 陈育梅 (2014-11-20 11:33)
-浏览:  5169 次 回复: 20 次
-回复: 追梦人_2014 (2014-12-20 00:07)"   target="_blank" name="xxx">【.Net】应届生高薪就业的背后，看到第3条我惊呆了！</a>
-
-</div>
-</div>
-        		<div class="nge_list_div">
-        			<div style="float:right;margin-right:5px;display:inline;overflow:hidden;text-overflow:ellipsis;">
-&nbsp;
-
-        				
-        			
-        			</div>
-        			<div style="display:inline;overflow:hidden;text-overflow:ellipsis;">
-        			
-<a href="thread-46016-1-1.html" title="版块: 学员感言
-标题: 【网络营销一期】成长，在岁月无声中前行！
-发表: 跃向空中的鱼 (2014-12-07 19:51)
-浏览:  130 次 回复: 15 次
-回复: 跃向空中的鱼 (2014-12-19 23:04)"   target="_blank" name="xxx">【网络营销一期】成长，在岁月无声中前行！</a>
-
-</div>
-</div>
-        		<div class="nge_list_div">
-        			<div style="float:right;margin-right:5px;display:inline;overflow:hidden;text-overflow:ellipsis;">
-&nbsp;
-
-        				
-        			
-        			</div>
-        			<div style="display:inline;overflow:hidden;text-overflow:ellipsis;">
-        			
-<a href="thread-47590-1-1.html" title="版块: 学员感言
-标题: 【网络营销一期】20几
-发表: 一起走过的日子 (2014-12-15 22:34)
-浏览:  15 次 回复: 1 次
-回复: 跃向空中的鱼 (2014-12-19 23:01)"   target="_blank" name="xxx">【网络营销一期】20几</a>
-
-</div>
-</div>
-
-        	</div>
+</div><?php endforeach; endif; ?>
+       	</div>
         	<div id="study_nge_m_threads_1" class="nge_undis">
                 		<div class="nge_list_div">
         			<div style="float:right;margin-right:5px;display:inline;overflow:hidden;text-overflow:ellipsis;">

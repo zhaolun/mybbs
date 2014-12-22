@@ -1,4 +1,4 @@
-<html>
+<?php if (!defined('THINK_PATH')) exit();?><html>
 <head>
 <title>MyBBS后台管理</title>
 </head>
@@ -146,7 +146,7 @@ H1 a {
 		<td width="39%" valign="top">
 			<table width="100%" border="0" cellspacing="0" cellpadding="0">
 				<tr>
-					<td width="74%" height="38" class="admin_txt">管理员：<b>{$_SESSION.username}</b> 您好,感谢登陆使用！</td>
+					<td width="74%" height="38" class="admin_txt">管理员：<b><?php echo ($_SESSION["username"]); ?></b> 您好,感谢登陆使用！</td>
 					<td width="22%"><a href="#" target="_self" onClick="logout();"><img src="/Public/admin/images/out.gif" alt="安全退出" width="46" height="20" border="0"></a></td>
 					<script type="text/javascript">
 					<!--
@@ -280,7 +280,82 @@ H1 a {
 		</script>
 		<td width="87%" valign="top">
 			<div style="margin:10px;padding:10px;">
-				{__CONTENT__}
+				<head>
+<title>添加新闻类别</title>
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="/Public/admin/css/general.css" rel="stylesheet" type="text/css" />
+<link href="/Public/admin/css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/Public/admin/js/transport.js"></script>
+<script type="text/javascript" src="/Public/admin/js/common.js"></script>
+</head>
+<body>
+<h1>
+<span class="action-span1">编辑学生信息</span><span id="search_id" class="action-span1"></span>
+<div style="clear:both"></div>
+</h1>
+ 
+<!-- 添加新闻类别 -->
+<div class="list-div">
+<form method="post" action="/admin.php/home/message/stu_edit" enctype="multipart/form-data">
+	<table cellspacing='1' cellpadding='3'>
+		<?php if(is_array($list)): foreach($list as $key=>$val): ?><input type="hidden" name="stu_id" value="<?php echo ($val["stu_id"]); ?>">
+		<tr>
+			<td align="right">学生名称</td>
+			<td><input type="text" name="stu_name" value="<?php echo ($val["stu_name"]); ?>"></td>
+		</tr>
+		<tr>
+			<td align="right">毕业学校</td>
+			<td>
+				<select name="school">
+					<?php if(is_array($sch)): foreach($sch as $key=>$sc): ?><option value="<?php echo ($sc["s_id"]); ?>"
+							<?php
+ if($sc['s_id']==$val['school']) { echo "selected"; } ?>>
+							<?php echo ($sc["s_name"]); ?>
+						</option><?php endforeach; endif; ?>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td align="right">入职时间</td>
+			<td>
+				<input type="text" name="work_time" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd',autoPickDate:true,skin:'default'})"   value="<?php echo ($val["work_time"]); ?>" />
+			</td>
+		</tr>
+		
+		<tr>
+			<td align="right">所属公司</td>
+			<td>
+				<select name="company">
+					<?php if(is_array($com)): foreach($com as $key=>$com): ?><option value="<?php echo ($com["com_id"]); ?>"
+						<?php
+ if($com['com_id']==$val['company']) { echo "selected"; } ?>><?php echo ($com["com_name"]); ?>
+					  </option><?php endforeach; endif; ?>
+				</select>
+
+			</td>
+		</tr>
+		<tr>
+			<td align="right">期望月薪</td>
+			<td><input type="text" name="money" value="<?php echo ($val["money"]); ?>"></td>
+		</tr>
+		<tr>
+			<td align="right">学生头像</td>
+			<td><input type='file' name='pic'>video:<input type="text" name="video"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td align="left"><input type="submit" value="提交"></td>	
+		</tr><?php endforeach; endif; ?>
+	</table>
+</form>
+</div>
+<br />
+<script type="text/javascript" src="/Public/js/My97DatePicker/WdatePicker.js"></script>
+<div id="footer">
+版权所有 &copy; 八维研修学院软件工程学院1302phpA班，并保留所有权利。</div>
+</body>
+</html>
 			</div>
 		</td>
 	</tr>

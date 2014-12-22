@@ -139,7 +139,7 @@ initSearchmenu('scbar', 'http://search.itcast.cn/f/discuz');
        
        
        
-            <li class="a" id="mn_portal" ><a href="/bbs.php/home/index/index" hidefocus="true" title="门户首页"  >IT学习社区<span>门户首页</span></a></li>
+            <li class="a" id="mn_portal" ><a href="http://www.mybbs.com/bbs.php/home/index/index" hidefocus="true" title="门户首页"  >IT学习社区<span>门户首页</span></a></li>
        
        
             <li id="mn_forum" ><a href="http://www.mybbs.com/bbs.php/Home/forum/forum" title="技术论坛"  >技术论坛<span>技术论坛</span></a></li>
