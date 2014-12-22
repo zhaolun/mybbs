@@ -69,7 +69,7 @@ window.onerror = killErrors;
 </div>
  
       
-      <a class="top_login" href="http://www.mybbs.com/bbs.php/Home/login/login" onClick="showWindow('login', this.href);return false;"  title="登录" > 登录 </a> <a class="top_reg"  href="member.php?mod=register"  title="Register" > 注册会员 </a> <a class="top_find_psw" href="javascript:;" onClick="showWindow('login', 'member.php?mod=logging&action=login&viewlostpw=1')"> 找回密码 </a> 
+      <a class="top_login" href="member.php?mod=logging&amp;action=login&amp;referer=" onClick="showWindow('login', this.href);return false;"  title="登录" > 登录 </a> <a class="top_reg"  href="member.php?mod=register"  title="Register" > 注册会员 </a> <a class="top_find_psw" href="javascript:;" onClick="showWindow('login', 'member.php?mod=logging&action=login&viewlostpw=1')"> 找回密码 </a> 
   
     </div>
   </div>
@@ -139,7 +139,7 @@ initSearchmenu('scbar', 'http://search.itcast.cn/f/discuz');
        
        
        
-            <li class="a" id="mn_portal" ><a href="/bbs.php/home/index/index" hidefocus="true" title="门户首页"  >IT学习社区<span>门户首页</span></a></li>
+            <li class="a" id="mn_portal" ><a href="http://www.mybbs.com/bbs.php/home/index/index" hidefocus="true" title="门户首页"  >IT学习社区<span>门户首页</span></a></li>
        
        
             <li id="mn_forum" ><a href="http://www.mybbs.com/bbs.php/Home/forum/forum" title="技术论坛"  >技术论坛<span>技术论坛</span></a></li>
