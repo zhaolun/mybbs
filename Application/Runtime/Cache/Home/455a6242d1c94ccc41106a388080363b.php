@@ -53,9 +53,47 @@
     <li id="nav_teacher"><a href="/index.php/Home/teacher/index">师资力量</a> </li>
     <li id="nav_job"><a href="/index.php/Home/message/index">就业信息</a> </li>
 	<li id="nav_question"><a href="/index.php/Home/problem/index">常见问题</a></li>
-	<li><a target="_blank" href="/index.php/Home/video/index" target="_blank">技术论坛 </a></li>
+	<li><a target="_blank" href="/bbs.php">技术论坛 </a></li>
 </ul>
 	</div>
+	<div id="box">
+		<div class="mbx">
+		<!-- Baidu share BEGIN -->
+<div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+	<span class="bds_more">分享到：</span>
+	<script type="text/javascript">
+(function(){
+var p = {
+url:location.href, /*获取URL，可加上来自分享到QQ标识，方便统计*/
+desc:'', /*分享理由(风格应模拟用户对话),支持多分享语随机展现（使用|分隔）*/
+title:'', /*分享标题(可选)*/
+summary:'', /*分享摘要(可选)*/
+pics:'', /*分享图片(可选)*/
+flash: '', /*视频地址(可选)*/
+site:'', /*分享来源(可选) 如：QQ分享*/
+style:'101',
+width:96,
+height:24
+};
+var s = [];
+for(var i in p){
+s.push(i + '=' + encodeURIComponent(p[i]||''));
+}
+document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shareqq/index.html?',s.join('&'),'" target="_blank">分享到QQ</a>'].join(''));
+})();
+</script>
+<script src="http://connect.qq.com/widget/loader/loader.js" widget="shareqq" charset="utf-8"></script>
+	<a class="bds_qzone">QQ空间</a>
+	<a class="bds_tqq">腾讯微博</a>
+	<a class="bds_tsina">新浪微博</a>
+	<a class="bds_tieba">百度贴吧</a>
+	<a class="shareCount"></a>
+</div>
+<!-- Baidu share END 需在页面底部添加baidushare.js -->
+		   <div style="padding-left:60px;float:left; _padding-top:8px;">
+				<b>其它学院入口：</b><img src="/Public/images/sanjiao.jpg" /> <a href="http://java.itcast.cn" target="_blank">java学院</a> <img src="/Public/images/sanjiao.jpg" /> <a href="http://net.itcast.cn" target="_blank">.net学院</a><img src="/Public/images/sanjiao.jpg" /> <a href="http://ios.itcast.cn">ios学院</a> <img src="/Public/images/sanjiao.jpg" /> <a href="http://c.itcast.cn">c/c++学院</a><img src="/Public/images/sanjiao.jpg" /> <a href="http://icd.itcast.cn" target="_blank">网页平面设计学院</a>
+			</div>
+		</div>
 
 <div id="box">
 <div id="left" class="fl"  style="margin-top:3px;">
@@ -69,12 +107,20 @@
 			  <?php echo ($va["com_name"]); ?></b></span><br />
 			<span class="jyjb-font2"><a href="/index.php/home/message/video/stu_id/<?php echo ($va["stu_id"]); ?>">[播放]</a></span></li>
 =======
+<<<<<<< HEAD
+			<li class="fl jyjb-11-font1" style="height:96px;"><a href="/index.php/home/message/video/stu_id/<?php echo ($va["stu_id"]); ?>"><img alt="yi利一组" src="<?php echo ($va["pic"]); ?>" style="width: 131px; height: 93px; " /></a></li>
+			<li class="fl jyjb-11-font1"><span style="color:#000000;"><b><?php echo ($va["stu_name"]); ?><br />
+		      <?php echo ($va["s_name"]); ?><br />
+			  <?php echo ($va["com_name"]); ?></b></span><br />
+			<span class="jyjb-font2"><a href="/index.php/home/message/video/stu_id/<?php echo ($va["stu_id"]); ?>">[播放]</a></span></li>
+=======
 			<li class="fl jyjb-11-font1" style="height:96px;"><a href="http://php.itcast.cn/news/20130705/15012588541.shtml"><img alt="yi利一组" src="<?php echo ($va["pic"]); ?>" style="width: 131px; height: 93px; " /></a></li>
 			<li class="fl jyjb-11-font1"><span style="color:#000000;"><b><?php echo ($va["stu_name"]); ?><br />
 		      <?php echo ($va["s_name"]); ?><br />
 			  <?php echo ($va["com_name"]); ?></b></span><br />
 			<span class="jyjb-font2"><a href="http://php.itcast.cn/news/20130705/15012588541.shtml">[播放]</a></span></li>
 >>>>>>> fdc96fbac08f6afab5f9c81893dd1070476c5815
+>>>>>>> b2ba291aa070cc093624f977aaaa3b54216780f7
 			</ul>
 		</div><?php endforeach; endif; ?>
 <!--

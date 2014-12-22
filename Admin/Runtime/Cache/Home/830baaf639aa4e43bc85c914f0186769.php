@@ -267,47 +267,42 @@ H1 a {
 		<td width="87%" valign="top">
 			<div style="margin:10px;padding:10px;">
 				<head>
-<title>前台幻灯片列表</title>
+<title>添加班级</title>
 <meta name="robots" content="noindex, nofollow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="/Public/admin/css/general.css" rel="stylesheet" type="text/css" />
 <link href="/Public/admin/css/main.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="/Public/admin/js/transport.js"></script>
+<script type="text/javascript" src="../js/transport.js"></script>
 <script type="text/javascript" src="./js/common.js"></script>
 </head>
 <body>
 <h1>
-<span class="action-span1">前台幻灯片列表</span><span id="search_id" class="action-span1"></span>
+<span class="action-span1">添加班级</span><span id="search_id" class="action-span1"></span>
 <div style="clear:both"></div>
 </h1>
-<!-- 新闻类别列表 -->
+<!-- 添加新闻 -->
 <div class="list-div">
-<table cellspacing='1' cellpadding='3'>
-  <tr>
-    <th  class="group-title">编号</th>
-	<th  class="group-title">幻灯片</th>
-	<th  class="group-title">幻灯片名称</th>
-	<th  class="group-title">幻灯片介绍</th>
-	<th  class="group-title">幻灯片链接</th>
-	<th  class="group-title">操作</th>
-  </tr>
-  <?php if(is_array($info)): foreach($info as $key=>$vo): ?><tr class="table_tr">
-	<td width="10%"><?php echo ($vo["img_id"]); ?></td>
-    <td width="10%"><img src="<?php echo ($vo["img_path"]); ?>" width=50></td>
-    <td width="15%"><?php echo ($vo["img_title"]); ?></td>
-    <td width="15%"><?php echo ($vo["img_desc"]); ?></td>
-	<td width="30%"><?php echo ($vo["img_link"]); ?></td>
-	<td width="20%"><a href="/admin.php/Home/admin/delimg/id/<?php echo ($vo["img_id"]); ?>">删除</a>||<a href="/admin.php/Home/admin/upimg/id/<?php echo ($vo["img_id"]); ?>">编辑</a></td>
-  </tr><?php endforeach; endif; ?>
-  <tr align="center">
-	<td colspan=6>
-		<input type="button" value="看哪个幻灯片不爽?去添加一个" onclick="location.href='/admin.php/Home/admin/add_image'">
-	</td>
-  </tr>
-  
-</table>
+<form method="post" action="add_pro" enctype="multipart/form-data">
+	<table cellspacing='1' cellpadding='3'>
+		<tr>
+			<td align='right'>班级图标：</td>
+			<td><input type="file" name="myfiles"></td>
+		</tr>
+		<tr>
+			<td align='right'>班级名称：</td>
+			<td><input type="text" name="classname" size=80></td>
+		</tr>
+		<tr>
+			<td align='right'>课程介绍：</td>
+			<td><textarea name="jianjie" rows="20" cols="100"></textarea></td>
+		</tr>	
+		<tr>
+			<td align='center' colspan=2><input type="submit" value='添加新闻'></td>	
+		</tr>
+	</table>
+</form>
 </div>
-<br />
+<br/>
 <div id="footer">
 版权所有 &copy; 八维研修学院软件工程学院1302phpA班，并保留所有权利。</div>
 </body>

@@ -1628,4 +1628,460 @@ INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
 
 =======
 >>>>>>> bf02bc724649f0adca619cc041470a10efaa1be8
+<<<<<<< HEAD
+[ 2014-12-22T14:22:03+08:00 ] 127.0.0.1 /index.php/Home/project/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-12-22T14:22:05+08:00 ] 127.0.0.1 /index.php/Home/project/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+=======
+<<<<<<< HEAD
+[ 2014-12-22T14:08:06+08:00 ] 192.168.1.7 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\BBS\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_family` [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `bbs_xueyuan` [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `bbs_banji` [ RunTime:0.011001s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaolun` [ RunTime:0.008001s ]
+SQL: SHOW COLUMNS FROM `bbs_liujun` [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `bbs_php` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `bbs_mingshi` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaopin` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `bbs_question` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `bbs_family`  [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_xueyuan`  [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_banji`  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_zhaolun`  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_liujun`  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_php`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_mingshi`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_zhaopin`  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_question` WHERE ( status=0 )  [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022002s ]
+>>>>>>> f4f61ae6315f5db5c01f5e2251847e36531ff27d
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+<<<<<<< HEAD
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2014-12-22T14:22:06+08:00 ] 127.0.0.1 /index.php/Home/project/jichu
+=======
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2014-12-22T14:08:16+08:00 ] 192.168.1.7 /index.php
+>>>>>>> f4f61ae6315f5db5c01f5e2251847e36531ff27d
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-12-22T14:22:07+08:00 ] 127.0.0.1 /index.php/Home/project/jichu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+=======
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\BBS\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_family` [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `bbs_xueyuan` [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `bbs_banji` [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaolun` [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `bbs_liujun` [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `bbs_php` [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `bbs_mingshi` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaopin` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `bbs_question` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `bbs_family`  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_xueyuan`  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_banji`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_zhaolun`  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_liujun`  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_php`  [ RunTime:0.001001s ]
+SQL: SELECT * FROM `bbs_mingshi`  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_zhaopin`  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_question` WHERE ( status=0 )  [ RunTime:0.178010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+>>>>>>> f4f61ae6315f5db5c01f5e2251847e36531ff27d
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+<<<<<<< HEAD
+[ 2014-12-22T14:22:07+08:00 ] 127.0.0.1 /index.php/Home/project/jichu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+=======
+[ 2014-12-22T14:08:20+08:00 ] 192.168.1.7 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\BBS\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_family` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `bbs_xueyuan` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `bbs_banji` [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaolun` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `bbs_liujun` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `bbs_php` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `bbs_mingshi` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaopin` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `bbs_question` [ RunTime:0.003001s ]
+SQL: SELECT * FROM `bbs_family`  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_xueyuan`  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_banji`  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_zhaolun`  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_liujun`  [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_php`  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_mingshi`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_zhaopin`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_question` WHERE ( status=0 )  [ RunTime:0.002000s ]
+>>>>>>> f4f61ae6315f5db5c01f5e2251847e36531ff27d
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+=======
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+>>>>>>> f4f61ae6315f5db5c01f5e2251847e36531ff27d
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+<<<<<<< HEAD
+[ 2014-12-22T14:22:40+08:00 ] 127.0.0.1 /index.php/Home/project/jichu
+=======
+[ 2014-12-22T14:10:15+08:00 ] 192.168.1.7 /index.php
+>>>>>>> f4f61ae6315f5db5c01f5e2251847e36531ff27d
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+<<<<<<< HEAD
+=======
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\BBS\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_family` [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `bbs_xueyuan` [ RunTime:0.010001s ]
+SQL: SHOW COLUMNS FROM `bbs_banji` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaolun` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `bbs_liujun` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `bbs_php` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `bbs_mingshi` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaopin` [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `bbs_question` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_family`  [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_xueyuan`  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_banji`  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_zhaolun`  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_liujun`  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_php`  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_mingshi`  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_zhaopin`  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_question` WHERE ( status=0 )  [ RunTime:0.003000s ]
+>>>>>>> f4f61ae6315f5db5c01f5e2251847e36531ff27d
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+=======
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+>>>>>>> f4f61ae6315f5db5c01f5e2251847e36531ff27d
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+<<<<<<< HEAD
+[ 2014-12-22T14:22:43+08:00 ] 127.0.0.1 /index.php/Home/project/jichu
+=======
+[ 2014-12-22T14:24:58+08:00 ] 192.168.1.7 /index.php/Home/project/jichu
+>>>>>>> f4f61ae6315f5db5c01f5e2251847e36531ff27d
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+<<<<<<< HEAD
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038003s ]
+=======
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045002s ]
+>>>>>>> f4f61ae6315f5db5c01f5e2251847e36531ff27d
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+<<<<<<< HEAD
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-12-22T14:23:17+08:00 ] 127.0.0.1 /index.php/Home/project/jichu
+=======
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-22T14:25:58+08:00 ] 192.168.1.7 /index.php/Home/teacher/index
+>>>>>>> f4f61ae6315f5db5c01f5e2251847e36531ff27d
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+<<<<<<< HEAD
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+=======
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\BBS\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_teacher` [ RunTime:0.006000s ]
+SQL: select * from bbs_teacher join bbs_position on bbs_teacher.p_id = bbs_position.p_id [ RunTime:0.005001s ]
+>>>>>>> f4f61ae6315f5db5c01f5e2251847e36531ff27d
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+<<<<<<< HEAD
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+=======
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+>>>>>>> f4f61ae6315f5db5c01f5e2251847e36531ff27d
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+<<<<<<< HEAD
+[ 2014-12-22T14:29:48+08:00 ] 127.0.0.1 /index.php/Home/project/index
+=======
+[ 2014-12-22T14:26:24+08:00 ] 192.168.1.7 /index.php/Home/message/index
+>>>>>>> f4f61ae6315f5db5c01f5e2251847e36531ff27d
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+<<<<<<< HEAD
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-22T14:29:54+08:00 ] 127.0.0.1 /index.php/Home/project/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-22T14:30:09+08:00 ] 127.0.0.1 /index.php/Home/project/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+=======
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\BBS\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_student` [ RunTime:0.007000s ]
+SQL: select * from bbs_student,bbs_company,bbs_school where bbs_student.school=bbs_school.s_id and bbs_student.company=bbs_company.com_id [ RunTime:0.005000s ]
+SQL: select * from bbs_student,bbs_company,bbs_school where bbs_student.school=bbs_school.s_id and bbs_student.company=bbs_company.com_id limit 6 [ RunTime:0.002001s ]
+>>>>>>> f4f61ae6315f5db5c01f5e2251847e36531ff27d
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+<<<<<<< HEAD
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+=======
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+>>>>>>> f4f61ae6315f5db5c01f5e2251847e36531ff27d
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+<<<<<<< HEAD
+[ 2014-12-22T14:30:21+08:00 ] 127.0.0.1 /index.php/Home/project/index
+=======
+[ 2014-12-22T14:27:54+08:00 ] 192.168.1.7 /index.php
+>>>>>>> f4f61ae6315f5db5c01f5e2251847e36531ff27d
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+<<<<<<< HEAD
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+=======
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\BBS\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_family` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `bbs_xueyuan` [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `bbs_banji` [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaolun` [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `bbs_liujun` [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `bbs_php` [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `bbs_mingshi` [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaopin` [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `bbs_question` [ RunTime:0.003001s ]
+SQL: SELECT * FROM `bbs_family`  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_xueyuan`  [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_banji`  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_zhaolun`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_liujun`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_php`  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_mingshi`  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_zhaopin`  [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_question` WHERE ( status=0 )  [ RunTime:0.002000s ]
+>>>>>>> f4f61ae6315f5db5c01f5e2251847e36531ff27d
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+<<<<<<< HEAD
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+=======
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+=======
 >>>>>>> fdc96fbac08f6afab5f9c81893dd1070476c5815
+>>>>>>> b2ba291aa070cc093624f977aaaa3b54216780f7
+>>>>>>> f4f61ae6315f5db5c01f5e2251847e36531ff27d
