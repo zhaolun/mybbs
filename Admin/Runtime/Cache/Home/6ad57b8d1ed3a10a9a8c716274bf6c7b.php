@@ -183,10 +183,6 @@ H1 a {
         <ul class="MM">
           <li><a href="/admin.php/Home/admin/nav">导航管理</a></li>
           <li><a href="/admin.php/Home/admin/image">幻灯片管理</a></li>
-<<<<<<< HEAD
-=======
-		  <li><a href="/admin.php/Home/admin/logo">LOGO管理</a></li>
->>>>>>> bf02bc724649f0adca619cc041470a10efaa1be8
         </ul>
       </div>
       
@@ -270,54 +266,51 @@ H1 a {
 		<td width="87%" valign="top">
 			<div style="margin:10px;padding:10px;">
 				<head>
-<title>前台幻灯片列表</title>
+<title>课程列表</title>
 <meta name="robots" content="noindex, nofollow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="/Public/admin/css/general.css" rel="stylesheet" type="text/css" />
 <link href="/Public/admin/css/main.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="/Public/admin/js/transport.js"></script>
+<script type="text/javascript" src="../js/transport.js"></script>
 <script type="text/javascript" src="./js/common.js"></script>
 </head>
 <body>
 <h1>
-<span class="action-span1">前台幻灯片列表</span><span id="search_id" class="action-span1"></span>
+<span class="action-span1">课程列表</span><span id="search_id" class="action-span1"></span>
 <div style="clear:both"></div>
 </h1>
-<!-- 新闻类别列表 -->
+<!-- 新闻搜索 -->
+<center>标题：<input type="text" name="" size=40><input type="button" value="ajax搜索" onclick=""></center>
+<!-- 新闻列表 -->
 <div class="list-div">
 <table cellspacing='1' cellpadding='3'>
   <tr>
+	<th  class="group-title"><input type="checkbox" name="">全选/反选</th>
     <th  class="group-title">编号</th>
-	<th  class="group-title">幻灯片</th>
-	<th  class="group-title">幻灯片名称</th>
-	<th  class="group-title">幻灯片介绍</th>
-<<<<<<< HEAD
-=======
-	<th  class="group-title">幻灯片链接</th>
->>>>>>> bf02bc724649f0adca619cc041470a10efaa1be8
+	<th  class="group-title">课程名称</th>
+	<th  class="group-title">阶段</th>
+	<th  class="group-title">阶段内容</th>
+	<th  class="group-title">目标</th>
 	<th  class="group-title">操作</th>
   </tr>
   <?php if(is_array($info)): foreach($info as $key=>$vo): ?><tr class="table_tr">
-	<td width="10%"><?php echo ($vo["img_id"]); ?></td>
-<<<<<<< HEAD
-    <td width="10%"><?php echo ($vo["img_path"]); ?></td>
-    <td width="30%"><?php echo ($vo["img_name"]); ?></td>
-    <td width="40%"><?php echo ($vo["img_desc"]); ?></td>
-	<td width="20%"><a href="/admin.php/Home/admin/delnav/id/<?php echo ($vo["img_id"]); ?>">删除</a>||<a href="/admin.php/Home/admin/upnav/id/<?php echo ($vo["img_id"]); ?>">编辑</a></td>
+	<td width="15%"><input type="checkbox"></td>
+	<td width="15%"><?php echo ($vo["bbs_id"]); ?></td>
+    <td width="15%"><?php echo ($vo["bbs_jieduan"]); ?></td>
+	 <td width="15%"><?php echo ($vo["neirong"]); ?></td>
+    <td width="15%"><?php echo ($vo["mubiao"]); ?></td>
+	 <td width="15%"><?php echo ($vo["bbs_name"]); ?></td>
+	<td width="10%">删除|编辑</td>
   </tr><?php endforeach; endif; ?>
+ 
   <tr align="center">
-	<td colspan=4>
-=======
-    <td width="10%"><img src="<?php echo ($vo["img_path"]); ?>" width=50></td>
-    <td width="15%"><?php echo ($vo["img_title"]); ?></td>
-    <td width="15%"><?php echo ($vo["img_desc"]); ?></td>
-	<td width="30%"><?php echo ($vo["img_link"]); ?></td>
-	<td width="20%"><a href="/admin.php/Home/admin/delimg/id/<?php echo ($vo["img_id"]); ?>">删除</a>||<a href="/admin.php/Home/admin/upimg/id/<?php echo ($vo["img_id"]); ?>">编辑</a></td>
-  </tr><?php endforeach; endif; ?>
-  <tr align="center">
-	<td colspan=6>
->>>>>>> bf02bc724649f0adca619cc041470a10efaa1be8
-		<input type="button" value="看哪个幻灯片不爽?去添加一个" onclick="location.href='/admin.php/Home/admin/add_image'">
+	<td colspan=7>
+		<input type="button" value="全选" onclick="">
+		<input type="button" value="反选" onclick="">
+		<input type="button" value="全不选" onclick="">
+		<input type="button" value="添加" onclick="">
+		<input type="button" value="修改" onclick="">
+		<input type="button" value="ajax删除" onclick="">
 	</td>
   </tr>
   
