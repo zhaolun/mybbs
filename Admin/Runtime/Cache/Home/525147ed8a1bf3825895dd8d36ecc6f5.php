@@ -259,7 +259,7 @@ H1 a {
 		<td width="87%" valign="top">
 			<div style="margin:10px;padding:10px;">
 				<head>
-<title>问题列表</title>
+<title>添加问题</title>
 <meta name="robots" content="noindex, nofollow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="../css/general.css" rel="stylesheet" type="text/css" />
@@ -268,37 +268,38 @@ H1 a {
 <script type="text/javascript" src="./js/common.js"></script>
 </head>
 <body>
-<h1>
-<span class="action-span1">问题列表</span><span id="search_id" class="action-span1"></span>
-<div style="clear:both"></div>
-</h1>
-<a href='/admin.php/Home/problem/add'>添加问题</a>
-<!-- 新闻类别搜索 -->
-<center>问题名称：<input type="text" name="" size=40><input type="button" value="搜索" onclick=""></center>
-<!-- 新闻类别列表 -->
+<h1>添加问题</h1>
+<a href='/admin.php/Home/problem/lists'>问题列表</a>
+
+<!-- 添加新闻类别 -->
 <div class="list-div">
-<table cellspacing='1' cellpadding='3'>
-  <tr>
-    <th  class="group-title">编号</th>
-	<th  class="group-title">问题名称</th>
-	<th  class="group-title">时间</th>
-	<th  class="group-title">来源</th>
-    <th  class="group-title">操作</th>
-  </tr>
-<?php if(is_array($data[user])): foreach($data[user] as $key=>$it): ?><tr class="table_tr">
-    <td width="5%"><?php echo ($it["id"]); ?></td>
-    <td width="30%"><?php echo ($it["title"]); ?></td>
-	<td width="30%"><?php echo ($it["time"]); ?></td>
-    <td width="10%">yi利小组</td>
-	<td width="10%">
-	<a href='/admin.php/Home/problem/del?id=<?php echo ($it["id"]); ?>'>删除</a>
-    <a href='/admin.php/Home/problem/upd?id=<?php echo ($it["id"]); ?>'>修改</a>
-    </td>
-	</tr><?php endforeach; endif; ?>
-</table>
-<div id='page_list' align='center'>
-        <?php echo ($data['page']); ?>
-</div>
+<form method="post" action="/admin.php/Home/problem/add_do">
+	<table cellspacing='1' cellpadding='3'>
+	    <tr>
+			<td align='right'>问题类别：</td>
+			<td><select name="status">
+			    <option selected>-请选择-</option>
+				<option value="1" >热点问题</option>
+				<option value="0">PHP相关问题</option>
+			</select></td>
+		</tr>
+
+		<tr>
+			<td align='right'>问题名称：</td>
+			<td><input type="text" name="title" size=80></td>
+		</tr>
+		
+		<tr>
+			<td align='right'>问题答案：</td>
+			<td>
+			<textarea name="content" rows="10" cols="40"></textarea>
+		</tr>
+
+		<tr>
+			<td align='center' colspan=2><input type="submit" value='添加'></td>	
+		</tr>
+	</table>
+</form>
 </div>
 <br />
 <div id="footer">
