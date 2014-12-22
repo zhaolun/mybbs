@@ -53,7 +53,7 @@
     <li id="nav_teacher"><a href="/index.php/Home/teacher/index">师资力量</a> </li>
     <li id="nav_job"><a href="/index.php/Home/message/index">就业信息</a> </li>
 	<li id="nav_question"><a href="/index.php/Home/problem/index">常见问题</a></li>
-	<li><a target="_blank" href="/index.php/Home/video/index" target="_blank">技术论坛 </a></li>
+	<li><a target="_blank" href="/bbs.php">技术论坛 </a></li>
 </ul>
 	</div>
 	<div id="box">
