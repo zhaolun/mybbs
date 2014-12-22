@@ -1,4 +1,4 @@
-<html>
+<?php if (!defined('THINK_PATH')) exit();?><html>
 <head>
 <title>MyBBS后台管理</title>
 </head>
@@ -146,7 +146,7 @@ H1 a {
 		<td width="39%" valign="top">
 			<table width="100%" border="0" cellspacing="0" cellpadding="0">
 				<tr>
-					<td width="74%" height="38" class="admin_txt">管理员：<b>{$_SESSION.username}</b> 您好,感谢登陆使用！</td>
+					<td width="74%" height="38" class="admin_txt">管理员：<b><?php echo ($_SESSION["username"]); ?></b> 您好,感谢登陆使用！</td>
 					<td width="22%"><a href="#" target="_self" onClick="logout();"><img src="/Public/admin/images/out.gif" alt="安全退出" width="46" height="20" border="0"></a></td>
 					<script type="text/javascript">
 					<!--
@@ -183,7 +183,6 @@ H1 a {
         <ul class="MM">
           <li><a href="/admin.php/Home/admin/nav">导航管理</a></li>
           <li><a href="/admin.php/Home/admin/image">幻灯片管理</a></li>
-		  <li><a href="/admin.php/Home/admin/logo">LOGO管理</a></li>
         </ul>
       </div>
       
@@ -266,7 +265,87 @@ H1 a {
 		</script>
 		<td width="87%" valign="top">
 			<div style="margin:10px;padding:10px;">
-				{__CONTENT__}
+				<head>
+<title>问题列表</title>
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="../css/general.css" rel="stylesheet" type="text/css" />
+<link href="../css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/transport.js"></script>
+<script type="text/javascript" src="./js/common.js"></script>
+</head>
+<body>
+<h1>
+<div style="clear:both"></div>
+</h1>
+<!-- 新闻类别搜索 -->
+<center>yi组信息列表</center>
+<!-- 新闻类别列表 -->
+<div class="list-div">
+<table cellspacing='1' cellpadding='3'>
+  <tr>
+    <th  class="group-title">编号</th>
+	<th  class="group-title">姓名</th>
+	<th  class="group-title">年龄</th>
+	<th  class="group-title">性别</th>
+	<th  class="group-title">联系电话</th>
+	<th  class="group-title">QQ</th>
+    <th  class="group-title">婚姻状况</th>
+	
+  </tr>
+  <tr class="table_tr">
+    <td width="5%">1</td>
+    <td width="10%">赵伦</td>
+	<td width="10%">20</td>
+    <td width="10%">男</td>
+	<td width="15%">妻管严，不让找小三</td>
+	<td width="10%">算了</td>
+	<td width="10%">已有</td>
+	</tr>
+	<tr class="table_tr">
+    <td width="5%">2</td>
+    <td width="10%">刘俊</td>
+	<td width="10%">20</td>
+    <td width="10%">女</td>
+	<td width="15%">夫管严，不让找小三</td>
+	<td width="10%">算了</td>
+	<td width="10%">已有</td>
+	</tr>
+	<tr class="table_tr">
+    <td width="5%">3</td>
+    <td width="10%">雷金涛</td>
+	<td width="10%">21</td>
+    <td width="10%">男</td>
+	<td width="15%">爱媳妇，不找小三</td>
+	<td width="10%">算了</td>
+	<td width="10%">已有</td>
+	</tr>
+    <tr class="table_tr">
+    <td width="5%">4</td>
+    <td width="10%">张肖云</td>
+	<td width="10%">21</td>
+    <td width="10%">男</td>
+	<td width="15%">已经名花有主，不要打主意了。</td>
+	<td width="10%">算了</td>
+	<td width="10%">已有</td>
+	</tr>
+	<tr class="table_tr">
+    <td width="5%">5</td>
+    <td width="10%">崔萌泽</td>
+	<td width="10%">19</td>
+    <td width="10%">男</td>
+	<td width="17%">*********(可以找本人单独要哦)</td>
+	<td width="15%">*********(可以找本人单独要哦)</td>
+	<td width="10%">木有</td>
+	</tr>
+ 
+</table>
+</div>
+<br />
+<div id="footer">
+版权所有 &copy; 八维研修学院软件工程学院1308phpA班yi利小组，并保留所有权利。</div>
+</body>
+</html>
 			</div>
 		</td>
 	</tr>

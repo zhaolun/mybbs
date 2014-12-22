@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "/www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "/www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="/www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -53,49 +53,119 @@
     <li id="nav_teacher"><a href="/index.php/Home/teacher/index">师资力量</a> </li>
     <li id="nav_job"><a href="/index.php/Home/message/index">就业信息</a> </li>
 	<li id="nav_question"><a href="/index.php/Home/problem/index">常见问题</a></li>
-	<li><a target="_blank" href="/bbs.php">技术论坛 </a></li>
+	<li><a target="_blank" href="/index.php/Home/video/index" target="_blank">技术论坛 </a></li>
 </ul>
 	</div>
-	<div id="box">
-		<div class="mbx">
-		<!-- Baidu share BEGIN -->
-<div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
-	<span class="bds_more">分享到：</span>
-	<script type="text/javascript">
-(function(){
-var p = {
-url:location.href, /*获取URL，可加上来自分享到QQ标识，方便统计*/
-desc:'', /*分享理由(风格应模拟用户对话),支持多分享语随机展现（使用|分隔）*/
-title:'', /*分享标题(可选)*/
-summary:'', /*分享摘要(可选)*/
-pics:'', /*分享图片(可选)*/
-flash: '', /*视频地址(可选)*/
-site:'', /*分享来源(可选) 如：QQ分享*/
-style:'101',
-width:96,
-height:24
-};
-var s = [];
-for(var i in p){
-s.push(i + '=' + encodeURIComponent(p[i]||''));
-}
-document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shareqq/index.html?',s.join('&'),'" target="_blank">分享到QQ</a>'].join(''));
-})();
-</script>
-<script src="http://connect.qq.com/widget/loader/loader.js" widget="shareqq" charset="utf-8"></script>
-	<a class="bds_qzone">QQ空间</a>
-	<a class="bds_tqq">腾讯微博</a>
-	<a class="bds_tsina">新浪微博</a>
-	<a class="bds_tieba">百度贴吧</a>
-	<a class="shareCount"></a>
-</div>
-<!-- Baidu share END 需在页面底部添加baidushare.js -->
-		   <div style="padding-left:60px;float:left; _padding-top:8px;">
-				<b>其它学院入口：</b><img src="/Public/images/sanjiao.jpg" /> <a href="http://java.itcast.cn" target="_blank">java学院</a> <img src="/Public/images/sanjiao.jpg" /> <a href="http://net.itcast.cn" target="_blank">.net学院</a><img src="/Public/images/sanjiao.jpg" /> <a href="http://ios.itcast.cn">ios学院</a> <img src="/Public/images/sanjiao.jpg" /> <a href="http://c.itcast.cn">c/c++学院</a><img src="/Public/images/sanjiao.jpg" /> <a href="http://icd.itcast.cn" target="_blank">网页平面设计学院</a>
-			</div>
-		</div>
 
-{__CONTENT__}
+<div id="box">
+  <div style="width:960px; height:149px; margin:0 auto;"><img src="/Public/images/teacherpic.jpg"  /></div>
+  <div id="left" class="fl"  style="margin-top:3px;">
+    <div><img src="/Public/images/lefttop.gif"/></div>
+    <div class="left_content2">
+      <h4 class="ganyan"><span class="STYLE3">师资</span>介绍</h4>
+      <div class="teacher_z" style="height: auto; overflow: hidden">
+<!-- 第一位老师 -->
+<?php if(is_array($list)): foreach($list as $key=>$vo): ?><div class="teacher">
+<p class="fl"><img alt="" src="<?php echo ($vo["img"]); ?>" style="width: 155px; height: 189px;" /></p>
+<dl class="fr">
+	<dt>
+		<span class="blue"><strong><?php echo ($vo["t_name"]); ?></strong></span><strong>--<span style="color:#0000ff;"><a href="/index.php/home/teacher/video/id/<?php echo ($vo["id"]); ?>" target="_blank"><span style="color: rgb(0, 0, 255);">在线试听精彩课程</span></a></span></strong></dt>
+	<dt>
+		<strong>职 务：<?php echo ($vo["position"]); ?></strong></dt>
+	<dd><?php echo ($vo["t_desc"]); ?></dd>
+</dl>
+</div><?php endforeach; endif; ?>
+
+<div></div>
+</div>
+<br />
+
+    </div>
+    <div><img src="/Public/images/leftbottom.gif"/></div>
+  </div>
+  <div id="right" class="fl">
+    <h4 class="righttitle1 zhaopin"><span class="blue">讲师</span>招聘</h4>
+    <div class="rightkuang1">
+      <p class="cent"><img src="/Public/images/xuanze.jpg" width="256" height="66" /></p>
+      <div class="clear"> </div>
+      <p class="miaoshu"> 中国的软件教育已经坑害了不少软件工程师苗子，传智播客自成立之日起就立志于改变中国的软件教育，目前已经出版IT教程书籍十多本，教学视频几十套，发表各类技术文章几百篇，已经开始对中国的软件教育有所影响。随着传智播客的事业被越来越多的人认知，加盟到传智播客愿意为此事业奋斗终生的技术牛人也越来越多。尽管加盟到传智播客的技术牛人很多，但要从政策上改变中国的软件教育，我们的力量还很小，小到可以说是微不足道。所以我们需要各路英雄豪杰加盟传智播客，为改变中国的软件教育而奋斗不息。</p>
+      <p class="cent"><a href="/news/9838ccfe/74aa/4532/915e/f905284de34e.shtml" target="_blank"><img src="/Public/images/liulan.jpg" width="142" height="23"/></a></p>
+    </div>
+    <div class="rightbottom"><img src="/Public/images/bottom1.gif"/></div>
+    <h4 class="righttitle1"><span class="fl">我们出版的书籍</span><span class="fr"><a href="/channel/book.shtml">+MORE</a></span></h4>
+    <div class="rightkuang chuban" style="height:auto; overflow:hidden;">
+       <dl>
+        <dt><a href="http://product.dangdang.com/product.aspx?product_id=8758723" target="_blank"><img src="/Public/images/book04.jpg"/></a></dt>
+        <dd><span class="blue"><strong><a href="http://product.dangdang.com/product.aspx?product_id=8758723" target="_blank">《Java就业培训教程》</a></strong></span></dd>
+        <dd>作 者：<span class="STYLE4">张孝祥</span> </dd>
+        <dd>定价：<span class="STYLE6"><strong>￥39.00元</strong> </span></dd>
+        <dd>页数：<span class="STYLE4">394</span> </dd>
+</dl>
+<dl>
+        <dt><a href="http://product.dangdang.com/product.aspx?product_id=20280496" target="_blank"><img src="/Public/images/book01.jpg"/></a></dt>
+        <dd><span class="blue"><strong><a href="http://product.dangdang.com/product.aspx?product_id=20280496" target="_blank">《EJB3.0入门经典》</a></strong></span></dd>
+        <dd>作 者：<span class="STYLE4">黎活明</span> </dd>
+        <dd>定价：<span class="STYLE6"><strong>￥59.80 元</strong> </span></dd>
+        <dd>页数：<span class="STYLE4">479</span> </dd>
+</dl> 
+    </div>
+    <div class="rightbottom"><img src="/Public/images/rightbottom.jpg"/></div>
+    <h4 class="righttitle1 lianxi"><span class="fl"><span class="blue">课程</span>咨询</span></h4>
+    <div class="rightkuang">
+      <dl>
+	<dt style="padding-bottom:20px;">
+		北京传智播客</dt>
+	<dd style="width:120px;height:40px;float:left;">
+		<a href="http://cnrdn.com/iP66" target="_blank"><img alt="北京传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
+	<dd style="width:120px;height:40px;float:left;">
+		<a href="http://cnrdn.com/iP66" target="_blank"><img alt="北京传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqkczx.jpg" width="99" /></a></dd>
+</dl>
+<dl class="qqtwo">
+	<dt style="padding-bottom:20px;">
+		广州传智播客</dt>
+	<dd style=" width:120px;height:40px;float:left;">
+		<a href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&amp;key=XzgwMDA2ODg2OF8yMDczMV84MDAwNjg4NjhfMl8" target="_blank"><img alt="广州传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
+	<dd style=" width:120px;height:40px;float:left;">
+		<a href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&amp;key=XzgwMDA2ODg2OF8yMDczMV84MDAwNjg4NjhfMl8" target="_blank"><img alt="广州传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqkczx.jpg" width="99" /></a></dd>
+</dl>
+<dl class="qqthree">
+	<dt style="padding-bottom:20px;">
+		上海传智播客</dt>
+	<dd style="width:120px;height:40px;float:left;">
+		<a href="http://cnrdn.com/djUD" target="_blank"><img alt="上海传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
+	<dd style="width:120px;height:40px;float:left;">
+		<a href="http://cnrdn.com/djUD" target="_blank"><img alt="上海传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqkczx.jpg" width="99" /></a></dd>
+</dl>
+<dl class="qqfour">
+	<dt style="padding-bottom:20px;">
+		武汉传智播客</dt>
+	<dd style="width:120px;height:40px;float:left;">
+		<a href="http://cnrdn.com/shPF" target="_blank"><img alt="武汉传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
+	<dd style="width:120px;height:40px;float:left;">
+		<a href="http://cnrdn.com/shPF" target="_blank"><img alt="武汉传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqkczx.jpg" width="99" /></a></dd>
+</dl>
+<dl class="qqfive">
+	<dt style="padding-bottom:20px;">
+		郑州传智播客</dt>
+	<dd style="width:120px;height:40px;float:left;">
+		<a href="http://cnrdn.com/0LVE" target="_blank"><img alt="武汉传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
+	<dd style="width:120px;height:40px;float:left;">
+		<a href="http://cnrdn.com/0LVE" target="_blank"><img alt="武汉传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqkczx.jpg" width="99" /></a></dd>
+</dl>
+<dl class="qqsix">
+	<dt style="padding-bottom:20px;">
+		西安传智播客</dt>
+	<dd style="width:120px;height:40px;float:left;">
+		<a href="http://cnrdn.com/iP66" target="_blank"><img alt="西安传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
+	<dd style="width:120px;height:40px;float:left;">
+		<a href="http://cnrdn.com/iP66" target="_blank"><img alt="西安传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqkczx.jpg" width="99" /></a></dd>
+</dl>
+      <div class="clear"></div>
+    </div>
+    <div class="rightbottom"><img src="/Public/images/rightbottom.jpg"/></div>
+  </div>
+</div>
+
 
 <div id="footer">
   <div class="footer_info">

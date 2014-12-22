@@ -20,19 +20,21 @@
 	<th  class="group-title">幻灯片</th>
 	<th  class="group-title">幻灯片名称</th>
 	<th  class="group-title">幻灯片介绍</th>
+	<th  class="group-title">幻灯片链接</th>
 	<th  class="group-title">操作</th>
   </tr>
   <foreach name="info" item="vo">
   <tr class="table_tr">
 	<td width="10%">{$vo.img_id}</td>
-    <td width="10%">{$vo.img_path}</td>
-    <td width="30%">{$vo.img_name}</td>
-    <td width="40%">{$vo.img_desc}</td>
-	<td width="20%"><a href="/admin.php/Home/admin/delnav/id/{$vo.img_id}">删除</a>||<a href="/admin.php/Home/admin/upnav/id/{$vo.img_id}">编辑</a></td>
+    <td width="10%"><img src="{$vo.img_path}" width=50></td>
+    <td width="15%">{$vo.img_title}</td>
+    <td width="15%">{$vo.img_desc}</td>
+	<td width="30%">{$vo.img_link}</td>
+	<td width="20%"><a href="/admin.php/Home/admin/delimg/id/{$vo.img_id}">删除</a>||<a href="/admin.php/Home/admin/upimg/id/{$vo.img_id}">编辑</a></td>
   </tr>
   </foreach>
   <tr align="center">
-	<td colspan=4>
+	<td colspan=6>
 		<input type="button" value="看哪个幻灯片不爽?去添加一个" onclick="location.href='/admin.php/Home/admin/add_image'">
 	</td>
   </tr>
