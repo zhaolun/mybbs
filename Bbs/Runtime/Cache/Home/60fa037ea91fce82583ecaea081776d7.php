@@ -142,10 +142,10 @@ initSearchmenu('scbar', 'http://search.itcast.cn/f/discuz');
             <li class="a" id="mn_portal" ><a href="/bbs.php/home/index/index" hidefocus="true" title="门户首页"  >IT学习社区<span>门户首页</span></a></li>
        
        
-            <li id="mn_forum" ><a href="/bbs.php/home/forum/forum" hidefocus="true" title="技术论坛"  >技术论坛<span>技术论坛</span></a></li>
+            <li id="mn_forum" ><a href="http://www.mybbs.com/bbs.php/Home/forum/forum" title="技术论坛"  >技术论坛<span>技术论坛</span></a></li>
        
        
-            <li id="mn_Nba1e" ><a href="/bbs.php/home/ask/ask" hidefocus="true" title="技术问题在线求助"  >IT问答精灵<span>技术问题在线求助</span></a></li>
+            <li><a href="/bbs.php/home/ask/ask" title="技术问题在线求助"  >IT问答精灵<span>技术问题在线求助</span></a></li>
        
        
             <li id="mn_N18f5" ><a href="/bbs.php/home/zine/zine" hidefocus="true"  >传智特刊</a></li>
