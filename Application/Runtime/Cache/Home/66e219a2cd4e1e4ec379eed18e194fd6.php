@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "/www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "/www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="/www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -56,46 +56,31 @@
 	<li><a target="_blank" href="/index.php/Home/video/index" target="_blank">技术论坛 </a></li>
 </ul>
 	</div>
-	<div id="box">
-		<div class="mbx">
-		<!-- Baidu share BEGIN -->
-<div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
-	<span class="bds_more">分享到：</span>
-	<script type="text/javascript">
-(function(){
-var p = {
-url:location.href, /*获取URL，可加上来自分享到QQ标识，方便统计*/
-desc:'', /*分享理由(风格应模拟用户对话),支持多分享语随机展现（使用|分隔）*/
-title:'', /*分享标题(可选)*/
-summary:'', /*分享摘要(可选)*/
-pics:'', /*分享图片(可选)*/
-flash: '', /*视频地址(可选)*/
-site:'', /*分享来源(可选) 如：QQ分享*/
-style:'101',
-width:96,
-height:24
-};
-var s = [];
-for(var i in p){
-s.push(i + '=' + encodeURIComponent(p[i]||''));
-}
-document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shareqq/index.html?',s.join('&'),'" target="_blank">分享到QQ</a>'].join(''));
-})();
-</script>
-<script src="http://connect.qq.com/widget/loader/loader.js" widget="shareqq" charset="utf-8"></script>
-	<a class="bds_qzone">QQ空间</a>
-	<a class="bds_tqq">腾讯微博</a>
-	<a class="bds_tsina">新浪微博</a>
-	<a class="bds_tieba">百度贴吧</a>
-	<a class="shareCount"></a>
-</div>
-<!-- Baidu share END 需在页面底部添加baidushare.js -->
-		   <div style="padding-left:60px;float:left; _padding-top:8px;">
-				<b>其它学院入口：</b><img src="/Public/images/sanjiao.jpg" /> <a href="http://java.itcast.cn" target="_blank">java学院</a> <img src="/Public/images/sanjiao.jpg" /> <a href="http://net.itcast.cn" target="_blank">.net学院</a><img src="/Public/images/sanjiao.jpg" /> <a href="http://ios.itcast.cn">ios学院</a> <img src="/Public/images/sanjiao.jpg" /> <a href="http://c.itcast.cn">c/c++学院</a><img src="/Public/images/sanjiao.jpg" /> <a href="http://icd.itcast.cn" target="_blank">网页平面设计学院</a>
-			</div>
-		</div>
 
-{__CONTENT__}
+<div id="box">
+		<div id="left" class="fl">
+			<div><img src="/Public/images/lefttop.gif"/></div>
+			<div class="left_content">
+				<h2 class="title1"><span class="STYLE3">常见</span><span class="STYLE2">问题</span></h2>
+				<h3 class="title2">热点问题</h3>
+				<ul class="links">
+﻿<ul>
+<?php if(is_array($info)): foreach($info as $key=>$it): ?><li><a href="/index.php/Home/problem/xq?id=<?php echo ($it["id"]); ?>" target="_blank"><?php echo ($it["title"]); ?></a><?php echo ($it["time"]); ?></li><?php endforeach; endif; ?>
+</ul>
+ 
+				</ul>
+				<h3 class="title2">PHP相关问题</h3>
+				<ul class="links">
+<ul>
+<?php if(is_array($list)): foreach($list as $key=>$it): ?><li><a href="/index.php/Home/problem/xq?id=<?php echo ($it["id"]); ?>"><?php echo ($it["title"]); ?></a><img height="15" src="/Public/images/new.gif" width="29" /></li><?php endforeach; endif; ?>
+</ul>
+
+			</ul>
+			<div class="rightbottom"><img src="/Public/images/rightbottom.jpg"/></div>
+	  </div>
+	</div>
+	<div class="clear"></div>
+ <!-- 页面底部 -->
 
 <div id="footer">
   <div class="footer_info">

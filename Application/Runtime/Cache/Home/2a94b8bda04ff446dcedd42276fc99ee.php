@@ -56,13 +56,33 @@
 	<li><a target="_blank" href="/index.php/Home/video/index" target="_blank">技术论坛 </a></li>
 </ul>
 	</div>
-
-<div id="box">
+	<div id="box">
 		<div class="mbx">
 		<!-- Baidu share BEGIN -->
 <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
 	<span class="bds_more">分享到：</span>
-	<a class="bds_sqq">QQ好友</a>
+	<script type="text/javascript">
+(function(){
+var p = {
+url:location.href, /*获取URL，可加上来自分享到QQ标识，方便统计*/
+desc:'', /*分享理由(风格应模拟用户对话),支持多分享语随机展现（使用|分隔）*/
+title:'', /*分享标题(可选)*/
+summary:'', /*分享摘要(可选)*/
+pics:'', /*分享图片(可选)*/
+flash: '', /*视频地址(可选)*/
+site:'', /*分享来源(可选) 如：QQ分享*/
+style:'101',
+width:96,
+height:24
+};
+var s = [];
+for(var i in p){
+s.push(i + '=' + encodeURIComponent(p[i]||''));
+}
+document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shareqq/index.html?',s.join('&'),'" target="_blank">分享到QQ</a>'].join(''));
+})();
+</script>
+<script src="http://connect.qq.com/widget/loader/loader.js" widget="shareqq" charset="utf-8"></script>
 	<a class="bds_qzone">QQ空间</a>
 	<a class="bds_tqq">腾讯微博</a>
 	<a class="bds_tsina">新浪微博</a>
@@ -71,39 +91,24 @@
 </div>
 <!-- Baidu share END 需在页面底部添加baidushare.js -->
 		   <div style="padding-left:60px;float:left; _padding-top:8px;">
-<<<<<<< HEAD
-				<b>其它学院入口：</b><img src="/Public/images/sanjiao.jpg" /> <a href="http://java.itcast.cn" target="_blank">java学院</a> <img src="/public/images/sanjiao.jpg" /> <a href="http://net.itcast.cn" target="_blank">.net学院</a><img src="/public/images/sanjiao.jpg" /> <a href="http://ios.itcast.cn">ios学院</a> <img src="/public/images/sanjiao.jpg" /> <a href="http://c.itcast.cn">c/c++学院</a><img src="/public/images/sanjiao.jpg" /> <a href="http://icd.itcast.cn" target="_blank">网页平面设计学院</a>
-=======
 				<b>其它学院入口：</b><img src="/Public/images/sanjiao.jpg" /> <a href="http://java.itcast.cn" target="_blank">java学院</a> <img src="/Public/images/sanjiao.jpg" /> <a href="http://net.itcast.cn" target="_blank">.net学院</a><img src="/Public/images/sanjiao.jpg" /> <a href="http://ios.itcast.cn">ios学院</a> <img src="/Public/images/sanjiao.jpg" /> <a href="http://c.itcast.cn">c/c++学院</a><img src="/Public/images/sanjiao.jpg" /> <a href="http://icd.itcast.cn" target="_blank">网页平面设计学院</a>
->>>>>>> f45c85a361bb106e32ee562d9ce5a2321fa44b24
 			</div>
 		</div>
+
 		  <div id="left" class="fl"  style="margin-top:3px;">
 		   
-<<<<<<< HEAD
-		<div><img src="/public/images/lefttop.gif"  /></div>
-=======
 		<div><img src="/Public/images/lefttop.gif"  /></div>
->>>>>>> f45c85a361bb106e32ee562d9ce5a2321fa44b24
 		<div class="left_content2">
 		  <h4 class="title1"><span style="font-size:14px;float:right;padding-right:20px;">今天我终于来到了心中向往已久的神圣学府--传智播客，开始了改变命运的征途</span><span class="STYLE3">我们开学啦</span></h4>
 			<div class="ganyan1 huodong1" style="clear: both">
 <div class="fl">
 <div class="imagecontainer" id="idTransformView2">
 <ul class="slider slider2" id="idSlider2">
-<<<<<<< HEAD
-<li><a href="" target="_blank"><img alt="帅气英俊的组长先森~" src="/public/images/1.jpg" style="width: 297px; height: 216px;" /></a></li>
-<li><a href="" target="_blank"><img alt="组长夫人~" src="/public/images/2.jpg" style="width: 297px; height: 216px;" /></a></li>
-<li><a href="" target="_blank"><img alt="萌萌哒~" src="/public/images/3.jpg" style="width: 297px; height: 216px;" /></a></li>
-<li><a href="" target="_blank"><img alt="沉稳成熟范~" src="/public/images/4.jpg" style="width: 297px; height: 216px;" /></a></li>
-<li><a href="" target="_blank"><img alt="屌丝" src="/public/images/5.jpg" style="width: 297px; height: 216px;" /></a></li>
-=======
 <li><a href="" target="_blank"><img alt="帅气英俊的组长先森~" src="/Public/images/1.jpg" style="width: 297px; height: 216px;" /></a></li>
 <li><a href="" target="_blank"><img alt="组长夫人~" src="/Public/images/2.jpg" style="width: 297px; height: 216px;" /></a></li>
 <li><a href="" target="_blank"><img alt="萌萌哒~" src="/Public/images/3.jpg" style="width: 297px; height: 216px;" /></a></li>
 <li><a href="" target="_blank"><img alt="沉稳成熟范~" src="/Public/images/4.jpg" style="width: 297px; height: 216px;" /></a></li>
 <li><a href="" target="_blank"><img alt="屌丝" src="/Public/images/5.jpg" style="width: 297px; height: 216px;" /></a></li>
->>>>>>> f45c85a361bb106e32ee562d9ce5a2321fa44b24
 </ul>
 <ul class="num" id="idNum2">
 <li>1</li>
@@ -139,22 +144,6 @@
                 <p class="kxsy-font1"><img src="http://www.itcast.cn/images/kxsy-tu6.jpg" /></p>
                 <!--  校园消息  -->
 				<ul class="huodong11">
-<<<<<<< HEAD
-<li><img src="/public/images/sanjiao-1.jpg" /><a href="http://php.itcast.cn/news/20141203/14264847561.shtml" target="_blank"><span style="color:#ff0000;">通知：2015年传智播客PHP学科学费价格表</span></a></li>
-<li><img src="/public/images/sanjiao-1.jpg" /><a href="http://bbs.itcast.cn/thread-41296-1-1.html" target="_blank"><span style="color:#ff0000;">PHP0701班,毕业8天,入职25人,平均薪资6240元！</span></a></li>
-<li><strong><img src="/public/images/sanjiao-1.jpg" /></strong><a href="http://php.itcast.cn/news/20140904/1456540144.shtml" target="_blank">从辍学到PHP技术总监-4个月,月薪15000元！</a></li>
-<li><strong><img src="/public/images/sanjiao-1.jpg" /></strong><a href="http://bbs.itcast.cn/thread-29659-1-1.html" target="_blank">PHP0525班,毕业10天,入职23人,平均薪资6435元！</a></li>
-<li><strong><img src="/public/images/sanjiao-1.jpg" /></strong><a href="http://php.itcast.cn/subject/phpwzlx/index.shtml" target="_blank"><span style="color:#006400;">王者来袭--只做中国PHP培训界的领航者！</span></a></li>
-<li><img src="/public/images/sanjiao-1.jpg" /><a href="http://bbs.itcast.cn/thread-29345-1-1.html" target="_blank">PHP0421班,毕业35天,入职48人,平均薪资6094元！</a></li>
-<li><img src="/public/images/sanjiao-1.jpg" /><a href="http://php.itcast.cn/news/20140409/15455356928.shtml" target="_blank">实力教学赢口碑，学员感激赠锦旗！！</a></li>
-<li><strong><img src="/Public/images/sanjiao-1.jpg" /></strong><a href="http://www.itcast.cn/news/20140707/13460628965.shtml" target="_blank">学PHP更要来传智，看我们学员的&quot;另类&quot;原因</a></li>
-<li><img src="/public/images/sanjiao-1.jpg" /><a href="http://php.itcast.cn/news/20140121/13294061259.shtml" target="_blank">传智播客PHP项目答辩，群雄竞技牛人辈出</a></li>
-<li><img src="/public/images/sanjiao-1.jpg" /><a href="http://bbs.itcast.cn/thread-25330-1-1.html" target="_blank">仲夏&ldquo;超&rdquo;激情，Ajax公开课与你相约</a></li>
-<li><img src="/public/images/sanjiao-1.jpg" /><a href="http://php.itcast.cn/news/20140325/09350022324.shtml" target="_blank">中国最火爆的PHP培训，老师只能坐角落！</a></li>
-<li><img src="/public/images/sanjiao-1.jpg" /><a href="http://php.itcast.cn/news/20140408/09530743698.shtml" target="_blank">传智播客中级PHP项目答辩，学员应对自如！</a></li>
-<li><img src="/public/images/sanjiao-1.jpg" /><a href="http://www.itcast.cn/news/20140917/16571295116.shtml" target="_blank">看逗逼如何玩转传智生涯 </a></li>
-<li><img src="/public/images/sanjiao-1.jpg" /><a href="http://php.itcast.cn/subject/phpzty/phpzt/phpzly.html" target="_blank">学PHP编程，不做孬种程序员！</a></li>
-=======
 <li><img src="/Public/images/sanjiao-1.jpg" /><a href="http://php.itcast.cn/news/20141203/14264847561.shtml" target="_blank"><span style="color:#ff0000;">通知：2015年传智播客PHP学科学费价格表</span></a></li>
 <li><img src="/Public/images/sanjiao-1.jpg" /><a href="http://bbs.itcast.cn/thread-41296-1-1.html" target="_blank"><span style="color:#ff0000;">PHP0701班,毕业8天,入职25人,平均薪资6240元！</span></a></li>
 <li><strong><img src="/Public/images/sanjiao-1.jpg" /></strong><a href="http://php.itcast.cn/news/20140904/1456540144.shtml" target="_blank">从辍学到PHP技术总监-4个月,月薪15000元！</a></li>
@@ -169,7 +158,6 @@
 <li><img src="/Public/images/sanjiao-1.jpg" /><a href="http://php.itcast.cn/news/20140408/09530743698.shtml" target="_blank">传智播客中级PHP项目答辩，学员应对自如！</a></li>
 <li><img src="/Public/images/sanjiao-1.jpg" /><a href="http://www.itcast.cn/news/20140917/16571295116.shtml" target="_blank">看逗逼如何玩转传智生涯 </a></li>
 <li><img src="/Public/images/sanjiao-1.jpg" /><a href="http://php.itcast.cn/subject/phpzty/phpzt/phpzly.html" target="_blank">学PHP编程，不做孬种程序员！</a></li>
->>>>>>> f45c85a361bb106e32ee562d9ce5a2321fa44b24
 <!--
 <li><img src="/images/sanjiao-1.jpg" /><a href="http://www.itcast.cn/news/20140917/17033478626.shtml" target="_blank">我为寻找最初的职业理想而来</a></li>
 <li><img src="/images/sanjiao-1.jpg" /><a href="http://dvd.itcast.cn/?php" target="_blank"><span style="color:#0000ff;">网速下载不给力，快来申请最新PHP学习光盘！</span></a></li>
@@ -181,19 +169,11 @@
               <!--  校园消息  -->
              <div class="clear"></div>
 				  <p class="text-r"><a href="http://php.itcast.cn/news/list/48b817de-285d-4981-a85a-ccdb3f42b15b/1.shtml
-<<<<<<< HEAD
-" ><img src="/public/images/jiantoumore.gif"/></a></p>
-			  </div>
-			  <div><img src="/public/images/leftbottom.gif"  /></div>
-			  <div class="clear"></div>
-			  <div><img src="/public/images/lefttop.gif"  /></div>
-=======
 " ><img src="/Public/images/jiantoumore.gif"/></a></p>
 			  </div>
 			  <div><img src="/Public/images/leftbottom.gif"  /></div>
 			  <div class="clear"></div>
 			  <div><img src="/Public/images/lefttop.gif"  /></div>
->>>>>>> f45c85a361bb106e32ee562d9ce5a2321fa44b24
 			  <div class="left_content2">
 			  <h4 class="title1"><span class="STYLE3">校园</span>动态</h4>
 			  	<dl class="ganyan1 huodong1">
