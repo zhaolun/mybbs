@@ -20,17 +20,31 @@
 <!-- 新闻类别列表 -->
 <div class="list-div">
 <table cellspacing='1' cellpadding='3'>
-  <tr>
+  <tr align="center">
     <th  class="group-title">学生编号</th>
     <th  class="group-title">学生名称</th>
     <th  class="group-title">毕业学校</th>
     <th  class="group-title">入职时间</th>
     <th  class="group-title">所属公司</th>
     <th  class="group-title">期望月薪</th>
-    <th  class="group-title">学生视屏</th>
     <th  class="group-title">添加时间</th>
     <th  class="group-title">操作</th>
   </tr>
+  <foreach name="list" item="val">
+     <tr align="center">
+        <td>{$val.stu_id}</td>
+        <td>{$val.stu_name}</td>
+        <td>{$val.s_name}</td>
+        <td>{$val.work_time}</td>
+        <td>{$val.com_name}</td>
+        <td>{$val.money}</td>
+        <td>{$val.add_time}</td>
+        <td>
+            <a href="/admin.php/home/message/stu_del/stu_id/{$val.stu_id}">【删除】</a>
+            <a href="/admin.php/home/message/stu_editform/stu_id/{$val.stu_id}">【编辑】</a>
+        </td>
+     </tr>
+  </foreach>
  
 </table>
 </div>
