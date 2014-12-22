@@ -53,25 +53,14 @@
     <li id="nav_teacher"><a href="/index.php/Home/teacher/index">师资力量</a> </li>
     <li id="nav_job"><a href="/index.php/Home/message/index">就业信息</a> </li>
 	<li id="nav_question"><a href="/index.php/Home/problem/index">常见问题</a></li>
-<<<<<<< HEAD
-	<li><a target="_blank" href="/index.php/Home/video/index" target="_blank">技术论坛 </a></li>
-</ul>
-	</div>
-
-<div id="box">
-=======
 	<li><a target="_blank" href="/bbs.php">技术论坛 </a></li>
 </ul>
 	</div>
 	<div id="box">
->>>>>>> bf02bc724649f0adca619cc041470a10efaa1be8
 		<div class="mbx">
 		<!-- Baidu share BEGIN -->
 <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
 	<span class="bds_more">分享到：</span>
-<<<<<<< HEAD
-	<a class="bds_sqq">QQ好友</a>
-=======
 	<script type="text/javascript">
 (function(){
 var p = {
@@ -94,7 +83,6 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 })();
 </script>
 <script src="http://connect.qq.com/widget/loader/loader.js" widget="shareqq" charset="utf-8"></script>
->>>>>>> bf02bc724649f0adca619cc041470a10efaa1be8
 	<a class="bds_qzone">QQ空间</a>
 	<a class="bds_tqq">腾讯微博</a>
 	<a class="bds_tsina">新浪微博</a>
@@ -106,10 +94,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 				<b>其它学院入口：</b><img src="/Public/images/sanjiao.jpg" /> <a href="http://java.itcast.cn" target="_blank">java学院</a> <img src="/Public/images/sanjiao.jpg" /> <a href="http://net.itcast.cn" target="_blank">.net学院</a><img src="/Public/images/sanjiao.jpg" /> <a href="http://ios.itcast.cn">ios学院</a> <img src="/Public/images/sanjiao.jpg" /> <a href="http://c.itcast.cn">c/c++学院</a><img src="/Public/images/sanjiao.jpg" /> <a href="http://icd.itcast.cn" target="_blank">网页平面设计学院</a>
 			</div>
 		</div>
-<<<<<<< HEAD
-=======
 
->>>>>>> bf02bc724649f0adca619cc041470a10efaa1be8
 		  <div id="left" class="fl"  style="margin-top:3px;">
 		   
 		<div><img src="/Public/images/lefttop.gif"  /></div>
