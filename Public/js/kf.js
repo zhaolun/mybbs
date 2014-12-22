@@ -115,9 +115,10 @@ function kf_hidekfpopup()
 
 function kf_getPopupDivHtml(kfguin,reference,companyname,welcomeword)
 {
+	//'+urlroot+'bg_2.jpg
 		var temp = '';
-	  temp += '<div style="float: left;height: 430px;width: 8px;background-image: url('+urlroot+'bg_2.jpg);"></div>';
-    temp += '<div style="font-family: Tahoma;text-align:left;float: left;height: 430px;width: 534px;background-image: url('+urlroot+'bg_3.jpg);background-repeat: no-repeat;">';
+	  temp += '<div style="float: left;height: 430px;width: 8px;background-image: url(/Public/images/bg_2.jpg);"></div>';
+    temp += '<div style="font-family: Tahoma;text-align:left;float: left;height: 430px;width: 534px;background-image: url(/Public/images/bg_2.jpg);background-repeat: no-repeat;">';
     temp += '<div><h1 style="	float:left;font-size: 14px;color: #FFFFFF;margin: 0px;padding: 10px 0 13px 2px;line-height:17px;">'+companyname+'</h1><a href="#" onclick="kf_hidekfpopup();return false;" style="background-image: url('+urlroot+'close.gif);float: right;height: 19px;width: 40px;" onmouseover="javascript:this.style.backgroundPosition=\'bottom\'" onmouseleave="javascript:this.style.backgroundPosition=\'top\'"></a></div>';
     temp += '<div style="height:83px;padding: 0 0 0 2px;clear:both; ">';
   

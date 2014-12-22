@@ -240,9 +240,7 @@ class MessageController extends Controller {
         $upload->maxSize = 3145728;
         $upload->saveName = 'time';
         $upload->exts= array('jpg','gif','png','jpeg');// 设置附件上传类型    
-        //$upload->rootPath = './Public/';
         $upload->savePath = '/Uploads/';
-        //$upload->saveName=substr($_FILES['pic']['name'],0,strrpos($_FILES['pic']['name'],"."));
         // 上传文件
         $info=$upload->upload();
         //执行添加
@@ -253,6 +251,8 @@ class MessageController extends Controller {
         $data['company']=$_POST['company'];
         $data['money']=$_POST['money'];
         $data['pic']='/Uploads/Uploads/'.date("Y-m-d",time()).'/'.$info['pic']['savename'];//获取文件保存的名称
+        $data['video']=$_POST['video'];
+        //var_dump($data['video']);die;
         $stu=$model->add($data);
         //echo "<pre>";var_dump($info['pic']['savename']);die; 
         if($info&&$stu) 
@@ -315,6 +315,7 @@ class MessageController extends Controller {
         $data['work_time']=$_POST['work_time'];
         $data['company']=$_POST['company'];
         $data['money']=$_POST['money'];
+        $data['video']=$_POST['video'];
         $data['pic']='/Uploads/Uploads/'.date("Y-m-d",time()).'/'.$info['pic']['savename'];//获取文件保存的名称
 
         //$data['pic']=$info['pic']['savename'];//获取文件保存的名称
