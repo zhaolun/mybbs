@@ -13,11 +13,4 @@ class XueyuanController extends Controller {
 			$this->success("发表成功",U("Home/xueyuan/add"));
 		}
     }
-	public function lista(){
-		$m=M('banji');
-		$p=getpage($m,$where,2);
-		$list=$m->field(true)->where($where)->order('id desc')->select();
-		$this->list=$list;
-		$this->page=$p->show();
-	}
 }

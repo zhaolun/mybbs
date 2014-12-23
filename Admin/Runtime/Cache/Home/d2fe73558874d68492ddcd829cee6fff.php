@@ -280,7 +280,7 @@ H1 a {
 		</script>
 		<td width="87%" valign="top">
 			<div style="margin:10px;padding:10px;">
-				<?php echo ($page); ?>
+				dfsdfs
 			</div>
 		</td>
 	</tr>
