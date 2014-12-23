@@ -11026,3 +11026,29 @@ NOTIC: [8] A session had already been started - ignoring session_start() E:\BBS\
 
 =======
 >>>>>>> e18aa37e4fbc6412cbb833d97fadd3365bfef38e
+[ 2014-12-22T21:34:24+08:00 ] 192.168.1.7 /bbs.php/Home/Plugin/plugin_xq?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\BBS\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_shop` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `bbs_shop` WHERE ( id = 3 )  [ RunTime:0.021001s ]
+NOTIC: [8] Use of undefined constant end_time - assumed 'end_time' E:\BBS\Bbs\Home\Controller\PluginController.class.php 第 19 行.
+NOTIC: [8] Use of undefined constant start_time - assumed 'start_time' E:\BBS\Bbs\Home\Controller\PluginController.class.php 第 19 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\BBS\bbs.php 第 26 行.
+
