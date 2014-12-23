@@ -301,7 +301,7 @@ H1 a {
 	<table cellspacing='1' cellpadding='3'>
 		<tr>
 			<td align='right'>感言标题：</td>
-			<td><input type="text" name="title" rows="200"></td>
+			<td><input type="text" name="title"></td>
 		</tr>
 		<tr>
 			<td align='right'>感言内容：</td>

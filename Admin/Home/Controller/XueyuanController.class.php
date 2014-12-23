@@ -13,5 +13,4 @@ class XueyuanController extends Controller {
 			$this->success("发表成功",U("Home/xueyuan/add"));
 		}
     }
-	 
 }
