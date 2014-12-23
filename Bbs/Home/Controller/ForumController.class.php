@@ -6,6 +6,9 @@ class ForumController extends Controller {
 		$model=M("pl");
         $data = $model->query("select * from bbs_pl join bbs_fl on bbs_pl.f_id = bbs_fl.f_id");
 		//var_dump($data);die;
+		$model1=M('ganyan');
+		$data1 = $model1->select();
+		$this->assign('info',$data1);
         $this->assign('list',$data);
         $this->display('forum');
     }
@@ -19,10 +22,10 @@ class ForumController extends Controller {
         $this->assign('list',$data);
         $this->display('pinglun');
     }
+	
 	public function huifu(){
 		$this->display('huifu');
 	}
-
 	 public function forum_pro(){
 		 $model=M('ganyan');
 		 $model1=M('pinglun');

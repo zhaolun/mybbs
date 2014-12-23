@@ -95,113 +95,165 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 			</div>
 		</div>
 
-<div id="box">
-  <div style="width:960px; height:149px; margin:0 auto;"><img src="/Public/images/teacherpic.jpg"  /></div>
-  <div id="left" class="fl"  style="margin-top:3px;">
-    <div><img src="/Public/images/lefttop.gif"/></div>
-    <div class="left_content2">
-      <h4 class="ganyan"><span class="STYLE3">师资</span>介绍</h4>
-      <div class="teacher_z" style="height: auto; overflow: hidden">
-<!-- 第一位老师 -->
-<?php if(is_array($list)): foreach($list as $key=>$vo): ?><div class="teacher">
-<p class="fl"><img alt="" src="<?php echo ($vo["img"]); ?>" style="width: 155px; height: 189px;" /></p>
-<dl class="fr">
-	<dt>
-		<span class="blue"><strong><?php echo ($vo["t_name"]); ?></strong></span><strong>--<span style="color:#0000ff;"><a href="/index.php/home/teacher/video/id/<?php echo ($vo["id"]); ?>" target="_blank"><span style="color: rgb(0, 0, 255);">在线试听精彩课程</span></a></span></strong></dt>
-	<dt>
-		<strong>职 务：<?php echo ($vo["position"]); ?></strong></dt>
-	<dd><?php echo ($vo["t_desc"]); ?></dd>
-</dl>
-</div><?php endforeach; endif; ?>
+	<div class="clear"></div>
+	<div id="lxwm">
 
-<div></div>
+	  <p><img src="/Public/images/lxwm-top.jpg" /></p>
+	  <div class="lxwm-wenben">
+	  <!-- 内容主体  -->
+<p class="kxdl-font1"><?php echo ($info["0"]["pei_class"]); ?>招生简章</p>
+<div class="kcnr-wenben">
+<?php echo ($info["0"]["bbs_zhangcheng"]); ?>
 </div>
+<div class="kcnr-title">培训目标</div>
+<p style="margin-top: 10px; text-indent: 2em"><?php echo ($info["0"]["mubiao"]); ?></p>
+<div class="kcnr-title">招生对象</div>
+<p style="margin-top: 10px; text-indent: 2em"><?php echo ($info["0"]["bbs_duixiang"]); ?></p>
+<p style="text-indent: 2em; margin-bottom: 10px"></p>
+<div class="kcnr-title">课程特色</div>
+<p class="kcnr-title1"><?php echo ($info["0"]["bbs_tese"]); ?></p>
+<div class="kcnr-title">课程安排</div>
+<p class="kcnr-font1"><?php echo ($info["0"]["pei_class"]); ?></p>
+<style type="text/css">
+.kcnr-table{ line-height:20px;}
+	.kcnr-table li{list-style-image:url(http://www.itcast.cn/files/image/201207/20120718144154342.jpg); margin-left:15px;;</style>
+<table border="0" cellpadding="0" cellspacing="0" class="kcnr-table" width="99%">
+<tbody>
+	<tr>
+	<td>课程名称</td>
+	<td>阶段课程</td>
+	<td width="40%">课程内容</td>
+	<td width="23%">学习目标</td>
+	</tr>
+	<?php if(is_array($info)): foreach($info as $key=>$vo): ?><tr>
+	<td width="17%"><strong><?php echo ($vo["bbs_name"]); ?></strong></td>
+	<td width="20%"><p style="text-indent: 2em"><?php echo ($vo["bbs_jieduan"]); ?></p></td>
+	<td><?php echo ($vo["neirong"]); ?></td>
+	<td><?php echo ($vo["mubiao"]); ?></td>
+	</tr><?php endforeach; endif; ?>
+	
+</tbody>
+</table>
+<div class="kcnr-title">培训方式</div>
+<table border="0" cellpadding="0" cellspacing="0" class="kcnr-table" width="99%">
+<tbody>
+	<tr>
+	<td width="19%"><img src="http://www.itcast.cn/Public/images/kcnr-tu5.jpg" /></td>
+	<td width="81%">
+	<p style="text-indent: 2em; color: #ff6600; font-size: 14px; font-weight: bold">培训时间：1个月</p>
+	<p style="text-indent: 2em; color: #ff6600; font-size: 14px; font-weight: bold">培训方式：全日制脱产，每周5天上课，早9：00－晚 8：00</p>
+	</td>
+	</tr>
+</tbody>
+</table>
 <br />
 
-    </div>
-    <div><img src="/Public/images/leftbottom.gif"/></div>
-  </div>
-  <div id="right" class="fl">
-    <h4 class="righttitle1 zhaopin"><span class="blue">讲师</span>招聘</h4>
-    <div class="rightkuang1">
-      <p class="cent"><img src="/Public/images/xuanze.jpg" width="256" height="66" /></p>
-      <div class="clear"> </div>
-      <p class="miaoshu"> 中国的软件教育已经坑害了不少软件工程师苗子，传智播客自成立之日起就立志于改变中国的软件教育，目前已经出版IT教程书籍十多本，教学视频几十套，发表各类技术文章几百篇，已经开始对中国的软件教育有所影响。随着传智播客的事业被越来越多的人认知，加盟到传智播客愿意为此事业奋斗终生的技术牛人也越来越多。尽管加盟到传智播客的技术牛人很多，但要从政策上改变中国的软件教育，我们的力量还很小，小到可以说是微不足道。所以我们需要各路英雄豪杰加盟传智播客，为改变中国的软件教育而奋斗不息。</p>
-      <p class="cent"><a href="/news/9838ccfe/74aa/4532/915e/f905284de34e.shtml" target="_blank"><img src="/Public/images/liulan.jpg" width="142" height="23"/></a></p>
-    </div>
-    <div class="rightbottom"><img src="/Public/images/bottom1.gif"/></div>
-    <h4 class="righttitle1"><span class="fl">我们出版的书籍</span><span class="fr"><a href="/channel/book.shtml">+MORE</a></span></h4>
-    <div class="rightkuang chuban" style="height:auto; overflow:hidden;">
-       <dl>
-        <dt><a href="http://product.dangdang.com/product.aspx?product_id=8758723" target="_blank"><img src="/Public/images/book04.jpg"/></a></dt>
-        <dd><span class="blue"><strong><a href="http://product.dangdang.com/product.aspx?product_id=8758723" target="_blank">《Java就业培训教程》</a></strong></span></dd>
-        <dd>作 者：<span class="STYLE4">张孝祥</span> </dd>
-        <dd>定价：<span class="STYLE6"><strong>￥39.00元</strong> </span></dd>
-        <dd>页数：<span class="STYLE4">394</span> </dd>
-</dl>
-<dl>
-        <dt><a href="http://product.dangdang.com/product.aspx?product_id=20280496" target="_blank"><img src="/Public/images/book01.jpg"/></a></dt>
-        <dd><span class="blue"><strong><a href="http://product.dangdang.com/product.aspx?product_id=20280496" target="_blank">《EJB3.0入门经典》</a></strong></span></dd>
-        <dd>作 者：<span class="STYLE4">黎活明</span> </dd>
-        <dd>定价：<span class="STYLE6"><strong>￥59.80 元</strong> </span></dd>
-        <dd>页数：<span class="STYLE4">479</span> </dd>
-</dl> 
-    </div>
-    <div class="rightbottom"><img src="/Public/images/rightbottom.jpg"/></div>
-    <h4 class="righttitle1 lianxi"><span class="fl"><span class="blue">课程</span>咨询</span></h4>
-    <div class="rightkuang">
-      <dl>
-	<dt style="padding-bottom:20px;">
-		北京传智播客</dt>
-	<dd style="width:120px;height:40px;float:left;">
-		<a href="http://cnrdn.com/iP66" target="_blank"><img alt="北京传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
-	<dd style="width:120px;height:40px;float:left;">
-		<a href="http://cnrdn.com/iP66" target="_blank"><img alt="北京传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqkczx.jpg" width="99" /></a></dd>
-</dl>
-<dl class="qqtwo">
-	<dt style="padding-bottom:20px;">
-		广州传智播客</dt>
-	<dd style=" width:120px;height:40px;float:left;">
-		<a href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&amp;key=XzgwMDA2ODg2OF8yMDczMV84MDAwNjg4NjhfMl8" target="_blank"><img alt="广州传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
-	<dd style=" width:120px;height:40px;float:left;">
-		<a href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&amp;key=XzgwMDA2ODg2OF8yMDczMV84MDAwNjg4NjhfMl8" target="_blank"><img alt="广州传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqkczx.jpg" width="99" /></a></dd>
-</dl>
-<dl class="qqthree">
-	<dt style="padding-bottom:20px;">
-		上海传智播客</dt>
-	<dd style="width:120px;height:40px;float:left;">
-		<a href="http://cnrdn.com/djUD" target="_blank"><img alt="上海传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
-	<dd style="width:120px;height:40px;float:left;">
-		<a href="http://cnrdn.com/djUD" target="_blank"><img alt="上海传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqkczx.jpg" width="99" /></a></dd>
-</dl>
-<dl class="qqfour">
-	<dt style="padding-bottom:20px;">
-		武汉传智播客</dt>
-	<dd style="width:120px;height:40px;float:left;">
-		<a href="http://cnrdn.com/shPF" target="_blank"><img alt="武汉传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
-	<dd style="width:120px;height:40px;float:left;">
-		<a href="http://cnrdn.com/shPF" target="_blank"><img alt="武汉传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqkczx.jpg" width="99" /></a></dd>
-</dl>
-<dl class="qqfive">
-	<dt style="padding-bottom:20px;">
-		郑州传智播客</dt>
-	<dd style="width:120px;height:40px;float:left;">
-		<a href="http://cnrdn.com/0LVE" target="_blank"><img alt="武汉传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
-	<dd style="width:120px;height:40px;float:left;">
-		<a href="http://cnrdn.com/0LVE" target="_blank"><img alt="武汉传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqkczx.jpg" width="99" /></a></dd>
-</dl>
-<dl class="qqsix">
-	<dt style="padding-bottom:20px;">
-		西安传智播客</dt>
-	<dd style="width:120px;height:40px;float:left;">
-		<a href="http://cnrdn.com/iP66" target="_blank"><img alt="西安传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
-	<dd style="width:120px;height:40px;float:left;">
-		<a href="http://cnrdn.com/iP66" target="_blank"><img alt="西安传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqkczx.jpg" width="99" /></a></dd>
-</dl>
-      <div class="clear"></div>
-    </div>
-    <div class="rightbottom"><img src="/Public/images/rightbottom.jpg"/></div>
-  </div>
+<!-- 内容主体  -->
+	  </div>
+	  <p><img src="/Public/images/lxwm-bottom.jpg" /></p>
+	</div>		
+	<div class="clear"></div>
+<style>
+.bm{width:100%; background:#FFF; font-family:Microsoft Yahei; padding:50px 0;}
+.bm h2{height:70px; background:url('http://www.itcast.cn/xa/Public/images/h_bg.png') no-repeat center top; text-indent:-9999px;}
+.bm .bm_con{width:938px; margin:0 auto; overflow:hidden;}
+.bm .bm_con .left{width:720px; float:left;}
+.bm .bm_con .left ul li{float:left; width:360px; margin-bottom:20px; overflow:hidden; height:40px;}	
+.bm .bm_con .left ul li .l_text{float:left; font-size:18px; color:#666; padding-right:10px; line-height:40px;}
+.bm .bm_con .left ul li input{float:left; width:211px; padding:10px 0; border:1px solid #c9c9c9; border-radius:3px; padding-left:10px; box-shadow:inset 1px 2px 3px #f1f1f1; margin-top:2px;}	
+.bm .bm_con .right{width:218px; float:left;}
+.bm .bm_con .right input{display:block; width:216px; height:36px; color:#fff; font-size:16px; background:#4492dc; border:none; outline:none; border-radius:3px; font-family:Microsoft Yahei;}
+.bm .bm_con .right input:hover{ background:#5aa3e9;}
+.bm .bm_con .right p{font-size:12px; color:#666; margin-top:25px;}	
+</style>
+<script type="text/javascript" src="http://www.itcast.cn/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+function check(){
+	var realname=$("#realname");
+	var phone=$("#phone");
+	var email=$("#email");
+	var qq=$("#qq");
+	var address=$("#address");
+	
+	var realnamereg=/^[\u4E00-\u9FA5]+$/;
+	var phonereg=/^[1][3-9][0-9]{9}$/;
+	var qqreg=/^[1-9]\d{4,}$/;
+	var emailreg=/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+	var shuoreg=/(http[s]?|ftp):\/\/[^\/\.]+?\..+\w$/i;
+
+	
+	if(!realnamereg.test(realname.val())){
+		realname.focus().val('');
+		alert('请输入正确的中文名称！');
+		return false;
+	}else if(!phonereg.test(phone.val())){
+		phone.focus().val('');
+		alert('请输入正确的手机！');
+		return false;
+	}else if(address.val() == 0){
+		alert('请选择所在省份！');
+		return false;
+	}else if( typeof qq.val() != 'undefined' && !qqreg.test(qq.val()) ){
+		qq.focus().val('');
+		alert('请输入正确的QQ号码！');
+		return false;
+	}else if( typeof email.val() != 'undefined' && !emailreg.test(email.val())){
+		email.focus().val('');
+		alert('请输入正确的邮箱地址！');
+		return false;
+	}
+	else{
+	$.post("http://open.itcast.cn/Api/Subject/publicapply.html", {
+	realname: realname.val() , 
+	phone: phone.val(),
+	address: address.val(),
+	email: email.val(),
+	qq: qq.val(),
+	cid: 6,
+	t:new Date().getTime()
+	});
+	
+	alert('申请成功！\r\n咨询客服人员将会主动联系您，请耐心等待！');
+	realname.val('');
+	phone.val('');
+	address.val('');
+	email.val('');
+	qq.val('');
+	$("input[name='source']:checked").removeAttr("checked");
+	}
+}
+</script>
+<div class="bm">
+	<h2>每期开班座位有限,预报名可优先享有占座特权哦！</h2>
+	<div class="bm_con">
+	<form id="addform" action="/Api/Subject/networkapply.html" method="post">
+		<div class="left">
+			<ul>
+				<li>
+					<span class="l_text"><s style="color:#e00000; font-size:15px; text-decoration:none; line-height:40px; padding-right:5px;">*</s>真实姓名</span>
+					<input type="text" placeholder="我们期待更了解您" name="realname" id="realname" />
+				</li>
+				<li>
+					<span class="l_text"><s style="color:#e00000; font-size:15px; text-decoration:none; line-height:40px; padding-right:5px;">*</s>联系手机</span>
+					<input type="text" placeholder="我们和您一样讨厌骚扰电话" name="phone" id="phone" />
+				</li>
+				<li>
+					<span class="l_text"><s style="color:#e00000; font-size:15px; text-decoration:none; padding-right:5px;">*</s>所在地区</span>
+					<select name="address" id="address" style="width:222px; height:36px; display:block;" ><option value="0">选择省份</option><option value="北京">北京市</option><option value="天津">天津市</option><option value="上海">上海市</option><option value="重庆">重庆市</option><option value="河北">河北省</option><option value="山西">山西省</option><option value="内蒙古">内蒙古</option><option value="辽宁">辽宁省</option><option value="吉林">吉林省</option><option value="黑龙江">黑龙江</option><option value="江苏">江苏省</option><option value="浙江">浙江省</option><option value="安徽">安徽省</option><option value="福建">福建省</option><option value="江西">江西省</option><option value="山东">山东省</option><option value="河南">河南省</option><option value="湖北">湖北省</option><option value="湖南">湖南省</option><option value="广东">广东省</option><option value="广西">广西省</option><option value="海南">海南省</option><option value="四川">四川省</option><option value="贵州">贵州省</option><option value="云南">云南省</option><option value="西藏">西藏省</option><option value="陕西">陕西省</option><option value="甘肃">甘肃省</option><option value="青海">青海省</option><option value="宁夏">宁夏省</option><option value="新疆">新疆省</option><option value="香港">香港</option><option value="澳门">澳门</option><option value="台湾">台湾省</option></select>
+				</li>
+				<li>
+					<span class="l_text"><s style="color:#e00000; font-size:15px; text-decoration:none; line-height:40px; padding-right:11px;">*</s>QQ号码</span>
+					<input type="text" placeholder="我们将第一时间与您联系" name="qq" id="qq"/>
+				</li>
+			</ul>
+			<br />
+		</div>
+		<div class="right">
+			<input type="button" value="现在预报名"  onClick="check()" />
+			<p>温馨提示：请保持手机畅通，咨询老师将为您提供专属的一对一报名服务。</p>
+		</div>
+	</form>
+	</div>
 </div>
 
 
