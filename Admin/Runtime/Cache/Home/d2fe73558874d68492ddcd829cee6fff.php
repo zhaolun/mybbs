@@ -280,45 +280,7 @@ H1 a {
 		</script>
 		<td width="87%" valign="top">
 			<div style="margin:10px;padding:10px;">
-				<head>
-<title>添加感言</title>
-<meta name="robots" content="noindex, nofollow">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="/Public/admin/css/general.css" rel="stylesheet" type="text/css" />
-<link href="/Public/admin/css/main.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="../js/transport.js"></script>
-<script type="text/javascript" src="./js/common.js"></script>
-</head>
-<body>
-<h1>
-<span class="action-span1">添加感言</span><span id="search_id" class="action-span1"></span>
-<div style="clear:both"></div>
-</h1>
- 
-<!-- 添加新闻类别 -->
-<div class="list-div">
-<form method="post" action="/admin.php/home/xueyuan/addpro">
-	<table cellspacing='1' cellpadding='3'>
-		<tr>
-			<td align='right'>感言标题：</td>
-			<td><input type="text" name="title"></td>
-		</tr>
-		<tr>
-			<td align='right'>感言内容：</td>
-			<td><textarea name="content" rows="20" cols="100"></textarea></td>
-		</tr>
-		
-		<tr>
-			<td align='center' colspan=2><input type="submit" value='添加感言'></td>	
-		</tr>
-	</table>
-</form>
-</div>
-<br />
-<div id="footer">
-版权所有 &copy; 八维研修学院软件工程学院1302phpA班，并保留所有权利。</div>
-</body>
-</html>
+				dfsdfs
 			</div>
 		</td>
 	</tr>
