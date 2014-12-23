@@ -1,6 +1,6 @@
 <?php
 //Discuz! cache file, DO NOT modify me!
-//Identify: 5f79e9f3021b06099109f5ca79be3f8d
+//Identify: fe49250166d2499b63315dfb568ab89b
 
 $pluginsetting = array (
 );
