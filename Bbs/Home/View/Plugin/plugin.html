@@ -1,0 +1,229 @@
+<div id="wp" class="wp">
+<link href="source/plugin/auction/template/style_auction.css" type="text/css" rel="stylesheet">
+<div id="pt" class="wp cl">
+
+<div class="z">
+<a href="index.php" class="nvhm">传智论坛-IT学习社区</a><em>&rsaquo;</em><a href="plugin.php?id=auction">积分商城</a>
+
+
+
+</div>
+</div>
+<div id="wp_auc" class="wp cl">
+<div class="right">
+<div class="intro"><a href="http://www.discuz.net/thread-2153878-1-1.html" target="_blank" title="了解积分交易"><img src="source/plugin/auction/images/intro.gif"></a></div>
+<div id="userinfo" class="mod_wrap login" style="height:60px;">
+<p id="login"><a href="member.php?mod=logging&amp;action=login" onclick="showWindow('login', this.href);return false;">会员登录</a></p>
+<p>登录后，立即查看您的交易积分</p>
+</div>
+<div id="" class="mod_wrap tops" style="padding:0;width:auto;">
+<h3>热门交易排行</h3>
+</div>
+</div>
+<div style="padding-bottom:10px;">
+<form action="plugin.php?id=auction&amp;action=search" onsubmit="searchFocus($('srchtxt'))" autocomplete="off" method="post" id="scform" target="_self">
+<input type="hidden" value="auction" name="id" />
+<input type="hidden" value="search" name="action" />
+<input type="hidden" value="" name="sctxt" id="sctxt" />
+<table cellspacing="0" cellpadding="0">
+<tr>
+
+<td><input type="text" autocomplete="off" value="请输入搜索内容" class="px z ausc" id="srctxt" name="srctxt" onchange="$('sctxt').value=this.value;"/></td>
+<td>
+<span class="ftid">
+<select name="sctype" id="sctype" width="60" class="ps" selecti="0" style="display: none;">
+<option value="0" selected="selected">请选择类型</option>
+<option value="1" >兑&nbsp;&nbsp;&nbsp;换</option>
+<option value="2" >抽&nbsp;&nbsp;&nbsp;奖</option>
+<option value="3" >竞&nbsp;&nbsp;&nbsp;拍</option>
+</select>
+</span>
+</td>
+<td>
+<span class="ftid">
+<select name="sctime" id="sctime" width="60" class="ps" selecti="0" style="display: none;">
+<option value="0" selected="selected">请选择状态</option>
+<option value="1" >正在进行</option>
+<option value="2" >即将开始</option>
+<option value="3" >已经结束</option>
+</select>
+</span>			
+</td>
+<td><button value="true" class="pn pnc" id="search_submit" name="searchsubmit" type="submit"><strong>搜索</strong></button></td>
+</tr>
+</table>
+<div style="display: none" class="p_pop cl" id="sctype_menu">
+<ul>
+<li><input type="radio" value="1" name="sctype" class="pr" id="sc_type1"><label title="!search_type1!" for="sc_type1">!search_type1!</label></li>
+<li><input type="radio" value="2" name="sctype" class="pr" id="sc_type2"><label title="!search_type2!" for="sc_type2">!search_type2!</label></li>
+</ul>
+</div>
+<div style="display: none" class="p_pop cl" id="sctime_menu">
+<ul>
+<li><input type="radio" value="being" name="sctime" class="pr" id="sc_time_being"><label title="!search_time_being!" for="sc_time_being">!search_type1!</label></li>
+<li><input type="radio" value="will" name="sctime" class="pr" id="sc_time_will"><label title="!search_time_will!" for="sc_time_will">!search_type2!</label></li>
+<li><input type="radio" value="been" name="sctime" class="pr" id="sc_time_been"><label title="!search_time_been!" for="sc_time_been">!search_type2!</label></li>
+</ul>
+</div>
+<input type="hidden" value="f07d323e" name="formhash" />
+</form>
+<script type="text/javascript">
+initSearchmenu('srctxt');
+simulateSelect('sctype');
+simulateSelect('sctime');
+$('scbar').style.display = 'none';
+</script>
+</div>
+<div class="left" id="left">
+<div style="padding-bottom:10px;"><img src="./source/plugin/auction/images/nav.png"></div>
+<div class="mod_wrap aucd cl">
+<h2><span class="y"><a href="plugin.php?id=auction&amp;action=search&amp;sctime=1">更多</a></span>最近热卖</h2>
+<foreach name='info' item='it'>
+<div class="aucdd">
+<p class="a_n"><a href="http://www.mybbs.com/bbs.php/Home/Plugin/plugin_xq?id={$it.id}" target="_blank">{$it.s_name}</a></p>
+<input type="hidden" id="35590" value="1418089140"/><div class="pic" style="height:146px;"><div class="number" title="先到先得">先到先得</div><a href="http://www.mybbs.com/bbs.php/Home/Plugin/plugin_xq?id={$it.id}" title=""><img src="forum.php?mod=image&aid=54483&size=140x140&key=c95b1808929c9c99"></a></div>
+<div class="pic">
+<p id="time_35590" class="timeline a_ct">已经结束</p>
+<p class="a_lt"><span>市场价：</span><del>{$it.s_price}</del></p>
+<p class="a_lt"><span>兑&nbsp;&nbsp;&nbsp;换：</span><em>{$it.price}</em> 金币</p>
+<p class="a_ct" id="vd_35590"><a href="http://www.mybbs.com/bbs.php/Home/Plugin/plugin_xq?id={$it.id}" target="_blank" style="background-image:url(source/plugin/auction/images/auction1.png);">查看详情&rsaquo;&rsaquo;</a></p>
+</div>
+</div>
+</foreach>
+
+
+</div>
+<!--2014-05-08 Add-->
+<div class="mod_wrap aucd cl">
+<h2><span class="y"><a href="plugin.php?id=auction&amp;action=search&amp;sctime=2">更多</a></span>即将开始</h2>
+</div>
+<!--2014-05-08 End-->
+<div class="mod_wrap aucd cl">
+<h2><span class="y"><a href="plugin.php?id=auction&amp;action=search&amp;sctime=3">更多</a></span>往期交易</h2>
+<div class="aucdd">
+<p class="a_n"><a href="thread-35590-1-1.html" target="_blank">传智礼品：川宇蝴蝶  读卡器（颜色随机） . ... ...</a></p>
+<input type="hidden" id="35590" value=""/><div class="pic" style="height:146px;">
+<a href="thread-35590-1-1.html" title="传智礼品：川宇蝴蝶  读卡器（颜色随机） . ... ..."><img src="forum.php?mod=image&aid=54483&size=140x140&key=c95b1808929c9c99"></a></div>
+<div class="pic">
+<p id="time_35590" class="timeline a_ct">--:--:--</p>
+<p class="a_lt"><span>市场价：</span><del>80</del></p>
+<p class="a_lt"><span>兑&nbsp;&nbsp;&nbsp;换：</span><em>30</em> 金币</p>
+<p class="a_ct" id="vd_35590"><a href="thread-35590-1-1.html" target="_blank">查看详情&rsaquo;&rsaquo;</a></p>
+</div>
+</div>
+<div class="aucdd">
+<p class="a_n"><a href="thread-28363-1-1.html" target="_blank">传智播客2014版ios入门视频学习光盘 ...</a></p>
+<input type="hidden" id="28363" value=""/><div class="pic" style="height:146px;">
+<a href="thread-28363-1-1.html" title="传智播客2014版ios入门视频学习光盘 ..."><img src="forum.php?mod=image&aid=51167&size=140x140&key=174af558002e3670"></a></div>
+<div class="pic">
+<p id="time_28363" class="timeline a_ct">--:--:--</p>
+<p class="a_lt"><span>市场价：</span><del>2500</del></p>
+<p class="a_lt"><span>兑&nbsp;&nbsp;&nbsp;换：</span><em>50</em> 金币</p>
+<p class="a_ct" id="vd_28363"><a href="thread-28363-1-1.html" target="_blank">查看详情&rsaquo;&rsaquo;</a></p>
+</div>
+</div>
+<div class="aucdd">
+<p class="a_n"><a href="thread-28362-1-1.html" target="_blank">传智播客2014版网页平面UI设计入门光盘 ... ...</a></p>
+<input type="hidden" id="28362" value=""/><div class="pic" style="height:146px;">
+<a href="thread-28362-1-1.html" title="传智播客2014版网页平面UI设计入门光盘 ... ..."><img src="forum.php?mod=image&aid=51165&size=140x140&key=602e40311f9b3d04"></a></div>
+<div class="pic">
+<p id="time_28362" class="timeline a_ct">--:--:--</p>
+<p class="a_lt"><span>市场价：</span><del>1800</del></p>
+<p class="a_lt"><span>兑&nbsp;&nbsp;&nbsp;换：</span><em>50</em> 金币</p>
+<p class="a_ct" id="vd_28362"><a href="thread-28362-1-1.html" target="_blank">查看详情&rsaquo;&rsaquo;</a></p>
+</div>
+</div>
+<div class="aucdd">
+<p class="a_n"><a href="thread-28361-1-1.html" target="_blank">传智播客2014版php入门视频学习光盘 ...</a></p>
+<input type="hidden" id="28361" value=""/><div class="pic" style="height:146px;">
+<a href="thread-28361-1-1.html" title="传智播客2014版php入门视频学习光盘 ..."><img src="forum.php?mod=image&aid=51161&size=140x140&key=e0da1b1bd73565b6"></a></div>
+<div class="pic">
+<p id="time_28361" class="timeline a_ct">--:--:--</p>
+<p class="a_lt"><span>市场价：</span><del>1200</del></p>
+<p class="a_lt"><span>兑&nbsp;&nbsp;&nbsp;换：</span><em>50</em> 金币</p>
+<p class="a_ct" id="vd_28361"><a href="thread-28361-1-1.html" target="_blank">查看详情&rsaquo;&rsaquo;</a></p>
+</div>
+</div>
+		
+</div>
+</div>
+
+</div>
+<script type="text/javascript">
+var future=  1419230594*1000;
+function ok_lets_go() {
+
+var timelines = $('left').getElementsByTagName('input');
+for(var i=0;i<timelines.length;i++) {
+you_go(timelines[i].id, (timelines[i].value*1000));
+timelines[i].value --;
+
+}
+setTimeout("ok_lets_go()", 1000);
+}
+
+function you_go(id, now){
+
+days = (now-future) / 1000 / 60 / 60 / 24;
+
+if(now-future < 0){
+document.getElementById('time_'+id).innerHTML = '已经结束';
+$('vd_'+id).className="a_lt";
+return;
+}
+
+        dayNum = Math.floor(days);
+        hours = (now-future) / 1000 / 60 / 60 - (24 * dayNum);
+        houNum = Math.floor(hours);
+        if(houNum < 10){
+            houNum = "0" + houNum;
+        }
+        minutes = (now-future) / 1000 / 60 - (24 * 60 * dayNum) - (60 * houNum);
+        minNum = Math.floor(minutes);
+        if(minNum < 10){
+            minNum = "0" + minNum;
+        }
+        seconds = (now-future) / 1000 - (24 * 60 * 60 * dayNum) - (60 * 60 * houNum) - (60 * minNum);
+        secNum = Math.floor(seconds);
+        if(secNum < 10){
+            secNum = "0" + secNum;
+        }
+        millisec=(now-future)-(24*60*60*1000*dayNum)-(60*60*1000*houNum)-(60*1000*minNum)-(secNum*1000);
+        milli=Math.floor(millisec/10);
+        if(milli<10){
+            milli="0"+milli;
+}
+document.getElementById('time_'+id).innerHTML = dayNum ? (dayNum+" 天 "+houNum + ":" + minNum) : (houNum + ":") + (minNum + ":")+ secNum ;
+//(dayNum?dayNum+" 天 ":'')+ (houNum + ":") + (minNum + ":")+ secNum;
+}
+
+ok_lets_go();
+</script></div>
+ 
+     
+
+
+
+
+<script type="text/javascript">
+_attachEvent(window, 'load', getForbiddenFormula, document);
+function getForbiddenFormula() {
+var toGetForbiddenFormulaFIds = function () {
+ajaxget('plugin.php?id=cloudsearch&formhash=f07d323e');
+};
+var a = document.body.getElementsByTagName('a');
+for(var i = 0;i < a.length;i++){
+if(a[i].getAttribute('sc')) {
+a[i].setAttribute('mid', hash(a[i].href));
+a[i].onmousedown = function() {toGetForbiddenFormulaFIds();};
+}
+}
+var btn = document.body.getElementsByTagName('button');
+for(var i = 0;i < btn.length;i++){
+if(btn[i].getAttribute('sc')) {
+btn[i].setAttribute('mid', hash(btn[i].id));
+btn[i].onmousedown = function() {toGetForbiddenFormulaFIds();};
+}
+}
+}
+</script>
