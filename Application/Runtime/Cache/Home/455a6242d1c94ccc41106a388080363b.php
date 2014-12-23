@@ -100,27 +100,11 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 <div class="jyjb">
 	<?php if(is_array($video)): foreach($video as $key=>$va): ?><div class="jyjb-11">
 			<ul>
-<<<<<<< HEAD
 			<li class="fl jyjb-11-font1" style="height:96px;"><a href="/index.php/home/message/video/stu_id/<?php echo ($va["stu_id"]); ?>"><img alt="yi利一组" src="<?php echo ($va["pic"]); ?>" style="width: 131px; height: 93px; " /></a></li>
 			<li class="fl jyjb-11-font1"><span style="color:#000000;"><b><?php echo ($va["stu_name"]); ?><br />
 		      <?php echo ($va["s_name"]); ?><br />
 			  <?php echo ($va["com_name"]); ?></b></span><br />
 			<span class="jyjb-font2"><a href="/index.php/home/message/video/stu_id/<?php echo ($va["stu_id"]); ?>">[播放]</a></span></li>
-=======
-<<<<<<< HEAD
-			<li class="fl jyjb-11-font1" style="height:96px;"><a href="/index.php/home/message/video/stu_id/<?php echo ($va["stu_id"]); ?>"><img alt="yi利一组" src="<?php echo ($va["pic"]); ?>" style="width: 131px; height: 93px; " /></a></li>
-			<li class="fl jyjb-11-font1"><span style="color:#000000;"><b><?php echo ($va["stu_name"]); ?><br />
-		      <?php echo ($va["s_name"]); ?><br />
-			  <?php echo ($va["com_name"]); ?></b></span><br />
-			<span class="jyjb-font2"><a href="/index.php/home/message/video/stu_id/<?php echo ($va["stu_id"]); ?>">[播放]</a></span></li>
-=======
-			<li class="fl jyjb-11-font1" style="height:96px;"><a href="http://php.itcast.cn/news/20130705/15012588541.shtml"><img alt="yi利一组" src="<?php echo ($va["pic"]); ?>" style="width: 131px; height: 93px; " /></a></li>
-			<li class="fl jyjb-11-font1"><span style="color:#000000;"><b><?php echo ($va["stu_name"]); ?><br />
-		      <?php echo ($va["s_name"]); ?><br />
-			  <?php echo ($va["com_name"]); ?></b></span><br />
-			<span class="jyjb-font2"><a href="http://php.itcast.cn/news/20130705/15012588541.shtml">[播放]</a></span></li>
->>>>>>> fdc96fbac08f6afab5f9c81893dd1070476c5815
->>>>>>> b2ba291aa070cc093624f977aaaa3b54216780f7
 			</ul>
 		</div><?php endforeach; endif; ?>
 <!--
@@ -188,11 +172,7 @@ size:12px;background-color:#ecf6fd;">
 		<div id="right" class="fl">			
 			<h4 class="righttitle1 zhaopin"><span class="blue">最新</span>企业招聘</h4>
 			<div class="rightkuang1">
-<<<<<<< HEAD
-			<p class="cent"> <img src="/images/select.jpg"  width="256" height="66" /></p>
-=======
 			<p class="cent"> <img src="/Public/images/7.jpg"  width="256" height="66" /></p>
->>>>>>> fdc96fbac08f6afab5f9c81893dd1070476c5815
                   <table border="0" cellpadding="0" cellspacing="0" class="zhaopinlist" height="124" style="margin-top: 5px" width="98%">
 <tbody>
 	<tr>
@@ -266,11 +246,7 @@ size:12px;background-color:#ecf6fd;">
 
  <div class="clear"></div>
 			</div>
-<<<<<<< HEAD
-			<div class="rightbottom"><img src="/images/bottom1.gif"/></div>
-=======
 			<div class="rightbottom"><img src="/Public/images/bottom1.gif"/></div>
->>>>>>> fdc96fbac08f6afab5f9c81893dd1070476c5815
 			<h4 class="righttitle1" style="margin-top:5px;"><span class="fl">PHP培训开班信息</span></h4>
 			
 			<div class="jyjb-left" >
@@ -304,11 +280,7 @@ size:12px;background-color:#ecf6fd;">
 </ul>
 
 			</div>
-<<<<<<< HEAD
-			<div class="rightbottom"><img src="/images/rightbottom.jpg"/></div>
-=======
 			<div class="rightbottom"><img src="/Public/images/rightbottom.jpg"/></div>
->>>>>>> fdc96fbac08f6afab5f9c81893dd1070476c5815
 			<h4 class="righttitle1 lianxi"><span class="fl"><span class="blue">课程</span>咨询</span></h4>
 			<div class="rightkuang">
 		<dl>
@@ -369,11 +341,7 @@ size:12px;background-color:#ecf6fd;">
 </dl>-->
 			<div class="clear"></div>		
 			</div>
-<<<<<<< HEAD
-			<div class="rightbottom"><img src="/images/rightbottom.jpg"/></div>
-=======
 			<div class="rightbottom"><img src="/Public/images/rightbottom.jpg"/></div>
->>>>>>> fdc96fbac08f6afab5f9c81893dd1070476c5815
 	  </div>
 	</div>		
 	<div class="clear"></div>

@@ -1,0 +1,179 @@
+
+<div id="wp" class="wp">
+<!--
+<style type="text/css">
+.ie6 .module { position: static;}
+.ie6 .module em { position: static; right:0px;}
+
+</style>
+-->
+<!--  焦点下部 全屏横幅广告占位   -->
+<div class="wp vk_index">
+  		<!--[diy=diy_vk_ad_001]--><div id="diy_vk_ad_001" class="area"></div><!--[/diy]--> 
+</div>
+
+  
+<style id="diy_style" type="text/css"></style>
+    <!-- 上部自定义 diy区块 -->
+<div class="wp vk_index col_vk_title vk_tab">
+<!--[diy=diy_vk_top_bbs_1]--><div id="diy_vk_top_bbs_1" class="area"></div><!--[/diy]-->
+</div>
+
+
+<!--  焦点下部 全屏横幅广告占位   -->
+<div class="wp vk_index">
+  		<!--[diy=diy_vk_ad_002]--><div id="diy_vk_ad_002" class="area"></div><!--[/diy]--> 
+</div>
+
+
+<div class="wp vk_index col_vk_title vk_tab">
+<!--[diy=diy_vk_top_bbs_2]--><div id="diy_vk_top_bbs_2" class="area"></div><!--[/diy]-->
+</div>
+
+<div class="wp vk_index col_vk_title vk_tab">
+<!--[diy=diy_vk_top_bbs_3]--><div id="diy_vk_top_bbs_3" class="area"></div><!--[/diy]-->
+</div>
+
+  
+  
+
+<!--  焦点下部 全屏横幅广告占位   -->
+<div class="wp vk_index">
+  		<!--[diy=diy_vk_ad_003]--><div id="diy_vk_ad_003" class="area"></div><!--[/diy]--> 
+</div>
+
+
+
+<div id="pt" class="bm cl">
+<div class="z">
+
+<a href="./" class="nvhm" title="首页">传智论坛-IT学习社区</a><em>&raquo;</em><a href="forum.php" id="fjump" onmouseover="delayShow(this, 'showForummenu(177)');" class="showmenu">技术论坛</a><em>&rsaquo;</em> 免费课程</div>
+<div class="z">
+<iframe id="connectlike" allowtransparency="true" scrolling="no" border="0" width="280" height="25" frameborder="0"></iframe>
+<script type="text/javascript">_attachEvent(window, 'load', function () { $('connectlike').src = 'api/connect/like.php';}, document);</script>
+</div>
+</div>
+
+
+
+<div id="ct" class="wp cl">
+
+<div class="mn" >
+    
+    
+    
+
+
+
+        
+        <!-- 子分区版块列表页面 -->
+        <!-- 此处为自定义顶部可DIY区域 -->
+<div class="drag">
+<!--[diy=diy4]--><div id="diy4" class="area"></div><!--[/diy]-->
+</div>
+
+        
+        
+
+
+
+
+<div class="fl bm">
+<div class="bm bmw  cl">
+<div class="bm_h cl">
+
+<span class="o">
+<img id="category_177_img" src="static/image/common/collapsed_no.gif" title="收起/展开" alt="收起/展开" onclick="toggle_collapse('category_177');" />
+</span>
+<h2><a href="forum.php?gid=177" style="">免费课程</a></h2>
+</div>
+<div id="category_177" class="bm_c" style=""><foreach name="list" item="vo">
+
+<table cellspacing="0" cellpadding="0" class="fl_tb">
+<tr><td class="fl_icn" >
+<a href="forum-178-1.html"><img src="static/image/common/forum_new.gif" alt="免费公开课" /></a>
+</td>
+<td>
+<h2><a href="http://www.mybbs.com/bbs.php/home/forum/huifu/id/{$vo.id}">{$vo.title}</a><em class="xw0 xi1" title="今日"> (24)</em></h2>
+</td>
+<td class="fl_i">
+                            
+<span class="xi2">229</span><span class="xg1"> / <span title="47196">4万</span></span>
+                            </td>
+
+</tr>
+
+
+</table>
+</foreach>
+</div>
+</div>
+</div>
+
+<div class="wp mtn">
+<!--[diy=diy3]--><div id="diy3" class="area"></div><!--[/diy]-->
+</div>
+
+
+</div>
+
+</div>
+</div>
+ 
+    <div class="a_cn"style=""></div> 
+
+
+
+
+<script type="text/javascript">
+_attachEvent(window, 'load', getForbiddenFormula, document);
+function getForbiddenFormula() {
+var toGetForbiddenFormulaFIds = function () {
+ajaxget('plugin.php?id=cloudsearch&formhash=236e01fb');
+};
+var a = document.body.getElementsByTagName('a');
+for(var i = 0;i < a.length;i++){
+if(a[i].getAttribute('sc')) {
+a[i].setAttribute('mid', hash(a[i].href));
+a[i].onmousedown = function() {toGetForbiddenFormulaFIds();};
+}
+}
+var btn = document.body.getElementsByTagName('button');
+for(var i = 0;i < btn.length;i++){
+if(btn[i].getAttribute('sc')) {
+btn[i].setAttribute('mid', hash(btn[i].id));
+btn[i].onmousedown = function() {toGetForbiddenFormulaFIds();};
+}
+}
+}
+</script>
+
+
+
+
+
+<div id="wechat_float_qrcode" class="p_pop xg1" style="display:none;text-align:center;float:left;position:fixed;top:220px;z-index:100;margin-left: 2px;width:110px">
+<p class="cl"><img class="y" style="cursor:pointer" onclick="display('wechat_float_qrcode');setcookie('wechatfqrc', 1, 86400)" src="static/image/common/ad_close.gif"></p>
+<img src="plugin.php?id=wechat:qrcode&amp;access=yes" width="98" />
+<p>手机快速浏览</p>
+</div>
+<script>
+function wechat_qrcode(type) {
+if(type && $('wechat_float_qrcode').style.display == 'none') {
+return;
+}
+var qrleft = parseInt($('ft').clientWidth + parseInt(fetchOffset($('ft'))['left']));
+$('wechat_float_qrcode').style.display = '';
+if(qrleft + $('wechat_float_qrcode').clientWidth > document.documentElement.clientWidth) {
+$('wechat_float_qrcode').style.cssFloat = 'right';
+$('wechat_float_qrcode').style.left = 'auto';
+$('wechat_float_qrcode').style.right = 0;
+} else {
+$('wechat_float_qrcode').style.cssFloat = 'left';
+$('wechat_float_qrcode').style.left = (qrleft) + 'px';
+$('wechat_float_qrcode').style.right = 'auto';
+}
+}
+_attachEvent(window, 'scroll', function () { wechat_qrcode(1); })
+_attachEvent(window, 'load', function() { wechat_qrcode(0); }, document);
+</script>
