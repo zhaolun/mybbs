@@ -3,7 +3,6 @@ namespace Home\Controller;
 use Think\Controller;
 class ForumController extends Controller {
     public function forum(){
-<<<<<<< HEAD
 		$model=M("pl");
         $data = $model->query("select * from bbs_pl join bbs_fl on bbs_pl.f_id = bbs_fl.f_id");
 		//var_dump($data);die;
@@ -24,12 +23,6 @@ class ForumController extends Controller {
 		$this->display('huifu');
 	}
 
-=======
-		$model=M('ganyan');
-		$data = $model->select();
-		$this->assign('info',$data);
-        $this->display('forum');
-    }
 	 public function forum_pro(){
 		 $model=M('ganyan');
 		 $model1=M('pinglun');
@@ -50,5 +43,4 @@ class ForumController extends Controller {
 			$this->success("发表成功",U("Home/forum/forum_pro?id=".$_POST['id']));
 		}
 	}
->>>>>>> 0903d416137e2f3b903764f3fed3e44fbcad2e21
 }
