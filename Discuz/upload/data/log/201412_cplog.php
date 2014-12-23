@@ -1,3 +1,16 @@
 <?PHP exit;?>	1418560084	admin	1	127.0.0.1		GET={}; POST={};
 <?PHP exit;?>	1418560085	admin	1	127.0.0.1	index	GET={}; POST={};
 <?PHP exit;?>	1418560087	admin	1	127.0.0.1	index	GET={}; POST={};
+<?PHP exit;?>	1419321617	admin	1	127.0.0.1		GET={}; POST={};
+<?PHP exit;?>	1419321618	admin	1	127.0.0.1	index	GET={}; POST={};
+<?PHP exit;?>	1419321622	admin	1	127.0.0.1	portalcategory	GET={}; POST={};
+<?PHP exit;?>	1419321622	admin	1	127.0.0.1	members	GET={operation=search; }; POST={};
+<?PHP exit;?>	1419321654	admin	1	127.0.0.1	members	GET={operation=search; username=cuigege; groupid={0=9; }; }; POST={username=cuigege; groupid={0=9; }; };
+<?PHP exit;?>	1419321659	admin	1	127.0.0.1	members	GET={operation=search; }; POST={};
+<?PHP exit;?>	1419321666	admin	1	127.0.0.1	members	GET={operation=search; username=cuigege; }; POST={username=cuigege; };
+<?PHP exit;?>	1419321669	admin	1	127.0.0.1	members	GET={operation=access; uid=2; }; POST={};
+<?PHP exit;?>	1419321697	admin	1	127.0.0.1	members	GET={operation=access; uid=2; addfid=2; allowviewnew=1; allowpostnew=1; allowreplynew=1; allowgetattachnew=1; allowgetimagenew=1; allowpostattachnew=1; allowpostimagenew=1; accesssubmit=提交; }; POST={addfid=2; allowviewnew=1; allowpostnew=1; allowreplynew=1; allowgetattachnew=1; allowgetimagenew=1; allowpostattachnew=1; allowpostimagenew=1; accesssubmit=提交; };
+<?PHP exit;?>	1419321701	admin	1	127.0.0.1	members	GET={operation=access; uid=2; }; POST={};
+<?PHP exit;?>	1419321725	admin	1	127.0.0.1	nav	GET={}; POST={};
+<?PHP exit;?>	1419321736	admin	1	127.0.0.1	nav	GET={operation=headernav; displayordernew={2=2; 5=6; 6=9; 7=10; }; namenew={2=论坛; 5=游戏; 6=插件; 7=帮助; }; subtypenew={5=1; 7=1; }; defaultindex=forum.php; availablenew={2=1; 5=1; 6=1; }; }; POST={displayordernew={2=2; 5=6; 6=9; 7=10; }; namenew={2=论坛; 5=游戏; 6=插件; 7=帮助; }; subtypenew={5=1; 7=1; }; defaultindex=forum.php; availablenew={2=1; 5=1; 6=1; }; };
+<?PHP exit;?>	1419321739	admin	1	127.0.0.1	nav	GET={operation=headernav; }; POST={};
