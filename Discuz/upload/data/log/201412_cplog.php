@@ -385,3 +385,5 @@
 <?PHP exit;?>	1419404299	admin	1	127.0.0.1	portalcategory	GET={}; POST={};
 <?PHP exit;?>	1419404305	admin	1	127.0.0.1	plugins	GET={}; POST={};
 <?PHP exit;?>	1419404307	admin	1	127.0.0.1	plugins	GET={operation=config; do=12; }; POST={};
+<?PHP exit;?>	1419404829	admin	1	127.0.0.1	plugins	GET={operation=config; do=12; }; POST={};
+<?PHP exit;?>	1419405012	admin	1	127.0.0.1	plugins	GET={operation=config; do=12; }; POST={};
