@@ -289,3 +289,14 @@
 <?PHP exit;?>	1419389632	admin	1	127.0.0.1	plugins	GET={operation=config; do=12; }; POST={};
 <?PHP exit;?>	1419389640	admin	1	127.0.0.1	plugins	GET={operation=config; do=12; identifier=wechat; pmod=wsq_setting; setting={wsq_allow=1; wsq_sitename=Discuz! Board; wsq_siteurl=http://www.mybbs.com/discuz/upload/; wsq_fid=2; wechat_float_qrcode=1; wsq_wapdefault=1; }; settingsubmit=提交; }; POST={setting={wsq_allow=1; wsq_sitename=Discuz! Board; wsq_siteurl=http://www.mybbs.com/discuz/upload/; wsq_fid=2; wechat_float_qrcode=1; wsq_wapdefault=1; }; settingsubmit=提交; };
 <?PHP exit;?>	1419389644	admin	1	127.0.0.1	plugins	GET={operation=config; do=12; identifier=wechat; pmod=wsq_setting; }; POST={};
+<?PHP exit;?>	1419390143	admin	1	127.0.0.1	plugins	GET={operation=config; do=12; identifier=wechat; pmod=wsq_setting; }; POST={};
+<?PHP exit;?>	1419390150	admin	1	127.0.0.1	plugins	GET={}; POST={};
+<?PHP exit;?>	1419390150	admin	1	127.0.0.1	plugins	GET={frames=yes; }; POST={};
+<?PHP exit;?>	1419390150	admin	1	127.0.0.1	plugins	GET={}; POST={};
+<?PHP exit;?>	1419390177	admin	1	127.0.0.1	portalcategory	GET={}; POST={};
+<?PHP exit;?>	1419392340	admin	1	127.0.0.1	portalcategory	GET={}; POST={};
+<?PHP exit;?>	1419392340	admin	1	127.0.0.1	portalcategory	GET={frames=yes; }; POST={};
+<?PHP exit;?>	1419392341	admin	1	127.0.0.1	portalcategory	GET={}; POST={};
+<?PHP exit;?>	1419392345	admin	1	127.0.0.1	plugins	GET={operation=config; do=12; identifier=wechat; pmod=wsq_setting; }; POST={};
+<?PHP exit;?>	1419392346	admin	1	127.0.0.1	plugins	GET={operation=config; do=12; identifier=wechat; pmod=wsq_setting; }; POST={};
+<?PHP exit;?>	1419392347	admin	1	127.0.0.1	plugins	GET={operation=config; do=12; identifier=wechat; pmod=wsq_setting; }; POST={};
