@@ -1,5 +1,6 @@
 <<<<<<< HEAD
-<?php if(!defined('IN_DISCUZ')) exit('Access Denied'); hookscriptoutput('discuz');?><?php include template('common/header'); ?><meta name="keywords" content="IT学习社区" />
+<?php if(!defined('IN_DISCUZ')) exit('Access Denied'); hookscriptoutput('discuz');?>
+<<<<<<< HEAD<?php include template('common/header'); ?><meta name="keywords" content="IT学习社区" />
 <meta name="description" content="IT学习社区 " />
 <meta name="generator" content="Discuz! X3.2" />
 <meta name="author" content="Discuz! Team and Comsenz UI Team" />
@@ -880,8 +881,10 @@ btn[i].onmousedown = function() {toGetForbiddenFormulaFIds();};
 
 
 
+<?php if($_G['group']['radminid'] == 1) { helper_manyou::checkupdate();?><?php } if(empty($_G['setting']['disfixednv_forumindex']) ) { } include template('common/footer'); ?>=======<?php include template('common/header'); ?><meta name="keywords" content="IT学习社区" />
 =======
 <?php if(!defined('IN_DISCUZ')) exit('Access Denied'); hookscriptoutput('discuz');?><?php include template('common/header'); ?><meta name="keywords" content="IT学习社区" />
+>>>>>>> 6d65c36fed4280f3ff6511713edf759883b73442
 <meta name="description" content="IT学习社区 " />
 <meta name="generator" content="Discuz! X3.2" />
 <meta name="author" content="Discuz! Team and Comsenz UI Team" />
@@ -1756,5 +1759,8 @@ btn[i].onmousedown = function() {toGetForbiddenFormulaFIds();};
 
 
 
->>>>>>> aa42ee3c0bd90f952dd8b2f9bf0871a66aae9cbe
+<<<<<<< HEAD
+<?php if($_G['group']['radminid'] == 1) { helper_manyou::checkupdate();?><?php } if(empty($_G['setting']['disfixednv_forumindex']) ) { } include template('common/footer'); ?>>>>>>>> aa42ee3c0bd90f952dd8b2f9bf0871a66aae9cbe
+=======
 <?php if($_G['group']['radminid'] == 1) { helper_manyou::checkupdate();?><?php } if(empty($_G['setting']['disfixednv_forumindex']) ) { } include template('common/footer'); ?>
+>>>>>>> 6d65c36fed4280f3ff6511713edf759883b73442
