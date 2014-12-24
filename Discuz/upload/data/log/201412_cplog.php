@@ -379,3 +379,9 @@
 <?PHP exit;?>	1419395397	admin	1	192.168.1.7	setting	GET={edit=yes; operation=basic; settingnew={bbname=Discuz! Board; sitename=Comsenz Inc.; siteurl=http://www.comsenz.com/; adminemail=admin@admin.com; site_qq=2683234373; }; settingsubmit=提交; }; POST={operation=basic; settingnew={bbname=Discuz! Board; sitename=Comsenz Inc.; siteurl=http://www.comsenz.com/; adminemail=admin@admin.com; site_qq=2683234373; }; settingsubmit=提交; };
 <?PHP exit;?>	1419395400	admin	1	192.168.1.7	setting	GET={operation=basic; }; POST={};
 >>>>>>> aa42ee3c0bd90f952dd8b2f9bf0871a66aae9cbe
+<?PHP exit;?>	1419404255	admin	1	127.0.0.1	portalcategory	GET={}; POST={};
+<?PHP exit;?>	1419404256	admin	1	127.0.0.1	portalcategory	GET={frames=yes; }; POST={};
+<?PHP exit;?>	1419404257	admin	1	127.0.0.1	portalcategory	GET={}; POST={};
+<?PHP exit;?>	1419404299	admin	1	127.0.0.1	portalcategory	GET={}; POST={};
+<?PHP exit;?>	1419404305	admin	1	127.0.0.1	plugins	GET={}; POST={};
+<?PHP exit;?>	1419404307	admin	1	127.0.0.1	plugins	GET={operation=config; do=12; }; POST={};
