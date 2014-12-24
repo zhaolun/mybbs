@@ -47,11 +47,7 @@ echo 	"<?xml version=\"1.0\" encoding=\"".$charset."\"?>\n".
 	"    <copyright>Copyright(C) {$_G[setting][bbname]}</copyright>\n".
 	"    <generator>Discuz! Board by Comsenz Inc.</generator>\n".
 	"    <lastBuildDate>".gmdate('r', TIMESTAMP)."</lastBuildDate>\n".
-	"    <image>\n".
-	"      <url>{$_G[siteurl]}static/image/common/logo_88_31.gif</url>\n".
-	"      <title>{$_G[setting][bbname]}</title>\n".
-	"      <link>{$_G[siteurl]}</link>\n".
-	"    </image>\n";
+	"    
 
 foreach($data_blog as $curblogid => $value) {
 	$value = array_merge($value, (array)$data_blogfield[$curblogid]);
