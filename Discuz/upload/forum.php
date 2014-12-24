@@ -7,7 +7,6 @@
  *      $Id: forum.php 33828 2013-08-20 02:29:32Z nemohou $
  */
 
-
 define('APPTYPEID', 2);
 define('CURSCRIPT', 'forum');
 

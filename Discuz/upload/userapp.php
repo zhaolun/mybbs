@@ -13,7 +13,7 @@ require_once './source/class/class_core.php';
 require_once './source/function/function_home.php';
 
 $discuz = C::app();
-
+//var_dump($discuz);die;
 $modarray = array('app', 'manage');
 $cachelist = array('userapp','usergroups', 'myapp');
 

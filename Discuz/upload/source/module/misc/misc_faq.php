@@ -1,3 +1,4 @@
+<!--{template common/header}-->
 <meta name="keywords" content="IT学习社区" />
 <meta name="description" content="IT学习社区 " />
 <meta name="generator" content="Discuz! X3.2" />
@@ -864,3 +865,9 @@ btn[i].onmousedown = function() {toGetForbiddenFormulaFIds();};
 }
 }
 </script>
+
+<!--{if $_G['group']['radminid'] == 1}-->
+	<!--{eval helper_manyou::checkupdate();}-->
+<!--{/if}-->
+<!--{if empty($_G['setting']['disfixednv_forumindex']) }--><!--{/if}-->
+<!--{template common/footer}-->
