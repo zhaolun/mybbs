@@ -94,7 +94,7 @@ $discuz->init();
 
 define('CURMODULE', $mod);
 runhooks();
-
+//echo "./source/module/misc/misc_'.$mod.'.php";
 require DISCUZ_ROOT.'./source/module/misc/misc_'.$mod.'.php';
 
 ?>
