@@ -1,7 +1,12 @@
 <?php if(!defined('IN_DISCUZ')) exit('Access Denied'); 
 0
+<<<<<<< HEAD
 || checktplrefresh('./template/default/common/header.htm', './template/default/common/header_common.htm', 1419405001, '1', './data/template/1_1_common_header_forum_index.tpl.php', './template/default', 'common/header_forum_index')
 || checktplrefresh('./template/default/common/header.htm', './template/default/common/header_qmenu.htm', 1419405001, '1', './data/template/1_1_common_header_forum_index.tpl.php', './template/default', 'common/header_forum_index')
+=======
+|| checktplrefresh('./template/default/common/header.htm', './template/default/common/header_common.htm', 1419404821, '1', './data/template/1_1_common_header_forum_index.tpl.php', './template/default', 'common/header_forum_index')
+|| checktplrefresh('./template/default/common/header.htm', './template/default/common/header_qmenu.htm', 1419404821, '1', './data/template/1_1_common_header_forum_index.tpl.php', './template/default', 'common/header_forum_index')
+>>>>>>> 6d65c36fed4280f3ff6511713edf759883b73442
 ;?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
