@@ -13,7 +13,6 @@ define('CURSCRIPT', 'group');
 require './source/class/class_core.php';
 
 $discuz = C::app();
-
 $cachelist = array('grouptype', 'groupindex', 'diytemplatenamegroup');
 $discuz->cachelist = $cachelist;
 $discuz->init();
