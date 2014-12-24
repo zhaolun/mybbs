@@ -7,6 +7,7 @@
  *      $Id: forum.php 33828 2013-08-20 02:29:32Z nemohou $
  */
 
+
 define('APPTYPEID', 2);
 define('CURSCRIPT', 'forum');
 
@@ -68,5 +69,3 @@ runhooks();
 $navtitle = str_replace('{bbname}', $_G['setting']['bbname'], $_G['setting']['seotitle']['forum']);
 $_G['setting']['threadhidethreshold'] = 1;
 require DISCUZ_ROOT.'./source/module/forum/forum_'.$mod.'.php';
-
-?>
