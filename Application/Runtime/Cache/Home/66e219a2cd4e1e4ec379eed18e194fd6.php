@@ -94,13 +94,11 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 <a class="jiathis_button_qzone">QQ空间</a>
 </div>
 <script type="text/javascript" src="http://v2.jiathis.com/code/jia.js" charset="utf-8"></script>
-<div id="qqwb_share__" data-appkey="801554695" data-counter_pos="top" data-content="BBS yi利一组项目" data-pic=""></div>
+<div id="qqwb_share__" data-appkey="801554695" data-counter_pos="top" data-content="BBS yi利一组项目" data-pic="<?php echo ($pic); ?>"></div>
 
 <script src="http://mat1.gtimg.com/app/openjs/openjs.js#autoboot=no&debug=no"></script>
 <!-- Baidu share END 需在页面底部添加baidushare.js -->
-		   <div style="padding-left:60px;float:left; _padding-top:8px;">
-				<b>其它学院入口：</b><img src="/Public/images/sanjiao.jpg" /> <a href="http://java.itcast.cn" target="_blank">java学院</a> <img src="/Public/images/sanjiao.jpg" /> <a href="http://net.itcast.cn" target="_blank">.net学院</a><img src="/Public/images/sanjiao.jpg" /> <a href="http://ios.itcast.cn">ios学院</a> <img src="/Public/images/sanjiao.jpg" /> <a href="http://c.itcast.cn">c/c++学院</a><img src="/Public/images/sanjiao.jpg" /> <a href="http://icd.itcast.cn" target="_blank">网页平面设计学院</a>
-			</div>
+		  
 		</div>
 
 <div id="box">
@@ -176,13 +174,13 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 				</li>
 				<li class="fr_c2_li3" style="padding:6px 0 0 12px; height:30px; width:90px; border-bottom:none;">
 					<!-- WPA Button Begin -->
-					<a href="tencent://message/? uin=1005975005&amp;Site=service1&amp;Menu=yes"  target="_self"><img src="/Public/images/wpa_preview_a02.png"/></a>
+					<a href="tencent://message/? uin=790330816&amp;Site=service1&amp;Menu=yes"  target="_self"><img src="/Public/images/wpa_preview_a02.png"/></a>
 					<!-- WPA Button End -->
 				</li>
 			</ul>
 		</div>
 		<div class="fr_c3">
-			<a href="tencent://message/? uin=1005975005&amp;Site=service1&amp;Menu=yes"  target="_self"><img src="/Public/images/right_float_web.png" width="122" height="50" /></a>
+			<a href="tencent://message/? uin=908777566&amp;Site=service1&amp;Menu=yes"  target="_self"><img src="/Public/images/right_float_web.png" width="122" height="50" /></a>
 		</div>
 		<div class="fr_c4">
 			<ul>
