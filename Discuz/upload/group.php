@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <?php
 /**
  *      [Discuz!] (C)2001-2099 Comsenz Inc.
@@ -31,7 +31,6 @@ runhooks();
 $navtitle = str_replace('{bbname}', $_G['setting']['bbname'], $_G['setting']['seotitle']['group']);
 
 require DISCUZ_ROOT.'./source/module/group/group_'.$mod.'.php';
-=======
 <?php
 /**
  *      [Discuz!] (C)2001-2099 Comsenz Inc.
@@ -63,5 +62,5 @@ runhooks();
 $navtitle = str_replace('{bbname}', $_G['setting']['bbname'], $_G['setting']['seotitle']['group']);
 
 require DISCUZ_ROOT.'./source/module/group/group_'.$mod.'.php';
->>>>>>> 6f03b1948729912f2d3f728fd18b1ec0bb561001
+
 ?>

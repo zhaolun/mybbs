@@ -3,7 +3,7 @@
 /**
  *      [Discuz!] (C)2001-2099 Comsenz Inc.
  *      This is NOT a freeware, use is subject to license terms
- *      Yi利一组完成于2014圣诞节！
+ *
  *      $Id: forum.php 33828 2013-08-20 02:29:32Z nemohou $
  */
 
