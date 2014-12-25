@@ -3,8 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="keywords" content="php培训,php教程,php视频,php下载,php视频教程" />
-<meta name="description" content="php培训的龙头老大,口碑最好的php培训机构,进来看看同学们的呐喊，就会知道我们是个怎么样的学校,问天下php培训机构谁与争锋?php培训课程内容包含目前最流行的zendframework、thinkphp框架、ECShop、dedecms等产品的二次开发" />
-<title>传智播客PHP学院官网-北京PHP培训_PHP网站开发培训_PHP程序员培训学校</title>
+<meta name="description" content="计算机技术哪家牛？？中国北京八维来瞅瞅" />
+<title>北京八维研修学院yi利一组！</title>
 <link href="/Public/css/css.css" type="text/css" rel="stylesheet" />
 <link href="/Public/css/news.css" type="text/css" rel="stylesheet" />
 <link href="/Public/css/query.css" type="text/css" rel="stylesheet" />
@@ -82,13 +82,21 @@ s.push(i + '=' + encodeURIComponent(p[i]||''));
 document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shareqq/index.html?',s.join('&'),'" target="_blank">分享到QQ</a>'].join(''));
 })();
 </script>
-<script src="http://connect.qq.com/widget/loader/loader.js" widget="shareqq" charset="utf-8"></script>
-	<a class="bds_qzone">QQ空间</a>
-	<a class="bds_tqq">腾讯微博</a>
+<script src="http://connect.qq.com/widget/loader/loader.js" widget="shareqq" charset="utf-8"></script></div>
+	<!--<a class="bds_qzone">QQ空间</a>
 	<a class="bds_tsina">新浪微博</a>
 	<a class="bds_tieba">百度贴吧</a>
 	<a class="shareCount"></a>
+-->
+<div id="ckepop">
+<span class="jiathis_txt"></span>
+<a class="jiathis_button_tsina">新浪微博</a>
+<a class="jiathis_button_qzone">QQ空间</a>
 </div>
+<script type="text/javascript" src="http://v2.jiathis.com/code/jia.js" charset="utf-8"></script>
+<div id="qqwb_share__" data-appkey="801554695" data-counter_pos="top" data-content="BBS yi利一组项目" data-pic=""></div>
+
+<script src="http://mat1.gtimg.com/app/openjs/openjs.js#autoboot=no&debug=no"></script>
 <!-- Baidu share END 需在页面底部添加baidushare.js -->
 		   <div style="padding-left:60px;float:left; _padding-top:8px;">
 				<b>其它学院入口：</b><img src="/Public/images/sanjiao.jpg" /> <a href="http://java.itcast.cn" target="_blank">java学院</a> <img src="/Public/images/sanjiao.jpg" /> <a href="http://net.itcast.cn" target="_blank">.net学院</a><img src="/Public/images/sanjiao.jpg" /> <a href="http://ios.itcast.cn">ios学院</a> <img src="/Public/images/sanjiao.jpg" /> <a href="http://c.itcast.cn">c/c++学院</a><img src="/Public/images/sanjiao.jpg" /> <a href="http://icd.itcast.cn" target="_blank">网页平面设计学院</a>
