@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "/www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "/www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="/www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -95,7 +95,30 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 			</div>
 		</div>
 
-{__CONTENT__}
+<div id="box">
+		<div id="left" class="fl">
+			<div><img src="/Public/images/lefttop.gif"/></div>
+			<div class="left_content">
+				<h2 class="title1"><span class="STYLE3">常见</span><span class="STYLE2">问题</span></h2>
+				<h3 class="title2">热点问题</h3>
+				<ul class="links">
+﻿<ul>
+<?php if(is_array($info)): foreach($info as $key=>$it): ?><li><a href="/index.php/Home/problem/xq?id=<?php echo ($it["id"]); ?>" target="_blank"><?php echo ($it["title"]); ?></a><?php echo ($it["time"]); ?></li><?php endforeach; endif; ?>
+</ul>
+ 
+				</ul>
+				<h3 class="title2">PHP相关问题</h3>
+				<ul class="links">
+<ul>
+<?php if(is_array($list)): foreach($list as $key=>$it): ?><li><a href="/index.php/Home/problem/xq?id=<?php echo ($it["id"]); ?>"><?php echo ($it["title"]); ?></a><img height="15" src="/Public/images/new.gif" width="29" /></li><?php endforeach; endif; ?>
+</ul>
+
+			</ul>
+			<div class="rightbottom"><img src="/Public/images/rightbottom.jpg"/></div>
+	  </div>
+	</div>
+	<div class="clear"></div>
+ <!-- 页面底部 -->
 
 <div id="footer">
   <div class="footer_info">
