@@ -387,3 +387,10 @@
 <?PHP exit;?>	1419404307	admin	1	127.0.0.1	plugins	GET={operation=config; do=12; }; POST={};
 <?PHP exit;?>	1419404829	admin	1	127.0.0.1	plugins	GET={operation=config; do=12; }; POST={};
 <?PHP exit;?>	1419405012	admin	1	127.0.0.1	plugins	GET={operation=config; do=12; }; POST={};
+<?PHP exit;?>	1419466896	admin	1	192.168.1.7		GET={}; POST={};
+<?PHP exit;?>	1419466897	admin	1	192.168.1.7	index	GET={}; POST={};
+<?PHP exit;?>	1419466949	admin	1	192.168.1.7	setting	GET={operation=basic; }; POST={};
+<?PHP exit;?>	1419466993	admin	1	192.168.1.7	setting	GET={edit=yes; operation=basic; settingnew={bbname=Discuz! Board; sitename=Comsenz Inc.; siteurl=http://www.comsenz.com/; adminemail=admin@admin.com; site_qq=790330816; }; settingsubmit=提交; }; POST={operation=basic; settingnew={bbname=Discuz! Board; sitename=Comsenz Inc.; siteurl=http://www.comsenz.com/; adminemail=admin@admin.com; site_qq=790330816; }; settingsubmit=提交; };
+<?PHP exit;?>	1419466996	admin	1	192.168.1.7	setting	GET={operation=basic; }; POST={};
+<?PHP exit;?>	1419467032	admin	1	192.168.1.7	setting	GET={edit=yes; operation=basic; settingnew={bbname=Discuz! Board; sitename=Comsenz Inc.; siteurl=http://www.comsenz.com/; adminemail=admin@admin.com; site_qq=790330816; }; settingsubmit=提交; }; POST={operation=basic; settingnew={bbname=Discuz! Board; sitename=Comsenz Inc.; siteurl=http://www.comsenz.com/; adminemail=admin@admin.com; site_qq=790330816; }; settingsubmit=提交; };
+<?PHP exit;?>	1419467035	admin	1	192.168.1.7	setting	GET={operation=basic; }; POST={};
