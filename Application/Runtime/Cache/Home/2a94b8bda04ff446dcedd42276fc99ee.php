@@ -497,17 +497,9 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 				</li>
 			</ul>
 		</div>
-<<<<<<< HEAD
 		<div class="fr_c3">
 			<a href="tencent://message/? uin=1005975005&amp;Site=service1&amp;Menu=yes"  target="_self"><img src="/Public/images/right_float_web.png" width="122" height="50" /></a>
-=======
-		<div class="fr_c3" align="center">
-			<!--
-			<a href="http://cnrdn.com/iP66" target="_blank"><img src="/Public/images/right_float_web.png" width="122" height="50" /></a>
-			--><a href="tencent://message/? uin=1005975005&amp;Site=service1&amp;Menu=yes"  target="_self"><img src="/Public/images/qq.gif"/>&nbsp;<font color="black">在线客服</font></a>
->>>>>>> 5ed6ad4bf52831391a978eeb4da1d2ba9e308956
 		</div>
-		
 		<div class="fr_c4">
 			<ul>
 				<li class="fr_c4_li1">电话咨询</li>
@@ -517,7 +509,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 		<div class="fr_c6">
 			<ul>
 				<li><a style="display: block; text-indent: 22px; margin: 0px auto; width: 84px; background: url(&quot;http://www.itcast.cn/images/navicon.gif&quot;) no-repeat scroll 0px -20px transparent;" href="http://www.itcast.cn/forms/index.shtml" target="_blank">预约报名<div></div></a></li>
-				<li style="border-bottom:none;"><a style="display: block; text-indent: 22px; margin: 0px auto; width: 84px; background: url(&quot;http://www.itcast.cn/images/navicon.gif&quot;) no-repeat scroll 0px -78px transparent;" href="http://bbs.itcast.cn/" target="_blank">技术交流<div></div></a></li>
+				<li style="border-bottom:none;"><a style="display: block; text-indent: 22px; margin: 0px auto; width: 84px; background: url(&quot;http://www.itcast.cn/images/navicon.gif&quot;) no-repeat scroll 0px -78px transparent;" href="http://www.mybbs.com/discuz/upload/forum.php" target="_blank">技术交流<div></div></a></li>
 			</ul>
 		</div>
 		<div class="fr_c7"></div>

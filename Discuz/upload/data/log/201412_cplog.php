@@ -394,3 +394,12 @@
 <?PHP exit;?>	1419466996	admin	1	192.168.1.7	setting	GET={operation=basic; }; POST={};
 <?PHP exit;?>	1419467032	admin	1	192.168.1.7	setting	GET={edit=yes; operation=basic; settingnew={bbname=Discuz! Board; sitename=Comsenz Inc.; siteurl=http://www.comsenz.com/; adminemail=admin@admin.com; site_qq=790330816; }; settingsubmit=提交; }; POST={operation=basic; settingnew={bbname=Discuz! Board; sitename=Comsenz Inc.; siteurl=http://www.comsenz.com/; adminemail=admin@admin.com; site_qq=790330816; }; settingsubmit=提交; };
 <?PHP exit;?>	1419467035	admin	1	192.168.1.7	setting	GET={operation=basic; }; POST={};
+<?PHP exit;?>	1419470970	admin	1	192.168.1.7		GET={}; POST={};
+<?PHP exit;?>	1419470970	admin	1	192.168.1.7	index	GET={}; POST={};
+<?PHP exit;?>	1419470972	admin	1	192.168.1.7	nav	GET={}; POST={};
+<?PHP exit;?>	1419470981	admin	1	192.168.1.7	nav	GET={operation=headernav; do=edit; id=53; }; POST={};
+<?PHP exit;?>	1419471079	admin	1	192.168.1.7	nav	GET={operation=headernav; do=edit; id=53; namenew=积分商城; urlnew=www.mybbs.com/Bbs/Home/Controller/PluginController.class.php; editsubmit=提交; }; POST={namenew=积分商城; urlnew=www.mybbs.com/Bbs/Home/Controller/PluginController.class.php; editsubmit=提交; };
+<?PHP exit;?>	1419471083	admin	1	192.168.1.7	nav	GET={operation=headernav; }; POST={};
+<?PHP exit;?>	1419471117	admin	1	192.168.1.7	nav	GET={operation=headernav; do=edit; id=53; }; POST={};
+<?PHP exit;?>	1419471153	admin	1	192.168.1.7	nav	GET={operation=headernav; do=edit; id=53; namenew=积分商城; urlnew=www.mybbs.com/Bbs/Home/View/Plugin/plugin.html; editsubmit=提交; }; POST={namenew=积分商城; urlnew=www.mybbs.com/Bbs/Home/View/Plugin/plugin.html; editsubmit=提交; };
+<?PHP exit;?>	1419471157	admin	1	192.168.1.7	nav	GET={operation=headernav; }; POST={};
