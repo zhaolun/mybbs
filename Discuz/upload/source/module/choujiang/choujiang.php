@@ -170,45 +170,9 @@ initSearchmenu('scbar', 'http://search.itcast.cn/f/discuz');
     </div>
 
   <div id="nv">
-    <ul>
-       
-       
-       
-       
-       
-            <li id="mn_portal" ><a href="portal.php" hidefocus="true" title="门户首页"  >IT学习社区<span>门户首页</span></a></li>
-       
-       
-            <li id="mn_forum" ><a href="forum.php" hidefocus="true" title="技术论坛"  >技术论坛<span>技术论坛</span></a></li>
-       
-       
-            <li id="mn_Nba1e" ><a href="ask.php" hidefocus="true" title="技术问题在线求助"  >IT问答精灵<span>技术问题在线求助</span></a></li>
-       
-       
-            <li id="mn_N18f5" ><a href="zine.php" hidefocus="true"  >传智特刊</a></li>
-       
-       
-            <li id="mn_Ne30e" ><a href="plugin.php?id=auction" hidefocus="true" title="金币积分兑换礼品" target="_blank"  >积分商城<span>金币积分兑换礼品</span></a></li>
-       
-       
-       
-       
-       
-       
-            <li id="mn_N9091" ><a href="http://open.itcast.cn" hidefocus="true" title="传智播客免费公开课（实时更新）" target="_blank"  >免费公开课<span>传智播客免费公开课（实时更新）</span></a></li>
-       
-       
-       
-       
-            <li id="mn_Nde4a" ><a href="http://dvd.itcast.cn/" hidefocus="true" title="IT学习光盘免费申领" target="_blank"  >免费学习光盘<span>IT学习光盘免费申领</span></a></li>
-       
-       
-       
-       
-            <li class="a" id="mn_N23a1" ><a href="plugin.php?id=itcast_lottery_draw:itcast_lottery_draw" hidefocus="true" title="金币积分抽奖"  >积分抽奖<span>金币积分抽奖</span></a></li>
-       
-       
-    </ul>
+   <?php
+      include "./nav.php";
+   ?>
     
   </div>
   <script src="template/veikei_dz_portal_20131130_texture/images/nv.js" type="text/javascript"></script> 
