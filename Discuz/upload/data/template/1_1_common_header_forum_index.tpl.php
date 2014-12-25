@@ -1,7 +1,18 @@
 <?php if(!defined('IN_DISCUZ')) exit('Access Denied'); 
 0
+<<<<<<< HEAD
 || checktplrefresh('./template/default/common/header.htm', './template/default/common/header_common.htm', 1419410210, '1', './data/template/1_1_common_header_forum_index.tpl.php', './template/default', 'common/header_forum_index')
 || checktplrefresh('./template/default/common/header.htm', './template/default/common/header_qmenu.htm', 1419410210, '1', './data/template/1_1_common_header_forum_index.tpl.php', './template/default', 'common/header_forum_index')
+=======
+<<<<<<< HEAD
+|| checktplrefresh('./template/default/common/header.htm', './template/default/common/header_common.htm', 1419408177, '1', './data/template/1_1_common_header_forum_index.tpl.php', './template/default', 'common/header_forum_index')
+|| checktplrefresh('./template/default/common/header.htm', './template/default/common/header_qmenu.htm', 1419408177, '1', './data/template/1_1_common_header_forum_index.tpl.php', './template/default', 'common/header_forum_index')
+|| checktplrefresh('./template/default/common/header.htm', './template/default/common/pubsearchform.htm', 1419408177, '1', './data/template/1_1_common_header_forum_index.tpl.php', './template/default', 'common/header_forum_index')
+=======
+|| checktplrefresh('./template/default/common/header.htm', './template/default/common/header_common.htm', 1419407561, '1', './data/template/1_1_common_header_forum_index.tpl.php', './template/default', 'common/header_forum_index')
+|| checktplrefresh('./template/default/common/header.htm', './template/default/common/header_qmenu.htm', 1419407561, '1', './data/template/1_1_common_header_forum_index.tpl.php', './template/default', 'common/header_forum_index')
+>>>>>>> 74c5ab9b3d4721bb5d09dba8ea137f1e315e36a7
+>>>>>>> a0859eb11dbd27bf02dfbdac288263c55aca470b
 ;?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
