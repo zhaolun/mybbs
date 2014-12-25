@@ -2,10 +2,10 @@
 global $_G;?><?php
 $__IMGDIR = IMGDIR;$return = <<<EOF
 
-<div class="fastlg_fm y" style="margin-right: 10px; padding-right: 10px">
+<!--<div class="fastlg_fm y" style="margin-right: 10px; padding-right: 10px">
 <p><a href="{$_G['connect']['login_url']}&statfrom=login_simple"><img src="{$__IMGDIR}/qq_login.gif" class="vm" alt="QQ登录" /></a></p>
 <p class="hm xg1" style="padding-top: 2px;">只需一步，快速开始</p>
-</div>
+</div>-->
 
 EOF;
 ?><?php return $return;?><?php }
