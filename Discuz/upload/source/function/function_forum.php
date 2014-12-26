@@ -536,7 +536,6 @@ function loadforum($fid = null, $tid = null) {
 						}
 					}
 				}
-
 				$group_postpolicy = $grouplevel['postpolicy'];
 				if(is_array($group_postpolicy)) {
 					$forum = array_merge($forum, $group_postpolicy);

@@ -150,9 +150,21 @@ www.veikei.com
 </style>
 
 <div class="vk_slide_285 slidebox">
-<ul class="slideshow"><li class="vk_slide_item" style="width: 285px; height: 309px;"><a href="http://bbs.itcast.cn/thread-46811-1-1.html?jd1" target="_blank" title="2014年度优秀教师提名活动开始啦！"><img src="data/attachment/block/b6/b6fdaea364ac4f259fefb1981b36b7b3.jpg" width="285" height="309" /><span>2014年度优秀教师提名活动开始啦！</span></a></li><li class="vk_slide_item" style="width: 285px; height: 309px;"><a href="http://open.itcast.cn/home/open/look/mark/14/id/111.html?jd2" target="_blank" title="大数据及hadooop是什么？"><img src="data/attachment/block/91/9168520f3b793227e5051c2b8ae2fdd7.jpg" width="285" height="309" /><span>大数据及hadooop是什么？</span></a></li><li class="vk_slide_item" style="width: 285px; height: 309px;"><a href="http://open.itcast.cn/home/open/look/mark/3/id/106.html" target="_blank" title="C#游戏开发"><img src="data/attachment/block/b6/b66959c69490f7fcaaa4ba461200a6c5.jpg" width="285" height="309" /><span>C#游戏开发</span></a></li><li class="vk_slide_item" style="width: 285px; height: 309px;"><a href="http://open.itcast.cn/?jd4" target="_blank" title="公开课新平台上线啦！"><img src="data/attachment/block/cd/cd472c154bb77ac8e73c9f6e9c8ab98e.jpg" width="285" height="309" /><span>公开课新平台上线啦！</span></a></li></ul>
+<ul class="slideshow">
+<li class="vk_slide_item" style="width: 285px; height: 309px;"><a href="http://bbs.itcast.cn/thread-46811-1-1.html?jd1" target="_blank" title="2014年度优秀教师提名活动开始啦！"><img src="data/attachment/block/b6/b6fdaea364ac4f259fefb1981b36b7b3.jpg" width="285" height="309" /></a></li>
+<li class="vk_slide_item" style="width: 285px; height: 309px;"><a href="http://open.itcast.cn/home/open/look/mark/14/id/111.html?jd2" target="_blank" title="大数据及hadooop是什么？"><img src="data/attachment/block/91/9168520f3b793227e5051c2b8ae2fdd7.jpg" width="285" height="309" /></a></li>
+<li class="vk_slide_item" style="width: 285px; height: 309px;"><a href="http://open.itcast.cn/home/open/look/mark/3/id/106.html" target="_blank" title="C#游戏开发"><img src="data/attachment/block/b6/b66959c69490f7fcaaa4ba461200a6c5.jpg" width="285" height="309" /><span>C#游戏开发</span></a></li>
+<li class="vk_slide_item" style="width: 285px; height: 309px;"><a href="http://open.itcast.cn/?jd4" target="_blank" title="公开课新平台上线啦！"><img src="data/attachment/block/cd/cd472c154bb77ac8e73c9f6e9c8ab98e.jpg" width="285" height="309" /><span>公开课新平台上线啦！</span></a></li>
+<li class="vk_slide_item" style="width: 285px; height: 309px;"><a href="http://open.itcast.cn/?jd4" target="_blank" title="公开课新平台上线啦！"><img src="data/attachment/block/cd/cd472c154bb77ac8e73c9f6e9c8ab98e.jpg" width="285" height="309" /><span>公开课新平台上线啦！</span></a></li>
+</ul>
 
-<div class="vk_slide_page_circle slidebar"><a href="javascript:;">1</a><a href="javascript:;">2</a><a href="javascript:;">3</a><a href="javascript:;">4</a></div>
+<div class="vk_slide_page_circle slidebar">
+<a href="javascript:;">1</a>
+<a href="javascript:;">2</a>
+<a href="javascript:;">3</a>
+<a href="javascript:;">4</a>
+<a href="javascript:;">5</a>
+</div>
 </div>
 <script type="text/javascript">
 runslideshow();
