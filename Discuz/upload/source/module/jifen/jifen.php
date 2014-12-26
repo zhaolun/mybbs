@@ -348,52 +348,23 @@ $('scbar').style.display = 'none';
 <div style="padding-bottom:10px;"><img src="./source/plugin/auction/images/nav.png"></div>
 <div class="mod_wrap aucd cl">
 <h2><span class="y"><a href="plugin.php?id=auction&amp;action=search&amp;sctime=1">更多</a></span>最近热卖</h2>
-<div class="aucdd">
-<p class="a_n"><a href="thread-35590-1-1.html" target="_blank">传智礼品：川宇蝴蝶  读卡器（颜色随机） . ... ...</a></p>
-<input type="hidden" id="35590" value="1418089140"/><div class="pic" style="height:146px;"><div class="number" title="先到先得">先到先得</div><a href="thread-35590-1-1.html" title="传智礼品：川宇蝴蝶  读卡器（颜色随机） . ... ..."><img src="forum.php?mod=image&aid=54483&size=140x140&key=c95b1808929c9c99"></a></div>
-<div class="pic">
-<p id="time_35590" class="timeline a_ct">--:--:--</p>
-<p class="a_lt"><span>市场价：</span><del>80</del></p>
-<p class="a_lt"><span>兑&nbsp;&nbsp;&nbsp;换：</span><em>30</em> 金币</p>
-<p class="a_ct" id="vd_35590"><a href="thread-35590-1-1.html" target="_blank" style="background-image:url(source/plugin/auction/images/auction1.png);">查看详情&rsaquo;&rsaquo;</a></p>
-</div>
-</div>
 
+<?php foreach ($arr as $key => $val) { ?>
 <div class="aucdd">
-<p class="a_n"><a href="thread-28363-1-1.html" target="_blank">传智播客2014版ios入门视频学习光盘 ...</a></p>
-<input type="hidden" id="28363" value="1415584560"/><div class="pic" style="height:146px;"><div class="number" title="先到先得">先到先得</div><a href="thread-28363-1-1.html" title="传智播客2014版ios入门视频学习光盘 ..."><img src="forum.php?mod=image&aid=51167&size=140x140&key=174af558002e3670"></a></div>
+<p class="a_n"><a href="http://www.mybbs.com/discuz/upload/jinfen_xq.php?id=<?php echo $val["id"];?>"><?php echo $val["s_name"]; ?></a></p>
+<input type="hidden" id="35590" value="1418089140"/><div class="pic" style="height:146px;"><div class="number" title="先到先得">先到先得</div><a href="http://www.mybbs.com/discuz/upload/jinfen_xq.php?id=<?php echo $val["id"];?>" title="<?php echo $val["s_name"]; ?>"><img src="forum.php?mod=image&aid=54483&size=140x140&key=c95b1808929c9c99"></a></div>
 <div class="pic">
-<p id="time_28363" class="timeline a_ct">--:--:--</p>
-<p class="a_lt"><span>市场价：</span><del>2500</del></p>
-<p class="a_lt"><span>兑&nbsp;&nbsp;&nbsp;换：</span><em>50</em> 金币</p>
-<p class="a_ct" id="vd_28363"><a href="thread-28363-1-1.html" target="_blank" style="background-image:url(source/plugin/auction/images/auction1.png);">查看详情&rsaquo;&rsaquo;</a></p>
+<p class="a_lt"><span>市场价：</span><del><?php echo $val["s_price"]; ?></del></p>
+<p class="a_lt"><span>兑&nbsp;&nbsp;&nbsp;换：</span><em><?php echo $val["price"]; ?></em> 金币</p>
+<p class="a_ct" id="vd_35590"><a href="http://www.mybbs.com/discuz/upload/jinfen_xq.php?id=<?php echo $val["id"];?>" target="_blank" style="background-image:url(source/plugin/auction/images/auction1.png);">查看详情&rsaquo;&rsaquo;</a></p>
 </div>
 </div>
+<?php } ?>
 
-<div class="aucdd">
-<p class="a_n"><a href="thread-28362-1-1.html" target="_blank">传智播客2014版网页平面UI设计入门光盘 ... ...</a></p>
-<input type="hidden" id="28362" value="1414720320"/><div class="pic" style="height:146px;"><div class="number" title="先到先得">先到先得</div><a href="thread-28362-1-1.html" title="传智播客2014版网页平面UI设计入门光盘 ... ..."><img src="forum.php?mod=image&aid=51165&size=140x140&key=602e40311f9b3d04"></a></div>
-<div class="pic">
-<p id="time_28362" class="timeline a_ct">--:--:--</p>
-<p class="a_lt"><span>市场价：</span><del>1800</del></p>
-<p class="a_lt"><span>兑&nbsp;&nbsp;&nbsp;换：</span><em>50</em> 金币</p>
-<p class="a_ct" id="vd_28362"><a href="thread-28362-1-1.html" target="_blank" style="background-image:url(source/plugin/auction/images/auction1.png);">查看详情&rsaquo;&rsaquo;</a></p>
-</div>
-</div>
 
-<div class="aucdd">
-<p class="a_n"><a href="thread-28361-1-1.html" target="_blank">传智播客2014版php入门视频学习光盘 ...</a></p>
-<input type="hidden" id="28361" value="1414719780"/><div class="pic" style="height:146px;"><div class="number" title="先到先得">先到先得</div><a href="thread-28361-1-1.html" title="传智播客2014版php入门视频学习光盘 ..."><img src="forum.php?mod=image&aid=51161&size=140x140&key=e0da1b1bd73565b6"></a></div>
-<div class="pic">
-<p id="time_28361" class="timeline a_ct">--:--:--</p>
-<p class="a_lt"><span>市场价：</span><del>1200</del></p>
-<p class="a_lt"><span>兑&nbsp;&nbsp;&nbsp;换：</span><em>50</em> 金币</p>
-<p class="a_ct" id="vd_28361"><a href="thread-28361-1-1.html" target="_blank" style="background-image:url(source/plugin/auction/images/auction1.png);">查看详情&rsaquo;&rsaquo;</a></p>
-</div>
-</div>
+
 
 </div>
-<!--2014-05-08 Add-->
 <div class="mod_wrap aucd cl">
 <h2><span class="y"><a href="plugin.php?id=auction&amp;action=search&amp;sctime=2">更多</a></span>即将开始</h2>
 </div>
