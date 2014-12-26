@@ -28,3 +28,6 @@
 <?PHP exit;?>	1419488956	admin	1	192.168.1.7	nav	GET={operation=headernav; }; POST={};
 <?PHP exit;?>	1419489030	admin	1	192.168.1.7	nav	GET={operation=headernav; displayordernew={2=2; 5=6; 6=9; 7=10; 49=11; 50=12; 51=13; 52=14; 53=15; 54=16; }; namenew={2=IT学习社区; 5=游戏; 6=插件; 7=帮助; 49=IT学习社区; 50=技术论坛; 51=IT问答精灵; 52=传智特刊; 53=积分商城; 54=积分抽奖; }; subtypenew={}; availablenew={2=1; 5=1; 51=1; 52=1; 53=1; 54=1; }; urlnew={49=forum.php; 50=misc.php?mod=faq; 51=question.php; 52=chuanzhi.php; 53=jifen.php; 54=choujiang.php; }; defaultindex=forum.php; }; POST={displayordernew={2=2; 5=6; 6=9; 7=10; 49=11; 50=12; 51=13; 52=14; 53=15; 54=16; }; namenew={2=IT学习社区; 5=游戏; 6=插件; 7=帮助; 49=IT学习社区; 50=技术论坛; 51=IT问答精灵; 52=传智特刊; 53=积分商城; 54=积分抽奖; }; subtypenew={}; availablenew={2=1; 5=1; 51=1; 52=1; 53=1; 54=1; }; urlnew={49=forum.php; 50=misc.php?mod=faq; 51=question.php; 52=chuanzhi.php; 53=jifen.php; 54=choujiang.php; }; defaultindex=forum.php; };
 <?PHP exit;?>	1419489033	admin	1	192.168.1.7	nav	GET={operation=headernav; }; POST={};
+<?PHP exit;?>	1419552779	admin	1	192.168.1.7		GET={}; POST={};
+<?PHP exit;?>	1419552780	admin	1	192.168.1.7	index	GET={}; POST={};
+<?PHP exit;?>	1419552794	admin	1	192.168.1.7	nav	GET={}; POST={};
