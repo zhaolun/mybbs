@@ -1,4 +1,4 @@
-<html>
+<?php if (!defined('THINK_PATH')) exit();?><html>
 <head>
 <title>MyBBS后台管理</title>
 </head>
@@ -146,7 +146,7 @@ H1 a {
 		<td width="39%" valign="top">
 			<table width="100%" border="0" cellspacing="0" cellpadding="0">
 				<tr>
-					<td width="74%" height="38" class="admin_txt">管理员：<b>{$_SESSION.username}</b> 您好,感谢登陆使用！</td>
+					<td width="74%" height="38" class="admin_txt">管理员：<b><?php echo ($_SESSION["username"]); ?></b> 您好,感谢登陆使用！</td>
 					<td width="22%"><a href="#" target="_self" onClick="logout();"><img src="/Public/admin/images/out.gif" alt="安全退出" width="46" height="20" border="0"></a></td>
 					<script type="text/javascript">
 					<!--
@@ -265,6 +265,7 @@ H1 a {
 							</table>
 							<ul class="MM">
 							<li><a href="/admin.php/home/one/lists" >条形图</a></li>
+							<li><a href="/admin.php/home/one/bing" >饼状图</a></li>
 							</ul>
 							</div>
 						</div>
@@ -280,7 +281,30 @@ H1 a {
 		</script>
 		<td width="87%" valign="top">
 			<div style="margin:10px;padding:10px;">
-				{__CONTENT__}
+				<canvas id="chart-area" width="300" height="300"/></canvas>
+<script src="/Public/js/Chart.js"></script>
+<script src="/Public/js/jquery.js"></script>
+<script>
+		var pieData = [
+				{
+					value: 200,
+					color:"#F7464A",
+					highlight: "#FF5A5E",
+					label: "[<?php echo $json ?>]"
+				},
+
+			];
+			window.onload = function(){
+				var ctx = document.getElementById("chart-area").getContext("2d");
+				window.myPie = new Chart(ctx).Pie(pieData);
+			};
+	</script>
+<div id="footer">
+版权所有 &copy; 八维研修学院软件工程学院1308phpA班yi利小组，并保留所有权利。
+</div>
+</body>
+</html>
+
 			</div>
 		</td>
 	</tr>
