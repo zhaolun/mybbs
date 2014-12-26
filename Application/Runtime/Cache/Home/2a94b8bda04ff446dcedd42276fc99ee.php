@@ -25,10 +25,7 @@
 	<!-- 页面顶部 -->
 <div class="top1">
 	<p style="background:url(/Public/images/hot.png) 107px 10px no-repeat; padding-right:35px;" class="fl"><span class="blue">专业的IT培训机构！</span></p>
-	<p class="fr"><form method="post" action="">
-		用户名：<input type="text" name="">　密码：<input type="password" name="">　<input type="submit" value="登录">
-	</form>
-	
+	<p class="fr">
 	</p>
 </div>
 
@@ -143,7 +140,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 </ul>
 <ul>
 <li><a href=""><img src="/public/images/2.jpg" style="width: 142px; height: 87px;" /></a></li>
-<li><a class="style3" href="">刘俊-辣妈挑战PHP </a></li>
+<li><a class="style3" href="">刘俊-女生挑战PHP </a></li>
 </ul>
 <ul>
 <li><a href=""><img src="/public/images/5.jpg" style="width: 142px; height: 87px" /></a></li>
