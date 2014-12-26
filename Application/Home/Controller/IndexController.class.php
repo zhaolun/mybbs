@@ -22,6 +22,8 @@ class IndexController extends Controller {
 		$data6 = $userf->select();
 		$data7 = $useraa->select();
 		$data8 = $userbb->where('status=0')->select();
+		$db=M("slide_image");
+		$this->slide_image=$db->select();
 		//print_r($data);die;
 		$this->assign('info',$data);
 		$this->assign('infoa',$data1);

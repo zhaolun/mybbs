@@ -7,11 +7,9 @@
 <div class="fl">
 <div class="imagecontainer" id="idTransformView2">
 <ul class="slider slider2" id="idSlider2">
-<li><a href="" target="_blank"><img alt="帅气英俊的组长先森~" src="/Public/images/1.jpg" style="width: 297px; height: 216px;" /></a></li>
-<li><a href="" target="_blank"><img alt="组长夫人~" src="/Public/images/2.jpg" style="width: 297px; height: 216px;" /></a></li>
-<li><a href="" target="_blank"><img alt="萌萌哒~" src="/Public/images/3.jpg" style="width: 297px; height: 216px;" /></a></li>
-<li><a href="" target="_blank"><img alt="沉稳成熟范~" src="/Public/images/4.jpg" style="width: 297px; height: 216px;" /></a></li>
-<li><a href="" target="_blank"><img alt="屌丝" src="/Public/images/5.jpg" style="width: 297px; height: 216px;" /></a></li>
+<foreach name="slide_image" item="vo">
+<li><a href="{$vo.img_link}" target="_blank"><img title="{$vo.img_desc}" src="{$vo.img_path}" style="width: 297px; height: 216px;" /></a></li>
+</foreach>
 </ul>
 <ul class="num" id="idNum2">
 <li>1</li>

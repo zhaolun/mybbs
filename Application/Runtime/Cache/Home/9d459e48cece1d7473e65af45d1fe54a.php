@@ -25,10 +25,7 @@
 	<!-- 页面顶部 -->
 <div class="top1">
 	<p style="background:url(/Public/images/hot.png) 107px 10px no-repeat; padding-right:35px;" class="fl"><span class="blue">专业的IT培训机构！</span></p>
-	<p class="fr"><form method="post" action="">
-		用户名：<input type="text" name="">　密码：<input type="password" name="">　<input type="submit" value="登录">
-	</form>
-	
+	<p class="fr">
 	</p>
 </div>
 
@@ -51,13 +48,7 @@
 	</div>
 	<div class="clear"></div>
 		<ul id="nav">
-	<li><a id="nav_main" href="/index.php">首 页</a></li>
-	<li class="widt"><a id="nav_course" href="/index.php/Home/project/index">PHP培训课程</a> </li> 
-	<li class="widt"><a id="nav_videodl" href="/index.php/Home/video/index">PHP视频下载</a></li>
-    <li id="nav_teacher"><a href="/index.php/Home/teacher/index">师资力量</a> </li>
-    <li id="nav_job"><a href="/index.php/Home/message/index">就业信息</a> </li>
-	<li id="nav_question"><a href="/index.php/Home/problem/index">常见问题</a></li>
-	<li><a target="_blank" href="/discuz/upload/forum.php">技术论坛 </a></li>
+		<?php if(is_array($navinfo)): foreach($navinfo as $key=>$vo): ?><li><a id="nav_main" href="<?php echo ($vo["nav_link"]); ?>"><?php echo ($vo["nav_name"]); ?></a></li><?php endforeach; endif; ?>
 </ul>
 	</div>
 	<div id="box">
@@ -125,7 +116,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 <?php if(is_array($info)): foreach($info as $key=>$vo): ?><UL>
   <LI style="width: 141px;" class="fl"><IMG src="/Public/images/phpjc.jpg"></LI>
   <LI style="width: 470px;" class="fl jyjb-11-font1"><B class="jyjb-11-font2"><A 
-  href="http://www.bbs.com/index.php/Home/project/jichu" 
+  href="http://www.mybbs.com/index.php/Home/project/jichu" 
   target="_blank"><?php echo ($vo["pei_class"]); ?></A></B>
   <P><?php echo ($vo["pei_intro"]); ?></P>
   </LI></UL>

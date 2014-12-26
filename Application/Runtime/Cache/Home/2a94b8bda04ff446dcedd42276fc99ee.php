@@ -14,8 +14,14 @@
 <link href="/Public/css/nav/nav_main.css" type="text/css" rel="stylesheet" />
 <link href="/Public/css/imageswitch.css" type="text/css" rel="stylesheet" />
 <link href="/Public/css/webim.css" type="text/css" rel="stylesheet" />
-<link type="image/x-icon" rel="shortcut icon" href="favicon.ico" /> 
+<link type="image/x-icon" rel="shortcut icon" href="favicon.ico" />
 <script type="text/javascript" src="/Public/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+<!--
+	var logo2=$("#logo2").val();
+	alert(logo2);
+//-->
+</script>
 <script type="text/javascript" src="/Public/js/imageschange.js"></script>
 <script type="text/javascript" id="bdshare_js" data="type=tools" ></script>
 <script type="text/javascript" id="bdshell_js"></script>
@@ -31,7 +37,7 @@
 
 	<div class="clear"></div>
 	<div class="top2">
-		<h1 class="fl"><a href="/index.php"><img border="0" class="png" alt="传智播客php培训学院" src="/Public/images/logo.jpg"></a></h1>
+		<h1 class="fl"><a href="/index.php"><img border="0" class="png" alt="传智播客php培训学院" src="<?php echo ($logoinfo["0"]["logo_path"]); ?>"></a></h1>
 		<div class="fl toubu">
 		<div class="toubu-font1">PHP学院</div>
 			 <!-- 校区 -->
@@ -48,13 +54,7 @@
 	</div>
 	<div class="clear"></div>
 		<ul id="nav">
-	<li><a id="nav_main" href="/index.php">首 页</a></li>
-	<li class="widt"><a id="nav_course" href="/index.php/Home/project/index">PHP培训课程</a> </li> 
-	<li class="widt"><a id="nav_videodl" href="/index.php/Home/video/index">PHP视频下载</a></li>
-    <li id="nav_teacher"><a href="/index.php/Home/teacher/index">师资力量</a> </li>
-    <li id="nav_job"><a href="/index.php/Home/message/index">就业信息</a> </li>
-	<li id="nav_question"><a href="/index.php/Home/problem/index">常见问题</a></li>
-	<li><a target="_blank" href="/discuz/upload/forum.php">技术论坛 </a></li>
+		<?php if(is_array($navinfo)): foreach($navinfo as $key=>$vo): ?><li><a id="nav_main" href="<?php echo ($vo["nav_link"]); ?>"><?php echo ($vo["nav_name"]); ?></a></li><?php endforeach; endif; ?>
 </ul>
 	</div>
 	<div id="box">
@@ -118,11 +118,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 <div class="fl">
 <div class="imagecontainer" id="idTransformView2">
 <ul class="slider slider2" id="idSlider2">
-<li><a href="" target="_blank"><img alt="帅气英俊的组长先森~" src="/Public/images/1.jpg" style="width: 297px; height: 216px;" /></a></li>
-<li><a href="" target="_blank"><img alt="组长夫人~" src="/Public/images/2.jpg" style="width: 297px; height: 216px;" /></a></li>
-<li><a href="" target="_blank"><img alt="萌萌哒~" src="/Public/images/3.jpg" style="width: 297px; height: 216px;" /></a></li>
-<li><a href="" target="_blank"><img alt="沉稳成熟范~" src="/Public/images/4.jpg" style="width: 297px; height: 216px;" /></a></li>
-<li><a href="" target="_blank"><img alt="屌丝" src="/Public/images/5.jpg" style="width: 297px; height: 216px;" /></a></li>
+<?php if(is_array($slide_image)): foreach($slide_image as $key=>$vo): ?><li><a href="<?php echo ($vo["img_link"]); ?>" target="_blank"><img title="<?php echo ($vo["img_desc"]); ?>" src="<?php echo ($vo["img_path"]); ?>" style="width: 297px; height: 216px;" /></a></li><?php endforeach; endif; ?>
 </ul>
 <ul class="num" id="idNum2">
 <li>1</li>
@@ -558,6 +554,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 <link type="text/css" rel="stylesheet" href="/kefu2/ie.css" mce_href="/kefu2/ie.css" />
 <![endif]-->
 <div class="fixed">
+<input type="hidden" id="logo2" value="<?php echo ($logoinfo["1"]["logo_path"]); ?>">
 	<div class="f_left"></div>
 	<div class="f_right">
 		<div class="fr_c1"></div>
@@ -620,10 +617,11 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 		<a href="/Public/images/104914z8lary1qv9vvv8fz.jpg" id="webim_link" target="_blank"><img id="webim_img" src="" style="width: 280px; height: 188px" /></a></dd>
 </dl>
 </div>
+<input type="hidden" id="logo3" value="<?php echo ($logoinfo["2"]["logo_path"]); ?>">
 <script type="text/javascript">
   var arr = new Array(); 
-
-       arr[0] = {title:"yi利一组：有实力就是任性",link:"/index.php",img:"/Public/images/104914z8lary1qv9vvv8fz.jpg"};
+var logo3=$("#logo3").val();
+       arr[0] = {title:"yi利一组：有实力就是任性",link:"/index.php",img:logo3};
 
   var randIndex = Math.floor(Math.random()*arr.length);
   var obj = arr[randIndex];
