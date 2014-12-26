@@ -688,8 +688,6 @@ $("#tophtml").html("<script src=static/js/common.js?eIs><\/script>");
       <img src="http://www.mybbs.com/discuz/upload/source/module/choujiang/images/3.gif" />
      <span><font size="4px" color="red">三等奖</font></span>
       </li>
-       
-
       <li style="width:122px; height:150px; margin-right:19px; float:left;">
         <img src="http://www.mybbs.com/discuz/upload/source/module/choujiang/images/1.gif" />
       </li>
@@ -702,8 +700,6 @@ $("#tophtml").html("<script src=static/js/common.js?eIs><\/script>");
       <li style="width:122px; height:150px; margin-right:19px; float:left;">
         <img src="http://www.mybbs.com/discuz/upload/source/module/choujiang/images/5.gif" />
       </li>
-
-
        <li style="width:122px; height:150px; margin-right:19px; float:left;">
           <img src="./source/plugin/itcast_lottery_draw/template/red/trophy/9.jpg" />
         </li>
