@@ -58,31 +58,14 @@ window.onerror = killErrors;
       <a href="http://www.itcast.cn" >传智首页</a> 
        
       <a href="http://bbs.itcast.cn/"  onclick="addFavorite(this.href, '传智论坛-IT学习社区');return false;">收藏本站</a> 
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
+  
       <script type="text/javascript">var _speedMark = new Date();</script> 
     </div>
     <div class="y" style="float:left; margin-left:40px;"> 
       
       
       <a id="switchblind" href="javascript:;" onClick="toggleBlind(this)" title="开启辅助访问" class="switchblind">开启辅助访问</a> 
-      
-       
-       
-      
-       
-      
+     
 <div class="fastlg_fm y" style="margin-right: 10px; padding-right: 10px">
 <p><a href="http://bbs.itcast.cn/connect.php?mod=login&op=init&referer=plugin.php%3Fid%3Ditcast_lottery_draw%3Aitcast_lottery_draw&statfrom=login_simple"><img src="static/image/common/qq_login.gif" class="vm" alt="QQ登录" /></a></p>
 <p class="hm xg1" style="padding-top: 2px;">只需一步，快速开始</p>
@@ -91,27 +74,16 @@ window.onerror = killErrors;
 <div class="fastlg_fm y" style="margin-right: 10px; padding-right: 10px">
 <p><a href="plugin.php?id=wechat:login"><img src="source/plugin/wechat/image/wechat_login.png" class="vm" /></a></p>
 <p class="hm xg1" style="padding-top: 2px;">扫一扫，访问微社区</p>
-</div>
- 
-      
+</div>    
       <a class="top_login" href="member.php?mod=logging&amp;action=login&amp;referer=" onClick="showWindow('login', this.href);return false;"  title="登录" > 登录 </a> <a class="top_reg"  href="member.php?mod=register"  title="Register" > 注册会员 </a> <a class="top_find_psw" href="javascript:;" onClick="showWindow('login', 'member.php?mod=logging&action=login&viewlostpw=1')"> 找回密码 </a> 
-       
-      
-       
-       
-      
-       
+     
     </div>
   </div>
   </div>
 </div>
 
- 
 <!-- 2014-7-23 begin -->
  <!-- 2014-7-23 end -->
-
- 
-
  <div id="qmenu_menu" class="p_pop blk" style="display: none;">
 <div class="ptm pbw hm">
 请 <a href="javascript:;" class="xi2" onclick="lsSubmit()"><strong>登录</strong></a> 后使用快捷导航<br />没有帐号？<a href="member.php?mod=register" class="xi2 xw1">注册会员</a>
@@ -187,14 +159,7 @@ initSearchmenu('scbar', 'http://search.itcast.cn/f/discuz');
    
   <div class="p_pop h_pop" id="mn_userapp_menu" style="display: none"></div>
   <div id="mu" class="cl"> 
-     
-     
-
-     
-     
-
-     
-  
+ 
   </div>
 
  <!--
@@ -518,7 +483,48 @@ _filter:alpha(opacity=60);
 .ranklist li .num{position:absolute;right:0;top:0;color:#999;}
 .drawset {width:100%;height:110px;}
 .drawset li {list-style:none;float:left;padding:4px}
+
+
+
+.rotate-content {
+  width: 270px;
+  position: relative;
+  height: 270px;
+  background: url(activity-lottery-bg.png)
+    no-repeat 0 0;
+  background-size: 100% 100%;
+  margin: 0 auto
+}
+.rotate-con-pan {
+  background: url(http://www.mybbs.com/discuz/upload/source/module/choujiang/disk.jpg)
+    no-repeat 0 0;
+  background-size: 100% 100%;
+  position: relative;
+  width: 260px;
+  height: 260px;
+  padding-top: 15px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0 auto
+}
+.rotate-con-zhen {
+  width: 112px;
+  height: 224px;
+  background: url(http://www.mybbs.com/discuz/upload/source/module/choujiang/start.png)
+    no-repeat 0 0;
+  background-size: 100% 100%;
+  margin: 0 auto
+}
+
+
+
 </style>
+
+<script type="text/javascript" src="http://www.mybbs.com/discuz/upload/source/module/choujiang/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="http://www.mybbs.com/discuz/upload/source/module/choujiang/jQueryRotate.2.2.js"></script>
+<script type="text/javascript" src="http://www.mybbs.com/discuz/upload/source/module/choujiang/jquery.easing.min.js"></script>
+<script type="text/javascript" src="http://www.mybbs.com/discuz/upload/source/module/choujiang/zp.js"></script>
 <script type="text/javascript">
 (function($){
 
@@ -581,31 +587,36 @@ rowHeight:24
 });
 </script>
 <!-- 滚动结束 -->
-
 <div id="header">
-<div id="turnplatewrapper" onselectstart="return false;" class="bgfix">
-<div id="turnplate" class="bgfix">
-<div id="awards" class="bgfix">
-</div>
-<div id="platebtn" class="bgfix">
-</div>
-<p id="msg">
-</p>
-<p id="init" class="dn">
-初始化中，请稍后...<span></span>
-</p>
-</div>
-</div>
-<div id="gift" class="bgfix">
-</div>
-</div>
 
-<div id="content">
-<div id="top-menu">
-<div class="l" style="color:#000; font-weight:bold;"><span id="indexid" style="display:none">0</span><span>您今天还有 <b><span class="lottery-times">0</span></b> 次抽奖机会</span></div>
-</div>
+  <div class="rotate-content">
+    <div class="rotate-con-pan">
+      <div class="rotate-con-zhen"></div>
+    </div>
+  </div>
 </div>
 <script type="text/javascript">
+$(function(){
+  $(".rotate-con-zhen").rotate({
+    bind:{
+      click:function(){
+        var a = runzp();
+         $(this).rotate({
+            duration:3000,
+            angle: 0, 
+                  animateTo:1440+a.angle,
+            easing: $.easing.easeOutSine,
+            callback: function(){
+              alert(a.prize+a.message);
+            }
+         });
+      }
+    }
+  });
+});
+</script>
+<script type="text/javascript">
+/*
 $(function(){
 //滚动插件
 (function($){
@@ -647,16 +658,41 @@ $("#tophtml").html("<script src=static/js/common.js?eIs><\/script>");
 }
 });	
 });
+*/
 </script>
 <div id="tophtml"></div>
 <div style="width:100%; height:900px; overflow:hidden;" >
-<div style="width:75%;float:left" class="cjgz"><h3>抽奖规则</h3><p style="font-size:14px; color:#000; line-height:24px; overflow:hidden; padding-left:20px; width:694px;">1、认证会员每日奖励 <b>2</b> 次免费抽奖，每日可参加 <b>5</b> 次有偿抽奖，每次抽奖消耗积分 <b>2</b> 个金币，比普通会员多参加 <b>2</b> 次抽奖；</p><p style="font-size:14px; color:#000; line-height:24px; overflow:hidden; padding-left:20px; width:694px;">2、普通会员不奖励免费抽奖机会，每日只可参加 <b>5</b> 次有偿抽奖，每次抽奖消耗积分 <b>3</b> 个金币，想增加抽奖机会，请<a href="home.php?mod=spacecp&ac=profile&op=verify" style="color:#0A56A9">点击立即认证</a>；</p><h3>抽奖说明</h3><p><p style="margin:0; padding:0; line-height:24px; font-size:14px; overflow:hidden; color:#000; width:694px; padding-left:20px;"><b style="font-size:16px; color:#0279af;">【参加抽奖，超级简单】</b>
-<br />1、点击页面"点击抽奖"按钮（参与本活动需要支付论坛金币）。
-<br />2、您可以点击"中奖记录"查看您的抽奖情况。
-<br />3、会员每天抽奖机会有限制，认证后会更新。
+<div style="width:75%;float:left" class="cjgz"><h3>抽奖规则</h3>
+  <p style="font-size:14px; color:#000; line-height:24px; overflow:hidden; padding-left:20px; width:694px;">
+   1.本抽奖活动可以抽取无数次，但是你要相信你没这个运气，因为你是个傻逼，此抽奖活动面向傻逼服务；
+    <p style="font-size:14px; color:#000; line-height:24px; overflow:hidden; padding-left:20px; width:694px;">
+      2.虽然你没运气，但是猪是有的，所以你得努力成为一只小猪，恭喜你！！！
+      <a href="home.php?mod=spacecp&ac=profile&op=verify" style="color:#0A56A9">点击立即认证</a>；
+    </p>
+    <h3>抽奖说明</h3>
+    <p>
+      <p style="margin:0; padding:0; line-height:24px; font-size:14px; overflow:hidden; color:#000; width:694px; padding-left:20px;"><b style="font-size:16px; color:#0279af;">【参加抽奖，超级简单】</b>
+<br />1、点击页面"点击开始抽奖"按钮（参与本活动需要运气）。
+<br />2、您可以点击"转盘"。
 <br /><b style="font-size:16px; color:#0279af;">【兑奖流程】</b>
 <br />1、会员参与抽奖之前请先完善相关资料，以便工作人员及时发放奖品，如果您的资料填写不完整，请到“设置”里完善资料。
-<br />2、若因信息错误、无效等造成开奖后15个工作日无法与中奖者取得联系，则视中奖者自动放弃该奖品。</p></p><h3>奖项设置</h3><div class="jxs"><ul><li style="width:122px; height:150px; margin-right:19px; float:left;"><img src="./source/plugin/itcast_lottery_draw/template/red/trophy/0.jpg" /></li><li style="width:122px; height:150px; margin-right:19px; float:left;"><img src="./source/plugin/itcast_lottery_draw/template/red/trophy/1.jpg" /></li><li style="width:122px; height:150px; margin-right:19px; float:left;"><img src="./source/plugin/itcast_lottery_draw/template/red/trophy/2.jpg" /></li><li style="width:122px; height:150px; margin-right:19px; float:left;"><img src="./source/plugin/itcast_lottery_draw/template/red/trophy/3.jpg" /></li><li style="width:122px; height:150px; margin-right:19px; float:left;"><img src="./source/plugin/itcast_lottery_draw/template/red/trophy/4.jpg" /></li><li style="width:122px; height:150px; margin-right:19px; float:left;"><img src="./source/plugin/itcast_lottery_draw/template/red/trophy/5.jpg" /></li><li style="width:122px; height:150px; margin-right:19px; float:left;"><img src="./source/plugin/itcast_lottery_draw/template/red/trophy/6.jpg" /></li><li style="width:122px; height:150px; margin-right:19px; float:left;"><img src="./source/plugin/itcast_lottery_draw/template/red/trophy/7.jpg" /></li><li style="width:122px; height:150px; margin-right:19px; float:left;"><img src="./source/plugin/itcast_lottery_draw/template/red/trophy/8.jpg" /></li><li style="width:122px; height:150px; margin-right:19px; float:left;"><img src="./source/plugin/itcast_lottery_draw/template/red/trophy/9.jpg" /></li></ul></div></div>
+<br />2、若因信息错误、无效等造成开奖后15个工作日无法与中奖者取得联系，则视中奖者自动放弃该奖品。</p></p><h3>奖项设置</h3>
+<div class="jxs">
+  <ul>
+    <li style="width:122px; height:150px; margin-right:19px; float:left;">
+      <img src="./source/plugin/itcast_lottery_draw/template/red/trophy/0.jpg" /></li>
+      <li style="width:122px; height:150px; margin-right:19px; float:left;">
+        <img src="./source/plugin/itcast_lottery_draw/template/red/trophy/1.jpg" />
+      </li>
+      <li style="width:122px; height:150px; margin-right:19px; float:left;">
+      <img src="./source/plugin/itcast_lottery_draw/template/red/trophy/2.jpg" />
+      </li>
+        <li style="width:122px; height:150px; margin-right:19px; float:left;">
+          <img src="./source/plugin/itcast_lottery_draw/template/red/trophy/9.jpg" />
+        </li>
+      </ul>
+    </div>
+  </div>
 <div class="zjjl"><h3><span style="float:left;">最新中奖记录</span><a href="plugin.php?id=itcast_lottery_draw:itcast_lottery_draw&amp;ac=look" class="myzj">我的中奖记录</a></h3>
 <div id="scrollDiv" style="overflow:hidden;">
 <ul>

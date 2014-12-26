@@ -256,7 +256,7 @@ H1 a {
 
 
 
-							<h1 class="type"><a>yi利一组</a></h1>
+							<h1 class="type"><a>yi利一组PV</a></h1>
 							<div class="content">
 							<table width="100%" border="0" cellspacing="0" cellpadding="0">
 							<tr>
@@ -264,7 +264,7 @@ H1 a {
 							</tr>
 							</table>
 							<ul class="MM">
-							<li><a href="/admin.php/home/one/lists" >一组信息</a></li>
+							<li><a href="/admin.php/home/one/lists" >条形图</a></li>
 							</ul>
 							</div>
 						</div>
