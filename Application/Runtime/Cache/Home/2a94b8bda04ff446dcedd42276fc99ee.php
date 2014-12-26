@@ -24,8 +24,9 @@
 <div id="header">
 	<!-- 页面顶部 -->
 <div class="top1">
-	<p style="background:url(/Public/images/hot.png) 107px 10px no-repeat; padding-right:35px;" class="fl"><span class="blue">专业的IT培训机构！</span></p>
-	<p class="fr"><a target="_blank" href="http://www.itcast.cn/channel/job.shtml">就业宣言</a><a target="_blank" href="http://www.itcast.cn/channel/flow.shtml">报名流程</a><a target="_blank" href="http://open.itcast.cn">免费公开课</a><a target="_blank" href="http://dvd.itcast.cn">免费学习光盘</a><a target="_blank" href="http://www.itcast.cn/channel/book.shtml">原创教材</a><a target="_blank" href="http://bbs.itcast.cn/zine.php">传智特刊</a><a target="_blank" href="http://bbs.itcast.cn">技术论坛</a></p>
+	<a href='/index.php/Home/teshu/login'>登陆</a>
+	<a href='/index.php/Home/teshu/register'>注册</a>
+	<a href='/index.php/Home/teshu/zhaohui'>找回密码</a>
 </div>
 
 	<div class="clear"></div>
@@ -83,15 +84,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 })();
 </script>
 <script src="http://connect.qq.com/widget/loader/loader.js" widget="shareqq" charset="utf-8"></script></div>
-<<<<<<< HEAD
 
-=======
-	<!--<a class="bds_qzone">QQ空间</a>
-	<a class="bds_tsina">新浪微博</a>
-	<a class="bds_tieba">百度贴吧</a>
-	<a class="shareCount"></a>
--->
->>>>>>> 84365c20ffa42cb13cce8f438101fb85161020e7
 <div id="ckepop">
 <span class="jiathis_txt"></span>
 <a class="jiathis_button_tsina">新浪微博</a>
@@ -99,14 +92,6 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 </div>
 <script type="text/javascript" src="http://v2.jiathis.com/code/jia.js" charset="utf-8"></script>
 <div id="qqwb_share__" data-appkey="801554695" data-counter_pos="top" data-content="BBS yi利一组项目" data-pic="<?php echo ($pic); ?>"></div>
-<<<<<<< HEAD
-=======
-
-<script src="http://mat1.gtimg.com/app/openjs/openjs.js#autoboot=no&debug=no"></script>
-<!-- Baidu share END 需在页面底部添加baidushare.js -->
-		  
-		</div>
->>>>>>> 84365c20ffa42cb13cce8f438101fb85161020e7
 
 <script src="http://mat1.gtimg.com/app/openjs/openjs.js#autoboot=no&debug=no"></script>
 
