@@ -83,15 +83,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 })();
 </script>
 <script src="http://connect.qq.com/widget/loader/loader.js" widget="shareqq" charset="utf-8"></script></div>
-<<<<<<< HEAD
 
-=======
-	<!--<a class="bds_qzone">QQ空间</a>
-	<a class="bds_tsina">新浪微博</a>
-	<a class="bds_tieba">百度贴吧</a>
-	<a class="shareCount"></a>
--->
->>>>>>> 84365c20ffa42cb13cce8f438101fb85161020e7
 <div id="ckepop">
 <span class="jiathis_txt"></span>
 <a class="jiathis_button_tsina">新浪微博</a>
@@ -99,14 +91,6 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 </div>
 <script type="text/javascript" src="http://v2.jiathis.com/code/jia.js" charset="utf-8"></script>
 <div id="qqwb_share__" data-appkey="801554695" data-counter_pos="top" data-content="BBS yi利一组项目" data-pic="<?php echo ($pic); ?>"></div>
-<<<<<<< HEAD
-=======
-
-<script src="http://mat1.gtimg.com/app/openjs/openjs.js#autoboot=no&debug=no"></script>
-<!-- Baidu share END 需在页面底部添加baidushare.js -->
-		  
-		</div>
->>>>>>> 84365c20ffa42cb13cce8f438101fb85161020e7
 
 <script src="http://mat1.gtimg.com/app/openjs/openjs.js#autoboot=no&debug=no"></script>
 
@@ -124,180 +108,160 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 	<a class="jiathis_counter_style"></a>
 </div>
 <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>-->
-		  <div id="left" class="fl"  style="margin-top:3px;">
-		   
-		<div><img src="/Public/images/lefttop.gif"  /></div>
-		<div class="left_content2">
-		  <h4 class="title1"><span style="font-size:14px;float:right;padding-right:20px;">今天我终于来到了心中向往已久的神圣学府--八维研修学院，开始了改变命运的征途</span><span class="STYLE3">我们开学啦</span></h4>
-			<div class="ganyan1 huodong1" style="clear: both">
-<div class="fl">
-<div class="imagecontainer" id="idTransformView2">
-<ul class="slider slider2" id="idSlider2">
-<li><a href="" target="_blank"><img alt="帅气英俊的组长先森~" src="/Public/images/1.jpg" style="width: 297px; height: 216px;" /></a></li>
-<li><a href="" target="_blank"><img alt="组长夫人~" src="/Public/images/2.jpg" style="width: 297px; height: 216px;" /></a></li>
-<li><a href="" target="_blank"><img alt="萌萌哒~" src="/Public/images/3.jpg" style="width: 297px; height: 216px;" /></a></li>
-<li><a href="" target="_blank"><img alt="沉稳成熟范~" src="/Public/images/4.jpg" style="width: 297px; height: 216px;" /></a></li>
-<li><a href="" target="_blank"><img alt="屌丝" src="/Public/images/5.jpg" style="width: 297px; height: 216px;" /></a></li>
-</ul>
-<ul class="num" id="idNum2">
-<li>1</li>
-<li>2</li>
-<li>3</li>
-<li>4</li>
-<li>5</li>
-</ul>
+<div id="box">
+<div id="left" class="fl"  style="margin-top:3px;">
+<div class="jyjb">
+	<?php if(is_array($video)): foreach($video as $key=>$va): ?><div class="jyjb-11">
+			<ul>
+			<li class="fl jyjb-11-font1" style="height:96px;"><a href="/index.php/home/message/video/stu_id/<?php echo ($va["stu_id"]); ?>"><img alt="yi利一组" src="<?php echo ($va["pic"]); ?>" style="width: 131px; height: 93px; " /></a></li>
+			<li class="fl jyjb-11-font1"><span style="color:#000000;"><b><?php echo ($va["stu_name"]); ?><br />
+		      <?php echo ($va["s_name"]); ?><br />
+			  <?php echo ($va["com_name"]); ?></b></span><br />
+			<span class="jyjb-font2"><a href="/index.php/home/message/video/stu_id/<?php echo ($va["stu_id"]); ?>">[播放]</a></span></li>
+			</ul>
+		</div><?php endforeach; endif; ?>
+<!--
+<div class="jyjb-11">
+	<ul>
+	<li class="fl jyjb-11-font1" style="height:96px;"><a href="http://php.itcast.cn/news/20130705/15012588541.shtml"><img alt="传智播客php培训学院就业学生" src="http://www.itcast.cn/files/image/201307/20130705160801929.jpg" style="width: 131px; height: 93px; " /></a></li>
+	<li class="fl jyjb-11-font1"><span style="color:#000000;"><b>传智播客，<br />
+	技术加油站，<br />
+	为梦想助跑！</b></span><br />
+	<span class="jyjb-font2"><a href="http://php.itcast.cn/news/20130705/15012588541.shtml">[播放]</a></span></li>
+	</ul>
 </div>
+-->
+<br/>
+	<div class="clear"></div>
+<table border="0" cellpadding="0" cellspacing="0" class="jiuye" width="97%">
+<tbody>
+	<tr>
+	<th class="zhanshi" style="color:red;margin-bottom:0;border-bottom:0;font-
+
+size:12px;background-color:#ecf6fd;">
+		北京八维教育研修学院所有就业信息皆真实可靠，可联络就业学员验证；应企业和学员要求，企业名称和部分学员信息未呈现。</th>
+	</tr>
+</tbody>
+</table>
+<div class="zhanshi">
+<h4><span class="fr" style="font-weight: normal; margin-right: 30px"><a href="#">更多 </a></span>12月20日PHP就业班部分学员就业喜报</h4>
+<div><img alt="" src="/Public/images/104914z8lary1qv9vvv8fz.jpg" style="width: 628px; height: 266px;" /></div>
 </div>
-<div class="fr shouye">
-<ul>
-<li><a href=""><img  src="/public/images/1.jpg" style="width:142px; height: 87px" /></a></li>
-<li><a class="style3" href="" src="/public/images/1.jpg">赵伦-玩酷我的程序人生</a></li>
-</ul>
-<ul>
-<li><a href=""><img src="/public/images/2.jpg" style="width: 142px; height: 87px;" /></a></li>
-<li><a class="style3" href="">刘俊-辣妈挑战PHP </a></li>
-</ul>
-<ul>
-<li><a href=""><img src="/public/images/5.jpg" style="width: 142px; height: 87px" /></a></li>
-<li><a class="style3" href="">雷金涛专题-因为爱情</a></li>
-</ul>
-<ul>
-<li><a href=""><img src="/public/images/3.jpg" style="width: 142px; height: 87px" /></a></li>
-<li><a class="style3" href="">崔萌泽专题-我有我原则 </a></li>
-</ul>
-</div>
-<div></div>
-</div>
-
-				<div class="clear"></div>
-                <p class="kxsy-font1"><img src="http://www.itcast.cn/images/kxsy-tu6.jpg" /></p>
-                <!--  校园消息  -->
-				<ul class="huodong11">
-
-				<?php if(is_array($infoa)): foreach($infoa as $key=>$it): ?><li><img src="/public/images/sanjiao-1.jpg" /><a href="http://php.itcast.cn/news/20141203/14264847561.shtml" target="_blank"><span style="color:#ff0000;"><?php echo ($it["content"]); ?></span></a></li><?php endforeach; endif; ?>
-</ul>
-</ul>
-
-
-              <!--  校园消息  -->
-             <div class="clear"></div>
-				  <p class="text-r"><a href="http://php.itcast.cn/news/list/48b817de-285d-4981-a85a-ccdb3f42b15b/1.shtml
-" ><img src="/Public/images/jiantoumore.gif"/></a></p>
-			  </div>
-			  <div><img src="/Public/images/leftbottom.gif"  /></div>
-			  <div class="clear"></div>
-			  <div><img src="/Public/images/lefttop.gif"  /></div>
-			  <div class="left_content2">
-			  <h4 class="title1"><span class="STYLE3">校园</span>动态</h4>
-			  	<dl class="ganyan1 huodong1">
-	<dt class="fl">
-		<a href="http://php.itcast.cn/news/20131117/14525122556.shtml" target="_blank"><img src="/public/images/6.jpg" style="width: 286px; height: 215px;" /><br />
-		开拓视野，展现自我，&ldquo;非你莫属&rdquo;我们来啦！</a></dt>
-	<dd class="huodongfr">
-		<h3 class="STYLE7">班级活动</h3>
-		<ul class="bjhd">
-		<?php if(is_array($infob)): foreach($infob as $key=>$it): ?><li><img src="http://php.itcast.cn/images/great.jpg" /><a href="http://php.itcast.cn/news/20140328/17081824603.shtml" target="_blank"><?php echo ($it["content"]); ?></a></li><?php endforeach; endif; ?>
-		</ul>
-	</dd>
-</dl>
-
-				<div class="clear"></div>
-                <p class="text-r"><img src="/Public/images/jiantoumore.gif"/></p>
-			  </div>
-			  <div class="clear"></div><div><img src="/Public/images/leftbottom.gif"/></div>
-			  <div><img src="/Public/images/lefttop.gif"  /></div>
-			<div class="left_content2">
-			  <h4 class="ganyan"><span class="STYLE3">论坛</span>热贴<span class="fr"><a href="http://bbs.itcast.cn">+MORE</a></span></h4>	
-<div class="tie">		  
-<script type="text/javascript" src="http://bbs.itcast.cn/api.php?mod=js&bid=67"></script>
-</div>
-			  <div class="clear"></div>
-		  </div>
-			<div><img src="/Public/images/leftbottom.gif"  /></div>
-			
-			<div><img src="/Public/images/lefttop.gif"  /></div>
-			<div class="left_content2">
-			  <h4 class="ganyan"><span class="fl"><span class="STYLE3">PHP培训</span>学员呐喊</span><span class="fr"><a href="http://php.itcast.cn/php/jyjb.shtml">+MORE</a></span></h4>
-			 <dl class="ganyan1 huodong1">
-	<dt class="fl">
-		<a href="http://php.itcast.cn/news/20130705/14332258802.shtml" target="_blank"><img src="/public/images/4.jpg" style="width: 287px; height: 189px; " /></a><br />
-		<a href="" target="_blank">八维PHP学院就业明星-张肖云</a></dt>
-	<dd class="huodongfr">
-		<h3 class="STYLE7">就业信息</h3>
-		<ul class="bjhd">
-		<?php if(is_array($info)): foreach($info as $key=>$it): ?><li><img src="http://www.itcast.cn/images/great.jpg" /><a href="http://php.itcast.cn/php/jyjb.shtml"><?php echo ($it["name"]); ?> <?php echo ($it["time"]); ?> &nbsp;<?php echo ($it["company"]); ?> &nbsp;<?php echo ($it["price"]); ?></a></li><?php endforeach; endif; ?>
-
-		</ul>
-	</dd>
-</dl>
-
-			 <div class="clear"></div>
-		  </div>
-		  <div class="clear"></div>
-			<div><img src="/Public/images/leftbottom.gif"  /></div>
-			
-			<div><img src="/Public/images/lefttop.gif"  /></div>
-			<div class="left_content2">
-			  <h4 class="ganyan"><span class="fl"><span class="STYLE3">学员</span>感言</span><span class="fr"><a href="http://php.itcast.cn/news/list/0b8acc29-7202-4e1d-a6db-f6dfd3a639bb/1.shtml
-">+MORE</a></span></h4>
-			  <div class="xygy">
-<div class="ganyanleft fl">
-<dl class="ganyan1">
-	<dt class="fl">
-		<a href="http://php.itcast.cn/news/6c558812/4811/4576/b342/2307b12ae09a.shtml"><img alt="" src="/public/images/1.jpg" style="width: 108px; height: 71px" /></a></dt>
-	<dd class="fr">
-		<span class="STYLE6"><a href="http://php.itcast.cn/news/6c558812/4811/4576/b342/2307b12ae09a.shtml">[php学员]</a></span><a href="http://php.itcast.cn/news/6c558812/4811/4576/b342/2307b12ae09a.shtml">赵伦：八维，我人生中重要的一站</a></dd>
-</dl>
-<div class="clear"></div>
-<ul>
-<?php if(is_array($infoc)): foreach($infoc as $key=>$it): ?><li><span class="STYLE6">[php学员]</span><a href="http://php.itcast.cn/news/fb4ddfd4/3e47/496a/8c63/7fbe5463bfd3.shtml"><?php echo ($it["content"]); ?></a></li><?php endforeach; endif; ?>
-</ul>
-</div>
-<div class="ganyanleft fr3">
-<dl class="ganyan1">
-	<dt class="fl">
-		<a href="http://php.itcast.cn/news/20120913/11580550824.shtml"><img alt="" src="/public/images/2.jpg" style="width: 108px; height: 71px;" /></a></dt>
-	<dd class="fr">
-		<span class="STYLE6"><a href="http://php.itcast.cn/news/20120913/11580550824.shtml">[php学员]</a></span><a href="http://php.itcast.cn/news/20120913/11580550824.shtml">刘俊：美女网编,毕业薪水6500</a></dd>
-</dl>
-<div class="clear"></div>
-<ul>
-<?php if(is_array($infod)): foreach($infod as $key=>$it): ?><li><span class="STYLE6">[php学员]</span><a href="http://php.itcast.cn/news/20130902/14205610545.shtml"><?php echo ($it["content"]); ?></a></li><?php endforeach; endif; ?>
-<li><a href="http://php.itcast.cn/news/list/0b8acc29-7202-4e1d-a6db-f6dfd3a639bb/1.shtml"><font style="color: red"><b>&gt;&gt;查看更多学员感言</b></font></a></li>
-</ul>
-</div>
-</div>
-<br />
-
-			  <div class="clear"></div>
-		  </div>
-			<div><img src="/Public/images/leftbottom.gif"  /></div>
-			<div><img src="/Public/images/lefttop.gif"  /></div>
-			<div class="left_content2">
-			  <h4 class="ganyan"><span class="fl"><span class="STYLE3">PHP培训</span>名师答疑</span><span class="fr"><a href="http://php.itcast.cn/news/list/cba8c58c-b2d4-4f48-bf64-a10b59fb2666/1.shtml
-">+MORE</a></span></h4>
-			  <div class="msdy">
-			    <div class="msdy-left"><img src="/Public/images/wenhao-1.jpg" /></div>
-				<div class="msdy-right">
-<ul>
-<?php if(is_array($infoe)): foreach($infoe as $key=>$it): ?><li><a href="http://www.itcast.cn/news/20121005/12001594210.shtml"><span style="color:#ff0000;"><?php echo ($it["content"]); ?></span></a></li><?php endforeach; endif; ?>
-</ul>
-<ul>
-<?php if(is_array($infof)): foreach($infof as $key=>$it): ?><li><a href="http://php.itcast.cn/news/20130523/16573389409.shtml"><?php echo ($it["content"]); ?></a></li><?php endforeach; endif; ?>
-<li><a href="http://php.itcast.cn/news/list/cba8c58c-b2d4-4f48-bf64-a10b59fb2666/1.shtml"><font style="color: red"><b>&gt;&gt;查看更多答疑信息</b></font></a></li>
-</ul>
-</div>
-<br />
-
-			  </div>
-			
-			  <div class="clear"></div>
-		  </div>
-			<div><img src="/Public/images/leftbottom.gif"/></div>
-				<div></div>
+<table border="0" cellpadding="0" cellspacing="0" class="jiuye" width="97%">
+<tbody>
+	<tr align="center">
+	<th bgcolor="#ecf6fd" width="10%">
+		姓名</th>
+	<th bgcolor="#ecf6fd" width="25%">
+		毕业学校</th>
+	<th bgcolor="#ecf6fd" width="15%">
+		入职时间</th>
+	<th bgcolor="#ecf6fd" width="30%">
+		入职公司</th>
+	<th bgcolor="#ecf6fd" class="STYLE6" width="20%">
+		薪资（￥）</th>
+	</tr>
+	<?php if(is_array($list)): foreach($list as $key=>$val): ?><tr align="center">
+			<td><?php echo ($val["stu_name"]); ?></td>
+			<td><?php echo ($val["s_name"]); ?></td>
+			<td><?php echo ($val["work_time"]); ?></td>
+			<td><?php echo ($val["com_name"]); ?></td>
+			<td class="STYLE6"><?php echo ($val["money"]); ?></td>
+		</tr><?php endforeach; endif; ?>
+	<!--
+	<tr>
+	<td>耿 ＊＊</td>
+	<td>PHP1220高薪就业班</td>
+	<td>2014.04.21</td>
+	<td>北京＊奇科技有限公司</td>
+	<td class="STYLE6">起薪5000.00</td>
+	</tr>
+	
+-->
+</tbody>
+</table>
+	 </div>
 		</div>		
-		<div id="right" class="fl">	
-		<h4 class="righttitle1" style="margin-top:10px;"><span class="fl">PHP培训开班信息</span></h4>
+		<div id="right" class="fl">			
+			<h4 class="righttitle1 zhaopin"><span class="blue">最新</span>企业招聘</h4>
+			<div class="rightkuang1">
+			<p class="cent"> <img src="/Public/images/7.jpg"  width="256" height="66" /></p>
+                  <table border="0" cellpadding="0" cellspacing="0" class="zhaopinlist" height="124" style="margin-top: 5px" width="98%">
+<tbody>
+	<tr>
+	<td class="td1" width="73%"><a href="http://www.itcast.cn/news/20141215/14223392440.shtml" target="_blank">中科软科技股份公司招聘</a></td>
+	<td width="11%">若干</td>
+	<td width="16%">12.12</td>
+	</tr>
+	<tr>
+	<td class="td1" width="73%"><a href="http://www.itcast.cn/news/20141215/14353014587.shtml" target="_blank">北京智胜终端互联市场招聘</a></td>
+	<td width="11%">若干</td>
+	<td width="16%">12.12</td>
+	</tr>
+	<tr>
+	<td class="td1" width="73%"><a href="http://www.itcast.cn/news/20141215/14410738814.shtml" target="_blank">北京因脉科技有限公司招聘</a></td>
+	<td width="11%">若干</td>
+	<td width="16%">12.12</td>
+	</tr>
+	<tr>
+	<td class="td1" width="73%"><a href="http://www.itcast.cn/news/20141215/1442323039.shtml" target="_blank">深圳一路捞互联网公司招聘</a></td>
+	<td width="11%">若干</td>
+	<td width="16%">12.12</td>
+	</tr>
+	<tr>
+	<td class="td1" width="73%"><a href="http://www.itcast.cn/news/20141215/14442192258.shtml" target="_blank">北京创信软通科技公司招牌</a></td>
+	<td width="11%">若干</td>
+	<td width="16%">12.12</td>
+	</tr>
+	<tr>
+	<td class="td1" width="73%"><a href="http://www.itcast.cn/news/20141215/14491633920.shtml" target="_blank">北京四汇奥思科技公司招聘</a></td>
+	<td width="11%">若干</td>
+	<td width="16%">12.12</td>
+	</tr>
+	<tr>
+	<td class="td1" width="73%"><a href="http://www.itcast.cn/news/20141215/14552676212.shtml" target="_blank">时趣Social Touch公司招聘</a></td>
+	<td width="11%">若干</td>
+	<td width="16%">12.12</td>
+	</tr>
+	<tr>
+	<td class="td1" width="73%"><a href="http://www.itcast.cn/news/20141215/15014353245.shtml" target="_blank">北京瑞友科技股份公司招聘</a></td>
+	<td width="11%">若干</td>
+	<td width="16%">12.12</td>
+	</tr>
+	<tr>
+	<td class="td1" width="73%"><a href="http://www.itcast.cn/news/20141215/15024358385.shtml" target="_blank">北京软通科技有限公司招聘</a></td>
+	<td width="11%">若干</td>
+	<td width="16%">12.12</td>
+	</tr>
+	<tr></tr>
+	<tr>
+	<td class="td1" width="73%"><a href="http://www.itcast.cn/news/20141215/15161510845.shtml" target="_blank">北京科亚医学影像研究所招聘</a></td>
+	<td width="11%">若干</td>
+	<td width="16%">12.12</td>
+	</tr>
+	<tr>
+	<td class="td1" width="73%"><a href="http://www.itcast.cn/news/20141215/15320892029.shtml" target="_blank">北京聚合影联文化传媒公司</a></td>
+	<td width="11%">若干</td>
+	<td width="16%">12.12</td>
+	</tr>
+	<tr>
+	<td class="td1" width="73%"><a href="http://www.itcast.cn/news/20141215/15330165191.shtml" target="_blank">北京建迅网天科技公司招聘</a></td>
+	<td width="11%">若干</td>
+	<td width="16%">12.12</td>
+	</tr>
+	<tr>
+	<td class="td1" width="73%"><a href="http://www.itcast.cn/news/list/20c133c0-6635-421c-acae-6125b0702b34/1.shtml" target="_blank"><span style="color:#ff0000;">更多企业招聘信息请点击&hellip;&hellip;</span></a></td>
+	<td width="11%"><a href="http://www.itcast.cn/news/list/20c133c0-6635-421c-acae-6125b0702b34/1.shtml" target="_blank"><span style="color:#ff0000;">查看</span></a></td>
+	<td width="16%"><a href="http://www.itcast.cn/news/list/20c133c0-6635-421c-acae-6125b0702b34/1.shtml" target="_blank"><span style="color:#ff0000;">更多</span></a></td>
+	</tr>
+</tbody>
+</table>
+
+ <div class="clear"></div>
+			</div>
+			<div class="rightbottom"><img src="/Public/images/bottom1.gif"/></div>
+			<h4 class="righttitle1" style="margin-top:5px;"><span class="fl">PHP培训开班信息</span></h4>
+			
 			<div class="jyjb-left" >
 			<ul>
 <li style="border-bottom: medium none; float: left; color: #515151"><a href="http://php.itcast.cn/php/course/base.shtml"><b><font style="color: #515151">PHP基础班</font></b></a></li>
@@ -315,7 +279,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 <ul style="clear: both">
 <li><a href="http://php.itcast.cn/php/course/php.shtml" target="_blank"><span class="time jyjb-font2"><b>预约报名</b></span>北京--第34期(2015年01月05号)</a></li>
 <li><a href="http://php.itcast.cn/php/course/php.shtml" target="_blank"><span class="time jyjb-font1"><b>爆满已开班</b></span>北京--第33期(2014年11月21号)</a></li>
-<li><a href="http://php.itcast.cn/php/course/php.shtml" target="_blank"><span class="time jyjb-font2"><b>预约报名</b></span>广州--第07期(2014年12月18号)</a></li>
+<li><a href="http://php.itcast.cn/php/course/php.shtml" target="_blank"><span class="time jyjb-font2"><b>预约报名</b></span>广州--第08期(2015年01月28号)</a></li>
 </ul>
 <ul>
 <li style="border-bottom: medium none; float: left; color: #515151"><a href="http://php.itcast.cn/news/981030b0/96d5/4005/9ae4/eba8bac4195a.shtml"><b><font style="color: #515151">PHP远程班</font></b></a></li>
@@ -328,94 +292,57 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 <li><a href="http://php.itcast.cn/news/981030b0/96d5/4005/9ae4/eba8bac4195a.shtml" target="_blank"><span class="time jyjb-font1"><b>爆满已开班</b></span>就业班--第33期(2014年11月21号)</a></li>
 </ul>
 
-            </div>
-			<div class="rightbottom"><img src="/Public/images/rightbottom.jpg"  /></div>		
-			<h4 class="righttitle1 zhaopin"><span class="blue">最新</span>企业招聘</h4>
-			<div class="rightkuang1">
-			<p class="cent"> <img src="/Public/images/7.jpg"  width="256" height="66" /></p>
-                      <table border="0" cellpadding="0" cellspacing="0" class="zhaopinlist" height="124" style="margin-top: 5px" width="98%">
-<tbody>
-<?php if(is_array($infoaa)): foreach($infoaa as $key=>$it): ?><tr>
-	<td class="td1" width="73%"><a href="http://www.itcast.cn/news/20141201/16233788127.shtml" target="_blank"><?php echo ($it["company"]); ?></a></td>
-	<td width="11%">若干</td>
-	<td width="16%">11.28</td>
-	</tr><?php endforeach; endif; ?>	
-	<tr>
-	<td class="td1" width="73%"><a href="http://www.itcast.cn/news/list/20c133c0-6635-421c-acae-6125b0702b34/1.shtml" target="_blank"><span style="color:#ff0000;">更多企业招聘信息请点击&hellip;&hellip;</span></a></td>
-	<td width="11%"><a href="http://www.itcast.cn/news/list/20c133c0-6635-421c-acae-6125b0702b34/1.shtml" target="_blank"><span style="color:#ff0000;">查看</span></a></td>
-	<td width="16%"><a href="http://www.itcast.cn/news/list/20c133c0-6635-421c-acae-6125b0702b34/1.shtml" target="_blank"><span style="color:#ff0000;">更多</span></a></td>
-	</tr>
-	<tr></tr>
-</tbody>
-</table>
-
-             <div class="clear"></div>
-				
 			</div>
-			<div class="rightbottom"><img src="/Public/images/bottom1.gif"  /></div>
-			<h4 class="righttitle1 zhaopin" style="margin-top:3px;"><span class="blue">常见</span>问题</h4>
-		  <div class="rightkuang1" style="padding-top:18px;">
-			<ul class="zhaopinlist wenti">
-              <ul class="zhaopinlist wenti">
-<?php if(is_array($infobb)): foreach($infobb as $key=>$it): ?><li><a href="http://php.itcast.cn/news/20130723/11245447222.shtml" target="_blank"><?php echo ($it["title"]); ?></a><img height="15" src="/Public/images/new.gif" width="29" /></li><?php endforeach; endif; ?>
-</ul>
-
-          </ul> 
-			<div class="clear"></div>
-				 <p class="text-r"><a href="/index.php/Home/problem/index"><img src="/Public/images/jiantoumore.gif"  border="0" /></a></p>
-		  </div>
-			<div class="rightbottom"><img src="/Public/images/bottom1.gif"  /></div>
-			
+			<div class="rightbottom"><img src="/Public/images/rightbottom.jpg"/></div>
 			<h4 class="righttitle1 lianxi"><span class="fl"><span class="blue">课程</span>咨询</span></h4>
-			
 			<div class="rightkuang">
-			 <dl>
+		<dl>
 	<dt style="padding-bottom:20px;">
 		北京传智播客</dt>
 	<dd style="width:120px;height:40px;float:left;">
-		<a href="http://wpa.qq.com/msgrd?v=1&uin=790330816&site=qq&menu=yes"><img alt="北京传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
+		<a href="http://cnrdn.com/iP66" target="_blank"><img alt="北京传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
 	<dd style="width:120px;height:40px;float:left;">
-		<a href="http://wpa.qq.com/msgrd?v=1&uin=790330816&site=qq&menu=yes"><img alt="北京传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqkczx.jpg" width="99" /></a></dd>
+		<a href="http://cnrdn.com/iP66" target="_blank"><img alt="北京传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqkczx.jpg" width="99" /></a></dd>
 </dl>
 <dl class="qqtwo">
 	<dt style="padding-bottom:20px;">
 		广州传智播客</dt>
 	<dd style=" width:120px;height:40px;float:left;">
-		<a href="http://wpa.qq.com/msgrd?v=1&uin=790330816&site=qq&menu=yes" target="_blank"><img alt="广州传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
+		<a href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&amp;key=XzgwMDA2ODg2OF8yMDczMV84MDAwNjg4NjhfMl8" target="_blank"><img alt="广州传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
 	<dd style=" width:120px;height:40px;float:left;">
-		<a href="http://wpa.qq.com/msgrd?v=1&uin=790330816&site=qq&menu=yes" target="_blank"><img alt="广州传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqkczx.jpg" width="99" /></a></dd>
+		<a href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&amp;key=XzgwMDA2ODg2OF8yMDczMV84MDAwNjg4NjhfMl8" target="_blank"><img alt="广州传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqkczx.jpg" width="99" /></a></dd>
 </dl>
 <dl class="qqthree">
 	<dt style="padding-bottom:20px;">
 		上海传智播客</dt>
 	<dd style="width:120px;height:40px;float:left;">
-		<a href="http://wpa.qq.com/msgrd?v=1&uin=790330816&site=qq&menu=yes" target="_blank"><img alt="上海传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
+		<a href="http://cnrdn.com/djUD" target="_blank"><img alt="上海传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
 	<dd style="width:120px;height:40px;float:left;">
-		<a href="http://wpa.qq.com/msgrd?v=1&uin=790330816&site=qq&menu=yes" target="_blank"><img alt="上海传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqkczx.jpg" width="99" /></a></dd>
+		<a href="http://cnrdn.com/djUD" target="_blank"><img alt="上海传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqkczx.jpg" width="99" /></a></dd>
 </dl>
 <dl class="qqfour">
 	<dt style="padding-bottom:20px;">
 		武汉传智播客</dt>
 	<dd style="width:120px;height:40px;float:left;">
-		<a href="http://wpa.qq.com/msgrd?v=1&uin=1067112004&site=qq&menu=yes" target="_blank"><img alt="武汉传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
+		<a href="http://cnrdn.com/shPF" target="_blank"><img alt="武汉传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
 	<dd style="width:120px;height:40px;float:left;">
-		<a href="http://wpa.qq.com/msgrd?v=1&uin=1067112004&site=qq&menu=yes" target="_blank"><img alt="武汉传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqkczx.jpg" width="99" /></a></dd>
+		<a href="http://cnrdn.com/shPF" target="_blank"><img alt="武汉传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqkczx.jpg" width="99" /></a></dd>
 </dl>
 <dl class="qqfive">
 	<dt style="padding-bottom:20px;">
 		郑州传智播客</dt>
 	<dd style="width:120px;height:40px;float:left;">
-		<a href="http://wpa.qq.com/msgrd?v=1&uin=1067112004&site=qq&menu=yes" target="_blank"><img alt="武汉传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
+		<a href="http://cnrdn.com/0LVE" target="_blank"><img alt="武汉传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
 	<dd style="width:120px;height:40px;float:left;">
-		<a href="http://wpa.qq.com/msgrd?v=1&uin=1067112004&site=qq&menu=yes" target="_blank"><img alt="武汉传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqkczx.jpg" width="99" /></a></dd>
+		<a href="http://cnrdn.com/0LVE" target="_blank"><img alt="武汉传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqkczx.jpg" width="99" /></a></dd>
 </dl>
 <dl class="qqsix">
 	<dt style="padding-bottom:20px;">
 		西安传智播客</dt>
 	<dd style="width:120px;height:40px;float:left;">
-		<a href="http://wpa.qq.com/msgrd?v=1&uin=790330816&site=qq&menu=yes" target="_blank"><img alt="西安传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
+		<a href="http://cnrdn.com/iP66" target="_blank"><img alt="西安传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
 	<dd style="width:120px;height:40px;float:left;">
-		<a href="http://wpa.qq.com/msgrd?v=1&uin=790330816&site=qq&menu=yes" target="_blank"><img alt="西安传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqkczx.jpg" width="99" /></a></dd>
+		<a href="http://cnrdn.com/iP66" target="_blank"><img alt="西安传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqkczx.jpg" width="99" /></a></dd>
 </dl>
 <!--<dl class="qqsev">
 	<dt style="padding-bottom:20px;">
@@ -425,53 +352,12 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 	<dd style="width:120px;height:40px;float:left;">
 		<a href="http://cnrdn.com/iP66" target="_blank"><img alt="西安传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqkczx.jpg" width="99" /></a></dd>
 </dl>-->
-			<div class="clear"></div>
+			<div class="clear"></div>		
 			</div>
-			<div class="rightbottom"><img src="/Public/images/rightbottom.jpg"  /></div>
+			<div class="rightbottom"><img src="/Public/images/rightbottom.jpg"/></div>
 	  </div>
 	</div>		
 	<div class="clear"></div>
-
-<!-- 友情链接 -->
-<div class="content">
-  <div class="friendlink_con">
-<div class="friendlink">
-<div class="friendlink_style01"><img width="37" height="87" src="/Public/images/youqin.jpg"></div>
-<div class="friendlink_style03">
- <ul>
-<li><a href="http://www.sietoo.com" target="_blank">深圳网站建设</a></li>
-<li><a href="http://www.ibeifeng.com" target="_blank">北风网</a></li>
-<li><a href="http://www.wangxiaowang.com/" target="_blank">网络教育</a></li>
-<li><a href="http://bbs.17liuxue.com" target="_blank">澳洲留学DIY</a></li>
-<li><a href="http://qd.jiajiao400.com" target="_blank">青岛家教网</a></li>
-<li><a href="http://www.028jq.com" target="_blank">英国留学</a></li>
-<li><a href="http://www.shisu-edu.com/" target="_blank">上外留学预科</a></li>
-<li><a href="http://lyg.ygjj.com/" target="_blank">连云港家教</a></li>
-<li><a href="http://www.wen5u.com" target="_blank">论文格式</a></li>
-<li><a href="http://edu.tianhenet.com.cn" target="_blank">CFO培训</a></li>
-<li><a href="http://baike.zidiantong.com" target="_blank">百科知识</a></li>
-<li><a href="http://www.xjc100.com" target="_blank">宁波电脑培训</a></li>
-<li><a href="http://jl.htexam.com" target="_blank">吉林省公务员考试网</a></li>
-<li><a href="http://bbs.xunkoo.com" target="_blank">大学生网</a></li>
-<li><a href="http://www.0755zixuekaoshi.com" target="_blank">深圳自学考试网</a></li>
-<li><a href="http://www.youzhikew.com" target="_blank">优质课网</a></li>
-<li><a href="http://www.youkao.com" target="_blank">优考网</a></li>
-<li><a href="http://www.fshuayue.com/" target="_blank">成人高考网</a></li>
-<li><a href="http://sz.gaofen.com" target="_blank">深圳教育网</a></li>
-<li><a href="http://cjcx.xygmed.com" target="_blank">执业医师成绩查询</a></li>
-<li><a href="http://zs.k8008.com" target="_blank">科技招商</a></li>
-<li><a href="http://www.jsnxs.com" target="_blank">江苏信用社招聘考试</a></li>
-<li><a href="http://www.peixunhu.com" target="_blank">武汉培训网</a></li>
-<li><a href="http://net.thea.cn" target="_blank">在线课程</a></li>
-<li><a href="http://zz.jiajiao400.com/" target="_blank">郑州家教</a></li>
-<li><a href="http://keji.3158.cn " target="_blank">网络教育</a></li>
-<li><a href="http://aia.lixinedu.com.cn" target="_blank">AIA培训</a></li>
-</ul>
-
-</div>
-</div>
-</div>
-</div>
 
 <div id="footer">
   <div class="footer_info">
