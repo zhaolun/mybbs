@@ -85,7 +85,7 @@ EOF;
  if(!$_G['connectguest']) { 
 $return .= <<<EOF
 
-<!--<a href="{$_G['connect']['login_url']}&statfrom=login" target="_top" rel="nofollow"><img src="{$__IMGDIR}/qq_login.gif" class="vm" /></a>-->
+<a href="{$_G['connect']['login_url']}&statfrom=login" target="_top" rel="nofollow"><img src="{$__IMGDIR}/qq_login.gif" class="vm" /></a>
 
 EOF;
  } 
