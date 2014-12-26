@@ -83,11 +83,15 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 })();
 </script>
 <script src="http://connect.qq.com/widget/loader/loader.js" widget="shareqq" charset="utf-8"></script></div>
+<<<<<<< HEAD
+
+=======
 	<!--<a class="bds_qzone">QQ空间</a>
 	<a class="bds_tsina">新浪微博</a>
 	<a class="bds_tieba">百度贴吧</a>
 	<a class="shareCount"></a>
 -->
+>>>>>>> 84365c20ffa42cb13cce8f438101fb85161020e7
 <div id="ckepop">
 <span class="jiathis_txt"></span>
 <a class="jiathis_button_tsina">新浪微博</a>
@@ -95,12 +99,31 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 </div>
 <script type="text/javascript" src="http://v2.jiathis.com/code/jia.js" charset="utf-8"></script>
 <div id="qqwb_share__" data-appkey="801554695" data-counter_pos="top" data-content="BBS yi利一组项目" data-pic="<?php echo ($pic); ?>"></div>
+<<<<<<< HEAD
+=======
 
 <script src="http://mat1.gtimg.com/app/openjs/openjs.js#autoboot=no&debug=no"></script>
 <!-- Baidu share END 需在页面底部添加baidushare.js -->
 		  
 		</div>
+>>>>>>> 84365c20ffa42cb13cce8f438101fb85161020e7
 
+<script src="http://mat1.gtimg.com/app/openjs/openjs.js#autoboot=no&debug=no"></script>
+
+		  
+		</div>
+	
+<!--<div class="jiathis_style">
+	<a class="jiathis_button_qzone"></a>
+	<a class="jiathis_button_tsina"></a>
+	<a class="jiathis_button_tqq"></a>
+	<a class="jiathis_button_weixin"></a>
+	<a class="jiathis_button_renren"></a>
+	<a class="jiathis_button_xiaoyou"></a>
+	<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>-->
 		  <div id="left" class="fl"  style="margin-top:3px;">
 		   
 		<div><img src="/Public/images/lefttop.gif"  /></div>

@@ -1,7 +1,17 @@
 <?php if(!defined('IN_DISCUZ')) exit('Access Denied'); 
 0
+<<<<<<< HEAD
+<<<<<<< HEAD
+|| checktplrefresh('./template/default/home/spacecp_header.htm', './template/default/home/spacecp_header_name.htm', 1419477406, '1', './data/template/1_1_home_spacecp_header.tpl.php', './template/default', 'home/spacecp_header')
+|| checktplrefresh('./template/default/home/spacecp_header.htm', './template/default/home/spacecp_header_name.htm', 1419477406, '1', './data/template/1_1_home_spacecp_header.tpl.php', './template/default', 'home/spacecp_header')
+=======
 || checktplrefresh('./template/default/home/spacecp_header.htm', './template/default/home/spacecp_header_name.htm', 1419470738, '1', './data/template/1_1_home_spacecp_header.tpl.php', './template/default', 'home/spacecp_header')
 || checktplrefresh('./template/default/home/spacecp_header.htm', './template/default/home/spacecp_header_name.htm', 1419470738, '1', './data/template/1_1_home_spacecp_header.tpl.php', './template/default', 'home/spacecp_header')
+>>>>>>> 84365c20ffa42cb13cce8f438101fb85161020e7
+=======
+|| checktplrefresh('./template/default/home/spacecp_header.htm', './template/default/home/spacecp_header_name.htm', 1419470738, '1', './data/template/1_1_home_spacecp_header.tpl.php', './template/default', 'home/spacecp_header')
+|| checktplrefresh('./template/default/home/spacecp_header.htm', './template/default/home/spacecp_header_name.htm', 1419470738, '1', './data/template/1_1_home_spacecp_header.tpl.php', './template/default', 'home/spacecp_header')
+>>>>>>> 84365c20ffa42cb13cce8f438101fb85161020e7
 ;?>
 <div id="pt" class="bm cl">
 <div class="z">

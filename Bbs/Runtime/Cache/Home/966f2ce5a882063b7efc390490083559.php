@@ -58,10 +58,10 @@ window.onerror = killErrors;
       
       <a id="switchblind" href="javascript:;" onClick="toggleBlind(this)" title="开启辅助访问" class="switchblind">开启辅助访问</a> 
 
-<div class="fastlg_fm y" style="margin-right: 10px; padding-right: 10px">
+<!--<div class="fastlg_fm y" style="margin-right: 10px; padding-right: 10px">
 <p><a href="http://bbs.itcast.cn/connect.php?mod=login&op=init&referer=portal.php&statfrom=login_simple"><img src="static/image/common/qq_login.gif" class="vm" alt="QQ登录" /></a></p>
 <p class="hm xg1" style="padding-top: 2px;">只需一步，快速开始</p>
-</div>
+</div>-->
 
 <div class="fastlg_fm y" style="margin-right: 10px; padding-right: 10px">
 <p><a href="plugin.php?id=wechat:login"><img src="source/plugin/wechat/image/wechat_login.png" class="vm" /></a></p>
