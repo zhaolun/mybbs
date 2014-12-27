@@ -24,18 +24,12 @@
 <div id="header">
 	<!-- 页面顶部 -->
 <div class="top1">
-<<<<<<< HEAD
-	<a href='/index.php/Home/teshu/login'>登陆</a>
-	<a href='/index.php/Home/teshu/register'>注册</a>
-	<a href='/index.php/Home/teshu/zhaohui'>找回密码</a>
-=======
 	<p style="background:url(/Public/images/hot.png) 107px 10px no-repeat; padding-right:35px;" class="fl"><span class="blue">专业的IT培训机构！</span></p>
 	<p class="fr"><form method="post" action="">
 		用户名：<input type="text" name="">　密码：<input type="password" name="">　<input type="submit" value="登录">
 	</form>
 	
 	</p>
->>>>>>> 449a83c8f8debf8f1f965ae7390d94001a442df7
 </div>
 
 	<div class="clear"></div>
@@ -118,151 +112,154 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 	<a class="jiathis_counter_style"></a>
 </div>
 <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>-->
-<DIV id="box">
-<DIV style="margin-top: 3px;" id="left" class="fl">
-<DIV><IMG src="/Public/images/lefttop.gif"></DIV>
-<DIV class="jyjb">
-<DIV><IMG src="/Public/images/kcjs-tu.jpg"></DIV>﻿
-<DIV class="kcjs">
-<STYLE type="text/css">
-.kcnr-table{ line-height:20px;}
-	.kcnr-table li{ list-style-image:url(http://www.itcast.cn/files/image/201207/20120718144154342.jpg); margin-left:15px;;</STYLE>
-</DIV>
-<?php if(is_array($info)): foreach($info as $key=>$vo): ?><UL>
-  <LI style="width: 141px;" class="fl"><IMG src="/Public/images/phpjc.jpg"></LI>
-  <LI style="width: 470px;" class="fl jyjb-11-font1"><B class="jyjb-11-font2"><A 
-<<<<<<< HEAD
-  href="http://www.mybbs.com/index.php/Home/project/jichu" 
-=======
-  href="http://www.bbs.com/index.php/Home/project/jichu" 
->>>>>>> 449a83c8f8debf8f1f965ae7390d94001a442df7
-  target="_blank"><?php echo ($vo["pei_class"]); ?></A></B>
-  <P><?php echo ($vo["pei_intro"]); ?></P>
-  </LI></UL>
-  
-<TABLE class="kcnr-table" border="0" cellSpacing="0" cellPadding="0" 
-  width="99%">
-  <TBODY>
-  <TR>
-    <TD><?php echo ($vo["pei_class"]); ?>课程名称</TD>
-    <TD><STRONG><a href="http://www.mybbs.com/index.php/Home/project/kecheng?id=<?php echo ($vo["pei_id"]); ?>" target="_blank">点击查看<?php echo ($vo["pei_class"]); ?>课程详细介绍</a></STRONG></TD></TR>
-  <TR>
-    <TD width="22%"><BR><?php echo ($vo["bbs_jieduan"]); ?></TD>
-    <TD width="78%">
-      <P></P>
-      <UL>
-        <?php echo ($vo["neirong"]); ?></UL></TD></TR>
-  
-  </TBODY></TABLE><?php endforeach; endif; ?>
-<BR>
-<BR></DIV>
-<DIV><IMG src="/Public/images/leftbottom.gif"></DIV>
-<DIV></DIV></DIV>
-<DIV id="right" class="fl">
-<H4 style="margin-top: 10px;" class="righttitle1"><SPAN 
-class="fl">PHP培训开班信息</SPAN></H4>
-<DIV class="jyjb-left">
-<UL>
-  <LI style="color: rgb(81, 81, 81); border-bottom-color: currentColor; border-bottom-width: medium; border-bottom-style: none; float: left;"><A 
-  href="http://php.itcast.cn/php/course/base.shtml"><B><FONT style="color: rgb(81, 81, 81);">PHP基础班</FONT></B></A></LI>
-  <BR></UL>
-<UL style="clear: both;">
-  <LI><A href="http://php.itcast.cn/php/course/base.shtml" target="_blank"><SPAN 
-  class="time jyjb-font2"><B>预约报名</B></SPAN>北京--第34期(2015年01月10号)</A></LI>
-  <LI><A href="http://php.itcast.cn/php/course/base.shtml" target="_blank"><SPAN 
-  class="time jyjb-font1"><B>爆满已开班</B></SPAN>北京--第33期(2014年11月27号)</A></LI>
-  <LI><A href="http://php.itcast.cn/php/course/base.shtml" target="_blank"><SPAN 
-  class="time jyjb-font2"><B>预约报名</B></SPAN>广州--第08期(2014年12月25号)</A></LI></UL>
-<UL>
-  <LI style="color: rgb(81, 81, 81); border-bottom-color: currentColor; border-bottom-width: medium; border-bottom-style: none; float: left;"><A 
-  href="http://php.itcast.cn/php/course/php.shtml"><B><FONT style="color: rgb(81, 81, 81);">PHP就业班</FONT></B></A></LI>
-  <BR></UL>
-<UL style="clear: both;">
-  <LI><A href="http://php.itcast.cn/php/course/php.shtml" target="_blank"><SPAN 
-  class="time jyjb-font2"><B>预约报名</B></SPAN>北京--第34期(2015年01月05号)</A></LI>
-  <LI><A href="http://php.itcast.cn/php/course/php.shtml" target="_blank"><SPAN 
-  class="time jyjb-font1"><B>爆满已开班</B></SPAN>北京--第33期(2014年11月21号)</A></LI>
-  <LI><A href="http://php.itcast.cn/php/course/php.shtml" target="_blank"><SPAN 
-  class="time jyjb-font2"><B>预约报名</B></SPAN>广州--第07期(2014年12月18号)</A></LI></UL>
-<UL>
-  <LI style="color: rgb(81, 81, 81); border-bottom-color: currentColor; border-bottom-width: medium; border-bottom-style: none; float: left;"><A 
-  href="http://php.itcast.cn/news/981030b0/96d5/4005/9ae4/eba8bac4195a.shtml"><B><FONT 
-  style="color: rgb(81, 81, 81);">PHP远程班</FONT></B></A></LI><BR></UL>
-<UL style="clear: both;">
-  <LI><A href="http://php.itcast.cn/news/981030b0/96d5/4005/9ae4/eba8bac4195a.shtml" 
-  target="_blank"><SPAN 
-  class="time jyjb-font2"><B>预约报名</B></SPAN>基础班--第34期(2015年01月10号)</A></LI>
-  <LI><A href="http://php.itcast.cn/news/981030b0/96d5/4005/9ae4/eba8bac4195a.shtml" 
-  target="_blank"><SPAN 
-  class="time jyjb-font1"><B>爆满已开班</B></SPAN>基础班--第33期(2014年11月27号)</A></LI>
-  <LI><A href="http://php.itcast.cn/news/981030b0/96d5/4005/9ae4/eba8bac4195a.shtml" 
-  target="_blank"><SPAN 
-  class="time jyjb-font2"><B>预约报名</B></SPAN>就业班--第34期(2015年01月05号)</A></LI>
-  <LI><A href="http://php.itcast.cn/news/981030b0/96d5/4005/9ae4/eba8bac4195a.shtml" 
-  target="_blank"><SPAN 
-  class="time jyjb-font1"><B>爆满已开班</B></SPAN>就业班--第33期(2014年11月21号)</A></LI></UL>
-</DIV>
-<DIV class="rightbottom"><IMG src="/Public/images/rightbottom.jpg"></DIV>
-<H4 class="righttitle1 lianxi"><SPAN class="fl"><SPAN 
-class="blue">课程</SPAN>咨询</SPAN></H4>
-<DIV class="rightkuang">
-<DL>
-  <DT style="padding-bottom: 20px;">		北京传智播客</DT>
-  <DD style="width: 120px; height: 40px; float: left;"><A href="http://cnrdn.com/iP66" 
-  target="_blank"><IMG border="0" alt="北京传智播客QQ在线咨询" src="/Public/images/qqmfst.jpg" 
-  width="99" height="27"></A></DD>
-  <DD style="width: 120px; height: 40px; float: left;"><A href="http://cnrdn.com/iP66" 
-  target="_blank"><IMG border="0" alt="北京传智播客QQ在线咨询" src="/Public/images/qqkczx.jpg" 
-  width="99" height="27"></A></DD></DL>
-<DL class="qqtwo">
-  <DT style="padding-bottom: 20px;">		广州传智播客</DT>
-  <DD style="width: 120px; height: 40px; float: left;"><A href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&amp;key=XzgwMDA2ODg2OF8yMDczMV84MDAwNjg4NjhfMl8" 
-  target="_blank"><IMG border="0" alt="广州传智播客QQ在线咨询" src="/Public/images/qqmfst.jpg" 
-  width="99" height="27"></A></DD>
-  <DD style="width: 120px; height: 40px; float: left;"><A href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&amp;key=XzgwMDA2ODg2OF8yMDczMV84MDAwNjg4NjhfMl8" 
-  target="_blank"><IMG border="0" alt="广州传智播客QQ在线咨询" src="/Public/images/qqkczx.jpg" 
-  width="99" height="27"></A></DD></DL>
-<DL class="qqthree">
-  <DT style="padding-bottom: 20px;">		上海传智播客</DT>
-  <DD style="width: 120px; height: 40px; float: left;"><A href="http://cnrdn.com/djUD" 
-  target="_blank"><IMG border="0" alt="上海传智播客QQ在线咨询" src="/Public/images/qqmfst.jpg" 
-  width="99" height="27"></A></DD>
-  <DD style="width: 120px; height: 40px; float: left;"><A href="http://cnrdn.com/djUD" 
-  target="_blank"><IMG border="0" alt="上海传智播客QQ在线咨询" src="/Public/images/qqkczx.jpg" 
-  width="99" height="27"></A></DD></DL>
-<DL class="qqfour">
-  <DT style="padding-bottom: 20px;">		武汉传智播客</DT>
-  <DD style="width: 120px; height: 40px; float: left;"><A href="http://cnrdn.com/shPF" 
-  target="_blank"><IMG border="0" alt="武汉传智播客QQ在线咨询" src="/Public/images/qqmfst.jpg" 
-  width="99" height="27"></A></DD>
-  <DD style="width: 120px; height: 40px; float: left;"><A href="http://cnrdn.com/shPF" 
-  target="_blank"><IMG border="0" alt="武汉传智播客QQ在线咨询" src="/Public/images/qqkczx.jpg" 
-  width="99" height="27"></A></DD></DL>
-<DL class="qqfive">
-  <DT style="padding-bottom: 20px;">		郑州传智播客</DT>
-  <DD style="width: 120px; height: 40px; float: left;"><A href="http://cnrdn.com/0LVE" 
-  target="_blank"><IMG border="0" alt="武汉传智播客QQ在线咨询" src="/Public/images/qqmfst.jpg" 
-  width="99" height="27"></A></DD>
-  <DD style="width: 120px; height: 40px; float: left;"><A href="http://cnrdn.com/0LVE" 
-  target="_blank"><IMG border="0" alt="武汉传智播客QQ在线咨询" src="/Public/images/qqkczx.jpg" 
-  width="99" height="27"></A></DD></DL>
-<DL class="qqsix">
-  <DT style="padding-bottom: 20px;">		西安传智播客</DT>
-  <DD style="width: 120px; height: 40px; float: left;"><A href="http://cnrdn.com/iP66" 
-  target="_blank"><IMG border="0" alt="西安传智播客QQ在线咨询" src="/Public/images/qqmfst.jpg" 
-  width="99" height="27"></A></DD>
-  <DD style="width: 120px; height: 40px; float: left;"><A href="http://cnrdn.com/iP66" 
-  target="_blank"><IMG border="0" alt="西安传智播客QQ在线咨询" src="/Public/images/qqkczx.jpg" 
-  width="99" height="27"></A></DD></DL><!--<dl class="qqsev">
-	<dt style="padding-bottom:20px;">
-		西安传智播客</dt>
-	<dd style="width:120px;height:40px;float:left;">
-		<a href="http://cnrdn.com/iP66" target="_blank"><img alt="西安传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
-	<dd style="width:120px;height:40px;float:left;">
-		<a href="http://cnrdn.com/iP66" target="_blank"><img alt="西安传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqkczx.jpg" width="99" /></a></dd>
-</dl>-->
-<DIV class="clear"></DIV></DIV></DIV></DIV>
-<DIV class="clear"></DIV><!-- 页面底部 -->
+
+<!-- 主站导航 -->
+</div>
+<div id="box">
+  <div class="position"><a name="pagetop"/>您现在的位置：<span class="STYLE5"><a href="http://www.itcast.cn">首页</a> &gt;&gt; 常见问题 &gt;&gt; 正文</span></div>
+  <div id="left" class="fl" style="margin-top:8px;">
+    <div class="infotop"><img src="/Public/images/infotop.gif"/></div>
+    <div class="left_content1">
+      <div id="printarea">
+
+        <h1 class="infotitle"><?php echo $data['q']['title']?></h1>
+        <div class="editer">更新时间:<?php echo $data['q']['time']?> 来源:yi利战斗小组</div>
+        <div class="infor">
+         <?php echo $data['q']['content']?>
+
+        </div>
+      </div>
+        <?php if($data['s']){?>
+       <div class="pre">
+	               上一篇：<a target="_blank" href="/index.php/Home/problem/xq?id=<?php echo $data['s']['id']?>"><?php echo $data['s']["title"];?></a>
+       	  </div>
+        <?php }?>
+          <?php if($data['x']){?>
+      <div class="next">
+	              下一篇：<a target="_blank" href="/index.php/Home/problem/xq?id=<?php echo $data['x']['id']?>"><?php echo $data['x']["title"];?></a>
+      	  </div>
+          <?php }?>
+
+      <div class="clear"></div>
+      <div class="share">
+	  <!-- Baidu share BEGIN -->
+    <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+        <span class="bds_more">分享到：</span>
+        <a class="bds_sqq">QQ好友</a>
+		<a class="bds_qzone">QQ空间</a>
+		<a class="bds_tqq">腾讯微博</a>
+		<a class="bds_tsina">新浪微博</a>
+		<a class="bds_tieba">百度贴吧</a>
+		<a class="shareCount"></a>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="fanhui" href='/index.php/Home/problem/index'>返回目录</a>
+    </div>
+<!-- Baidu share END 需在页面底部添加baidushare.js -->	  
+	  </div>
+	  <div class="clear"></div>
+            <div class="clear"></div>
+      <div class="ad">
+      <!-- 广告区 -->
+      <a href="http://java.itcast.cn/news/e393b086/ebce/4f94/9d48/94ed86bcf5ef.shtml" target="_blank"><img border="0" src="http://www.itcast.cn/files/file/201206/20120620111629490.jpg" width="620" /></a> 
+      <!-- 广告区 -->
+      </div>
+    </div>
+    <div><img src="/Public/images/leftbottom.gif"/></div>
+  </div>
+  <div id="right" class="fl">
+    <h4 class="righttitle1"><span class="fl">PHP视频下载</span><span class="fr"><a href="http://php.itcast.cn/php/video.shtml">+MORE</a></span></h4>
+    <ul class="rightkuang">
+       <ul>
+<li><a href="http://php.itcast.cn/news/caa9b58b/37b1/47f6/98e3/bd3600c98cfc.shtml">PHP入门到精通教程</a></li>
+<li><a href="http://php.itcast.cn/news/7acb031c/5958/42d8/be84/47796e2c1243.shtml">zend framework</a></li>
+<li><a href="http://php.itcast.cn/news/a632aeea/df9a/46bf/92f1/896679400a37.shtml">smarty模板引擎 </a></li>
+<li><a href="http://php.itcast.cn/news/2889f5ee/060a/4014/a6a8/cff645e79925.shtml">Ajax技术 </a></li>
+<li><a href="http://php.itcast.cn/news/166b4e78/01b0/4017/96ae/764cd57432a8.shtml">页面静态化</a></li>
+<li><a href="http://php.itcast.cn/news/50b67f71/dba5/4302/8749/b62bcc314bd0.shtml">Memcached缓存技术</a></li>
+<li><a href="http://php.itcast.cn/news/61ee8515/a34e/477d/9d5d/662dbff5e161.shtml#">Mysql优化</a></li>
+<li><a href="http://php.itcast.cn/news/fd551fd3/9db4/4360/9afa/57f438973108.shtml">轻松搞定网页设计</a></li>
+<li><a href="http://php.itcast.cn/news/5805c1ea/1b18/41eb/8fcc/6234659d8b40.shtml">PHP数据库陷阱</a></li>
+<li><a href="http://php.itcast.cn/news/94c86c32/a7c1/4d2f/b2b4/ded74c6e1113.shtml">PHP网上支付技术</a></li>
+<li><a href="http://php.itcast.cn/news/47d47284/bd39/4322/8aa6/fd48cd51f9df.shtml">PHP报表视频教程</a></li>
+<li><a href="http://php.itcast.cn/news/42366bc5/fc13/43f1/a69b/bc57132cfdc7.shtml">Linux视频教程</a></li>
+<li><a href="http://php.itcast.cn/news/c31baf40/8fa5/4803/ac4d/6e27086d009f.shtml">Oracle视频教程</a></li>
+</ul>
+
+    </ul>
+    <div class="rightbottom"><img src="/Public/images/rightbottom.jpg"/></div>
+    <h4 class="righttitle1"><span class="fl">.Net视频下载</span><span class="fr"><a href="http://net.itcast.cn/net/video.shtml">+MORE</a></span></h4>
+    <ul class="rightkuang">
+      <ul>
+<li><a href="http://net.itcast.cn/news/00666f00/c4c5/4aad/99e1/45f6673f7a31.shtml" target="_blank">C#编程基础视频教程</a></li>
+<li><a href="http://net.itcast.cn/news/770b900e/fcd4/4f10/bb25/bb0e99f0ab92.shtml" target="_blank">C#面向对象基础视频教程 </a></li>
+<li><a href="http://net.itcast.cn/news/047a81e7/616f/44fa/b103/2c38e5b51b48.shtml" target="_blank">wpf基础视频教程 </a></li>
+<li><a href="http://net.itcast.cn/news/4048960e/9f6f/4d71/8da4/07639e2bef0b.shtml" target="_blank">数据绑定和数据库开发基础 </a></li>
+<li><a href="http://net.itcast.cn/news/c804d7df/95b0/4e78/9505/7f6157220e59.shtml" target="_blank">Ado.Net项目开发教程 </a></li>
+<li><a href="http://net.itcast.cn/news/509b1bc4/5afc/4fe4/adf4/3757fc78b70c.shtml" target="_blank">HTML教程 </a></li>
+<li><a href="http://net.itcast.cn/news/bd4612c7/a940/4585/9153/487bbcc7fcd3.shtml" target="_blank">JavaScript教程</a></li>
+<li><a href="http://net.itcast.cn/news/68ac18e3/f435/45e8/999f/db6f32f9aeac.shtml" target="_blank">Dom教程</a></li>
+<li><a href="http://net.itcast.cn/subject/tegongnet/index.html" target="_blank">特供ASP.Net视频教程 </a></li>
+<li><a href="http://bbs.itcast.cn/thread-11528-1-1.html" target="_blank">Linux下运行ASP.Net网站(Mono)视频教程</a></li>
+<li><a href="http://bbs.itcast.cn/thread-11130-1-1.html" target="_blank">写程序自动识别验证码视频教程</a></li>
+<li><a href="http://bbs.itcast.cn/thread-14836-1-1.html" target="_blank">大型互联网技术Memcached视频教程</a></li>
+<li><a href="http://bbs.itcast.cn/thread-15261-1-1.html" target="_blank">ASP.Net MVC入门视频教程</a></li>
+<li><a href="http://bbs.itcast.cn/thread-15273-1-1.html" target="_blank">Unity3D游戏开发入门视频教程</a></li>
+<li><a href="http://bbs.itcast.cn/thread-11228-1-1.html" target="_blank">人事管理系统开发视频教程</a></li>
+<li><a href="http://bbs.itcast.cn/thread-19987-1-1.html" target="_blank">&quot;工作流&quot;开发视频教程</a></li>
+<li><a href="http://net.itcast.cn/subject/arrogant/index.shtml" target="_blank">毕业设计完整源码+文档下载</a></li>
+</ul>
+
+    </ul>
+    <div class="rightbottom"><img src="/Public/images/rightbottom.jpg"/></div>
+    <h4 class="righttitle1"><span class="fl">网页平面视频下载</span><span class="fr"><a href="http://icd.itcast.cn/icd/video.shtml">+MORE</a></span></h4>
+    <ul class="rightkuang">
+      <ul>
+<li><a href="http://icd.itcast.cn/news/1829be2a/13c9/4bd1/b5a2/f04769016711.shtml" target="_blank">张鹏老师带你一周hold住html+css视频教程</a></li>
+<li><a href="http://icd.itcast.cn/news/feef0472/0f77/42e6/ac46/f456d31c49f7.shtml" target="_blank">轻松学习网页设计系列视频教程</a></li>
+<li><a href="http://icd.itcast.cn/news/20121121/13184523595.shtml" target="_blank">张鹏_带你轻松学习Flash动画制作 </a></li>
+<li><a href="http://icd.itcast.cn/news/20121219/15313045800.shtml" target="_blank">老贺 带你轻松学习Photoshop图像处理</a></li>
+<li><a href="http://icd.itcast.cn/news/20130110/17272711564.shtml" target="_blank">老贺 带你轻松学习Illustrator矢量绘制</a></li>
+<li><a href="http://icd.itcast.cn/news/20130608/16422926437.shtml" target="_blank">UI图标设计教程视频_李凤辉</a></li>
+<li><a href="http://icd.itcast.cn/news/20130809/17221658761.shtml" target="_blank">网页与UI设计从入门到精通视频教程</a></li>
+<li><a href="http://icd.itcast.cn/news/20130810/09565870120.shtml" target="_blank">UI设计视频教程-快速掌握水晶质感图标</a></li>
+<li><a href="http://icd.itcast.cn/news/20130822/18590628357.shtml" target="_blank">ps平面设计视频教程-色彩万能搭配法</a></li>
+<li><a href="http://icd.itcast.cn/news/20130823/11463851220.shtml" target="_blank">AI字体设计视频教程-字体设计决定产品未来</a></li>
+<li><a href="http://icd.itcast.cn/news/20130823/13333781356.shtml" target="_blank">DW建站视频教程-整站项目的制作技巧和方法</a></li>
+<li><a href="http://icd.itcast.cn/news/20140301/16045426667.shtml" target="_blank">如何成为一名优秀的UI设计师</a></li>
+<li><a href="http://icd.itcast.cn/news/20140301/16144631152.shtml" target="_blank">UI设计视频教程-从无到有APP视觉表现</a></li>
+<li><a href="http://icd.itcast.cn/news/20140301/16174712734.shtml" target="_blank">PS设计视频教程-ps精品课程实战演练</a></li>
+<li><a href="http://icd.itcast.cn/news/20140301/16211421279.shtml" target="_blank">Photoshop教程视频-黑白色彩的力量</a></li>
+<li><a href="http://icd.itcast.cn/news/20140301/16225815260.shtml" target="_blank">Photoshop快速入门视频教程-内部绝密</a></li>
+<li><a href="http://icd.itcast.cn/news/20140301/16253274903.shtml" target="_blank">PS质感图标大集合&amp;AI矢量主题</a></li>
+<li><a href="http://icd.itcast.cn/news/20140301/16290897286.shtml" target="_blank">Photoshop网店设计教程-网店设计全攻略</a></li>
+<li><a href="http://icd.itcast.cn/news/20140301/16350016686.shtml" target="_blank">Ps设计视频教程-Banner设计制作的技巧</a></li>
+<li><a href="http://icd.itcast.cn/news/20140301/16402220495.shtml" target="_blank">Ps视频教程-教你打造网店视觉促销设计</a></li>
+<li><a href="http://icd.itcast.cn/news/20140320/16252477697.shtml" target="_blank">JavaScrip网页特效精华制作</a></li>
+<li><a href="http://icd.itcast.cn/news/20140320/18165268257.shtml" target="_blank">jQuery快速入门到掌握核心技术</a></li>
+</ul>
+
+    </ul>
+    <div class="rightbottom"><img src="/Public/images/rightbottom.jpg" /></div>
+    <h4 class="righttitle1"><span class="fl">JAVA视频下载</span><span class="fr"><a href="http://java.itcast.cn/java/video.shtml">+MORE</a></span></h4>
+    <ul class="rightkuang">
+      <ul>
+<li><a href="http://java.itcast.cn/news/e393b086/ebce/4f94/9d48/94ed86bcf5ef.shtml" target="_blank">史上最适合初学者入门的Java基础视频</a></li>
+<li><a href="http://java.itcast.cn/news/97682098/c17e/4f15/8c2e/44c97c9c5df4.shtml" target="_blank">30天轻松掌握JavaWeb视频 </a></li>
+<li><a href="http://java.itcast.cn/news/39ecbf79/06c2/42bb/842a/39e77de17b25.shtml" target="_blank">8天快速掌握Android视频</a></li>
+<li><a href="http://java.itcast.cn/news/dbfd20f1/f4b1/412d/9b40/c1a81b8bf1da.shtml" target="_blank">张孝祥2010年贺岁视频Java高新技术 </a></li>
+<li><a href="http://java.itcast.cn/news/119602f3/4265/460c/a354/29c111b2c2bf.shtml" target="_blank">JavaWEB开发（JSP+Servlet）视频 </a></li>
+<li><a href="http://java.itcast.cn/news/ee7c6ba4/46eb/494f/8656/8327b1d83c0a.shtml" target="_blank">传智播客JDBC视频教程 </a></li>
+<li><a href="http://java.itcast.cn/news/fc5d33c4/882e/4297/87f7/b6e959417503.shtml" target="_blank">传智播客_struts2实用简洁版视频 </a></li>
+<li><a href="http://java.itcast.cn/news/3eb365f8/604f/43c7/9e2c/8bc0e22d3d9c.shtml" target="_blank">张孝祥Struts开发视频教程 </a></li>
+<li><a href="http://java.itcast.cn/news/8308d118/740a/4dcd/8dbf/c73d2fe5bc60.shtml" target="_blank">传智播客AJax技术入门视频教程</a></li>
+<li><a href="http://java.itcast.cn/news/7d6bbd26/0b3b/4fc7/829b/74f8225eb996.shtml" target="_blank">传智播客Hibernate视频教程 </a></li>
+</ul>
+
+    </ul>
+    <div class="rightbottom"><img src="/Public/images/rightbottom.jpg" /></div>
+  </div>
+</div>
+<div class="clear"></div>
+<!-- 页面底部 -->
 
 <div id="footer">
   <div class="footer_info">

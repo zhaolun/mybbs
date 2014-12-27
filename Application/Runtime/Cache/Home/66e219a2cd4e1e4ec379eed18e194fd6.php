@@ -24,18 +24,12 @@
 <div id="header">
 	<!-- 页面顶部 -->
 <div class="top1">
-<<<<<<< HEAD
-	<a href='/index.php/Home/teshu/login'>登陆</a>
-	<a href='/index.php/Home/teshu/register'>注册</a>
-	<a href='/index.php/Home/teshu/zhaohui'>找回密码</a>
-=======
 	<p style="background:url(/Public/images/hot.png) 107px 10px no-repeat; padding-right:35px;" class="fl"><span class="blue">专业的IT培训机构！</span></p>
 	<p class="fr"><form method="post" action="">
 		用户名：<input type="text" name="">　密码：<input type="password" name="">　<input type="submit" value="登录">
 	</form>
 	
 	</p>
->>>>>>> 449a83c8f8debf8f1f965ae7390d94001a442df7
 </div>
 
 	<div class="clear"></div>
@@ -118,151 +112,30 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 	<a class="jiathis_counter_style"></a>
 </div>
 <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>-->
-<DIV id="box">
-<DIV style="margin-top: 3px;" id="left" class="fl">
-<DIV><IMG src="/Public/images/lefttop.gif"></DIV>
-<DIV class="jyjb">
-<DIV><IMG src="/Public/images/kcjs-tu.jpg"></DIV>﻿
-<DIV class="kcjs">
-<STYLE type="text/css">
-.kcnr-table{ line-height:20px;}
-	.kcnr-table li{ list-style-image:url(http://www.itcast.cn/files/image/201207/20120718144154342.jpg); margin-left:15px;;</STYLE>
-</DIV>
-<?php if(is_array($info)): foreach($info as $key=>$vo): ?><UL>
-  <LI style="width: 141px;" class="fl"><IMG src="/Public/images/phpjc.jpg"></LI>
-  <LI style="width: 470px;" class="fl jyjb-11-font1"><B class="jyjb-11-font2"><A 
-<<<<<<< HEAD
-  href="http://www.mybbs.com/index.php/Home/project/jichu" 
-=======
-  href="http://www.bbs.com/index.php/Home/project/jichu" 
->>>>>>> 449a83c8f8debf8f1f965ae7390d94001a442df7
-  target="_blank"><?php echo ($vo["pei_class"]); ?></A></B>
-  <P><?php echo ($vo["pei_intro"]); ?></P>
-  </LI></UL>
-  
-<TABLE class="kcnr-table" border="0" cellSpacing="0" cellPadding="0" 
-  width="99%">
-  <TBODY>
-  <TR>
-    <TD><?php echo ($vo["pei_class"]); ?>课程名称</TD>
-    <TD><STRONG><a href="http://www.mybbs.com/index.php/Home/project/kecheng?id=<?php echo ($vo["pei_id"]); ?>" target="_blank">点击查看<?php echo ($vo["pei_class"]); ?>课程详细介绍</a></STRONG></TD></TR>
-  <TR>
-    <TD width="22%"><BR><?php echo ($vo["bbs_jieduan"]); ?></TD>
-    <TD width="78%">
-      <P></P>
-      <UL>
-        <?php echo ($vo["neirong"]); ?></UL></TD></TR>
-  
-  </TBODY></TABLE><?php endforeach; endif; ?>
-<BR>
-<BR></DIV>
-<DIV><IMG src="/Public/images/leftbottom.gif"></DIV>
-<DIV></DIV></DIV>
-<DIV id="right" class="fl">
-<H4 style="margin-top: 10px;" class="righttitle1"><SPAN 
-class="fl">PHP培训开班信息</SPAN></H4>
-<DIV class="jyjb-left">
-<UL>
-  <LI style="color: rgb(81, 81, 81); border-bottom-color: currentColor; border-bottom-width: medium; border-bottom-style: none; float: left;"><A 
-  href="http://php.itcast.cn/php/course/base.shtml"><B><FONT style="color: rgb(81, 81, 81);">PHP基础班</FONT></B></A></LI>
-  <BR></UL>
-<UL style="clear: both;">
-  <LI><A href="http://php.itcast.cn/php/course/base.shtml" target="_blank"><SPAN 
-  class="time jyjb-font2"><B>预约报名</B></SPAN>北京--第34期(2015年01月10号)</A></LI>
-  <LI><A href="http://php.itcast.cn/php/course/base.shtml" target="_blank"><SPAN 
-  class="time jyjb-font1"><B>爆满已开班</B></SPAN>北京--第33期(2014年11月27号)</A></LI>
-  <LI><A href="http://php.itcast.cn/php/course/base.shtml" target="_blank"><SPAN 
-  class="time jyjb-font2"><B>预约报名</B></SPAN>广州--第08期(2014年12月25号)</A></LI></UL>
-<UL>
-  <LI style="color: rgb(81, 81, 81); border-bottom-color: currentColor; border-bottom-width: medium; border-bottom-style: none; float: left;"><A 
-  href="http://php.itcast.cn/php/course/php.shtml"><B><FONT style="color: rgb(81, 81, 81);">PHP就业班</FONT></B></A></LI>
-  <BR></UL>
-<UL style="clear: both;">
-  <LI><A href="http://php.itcast.cn/php/course/php.shtml" target="_blank"><SPAN 
-  class="time jyjb-font2"><B>预约报名</B></SPAN>北京--第34期(2015年01月05号)</A></LI>
-  <LI><A href="http://php.itcast.cn/php/course/php.shtml" target="_blank"><SPAN 
-  class="time jyjb-font1"><B>爆满已开班</B></SPAN>北京--第33期(2014年11月21号)</A></LI>
-  <LI><A href="http://php.itcast.cn/php/course/php.shtml" target="_blank"><SPAN 
-  class="time jyjb-font2"><B>预约报名</B></SPAN>广州--第07期(2014年12月18号)</A></LI></UL>
-<UL>
-  <LI style="color: rgb(81, 81, 81); border-bottom-color: currentColor; border-bottom-width: medium; border-bottom-style: none; float: left;"><A 
-  href="http://php.itcast.cn/news/981030b0/96d5/4005/9ae4/eba8bac4195a.shtml"><B><FONT 
-  style="color: rgb(81, 81, 81);">PHP远程班</FONT></B></A></LI><BR></UL>
-<UL style="clear: both;">
-  <LI><A href="http://php.itcast.cn/news/981030b0/96d5/4005/9ae4/eba8bac4195a.shtml" 
-  target="_blank"><SPAN 
-  class="time jyjb-font2"><B>预约报名</B></SPAN>基础班--第34期(2015年01月10号)</A></LI>
-  <LI><A href="http://php.itcast.cn/news/981030b0/96d5/4005/9ae4/eba8bac4195a.shtml" 
-  target="_blank"><SPAN 
-  class="time jyjb-font1"><B>爆满已开班</B></SPAN>基础班--第33期(2014年11月27号)</A></LI>
-  <LI><A href="http://php.itcast.cn/news/981030b0/96d5/4005/9ae4/eba8bac4195a.shtml" 
-  target="_blank"><SPAN 
-  class="time jyjb-font2"><B>预约报名</B></SPAN>就业班--第34期(2015年01月05号)</A></LI>
-  <LI><A href="http://php.itcast.cn/news/981030b0/96d5/4005/9ae4/eba8bac4195a.shtml" 
-  target="_blank"><SPAN 
-  class="time jyjb-font1"><B>爆满已开班</B></SPAN>就业班--第33期(2014年11月21号)</A></LI></UL>
-</DIV>
-<DIV class="rightbottom"><IMG src="/Public/images/rightbottom.jpg"></DIV>
-<H4 class="righttitle1 lianxi"><SPAN class="fl"><SPAN 
-class="blue">课程</SPAN>咨询</SPAN></H4>
-<DIV class="rightkuang">
-<DL>
-  <DT style="padding-bottom: 20px;">		北京传智播客</DT>
-  <DD style="width: 120px; height: 40px; float: left;"><A href="http://cnrdn.com/iP66" 
-  target="_blank"><IMG border="0" alt="北京传智播客QQ在线咨询" src="/Public/images/qqmfst.jpg" 
-  width="99" height="27"></A></DD>
-  <DD style="width: 120px; height: 40px; float: left;"><A href="http://cnrdn.com/iP66" 
-  target="_blank"><IMG border="0" alt="北京传智播客QQ在线咨询" src="/Public/images/qqkczx.jpg" 
-  width="99" height="27"></A></DD></DL>
-<DL class="qqtwo">
-  <DT style="padding-bottom: 20px;">		广州传智播客</DT>
-  <DD style="width: 120px; height: 40px; float: left;"><A href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&amp;key=XzgwMDA2ODg2OF8yMDczMV84MDAwNjg4NjhfMl8" 
-  target="_blank"><IMG border="0" alt="广州传智播客QQ在线咨询" src="/Public/images/qqmfst.jpg" 
-  width="99" height="27"></A></DD>
-  <DD style="width: 120px; height: 40px; float: left;"><A href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&amp;key=XzgwMDA2ODg2OF8yMDczMV84MDAwNjg4NjhfMl8" 
-  target="_blank"><IMG border="0" alt="广州传智播客QQ在线咨询" src="/Public/images/qqkczx.jpg" 
-  width="99" height="27"></A></DD></DL>
-<DL class="qqthree">
-  <DT style="padding-bottom: 20px;">		上海传智播客</DT>
-  <DD style="width: 120px; height: 40px; float: left;"><A href="http://cnrdn.com/djUD" 
-  target="_blank"><IMG border="0" alt="上海传智播客QQ在线咨询" src="/Public/images/qqmfst.jpg" 
-  width="99" height="27"></A></DD>
-  <DD style="width: 120px; height: 40px; float: left;"><A href="http://cnrdn.com/djUD" 
-  target="_blank"><IMG border="0" alt="上海传智播客QQ在线咨询" src="/Public/images/qqkczx.jpg" 
-  width="99" height="27"></A></DD></DL>
-<DL class="qqfour">
-  <DT style="padding-bottom: 20px;">		武汉传智播客</DT>
-  <DD style="width: 120px; height: 40px; float: left;"><A href="http://cnrdn.com/shPF" 
-  target="_blank"><IMG border="0" alt="武汉传智播客QQ在线咨询" src="/Public/images/qqmfst.jpg" 
-  width="99" height="27"></A></DD>
-  <DD style="width: 120px; height: 40px; float: left;"><A href="http://cnrdn.com/shPF" 
-  target="_blank"><IMG border="0" alt="武汉传智播客QQ在线咨询" src="/Public/images/qqkczx.jpg" 
-  width="99" height="27"></A></DD></DL>
-<DL class="qqfive">
-  <DT style="padding-bottom: 20px;">		郑州传智播客</DT>
-  <DD style="width: 120px; height: 40px; float: left;"><A href="http://cnrdn.com/0LVE" 
-  target="_blank"><IMG border="0" alt="武汉传智播客QQ在线咨询" src="/Public/images/qqmfst.jpg" 
-  width="99" height="27"></A></DD>
-  <DD style="width: 120px; height: 40px; float: left;"><A href="http://cnrdn.com/0LVE" 
-  target="_blank"><IMG border="0" alt="武汉传智播客QQ在线咨询" src="/Public/images/qqkczx.jpg" 
-  width="99" height="27"></A></DD></DL>
-<DL class="qqsix">
-  <DT style="padding-bottom: 20px;">		西安传智播客</DT>
-  <DD style="width: 120px; height: 40px; float: left;"><A href="http://cnrdn.com/iP66" 
-  target="_blank"><IMG border="0" alt="西安传智播客QQ在线咨询" src="/Public/images/qqmfst.jpg" 
-  width="99" height="27"></A></DD>
-  <DD style="width: 120px; height: 40px; float: left;"><A href="http://cnrdn.com/iP66" 
-  target="_blank"><IMG border="0" alt="西安传智播客QQ在线咨询" src="/Public/images/qqkczx.jpg" 
-  width="99" height="27"></A></DD></DL><!--<dl class="qqsev">
-	<dt style="padding-bottom:20px;">
-		西安传智播客</dt>
-	<dd style="width:120px;height:40px;float:left;">
-		<a href="http://cnrdn.com/iP66" target="_blank"><img alt="西安传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
-	<dd style="width:120px;height:40px;float:left;">
-		<a href="http://cnrdn.com/iP66" target="_blank"><img alt="西安传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqkczx.jpg" width="99" /></a></dd>
-</dl>-->
-<DIV class="clear"></DIV></DIV></DIV></DIV>
-<DIV class="clear"></DIV><!-- 页面底部 -->
+<div id="box">
+		<div id="left" class="fl">
+			<div><img src="/Public/images/lefttop.gif"/></div>
+			<div class="left_content">
+				<h2 class="title1"><span class="STYLE3">常见</span><span class="STYLE2">问题</span></h2>
+				<h3 class="title2">热点问题</h3>
+				<ul class="links">
+﻿<ul>
+<?php if(is_array($info)): foreach($info as $key=>$it): ?><li><a href="/index.php/Home/problem/xq?id=<?php echo ($it["id"]); ?>" target="_blank"><?php echo ($it["title"]); ?></a><?php echo ($it["time"]); ?></li><?php endforeach; endif; ?>
+</ul>
+ 
+				</ul>
+				<h3 class="title2">PHP相关问题</h3>
+				<ul class="links">
+<ul>
+<?php if(is_array($list)): foreach($list as $key=>$it): ?><li><a href="/index.php/Home/problem/xq?id=<?php echo ($it["id"]); ?>"><?php echo ($it["title"]); ?></a><img height="15" src="/Public/images/new.gif" width="29" /></li><?php endforeach; endif; ?>
+</ul>
+
+			</ul>
+			<div class="rightbottom"><img src="/Public/images/rightbottom.jpg"/></div>
+	  </div>
+	</div>
+	<div class="clear"></div>
+ <!-- 页面底部 -->
 
 <div id="footer">
   <div class="footer_info">
