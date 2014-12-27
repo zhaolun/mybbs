@@ -25,7 +25,11 @@
 	<!-- 页面顶部 -->
 <div class="top1">
 	<p style="background:url(/Public/images/hot.png) 107px 10px no-repeat; padding-right:35px;" class="fl"><span class="blue">专业的IT培训机构！</span></p>
-	<p class="fr"><a target="_blank" href="http://www.itcast.cn/channel/job.shtml">就业宣言</a><a target="_blank" href="http://www.itcast.cn/channel/flow.shtml">报名流程</a><a target="_blank" href="http://open.itcast.cn">免费公开课</a><a target="_blank" href="http://dvd.itcast.cn">免费学习光盘</a><a target="_blank" href="http://www.itcast.cn/channel/book.shtml">原创教材</a><a target="_blank" href="http://bbs.itcast.cn/zine.php">传智特刊</a><a target="_blank" href="http://bbs.itcast.cn">技术论坛</a></p>
+	<p class="fr"><form method="post" action="">
+		用户名：<input type="text" name="">　密码：<input type="password" name="">　<input type="submit" value="登录">
+	</form>
+	
+	</p>
 </div>
 
 	<div class="clear"></div>
@@ -235,6 +239,38 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 <div class="clear"></div>
 <ul>
 <?php if(is_array($infoc)): foreach($infoc as $key=>$it): ?><li><span class="STYLE6">[php学员]</span><a href="http://php.itcast.cn/news/fb4ddfd4/3e47/496a/8c63/7fbe5463bfd3.shtml"><?php echo ($it["content"]); ?></a></li><?php endforeach; endif; ?>
+<script type="text/javascript">
+			<!--
+				function register(){
+					$("#myform").attr("action","/index.php/Home/index/register");
+					$("#button").attr("value","注册");
+					$("#span").html("<span style='color:blue;' onclick='login()'>登录</span>");
+					$("#tele").show();
+				}
+				function forget(){
+					$("#forget").toggle();
+					$("#fname").focus();
+				}
+				function login(){
+					$("#myform").attr("action","/index.php/Home/index/login");
+					$("#button").attr("value","登录");
+					$("#tele").hide();
+					$("#span").html("<span style='color:blue;' onclick='register()'>注册</span>");
+				}
+				function telyzm(){
+					var name=$("#fname").val();
+					var tel=$("#ftel").val();
+					$.ajax({
+						type: "GET",
+						url: "/index.php/Home/index/send_message",
+						data: "name="+name+"&tel="+tel,
+						success: function(msg){
+							alert(msg);
+						}
+					}); 
+				}
+			//-->
+			</script>
 </ul>
 </div>
 <div class="ganyanleft fr3">
@@ -281,38 +317,69 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 				<div></div>
 		</div>		
 		<div id="right" class="fl">	
-		<h4 class="righttitle1" style="margin-top:10px;"><span class="fl">PHP培训开班信息</span></h4>
-			<div class="jyjb-left" >
-			<ul>
-<li style="border-bottom: medium none; float: left; color: #515151"><a href="http://php.itcast.cn/php/course/base.shtml"><b><font style="color: #515151">PHP基础班</font></b></a></li>
-<br />
-</ul>
-<ul style="clear: both">
-<li><a href="http://php.itcast.cn/php/course/base.shtml" target="_blank"><span class="time jyjb-font2"><b>预约报名</b></span>北京--第34期(2015年01月10号)</a></li>
-<li><a href="http://php.itcast.cn/php/course/base.shtml" target="_blank"><span class="time jyjb-font1"><b>爆满已开班</b></span>北京--第33期(2014年11月27号)</a></li>
-<li><a href="http://php.itcast.cn/php/course/base.shtml" target="_blank"><span class="time jyjb-font2"><b>预约报名</b></span>广州--第08期(2014年12月25号)</a></li>
-</ul>
-<ul>
-<li style="border-bottom: medium none; float: left; color: #515151"><a href="http://php.itcast.cn/php/course/php.shtml"><b><font style="color: #515151">PHP就业班</font></b></a></li>
-<br />
-</ul>
-<ul style="clear: both">
-<li><a href="http://php.itcast.cn/php/course/php.shtml" target="_blank"><span class="time jyjb-font2"><b>预约报名</b></span>北京--第34期(2015年01月05号)</a></li>
-<li><a href="http://php.itcast.cn/php/course/php.shtml" target="_blank"><span class="time jyjb-font1"><b>爆满已开班</b></span>北京--第33期(2014年11月21号)</a></li>
-<li><a href="http://php.itcast.cn/php/course/php.shtml" target="_blank"><span class="time jyjb-font2"><b>预约报名</b></span>广州--第07期(2014年12月18号)</a></li>
-</ul>
-<ul>
-<li style="border-bottom: medium none; float: left; color: #515151"><a href="http://php.itcast.cn/news/981030b0/96d5/4005/9ae4/eba8bac4195a.shtml"><b><font style="color: #515151">PHP远程班</font></b></a></li>
-<br />
-</ul>
-<ul style="clear: both">
-<li><a href="http://php.itcast.cn/news/981030b0/96d5/4005/9ae4/eba8bac4195a.shtml" target="_blank"><span class="time jyjb-font2"><b>预约报名</b></span>基础班--第34期(2015年01月10号)</a></li>
-<li><a href="http://php.itcast.cn/news/981030b0/96d5/4005/9ae4/eba8bac4195a.shtml" target="_blank"><span class="time jyjb-font1"><b>爆满已开班</b></span>基础班--第33期(2014年11月27号)</a></li>
-<li><a href="http://php.itcast.cn/news/981030b0/96d5/4005/9ae4/eba8bac4195a.shtml" target="_blank"><span class="time jyjb-font2"><b>预约报名</b></span>就业班--第34期(2015年01月05号)</a></li>
-<li><a href="http://php.itcast.cn/news/981030b0/96d5/4005/9ae4/eba8bac4195a.shtml" target="_blank"><span class="time jyjb-font1"><b>爆满已开班</b></span>就业班--第33期(2014年11月21号)</a></li>
-</ul>
-
+		<h4 class="righttitle1" style="margin-top:10px;"><span class="fl">
+		<?php if($_SESSION["username"] == '' ): ?>用户登录<?php else: ?>用户中心<?php endif; ?></span></h4>
+			<div class="jyjb-left" ><?php if($_SESSION["username"] == '' ): ?><form method="post" action="/index.php/Home/index/login" id="myform">
+				用户名：<input type="text" name="username" id="name"><br>
+				密　码：<input type="password" name="password" id="pwd"><br>
+				<span style="display:none" id="tele">手　机：<input type="text" name="tel" id="tel"><br></span>
+				验证码：<input type="text" name="yzm" id="yzm" size=5><IMG src="/admin.php/Home/index/yzm" id="captcha"> <A style="cursor:pointer" onclick="$('#captcha').attr('src','/admin.php/Home/index/yzm?count=Math.random()');">换</A><br>
+				<input type="submit" value="登录" id="button"><span id="span"><span style="color:blue;" onclick="register()">注册</span></span><span style="color:blue;" onclick="forget()">忘记密码</span><br>
+			</form>
+			
+			合作登录：<img src="/Public/images/qq_login.png" style="cursor:pointer;" onclick='toQzoneLogin()'>
+			<script type="text/javascript">
+            var childWindow;
+            function toQzoneLogin()
+            {
+                childWindow = window.open("oauth/index.php","TencentLogin","width=450,height=320,menubar=0,scrollbars=1, resizable=1,status=1,titlebar=0,toolbar=0,location=1");
+            } 
+            
+            function closeChildWindow()
+            {
+                childWindow.close();
+            }
+			</script>
+			<?php else: ?>欢迎您：<font color=red><?php echo ($_SESSION["username"]); ?></font>　<a href="/index.php/Home/index/loginout">退出</a><?php endif; ?>
+			
             </div>
+
+		<span id="forget" style="display:none;"><h4 class="righttitle1" style="margin-top:10px;">密码找回</span></h4>
+			<div class="jyjb-left" >
+			<form method="post" action="/index.php/Home/index/findpwd" onsubmit="return sub()">
+				用户名：<input type="text" name="username" id="fname"><br>
+				手　机：<input type="text" name="tel" id="ftel"><br>
+				验证码：<input type="text" name="yzm" id="fyzm" size=5>
+				<input type="button" value="获取验证码" onclick="telyzm()"><br>
+				新密码：<input type="password" name="password" id="newpwd"><br>
+				　　　　　<input type="submit" value=" 确定 " id="button">
+			</form>			
+            </div></span>
+			<script type="text/javascript">
+			<!--
+				function sub(){
+					var yzm=$("#fyzm").val();
+					var status=0;
+					$.ajax({
+						type: "GET",
+						url: "/index.php/Home/index/ajax_message",
+						data: "yzm="+yzm,
+						async:false,
+						success: function(msg){
+							status=msg;
+						}
+					});
+					if(status==0){
+						alert("验证码输入有误!");
+						return false;
+					}else{
+						return true;
+					}
+				}
+			//-->
+			</script>
+
+			
 			<div class="rightbottom"><img src="/Public/images/rightbottom.jpg"  /></div>		
 			<h4 class="righttitle1 zhaopin"><span class="blue">最新</span>企业招聘</h4>
 			<div class="rightkuang1">
