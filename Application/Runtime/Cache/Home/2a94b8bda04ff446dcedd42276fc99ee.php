@@ -18,8 +18,8 @@
 <script type="text/javascript" src="/Public/js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript">
 <!--
-	var logo2=$("#logo2").val();
-	alert(logo2);
+	//var logo2=$("#logo2").val();
+	//alert(logo2);
 //-->
 </script>
 <script type="text/javascript" src="/Public/js/imageschange.js"></script>

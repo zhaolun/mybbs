@@ -14,8 +14,14 @@
 <link href="/Public/css/nav/nav_main.css" type="text/css" rel="stylesheet" />
 <link href="/Public/css/imageswitch.css" type="text/css" rel="stylesheet" />
 <link href="/Public/css/webim.css" type="text/css" rel="stylesheet" />
-<link type="image/x-icon" rel="shortcut icon" href="favicon.ico" /> 
+<link type="image/x-icon" rel="shortcut icon" href="favicon.ico" />
 <script type="text/javascript" src="/Public/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+<!--
+	//var logo2=$("#logo2").val();
+	//alert(logo2);
+//-->
+</script>
 <script type="text/javascript" src="/Public/js/imageschange.js"></script>
 <script type="text/javascript" id="bdshare_js" data="type=tools" ></script>
 <script type="text/javascript" id="bdshell_js"></script>
@@ -31,7 +37,7 @@
 
 	<div class="clear"></div>
 	<div class="top2">
-		<h1 class="fl"><a href="/index.php"><img border="0" class="png" alt="传智播客php培训学院" src="/Public/images/logo.jpg"></a></h1>
+		<h1 class="fl"><a href="/index.php"><img border="0" class="png" alt="传智播客php培训学院" src="<?php echo ($logoinfo["0"]["logo_path"]); ?>"></a></h1>
 		<div class="fl toubu">
 		<div class="toubu-font1">PHP学院</div>
 			 <!-- 校区 -->
@@ -391,6 +397,7 @@ size:12px;background-color:#ecf6fd;">
 <link type="text/css" rel="stylesheet" href="/kefu2/ie.css" mce_href="/kefu2/ie.css" />
 <![endif]-->
 <div class="fixed">
+<input type="hidden" id="logo2" value="<?php echo ($logoinfo["1"]["logo_path"]); ?>">
 	<div class="f_left"></div>
 	<div class="f_right">
 		<div class="fr_c1"></div>
@@ -453,10 +460,11 @@ size:12px;background-color:#ecf6fd;">
 		<a href="/Public/images/104914z8lary1qv9vvv8fz.jpg" id="webim_link" target="_blank"><img id="webim_img" src="" style="width: 280px; height: 188px" /></a></dd>
 </dl>
 </div>
+<input type="hidden" id="logo3" value="<?php echo ($logoinfo["2"]["logo_path"]); ?>">
 <script type="text/javascript">
   var arr = new Array(); 
-
-       arr[0] = {title:"yi利一组：有实力就是任性",link:"/index.php",img:"/Public/images/104914z8lary1qv9vvv8fz.jpg"};
+var logo3=$("#logo3").val();
+       arr[0] = {title:"yi利一组：有实力就是任性",link:"/index.php",img:logo3};
 
   var randIndex = Math.floor(Math.random()*arr.length);
   var obj = arr[randIndex];

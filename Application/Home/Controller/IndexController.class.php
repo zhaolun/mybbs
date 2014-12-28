@@ -77,7 +77,7 @@ class IndexController extends Controller {
 
 	function loginout(){
 		//session("telyzm",rand(1000,9999));
-		echo $_SESSION['telyzm'];die;
+		//echo $_SESSION['telyzm'];die;
 		session_destroy();
 		$this->success("退出成功","/index.php");
 	}
