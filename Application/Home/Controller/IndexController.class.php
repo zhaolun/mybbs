@@ -1,6 +1,7 @@
 <?php
 namespace Home\Controller;
 use Think\Controller;
+use \Think\Verify;
 class IndexController extends Controller {
     public function index(){
         $user = M('family');//获取表总数据
@@ -33,7 +34,88 @@ class IndexController extends Controller {
 		$this->assign('infobb',$data8);
         $this->display('index');
     }
-	public function jiuye(){
-        $this->display('jiuye');
+	public function login(){
+        $Verify = new Verify();
+		if($Verify->check($_POST['yzm'])){
+			$name=addslashes($_POST['username']);
+			$pwd=sha1($_POST['password']);
+			$db=M("admin_user");
+			$res=$db->where("username='$name' and password='$pwd'")->select();
+			if(empty($res[0]['user_id']))
+				$this->error("用户名密码错误");
+			else{
+				session("userid",$res[0]['user_id']);
+				session("username",$res[0]['username']);
+				$this->success("登陆成功","/index.php");
+			}
+		}else{
+			$this->error("验证码有误");
+		}
     }
+
+	function register(){
+		$Verify = new Verify();
+		if($Verify->check($_POST['yzm'])){
+			$name=addslashes($_POST['username']);
+			$pwd=sha1($_POST['password']);
+			$db=M("admin_user");
+			$data['username']=$name;
+			$data['password']=$pwd;
+			$data['tel']=$_POST['tel'];
+			$res=$db->add($data);
+			if(!$res)
+				$this->error("注册失败");
+			else{
+				$this->success("注册成功","/index.php");
+			}
+		}else{
+			$this->error("验证码有误");
+		}
+	}
+
+	function loginout(){
+		//session("telyzm",rand(1000,9999));
+		echo $_SESSION['telyzm'];die;
+		session_destroy();
+		$this->success("退出成功","/index.php");
+	}
+
+	function send_message(){
+		$db=M("admin_user");
+		$name=addslashes($_GET['name']);
+		$tel=$_GET['tel'];
+		//echo $name.$tel;
+		$res=$db->where("username='$name' and tel='$tel'")->find();
+		if(empty($res)){
+			echo "用户名与手机号码不匹配!";
+		}else{
+			$telyzm=rand(1000,9999);
+			ini_set("session.gc_maxlifetime","600");
+			session("telyzm",$telyzm);
+			$url="http://utf8.sms.webchinese.cn/?Uid=zhaolun&Key=879dfccb74573d62cb28&smsMob=".$tel."&smsText=".$name.":Yi利一组验证码:".$telyzm.".(验证码有效期10分钟)";
+			//echo $url;die;
+			if(file_get_contents($url)>0)
+				echo "短信已发送,请注意及时查收.";
+			else
+				echo "短信发送失败.";
+		}
+	}
+
+	function findpwd(){
+		$db=M("admin_user");
+		$name=addslashes($_POST['username']);
+		$pwd=sha1($_POST['password']);
+		$res=$db->where("username = '$name'")->save(['password'=>$pwd]);
+		if($res)
+			$this->success("修改成功");
+		else
+			$this->error("修改失败");
+	}
+
+	function ajax_message(){
+		if($_GET['yzm']==$_SESSION['telyzm'])
+			echo 1;
+		else
+			echo 0;
+	}
 }
