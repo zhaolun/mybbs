@@ -265,7 +265,6 @@ H1 a {
 							</table>
 							<ul class="MM">
 							<li><a href="/admin.php/home/one/lists" >条形图</a></li>
-							<li><a href="/admin.php/home/one/bing" >饼状图</a></li>
 							</ul>
 							</div>
 						</div>
@@ -281,30 +280,47 @@ H1 a {
 		</script>
 		<td width="87%" valign="top">
 			<div style="margin:10px;padding:10px;">
-				<canvas id="chart-area" width="300" height="300"/></canvas>
-<script src="/Public/js/Chart.js"></script>
-<script src="/Public/js/jquery.js"></script>
-<script>
-		var pieData = [
-				{
-					value: 200,
-					color:"#F7464A",
-					highlight: "#FF5A5E",
-					label: "[<?php echo $json ?>]"
-				},
-
-			];
-			window.onload = function(){
-				var ctx = document.getElementById("chart-area").getContext("2d");
-				window.myPie = new Chart(ctx).Pie(pieData);
-			};
-	</script>
-<div id="footer">
-版权所有 &copy; 八维研修学院软件工程学院1308phpA班yi利小组，并保留所有权利。
+				<head>
+<title>新闻类别列表</title>
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="/Public/admin/css/general.css" rel="stylesheet" type="text/css" />
+<link href="/Public/admin/css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/Public/admin/js/transport.js"></script>
+<script type="text/javascript" src="/Public/admin/js/common.js"></script>
+</head>
+<body>
+<h1>
+<span class="action-span1">新闻类别列表</span><span id="search_id" class="action-span1"></span>
+<div style="clear:both"></div>
+</h1>
+<!-- 新闻类别搜索 -->
+<form>
+学校名称：<input type="text" name=""><input type="button" value="ajax搜索" onclick="">
+</form>
+<!-- 新闻类别列表 -->
+<div class="list-div">
+<a href="/admin.php/home/message/sch_addform">添加学校</a>
+<table cellspacing='1' cellpadding='3'>
+  <tr>
+      <th>学校编号</th>
+      <th>学校名称</th>
+      <th>操作</th>
+  </tr>
+  <?php if(is_array($list)): foreach($list as $key=>$val): ?><tr>  
+      <td><?php echo ($val["s_id"]); ?></td>
+      <td><?php echo ($val["s_name"]); ?></td>
+      <td><a href="/admin.php/home/message/sch_del/s_id/<?php echo ($val["s_id"]); ?>">【删除】</a>
+<a href="/admin.php/home/message/sch_editform/s_id/<?php echo ($val["s_id"]); ?>">【编辑】</a></td>
+    </tr><?php endforeach; endif; ?>
+  
+</table>
 </div>
+<br />
+<div id="footer">
+版权所有 &copy; 八维研修学院软件工程学院1302phpA班，并保留所有权利。</div>
 </body>
 </html>
-
 			</div>
 		</td>
 	</tr>

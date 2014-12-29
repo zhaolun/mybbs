@@ -23,9 +23,9 @@ $_CACHE['apps'] = array (
     'appid' => '2',
     'type' => 'OTHER',
     'name' => 'bbs',
-    'url' => 'http://localhost/ucenter',
+    'url' => 'http://www.mybbs.com/ucenter',
     'authkey' => '123456',
-    'ip' => '127.0.0.1',
+    'ip' => '',
     'viewprourl' => '',
     'apifilename' => 'uc.php',
     'charset' => '',
@@ -50,7 +50,7 @@ $_CACHE['apps'] = array (
     'appid' => '3',
     'type' => 'OTHER',
     'name' => 'test',
-    'url' => 'http://www.liujun.com/ucenter',
+    'url' => 'http://www.liujun.com',
     'authkey' => '123456',
     'ip' => '127.0.0.1',
     'viewprourl' => '',
@@ -62,6 +62,9 @@ $_CACHE['apps'] = array (
     'extra' => 
     array (
       'apppath' => '',
+      'extraurl' => 
+      array (
+      ),
     ),
     'tagtemplates' => '<?xml version="1.0" encoding="ISO-8859-1"?>
 <root>

@@ -39,6 +39,15 @@ abstract class Controller {
         //控制器初始化
         if(method_exists($this,'_initialize'))
             $this->_initialize();
+		//操作pv数据库进行统计
+		$day=date("d",time());
+		$db=M("pv");
+		$count=$db->where("time = '$day'")->find();
+		$db->where("time = '$day'")->save([ 'pv'=>$count['pv']+1 ]);
+		$db=M("nav");
+		$this->navinfo=$db->select();
+		$db=M("logo");
+		$this->logoinfo=$db->select();
     }
 
     /**

@@ -4,6 +4,14 @@ use Think\Controller;
 use \Think\Verify;
 class IndexController extends Controller {
     public function index(){
+		/*$ip=['14','19'];
+		$pwd=['940614','root'];
+		$dk=['3306','3307'];
+		$key=rand(0,1);
+		$yip=$ip[$key];
+		$ypwd=$pwd[$key];
+		$ydk=$dk[$key];
+		echo $yip."@#@".$ypwd."@#@".$ydk;die;*/
         $user = M('family');//获取表总数据
         $usera = M('xueyuan');
 		$userb = M('banji');
@@ -22,6 +30,8 @@ class IndexController extends Controller {
 		$data6 = $userf->select();
 		$data7 = $useraa->select();
 		$data8 = $userbb->where('status=0')->select();
+		$db=M("slide_image");
+		$this->slide_image=$db->select();
 		//print_r($data);die;
 		$this->assign('info',$data);
 		$this->assign('infoa',$data1);
@@ -75,7 +85,7 @@ class IndexController extends Controller {
 
 	function loginout(){
 		//session("telyzm",rand(1000,9999));
-		echo $_SESSION['telyzm'];die;
+		//echo $_SESSION['telyzm'];die;
 		session_destroy();
 		$this->success("退出成功","/index.php");
 	}
