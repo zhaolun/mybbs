@@ -51,7 +51,7 @@ abstract class Controller {
 		$db=M("zhaopin");
 		$this->newzhaopininfo=$db->order("id desc")->limit(6)->select();
 		$db=M("class");
-		$this->banjiinfo=$db->order("id desc")->limit(6)->select();
+		$this->banjiinfo=$db->order("pei_id desc")->limit(6)->select();
 		$db=M("question");
 		$this->questioninfo=$db->order("id desc")->limit(6)->select();
     }
