@@ -217,7 +217,7 @@ class MessageController extends Controller {
     {
         $model=M("student");
         $data=$model->query("select * from bbs_student,bbs_school,bbs_company where bbs_student.school=bbs_school.s_id and bbs_student.company=bbs_company.com_id");
-       // var_dump($data);die;
+        //var_dump($data);die;
         $this->assign('list',$data);
     	$this->display();
     }
