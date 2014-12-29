@@ -38,7 +38,7 @@
              <td>{$val.r_time}</td>
              <td>{$val.r_url}</td>
              <td>{$val.r_num}</td>
-             <td><a href="/admin.php/home/message/com_del/com_id/<?php echo $val['com_id'];?>">【删除】</a>
+             <td><a href="/admin.php/home/message/com_del/com_id/{$val.com_id}">【删除】</a>
              <a href="/admin.php/home/message/com_editform/com_id/<?php echo $val['com_id']; ?>">【编辑】</a></td>
           </tr>
       </foreach>

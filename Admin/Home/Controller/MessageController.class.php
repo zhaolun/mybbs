@@ -94,13 +94,11 @@ class MessageController extends Controller {
     public function com_del()
     {
     	$com_id=$_GET['com_id'];
-    	//var_dump($com_id);die;
     	$model=M("company");
-    	//var_dump($com_id);
-    	$del=$model->delete($com_id); 
-    	if($del)
+    	$del=$model->where("com_id=$com_id")->delete(); 
+    	if($del>0)
     	{
-    		$this->redirect("/admin.php/home/message/company");
+    		$this->success("删除成功");
     	}else
     	{
     		$this->error("删除失败");
@@ -126,12 +124,19 @@ class MessageController extends Controller {
     	//echo $com_id;
     	$model=M("company");
     	$data['com_name'] = $_POST['com_name'];
+        $data['com_desc']=$_POST['com_desc'];
     	$data['r_time']=$_POST['r_time'];
     	$data['r_url']=$_POST['r_url'];
     	$data['r_num']=$_POST['r_num'];
-    	//var_dump($data);
+        $data['com_tel']=$_POST['com_tel'];
+        $data['email']=$_POST['email'];
+        $data['com_mem']=$_POST['com_mem'];
+        $data['address']=$_POST['address'];
+        $data['position']=$_POST['position'];
+        $data['pos_desc']=$_POST['pos_desc'];
+    	//echo "<pre>";var_dump($data);die;
     	$update=$model->where('com_id='.$com_id.'')->save($data);
-    	//var_dump($qq);
+        //var_dump($update);die;
     	if($update)
     	{
     		$this->redirect("/admin.php/home/message/company");
