@@ -333,7 +333,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
                 childWindow.close();
             }
 			</script>
-			<?php else: ?>欢迎您：<font color=red><?php echo ($_SESSION["username"]); ?></font>　<a href="/index.php/Home/index/loginout">退出</a><?php endif; ?>
+			<?php else: ?>欢迎您：<?php if($_SESSION["img"] != '' ): ?><img src="<?php echo ($_SESSION["img"]); ?>"><?php endif; ?><font color=red><?php echo ($_SESSION["username"]); ?></font>　<a href="/index.php/Home/index/loginout">退出</a><?php endif; ?>
 			
             </div>
 

@@ -239,7 +239,7 @@
                 childWindow.close();
             }
 			</script>
-			<else />欢迎您：<font color=red>{$_SESSION.username}</font>　<a href="/index.php/Home/index/loginout">退出</a></if>
+			<else />欢迎您：<if condition="$_SESSION.img neq '' "><img src="{$_SESSION.img}"></if><font color=red>{$_SESSION.username}</font>　<a href="/index.php/Home/index/loginout">退出</a></if>
 			
             </div>
 

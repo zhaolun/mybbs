@@ -47,7 +47,9 @@ class IndexController extends Controller {
 	public function login(){
 		if(!empty($_GET['nickname'])&&!empty($_GET['img'])){
 			//echo $_GET['img'];die;
-			session("img",$_GET['img']);
+			$img=str_replace("@","/",$_GET['img']);
+			//echo $img;die;
+			session("img",$img);
 			session("username",$_GET['nickname']);
 			$this->success("使用qq登陆成功","/index.php");
 		}
