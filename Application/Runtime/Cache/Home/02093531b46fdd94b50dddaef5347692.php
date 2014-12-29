@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "/www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "/www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="/www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -25,38 +25,6 @@
 <script type="text/javascript" src="/Public/js/imageschange.js"></script>
 <script type="text/javascript" id="bdshare_js" data="type=tools" ></script>
 <script type="text/javascript" id="bdshell_js"></script>
-<script type="text/javascript">
-<!--
-	function register(){
-		$("#myform").attr("action","/index.php/Home/index/register");
-		$("#button").attr("value","注册");
-		$("#span").html("<span style='color:blue;' onclick='login()'>登录</span>");
-		$("#tele").show();
-	}
-	function forget(){
-		$("#forget").toggle();
-		$("#fname").focus();
-	}
-	function login(){
-		$("#myform").attr("action","/index.php/Home/index/login");
-		$("#button").attr("value","登录");
-		$("#tele").hide();
-		$("#span").html("<span style='color:blue;' onclick='register()'>注册</span>");
-	}
-	function telyzm(){
-		var name=$("#fname").val();
-		var tel=$("#ftel").val();
-		$.ajax({
-			type: "GET",
-			url: "/index.php/Home/index/send_message",
-			data: "name="+name+"&tel="+tel,
-			success: function(msg){
-				alert(msg);
-			}
-		}); 
-	}
-//-->
-</script>
 </head>
 <body>
 <div id="header">
@@ -70,7 +38,7 @@
 
 	<div class="clear"></div>
 	<div class="top2">
-		<h1 class="fl"><a href="/index.php"><img border="0" class="png" alt="传智播客php培训学院" src="{$logoinfo.0.logo_path}"></a></h1>
+		<h1 class="fl"><a href="/index.php"><img border="0" class="png" alt="传智播客php培训学院" src="<?php echo ($logoinfo["0"]["logo_path"]); ?>"></a></h1>
 		<div class="fl toubu">
 		<div class="toubu-font1">PHP学院</div>
 			 <!-- 校区 -->
@@ -87,9 +55,7 @@
 	</div>
 	<div class="clear"></div>
 		<ul id="nav">
-		<foreach name="navinfo" item="vo">
-			<li><a id="nav_main" href="{$vo.nav_link}">{$vo.nav_name}</a></li>
-		</foreach>
+		<?php if(is_array($navinfo)): foreach($navinfo as $key=>$vo): ?><li><a id="nav_main" href="<?php echo ($vo["nav_link"]); ?>"><?php echo ($vo["nav_name"]); ?></a></li><?php endforeach; endif; ?>
 </ul>
 	</div>
 	<div id="box">
@@ -126,7 +92,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 <a class="jiathis_button_qzone">QQ空间</a>
 </div>
 <script type="text/javascript" src="http://v2.jiathis.com/code/jia.js" charset="utf-8"></script>
-<div id="qqwb_share__" data-appkey="801554695" data-counter_pos="top" data-content="BBS yi利一组项目" data-pic="{$pic}"></div>
+<div id="qqwb_share__" data-appkey="801554695" data-counter_pos="top" data-content="BBS yi利一组项目" data-pic="<?php echo ($pic); ?>"></div>
 
 <script src="http://mat1.gtimg.com/app/openjs/openjs.js#autoboot=no&debug=no"></script>
 
@@ -144,158 +110,168 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 	<a class="jiathis_counter_style"></a>
 </div>
 <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>-->
-{__CONTENT__}
-<div class="clear"></div>
-		  </div>
-			<div><img src="/Public/images/leftbottom.gif"/></div>
-				<div></div>
-		</div>		
-		<div id="right" class="fl">	
-		<h4 class="righttitle1" style="margin-top:10px;"><span class="fl">
-		<if condition="$_SESSION.username eq '' ">用户登录<else />用户中心</if></span></h4>
-			<div class="jyjb-left" ><if condition="$_SESSION.username eq '' ">
-			<form method="post" action="/index.php/Home/index/login" id="myform">
-				用户名：<input type="text" name="username" id="name"><br>
-				密　码：<input type="password" name="password" id="pwd"><br>
-				<span style="display:none" id="tele">手　机：<input type="text" name="tel" id="tel"><br></span>
-				验证码：<input type="text" name="yzm" id="yzm" size=5><IMG src="/admin.php/Home/index/yzm" id="captcha"> <A style="cursor:pointer" onclick="$('#captcha').attr('src','/admin.php/Home/index/yzm?count=Math.random()');">换</A><br>
-				<input type="submit" value="登录" id="button"><span id="span"><span style="color:blue;" onclick="register()">注册</span></span><span style="color:blue;" onclick="forget()">忘记密码</span><br>
-			</form>
-			
-			合作登录：<img src="/Public/images/qq_login.png" style="cursor:pointer;" onclick='toQzoneLogin()'>
-			<script type="text/javascript">
-            var childWindow;
-            function toQzoneLogin()
-            {
-                childWindow = window.open("http://zl12345.com133.com/qq","TencentLogin","width=450,height=320,menubar=0,scrollbars=1, resizable=1,status=1,titlebar=0,toolbar=0,location=1");
-            } 
-            
-            function closeChildWindow()
-            {
-                childWindow.close();
-            }
-			</script>
-			<else />欢迎您：<if condition="$_SESSION.img neq '' "><img src="{$_SESSION.img}"></if><font color=red>{$_SESSION.username}</font>　<a href="/index.php/Home/index/loginout">退出</a></if>
-			
-            </div>
 
-		<span id="forget" style="display:none;"><h4 class="righttitle1" style="margin-top:10px;">密码找回</span></h4>
-			<div class="jyjb-left" >
-			<form method="post" action="/index.php/Home/index/findpwd" onsubmit="return sub()">
-				用户名：<input type="text" name="username" id="fname"><br>
-				手　机：<input type="text" name="tel" id="ftel"><br>
-				验证码：<input type="text" name="yzm" id="fyzm" size=5>
-				<input type="button" value="获取验证码" onclick="telyzm()"><br>
-				新密码：<input type="password" name="password" id="newpwd"><br>
-				　　　　　<input type="submit" value=" 确定 " id="button">
-			</form>			
-            </div></span>
-			<script type="text/javascript">
-			<!--
-				function sub(){
-					var yzm=$("#fyzm").val();
-					var status=0;
-					$.ajax({
-						type: "GET",
-						url: "/index.php/Home/index/ajax_message",
-						data: "yzm="+yzm,
-						async:false,
-						success: function(msg){
-							status=msg;
-						}
-					});
-					if(status==0){
-						alert("验证码输入有误!");
-						return false;
-					}else{
-						return true;
-					}
-				}
-			//-->
-			</script>
-			<h4 class="righttitle1" style="margin-top:10px;"><span class="fl">开班信息</span></h4><div class="jyjb-left" >11111
-            </div>
-			
-			<div class="rightbottom"><img src="/Public/images/rightbottom.jpg"  /></div>		
-			<h4 class="righttitle1 zhaopin"><span class="blue">最新</span>企业招聘</h4>
-			<div class="rightkuang1">
-			<p class="cent"> <img src="/Public/images/7.jpg"  width="256" height="66" /></p>
-                      <table border="0" cellpadding="0" cellspacing="0" class="zhaopinlist" height="124" style="margin-top: 5px" width="98%">
+	<div class="clear"></div>
+	<div id="lxwm">
+
+	  <p><img src="/Public/images/lxwm-top.jpg" /></p>
+	  <div class="lxwm-wenben">
+	  <!-- 内容主体  -->
+<p class="kxdl-font1"><?php echo ($info["0"]["pei_class"]); ?>招生简章</p>
+<div class="kcnr-wenben">
+<?php echo ($info["0"]["bbs_zhangcheng"]); ?>
+</div>
+<div class="kcnr-title">培训目标</div>
+<p style="margin-top: 10px; text-indent: 2em"><?php echo ($info["0"]["mubiao"]); ?></p>
+<div class="kcnr-title">招生对象</div>
+<p style="margin-top: 10px; text-indent: 2em"><?php echo ($info["0"]["bbs_duixiang"]); ?></p>
+<p style="text-indent: 2em; margin-bottom: 10px"></p>
+<div class="kcnr-title">课程特色</div>
+<p class="kcnr-title1"><?php echo ($info["0"]["bbs_tese"]); ?></p>
+<div class="kcnr-title">课程安排</div>
+<p class="kcnr-font1"><?php echo ($info["0"]["pei_class"]); ?></p>
+<style type="text/css">
+.kcnr-table{ line-height:20px;}
+	.kcnr-table li{list-style-image:url(http://www.itcast.cn/files/image/201207/20120718144154342.jpg); margin-left:15px;;</style>
+<table border="0" cellpadding="0" cellspacing="0" class="kcnr-table" width="99%">
 <tbody>
-<foreach name='newzhaopininfo' item='it'>
 	<tr>
-	<td class="td1" width="73%"><a href="/index.php/Home/index/company/id/{$it.id}" target="_blank">{$it.company}</a></td>
-	<td width="11%">{$it.count}</td>
-	<td width="16%">{$it.time|substr=0,10}</td>
+	<td>课程名称</td>
+	<td>阶段课程</td>
+	<td width="40%">课程内容</td>
+	<td width="23%">学习目标</td>
 	</tr>
-</foreach>	
-	<tr>
-	<td class="td1" width="73%"><a href="http://www.itcast.cn/news/list/20c133c0-6635-421c-acae-6125b0702b34/1.shtml" target="_blank"><span style="color:#ff0000;">更多企业招聘信息请点击&hellip;&hellip;</span></a></td>
-	<td width="11%"><a href="http://www.itcast.cn/news/list/20c133c0-6635-421c-acae-6125b0702b34/1.shtml" target="_blank"><span style="color:#ff0000;">查看</span></a></td>
-	<td width="16%"><a href="http://www.itcast.cn/news/list/20c133c0-6635-421c-acae-6125b0702b34/1.shtml" target="_blank"><span style="color:#ff0000;">更多</span></a></td>
-	</tr>
-	<tr></tr>
+	<?php if(is_array($info)): foreach($info as $key=>$vo): ?><tr>
+	<td width="17%"><strong><?php echo ($vo["bbs_name"]); ?></strong></td>
+	<td width="20%"><p style="text-indent: 2em"><?php echo ($vo["bbs_jieduan"]); ?></p></td>
+	<td><?php echo ($vo["neirong"]); ?></td>
+	<td><?php echo ($vo["mubiao"]); ?></td>
+	</tr><?php endforeach; endif; ?>
+	
 </tbody>
 </table>
+<div class="kcnr-title">培训方式</div>
+<table border="0" cellpadding="0" cellspacing="0" class="kcnr-table" width="99%">
+<tbody>
+	<tr>
+	<td width="19%"><img src="http://www.itcast.cn/Public/images/kcnr-tu5.jpg" /></td>
+	<td width="81%">
+	<p style="text-indent: 2em; color: #ff6600; font-size: 14px; font-weight: bold">培训时间：1个月</p>
+	<p style="text-indent: 2em; color: #ff6600; font-size: 14px; font-weight: bold">培训方式：全日制脱产，每周5天上课，早9：00－晚 8：00</p>
+	</td>
+	</tr>
+</tbody>
+</table>
+<br />
 
-             <div class="clear"></div>
-				
-			</div>
-			<div class="rightbottom"><img src="/Public/images/bottom1.gif"  /></div>
-			<h4 class="righttitle1 zhaopin" style="margin-top:3px;"><span class="blue">常见</span>问题</h4>
-		  <div class="rightkuang1" style="padding-top:18px;">
-			<ul class="zhaopinlist wenti">
-              <ul class="zhaopinlist wenti">
-<foreach name='infobb' item='it'>
-<li><a href="/index.php/Home/problem/xq?id={$it.id}" target="_blank">{$it.title}</a><img height="15" src="/Public/images/new.gif" width="29" /></li>
-</foreach>
-</ul>
-
-          </ul> 
-			<div class="clear"></div>
-				 <p class="text-r"><a href="/index.php/Home/problem/index"><img src="/Public/images/jiantoumore.gif"  border="0" /></a></p>
-		  </div>
-			<div class="rightbottom"><img src="/Public/images/bottom1.gif"  /></div>
-			
-			<h4 class="righttitle1 lianxi"><span class="fl"><span class="blue">课程</span>咨询</span></h4>
-			
-			<div class="rightkuang">
-			 <dl>
-	<dt style="padding-bottom:20px;">
-		北京传智播客</dt>
-	<dd style="width:120px;height:40px;float:left;">
-		<a href="http://wpa.qq.com/msgrd?v=1&uin=790330816&site=qq&menu=yes"><img alt="北京传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
-	<dd style="width:120px;height:40px;float:left;">
-		<a href="http://wpa.qq.com/msgrd?v=1&uin=790330816&site=qq&menu=yes"><img alt="北京传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqkczx.jpg" width="99" /></a></dd>
-</dl>
-<dl class="qqtwo">
-	<dt style="padding-bottom:20px;">
-		上海传智播客</dt>
-	<dd style="width:120px;height:40px;float:left;">
-		<a href="http://wpa.qq.com/msgrd?v=1&uin=790330816&site=qq&menu=yes" target="_blank"><img alt="上海传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
-	<dd style="width:120px;height:40px;float:left;">
-		<a href="http://wpa.qq.com/msgrd?v=1&uin=790330816&site=qq&menu=yes" target="_blank"><img alt="上海传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqkczx.jpg" width="99" /></a></dd>
-</dl>
-<dl class="qqthree">
-	<dt style="padding-bottom:20px;">
-		山西传智播客</dt>
-	<dd style="width:120px;height:40px;float:left;">
-		<a href="http://wpa.qq.com/msgrd?v=1&uin=1067112004&site=qq&menu=yes" target="_blank"><img alt="武汉传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
-	<dd style="width:120px;height:40px;float:left;">
-		<a href="http://wpa.qq.com/msgrd?v=1&uin=1067112004&site=qq&menu=yes" target="_blank"><img alt="武汉传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqkczx.jpg" width="99" /></a></dd>
-</dl>
-<dl class="qqfour">
-	<dt style="padding-bottom:20px;">
-		河南传智播客</dt>
-	<dd style="width:120px;height:40px;float:left;">
-		<a href="http://wpa.qq.com/msgrd?v=1&uin=790330816&site=qq&menu=yes" target="_blank"><img alt="西安传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
-	<dd style="width:120px;height:40px;float:left;">
-		<a href="http://wpa.qq.com/msgrd?v=1&uin=790330816&site=qq&menu=yes" target="_blank"><img alt="西安传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqkczx.jpg" width="99" /></a></dd>
-</dl>
-			<div class="clear"></div>
-			</div>
-			<div class="rightbottom"><img src="/Public/images/rightbottom.jpg"  /></div>
+<!-- 内容主体  -->
 	  </div>
+	  <p><img src="/Public/images/lxwm-bottom.jpg" /></p>
+	</div>		
+	<div class="clear"></div>
+<style>
+.bm{width:100%; background:#FFF; font-family:Microsoft Yahei; padding:50px 0;}
+.bm h2{height:70px; background:url('http://www.itcast.cn/xa/Public/images/h_bg.png') no-repeat center top; text-indent:-9999px;}
+.bm .bm_con{width:938px; margin:0 auto; overflow:hidden;}
+.bm .bm_con .left{width:720px; float:left;}
+.bm .bm_con .left ul li{float:left; width:360px; margin-bottom:20px; overflow:hidden; height:40px;}	
+.bm .bm_con .left ul li .l_text{float:left; font-size:18px; color:#666; padding-right:10px; line-height:40px;}
+.bm .bm_con .left ul li input{float:left; width:211px; padding:10px 0; border:1px solid #c9c9c9; border-radius:3px; padding-left:10px; box-shadow:inset 1px 2px 3px #f1f1f1; margin-top:2px;}	
+.bm .bm_con .right{width:218px; float:left;}
+.bm .bm_con .right input{display:block; width:216px; height:36px; color:#fff; font-size:16px; background:#4492dc; border:none; outline:none; border-radius:3px; font-family:Microsoft Yahei;}
+.bm .bm_con .right input:hover{ background:#5aa3e9;}
+.bm .bm_con .right p{font-size:12px; color:#666; margin-top:25px;}	
+</style>
+<script type="text/javascript" src="http://www.itcast.cn/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+function check(){
+	var realname=$("#realname");
+	var phone=$("#phone");
+	var email=$("#email");
+	var qq=$("#qq");
+	var address=$("#address");
+	
+	var realnamereg=/^[\u4E00-\u9FA5]+$/;
+	var phonereg=/^[1][3-9][0-9]{9}$/;
+	var qqreg=/^[1-9]\d{4,}$/;
+	var emailreg=/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+	var shuoreg=/(http[s]?|ftp):\/\/[^\/\.]+?\..+\w$/i;
+
+	
+	if(!realnamereg.test(realname.val())){
+		realname.focus().val('');
+		alert('请输入正确的中文名称！');
+		return false;
+	}else if(!phonereg.test(phone.val())){
+		phone.focus().val('');
+		alert('请输入正确的手机！');
+		return false;
+	}else if(address.val() == 0){
+		alert('请选择所在省份！');
+		return false;
+	}else if( typeof qq.val() != 'undefined' && !qqreg.test(qq.val()) ){
+		qq.focus().val('');
+		alert('请输入正确的QQ号码！');
+		return false;
+	}else if( typeof email.val() != 'undefined' && !emailreg.test(email.val())){
+		email.focus().val('');
+		alert('请输入正确的邮箱地址！');
+		return false;
+	}
+	else{
+	$.post("http://open.itcast.cn/Api/Subject/publicapply.html", {
+	realname: realname.val() , 
+	phone: phone.val(),
+	address: address.val(),
+	email: email.val(),
+	qq: qq.val(),
+	cid: 6,
+	t:new Date().getTime()
+	});
+	
+	alert('申请成功！\r\n咨询客服人员将会主动联系您，请耐心等待！');
+	realname.val('');
+	phone.val('');
+	address.val('');
+	email.val('');
+	qq.val('');
+	$("input[name='source']:checked").removeAttr("checked");
+	}
+}
+</script>
+<div class="bm">
+	<h2>每期开班座位有限,预报名可优先享有占座特权哦！</h2>
+	<div class="bm_con">
+	<form id="addform" action="/Api/Subject/networkapply.html" method="post">
+		<div class="left">
+			<ul>
+				<li>
+					<span class="l_text"><s style="color:#e00000; font-size:15px; text-decoration:none; line-height:40px; padding-right:5px;">*</s>真实姓名</span>
+					<input type="text" placeholder="我们期待更了解您" name="realname" id="realname" />
+				</li>
+				<li>
+					<span class="l_text"><s style="color:#e00000; font-size:15px; text-decoration:none; line-height:40px; padding-right:5px;">*</s>联系手机</span>
+					<input type="text" placeholder="我们和您一样讨厌骚扰电话" name="phone" id="phone" />
+				</li>
+				<li>
+					<span class="l_text"><s style="color:#e00000; font-size:15px; text-decoration:none; padding-right:5px;">*</s>所在地区</span>
+					<select name="address" id="address" style="width:222px; height:36px; display:block;" ><option value="0">选择省份</option><option value="北京">北京市</option><option value="天津">天津市</option><option value="上海">上海市</option><option value="重庆">重庆市</option><option value="河北">河北省</option><option value="山西">山西省</option><option value="内蒙古">内蒙古</option><option value="辽宁">辽宁省</option><option value="吉林">吉林省</option><option value="黑龙江">黑龙江</option><option value="江苏">江苏省</option><option value="浙江">浙江省</option><option value="安徽">安徽省</option><option value="福建">福建省</option><option value="江西">江西省</option><option value="山东">山东省</option><option value="河南">河南省</option><option value="湖北">湖北省</option><option value="湖南">湖南省</option><option value="广东">广东省</option><option value="广西">广西省</option><option value="海南">海南省</option><option value="四川">四川省</option><option value="贵州">贵州省</option><option value="云南">云南省</option><option value="西藏">西藏省</option><option value="陕西">陕西省</option><option value="甘肃">甘肃省</option><option value="青海">青海省</option><option value="宁夏">宁夏省</option><option value="新疆">新疆省</option><option value="香港">香港</option><option value="澳门">澳门</option><option value="台湾">台湾省</option></select>
+				</li>
+				<li>
+					<span class="l_text"><s style="color:#e00000; font-size:15px; text-decoration:none; line-height:40px; padding-right:11px;">*</s>QQ号码</span>
+					<input type="text" placeholder="我们将第一时间与您联系" name="qq" id="qq"/>
+				</li>
+			</ul>
+			<br />
+		</div>
+		<div class="right">
+			<input type="button" value="现在预报名"  onClick="check()" />
+			<p>温馨提示：请保持手机畅通，咨询老师将为您提供专属的一对一报名服务。</p>
+		</div>
+	</form>
+	</div>
+</div>
+
 	</div>		
 	<div class="clear"></div>
 
@@ -376,7 +352,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 <link type="text/css" rel="stylesheet" href="/kefu2/ie.css" mce_href="/kefu2/ie.css" />
 <![endif]-->
 <div class="fixed">
-<input type="hidden" id="logo2" value="{$logoinfo.1.logo_path}">
+<input type="hidden" id="logo2" value="<?php echo ($logoinfo["1"]["logo_path"]); ?>">
 	<div class="f_left"></div>
 	<div class="f_right">
 		<div class="fr_c1"></div>
@@ -439,7 +415,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 		<a href="/Public/images/104914z8lary1qv9vvv8fz.jpg" id="webim_link" target="_blank"><img id="webim_img" src="" style="width: 280px; height: 188px" /></a></dd>
 </dl>
 </div>
-<input type="hidden" id="logo3" value="{$logoinfo.2.logo_path}">
+<input type="hidden" id="logo3" value="<?php echo ($logoinfo["2"]["logo_path"]); ?>">
 <script type="text/javascript">
   var arr = new Array(); 
 var logo3=$("#logo3").val();

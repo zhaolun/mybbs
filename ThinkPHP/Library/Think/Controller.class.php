@@ -48,6 +48,8 @@ abstract class Controller {
 		$this->navinfo=$db->select();
 		$db=M("logo");
 		$this->logoinfo=$db->select();
+		$db=M("zhaopin");
+		$this->newzhaopininfo=$db->order("time desc")->limit(6)->select();
     }
 
     /**

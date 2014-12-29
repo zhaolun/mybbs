@@ -123,7 +123,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 <?php if(is_array($info)): foreach($info as $key=>$vo): ?><UL>
   <LI style="width: 141px;" class="fl"><IMG src="/Public/images/phpjc.jpg"></LI>
   <LI style="width: 470px;" class="fl jyjb-11-font1"><B class="jyjb-11-font2"><A 
-  href="http://www.mybbs.com/index.php/Home/project/jichu" 
+  href="http://www.mybbs.com/index.php/Home/project/kecheng?id=<?php echo ($vo["pei_id"]); ?>" 
   target="_blank"><?php echo ($vo["pei_class"]); ?></A></B>
   <P><?php echo ($vo["pei_intro"]); ?></P>
   </LI></UL>
@@ -272,7 +272,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 </dl>
 <dl class="qqthree">
 	<dt style="padding-bottom:20px;">
-		广州传智播客</dt>
+		山西传智播客</dt>
 	<dd style="width:120px;height:40px;float:left;">
 		<a href="http://wpa.qq.com/msgrd?v=1&uin=1067112004&site=qq&menu=yes" target="_blank"><img alt="武汉传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
 	<dd style="width:120px;height:40px;float:left;">
@@ -280,7 +280,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 </dl>
 <dl class="qqfour">
 	<dt style="padding-bottom:20px;">
-		西安传智播客</dt>
+		河南传智播客</dt>
 	<dd style="width:120px;height:40px;float:left;">
 		<a href="http://wpa.qq.com/msgrd?v=1&uin=790330816&site=qq&menu=yes" target="_blank"><img alt="西安传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
 	<dd style="width:120px;height:40px;float:left;">
