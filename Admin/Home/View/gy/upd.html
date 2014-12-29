@@ -1,0 +1,43 @@
+<head>
+<title>感言修改</title>
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="../css/general.css" rel="stylesheet" type="text/css" />
+<link href="../css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/transport.js"></script>
+<script type="text/javascript" src="./js/common.js"></script>
+</head>
+<body>
+<h1>感言修改</h1>
+<a href='/admin.php/Home/gy/lists'>感言列表</a>
+
+<!-- 添加新闻类别 -->
+<div class="list-div">
+<form method="post" action="/admin.php/Home/gy/upd_do">
+	<table cellspacing='1' cellpadding='3'>
+	     <tr>
+			<td><input type="hidden" name="id" value="<?php echo $list['id']?>"></td>
+		</tr>
+
+		<tr>
+			<td align='right'>感言名称：</td>
+			<td><input type="text" name="title" size=80 value="<?php echo $list['title']?>"></td>
+		</tr>
+		
+		<tr>
+			<td align='right'>内容：</td>
+			<td>
+			<textarea name="content" rows="10" cols="50"><?php echo $list["content"]?></textarea>
+		</tr>
+
+		<tr>
+			<td align='center' colspan=2><input type="submit" value='修改'></td>	
+		</tr>
+	</table>
+</form>
+</div>
+<br />
+<div id="footer">
+版权所有 &copy; 八维研修学院软件工程学院1308phpA班yi利小组，并保留所有权利。</div>
+</body>
+</html>
