@@ -325,7 +325,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
             var childWindow;
             function toQzoneLogin()
             {
-                childWindow = window.open("oauth/index.php","TencentLogin","width=450,height=320,menubar=0,scrollbars=1, resizable=1,status=1,titlebar=0,toolbar=0,location=1");
+                childWindow = window.open("http://zl12345.com133.com/qq","TencentLogin","width=450,height=320,menubar=0,scrollbars=1, resizable=1,status=1,titlebar=0,toolbar=0,location=1");
             } 
             
             function closeChildWindow()
