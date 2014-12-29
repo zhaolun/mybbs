@@ -194,13 +194,11 @@
 			    <div class="msdy-left"><img src="/Public/images/wenhao-1.jpg" /></div>
 				<div class="msdy-right">
 <ul>
-<foreach name='infoe' item='it'>
-<li><a href="http://www.itcast.cn/news/20121005/12001594210.shtml"><span style="color:#ff0000;">{$it.content}</span></a></li>
-</foreach>
+<foreach name='infof' item='it'>
+<li><a href="/index.php/home/index/detail/id/{$it.id}"><span style="color:#ff0000;">{$it.title}</span></a></li>
+
 </ul>
 <ul>
-<foreach name='infof' item='it'>
-<li><a href="http://php.itcast.cn/news/20130523/16573389409.shtml">{$it.content}</a></li>
 </foreach>
 <li><a href="http://php.itcast.cn/news/list/cba8c58c-b2d4-4f48-bf64-a10b59fb2666/1.shtml"><font style="color: red"><b>&gt;&gt;查看更多答疑信息</b></font></a></li>
 </ul>
