@@ -451,6 +451,7 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
 				}
 			//-->
 			</script>
+<<<<<<< HEAD
 
 			
 			<div class="rightbottom"><img src="/Public/images/rightbottom.jpg"  /></div>		
@@ -484,6 +485,41 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
 <?php if(is_array($infobb)): foreach($infobb as $key=>$it): ?><li><a href="/index.php/Home/problem/xq?id=<?php echo ($it["id"]); ?>" target="_blank"><?php echo ($it["title"]); ?></a><img height="15" src="/Public/images/new.gif" width="29" /></li><?php endforeach; endif; ?>
 </ul>
 
+=======
+
+			
+			<div class="rightbottom"><img src="/Public/images/rightbottom.jpg"  /></div>		
+			<h4 class="righttitle1 zhaopin"><span class="blue">最新</span>企业招聘</h4>
+			<div class="rightkuang1">
+			<p class="cent"> <img src="/Public/images/7.jpg"  width="256" height="66" /></p>
+                      <table border="0" cellpadding="0" cellspacing="0" class="zhaopinlist" height="124" style="margin-top: 5px" width="98%">
+<tbody>
+<?php if(is_array($infoaa)): foreach($infoaa as $key=>$it): ?><tr>
+	<td class="td1" width="73%"><a href="http://www.itcast.cn/news/20141201/16233788127.shtml" target="_blank"><?php echo ($it["company"]); ?></a></td>
+	<td width="11%">若干</td>
+	<td width="16%">11.28</td>
+	</tr><?php endforeach; endif; ?>	
+	<tr>
+	<td class="td1" width="73%"><a href="http://www.itcast.cn/news/list/20c133c0-6635-421c-acae-6125b0702b34/1.shtml" target="_blank"><span style="color:#ff0000;">更多企业招聘信息请点击&hellip;&hellip;</span></a></td>
+	<td width="11%"><a href="http://www.itcast.cn/news/list/20c133c0-6635-421c-acae-6125b0702b34/1.shtml" target="_blank"><span style="color:#ff0000;">查看</span></a></td>
+	<td width="16%"><a href="http://www.itcast.cn/news/list/20c133c0-6635-421c-acae-6125b0702b34/1.shtml" target="_blank"><span style="color:#ff0000;">更多</span></a></td>
+	</tr>
+	<tr></tr>
+</tbody>
+</table>
+
+             <div class="clear"></div>
+				
+			</div>
+			<div class="rightbottom"><img src="/Public/images/bottom1.gif"  /></div>
+			<h4 class="righttitle1 zhaopin" style="margin-top:3px;"><span class="blue">常见</span>问题</h4>
+		  <div class="rightkuang1" style="padding-top:18px;">
+			<ul class="zhaopinlist wenti">
+              <ul class="zhaopinlist wenti">
+<?php if(is_array($infobb)): foreach($infobb as $key=>$it): ?><li><a href="/index.php/Home/problem/xq?id=<?php echo ($it["id"]); ?>" target="_blank"><?php echo ($it["title"]); ?></a><img height="15" src="/Public/images/new.gif" width="29" /></li><?php endforeach; endif; ?>
+</ul>
+
+>>>>>>> 1d413d69935a76914200bd2d1ca3b6d46175e4c2
           </ul> 
 			<div class="clear"></div>
 				 <p class="text-r"><a href="/index.php/Home/problem/index"><img src="/Public/images/jiantoumore.gif"  border="0" /></a></p>
@@ -511,7 +547,11 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
 </dl>
 <dl class="qqthree">
 	<dt style="padding-bottom:20px;">
+<<<<<<< HEAD
+		广州传智播客</dt>
+=======
 		山西传智播客</dt>
+>>>>>>> 1d413d69935a76914200bd2d1ca3b6d46175e4c2
 	<dd style="width:120px;height:40px;float:left;">
 		<a href="http://wpa.qq.com/msgrd?v=1&uin=1067112004&site=qq&menu=yes" target="_blank"><img alt="武汉传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
 	<dd style="width:120px;height:40px;float:left;">
@@ -519,7 +559,11 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
 </dl>
 <dl class="qqfour">
 	<dt style="padding-bottom:20px;">
+<<<<<<< HEAD
+		西安传智播客</dt>
+=======
 		河南传智播客</dt>
+>>>>>>> 1d413d69935a76914200bd2d1ca3b6d46175e4c2
 	<dd style="width:120px;height:40px;float:left;">
 		<a href="http://wpa.qq.com/msgrd?v=1&uin=790330816&site=qq&menu=yes" target="_blank"><img alt="西安传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
 	<dd style="width:120px;height:40px;float:left;">

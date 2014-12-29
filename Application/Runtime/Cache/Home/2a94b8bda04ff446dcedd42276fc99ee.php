@@ -237,7 +237,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 </dl>
 <div class="clear"></div>
 <ul>
-<?php if(is_array($infoc)): foreach($infoc as $key=>$it): ?><li><span class="STYLE6">[php学员]</span><a href="http://php.itcast.cn/news/fb4ddfd4/3e47/496a/8c63/7fbe5463bfd3.shtml"><?php echo ($it["content"]); ?></a></li><?php endforeach; endif; ?>
+<?php if(is_array($infoc)): foreach($infoc as $key=>$it): ?><li><span class="STYLE6">[php学员]</span><a href="http://www.mybbs.com/index.php/Home/index/zhaolun_xq?id=<?php echo ($it["id"]); ?>"><?php echo ($it["title"]); ?></a></li><?php endforeach; endif; ?>
 <script type="text/javascript">
 			<!--
 				function register(){
@@ -281,7 +281,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 </dl>
 <div class="clear"></div>
 <ul>
-<?php if(is_array($infod)): foreach($infod as $key=>$it): ?><li><span class="STYLE6">[php学员]</span><a href="http://php.itcast.cn/news/20130902/14205610545.shtml"><?php echo ($it["content"]); ?></a></li><?php endforeach; endif; ?>
+<?php if(is_array($infod)): foreach($infod as $key=>$it): ?><li><span class="STYLE6">[php学员]</span><a href="http://www.mybbs.com/index.php/Home/index/liujun_xq?id=<?php echo ($it["id"]); ?>"><?php echo ($it["title"]); ?></a></li><?php endforeach; endif; ?>
 <li><a href="http://php.itcast.cn/news/list/0b8acc29-7202-4e1d-a6db-f6dfd3a639bb/1.shtml"><font style="color: red"><b>&gt;&gt;查看更多学员感言</b></font></a></li>
 </ul>
 </div>
