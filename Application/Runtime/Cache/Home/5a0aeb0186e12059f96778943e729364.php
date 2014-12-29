@@ -110,41 +110,58 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 	<a class="jiathis_counter_style"></a>
 </div>
 <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>-->
-<DIV id="box">
-<DIV style="margin-top: 3px;" id="left" class="fl">
-<DIV><IMG src="/Public/images/lefttop.gif"></DIV>
-<DIV class="jyjb">
-<DIV><IMG src="/Public/images/kcjs-tu.jpg"></DIV>﻿
-<DIV class="kcjs">
-<STYLE type="text/css">
-.kcnr-table{ line-height:20px;}
-	.kcnr-table li{ list-style-image:url(http://www.itcast.cn/files/image/201207/20120718144154342.jpg); margin-left:15px;;</STYLE>
-</DIV>
-<?php if(is_array($info)): foreach($info as $key=>$vo): ?><UL>
-  <LI style="width: 141px;" class="fl"><IMG src="/Public/images/phpjc.jpg"></LI>
-  <LI style="width: 470px;" class="fl jyjb-11-font1"><B class="jyjb-11-font2"><A 
-  href="http://www.mybbs.com/index.php/Home/project/jichu" 
-  target="_blank"><?php echo ($vo["pei_class"]); ?></A></B>
-  <P><?php echo ($vo["pei_intro"]); ?></P>
-  </LI></UL>
-  
-<TABLE class="kcnr-table" border="0" cellSpacing="0" cellPadding="0" 
-  width="99%">
-  <TBODY>
-  <TR>
-    <TD><?php echo ($vo["pei_class"]); ?>课程名称</TD>
-    <TD><STRONG><a href="http://www.mybbs.com/index.php/Home/project/kecheng?id=<?php echo ($vo["pei_id"]); ?>" target="_blank">点击查看<?php echo ($vo["pei_class"]); ?>课程详细介绍</a></STRONG></TD></TR>
-  <TR>
-    <TD width="22%"><BR><?php echo ($vo["bbs_jieduan"]); ?></TD>
-    <TD width="78%">
-      <P></P>
-      <UL>
-        <?php echo ($vo["neirong"]); ?></UL></TD></TR>
-  
-  </TBODY></TABLE><?php endforeach; endif; ?>
-<BR>
-<BR>
+<div id="box">
+  <div style="width:960px; height:149px; margin:0 auto;"><img src="/Public/images/teacherpic.jpg"  /></div>
+  <div id="left" class="fl"  style="margin-top:3px;">
+    <div><img src="/Public/images/lefttop.gif"/></div>
+    <div class="left_content2">
+      <h4 class="ganyan"><span class="STYLE3">师资</span>介绍</h4>
+      <div class="teacher_z" style="height: auto; overflow: hidden">
+<!-- 第一位老师 -->
+<?php if(is_array($list)): foreach($list as $key=>$vo): ?><div class="teacher">
+<p class="fl"><img alt="" src="<?php echo ($vo["img"]); ?>" style="width: 155px; height: 189px;" /></p>
+<dl class="fr">
+	<dt>
+		<span class="blue"><strong><?php echo ($vo["t_name"]); ?></strong></span><strong>--<span style="color:#0000ff;"><a href="/index.php/home/teacher/video/id/<?php echo ($vo["id"]); ?>" target="_blank"><span style="color: rgb(0, 0, 255);">在线试听精彩课程</span></a></span></strong></dt>
+	<dt>
+		<strong>职 务：<?php echo ($vo["position"]); ?></strong></dt>
+	<dd><?php echo ($vo["t_desc"]); ?></dd>
+</dl>
+</div><?php endforeach; endif; ?>
 
+<div></div>
+</div>
+<br />
+
+    </div>
+    <div><img src="/Public/images/leftbottom.gif"/></div>
+  </div>
+  <div id="right" class="fl">
+    <h4 class="righttitle1 zhaopin"><span class="blue">讲师</span>招聘</h4>
+    <div class="rightkuang1">
+      <p class="cent"><img src="/Public/images/xuanze.jpg" width="256" height="66" /></p>
+      <div class="clear"> </div>
+      <p class="miaoshu"> 中国的软件教育已经坑害了不少软件工程师苗子，传智播客自成立之日起就立志于改变中国的软件教育，目前已经出版IT教程书籍十多本，教学视频几十套，发表各类技术文章几百篇，已经开始对中国的软件教育有所影响。随着传智播客的事业被越来越多的人认知，加盟到传智播客愿意为此事业奋斗终生的技术牛人也越来越多。尽管加盟到传智播客的技术牛人很多，但要从政策上改变中国的软件教育，我们的力量还很小，小到可以说是微不足道。所以我们需要各路英雄豪杰加盟传智播客，为改变中国的软件教育而奋斗不息。</p>
+      <p class="cent"><a href="/news/9838ccfe/74aa/4532/915e/f905284de34e.shtml" target="_blank"><img src="/Public/images/liulan.jpg" width="142" height="23"/></a></p>
+    </div>
+    <div class="rightbottom"><img src="/Public/images/bottom1.gif"/></div>
+    <h4 class="righttitle1"><span class="fl">我们出版的书籍</span><span class="fr"><a href="/channel/book.shtml">+MORE</a></span></h4>
+    <div class="rightkuang chuban" style="height:auto; overflow:hidden;">
+       <dl>
+        <dt><a href="http://product.dangdang.com/product.aspx?product_id=8758723" target="_blank"><img src="/Public/images/book04.jpg"/></a></dt>
+        <dd><span class="blue"><strong><a href="http://product.dangdang.com/product.aspx?product_id=8758723" target="_blank">《Java就业培训教程》</a></strong></span></dd>
+        <dd>作 者：<span class="STYLE4">张孝祥</span> </dd>
+        <dd>定价：<span class="STYLE6"><strong>￥39.00元</strong> </span></dd>
+        <dd>页数：<span class="STYLE4">394</span> </dd>
+</dl>
+<dl>
+        <dt><a href="http://product.dangdang.com/product.aspx?product_id=20280496" target="_blank"><img src="/Public/images/book01.jpg"/></a></dt>
+        <dd><span class="blue"><strong><a href="http://product.dangdang.com/product.aspx?product_id=20280496" target="_blank">《EJB3.0入门经典》</a></strong></span></dd>
+        <dd>作 者：<span class="STYLE4">黎活明</span> </dd>
+        <dd>定价：<span class="STYLE6"><strong>￥59.80 元</strong> </span></dd>
+        <dd>页数：<span class="STYLE4">479</span> </dd>
+</dl> 
+    
 <div class="clear"></div>
 		  </div>
 			<div><img src="/Public/images/leftbottom.gif"/></div>
