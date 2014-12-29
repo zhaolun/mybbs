@@ -303,28 +303,20 @@ H1 a {
 </head>
 <body>
 <h1>添加问题</h1>
-<a href='/admin.php/Home/problem/lists'>问题列表</a>
+<a href='/admin.php/Home/xy/lists'>问题列表</a>
 
 <!-- 添加新闻类别 -->
 <div class="list-div">
-<form method="post" action="/admin.php/Home/problem/add_do">
+<form method="post" action="/admin.php/Home/xy/add_do">
 	<table cellspacing='1' cellpadding='3'>
-	    <tr>
-			<td align='right'>问题类别：</td>
-			<td><select name="status">
-			    <option selected>-请选择-</option>
-				<option value="1" >热点问题</option>
-				<option value="0">PHP相关问题</option>
-			</select></td>
-		</tr>
 
 		<tr>
-			<td align='right'>问题名称：</td>
+			<td align='right'>消息标题：</td>
 			<td><input type="text" name="title" size=80></td>
 		</tr>
 		
 		<tr>
-			<td align='right'>问题答案：</td>
+			<td align='right'>内容：</td>
 			<td>
 			<textarea name="content" rows="10" cols="40"></textarea>
 		</tr>
