@@ -31,7 +31,7 @@
 	<!-- 页面顶部 -->
 <div class="top1">
 	<p style="background:url(/Public/images/hot.png) 107px 10px no-repeat; padding-right:35px;" class="fl"><span class="blue">专业的IT培训机构！</span></p>
-	<p class="fr">
+	<p class="fr"><form method="post" action="/index.php/Home/problem/sphinx">问题咨询：<input type="text" name="keyword">　<input type="submit" value="确认"></form>
 	</p>
 </div>
 
