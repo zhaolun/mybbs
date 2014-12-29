@@ -243,19 +243,7 @@ H1 a {
 							<li><a href="/admin.php/home/problem/add" >添加问题</a></li>
 							</ul>
 							</div>
-<h1 class="type"><a>学员感言</a></h1>
-							<div class="content">
-							<table width="100%" border="0" cellspacing="0" cellpadding="0">
-							<tr>
-							<td><img src="/Public/admin/images/menu_topline.gif" width="182" height="5" /></td>
-							</tr>
-							</table>
-							<ul class="MM">
-							<li><a href="/admin.php/home/xueyuan/add" >学员感言</a></li>
 							
-							</ul>
-							</div>
-
 
 
 							<h1 class="type"><a>yi利一组PV</a></h1>
@@ -268,8 +256,8 @@ H1 a {
 							<ul class="MM">
 							<li><a href="/admin.php/home/one/lists" >条形图</a></li>
 							</ul>
-</div>
-							<h1 class="type"><a>学员信息</a></h1>
+                            </div>
+							<h1 class="type"><a>学员感言</a></h1>
 							<div class="content">
 							<table width="100%" border="0" cellspacing="0" cellpadding="0">
 							<tr>
@@ -277,10 +265,21 @@ H1 a {
 							</tr>
 							</table>
 							<ul class="MM">
-							<li><a href="/admin.php/home/xy/lists" >学员信息列表</a></li>
-							<li><a href="/admin.php/home/xy/add" >学员信息添加</a></li>
+							<li><a href="/admin.php/home/gy/lists" >感言列表</a></li>
+							<li><a href="/admin.php/home/gy/lists" >感言添加</a></li>
 							</ul>
-							
+                            </div>
+							<h1 class="type"><a>学院信息</a></h1>
+							<div class="content">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+							<td><img src="/Public/admin/images/menu_topline.gif" width="182" height="5" /></td>
+							</tr>
+							</table>
+							<ul class="MM">
+							<li><a href="/admin.php/home/xy/lists" >学院信息列表</a></li>
+							<li><a href="/admin.php/home/xy/add" >学院信息添加</a></li>
+							</ul>	
 						</div>
 					</td>
 				</tr>
@@ -316,7 +315,7 @@ H1 a {
 <table cellspacing='1' cellpadding='3'>
   <tr>
     <th  class="group-title">编号</th>
-	<th  class="group-title">问题名称</th>
+	<th  class="group-title">信息名称</th>
 	<th  class="group-title">来源</th>
     <th  class="group-title">操作</th>
   </tr>

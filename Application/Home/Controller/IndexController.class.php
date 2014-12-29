@@ -33,10 +33,15 @@ class IndexController extends Controller {
 		$data2 = $userb->select();
 		$comp=$com->select();
 		//var_dump($comp);die;
+<<<<<<< HEAD
 		$data3 = $userc->select();
 		$data4 = $userd->select();
 		$data6 = $userf->order('id desc')->select();
 		//$data7 = $useraa->select();
+=======
+		$data3 = $userc->order("id desc")->select();
+		$data4 = $userd->order("id desc")->select();
+>>>>>>> 8d7b4d1556bf3fb157687c96b5a61c1cfa056e30
 		$data6 = $userf->select();
 		$data8 = $userbb->where('status=0')->select();
 		$db=M("slide_image");
@@ -58,6 +63,22 @@ class IndexController extends Controller {
 		//print_r($data);die;
         $this->assign('info',$data);
 		$this->display('xueyuan_xq');
+	}
+	public function zhaolun_xq(){
+		$id = $_GET['id'];
+		$usera = M('xueyuan');
+		$data = $usera->where("id=$id")->select();
+		//print_r($data);die;
+        $this->assign('info',$data);
+		$this->display('zhaolun_xq');
+	}
+	public function liujun_xq(){
+		$id = $_GET['id'];
+		$usera = M('xueyuan');
+		$data = $usera->where("id=$id")->select();
+		//print_r($data);die;
+        $this->assign('info',$data);
+		$this->display('liujun_xq');
 	}
 	public function login(){
 		if(!empty($_GET['nickname'])&&!empty($_GET['img'])){
