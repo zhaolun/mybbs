@@ -89,20 +89,25 @@
 </div>
 			  <div class="clear"></div>
 		  </div>
-			<div><img src="/Public/images/leftbottom.gif"  /></div>
-			
-			<div><img src="/Public/images/lefttop.gif"  /></div>
+			<div><img src="/Public/images/leftbottom.gif"/></div>
+			<div><img src="/Public/images/lefttop.gif"/></div>
 			<div class="left_content2">
-			  <h4 class="ganyan"><span class="fl"><span class="STYLE3">PHP培训</span>学员呐喊</span><span class="fr"><a href="http://php.itcast.cn/php/jyjb.shtml">+MORE</a></span></h4>
+			  <h4 class="ganyan"><span class="fl"><span class="STYLE3">PHP培训</span>学员呐喊</span><span class="fr"><a href="./index.php/home/message/index">+MORE</a></span></h4>
 			 <dl class="ganyan1 huodong1">
 	<dt class="fl">
-		<a href="http://php.itcast.cn/news/20130705/14332258802.shtml" target="_blank"><img src="/public/images/4.jpg" style="width: 287px; height: 189px; " /></a><br />
-		<a href="" target="_blank">八维PHP学院就业明星-张肖云</a></dt>
+		<a href="./index.php/home/message/index" target="_blank"><img src="/public/images/4.jpg" style="width: 287px; height: 189px; " /></a><br />
+		<a href="" target="_blank">八维PHP学院就业明星-张肖云</a>
+		
+	</dt>
 	<dd class="huodongfr">
 		<h3 class="STYLE7">就业信息</h3>
 		<ul class="bjhd">
-		<foreach name='info' item='it'>
-		<li><img src="http://www.itcast.cn/images/great.jpg" /><a href="http://php.itcast.cn/php/jyjb.shtml">{$it.name} {$it.time} &nbsp;{$it.company} &nbsp;{$it.price}</a></li>
+		<foreach name='info' item='val'>
+		<li>
+			<img src="http://www.itcast.cn/images/great.jpg" />
+			<a href="./index.php/home/message/video/stu_id/{$val.stu_id}">{$val.stu_name} &nbsp; <?php echo $cc;?>&nbsp;
+				{$val.com_name} &nbsp;{$val.money}</a>
+		</li>
 		</foreach>
 
 		</ul>
@@ -194,13 +199,11 @@
 			    <div class="msdy-left"><img src="/Public/images/wenhao-1.jpg" /></div>
 				<div class="msdy-right">
 <ul>
-<foreach name='infoe' item='it'>
-<li><a href="http://www.itcast.cn/news/20121005/12001594210.shtml"><span style="color:#ff0000;">{$it.content}</span></a></li>
-</foreach>
+<foreach name='infof' item='it'>
+<li><a href="/index.php/home/index/detail/id/{$it.id}"><span style="color:#ff0000;">{$it.title}</span></a></li>
+
 </ul>
 <ul>
-<foreach name='infof' item='it'>
-<li><a href="http://php.itcast.cn/news/20130523/16573389409.shtml">{$it.content}</a></li>
 </foreach>
 <li><a href="http://php.itcast.cn/news/list/cba8c58c-b2d4-4f48-bf64-a10b59fb2666/1.shtml"><font style="color: red"><b>&gt;&gt;查看更多答疑信息</b></font></a></li>
 </ul>

@@ -12,23 +12,28 @@ class IndexController extends Controller {
 		$ypwd=$pwd[$key];
 		$ydk=$dk[$key];
 		echo $yip."@#@".$ypwd."@#@".$ydk;die;*/
+
+        $user = M('student');//获取表总数据
+
         $user = M('family');//获取表总数据
 		//学院
+
         $usera = M('xueyuan');
 		$userb = M('banji');
 		$userc = M('zhaolun');
 		$userd = M('liujun');
-		$usere = M('php');
 		$userf = M('mingshi');
 		$useraa = M('zhaopin');
 		$userbb = M('question');
-		$data = $user->select();
-        
+		$data=$user->query("select * from bbs_company,bbs_student where bbs_student.company=bbs_company.com_id limit 7");
+		$aa=$data[0]['work_time'];
+		$bb=substr($aa,0,10);
+		$this->assign('cc',$bb);
+		$data1 = $usera->select();        
 		$data1 = $usera->order("id desc")->select();
 		$data2 = $userb->select();
 		$data3 = $userc->select();
 		$data4 = $userd->select();
-		$data5 = $usere->select();
 		$data6 = $userf->select();
 		$data7 = $useraa->select();
 		$data8 = $userbb->where('status=0')->select();
@@ -40,7 +45,6 @@ class IndexController extends Controller {
 		$this->assign('infob',$data2);
 		$this->assign('infoc',$data3);
 		$this->assign('infod',$data4);
-		$this->assign('infoe',$data5);
 		$this->assign('infof',$data6);
 		$this->assign('infoaa',$data7);
 		$this->assign('infobb',$data8);
@@ -145,5 +149,13 @@ class IndexController extends Controller {
 			echo 1;
 		else
 			echo 0;
+	}
+	function detail(){
+		$id=$_GET['id'];
+		$model=M("mingshi");
+        $data=$model->where("id='$id'")->find();
+		//echo $data;die;
+        $this->assign('list',$data);
+        $this->display('detail');
 	}
 }

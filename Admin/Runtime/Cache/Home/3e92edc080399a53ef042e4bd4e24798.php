@@ -184,6 +184,7 @@ H1 a {
           <li><a href="/admin.php/Home/admin/nav">导航管理</a></li>
           <li><a href="/admin.php/Home/admin/image">幻灯片管理</a></li>
 		  <li><a href="/admin.php/Home/admin/logo">LOGO管理</a></li>
+		  <li><a href="/admin.php/Home/admin/add">添加疑问</a></li>
         </ul>
       </div>
       
@@ -281,45 +282,38 @@ H1 a {
 		<td width="87%" valign="top">
 			<div style="margin:10px;padding:10px;">
 				<head>
-<title>前台幻灯片列表</title>
+<title>添加新闻类别</title>
 <meta name="robots" content="noindex, nofollow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="/Public/admin/css/general.css" rel="stylesheet" type="text/css" />
 <link href="/Public/admin/css/main.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="/Public/admin/js/transport.js"></script>
+<script type="text/javascript" src="../js/transport.js"></script>
 <script type="text/javascript" src="./js/common.js"></script>
 </head>
 <body>
 <h1>
-<span class="action-span1">前台幻灯片列表</span><span id="search_id" class="action-span1"></span>
+<span class="action-span1">添加职位类别</span><span id="search_id" class="action-span1"></span>
 <div style="clear:both"></div>
 </h1>
-<!-- 新闻类别列表 -->
+ 
+<!-- 添加新闻类别 -->
 <div class="list-div">
-<table cellspacing='1' cellpadding='3'>
-  <tr>
-    <th  class="group-title">编号</th>
-	<th  class="group-title">幻灯片</th>
-	<th  class="group-title">幻灯片名称</th>
-	<th  class="group-title">幻灯片介绍</th>
-	<th  class="group-title">幻灯片链接</th>
-	<th  class="group-title">操作</th>
-  </tr>
-  <?php if(is_array($info)): foreach($info as $key=>$vo): ?><tr class="table_tr">
-	<td width="10%"><?php echo ($vo["img_id"]); ?></td>
-    <td width="10%"><img src="<?php echo ($vo["img_path"]); ?>" width=50></td>
-    <td width="15%"><?php echo ($vo["img_title"]); ?></td>
-    <td width="15%"><?php echo ($vo["img_desc"]); ?></td>
-	<td width="30%"><?php echo ($vo["img_link"]); ?></td>
-	<td width="20%"><a href="/admin.php/Home/admin/delimg/id/<?php echo ($vo["img_id"]); ?>">删除</a>||<a href="/admin.php/Home/admin/upimg/id/<?php echo ($vo["img_id"]); ?>">编辑</a></td>
-  </tr><?php endforeach; endif; ?>
-  <tr align="center">
-	<td colspan=6>
-		<input type="button" value="看哪个幻灯片不爽?去添加一个" onclick="location.href='/admin.php/Home/admin/add_image'">
-	</td>
-  </tr>
-  
-</table>
+<form method="post" action="/admin.php/home/position/addpro">
+	<table cellspacing='1' cellpadding='3'>
+		<tr>
+			<td align='right'>职位名称：</td>
+			<td><input type="text" name="p_name" size=80></td>
+		</tr>
+		<tr>
+			<td align='right'>职位描述：</td>
+			<td><textarea name="p_desc" rows="20" cols="100"></textarea></td>
+		</tr>
+		
+		<tr>
+			<td align='center' colspan=2><input type="submit" value='添加职位类别'></td>	
+		</tr>
+	</table>
+</form>
 </div>
 <br />
 <div id="footer">

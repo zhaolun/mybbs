@@ -266,7 +266,19 @@ H1 a {
 							<ul class="MM">
 							<li><a href="/admin.php/home/one/lists" >条形图</a></li>
 							</ul>
-							</div>
+</div>
+							<h1 class="type"><a>学员信息</a></h1>
+							<div class="content">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+							<td><img src="/Public/admin/images/menu_topline.gif" width="182" height="5" /></td>
+							</tr>
+							</table>
+							<ul class="MM">
+							<li><a href="/admin.php/home/xy/lists" >学员信息列表</a></li>
+							<li><a href="/admin.php/home/xy/add" >学员信息添加</a></li>
+							</ul>
+							
 						</div>
 					</td>
 				</tr>
@@ -281,45 +293,48 @@ H1 a {
 		<td width="87%" valign="top">
 			<div style="margin:10px;padding:10px;">
 				<head>
-<title>前台导航列表</title>
+<title>问题列表</title>
 <meta name="robots" content="noindex, nofollow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="/Public/admin/css/general.css" rel="stylesheet" type="text/css" />
-<link href="/Public/admin/css/main.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="/Public/admin/js/transport.js"></script>
+<link href="../css/general.css" rel="stylesheet" type="text/css" />
+<link href="../css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/transport.js"></script>
 <script type="text/javascript" src="./js/common.js"></script>
 </head>
 <body>
 <h1>
-<span class="action-span1">前台导航列表</span><span id="search_id" class="action-span1"></span>
+<span class="action-span1">问题列表</span><span id="search_id" class="action-span1"></span>
 <div style="clear:both"></div>
 </h1>
+<a href='/admin.php/Home/xy/add'>添加问题</a>
+<!-- 新闻类别搜索 -->
+<center>问题名称：<input type="text" name="" size=40><input type="button" value="搜索" onclick=""></center>
 <!-- 新闻类别列表 -->
 <div class="list-div">
 <table cellspacing='1' cellpadding='3'>
   <tr>
     <th  class="group-title">编号</th>
-	<th  class="group-title">导航名称</th>
-	<th  class="group-title">导航链接</th>
-	<th  class="group-title">操作</th>
+	<th  class="group-title">问题名称</th>
+	<th  class="group-title">来源</th>
+    <th  class="group-title">操作</th>
   </tr>
-  <?php if(is_array($info)): foreach($info as $key=>$vo): ?><tr class="table_tr">
-    <td width="10%"><?php echo ($vo["nav_id"]); ?></td>
-    <td width="30%"><?php echo ($vo["nav_name"]); ?></td>
-    <td width="40%"><?php echo ($vo["nav_link"]); ?></td>
-	<td width="20%"><a href="/admin.php/Home/admin/delnav/id/<?php echo ($vo["nav_id"]); ?>">删除</a>||<a href="/admin.php/Home/admin/upnav/id/<?php echo ($vo["nav_id"]); ?>">编辑</a></td>
-  </tr><?php endforeach; endif; ?>
-  <tr align="center">
-	<td colspan=4>
-		<input type="button" value="看哪个导航不爽?去添加一个" onclick="location.href='/admin.php/Home/admin/add_nav'">
-	</td>
-  </tr>
-  
+<?php if(is_array($info)): foreach($info as $key=>$it): ?><tr class="table_tr">
+    <td width="5%"><?php echo ($it["id"]); ?></td>
+    <td width="30%"><?php echo ($it["title"]); ?></td>
+    <td width="10%">yi利小组</td>
+	<td width="10%">
+	<a href='/admin.php/Home/problem/del?id=<?php echo ($it["id"]); ?>'>删除</a>
+    <a href='/admin.php/Home/problem/upd?id=<?php echo ($it["id"]); ?>'>修改</a>
+    </td>
+	</tr><?php endforeach; endif; ?>
 </table>
+<div id='page_list' align='center'>
+        <?php echo ($data['page']); ?>
+</div>
 </div>
 <br />
 <div id="footer">
-版权所有 &copy; 八维研修学院软件工程学院1302phpA班，并保留所有权利。</div>
+版权所有 &copy; 八维研修学院软件工程学院1308phpA班yi利小组，并保留所有权利。</div>
 </body>
 </html>
 			</div>

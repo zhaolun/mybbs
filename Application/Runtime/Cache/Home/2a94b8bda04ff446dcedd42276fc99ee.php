@@ -33,6 +33,7 @@
 	<p style="background:url(/Public/images/hot.png) 107px 10px no-repeat; padding-right:35px;" class="fl"><span class="blue">专业的IT培训机构！</span></p>
 	<p class="fr"><form method="post" action="/index.php/Home/problem/sphinx">问题咨询：<input type="text" name="keyword">　<input type="submit" value="确认"></form>
 	</p>
+	
 </div>
 
 	<div class="clear"></div>
@@ -194,19 +195,24 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 </div>
 			  <div class="clear"></div>
 		  </div>
-			<div><img src="/Public/images/leftbottom.gif"  /></div>
-			
-			<div><img src="/Public/images/lefttop.gif"  /></div>
+			<div><img src="/Public/images/leftbottom.gif"/></div>
+			<div><img src="/Public/images/lefttop.gif"/></div>
 			<div class="left_content2">
-			  <h4 class="ganyan"><span class="fl"><span class="STYLE3">PHP培训</span>学员呐喊</span><span class="fr"><a href="http://php.itcast.cn/php/jyjb.shtml">+MORE</a></span></h4>
+			  <h4 class="ganyan"><span class="fl"><span class="STYLE3">PHP培训</span>学员呐喊</span><span class="fr"><a href="./index.php/home/message/index">+MORE</a></span></h4>
 			 <dl class="ganyan1 huodong1">
 	<dt class="fl">
-		<a href="http://php.itcast.cn/news/20130705/14332258802.shtml" target="_blank"><img src="/public/images/4.jpg" style="width: 287px; height: 189px; " /></a><br />
-		<a href="" target="_blank">八维PHP学院就业明星-张肖云</a></dt>
+		<a href="./index.php/home/message/index" target="_blank"><img src="/public/images/4.jpg" style="width: 287px; height: 189px; " /></a><br />
+		<a href="" target="_blank">八维PHP学院就业明星-张肖云</a>
+		
+	</dt>
 	<dd class="huodongfr">
 		<h3 class="STYLE7">就业信息</h3>
 		<ul class="bjhd">
-		<?php if(is_array($info)): foreach($info as $key=>$it): ?><li><img src="http://www.itcast.cn/images/great.jpg" /><a href="http://php.itcast.cn/php/jyjb.shtml"><?php echo ($it["name"]); ?> <?php echo ($it["time"]); ?> &nbsp;<?php echo ($it["company"]); ?> &nbsp;<?php echo ($it["price"]); ?></a></li><?php endforeach; endif; ?>
+		<?php if(is_array($info)): foreach($info as $key=>$val): ?><li>
+			<img src="http://www.itcast.cn/images/great.jpg" />
+			<a href="./index.php/home/message/video/stu_id/<?php echo ($val["stu_id"]); ?>"><?php echo ($val["stu_name"]); ?> &nbsp; <?php echo $cc;?>&nbsp;
+				<?php echo ($val["com_name"]); ?> &nbsp;<?php echo ($val["money"]); ?></a>
+		</li><?php endforeach; endif; ?>
 
 		</ul>
 	</dd>
@@ -293,10 +299,10 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 			    <div class="msdy-left"><img src="/Public/images/wenhao-1.jpg" /></div>
 				<div class="msdy-right">
 <ul>
-<?php if(is_array($infoe)): foreach($infoe as $key=>$it): ?><li><a href="http://www.itcast.cn/news/20121005/12001594210.shtml"><span style="color:#ff0000;"><?php echo ($it["content"]); ?></span></a></li><?php endforeach; endif; ?>
+<?php if(is_array($infof)): foreach($infof as $key=>$it): ?><li><a href="/index.php/home/index/detail/id/<?php echo ($it["id"]); ?>"><span style="color:#ff0000;"><?php echo ($it["title"]); ?></span></a></li>
+
 </ul>
-<ul>
-<?php if(is_array($infof)): foreach($infof as $key=>$it): ?><li><a href="http://php.itcast.cn/news/20130523/16573389409.shtml"><?php echo ($it["content"]); ?></a></li><?php endforeach; endif; ?>
+<ul><?php endforeach; endif; ?>
 <li><a href="http://php.itcast.cn/news/list/cba8c58c-b2d4-4f48-bf64-a10b59fb2666/1.shtml"><font style="color: red"><b>&gt;&gt;查看更多答疑信息</b></font></a></li>
 </ul>
 </div>

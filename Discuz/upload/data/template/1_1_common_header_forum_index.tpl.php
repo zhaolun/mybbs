@@ -1,8 +1,24 @@
 <?php if(!defined('IN_DISCUZ')) exit('Access Denied'); 
 0
+<<<<<<< HEAD:Discuz/upload/data/template/1_1_common_header_forum_index.tpl.php
 || checktplrefresh('./template/default/common/header.htm', './template/default/common/header_common.htm', 1419849150, '1', './data/template/1_1_common_header_forum_index.tpl.php', './template/default', 'common/header_forum_index')
 || checktplrefresh('./template/default/common/header.htm', './template/default/common/header_qmenu.htm', 1419849150, '1', './data/template/1_1_common_header_forum_index.tpl.php', './template/default', 'common/header_forum_index')
 || checktplrefresh('./template/default/common/header.htm', './template/default/common/pubsearchform.htm', 1419849150, '1', './data/template/1_1_common_header_forum_index.tpl.php', './template/default', 'common/header_forum_index')
+=======
+<<<<<<< HEAD:Discuz/upload/data/template/1_1_common_header_forum_index.tpl.php
+<<<<<<< HEAD
+|| checktplrefresh('./template/default/common/header.htm', './template/default/common/header_common.htm', 1419480959, '1', './data/template/1_1_common_header_forum_index.tpl.php', './template/default', 'common/header_forum_index')
+|| checktplrefresh('./template/default/common/header.htm', './template/default/common/header_qmenu.htm', 1419480959, '1', './data/template/1_1_common_header_forum_index.tpl.php', './template/default', 'common/header_forum_index')
+=======
+|| checktplrefresh('./template/default/common/header.htm', './template/default/common/header_common.htm', 1419560019, '1', './data/template/1_1_common_header_forum_index.tpl.php', './template/default', 'common/header_forum_index')
+|| checktplrefresh('./template/default/common/header.htm', './template/default/common/header_qmenu.htm', 1419560019, '1', './data/template/1_1_common_header_forum_index.tpl.php', './template/default', 'common/header_forum_index')
+>>>>>>> d8c0c4e0d5dc3fb35b9c39577986b0642e1b7b44
+=======
+|| checktplrefresh('./template/default/common/header.htm', './template/default/common/header_common.htm', 1419829682, '1', './data/template/1_1_common_header_forum_guide.tpl.php', './template/default', 'common/header_forum_guide')
+|| checktplrefresh('./template/default/common/header.htm', './template/default/common/header_qmenu.htm', 1419829682, '1', './data/template/1_1_common_header_forum_guide.tpl.php', './template/default', 'common/header_forum_guide')
+|| checktplrefresh('./template/default/common/header.htm', './template/default/common/pubsearchform.htm', 1419829682, '1', './data/template/1_1_common_header_forum_guide.tpl.php', './template/default', 'common/header_forum_guide')
+>>>>>>> afd1ef15f427971730454cb926e2603a9d01c31e:Discuz_X3.2_SC_UTF8/upload/data/template/1_1_common_header_forum_guide.tpl.php
+>>>>>>> 59747a9d3b6dd7444eb965da1acae54edeaa2b1d:Discuz_X3.2_SC_UTF8/upload/data/template/1_1_common_header_forum_guide.tpl.php
 ;?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">

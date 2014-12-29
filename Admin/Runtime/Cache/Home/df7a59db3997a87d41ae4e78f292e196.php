@@ -184,6 +184,7 @@ H1 a {
           <li><a href="/admin.php/Home/admin/nav">导航管理</a></li>
           <li><a href="/admin.php/Home/admin/image">幻灯片管理</a></li>
 		  <li><a href="/admin.php/Home/admin/logo">LOGO管理</a></li>
+		  <li><a href="/admin.php/Home/admin/add">添加疑问</a></li>
         </ul>
       </div>
       
@@ -281,7 +282,7 @@ H1 a {
 		<td width="87%" valign="top">
 			<div style="margin:10px;padding:10px;">
 				<head>
-<title>新闻列表</title>
+<title>新闻类别列表</title>
 <meta name="robots" content="noindex, nofollow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="/Public/admin/css/general.css" rel="stylesheet" type="text/css" />
@@ -291,41 +292,34 @@ H1 a {
 </head>
 <body>
 <h1>
-<span class="action-span1">新闻列表</span><span id="search_id" class="action-span1"></span>
+<span class="action-span1">职位类别列表</span><span id="search_id" class="action-span1"></span>
 <div style="clear:both"></div>
 </h1>
-<!-- 新闻搜索 -->
-<center>标题：<input type="text" name="" size=40><input type="button" value="ajax搜索" onclick=""></center>
-<!-- 新闻列表 -->
+<!-- 新闻类别列表 -->
 <div class="list-div">
 <table cellspacing='1' cellpadding='3'>
   <tr>
-	<th  class="group-title"><input type="checkbox" name="">全选/反选</th>
     <th  class="group-title">编号</th>
-	<th  class="group-title">班级名称</th>
-	<th  class="group-title">课程介绍</th>
+	<th  class="group-title">职位名称</th>
+	<th  class="group-title">职位描述</th>
 	<th  class="group-title">操作</th>
   </tr>
-  <?php if(is_array($info)): foreach($info as $key=>$vo): ?><tr class="table_tr">
-	<td width="5%"><input type="checkbox"></td>
-	<td width="5%"><?php echo ($vo["pei_id"]); ?></td>
-    <td width="20%"><?php echo ($vo["pei_class"]); ?></td>
-    <td width="35%"><?php echo ($vo["pei_intro"]); ?></td>
-	<td width="35%">删除|编辑</td>
-  </tr><?php endforeach; endif; ?>
- 
-  <tr align="center">
-	<td colspan=7>
-		<input type="button" value="全选" onclick="">
-		<input type="button" value="反选" onclick="">
-		<input type="button" value="全不选" onclick="">
-		<input type="button" value="添加" onclick="">
-		<input type="button" value="修改" onclick="">
-		<input type="button" value="ajax删除" onclick="">
-	</td>
-  </tr>
-  
+
+<?php if(is_array($list)): foreach($list as $key=>$vo): ?><tr class="table_tr">
+    <td width="5%"><?php echo ($vo["p_id"]); ?></td>
+    <td width="20%"><?php echo ($vo["position"]); ?></td>
+    <td width="35%"><?php echo ($vo["p_desc"]); ?></td>
+	<td width="10%">
+	<a href="/admin.php/home/position/del/id/<?php echo ($vo["p_id"]); ?>">删除</a>|
+	<a href="/admin.php/home/position/up/id/<?php echo ($vo["p_id"]); ?>">编辑</a>
+	</td>  </tr><?php endforeach; endif; ?>
+
 </table>
+<center>
+	<div>
+		<?php echo ($page); ?>
+	</div>
+</center>
 </div>
 <br />
 <div id="footer">

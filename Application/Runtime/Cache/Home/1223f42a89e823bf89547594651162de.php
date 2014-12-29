@@ -33,6 +33,7 @@
 	<p style="background:url(/Public/images/hot.png) 107px 10px no-repeat; padding-right:35px;" class="fl"><span class="blue">专业的IT培训机构！</span></p>
 	<p class="fr"><form method="post" action="/index.php/Home/problem/sphinx">问题咨询：<input type="text" name="keyword">　<input type="submit" value="确认"></form>
 	</p>
+	
 </div>
 
 	<div class="clear"></div>
@@ -109,166 +110,99 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 	<a class="jiathis_counter_style"></a>
 </div>
 <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>-->
-	<div class="clear"></div>
-	<div id="lxwm">
 
-	  <p><img src="/Public/images/lxwm-top.jpg" /></p>
-	  <div class="lxwm-wenben">
-	  <!-- 内容主体  -->
-<p class="kxdl-font1"><?php echo ($info["0"]["pei_class"]); ?>招生简章</p>
-<div class="kcnr-wenben">
-<?php echo ($info["0"]["bbs_zhangcheng"]); ?>
-</div>
-<div class="kcnr-title">培训目标</div>
-<p style="margin-top: 10px; text-indent: 2em"><?php echo ($info["0"]["mubiao"]); ?></p>
-<div class="kcnr-title">招生对象</div>
-<p style="margin-top: 10px; text-indent: 2em"><?php echo ($info["0"]["bbs_duixiang"]); ?></p>
-<p style="text-indent: 2em; margin-bottom: 10px"></p>
-<div class="kcnr-title">课程特色</div>
-<p class="kcnr-title1"><?php echo ($info["0"]["bbs_tese"]); ?></p>
-<div class="kcnr-title">课程安排</div>
-<p class="kcnr-font1"><?php echo ($info["0"]["pei_class"]); ?></p>
-<style type="text/css">
-.kcnr-table{ line-height:20px;}
-	.kcnr-table li{list-style-image:url(http://www.itcast.cn/files/image/201207/20120718144154342.jpg); margin-left:15px;;</style>
-<table border="0" cellpadding="0" cellspacing="0" class="kcnr-table" width="99%">
-<tbody>
-	<tr>
-	<td>课程名称</td>
-	<td>阶段课程</td>
-	<td width="40%">课程内容</td>
-	<td width="23%">学习目标</td>
-	</tr>
-	<?php if(is_array($info)): foreach($info as $key=>$vo): ?><tr>
-	<td width="17%"><strong><?php echo ($vo["bbs_name"]); ?></strong></td>
-	<td width="20%"><p style="text-indent: 2em"><?php echo ($vo["bbs_jieduan"]); ?></p></td>
-	<td><?php echo ($vo["neirong"]); ?></td>
-	<td><?php echo ($vo["mubiao"]); ?></td>
-	</tr><?php endforeach; endif; ?>
-	
-</tbody>
-</table>
-<div class="kcnr-title">培训方式</div>
-<table border="0" cellpadding="0" cellspacing="0" class="kcnr-table" width="99%">
-<tbody>
-	<tr>
-	<td width="19%"><img src="http://www.itcast.cn/Public/images/kcnr-tu5.jpg" /></td>
-	<td width="81%">
-	<p style="text-indent: 2em; color: #ff6600; font-size: 14px; font-weight: bold">培训时间：1个月</p>
-	<p style="text-indent: 2em; color: #ff6600; font-size: 14px; font-weight: bold">培训方式：全日制脱产，每周5天上课，早9：00－晚 8：00</p>
-	</td>
-	</tr>
-</tbody>
-</table>
-<br />
+<div id="box">
+  <div class="position"><a name="pagetop"/>您现在的位置：<span class="STYLE5"><a href="http://php.itcast.cn">PHP学院</a> &gt;&gt; PHP名师答疑 &gt;&gt; 正文</span></div>
+  <div id="left" class="fl" style="margin-top:8px;">
+    <div class="infotop"><img src="/Public/images/infotop.gif"/></div>
+    <div class="left_content1">
+      <div id="printarea">
+        <h1 class="infotitle"><?php echo ($list["title"]); ?></h1>
+        <div class="editer">更新时间:<?php echo ($list["time"]); ?> 来源:</div>
+        <div class="infor">
+         <span style="font-size:12px;"><span style="font-family: tahoma, geneva, sans-serif; "><span style="color: rgb(68, 68, 68); line-height: 21px; ">(</span><font style="word-wrap: break-word; color: rgb(68, 68, 68); font-size: 14px; line-height: 21px; ">转载请注明</font><span style="color: rgb(68, 68, 68); line-height: 21px; ">&nbsp;&nbsp;</span><font style="word-wrap: break-word; color: rgb(68, 68, 68); font-size: 14px; line-height: 21px; ">传智播客</font><span style="color: rgb(68, 68, 68); line-height: 21px; ">php</span><font style="word-wrap: break-word; color: rgb(68, 68, 68); font-size: 14px; line-height: 21px; ">学院</font><span style="color: rgb(68, 68, 68); line-height: 21px; ">-</span><font style="word-wrap: break-word; color: rgb(68, 68, 68); font-size: 14px; line-height: 21px; ">韩顺平</font><span style="color: rgb(68, 68, 68); line-height: 21px; ">&nbsp;&nbsp;</span><a href="http://php.itcast.cn/" style="word-wrap: break-word; color: rgb(51, 102, 153); font-family: Tahoma, Helvetica, SimSun, sans-serif; font-size: 14px; line-height: 21px; " target="_blank">http://php.itcast.cn</a><span style="color: rgb(68, 68, 68); line-height: 21px; ">&nbsp;)</span></span></span><br style="word-wrap: break-word; color: rgb(68, 68, 68); font-family: Tahoma, Helvetica, SimSun, sans-serif; font-size: 14px; line-height: 21px; " />
+		 <p align="left" style="margin: 0px; padding: 0px; text-indent: 2em; "><?php echo ($list["content"]); ?></p>
 
-<!-- 内容主体  -->
+<div align="left" style="word-wrap: break-word; color: rgb(68, 68, 68); font-family: Tahoma, Helvetica, SimSun, sans-serif; font-size: 14px; line-height: 21px; "><span style="font-size:12px;"><span style="font-family: tahoma, geneva, sans-serif; "><font style="word-wrap: break-word; ">温馨提示： 答案在&nbsp;</font><font color="blue" style="word-wrap: break-word; ">php.itcast.cn</font><font style="word-wrap: break-word; ">名师答疑。</font></span></span></div>
+
+	<script type="text/javascript" src="http://bbs.itcast.cn/api.php?mod=js&bid=94"></script>
+        </div>
+      </div>
+      <div class="pre">
+	               上一篇：<a target="_blank" href="/index.php/home/index/detail/id/<?php echo ($it["id"]); ?>">PHP应该学什么，如何学好PHP(二) </a>
+       	  </div>
+      <div class="next">
+	              下一篇：<a target="_blank" href="/index.php/home/index/detail/id/<?php echo ($it["id"]); ?>">传智播客PHP视频教程手册大全</a>
+      	  </div>
+
+      <div class="clear"></div>
+      <div class="share">
+	  <!-- Baidu share BEGIN -->
+    <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+        <span class="bds_more">分享到：</span>
+        <a class="bds_sqq">QQ好友</a>
+		<a class="bds_qzone">QQ空间</a>
+		<a class="bds_tqq">腾讯微博</a>
+		<a class="bds_tsina">新浪微博</a>
+		<a class="bds_tieba">百度贴吧</a>
+		<a class="shareCount"></a>
+    </div>
+<!-- Baidu share END 需在页面底部添加baidushare.js -->	  
 	  </div>
-	  <p><img src="/Public/images/lxwm-bottom.jpg" /></p>
-	</div>		
-	<div class="clear"></div>
-<style>
-.bm{width:100%; background:#FFF; font-family:Microsoft Yahei; padding:50px 0;}
-.bm h2{height:70px; background:url('http://www.itcast.cn/xa/Public/images/h_bg.png') no-repeat center top; text-indent:-9999px;}
-.bm .bm_con{width:938px; margin:0 auto; overflow:hidden;}
-.bm .bm_con .left{width:720px; float:left;}
-.bm .bm_con .left ul li{float:left; width:360px; margin-bottom:20px; overflow:hidden; height:40px;}	
-.bm .bm_con .left ul li .l_text{float:left; font-size:18px; color:#666; padding-right:10px; line-height:40px;}
-.bm .bm_con .left ul li input{float:left; width:211px; padding:10px 0; border:1px solid #c9c9c9; border-radius:3px; padding-left:10px; box-shadow:inset 1px 2px 3px #f1f1f1; margin-top:2px;}	
-.bm .bm_con .right{width:218px; float:left;}
-.bm .bm_con .right input{display:block; width:216px; height:36px; color:#fff; font-size:16px; background:#4492dc; border:none; outline:none; border-radius:3px; font-family:Microsoft Yahei;}
-.bm .bm_con .right input:hover{ background:#5aa3e9;}
-.bm .bm_con .right p{font-size:12px; color:#666; margin-top:25px;}	
-</style>
-<script type="text/javascript" src="http://www.itcast.cn/js/jquery-1.7.2.min.js"></script>
-<script type="text/javascript">
-function check(){
-	var realname=$("#realname");
-	var phone=$("#phone");
-	var email=$("#email");
-	var qq=$("#qq");
-	var address=$("#address");
-	
-	var realnamereg=/^[\u4E00-\u9FA5]+$/;
-	var phonereg=/^[1][3-9][0-9]{9}$/;
-	var qqreg=/^[1-9]\d{4,}$/;
-	var emailreg=/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
-	var shuoreg=/(http[s]?|ftp):\/\/[^\/\.]+?\..+\w$/i;
+	  <div class="clear"></div>
+      <div class="print"><a href="#" id="printbutton">【打印】</a> <a href="#pagetop">【返回顶部】</a></div>
+      	  <!-- 评论区 -->
+	    	<script type="text/javascript">
+	           $(document).ready(function(){
+	              	loadcomment('20121005-12001594210', 1);
+               });   
+	       </script>
+	  <div id="commentcontent"></div>
+	  <form name="comment" style="padding:0;margin:0px;">
+        <input type="hidden" name="referenceSource" value="20121005-12001594210">
+        <input type="hidden" name="type" value="NEWS">
+        <textarea cols="85" rows="6" style="width:610px;" name="content"></textarea>
+        <div class="clear"></div>
+        <div class="fabiao">
+	      <span class="fl">请输入验证码：<input name="validatecode" type="text" style="width:80px;" />  <img src="http://manage.itcast.cn:8080/validatecode/comment.jpg" id="kaptchaImage" width="100"/></span><span class="fr"><input type='button' value="提 交" id="savebutton"/></span>
+	    </div>
+	  </form>
+	  <div id="dialog" title="评论保存结果"></div><!-- 对话框内容 -->
+      <!-- 评论区 -->
+	        <div class="clear"></div>
+      <div class="ad">
+      <!-- 广告区 -->
+      <!--<a href="http://icd.itcast.cn"><img border="0" src="http://www.itcast.cn/images/ad/icdad.gif" width="620" /></a>--> 
+      <!-- 广告区 -->
+      </div>
+    </div>
+    <div><img src="/Public/images/leftbottom.gif"/></div>
+  </div>
+  <div id="right" class="fl">
+    <h4 class="righttitle1"><span class="fl">PHP视频下载</span><span class="fr"><a href="/php/video.shtml">+MORE</a></span></h4>
+    <ul class="rightkuang">
+       <ul>
+<li><a href="http://php.itcast.cn/news/caa9b58b/37b1/47f6/98e3/bd3600c98cfc.shtml">PHP入门到精通教程</a></li>
+<li><a href="http://php.itcast.cn/news/7acb031c/5958/42d8/be84/47796e2c1243.shtml">zend framework</a></li>
+<li><a href="http://php.itcast.cn/news/a632aeea/df9a/46bf/92f1/896679400a37.shtml">smarty模板引擎 </a></li>
+<li><a href="http://php.itcast.cn/news/2889f5ee/060a/4014/a6a8/cff645e79925.shtml">Ajax技术 </a></li>
+<li><a href="http://php.itcast.cn/news/166b4e78/01b0/4017/96ae/764cd57432a8.shtml">页面静态化</a></li>
+<li><a href="http://php.itcast.cn/news/50b67f71/dba5/4302/8749/b62bcc314bd0.shtml">Memcached缓存技术</a></li>
+<li><a href="http://php.itcast.cn/news/61ee8515/a34e/477d/9d5d/662dbff5e161.shtml#">Mysql优化</a></li>
+<li><a href="http://php.itcast.cn/news/fd551fd3/9db4/4360/9afa/57f438973108.shtml">轻松搞定网页设计</a></li>
+<li><a href="http://php.itcast.cn/news/5805c1ea/1b18/41eb/8fcc/6234659d8b40.shtml">PHP数据库陷阱</a></li>
+<li><a href="http://php.itcast.cn/news/94c86c32/a7c1/4d2f/b2b4/ded74c6e1113.shtml">PHP网上支付技术</a></li>
+<li><a href="http://php.itcast.cn/news/47d47284/bd39/4322/8aa6/fd48cd51f9df.shtml">PHP报表视频教程</a></li>
+<li><a href="http://php.itcast.cn/news/42366bc5/fc13/43f1/a69b/bc57132cfdc7.shtml">Linux视频教程</a></li>
+<li><a href="http://php.itcast.cn/news/c31baf40/8fa5/4803/ac4d/6e27086d009f.shtml">Oracle视频教程</a></li>
+</ul>
 
-	
-	if(!realnamereg.test(realname.val())){
-		realname.focus().val('');
-		alert('请输入正确的中文名称！');
-		return false;
-	}else if(!phonereg.test(phone.val())){
-		phone.focus().val('');
-		alert('请输入正确的手机！');
-		return false;
-	}else if(address.val() == 0){
-		alert('请选择所在省份！');
-		return false;
-	}else if( typeof qq.val() != 'undefined' && !qqreg.test(qq.val()) ){
-		qq.focus().val('');
-		alert('请输入正确的QQ号码！');
-		return false;
-	}else if( typeof email.val() != 'undefined' && !emailreg.test(email.val())){
-		email.focus().val('');
-		alert('请输入正确的邮箱地址！');
-		return false;
-	}
-	else{
-	$.post("http://open.itcast.cn/Api/Subject/publicapply.html", {
-	realname: realname.val() , 
-	phone: phone.val(),
-	address: address.val(),
-	email: email.val(),
-	qq: qq.val(),
-	cid: 6,
-	t:new Date().getTime()
-	});
-	
-	alert('申请成功！\r\n咨询客服人员将会主动联系您，请耐心等待！');
-	realname.val('');
-	phone.val('');
-	address.val('');
-	email.val('');
-	qq.val('');
-	$("input[name='source']:checked").removeAttr("checked");
-	}
-}
-</script>
-<div class="bm">
-	<h2>每期开班座位有限,预报名可优先享有占座特权哦！</h2>
-	<div class="bm_con">
-	<form id="addform" action="/Api/Subject/networkapply.html" method="post">
-		<div class="left">
-			<ul>
-				<li>
-					<span class="l_text"><s style="color:#e00000; font-size:15px; text-decoration:none; line-height:40px; padding-right:5px;">*</s>真实姓名</span>
-					<input type="text" placeholder="我们期待更了解您" name="realname" id="realname" />
-				</li>
-				<li>
-					<span class="l_text"><s style="color:#e00000; font-size:15px; text-decoration:none; line-height:40px; padding-right:5px;">*</s>联系手机</span>
-					<input type="text" placeholder="我们和您一样讨厌骚扰电话" name="phone" id="phone" />
-				</li>
-				<li>
-					<span class="l_text"><s style="color:#e00000; font-size:15px; text-decoration:none; padding-right:5px;">*</s>所在地区</span>
-					<select name="address" id="address" style="width:222px; height:36px; display:block;" ><option value="0">选择省份</option><option value="北京">北京市</option><option value="天津">天津市</option><option value="上海">上海市</option><option value="重庆">重庆市</option><option value="河北">河北省</option><option value="山西">山西省</option><option value="内蒙古">内蒙古</option><option value="辽宁">辽宁省</option><option value="吉林">吉林省</option><option value="黑龙江">黑龙江</option><option value="江苏">江苏省</option><option value="浙江">浙江省</option><option value="安徽">安徽省</option><option value="福建">福建省</option><option value="江西">江西省</option><option value="山东">山东省</option><option value="河南">河南省</option><option value="湖北">湖北省</option><option value="湖南">湖南省</option><option value="广东">广东省</option><option value="广西">广西省</option><option value="海南">海南省</option><option value="四川">四川省</option><option value="贵州">贵州省</option><option value="云南">云南省</option><option value="西藏">西藏省</option><option value="陕西">陕西省</option><option value="甘肃">甘肃省</option><option value="青海">青海省</option><option value="宁夏">宁夏省</option><option value="新疆">新疆省</option><option value="香港">香港</option><option value="澳门">澳门</option><option value="台湾">台湾省</option></select>
-				</li>
-				<li>
-					<span class="l_text"><s style="color:#e00000; font-size:15px; text-decoration:none; line-height:40px; padding-right:11px;">*</s>QQ号码</span>
-					<input type="text" placeholder="我们将第一时间与您联系" name="qq" id="qq"/>
-				</li>
-			</ul>
-			<br />
-		</div>
-		<div class="right">
-			<input type="button" value="现在预报名"  onClick="check()" />
-			<p>温馨提示：请保持手机畅通，咨询老师将为您提供专属的一对一报名服务。</p>
-		</div>
-	</form>
-	</div>
+    </ul>
+    <div class="rightbottom"><img src="/Public/images/rightbottom.jpg"/></div>
+   
+  </div>
 </div>
+<div class="clear"></div>
 
 
 <div id="footer">
