@@ -34,7 +34,7 @@ class IndexController extends Controller {
 		$data8 = $userbb->where('status=0')->select();
 		$db=M("slide_image");
 		$this->slide_image=$db->select();
-		//print_r($data);die;
+		//print_r($this->slide_image);die;
 		$this->assign('info',$data);
 		$this->assign('infoa',$data1);
 		$this->assign('infob',$data2);

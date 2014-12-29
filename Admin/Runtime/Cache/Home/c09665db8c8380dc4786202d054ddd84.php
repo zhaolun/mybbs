@@ -266,6 +266,7 @@ H1 a {
 							<ul class="MM">
 							<li><a href="/admin.php/home/one/lists" >条形图</a></li>
 							</ul>
+<<<<<<< HEAD
 </div>
 							<h1 class="type"><a>学员信息</a></h1>
 							<div class="content">
@@ -279,6 +280,9 @@ H1 a {
 							<li><a href="/admin.php/home/xy/add" >学员信息添加</a></li>
 							</ul>
 							
+=======
+							</div>
+>>>>>>> afd1ef15f427971730454cb926e2603a9d01c31e
 						</div>
 					</td>
 				</tr>
