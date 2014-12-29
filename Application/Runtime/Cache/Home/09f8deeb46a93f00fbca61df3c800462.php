@@ -452,9 +452,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 <br />
 
         </div>
-      </div>
-
-    
+      </div>    
 <div class="clear"></div>
 		  </div>
 			<div><img src="/Public/images/leftbottom.gif"/></div>
