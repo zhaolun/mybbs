@@ -21,22 +21,12 @@
 </div>
 </div>
 <div class="fr shouye">
+<foreach name="four" item="vo">
 <ul>
-<li><a href=""><img  src="/public/images/1.jpg" style="width:142px; height: 87px" /></a></li>
-<li><a class="style3" href="" src="/public/images/1.jpg">赵伦-玩酷我的程序人生</a></li>
+<li><a href="/index.php/home/message/video/stu_id/{$vo.stu_id}"><img  src="{$vo.pic}" style="width:142px; height: 87px" /></a></li>
+<li><a class="style3" href="/index.php/home/message/video/stu_id/{$vo.stu_id}" src="/public/images/1.jpg">{$vo.stu_name}-{$vo.s_name}</a></li>
 </ul>
-<ul>
-<li><a href=""><img src="/public/images/2.jpg" style="width: 142px; height: 87px;" /></a></li>
-<li><a class="style3" href="">刘俊-女生挑战PHP </a></li>
-</ul>
-<ul>
-<li><a href=""><img src="/public/images/5.jpg" style="width: 142px; height: 87px" /></a></li>
-<li><a class="style3" href="">雷金涛专题-因为爱情</a></li>
-</ul>
-<ul>
-<li><a href=""><img src="/public/images/3.jpg" style="width: 142px; height: 87px" /></a></li>
-<li><a class="style3" href="">崔萌泽专题-我有我原则 </a></li>
-</ul>
+</foreach>
 </div>
 <div></div>
 </div>

@@ -22,5 +22,9 @@ class MessageController extends Controller {
         $this->assign("list",$data);
         $this->display();
     }
+
+	function ganyanlist(){
+		$this->display();
+	}
 	
 }
