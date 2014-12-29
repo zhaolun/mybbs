@@ -295,7 +295,7 @@ H1 a {
 		<td width="87%" valign="top">
 			<div style="margin:10px;padding:10px;">
 				<head>
-<title>问题列表</title>
+<title>新闻列表</title>
 <meta name="robots" content="noindex, nofollow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="../css/general.css" rel="stylesheet" type="text/css" />
@@ -305,38 +305,38 @@ H1 a {
 </head>
 <body>
 <h1>
-<span class="action-span1">问题列表</span><span id="search_id" class="action-span1"></span>
+<span class="action-span1">讲师信息列表</span><span id="search_id" class="action-span1"></span>
 <div style="clear:both"></div>
 </h1>
-<a href='/admin.php/Home/xy/add'>添加问题</a>
-<!-- 新闻类别搜索 -->
-<center>问题名称：<input type="text" name="" size=40><input type="button" value="搜索" onclick=""></center>
-<!-- 新闻类别列表 -->
 <div class="list-div">
 <table cellspacing='1' cellpadding='3'>
   <tr>
     <th  class="group-title">编号</th>
-	<th  class="group-title">问题名称</th>
-	<th  class="group-title">来源</th>
-    <th  class="group-title">操作</th>
+	<th  class="group-title">讲师姓名</th>
+	<th  class="group-title">职位名称</th>
+	<th  class="group-title">讲师介绍</th>
+	<th  class="group-title">操作</th>
   </tr>
-<?php if(is_array($info)): foreach($info as $key=>$it): ?><tr class="table_tr">
-    <td width="5%"><?php echo ($it["id"]); ?></td>
-    <td width="30%"><?php echo ($it["title"]); ?></td>
-    <td width="10%">yi利小组</td>
+  <?php if(is_array($list)): foreach($list as $key=>$vo): ?><tr class="table_tr">
+    <td width="5%"><?php echo ($vo["id"]); ?></td>
+    <td width="20%"><?php echo ($vo["t_name"]); ?></td>
+    <td width="35%"><?php echo ($vo["position"]); ?></td>
+    <td width="10%">
+
+			<?php echo ($vo["t_desc"]); ?>;
+
+	</td>
 	<td width="10%">
-	<a href='/admin.php/Home/xy/del?id=<?php echo ($it["id"]); ?>'>删除</a>
-    <a href='/admin.php/Home/xy/upd?id=<?php echo ($it["id"]); ?>'>修改</a>
-    </td>
-	</tr><?php endforeach; endif; ?>
+	<a href="/admin.php/home/teacher/del/id/<?php echo ($vo["id"]); ?>">删除</a>|
+	<a href="/admin.php/home/teacher/up/id/<?php echo ($vo["id"]); ?>">编辑</a>
+	</td>
+  </tr><?php endforeach; endif; ?>
+
 </table>
-<div id='page_list' align='center'>
-        <?php echo ($data['page']); ?>
-</div>
 </div>
 <br />
 <div id="footer">
-版权所有 &copy; 八维研修学院软件工程学院1308phpA班yi利小组，并保留所有权利。</div>
+版权所有 &copy; 八维研修学院软件工程学院1302phpA班，并保留所有权利。</div>
 </body>
 </html>
 			</div>

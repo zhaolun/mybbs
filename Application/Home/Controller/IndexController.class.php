@@ -35,12 +35,9 @@ class IndexController extends Controller {
 		//var_dump($comp);die;
 		$data3 = $userc->select();
 		$data4 = $userd->select();
-<<<<<<< HEAD
 		$data6 = $userf->order('id desc')->select();
-		$data7 = $useraa->select();
-=======
+		//$data7 = $useraa->select();
 		$data6 = $userf->select();
->>>>>>> 52d7abffa0744f87df490dc83c3edc048f0f8cbd
 		$data8 = $userbb->where('status=0')->select();
 		$db=M("slide_image");
 		$this->slide_image=$db->select();
