@@ -267,7 +267,19 @@ H1 a {
 							<ul class="MM">
 							<li><a href="/admin.php/home/one/lists" >条形图</a></li>
 							</ul>
-							</div>
+</div>
+							<h1 class="type"><a>学员信息</a></h1>
+							<div class="content">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+							<td><img src="/Public/admin/images/menu_topline.gif" width="182" height="5" /></td>
+							</tr>
+							</table>
+							<ul class="MM">
+							<li><a href="/admin.php/home/xy/lists" >学员信息列表</a></li>
+							<li><a href="/admin.php/home/xy/add" >学员信息添加</a></li>
+							</ul>
+							
 						</div>
 					</td>
 				</tr>
