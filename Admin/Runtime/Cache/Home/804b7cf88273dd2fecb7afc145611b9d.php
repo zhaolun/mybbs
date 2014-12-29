@@ -306,7 +306,7 @@ H1 a {
 <span class="action-span1">问题列表</span><span id="search_id" class="action-span1"></span>
 <div style="clear:both"></div>
 </h1>
-<a href='/admin.php/Home/problem/add'>添加问题</a>
+<a href='/admin.php/Home/xy/add'>添加问题</a>
 <!-- 新闻类别搜索 -->
 <center>问题名称：<input type="text" name="" size=40><input type="button" value="搜索" onclick=""></center>
 <!-- 新闻类别列表 -->
@@ -315,14 +315,12 @@ H1 a {
   <tr>
     <th  class="group-title">编号</th>
 	<th  class="group-title">问题名称</th>
-	<th  class="group-title">时间</th>
 	<th  class="group-title">来源</th>
     <th  class="group-title">操作</th>
   </tr>
-<?php if(is_array($data[user])): foreach($data[user] as $key=>$it): ?><tr class="table_tr">
+<?php if(is_array($info)): foreach($info as $key=>$it): ?><tr class="table_tr">
     <td width="5%"><?php echo ($it["id"]); ?></td>
     <td width="30%"><?php echo ($it["title"]); ?></td>
-	<td width="30%"><?php echo ($it["time"]); ?></td>
     <td width="10%">yi利小组</td>
 	<td width="10%">
 	<a href='/admin.php/Home/problem/del?id=<?php echo ($it["id"]); ?>'>删除</a>
