@@ -116,8 +116,9 @@ class IndexController extends Controller {
 			echo 0;
 	}
 	function detail(){
+		$id=$_GET['id'];
 		$model=M("mingshi");
-        $data=$model->select();
+        $data=$model->where("id='$id'")->find();
 		//echo $data;die;
         $this->assign('list',$data);
         $this->display('detail');
