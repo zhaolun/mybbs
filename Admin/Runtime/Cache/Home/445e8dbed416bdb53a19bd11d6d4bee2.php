@@ -294,43 +294,39 @@ H1 a {
 		<td width="87%" valign="top">
 			<div style="margin:10px;padding:10px;">
 				<head>
-<title>新闻列表</title>
+<title>新闻类别列表</title>
 <meta name="robots" content="noindex, nofollow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="../css/general.css" rel="stylesheet" type="text/css" />
-<link href="../css/main.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="../js/transport.js"></script>
-<script type="text/javascript" src="./js/common.js"></script>
+<link href="/Public/admin/css/general.css" rel="stylesheet" type="text/css" />
+<link href="/Public/admin/css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/Public/admin/js/transport.js"></script>
+<script type="text/javascript" src="/Public/admin/js/common.js"></script>
 </head>
 <body>
 <h1>
-<span class="action-span1">讲师信息列表</span><span id="search_id" class="action-span1"></span>
+<span class="action-span1">新闻类别列表</span><span id="search_id" class="action-span1"></span>
 <div style="clear:both"></div>
 </h1>
+<!-- 新闻类别搜索 -->
+<form>
+学校名称：<input type="text" name=""><input type="button" value="ajax搜索" onclick="">
+</form>
+<!-- 新闻类别列表 -->
 <div class="list-div">
+<a href="/admin.php/home/message/sch_addform">添加学校</a>
 <table cellspacing='1' cellpadding='3'>
   <tr>
-    <th  class="group-title">编号</th>
-	<th  class="group-title">讲师姓名</th>
-	<th  class="group-title">职位名称</th>
-	<th  class="group-title">讲师介绍</th>
-	<th  class="group-title">操作</th>
+      <th>学校编号</th>
+      <th>学校名称</th>
+      <th>操作</th>
   </tr>
-  <?php if(is_array($list)): foreach($list as $key=>$vo): ?><tr class="table_tr">
-    <td width="5%"><?php echo ($vo["id"]); ?></td>
-    <td width="20%"><?php echo ($vo["t_name"]); ?></td>
-    <td width="35%"><?php echo ($vo["position"]); ?></td>
-    <td width="10%">
-
-			<?php echo ($vo["t_desc"]); ?>;
-
-	</td>
-	<td width="10%">
-	<a href="/admin.php/home/teacher/del/id/<?php echo ($vo["id"]); ?>">删除</a>|
-	<a href="/admin.php/home/teacher/up/id/<?php echo ($vo["id"]); ?>">编辑</a>
-	</td>
-  </tr><?php endforeach; endif; ?>
-
+  <?php if(is_array($list)): foreach($list as $key=>$val): ?><tr>  
+      <td><?php echo ($val["s_id"]); ?></td>
+      <td><?php echo ($val["s_name"]); ?></td>
+      <td><a href="/admin.php/home/message/sch_del/s_id/<?php echo ($val["s_id"]); ?>">【删除】</a>
+<a href="/admin.php/home/message/sch_editform/s_id/<?php echo ($val["s_id"]); ?>">【编辑】</a></td>
+    </tr><?php endforeach; endif; ?>
+  
 </table>
 </div>
 <br />
