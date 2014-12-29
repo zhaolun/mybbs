@@ -305,25 +305,29 @@ H1 a {
 </head>
 <body>
 <h1>
-<span class="action-span1">添加疑问</span><span id="search_id" class="action-span1"></span>
+<span class="action-span1">编辑疑问</span><span id="search_id" class="action-span1"></span>
 <div style="clear:both"></div>
 </h1>
  
 <!-- 添加新闻类别 -->
 <div class="list-div">
-<form method="post" action="/admin.php/home/admin/addpro">
+<form method="post" action="/admin.php/home/admin/uppro">
+<input type="hidden" name="id" value="<?php echo ($list["id"]); ?>">
 	<table cellspacing='1' cellpadding='3'>
 		<tr>
 			<td align='right'>疑问名称：</td>
-			<td><input type="text" name="p_name" size=80></td>
+			<td><input type="text" name="p_name" size=80 value="<?php echo $list['title'];?>"></td>
 		</tr>
 		<tr>
 			<td align='right'>疑问内容：</td>
-			<td><textarea name="p_desc" rows="20" cols="100"></textarea></td>
+			<td><textarea name="p_desc" rows="20" cols="100">
+				<?php echo $list['content'];?>
+			</textarea>
+			</td>
 		</tr>
 		
 		<tr>
-			<td align='center' colspan=2><input type="submit" value='添加疑问'></td>	
+			<td align='center' colspan=2><input type="submit" value='编辑疑问'></td>	
 		</tr>
 	</table>
 </form>

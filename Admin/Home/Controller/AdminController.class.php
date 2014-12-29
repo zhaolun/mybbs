@@ -192,5 +192,42 @@ class AdminController extends Controller {
 			$this->error();
 		}
 	}
+	function lists(){
+	    $model=M("mingshi");
+        $data=$model->select();
+        $this->assign('list',$data);
+		$this->display('list');
+    }
+	public function del(){
+		$id=$_GET['id'];	
+		$model=M('mingshi');
+		$arr=$model->delete($id);
+		//echo $arr;die;
+		if($arr){
+			$this->success("删除成功",U("/admin.php/home/admin/lists"));
+		}else{
+			$this->error();
+		}
+	}
+	public function up(){
+		$id=$_GET['id'];
+		$model=M("mingshi");
+        $data=$model->find($id);
+		//var_dump($data[0]['position']);die;
+        $this->assign('list',$data);
+		$this->display('up');
+	}
+	public function uppro(){
+		$id=$_POST['id'];
+		$model=M('mingshi');
+		$data['title']=$_POST['p_name'];
+		$data['content']=$_POST['p_desc'];
+		$arr=$model->where("id=$id")->save($data);
+		if($arr){
+			$this->success('编辑成功',U('/admin.php/home/admin/lists'));
+		}else{
+			$this->error();
+		}
+	}
 
 }
