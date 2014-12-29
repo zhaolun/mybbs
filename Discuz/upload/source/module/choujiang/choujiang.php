@@ -41,14 +41,6 @@ window.onerror = killErrors;
 
 <div id="append_parent"></div>
 <div id="ajaxwaitid"></div>
- 
- 
- 
- 
- 
-
-
-
 <div class="top_head wp" style="margin-bottom:10px;">
 <div id="toptb" class="cl"> 
     <div class="wp">

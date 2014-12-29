@@ -17,10 +17,10 @@ class ProblemController extends Controller {
 			//获取表总数据
 			$data = $user->where('status=0')->select();
 			S("Indexindex1",$data);
-			//echo "来源于数据库";
+			$this->laiyuan="来源于数据库";
 		}else{
 			$data = S("Indexindex1");
-			//echo "来源于memcache";
+			$this->laiyuan="来源于memcache";
 		}
 		if(empty(S("Indexindex0"))){
 			$data1 = $user->where('status=1')->select();
@@ -49,5 +49,18 @@ class ProblemController extends Controller {
         $this->assign("data",$data);
         $this->display('xq');
 		
+	}
+
+	function sphinx(){
+		require_once "Public/sphinx.php";
+		if(empty($result['matches'])){
+			$this->display("error");
+			die;
+		}
+		$id="(".implode(",",array_keys($result['matches'])).")";
+		$db=M("question");
+		$this->info=$db->where("id in $id")->select();
+		$this->laiyuan="数据来源于Sphinx";
+		$this->display();
 	}
 }
