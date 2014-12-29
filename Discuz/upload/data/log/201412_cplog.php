@@ -293,3 +293,7 @@
 <?PHP exit;?>	1419860105	admin	1	192.168.1.7	plugins	GET={}; POST={};
 <?PHP exit;?>	1419860115	admin	1	192.168.1.7	plugins	GET={}; POST={};
 <?PHP exit;?>	1419860119	admin	1	192.168.1.7	cloudaddons	GET={}; POST={};
+<?PHP exit;?>	1419860254	admin	1	192.168.1.7	plugins	GET={}; POST={};
+<?PHP exit;?>	1419860259	admin	1	192.168.1.7	plugins	GET={operation=config; do=13; identifier=yinxingfei_zzza; pmod=yinxingfei_zzza_range; }; POST={};
+<?PHP exit;?>	1419860340	admin	1	192.168.1.7	plugins	GET={operation=enable; pluginid=13; }; POST={};
+<?PHP exit;?>	1419860344	admin	1	192.168.1.7	plugins	GET={}; POST={};
