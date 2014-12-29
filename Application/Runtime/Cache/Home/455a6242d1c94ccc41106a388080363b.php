@@ -263,7 +263,24 @@ size:12px;background-color:#ecf6fd;">
 				}
 			//-->
 			</script>
+<<<<<<< HEAD
 			<h4 class="righttitle1" style="margin-top:10px;"><span class="fl">开班信息</span></h4><div class="jyjb-left" >11111
+=======
+			<h4 class="righttitle1" style="margin-top:10px;"><span class="fl">开班信息</span></h4><div class="jyjb-left" >
+			<table border="0" cellpadding="0" cellspacing="0" class="zhaopinlist" height="124" style="margin-top: 5px" width="98%">
+<tbody>
+<?php if(is_array($banjiinfo)): foreach($banjiinfo as $key=>$it): ?><tr>
+	<td class="td1" width="73%"><a href="/index.php/Home/project/kecheng/id/<?php echo ($it["pei_id"]); ?>" ><?php echo ($it["pei_class"]); ?></a></td>
+	<td width="27%"><?php if($it["bbs_tese"] == 1): ?><font color=red>人员爆满</font><?php else: ?><font color=blue>人员未满</font><?php endif; ?></td>
+	</tr><?php endforeach; endif; ?>
+	<tr>
+	<td class="td1" width="73%"><a><span style="color:#ff0000;">更多开班信息请点击&hellip;&hellip;</span></a></td>
+	<td width="27%"><a href="/index.php/Home/project/index"><span style="color:#ff0000;">查看更多</span></a></td>
+	</tr>
+	<tr></tr>
+</tbody>
+</table>
+>>>>>>> 18f94eac21e94c142f260d09d3638f3d8111acc1
             </div>
 			
 			<div class="rightbottom"><img src="/Public/images/rightbottom.jpg"  /></div>		
@@ -278,9 +295,9 @@ size:12px;background-color:#ecf6fd;">
 	<td width="16%"><?php echo (substr($it["time"],0,10)); ?></td>
 	</tr><?php endforeach; endif; ?>	
 	<tr>
-	<td class="td1" width="73%"><a href="http://www.itcast.cn/news/list/20c133c0-6635-421c-acae-6125b0702b34/1.shtml" target="_blank"><span style="color:#ff0000;">更多企业招聘信息请点击&hellip;&hellip;</span></a></td>
-	<td width="11%"><a href="http://www.itcast.cn/news/list/20c133c0-6635-421c-acae-6125b0702b34/1.shtml" target="_blank"><span style="color:#ff0000;">查看</span></a></td>
-	<td width="16%"><a href="http://www.itcast.cn/news/list/20c133c0-6635-421c-acae-6125b0702b34/1.shtml" target="_blank"><span style="color:#ff0000;">更多</span></a></td>
+	<td class="td1" width="73%"><a href="http://www.itcast.cn/news/list/20c133c0-6635-421c-acae-6125b0702b34/1.shtml" target="_blank"><span style="color:#ff0000;">更多招聘信息点击&hellip;&hellip;</span></a></td>
+	<td></td>
+	<td width="27%"><a href="/index.php/Home/index/companylist" target="_blank"><span style="color:#ff0000;">查看更多</span></a></td>
 	</tr>
 	<tr></tr>
 </tbody>
@@ -294,7 +311,7 @@ size:12px;background-color:#ecf6fd;">
 		  <div class="rightkuang1" style="padding-top:18px;">
 			<ul class="zhaopinlist wenti">
               <ul class="zhaopinlist wenti">
-<?php if(is_array($infobb)): foreach($infobb as $key=>$it): ?><li><a href="/index.php/Home/problem/xq?id=<?php echo ($it["id"]); ?>" target="_blank"><?php echo ($it["title"]); ?></a><img height="15" src="/Public/images/new.gif" width="29" /></li><?php endforeach; endif; ?>
+<?php if(is_array($questioninfo)): foreach($questioninfo as $key=>$it): ?><li><a href="/index.php/Home/problem/xq?id=<?php echo ($it["id"]); ?>" target="_blank"><?php echo ($it["title"]); ?></a><img height="15" src="/Public/images/new.gif" width="29" /></li><?php endforeach; endif; ?>
 </ul>
 
           </ul> 
