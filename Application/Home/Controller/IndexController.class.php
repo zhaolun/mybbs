@@ -40,7 +40,7 @@ class IndexController extends Controller {
 		$data2 = $userb->select();
 		$data3 = $userc->select();
 		$data4 = $userd->select();
-		$data6 = $userf->select();
+		$data6 = $userf->order('id desc')->select();
 		$data7 = $useraa->select();
 		$data8 = $userbb->where('status=0')->select();
 		$db=M("slide_image");
