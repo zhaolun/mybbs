@@ -21,22 +21,12 @@
 </div>
 </div>
 <div class="fr shouye">
+<foreach name="four" item="vo">
 <ul>
-<li><a href=""><img  src="/public/images/1.jpg" style="width:142px; height: 87px" /></a></li>
-<li><a class="style3" href="" src="/public/images/1.jpg">赵伦-玩酷我的程序人生</a></li>
+<li><a href="/index.php/home/message/video/stu_id/{$vo.stu_id}"><img  src="{$vo.pic}" style="width:142px; height: 87px" /></a></li>
+<li><a class="style3" href="/index.php/home/message/video/stu_id/{$vo.stu_id}" src="/public/images/1.jpg">{$vo.stu_name}-{$vo.s_name}</a></li>
 </ul>
-<ul>
-<li><a href=""><img src="/public/images/2.jpg" style="width: 142px; height: 87px;" /></a></li>
-<li><a class="style3" href="">刘俊-女生挑战PHP </a></li>
-</ul>
-<ul>
-<li><a href=""><img src="/public/images/5.jpg" style="width: 142px; height: 87px" /></a></li>
-<li><a class="style3" href="">雷金涛专题-因为爱情</a></li>
-</ul>
-<ul>
-<li><a href=""><img src="/public/images/3.jpg" style="width: 142px; height: 87px" /></a></li>
-<li><a class="style3" href="">崔萌泽专题-我有我原则 </a></li>
-</ul>
+</foreach>
 </div>
 <div></div>
 </div>
@@ -136,7 +126,38 @@
 <foreach name='infoc' item='it'>
 <li><span class="STYLE6">[php学员]</span><a href="http://www.mybbs.com/index.php/Home/index/zhaolun_xq?id={$it.id}">{$it.title}</a></li>
 </foreach>
-
+<script type="text/javascript">
+			<!--
+				function register(){
+					$("#myform").attr("action","/index.php/Home/index/register");
+					$("#button").attr("value","注册");
+					$("#span").html("<span style='color:blue;' onclick='login()'>登录</span>");
+					$("#tele").show();
+				}
+				function forget(){
+					$("#forget").toggle();
+					$("#fname").focus();
+				}
+				function login(){
+					$("#myform").attr("action","/index.php/Home/index/login");
+					$("#button").attr("value","登录");
+					$("#tele").hide();
+					$("#span").html("<span style='color:blue;' onclick='register()'>注册</span>");
+				}
+				function telyzm(){
+					var name=$("#fname").val();
+					var tel=$("#ftel").val();
+					$.ajax({
+						type: "GET",
+						url: "/index.php/Home/index/send_message",
+						data: "name="+name+"&tel="+tel,
+						success: function(msg){
+							alert(msg);
+						}
+					}); 
+				}
+			//-->
+			</script>
 </ul>
 </div>
 <div class="ganyanleft fr3">
@@ -178,7 +199,4 @@
 </ul>
 </div>
 <br />
-
-			  </div>
-			
-			 
+</div>

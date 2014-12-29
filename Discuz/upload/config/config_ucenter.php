@@ -12,7 +12,7 @@ define('UC_DBTABLEPRE', '`ultrax`.pre_ucenter_');
 define('UC_DBCONNECT', 0);
 
 define('UC_CHARSET', 'utf-8');
-define('UC_KEY', 'IeH7KcC5d0I9e7h3o1ccd3y04eR4Ha27q688adJ7I8v580X5Zbb5V6z2j2W2O7U3');
+define('UC_KEY', 'IbMfL3t7Ye71O1w6k3Rfj9o0s2K3yb89l8ReR00at600gdY2Zd17zdpeSaR7z8Hb');
 define('UC_API', 'http://www.mybbs.com/Discuz/upload/uc_server');
 define('UC_APPID', '1');
 define('UC_IP', '');

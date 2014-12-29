@@ -53,6 +53,8 @@ class IndexController extends Controller {
 		$this->assign('infof',$data6);
 		$this->assign('infobb',$data8);
 		$this->assign('company',$comp);
+		$user = M('student');
+		$this->four=$user->join("bbs_school on bbs_student.school=bbs_school.s_id")->order("stu_id desc")->limit(4)->select();
         $this->display('index');
     }
 	public function xueyuan_xq(){

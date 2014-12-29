@@ -49,7 +49,11 @@ abstract class Controller {
 		$db=M("logo");
 		$this->logoinfo=$db->select();
 		$db=M("zhaopin");
-		$this->newzhaopininfo=$db->order("time desc")->limit(6)->select();
+		$this->newzhaopininfo=$db->order("id desc")->limit(6)->select();
+		$db=M("class");
+		$this->banjiinfo=$db->order("pei_id desc")->limit(6)->select();
+		$db=M("question");
+		$this->questioninfo=$db->order("id desc")->limit(6)->select();
     }
 
     /**
