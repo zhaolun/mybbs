@@ -30,15 +30,15 @@ class MessageController extends Controller {
         $model = M("company");
         $search=$_POST['com_name'];
         $sphinx = new \SphinxClient();
-        //var_dump($sphinx);die;
+        //var_dump($search);
 		$sphinx->SetServer("192.168.1.2",9312);
 		$sphinx->SetMatchMode(SPH_MATCH_ANY);
 		$result = $sphinx->query($search,'*');
-        echo "<pre>";var_dump($result);
+        //echo "<pre>";var_dump($result);die;
         $key = array_keys($result['matches']);
-        echo "<pre>";var_dump($sphinx);die;
+        echo "<pre>";var_dump($key);die;
         //$id = implode(',',$key);
-        var_dump($result);die;
+       // var_dump($result);die;
         $ids = join(',',$key);
         $where= '';
         if($search == '')
