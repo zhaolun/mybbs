@@ -4,7 +4,6 @@ use Think\Controller;
 class XyController extends Controller {
     public function lists(){
 		$user = M('xueyuan');
-		
 		$data = $user->select();
 		//print_r($data);die;
 		$this->assign('info',$data);
@@ -13,6 +12,57 @@ class XyController extends Controller {
 	public function add(){
 		$this->display('add');
 	}
+	public function add_do(){
+		header("content-type:text/html;charset=utf-8");
+		//print_r($_POST);die;
+	    $model = M("xueyuan");
+        $data = $model->create();
+        $aa = $model->add($data);
+		//print_r($aa);die;
+        if($aa)
+        {
+        	$this->redirect("/admin.php/home/xy/lists");
+        }else
+        {
+        	$this->error();
+        }
+	}
+	//删除
+	public function del(){
+		header("content-type:text/html;charset=utf-8");
+		$id = $_GET['id'];
+		$user = M('xueyuan');	
+        $user->where("id = ".$id)->delete(); // 删除id为5的用户数据
+        $this->redirect('/admin.php/Home/xy/lists', "", 2, '删除成功.....页面跳转中，请等待。');
+	}
+	//修改
+	public function upd(){
+		$model = M("xueyuan");
+		$id = $_GET['id'];
+		//print_r($id);die;
+		$data = $model->find($id);
+    	$this->assign('list',$data);
+    	$this->display('upd');
+	}
+	//修改验证
+	public function upd_do(){
+		$id = $_POST['id'];
+		//print_r($id);die;
+    	$model = M("xueyuan");
+    	$data['title']=$_POST['title'];
+    	$data['content']=$_POST['content'];
+    	//var_dump($data);
+    	$update=$model->where('id='.$id.'')->save($data);
+    	//var_dump($qq);
+    	if($update)
+    	{
+    		$this->redirect("/admin.php/home/xy/lists","", 2, '修改成功.....页面跳转中，请等待。');
+    	}else
+    	{
+    		$this->error("编辑失败");
+    	}
+	}
+
 	
 	
 }
