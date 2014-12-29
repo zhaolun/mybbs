@@ -110,32 +110,45 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 </div>
 <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>-->
 
-<!-- 主站导航 -->
-</div>
 <div id="box">
-  <div class="position"><a name="pagetop"/>您现在的位置：<span class="STYLE5"><a href="http://www.itcast.cn">首页</a> &gt;&gt; 常见问题 &gt;&gt; 正文</span></div>
+  <div class="position"><a name="pagetop"/>您现在的位置：<span class="STYLE5"><a href="http://php.itcast.cn">PHP学院</a> &gt;&gt; PHP学院新闻 &gt;&gt; 正文</span></div>
   <div id="left" class="fl" style="margin-top:8px;">
     <div class="infotop"><img src="/Public/images/infotop.gif"/></div>
     <div class="left_content1">
       <div id="printarea">
-
-        <h1 class="infotitle"><?php echo $data['q']['title']?></h1>
-        <div class="editer">更新时间:<?php echo $data['q']['time']?> 来源:yi利战斗小组</div>
+        <h1 class="infotitle">李东超老师精彩视频  第1讲_贪食蛇</h1>
+        <div class="editer">更新时间:2013年04月02日11时17分 来源:</div>
         <div class="infor">
-         <?php echo $data['q']['content']?>
+         <p style="text-indent:0em;"><img alt="" src="<?php echo ($list["img"]); ?>" style="float:left;margin-right:15px;height:189px;width:155px;" /><span style="font-size:12px;"><span class="blue" style=""><strong><?php echo ($list["t_name"]); ?></strong></span><br />
+<strong>职 务：<?php echo ($list["position"]); ?></strong><br />
+&nbsp; &nbsp; <?php echo ($list["t_desc"]); ?></span></p>
+<hr />
+<p></p>
+<p style="text-indent:0em;"><span style="font-size:12px;"><strong>课程内容介绍：</strong><br />
+&nbsp; &nbsp;javascript是学习网页编程必修的一门客户端脚本语言。 很多人认为js只能是做一些简单的网页特效和表单验证，其实不然。 在js中也有强大的面向（基本）对象的编程思想 这是李东超讲师的随堂所录视频，主要讲解使用javascript语言编写的贪食蛇小游戏，在本例中，使用的是面向对象的编程思想，可以让有基础的同学对js的掌握以及js面向对象的理解更加深入一层！</span></p>
+<div>
+<div><span style="font-size:12px;"><a href="http://php.itcast.cn/news/20130402/11170476269.shtml#">第1讲_贪食蛇 李东超</a></span></div>
+<div><span style="font-size:12px;"><a href="http://php.itcast.cn/news/20130402/11493672596.shtml">第2讲_贪食蛇 李东超</a></span></div>
+<div><span style="font-size:12px;"><a href="http://php.itcast.cn/news/20130402/11511910871.shtml">第3讲_贪食蛇 李东超</a></span></div>
+</div>
+<center>
+	<br />
+	<hr />
+	<br />
+	<p><span style="color:#0000cd;"><span style="font-size: 12px;">视频网站转码后分辨率不高，推荐同学们下载视频观看：<a href="http://dl.vmall.com/c0pl6iyjtd" target="_blank">点此下载</a></span></span></p>
+	<p style="text-indent:0em;">第1讲_贪食蛇</p>
+	<p style="text-indent:0em;"><embed src="http://player.youku.com/player.php/sid/XODQ2MTgyNDAw/v.swf" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed></p>
+</center>
 
+	<script type="text/javascript" src="http://bbs.itcast.cn/api.php?mod=js&bid=94"></script>
         </div>
       </div>
-        <?php if($data['s']){?>
-       <div class="pre">
-	               上一篇：<a target="_blank" href="/index.php/Home/problem/xq?id=<?php echo $data['s']['id']?>"><?php echo $data['s']["title"];?></a>
+      <div class="pre">
+	               上一篇：<a target="_blank" href="/news/20130316/22360746537.shtml">在这里，我们学到的是老师们多年的经验</a>
        	  </div>
-        <?php }?>
-          <?php if($data['x']){?>
       <div class="next">
-	              下一篇：<a target="_blank" href="/index.php/Home/problem/xq?id=<?php echo $data['x']['id']?>"><?php echo $data['x']["title"];?></a>
+	              下一篇：<a target="_blank" href="/news/20130402/11493672596.shtml">李东超老师精彩视频  第2讲_贪食蛇</a>
       	  </div>
-          <?php }?>
 
       <div class="clear"></div>
       <div class="share">
@@ -148,22 +161,40 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 		<a class="bds_tsina">新浪微博</a>
 		<a class="bds_tieba">百度贴吧</a>
 		<a class="shareCount"></a>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="fanhui" href='/index.php/Home/problem/index'>返回目录</a>
     </div>
 <!-- Baidu share END 需在页面底部添加baidushare.js -->	  
 	  </div>
 	  <div class="clear"></div>
-            <div class="clear"></div>
+      <div class="print"><a href="#" id="printbutton">【打印】</a> <a href="#pagetop">【返回顶部】</a></div>
+      	  <!-- 评论区 -->
+	    	<script type="text/javascript">
+	           $(document).ready(function(){
+	              	loadcomment('20130402-11170476269', 1);
+               });   
+	       </script>
+	  <div id="commentcontent"></div>
+	  <form name="comment" style="padding:0;margin:0px;">
+        <input type="hidden" name="referenceSource" value="20130402-11170476269">
+        <input type="hidden" name="type" value="NEWS">
+        <textarea cols="85" rows="6" style="width:610px;" name="content"></textarea>
+        <div class="clear"></div>
+        <div class="fabiao">
+	      <span class="fl">请输入验证码：<input name="validatecode" type="text" style="width:80px;" />  <img src="http://manage.itcast.cn:8080/validatecode/comment.jpg" id="kaptchaImage" width="100"/></span><span class="fr"><input type='button' value="提 交" id="savebutton"/></span>
+	    </div>
+	  </form>
+	  <div id="dialog" title="评论保存结果"></div><!-- 对话框内容 -->
+      <!-- 评论区 -->
+	        <div class="clear"></div>
       <div class="ad">
       <!-- 广告区 -->
-      <a href="http://java.itcast.cn/news/e393b086/ebce/4f94/9d48/94ed86bcf5ef.shtml" target="_blank"><img border="0" src="http://www.itcast.cn/files/file/201206/20120620111629490.jpg" width="620" /></a> 
+      <!--<a href="http://icd.itcast.cn"><img border="0" src="http://www.itcast.cn/images/ad/icdad.gif" width="620" /></a>--> 
       <!-- 广告区 -->
       </div>
     </div>
     <div><img src="/Public/images/leftbottom.gif"/></div>
   </div>
   <div id="right" class="fl">
-    <h4 class="righttitle1"><span class="fl">PHP视频下载</span><span class="fr"><a href="http://php.itcast.cn/php/video.shtml">+MORE</a></span></h4>
+    <h4 class="righttitle1"><span class="fl">PHP视频下载</span><span class="fr"><a href="/php/video.shtml">+MORE</a></span></h4>
     <ul class="rightkuang">
        <ul>
 <li><a href="http://php.itcast.cn/news/caa9b58b/37b1/47f6/98e3/bd3600c98cfc.shtml">PHP入门到精通教程</a></li>
@@ -183,80 +214,11 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 
     </ul>
     <div class="rightbottom"><img src="/Public/images/rightbottom.jpg"/></div>
-    <h4 class="righttitle1"><span class="fl">.Net视频下载</span><span class="fr"><a href="http://net.itcast.cn/net/video.shtml">+MORE</a></span></h4>
-    <ul class="rightkuang">
-      <ul>
-<li><a href="http://net.itcast.cn/news/00666f00/c4c5/4aad/99e1/45f6673f7a31.shtml" target="_blank">C#编程基础视频教程</a></li>
-<li><a href="http://net.itcast.cn/news/770b900e/fcd4/4f10/bb25/bb0e99f0ab92.shtml" target="_blank">C#面向对象基础视频教程 </a></li>
-<li><a href="http://net.itcast.cn/news/047a81e7/616f/44fa/b103/2c38e5b51b48.shtml" target="_blank">wpf基础视频教程 </a></li>
-<li><a href="http://net.itcast.cn/news/4048960e/9f6f/4d71/8da4/07639e2bef0b.shtml" target="_blank">数据绑定和数据库开发基础 </a></li>
-<li><a href="http://net.itcast.cn/news/c804d7df/95b0/4e78/9505/7f6157220e59.shtml" target="_blank">Ado.Net项目开发教程 </a></li>
-<li><a href="http://net.itcast.cn/news/509b1bc4/5afc/4fe4/adf4/3757fc78b70c.shtml" target="_blank">HTML教程 </a></li>
-<li><a href="http://net.itcast.cn/news/bd4612c7/a940/4585/9153/487bbcc7fcd3.shtml" target="_blank">JavaScript教程</a></li>
-<li><a href="http://net.itcast.cn/news/68ac18e3/f435/45e8/999f/db6f32f9aeac.shtml" target="_blank">Dom教程</a></li>
-<li><a href="http://net.itcast.cn/subject/tegongnet/index.html" target="_blank">特供ASP.Net视频教程 </a></li>
-<li><a href="http://bbs.itcast.cn/thread-11528-1-1.html" target="_blank">Linux下运行ASP.Net网站(Mono)视频教程</a></li>
-<li><a href="http://bbs.itcast.cn/thread-11130-1-1.html" target="_blank">写程序自动识别验证码视频教程</a></li>
-<li><a href="http://bbs.itcast.cn/thread-14836-1-1.html" target="_blank">大型互联网技术Memcached视频教程</a></li>
-<li><a href="http://bbs.itcast.cn/thread-15261-1-1.html" target="_blank">ASP.Net MVC入门视频教程</a></li>
-<li><a href="http://bbs.itcast.cn/thread-15273-1-1.html" target="_blank">Unity3D游戏开发入门视频教程</a></li>
-<li><a href="http://bbs.itcast.cn/thread-11228-1-1.html" target="_blank">人事管理系统开发视频教程</a></li>
-<li><a href="http://bbs.itcast.cn/thread-19987-1-1.html" target="_blank">&quot;工作流&quot;开发视频教程</a></li>
-<li><a href="http://net.itcast.cn/subject/arrogant/index.shtml" target="_blank">毕业设计完整源码+文档下载</a></li>
-</ul>
-
-    </ul>
-    <div class="rightbottom"><img src="/Public/images/rightbottom.jpg"/></div>
-    <h4 class="righttitle1"><span class="fl">网页平面视频下载</span><span class="fr"><a href="http://icd.itcast.cn/icd/video.shtml">+MORE</a></span></h4>
-    <ul class="rightkuang">
-      <ul>
-<li><a href="http://icd.itcast.cn/news/1829be2a/13c9/4bd1/b5a2/f04769016711.shtml" target="_blank">张鹏老师带你一周hold住html+css视频教程</a></li>
-<li><a href="http://icd.itcast.cn/news/feef0472/0f77/42e6/ac46/f456d31c49f7.shtml" target="_blank">轻松学习网页设计系列视频教程</a></li>
-<li><a href="http://icd.itcast.cn/news/20121121/13184523595.shtml" target="_blank">张鹏_带你轻松学习Flash动画制作 </a></li>
-<li><a href="http://icd.itcast.cn/news/20121219/15313045800.shtml" target="_blank">老贺 带你轻松学习Photoshop图像处理</a></li>
-<li><a href="http://icd.itcast.cn/news/20130110/17272711564.shtml" target="_blank">老贺 带你轻松学习Illustrator矢量绘制</a></li>
-<li><a href="http://icd.itcast.cn/news/20130608/16422926437.shtml" target="_blank">UI图标设计教程视频_李凤辉</a></li>
-<li><a href="http://icd.itcast.cn/news/20130809/17221658761.shtml" target="_blank">网页与UI设计从入门到精通视频教程</a></li>
-<li><a href="http://icd.itcast.cn/news/20130810/09565870120.shtml" target="_blank">UI设计视频教程-快速掌握水晶质感图标</a></li>
-<li><a href="http://icd.itcast.cn/news/20130822/18590628357.shtml" target="_blank">ps平面设计视频教程-色彩万能搭配法</a></li>
-<li><a href="http://icd.itcast.cn/news/20130823/11463851220.shtml" target="_blank">AI字体设计视频教程-字体设计决定产品未来</a></li>
-<li><a href="http://icd.itcast.cn/news/20130823/13333781356.shtml" target="_blank">DW建站视频教程-整站项目的制作技巧和方法</a></li>
-<li><a href="http://icd.itcast.cn/news/20140301/16045426667.shtml" target="_blank">如何成为一名优秀的UI设计师</a></li>
-<li><a href="http://icd.itcast.cn/news/20140301/16144631152.shtml" target="_blank">UI设计视频教程-从无到有APP视觉表现</a></li>
-<li><a href="http://icd.itcast.cn/news/20140301/16174712734.shtml" target="_blank">PS设计视频教程-ps精品课程实战演练</a></li>
-<li><a href="http://icd.itcast.cn/news/20140301/16211421279.shtml" target="_blank">Photoshop教程视频-黑白色彩的力量</a></li>
-<li><a href="http://icd.itcast.cn/news/20140301/16225815260.shtml" target="_blank">Photoshop快速入门视频教程-内部绝密</a></li>
-<li><a href="http://icd.itcast.cn/news/20140301/16253274903.shtml" target="_blank">PS质感图标大集合&amp;AI矢量主题</a></li>
-<li><a href="http://icd.itcast.cn/news/20140301/16290897286.shtml" target="_blank">Photoshop网店设计教程-网店设计全攻略</a></li>
-<li><a href="http://icd.itcast.cn/news/20140301/16350016686.shtml" target="_blank">Ps设计视频教程-Banner设计制作的技巧</a></li>
-<li><a href="http://icd.itcast.cn/news/20140301/16402220495.shtml" target="_blank">Ps视频教程-教你打造网店视觉促销设计</a></li>
-<li><a href="http://icd.itcast.cn/news/20140320/16252477697.shtml" target="_blank">JavaScrip网页特效精华制作</a></li>
-<li><a href="http://icd.itcast.cn/news/20140320/18165268257.shtml" target="_blank">jQuery快速入门到掌握核心技术</a></li>
-</ul>
-
-    </ul>
-    <div class="rightbottom"><img src="/Public/images/rightbottom.jpg" /></div>
-    <h4 class="righttitle1"><span class="fl">JAVA视频下载</span><span class="fr"><a href="http://java.itcast.cn/java/video.shtml">+MORE</a></span></h4>
-    <ul class="rightkuang">
-      <ul>
-<li><a href="http://java.itcast.cn/news/e393b086/ebce/4f94/9d48/94ed86bcf5ef.shtml" target="_blank">史上最适合初学者入门的Java基础视频</a></li>
-<li><a href="http://java.itcast.cn/news/97682098/c17e/4f15/8c2e/44c97c9c5df4.shtml" target="_blank">30天轻松掌握JavaWeb视频 </a></li>
-<li><a href="http://java.itcast.cn/news/39ecbf79/06c2/42bb/842a/39e77de17b25.shtml" target="_blank">8天快速掌握Android视频</a></li>
-<li><a href="http://java.itcast.cn/news/dbfd20f1/f4b1/412d/9b40/c1a81b8bf1da.shtml" target="_blank">张孝祥2010年贺岁视频Java高新技术 </a></li>
-<li><a href="http://java.itcast.cn/news/119602f3/4265/460c/a354/29c111b2c2bf.shtml" target="_blank">JavaWEB开发（JSP+Servlet）视频 </a></li>
-<li><a href="http://java.itcast.cn/news/ee7c6ba4/46eb/494f/8656/8327b1d83c0a.shtml" target="_blank">传智播客JDBC视频教程 </a></li>
-<li><a href="http://java.itcast.cn/news/fc5d33c4/882e/4297/87f7/b6e959417503.shtml" target="_blank">传智播客_struts2实用简洁版视频 </a></li>
-<li><a href="http://java.itcast.cn/news/3eb365f8/604f/43c7/9e2c/8bc0e22d3d9c.shtml" target="_blank">张孝祥Struts开发视频教程 </a></li>
-<li><a href="http://java.itcast.cn/news/8308d118/740a/4dcd/8dbf/c73d2fe5bc60.shtml" target="_blank">传智播客AJax技术入门视频教程</a></li>
-<li><a href="http://java.itcast.cn/news/7d6bbd26/0b3b/4fc7/829b/74f8225eb996.shtml" target="_blank">传智播客Hibernate视频教程 </a></li>
-</ul>
-
-    </ul>
-    <div class="rightbottom"><img src="/Public/images/rightbottom.jpg" /></div>
+   
   </div>
 </div>
 <div class="clear"></div>
-<!-- 页面底部 -->
+
 
 <div id="footer">
   <div class="footer_info">

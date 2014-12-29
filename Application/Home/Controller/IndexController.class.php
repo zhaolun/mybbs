@@ -13,6 +13,7 @@ class IndexController extends Controller {
 		$ydk=$dk[$key];
 		echo $yip."@#@".$ypwd."@#@".$ydk;die;*/
         $user = M('family');//获取表总数据
+		//学院
         $usera = M('xueyuan');
 		$userb = M('banji');
 		$userc = M('zhaolun');
@@ -22,7 +23,8 @@ class IndexController extends Controller {
 		$useraa = M('zhaopin');
 		$userbb = M('question');
 		$data = $user->select();
-		$data1 = $usera->select();
+        
+		$data1 = $usera->order("id desc")->select();
 		$data2 = $userb->select();
 		$data3 = $userc->select();
 		$data4 = $userd->select();
@@ -44,6 +46,14 @@ class IndexController extends Controller {
 		$this->assign('infobb',$data8);
         $this->display('index');
     }
+	public function xueyuan_xq(){
+		$id = $_GET['id'];
+		$usera = M('xueyuan');
+		$data = $usera->where("id=$id")->select();
+		//print_r($data);die;
+        $this->assign('info',$data);
+		$this->display('xueyuan_xq');
+	}
 	public function login(){
 		if(!empty($_GET['nickname'])&&!empty($_GET['img'])){
 			//echo $_GET['img'];die;

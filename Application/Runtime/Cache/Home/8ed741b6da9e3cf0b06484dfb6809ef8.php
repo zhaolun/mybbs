@@ -118,25 +118,13 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
     <div class="infotop"><img src="/Public/images/infotop.gif"/></div>
     <div class="left_content1">
       <div id="printarea">
-
-        <h1 class="infotitle"><?php echo $data['q']['title']?></h1>
-        <div class="editer">更新时间:<?php echo $data['q']['time']?> 来源:yi利战斗小组</div>
+        <?php if(is_array($info)): foreach($info as $key=>$it): ?><h1 class="infotitle"><?php echo ($it["title"]); ?></h1>
+        <div class="editer">更新时间:<?php echo ($it["time"]); ?> 来源:yi利战斗小组</div>
         <div class="infor">
-         <?php echo $data['q']['content']?>
+        <?php echo ($it["content"]); ?>
 
-        </div>
+        </div><?php endforeach; endif; ?>
       </div>
-        <?php if($data['s']){?>
-       <div class="pre">
-	               上一篇：<a target="_blank" href="/index.php/Home/problem/xq?id=<?php echo $data['s']['id']?>"><?php echo $data['s']["title"];?></a>
-       	  </div>
-        <?php }?>
-          <?php if($data['x']){?>
-      <div class="next">
-	              下一篇：<a target="_blank" href="/index.php/Home/problem/xq?id=<?php echo $data['x']['id']?>"><?php echo $data['x']["title"];?></a>
-      	  </div>
-          <?php }?>
-
       <div class="clear"></div>
       <div class="share">
 	  <!-- Baidu share BEGIN -->
