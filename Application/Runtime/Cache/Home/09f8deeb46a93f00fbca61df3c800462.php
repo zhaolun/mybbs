@@ -452,118 +452,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 <br />
 
         </div>
-      </div>
-    </div>
-    <div><img src="/Public/images/leftbottom.gif"/></div>
-    <div></div>
-  </div>
-  <div id="right" class="fl">
-    <h4 class="righttitle1 zhaopin"><span class="blue">常见</span>问题</h4>
-    <div class="rightkuang1">
-      <ul class="zhaopinlist wenti">
-        <!--<ul>
-<li><a href="#">正辰科技招聘Java工程师 </a></li>
-<li><a href="#">伟鹏科技招聘动画工程师 </a></li>
-<li><a href="#">正辰科技招聘网页设计师</a></li>
-<li><a href="#">伟鹏科技招聘动画工程师</a></li>
-<li><a href="#">正辰科技招聘Java工程师 </a></li>
-<li><a href="#">伟鹏科技招聘动画工程师 </a></li>
-<li><a href="#">伟鹏科技招聘动画工程师 </a></li>
-</ul>-->
-<ul class="zhaopinlist wenti">
-<li><a href="/news/6c691c56/0dae/41ff/996a/2d110a612490.shtml" target="_blank">你们的PHP培训为什么那么便宜？</a><img height="15" src="/Public/images/new.gif" width="29" /></li>
-<li><a href="/news/28bc21c1/10ef/4bcb/ad34/c0b70fc9ab8a.shtml" target="_blank">你们入学需要什么样的基础</a><img height="15" src="/Public/images/new.gif" width="29" /></li>
-<li><a href="/news/13099012/ae09/4d3b/ad0e/b945b114ae9c.shtml" target="_blank">你们的师资力量是什么样子的？</a> <img height="15" src="/Public/images/new.gif" width="29" /></li>
-<li><a href="/news/5b2001e2/b84e/4b60/b9a2/fb3ca2def9f7.shtml" target="_blank">你们的课程内容质量是怎么样的？</a></li>
-<li><a href="/news/28486a2e/2e20/4536/9dee/23b8b0964d3a.shtml" target="_blank">你们PHP的学习模式是什么样的？</a></li>
-<li><a href="/news/38f18d98/e496/4c46/9561/5c14558c4394.shtml" target="_blank">你们PHP培训的费用这么低，不怕别人说&quot;便宜没好货&quot;吗？签协议工作有保障吗？</a></li>
-<li><a href="/news/ec9cdb54/95e8/4d2a/862b/0e7213e7f254.shtml" target="_blank">你们的PHP培训才开过几期班，质量有保证吗？</a></li>
-<li><a href="/news/23700cbd/742d/46ab/b40a/921b780819e0.shtml" target="_blank">你们的课程安排，是怎么样的？</a></li>
-<li><a href="/news/bae6d679/af68/4f9b/a015/bb94d3e517b6.shtml" target="_blank">你们有没有阳光扶持政策，可以后交学费?</a></li>
-</ul>
-
-      </ul>
-      <div class="clear"></div>
-      <p class="text-r"><a href="/java/question.shtml"><img src="/Public/images/jiantoumore.gif"/></a></p>
-    </div>
-    <div class="rightbottom"><img src="/Public/images/bottom1.gif"/></div>
-    <h4 class="righttitle1 zhaopin"><span class="blue">工具</span>下载</h4>
-         <div class="rightkuang1">
-		  	<div style="width:275px; height:100px;">
-<p class="download" style="width:85px; height:100px; float:left;"><a href="http://player.qq.com/" target="_blank"><img alt="QQ影音" src="http://www.itcast.cn/files/image/201308/20130801111312850.jpg" style="width: 74px; height: 75px;" /><br />
-QQ影音</a></p>
-<p class="download" style="width:85px; height:100px; float:left;"><a href="http://www.emule.org.cn/download/" target="_blank"><img alt="电驴" src="/Public/images/dianlv.jpg" /><br />
-电驴</a></p>
-<p class="download" style="width:85px; height:100px; float:left;"><a href="http://dl.xunlei.com/" target="_blank"><img alt="迅雷" src="/Public/images/tengxun.jpg" /><br />
-迅雷</a></p>
-</div>
-
-		 </div>
-   
-    <div class="rightbottom"><img src="/Public/images/rightbottom.jpg"  /></div>
-    <h4 class="righttitle1 zhaopin"><span class="blue">最新</span>企业招聘</h4>
-    <div class="rightkuang1">
-      <p class="cent"> <img src="/Public/images/select.jpg"  width="256" height="66"/></p>
-       <table border="0" cellpadding="0" cellspacing="0" class="zhaopinlist" height="124" style="margin-top: 5px" width="98%">
-<tbody>
-	<tr>
-	<td class="td1" width="73%"><a href="http://www.itcast.cn/news/20141215/14223392440.shtml" target="_blank">中科软科技股份公司招聘</a></td>
-	<td width="11%">若干</td>
-	<td width="16%">12.12</td>
-	</tr>
-	<tr>
-	<td class="td1" width="73%"><a href="http://www.itcast.cn/news/20141215/14353014587.shtml" target="_blank">北京智胜终端互联市场招聘</a></td>
-	<td width="11%">若干</td>
-	<td width="16%">12.12</td>
-	</tr>
-	<tr>
-	<td class="td1" width="73%"><a href="http://www.itcast.cn/news/20141215/14410738814.shtml" target="_blank">北京因脉科技有限公司招聘</a></td>
-	<td width="11%">若干</td>
-	<td width="16%">12.12</td>
-	</tr>
-	<tr>
-	<td class="td1" width="73%"><a href="http://www.itcast.cn/news/20141215/1442323039.shtml" target="_blank">深圳一路捞互联网公司招聘</a></td>
-	<td width="11%">若干</td>
-	<td width="16%">12.12</td>
-	</tr>
-	<tr>
-	<td class="td1" width="73%"><a href="http://www.itcast.cn/news/20141215/14442192258.shtml" target="_blank">北京创信软通科技公司招牌</a></td>
-	<td width="11%">若干</td>
-	<td width="16%">12.12</td>
-	</tr>
-	<tr>
-	<td class="td1" width="73%"><a href="http://www.itcast.cn/news/20141215/14491633920.shtml" target="_blank">北京四汇奥思科技公司招聘</a></td>
-	<td width="11%">若干</td>
-	<td width="16%">12.12</td>
-	</tr>
-	<tr>
-	<td class="td1" width="73%"><a href="http://www.itcast.cn/news/20141215/14552676212.shtml" target="_blank">时趣Social Touch公司招聘</a></td>
-	<td width="11%">若干</td>
-	<td width="16%">12.12</td>
-	</tr>
-	<tr>
-	<td class="td1" width="73%"><a href="http://www.itcast.cn/news/20141215/15014353245.shtml" target="_blank">北京瑞友科技股份公司招聘</a></td>
-	<td width="11%">若干</td>
-	<td width="16%">12.12</td>
-	</tr>
-	<tr>
-	<td class="td1" width="73%"><a href="http://www.itcast.cn/news/20141215/15024358385.shtml" target="_blank">北京软通科技有限公司招聘</a></td>
-	<td width="11%">若干</td>
-	<td width="16%">12.12</td>
-	</tr>
-	<tr></tr>
-	<tr>
-	<td class="td1" width="73%"><a href="http://www.itcast.cn/news/20141215/15161510845.shtml" target="_blank">北京科亚医学影像研究所招聘</a></td>
-	<td width="11%">若干</td>
-	<td width="16%">12.12</td>
-	</tr>
-	<tr>
-	<td class="td1" width="73%"><a href="http://www.itcast.cn/news/20141215/15320892029.shtml" target="_blank">北京聚合影联文化传媒公司</a></td>
-	<td width="11%">若干</td>
-	<td width="16%">12.12</td>
-	</tr>
-	<tr>
-	<td class="td1" width="73%"><a href="
+      </div>    
 <div class="clear"></div>
 		  </div>
 			<div><img src="/Public/images/leftbottom.gif"/></div>
@@ -691,7 +580,7 @@ QQ影音</a></p>
 </dl>
 <dl class="qqthree">
 	<dt style="padding-bottom:20px;">
-		广州传智播客</dt>
+		山西传智播客</dt>
 	<dd style="width:120px;height:40px;float:left;">
 		<a href="http://wpa.qq.com/msgrd?v=1&uin=1067112004&site=qq&menu=yes" target="_blank"><img alt="武汉传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
 	<dd style="width:120px;height:40px;float:left;">
@@ -699,7 +588,7 @@ QQ影音</a></p>
 </dl>
 <dl class="qqfour">
 	<dt style="padding-bottom:20px;">
-		西安传智播客</dt>
+		河南传智播客</dt>
 	<dd style="width:120px;height:40px;float:left;">
 		<a href="http://wpa.qq.com/msgrd?v=1&uin=790330816&site=qq&menu=yes" target="_blank"><img alt="西安传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
 	<dd style="width:120px;height:40px;float:left;">

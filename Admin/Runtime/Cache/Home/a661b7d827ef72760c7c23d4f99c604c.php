@@ -185,7 +185,10 @@ H1 a {
           <li><a href="/admin.php/Home/admin/image">幻灯片管理</a></li>
 		  <li><a href="/admin.php/Home/admin/logo">LOGO管理</a></li>
 		  <li><a href="/admin.php/Home/admin/add">添加疑问</a></li>
+<<<<<<< HEAD
 		  <li><a href="/admin.php/Home/admin/lists">疑问管理</a></li>
+=======
+>>>>>>> 314eece5e77473f7af2a4f282cfc4fb648c9e96e
         </ul>
       </div>
       
@@ -268,8 +271,13 @@ H1 a {
 							<ul class="MM">
 							<li><a href="/admin.php/home/one/lists" >条形图</a></li>
 							</ul>
+<<<<<<< HEAD
 </div>
 							<h1 class="type"><a>学员信息</a></h1>
+=======
+                            </div>
+							<h1 class="type"><a>学员感言</a></h1>
+>>>>>>> 314eece5e77473f7af2a4f282cfc4fb648c9e96e
 							<div class="content">
 							<table width="100%" border="0" cellspacing="0" cellpadding="0">
 							<tr>
@@ -277,10 +285,28 @@ H1 a {
 							</tr>
 							</table>
 							<ul class="MM">
+<<<<<<< HEAD
 							<li><a href="/admin.php/home/xy/lists" >学员信息列表</a></li>
 							<li><a href="/admin.php/home/xy/add" >学员信息添加</a></li>
 							</ul>
 							
+=======
+							<li><a href="/admin.php/home/gy/lists" >感言列表</a></li>
+							<li><a href="/admin.php/home/gy/lists" >感言添加</a></li>
+							</ul>
+                            </div>
+							<h1 class="type"><a>学院信息</a></h1>
+							<div class="content">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+							<td><img src="/Public/admin/images/menu_topline.gif" width="182" height="5" /></td>
+							</tr>
+							</table>
+							<ul class="MM">
+							<li><a href="/admin.php/home/xy/lists" >学院信息列表</a></li>
+							<li><a href="/admin.php/home/xy/add" >学院信息添加</a></li>
+							</ul>	
+>>>>>>> 314eece5e77473f7af2a4f282cfc4fb648c9e96e
 						</div>
 					</td>
 				</tr>
@@ -321,11 +347,15 @@ H1 a {
     <td width="5%"><?php echo ($vo["id"]); ?></td>
     <td width="20%"><?php echo ($vo["t_name"]); ?></td>
     <td width="35%"><?php echo ($vo["position"]); ?></td>
+<<<<<<< HEAD
     <td width="10%">
 
 			<?php echo ($vo["t_desc"]); ?>;
 
 	</td>
+=======
+    <td width="10%"><?php echo ($vo["t_desc"]); ?></td>
+>>>>>>> 314eece5e77473f7af2a4f282cfc4fb648c9e96e
 	<td width="10%">
 	<a href="/admin.php/home/teacher/del/id/<?php echo ($vo["id"]); ?>">删除</a>|
 	<a href="/admin.php/home/teacher/up/id/<?php echo ($vo["id"]); ?>">编辑</a>

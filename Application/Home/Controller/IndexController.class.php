@@ -179,4 +179,15 @@ class IndexController extends Controller {
         $this->assign('list',$data);
         $this->display('detail');
 	}
+
+	function company(){
+		$db=M("zhaopin");
+		$this->info=$db->where("id=".$_GET['id'])->find();
+		$this->display();
+	}
+	function companylist(){
+		$db=M("zhaopin");
+		$this->info=$db->select();
+		$this->display();
+	}
 }
