@@ -1,4 +1,4 @@
-<html>
+<?php if (!defined('THINK_PATH')) exit();?><html>
 <head>
 <title>MyBBS后台管理</title>
 </head>
@@ -146,7 +146,7 @@ H1 a {
 		<td width="39%" valign="top">
 			<table width="100%" border="0" cellspacing="0" cellpadding="0">
 				<tr>
-					<td width="74%" height="38" class="admin_txt">管理员：<b>{$_SESSION.username}</b> 您好,感谢登陆使用！</td>
+					<td width="74%" height="38" class="admin_txt">管理员：<b><?php echo ($_SESSION["username"]); ?></b> 您好,感谢登陆使用！</td>
 					<td width="22%"><a href="#" target="_self" onClick="logout();"><img src="/Public/admin/images/out.gif" alt="安全退出" width="46" height="20" border="0"></a></td>
 					<script type="text/javascript">
 					<!--
@@ -184,7 +184,6 @@ H1 a {
           <li><a href="/admin.php/Home/admin/nav">导航管理</a></li>
           <li><a href="/admin.php/Home/admin/image">幻灯片管理</a></li>
 		  <li><a href="/admin.php/Home/admin/logo">LOGO管理</a></li>
-		  <li><a href="/admin.php/Home/admin/add">添加疑问</a></li>
         </ul>
       </div>
       
@@ -281,7 +280,59 @@ H1 a {
 		</script>
 		<td width="87%" valign="top">
 			<div style="margin:10px;padding:10px;">
-				{__CONTENT__}
+				<head>
+<title>学生列表</title>
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="/Public/admin/css/general.css" rel="stylesheet" type="text/css" />
+<link href="/Public/admin/css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/Public/admin/js/transport.js"></script>
+<script type="text/javascript" src="/Public/admin/js/common.js"></script>
+</head>
+<body>
+<h1>
+<span class="action-span1">学生列表</span><span id="search_id" class="action-span1"></span>
+<div style="clear:both"></div>
+</h1>
+<!-- 新闻类别搜索 -->
+<form>
+学生名称：<input type="text" name="" size=40><input type="button" value="搜索" onclick="">
+</form>
+<a href="/admin.php/home/message/stu_addform">添加学生</a><br>
+<!-- 新闻类别列表 -->
+<div class="list-div">
+<table cellspacing='1' cellpadding='3'>
+  <tr align="center">
+    <th  class="group-title">学生编号</th>
+    <th  class="group-title">学生名称</th>
+    <th  class="group-title">毕业学校</th>
+    <th  class="group-title">入职时间</th>
+    <th  class="group-title">所属公司</th>
+    <th  class="group-title">期望月薪</th>
+    <th  class="group-title">添加时间</th>
+    <th  class="group-title">操作</th>
+  </tr>
+  <?php if(is_array($list)): foreach($list as $key=>$val): ?><tr align="center">
+        <td><?php echo ($val["stu_id"]); ?></td>
+        <td><?php echo ($val["stu_name"]); ?></td>
+        <td><?php echo ($val["s_name"]); ?></td>
+        <td><?php echo ($val["work_time"]); ?></td>
+        <td><?php echo ($val["com_name"]); ?></td>
+        <td><?php echo ($val["money"]); ?></td>
+        <td><?php echo ($val["add_time"]); ?></td>
+        <td>
+            <a href="/admin.php/home/message/stu_del/stu_id/<?php echo ($val["stu_id"]); ?>">【删除】</a>
+            <a href="/admin.php/home/message/stu_editform/stu_id/<?php echo ($val["stu_id"]); ?>">【编辑】</a>
+        </td>
+     </tr><?php endforeach; endif; ?>
+ 
+</table>
+</div>
+<br />
+<div id="footer">
+版权所有 &copy; 八维研修学院软件工程学院1302phpA班，并保留所有权利。</div>
+</body>
+</html>
 			</div>
 		</td>
 	</tr>

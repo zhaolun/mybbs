@@ -169,4 +169,19 @@ class AdminController extends Controller {
 		$_SESSION=array();
 		$this->success('退出成功,正在跳转...','/admin.php/Home/index/index',2);
 	}
+	function add(){
+		$this->display('add');
+	}
+	public function addpro(){
+		$data['title']=$_POST['p_name'];
+		$data['content']=$_POST['p_desc'];
+		$model=M('mingshi');
+		$arr=$model->add($data);
+		if($arr){
+			$this->success('添加成功',U('/admin.php/home/admin/add'));
+		}else{
+			$this->error();
+		}
+	}
+
 }

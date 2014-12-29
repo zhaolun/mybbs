@@ -1,4 +1,4 @@
-<html>
+<?php if (!defined('THINK_PATH')) exit();?><html>
 <head>
 <title>MyBBS后台管理</title>
 </head>
@@ -146,7 +146,7 @@ H1 a {
 		<td width="39%" valign="top">
 			<table width="100%" border="0" cellspacing="0" cellpadding="0">
 				<tr>
-					<td width="74%" height="38" class="admin_txt">管理员：<b>{$_SESSION.username}</b> 您好,感谢登陆使用！</td>
+					<td width="74%" height="38" class="admin_txt">管理员：<b><?php echo ($_SESSION["username"]); ?></b> 您好,感谢登陆使用！</td>
 					<td width="22%"><a href="#" target="_self" onClick="logout();"><img src="/Public/admin/images/out.gif" alt="安全退出" width="46" height="20" border="0"></a></td>
 					<script type="text/javascript">
 					<!--
@@ -184,7 +184,6 @@ H1 a {
           <li><a href="/admin.php/Home/admin/nav">导航管理</a></li>
           <li><a href="/admin.php/Home/admin/image">幻灯片管理</a></li>
 		  <li><a href="/admin.php/Home/admin/logo">LOGO管理</a></li>
-		  <li><a href="/admin.php/Home/admin/add">添加疑问</a></li>
         </ul>
       </div>
       
@@ -281,7 +280,58 @@ H1 a {
 		</script>
 		<td width="87%" valign="top">
 			<div style="margin:10px;padding:10px;">
-				{__CONTENT__}
+				<head>
+<title>添加新闻</title>
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="/Public/admin/css/general.css" rel="stylesheet" type="text/css" />
+<link href="/Public/admin/css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/transport.js"></script>
+<script type="text/javascript" src="./js/common.js"></script>
+</head>
+<body>
+<h1>
+<span class="action-span1">添加讲师信息</span><span id="search_id" class="action-span1"></span>
+<div style="clear:both"></div>
+</h1>
+ 
+<!-- 添加新闻 -->
+<div class="list-div">
+<form method="post" action="/admin.php/home/teacher/addpro" enctype="multipart/form-data" >
+	<table cellspacing='1' cellpadding='3'>
+		<tr>
+			<td align='right'>讲师照片：</td>
+			<td><input type="file" name="filename" size=80></td>
+		</tr>
+		<tr>
+			<td align='right'>讲师名字：</td>
+			<td><input type="text" name="t_name" size=80></td>
+		</tr>
+		<tr>
+			<td align='right'>讲师介绍：</td>
+			<td><textarea name="t_desc" rows="20" cols="100"></textarea></td>
+		</tr>
+		<tr>
+			<td align='right'>职位名称：</td>
+			<td>
+				<select name="p_id">
+					<option>--请选择职位名称--</option>
+				<?php if(is_array($list)): foreach($list as $key=>$vo): ?><option value=<?php echo ($vo["p_id"]); ?>><?php echo ($vo["position"]); ?></option><?php endforeach; endif; ?>
+				</select>
+			</td>
+		</tr>
+
+		<tr>
+			<td align='center' colspan=2><input type="submit" value='添加讲师信息'></td>	
+		</tr>
+	</table>
+</form>
+</div>
+<br />
+<div id="footer">
+版权所有 &copy; 八维研修学院软件工程学院1302phpA班，并保留所有权利。</div>
+</body>
+</html>
 			</div>
 		</td>
 	</tr>

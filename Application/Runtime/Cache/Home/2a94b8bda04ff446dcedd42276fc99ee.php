@@ -301,10 +301,10 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 			    <div class="msdy-left"><img src="/Public/images/wenhao-1.jpg" /></div>
 				<div class="msdy-right">
 <ul>
-<?php if(is_array($infoe)): foreach($infoe as $key=>$it): ?><li><a href="/index.php/home/index/detail/id/<?php echo ($it["id"]); ?>"><span style="color:#ff0000;"><?php echo ($it["content"]); ?></span></a></li><?php endforeach; endif; ?>
+<?php if(is_array($infof)): foreach($infof as $key=>$it): ?><li><a href="/index.php/home/index/detail/id/<?php echo ($it["id"]); ?>"><span style="color:#ff0000;"><?php echo ($it["title"]); ?></span></a></li>
+
 </ul>
-<ul>
-<?php if(is_array($infof)): foreach($infof as $key=>$it): ?><li><a href="http://php.itcast.cn/news/20130523/16573389409.shtml"><?php echo ($it["content"]); ?></a></li><?php endforeach; endif; ?>
+<ul><?php endforeach; endif; ?>
 <li><a href="http://php.itcast.cn/news/list/cba8c58c-b2d4-4f48-bf64-a10b59fb2666/1.shtml"><font style="color: red"><b>&gt;&gt;查看更多答疑信息</b></font></a></li>
 </ul>
 </div>

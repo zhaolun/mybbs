@@ -9,7 +9,6 @@ class IndexController extends Controller {
 		$userb = M('banji');
 		$userc = M('zhaolun');
 		$userd = M('liujun');
-		$usere = M('php');
 		$userf = M('mingshi');
 		$useraa = M('zhaopin');
 		$userbb = M('question');
@@ -18,7 +17,6 @@ class IndexController extends Controller {
 		$data2 = $userb->select();
 		$data3 = $userc->select();
 		$data4 = $userd->select();
-		$data5 = $usere->select();
 		$data6 = $userf->select();
 		$data7 = $useraa->select();
 		$data8 = $userbb->where('status=0')->select();
@@ -28,7 +26,6 @@ class IndexController extends Controller {
 		$this->assign('infob',$data2);
 		$this->assign('infoc',$data3);
 		$this->assign('infod',$data4);
-		$this->assign('infoe',$data5);
 		$this->assign('infof',$data6);
 		$this->assign('infoaa',$data7);
 		$this->assign('infobb',$data8);
