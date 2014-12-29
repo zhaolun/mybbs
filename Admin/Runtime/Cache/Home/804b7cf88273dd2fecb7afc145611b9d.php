@@ -184,6 +184,7 @@ H1 a {
           <li><a href="/admin.php/Home/admin/nav">导航管理</a></li>
           <li><a href="/admin.php/Home/admin/image">幻灯片管理</a></li>
 		  <li><a href="/admin.php/Home/admin/logo">LOGO管理</a></li>
+		  <li><a href="/admin.php/Home/admin/add">添加疑问</a></li>
         </ul>
       </div>
       
@@ -323,8 +324,8 @@ H1 a {
     <td width="30%"><?php echo ($it["title"]); ?></td>
     <td width="10%">yi利小组</td>
 	<td width="10%">
-	<a href='/admin.php/Home/problem/del?id=<?php echo ($it["id"]); ?>'>删除</a>
-    <a href='/admin.php/Home/problem/upd?id=<?php echo ($it["id"]); ?>'>修改</a>
+	<a href='/admin.php/Home/xy/del?id=<?php echo ($it["id"]); ?>'>删除</a>
+    <a href='/admin.php/Home/xy/upd?id=<?php echo ($it["id"]); ?>'>修改</a>
     </td>
 	</tr><?php endforeach; endif; ?>
 </table>

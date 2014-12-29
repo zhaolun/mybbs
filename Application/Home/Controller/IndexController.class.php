@@ -17,43 +17,41 @@ class IndexController extends Controller {
 
         $user = M('family');//获取表总数据
 		//学院
-
+        $com=M('company');
         $usera = M('xueyuan');
 		$userb = M('banji');
 		$userc = M('zhaolun');
 		$userd = M('liujun');
 		$userf = M('mingshi');
-		$useraa = M('zhaopin');
 		$userbb = M('question');
-
 		$data=$user->query("select * from bbs_company,bbs_student where bbs_student.company=bbs_company.com_id limit 7");
 		$aa=$data[0]['work_time'];
 		$bb=substr($aa,0,10);
 		$this->assign('cc',$bb);
-
-		$data1 = $usera->select();
-
-		$data = $user->select();
-        
+		$data1 = $usera->select();        
 		$data1 = $usera->order("id desc")->select();
-
 		$data2 = $userb->select();
+		$comp=$com->select();
+		//var_dump($comp);die;
 		$data3 = $userc->select();
 		$data4 = $userd->select();
+<<<<<<< HEAD
 		$data6 = $userf->order('id desc')->select();
 		$data7 = $useraa->select();
+=======
+		$data6 = $userf->select();
+>>>>>>> 52d7abffa0744f87df490dc83c3edc048f0f8cbd
 		$data8 = $userbb->where('status=0')->select();
 		$db=M("slide_image");
 		$this->slide_image=$db->select();
-		//print_r($this->slide_image);die;
 		$this->assign('info',$data);
 		$this->assign('infoa',$data1);
 		$this->assign('infob',$data2);
 		$this->assign('infoc',$data3);
 		$this->assign('infod',$data4);
 		$this->assign('infof',$data6);
-		$this->assign('infoaa',$data7);
 		$this->assign('infobb',$data8);
+		$this->assign('company',$comp);
         $this->display('index');
     }
 	public function xueyuan_xq(){
