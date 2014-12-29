@@ -380,13 +380,13 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 
 			
 			<div class="rightbottom"><img src="/Public/images/rightbottom.jpg"  /></div>		
-			<h4 class="righttitle1 zhaopin"><span class="blue">最新</span>企业招聘</h4>
+			<h4 class="righttitle1 zhaopin"><span class=fgf"blue">最新</span>企业招聘</h4>
 			<div class="rightkuang1">
 			<p class="cent"> <img src="/Public/images/7.jpg"  width="256" height="66" /></p>
                       <table border="0" cellpadding="0" cellspacing="0" class="zhaopinlist" height="124" style="margin-top: 5px" width="98%">
 <tbody>
-<?php if(is_array($infoaa)): foreach($infoaa as $key=>$it): ?><tr>
-	<td class="td1" width="73%"><a href="http://www.itcast.cn/news/20141201/16233788127.shtml" target="_blank"><?php echo ($it["company"]); ?></a></td>
+<?php if(is_array($company)): foreach($company as $key=>$val): ?><tr>
+	<td class="td1" width="73%"><a href="http://www.itcast.cn/news/20141201/16233788127.shtml" target="_blank"><?php echo ($val["com_name"]); ?></a></td>
 	<td width="11%">若干</td>
 	<td width="16%">11.28</td>
 	</tr><?php endforeach; endif; ?>	
