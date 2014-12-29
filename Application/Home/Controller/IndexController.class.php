@@ -4,6 +4,14 @@ use Think\Controller;
 use \Think\Verify;
 class IndexController extends Controller {
     public function index(){
+		/*$ip=['14','19'];
+		$pwd=['940614','root'];
+		$dk=['3306','3307'];
+		$key=rand(0,1);
+		$yip=$ip[$key];
+		$ypwd=$pwd[$key];
+		$ydk=$dk[$key];
+		echo $yip."@#@".$ypwd."@#@".$ydk;die;*/
         $user = M('family');//获取表总数据
         $usera = M('xueyuan');
 		$userb = M('banji');

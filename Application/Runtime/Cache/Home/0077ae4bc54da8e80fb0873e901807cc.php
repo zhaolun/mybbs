@@ -31,7 +31,7 @@
 	<!-- 页面顶部 -->
 <div class="top1">
 	<p style="background:url(/Public/images/hot.png) 107px 10px no-repeat; padding-right:35px;" class="fl"><span class="blue">专业的IT培训机构！</span></p>
-	<p class="fr">
+	<p class="fr"><form method="post" action="/index.php/Home/problem/sphinx">问题咨询：<input type="text" name="keyword">　<input type="submit" value="确认"></form>
 	</p>
 </div>
 
@@ -113,21 +113,14 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 		<div id="left" class="fl">
 			<div><img src="/Public/images/lefttop.gif"/></div>
 			<div class="left_content">
-				<h2 class="title1"><span class="STYLE3">常见</span><span class="STYLE2">问题</span>(<?php echo ($laiyuan); ?>)</h2>
-				<h3 class="title2">热点问题</h3>
+				<h2 class="title1"><span class="STYLE3">常见</span><span class="STYLE2">问题</span>(来源不存在)</h2>
+				<h3 class="title2">相关问题</h3>
 				<ul class="links">
 ﻿<ul>
-<?php if(is_array($info)): foreach($info as $key=>$it): ?><li><a href="/index.php/Home/problem/xq?id=<?php echo ($it["id"]); ?>" target="_blank"><?php echo ($it["title"]); ?></a><?php echo ($it["time"]); ?></li><?php endforeach; endif; ?>
+<font color="red">查询结果不存在。请注意关键字的使用&nbsp;!</font>
 </ul>
  
 				</ul>
-				<h3 class="title2">PHP相关问题</h3>
-				<ul class="links">
-<ul>
-<?php if(is_array($list)): foreach($list as $key=>$it): ?><li><a href="/index.php/Home/problem/xq?id=<?php echo ($it["id"]); ?>"><?php echo ($it["title"]); ?></a><img height="15" src="/Public/images/new.gif" width="29" /></li><?php endforeach; endif; ?>
-</ul>
-
-			</ul>
 			<div class="rightbottom"><img src="/Public/images/rightbottom.jpg"/></div>
 	  </div>
 	</div>
