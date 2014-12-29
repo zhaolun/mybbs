@@ -110,47 +110,401 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 	<a class="jiathis_counter_style"></a>
 </div>
 <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>-->
+
 <div id="box">
-     <!-- 左边 -->
-	 <div id="left" class="fl" style="margin-top:3px;">
-	        <div class="clear"></div>
-			<div class="left_content2">
-			<h4 class="ganyan"><span class="fl"><span class="STYLE3">学员</span>呐喊</span><span class="fr"><a href="/channel/job.shtml">+ MORE</a></span></h4>
-			<!-- 内容主体 -->
-			<div class="bigvideo">
-<p>
-	<?php echo ($list[0]['video']); ?>
-</p>
-<p><?php echo ($list[0]['stu_name']); ?> 24岁 月薪<?php echo ($list[0]['money']); ?>K 就职单位:<?php echo ($list[0]['com_name']); ?> (如果观看不了视频，请<a href="#" style="color: red">点击这里</a>)</p>
+  <div id="left" class="fl"  style="margin-top:3px; overflow:hidden;">
+    <div class="clear"></div>
+    <div><img src="/Public/images/lefttop.gif"/></div>
+    <div class="left_content3">
+<a href="http://dvd.itcast.cn/?php" target="_blank"><font color="red"><h4>下载网速不给力，来申请免费PHP学习光盘吧！全新2014版JAVA/.NET/PHP/网页平面UI设计/iOS入门必备教程光盘免费申领中！</h4></font></a>
+      <div class="zhanshi">
+        <h4 class="videotitle"><span class="fl">PHP视频下载(如果视频无法下载，请联系QQ:2449444817)</span></h4>
+		<div class="blueline1">
+<div class="blueline1">
+<table bgcolor="#e2f1f8" border="0" cellpadding="0" cellspacing="1" class="videodown" width="100%">
+<tbody>
+	<tr>
+	<td bgcolor="#ffffff" class="downpic" rowspan="2" width="106"><img alt="" height="71" src="http://www.itcast.cn/files/image/201410/20141020170847739.jpg" width="96" /></td>
+	<td bgcolor="#ffffff" width="272">
+	<div class="jiaochengmz"><a href="http://bbs.itcast.cn/thread-33681-1-1.html?php" target="_blank"><span style="color:#ff0000;">8小时打造专属电子留言板系统</span></a></div>
+	</td>
+	<td align="right" bgcolor="#ffffff" width="215"><a href="http://bbs.itcast.cn/thread-33681-1-1.html?php" target="_blank"><img border="0" height="26" src="/Public/images/download.jpg" width="56" /></a></td>
+	</tr>
+	<tr>
+	<td bgcolor="#ffffff">
+	<div class="jianshi">主讲：罗弟华 <span class="blue">PHP公开课 </span></div>
+	</td>
+	<td align="right" bgcolor="#ffffff">
+	<div class="bdshare_t bds_tools get-codes-bdshare" id="bdshare"></div>
+	</td>
+	</tr>
+</tbody>
+</table>
+<table bgcolor="#e2f1f8" border="0" cellpadding="0" cellspacing="1" class="videodown" width="100%">
+<tbody>
+	<tr>
+	<td bgcolor="#ffffff" class="downpic" rowspan="2" width="106"><img alt="" height="71" src="http://php.itcast.cn/images/video/php/phprm.jpg" width="96" /></td>
+	<td bgcolor="#ffffff" width="272">
+	<div class="jiaochengmz"><a href="http://php.itcast.cn/news/caa9b58b/37b1/47f6/98e3/bd3600c98cfc.shtml">PHP入门到精通教程</a></div>
+	</td>
+	<td align="right" bgcolor="#ffffff" width="215"><a href="http://php.itcast.cn/news/caa9b58b/37b1/47f6/98e3/bd3600c98cfc.shtml"><img border="0" height="26" src="/Public/images/download.jpg" width="56" /></a></td>
+	</tr>
+	<tr>
+	<td bgcolor="#ffffff">
+	<div class="jianshi">主讲：韩顺平 <span class="blue">php课程类 </span></div>
+	</td>
+	<td align="right" bgcolor="#ffffff">
+	<div class="bdshare_t bds_tools get-codes-bdshare" id="bdshare"></div>
+	</td>
+	</tr>
+</tbody>
+</table>
+<table bgcolor="#e2f1f8" border="0" cellpadding="0" cellspacing="1" class="videodown" width="100%">
+<tbody>
+	<tr>
+	<td bgcolor="#ffffff" class="downpic" rowspan="2" width="106"><img alt="" height="71" src="http://www.itcast.cn/files/image/201209/20120928154653630.jpg" width="96" /></td>
+	<td bgcolor="#ffffff" width="272">
+	<div class="jiaochengmz"><a href="http://www.itcast.cn/news/20120913/18063829105.shtml">PHP入门到精通教程配套笔记</a></div>
+	</td>
+	<td align="right" bgcolor="#ffffff" width="215"><a href="http://www.itcast.cn/news/20120913/18063829105.shtml"><img border="0" height="26" src="/Public/images/download.jpg" width="56" /></a></td>
+	</tr>
+	<tr>
+	<td bgcolor="#ffffff">
+	<div class="jianshi">主讲：韩顺平 <span class="blue">php课程类 </span></div>
+	</td>
+	<td align="right" bgcolor="#ffffff">
+	<div class="bdshare_t bds_tools get-codes-bdshare" id="bdshare"></div>
+	</td>
+	</tr>
+</tbody>
+</table>
+<table bgcolor="#e2f1f8" border="0" cellpadding="0" cellspacing="1" class="videodown" width="100%">
+<tbody>
+	<tr>
+	<td bgcolor="#ffffff" class="downpic" rowspan="2" width="106"><img alt="" src="http://www.itcast.cn/files/image/201306/20130624100512152.jpg" style="width: 96px; height: 71px;" /></td>
+	<td bgcolor="#ffffff" width="272">
+	<div class="jiaochengmz"><a href="http://php.itcast.cn/news/20130617/17423736508.shtml">第二版MYSQL视频教程</a><img height="5" src="/Public/images/news.jpg" width="24" />
+	<div></div>
+	</div>
+	</td>
+	<td align="right" bgcolor="#ffffff" width="215"><a href="http://php.itcast.cn/news/20130617/17423736508.shtml"><img alt="" border="0" height="26" src="/Public/images/download.jpg" width="56" /></a></td>
+	</tr>
+	<tr>
+	<td bgcolor="#ffffff">
+	<div class="jianshi">主讲：韩忠康 <span class="blue">php课程类 </span></div>
+	</td>
+	<td align="right" bgcolor="#ffffff">
+	<div class="bdshare_t bds_tools get-codes-bdshare" id="bdshare"></div>
+	</td>
+	</tr>
+</tbody>
+</table>
+<table bgcolor="#e2f1f8" border="0" cellpadding="0" cellspacing="1" class="videodown" width="100%">
+<tbody>
+	<tr>
+	<td bgcolor="#ffffff" class="downpic" rowspan="2" width="106"><img alt="" height="71" src="http://php.itcast.cn/images/video/php/ymjt.jpg" width="96" /></td>
+	<td bgcolor="#ffffff" width="272">
+	<div class="jiaochengmz"><a href="http://php.itcast.cn/news/166b4e78/01b0/4017/96ae/764cd57432a8.shtml">第二版页面静态化视频教程</a><img height="5" src="/Public/images/news.jpg" width="24" />
+	<div></div>
+	</div>
+	</td>
+	<td align="right" bgcolor="#ffffff" width="215"><a href="http://php.itcast.cn/news/166b4e78/01b0/4017/96ae/764cd57432a8.shtml"><img alt="" border="0" height="26" src="/Public/images/download.jpg" width="56" /></a></td>
+	</tr>
+	<tr>
+	<td bgcolor="#ffffff">
+	<div class="jianshi">主讲：韩顺平 <span class="blue">php课程类 </span></div>
+	</td>
+	<td align="right" bgcolor="#ffffff">
+	<div class="bdshare_t bds_tools get-codes-bdshare" id="bdshare"></div>
+	</td>
+	</tr>
+</tbody>
+</table>
+<table bgcolor="#e2f1f8" border="0" cellpadding="0" cellspacing="1" class="videodown" width="100%">
+<tbody>
+	<tr>
+	<td bgcolor="#ffffff" class="downpic" rowspan="2" width="106"><img alt="" height="71" src="http://php.itcast.cn/images/video/php/Memcached.jpg" width="96" /></td>
+	<td bgcolor="#ffffff" width="272">
+	<div class="jiaochengmz"><a href="http://php.itcast.cn/news/20140122/11330849183.shtml">第二版Memcached缓存技术</a><img height="5" src="/Public/images/news.jpg" width="24" /></div>
+	</td>
+	<td align="right" bgcolor="#ffffff" width="215"><a href="http://php.itcast.cn/news/20140122/11330849183.shtml"><img alt="" border="0" height="26" src="/Public/images/download.jpg" width="56" /></a></td>
+	</tr>
+	<tr>
+	<td bgcolor="#ffffff">
+	<div class="jianshi">主讲：韩顺平 <span class="blue">php课程类 </span></div>
+	</td>
+	<td align="right" bgcolor="#ffffff">
+	<div class="bdshare_t bds_tools get-codes-bdshare" id="bdshare"></div>
+	</td>
+	</tr>
+</tbody>
+</table>
+<table bgcolor="#e2f1f8" border="0" cellpadding="0" cellspacing="1" class="videodown" width="100%">
+<tbody>
+	<tr>
+	<td bgcolor="#ffffff" class="downpic" rowspan="2" width="106"><img alt="" height="71" src="http://php.itcast.cn/images/video/php/Mysqlyh.jpg" width="96" /></td>
+	<td bgcolor="#ffffff" width="272">
+	<div class="jiaochengmz"><a href="http://php.itcast.cn/news/61ee8515/a34e/477d/9d5d/662dbff5e161.shtml">第二版Mysql优化</a><img height="5" src="/Public/images/news.jpg" width="24" /></div>
+	</td>
+	<td align="right" bgcolor="#ffffff" width="215"><a href="http://php.itcast.cn/news/61ee8515/a34e/477d/9d5d/662dbff5e161.shtml#"><img alt="" border="0" height="26" src="/Public/images/download.jpg" width="56" /></a></td>
+	</tr>
+	<tr>
+	<td bgcolor="#ffffff">
+	<div class="jianshi">主讲：韩顺平 <span class="blue">php课程类 </span></div>
+	</td>
+	<td align="right" bgcolor="#ffffff">
+	<div class="bdshare_t bds_tools get-codes-bdshare" id="bdshare"></div>
+	</td>
+	</tr>
+</tbody>
+</table>
+<table bgcolor="#e2f1f8" border="0" cellpadding="0" cellspacing="1" class="videodown" width="100%">
+<tbody>
+	<tr>
+	<td bgcolor="#ffffff" class="downpic" rowspan="2" width="106"><img alt="" src="http://php.itcast.cn/files/image/201207/20120716135324509.jpg" style="width: 96px; height: 71px" /></td>
+	<td bgcolor="#ffffff" width="272">
+	<div class="jiaochengmz"><a href="http://php.itcast.cn/news/d54ff1cf/71d6/4181/b797/ff4584cf39ac.shtml">LAMP经典入门教程</a></div>
+	</td>
+	<td align="right" bgcolor="#ffffff" width="215"><a href="http://php.itcast.cn/news/d54ff1cf/71d6/4181/b797/ff4584cf39ac.shtml"><img alt="" border="0" height="26" src="/Public/images/download.jpg" width="56" /></a></td>
+	</tr>
+	<tr>
+	<td bgcolor="#ffffff">
+	<div class="jianshi">主讲：李东超 <span class="blue">php课程类 </span></div>
+	</td>
+	<td align="right" bgcolor="#ffffff">
+	<div class="bdshare_t bds_tools get-codes-bdshare" id="bdshare"></div>
+	</td>
+	</tr>
+</tbody>
+</table>
+<table bgcolor="#e2f1f8" border="0" cellpadding="0" cellspacing="1" class="videodown" width="100%">
+<tbody>
+	<tr>
+	<td bgcolor="#ffffff" class="downpic" rowspan="2" width="106"><img alt="" height="71" src="http://php.itcast.cn/images/video/php/zend.jpg" width="96" /></td>
+	<td bgcolor="#ffffff" width="272">
+	<div class="jiaochengmz"><a href="http://php.itcast.cn/news/7acb031c/5958/42d8/be84/47796e2c1243.shtml">zend framework</a></div>
+	</td>
+	<td align="right" bgcolor="#ffffff" width="215"><a href="http://php.itcast.cn/news/7acb031c/5958/42d8/be84/47796e2c1243.shtml"><img alt="" border="0" height="26" src="/Public/images/download.jpg" width="56" /></a></td>
+	</tr>
+	<tr>
+	<td bgcolor="#ffffff">
+	<div class="jianshi">主讲：韩顺平 <span class="blue">php课程类 </span></div>
+	</td>
+	<td align="right" bgcolor="#ffffff">
+	<div class="bdshare_t bds_tools get-codes-bdshare" id="bdshare"></div>
+	</td>
+	</tr>
+</tbody>
+</table>
+<table bgcolor="#e2f1f8" border="0" cellpadding="0" cellspacing="1" class="videodown" width="100%">
+<tbody>
+	<tr>
+	<td bgcolor="#ffffff" class="downpic" rowspan="2" width="106"><img alt="" height="71" src="http://php.itcast.cn/images/video/php/smarty.jpg" width="96" /></td>
+	<td bgcolor="#ffffff" width="272">
+	<div class="jiaochengmz"><a href="http://php.itcast.cn/news/a632aeea/df9a/46bf/92f1/896679400a37.shtml">smarty模板引擎</a></div>
+	</td>
+	<td align="right" bgcolor="#ffffff" width="215"><a href="http://php.itcast.cn/news/a632aeea/df9a/46bf/92f1/896679400a37.shtml"><img alt="" border="0" height="26" src="/Public/images/download.jpg" width="56" /></a></td>
+	</tr>
+	<tr>
+	<td bgcolor="#ffffff">
+	<div class="jianshi">主讲：韩顺平 <span class="blue">php课程类 </span></div>
+	</td>
+	<td align="right" bgcolor="#ffffff">
+	<div class="bdshare_t bds_tools get-codes-bdshare" id="bdshare"></div>
+	</td>
+	</tr>
+</tbody>
+</table>
+<table bgcolor="#e2f1f8" border="0" cellpadding="0" cellspacing="1" class="videodown" width="100%">
+<tbody>
+	<tr>
+	<td bgcolor="#ffffff" class="downpic" rowspan="2" width="106"><img alt="" height="71" src="http://php.itcast.cn/images/video/php/ajax.jpg" width="96" /></td>
+	<td bgcolor="#ffffff" width="272">
+	<div class="jiaochengmz"><a href="http://php.itcast.cn/news/20140122/11080487596.shtml">Ajax技术</a></div>
+	</td>
+	<td align="right" bgcolor="#ffffff" width="215"><a href="http://php.itcast.cn/news/20140122/11080487596.shtml"><img alt="" border="0" height="26" src="/Public/images/download.jpg" width="56" /></a></td>
+	</tr>
+	<tr>
+	<td bgcolor="#ffffff">
+	<div class="jianshi">主讲：韩顺平 <span class="blue">php课程类 </span></div>
+	</td>
+	<td align="right" bgcolor="#ffffff">
+	<div class="bdshare_t bds_tools get-codes-bdshare" id="bdshare"></div>
+	</td>
+	</tr>
+</tbody>
+</table>
+<table bgcolor="#e2f1f8" border="0" cellpadding="0" cellspacing="1" class="videodown" width="100%">
+<tbody>
+	<tr>
+	<td bgcolor="#ffffff" class="downpic" rowspan="2" width="106"><img alt="" height="71" src="http://php.itcast.cn/images/video/php/qsgd.jpg" width="96" /></td>
+	<td bgcolor="#ffffff" class="jiaochengmz" div="" width="272"><a href="http://php.itcast.cn/news/fd551fd3/9db4/4360/9afa/57f438973108.shtml">轻松搞定网页设计</a>
+	<div></div>
+	</td>
+	<td align="right" bgcolor="#ffffff" width="215"><a href="http://php.itcast.cn/news/fd551fd3/9db4/4360/9afa/57f438973108.shtml"><img alt="" border="0" height="26" src="/Public/images/download.jpg" width="56" /></a></td>
+	</tr>
+	<tr>
+	<td bgcolor="#ffffff">
+	<div class="jianshi">主讲：韩顺平 <span class="blue">php课程类 </span></div>
+	</td>
+	<td align="right" bgcolor="#ffffff">
+	<div class="bdshare_t bds_tools get-codes-bdshare" id="bdshare"></div>
+	</td>
+	</tr>
+</tbody>
+</table>
+<table bgcolor="#e2f1f8" border="0" cellpadding="0" cellspacing="1" class="videodown" width="100%">
+<tbody>
+	<tr>
+	<td bgcolor="#ffffff" class="downpic" rowspan="2" width="106"><img alt="" height="71" src="http://php.itcast.cn/images/video/php/php01.jpg" width="96" /></td>
+	<td bgcolor="#ffffff" width="272">
+	<div class="jiaochengmz"><a href="http://php.itcast.cn/news/20140122/11014822461.shtml">PHP数据库陷阱</a></div>
+	</td>
+	<td align="right" bgcolor="#ffffff" width="215"><a href="http://php.itcast.cn/news/20140122/11014822461.shtml"><img alt="" border="0" height="26" src="/Public/images/download.jpg" width="56" /></a></td>
+	</tr>
+	<tr>
+	<td bgcolor="#ffffff">
+	<div class="jianshi">主讲：韩顺平 <span class="blue">php课程类 </span></div>
+	</td>
+	<td align="right" bgcolor="#ffffff">
+	<div class="bdshare_t bds_tools get-codes-bdshare" id="bdshare"></div>
+	</td>
+	</tr>
+</tbody>
+</table>
+<table bgcolor="#e2f1f8" border="0" cellpadding="0" cellspacing="1" class="videodown" width="100%">
+<tbody>
+	<tr>
+	<td bgcolor="#ffffff" class="downpic" rowspan="2" width="106"><img alt="" height="71" src="http://php.itcast.cn/images/video/php/phpzf.jpg" width="96" /></td>
+	<td bgcolor="#ffffff" width="272">
+	<div class="jiaochengmz"><a href="http://php.itcast.cn/news/94c86c32/a7c1/4d2f/b2b4/ded74c6e1113.shtml">PHP网上支付技术</a></div>
+	</td>
+	<td align="right" bgcolor="#ffffff" width="215"><a href="http://php.itcast.cn/news/94c86c32/a7c1/4d2f/b2b4/ded74c6e1113.shtml"><img alt="" border="0" height="26" src="/Public/images/download.jpg" width="56" /></a></td>
+	</tr>
+	<tr>
+	<td bgcolor="#ffffff">
+	<div class="jianshi">主讲：韩顺平 <span class="blue">php课程类 </span></div>
+	</td>
+	<td align="right" bgcolor="#ffffff">
+	<div class="bdshare_t bds_tools get-codes-bdshare" id="bdshare"></div>
+	</td>
+	</tr>
+</tbody>
+</table>
+<table bgcolor="#e2f1f8" border="0" cellpadding="0" cellspacing="1" class="videodown" width="100%">
+<tbody>
+	<tr>
+	<td bgcolor="#ffffff" class="downpic" rowspan="2" width="106"><img alt="" height="71" src="http://php.itcast.cn/images/video/php/phpbb.jpg" width="96" /></td>
+	<td bgcolor="#ffffff" width="272">
+	<div class="jiaochengmz"><a href="http://php.itcast.cn/news/20140122/10573060821.shtml">PHP报表视频教程</a></div>
+	</td>
+	<td align="right" bgcolor="#ffffff" width="215"><a href="http://php.itcast.cn/news/20140122/10573060821.shtml"><img alt="" border="0" height="26" src="/Public/images/download.jpg" width="56" /></a></td>
+	</tr>
+	<tr>
+	<td bgcolor="#ffffff">
+	<div class="jianshi">主讲：韩顺平 <span class="blue">php课程类 </span></div>
+	</td>
+	<td align="right" bgcolor="#ffffff">
+	<div class="bdshare_t bds_tools get-codes-bdshare" id="bdshare"></div>
+	</td>
+	</tr>
+</tbody>
+</table>
+<table bgcolor="#e2f1f8" border="0" cellpadding="0" cellspacing="1" class="videodown" width="100%">
+<tbody>
+	<tr>
+	<td bgcolor="#ffffff" class="downpic" rowspan="2" width="106"><img alt="" height="71" src="http://php.itcast.cn/images/video/php/Linux.jpg" width="96" /></td>
+	<td bgcolor="#ffffff" width="272">
+	<div class="jiaochengmz"><a href="http://php.itcast.cn/news/20140122/10545671409.shtml">Linux视频教程</a></div>
+	</td>
+	<td align="right" bgcolor="#ffffff" width="215"><a href="http://php.itcast.cn/news/20140122/10545671409.shtml"><img alt="" border="0" height="26" src="/Public/images/download.jpg" width="56" /></a></td>
+	</tr>
+	<tr>
+	<td bgcolor="#ffffff">
+	<div class="jianshi">主讲：韩顺平 <span class="blue">php课程类 </span></div>
+	</td>
+	<td align="right" bgcolor="#ffffff">
+	<div class="bdshare_t bds_tools get-codes-bdshare" id="bdshare"></div>
+	</td>
+	</tr>
+</tbody>
+</table>
+<table bgcolor="#e2f1f8" border="0" cellpadding="0" cellspacing="1" class="videodown" width="100%">
+<tbody>
+	<tr>
+	<td bgcolor="#ffffff" class="downpic" rowspan="2" width="106"><img alt="" height="71" src="http://php.itcast.cn/images/video/php/Oracl.jpg" width="96" /></td>
+	<td bgcolor="#ffffff" width="272">
+	<div class="jiaochengmz"><a href="http://php.itcast.cn/news/c31baf40/8fa5/4803/ac4d/6e27086d009f.shtml">Oracle视频教程</a></div>
+	</td>
+	<td align="right" bgcolor="#ffffff" width="215"><a href="http://php.itcast.cn/news/c31baf40/8fa5/4803/ac4d/6e27086d009f.shtml"><img alt="" border="0" height="26" src="/Public/images/download.jpg" width="56" /></a></td>
+	</tr>
+	<tr>
+	<td bgcolor="#ffffff">
+	<div class="jianshi">主讲：韩顺平 <span class="blue">php课程类 </span></div>
+	</td>
+	<td align="right" bgcolor="#ffffff">
+	<div class="bdshare_t bds_tools get-codes-bdshare" id="bdshare"></div>
+	</td>
+	</tr>
+</tbody>
+</table>
 </div>
-<div class="clear"></div>
-<div class="zhanshi">
-<h4>劳动合同（点击可查看大图）</h4>
-<div class="blueline"><a href="http://www.itcast.cn/files/image/201307/20130705150451526.jpg" target="_blank"><img src="http://www.itcast.cn/files/image/201307/20130705145551295.jpg" style="width: 171px; height: 226px; " /></a><a href="http://www.itcast.cn/files/image/201307/20130705150543256.jpg" target="_blank"><img src="http://www.itcast.cn/files/image/201307/20130705145613587.jpg" style="width: 171px; height: 226px; " /></a><a href="http://www.itcast.cn/files/image/201307/20130705150616500.jpg" target="_blank"><img src="http://www.itcast.cn/files/image/201307/20130705145632229.jpg" style="width: 171px; height: 226px; " /></a></div>
-<h4>身份证</h4>
-<div class="blueline"><a href="#"><img src="http://www.itcast.cn/files/image/201307/20130705145826328.jpg" style="width: 297px; height: 191px; " /></a>
-<img src="<?php echo ($list[0]['pic']); ?>">
-</div>
-<h4><a href="#">毕业证书</a></h4>
-<div class="blueline"><a href="#"><img src="http://www.itcast.cn/files/image/201307/20130705150052626.jpg" style="width: 295px; height: 195px; " /></a><a href="#"><img src="http://www.itcast.cn/files/image/201307/20130705150111580.jpg" style="width: 295px; height: 195px; " /></a></div>
+<br />
+
+        </div>
+      </div>
+    </div>
+    <div><img src="/Public/images/leftbottom.gif"/></div>
+    <div></div>
+  </div>
+  <div id="right" class="fl">
+    <h4 class="righttitle1 zhaopin"><span class="blue">常见</span>问题</h4>
+    <div class="rightkuang1">
+      <ul class="zhaopinlist wenti">
+        <!--<ul>
+<li><a href="#">正辰科技招聘Java工程师 </a></li>
+<li><a href="#">伟鹏科技招聘动画工程师 </a></li>
+<li><a href="#">正辰科技招聘网页设计师</a></li>
+<li><a href="#">伟鹏科技招聘动画工程师</a></li>
+<li><a href="#">正辰科技招聘Java工程师 </a></li>
+<li><a href="#">伟鹏科技招聘动画工程师 </a></li>
+<li><a href="#">伟鹏科技招聘动画工程师 </a></li>
+</ul>-->
+<ul class="zhaopinlist wenti">
+<li><a href="/news/6c691c56/0dae/41ff/996a/2d110a612490.shtml" target="_blank">你们的PHP培训为什么那么便宜？</a><img height="15" src="/Public/images/new.gif" width="29" /></li>
+<li><a href="/news/28bc21c1/10ef/4bcb/ad34/c0b70fc9ab8a.shtml" target="_blank">你们入学需要什么样的基础</a><img height="15" src="/Public/images/new.gif" width="29" /></li>
+<li><a href="/news/13099012/ae09/4d3b/ad0e/b945b114ae9c.shtml" target="_blank">你们的师资力量是什么样子的？</a> <img height="15" src="/Public/images/new.gif" width="29" /></li>
+<li><a href="/news/5b2001e2/b84e/4b60/b9a2/fb3ca2def9f7.shtml" target="_blank">你们的课程内容质量是怎么样的？</a></li>
+<li><a href="/news/28486a2e/2e20/4536/9dee/23b8b0964d3a.shtml" target="_blank">你们PHP的学习模式是什么样的？</a></li>
+<li><a href="/news/38f18d98/e496/4c46/9561/5c14558c4394.shtml" target="_blank">你们PHP培训的费用这么低，不怕别人说&quot;便宜没好货&quot;吗？签协议工作有保障吗？</a></li>
+<li><a href="/news/ec9cdb54/95e8/4d2a/862b/0e7213e7f254.shtml" target="_blank">你们的PHP培训才开过几期班，质量有保证吗？</a></li>
+<li><a href="/news/23700cbd/742d/46ab/b40a/921b780819e0.shtml" target="_blank">你们的课程安排，是怎么样的？</a></li>
+<li><a href="/news/bae6d679/af68/4f9b/a015/bb94d3e517b6.shtml" target="_blank">你们有没有阳光扶持政策，可以后交学费?</a></li>
+</ul>
+
+      </ul>
+      <div class="clear"></div>
+      <p class="text-r"><a href="/java/question.shtml"><img src="/Public/images/jiantoumore.gif"/></a></p>
+    </div>
+    <div class="rightbottom"><img src="/Public/images/bottom1.gif"/></div>
+    <h4 class="righttitle1 zhaopin"><span class="blue">工具</span>下载</h4>
+         <div class="rightkuang1">
+		  	<div style="width:275px; height:100px;">
+<p class="download" style="width:85px; height:100px; float:left;"><a href="http://player.qq.com/" target="_blank"><img alt="QQ影音" src="http://www.itcast.cn/files/image/201308/20130801111312850.jpg" style="width: 74px; height: 75px;" /><br />
+QQ影音</a></p>
+<p class="download" style="width:85px; height:100px; float:left;"><a href="http://www.emule.org.cn/download/" target="_blank"><img alt="电驴" src="/Public/images/dianlv.jpg" /><br />
+电驴</a></p>
+<p class="download" style="width:85px; height:100px; float:left;"><a href="http://dl.xunlei.com/" target="_blank"><img alt="迅雷" src="/Public/images/tengxun.jpg" /><br />
+迅雷</a></p>
 </div>
 
-              <!-- 内容主体 -->
-			  <div class="clear"></div>
-			  <div class="shenming">
-			   	<h4>郑重申明</h4>
-				<div class="sminfor">在诚信缺失的当今社会，相信有人会怀疑我们造假，因此我们郑重承诺，如果您发现该同学的劳动合同是虚假的，北京八维教育将赔付您10万元。当然，如果在您查证后确认劳动合同属实，请录制一段查证视频，在视频中讲述您查证的过程并公开您的个人信息。</div>
-			   </div>
-		    </div>
-			
-	 </div>	
-	 <!-- 左边 -->	
-	 <!-- 右边 -->	
-	 <div id="right" class="fl">
-			<h4 class="righttitle1 zhaopin"><span class="blue">最新</span>企业招聘</h4>
-			<div class="rightkuang1">
-			<p class="cent"> <img src="/images/select.jpg"  width="256" height="66" /></p>
-			 <table border="0" cellpadding="0" cellspacing="0" class="zhaopinlist" height="124" style="margin-top: 5px" width="98%">
+		 </div>
+   
+    <div class="rightbottom"><img src="/Public/images/rightbottom.jpg"  /></div>
+    <h4 class="righttitle1 zhaopin"><span class="blue">最新</span>企业招聘</h4>
+    <div class="rightkuang1">
+      <p class="cent"> <img src="/Public/images/select.jpg"  width="256" height="66"/></p>
+       <table border="0" cellpadding="0" cellspacing="0" class="zhaopinlist" height="124" style="margin-top: 5px" width="98%">
 <tbody>
 	<tr>
 	<td class="td1" width="73%"><a href="http://www.itcast.cn/news/20141215/14223392440.shtml" target="_blank">中科软科技股份公司招聘</a></td>
@@ -209,181 +563,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 	<td width="16%">12.12</td>
 	</tr>
 	<tr>
-	<td class="td1" width="73%"><a href="http://www.itcast.cn/news/20141215/15330165191.shtml" target="_blank">北京建迅网天科技公司招聘</a></td>
-	<td width="11%">若干</td>
-	<td width="16%">12.12</td>
-	</tr>
-	<tr>
-	<td class="td1" width="73%"><a href="http://www.itcast.cn/news/list/20c133c0-6635-421c-acae-6125b0702b34/1.shtml" target="_blank"><span style="color:#ff0000;">更多企业招聘信息请点击&hellip;&hellip;</span></a></td>
-	<td width="11%"><a href="http://www.itcast.cn/news/list/20c133c0-6635-421c-acae-6125b0702b34/1.shtml" target="_blank"><span style="color:#ff0000;">查看</span></a></td>
-	<td width="16%"><a href="http://www.itcast.cn/news/list/20c133c0-6635-421c-acae-6125b0702b34/1.shtml" target="_blank"><span style="color:#ff0000;">更多</span></a></td>
-	</tr>
-</tbody>
-</table>
-
- <div class="clear"></div>
-			</div>
-			<div class="rightbottom"><img src="/images/bottom1.gif"/></div>
-			
-			 <h4 class="righttitle1"><span class="fl">本期就业明星</span><span class="fr"><a href="/channel/job.shtml">+MORE</a></span></h4>
-    <ul class="rightkuang gushi">
-      <p class="cent"><a href="http://bbs.itcast.cn/zine.php" target="_blank"><img alt="" src="http://www.itcast.cn/files/image/201412/20141204115833873.jpg" style="height: 156px; width: 260px;" /></a></p>
-<p><a href="http://bbs.itcast.cn/zine.php" target="_blank"><span style="color:#000000;">《传智特刊》第二十一期华丽上线啦，特别策划支招，让你穿衣逼格大涨，成为进击的Geek，时髦程度猛甩&ldquo;程序猿甲&rdquo;几百条街...</span><span style="color:#ff0000;">【详情】</span></a></p>
-
-    </ul>
-			<div class="rightbottom"><img src="/images/rightbottom.jpg"/></div>
-			<h4 class="righttitle1 lianxi"><span class="fl"><span class="blue">课程</span>咨询</span></h4>			
-			<div class="rightkuang">
-			 <dl>
-	<dt style="padding-bottom:20px;">
-		北京传智播客</dt>
-	<dd style="width:120px;height:40px;float:left;">
-		<a href="http://cnrdn.com/iP66" target="_blank"><img alt="北京传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
-	<dd style="width:120px;height:40px;float:left;">
-		<a href="http://cnrdn.com/iP66" target="_blank"><img alt="北京传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqkczx.jpg" width="99" /></a></dd>
-</dl>
-<dl class="qqtwo">
-	<dt style="padding-bottom:20px;">
-		广州传智播客</dt>
-	<dd style=" width:120px;height:40px;float:left;">
-		<a href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&amp;key=XzgwMDA2ODg2OF8yMDczMV84MDAwNjg4NjhfMl8" target="_blank"><img alt="广州传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
-	<dd style=" width:120px;height:40px;float:left;">
-		<a href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&amp;key=XzgwMDA2ODg2OF8yMDczMV84MDAwNjg4NjhfMl8" target="_blank"><img alt="广州传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqkczx.jpg" width="99" /></a></dd>
-</dl>
-<dl class="qqthree">
-	<dt style="padding-bottom:20px;">
-		上海传智播客</dt>
-	<dd style="width:120px;height:40px;float:left;">
-		<a href="http://cnrdn.com/djUD" target="_blank"><img alt="上海传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
-	<dd style="width:120px;height:40px;float:left;">
-		<a href="http://cnrdn.com/djUD" target="_blank"><img alt="上海传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqkczx.jpg" width="99" /></a></dd>
-</dl>
-<dl class="qqfour">
-	<dt style="padding-bottom:20px;">
-		武汉传智播客</dt>
-	<dd style="width:120px;height:40px;float:left;">
-		<a href="http://cnrdn.com/shPF" target="_blank"><img alt="武汉传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
-	<dd style="width:120px;height:40px;float:left;">
-		<a href="http://cnrdn.com/shPF" target="_blank"><img alt="武汉传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqkczx.jpg" width="99" /></a></dd>
-</dl>
-<dl class="qqfive">
-	<dt style="padding-bottom:20px;">
-		郑州传智播客</dt>
-	<dd style="width:120px;height:40px;float:left;">
-		<a href="http://cnrdn.com/0LVE" target="_blank"><img alt="武汉传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
-	<dd style="width:120px;height:40px;float:left;">
-		<a href="http://cnrdn.com/0LVE" target="_blank"><img alt="武汉传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqkczx.jpg" width="99" /></a></dd>
-</dl>
-<dl class="qqsix">
-	<dt style="padding-bottom:20px;">
-		西安传智播客</dt>
-	<dd style="width:120px;height:40px;float:left;">
-		<a href="http://cnrdn.com/iP66" target="_blank"><img alt="西安传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
-	<dd style="width:120px;height:40px;float:left;">
-		<a href="http://cnrdn.com/iP66" target="_blank"><img alt="西安传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqkczx.jpg" width="99" /></a></dd>
-</dl>
-<!--<dl class="qqsev">
-	<dt style="padding-bottom:20px;">
-		西安传智播客</dt>
-	<dd style="width:120px;height:40px;float:left;">
-		<a href="http://cnrdn.com/iP66" target="_blank"><img alt="西安传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
-	<dd style="width:120px;height:40px;float:left;">
-		<a href="http://cnrdn.com/iP66" target="_blank"><img alt="西安传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqkczx.jpg" width="99" /></a></dd>
-</dl>-->
-			 <div class="clear"></div>
-			</div>
-			<div class="rightbottom"><img src="/images/rightbottom.jpg"/></div>
-	  </div>
-	   <!-- 右边 -->
-	</div>
-	<div class="clear"></div>
-<!-- 营销QQ统计 -->
-<!-- WPA Button Begin -->
-<script type="text/javascript" src="http://wpa.b.qq.com/cgi/wpa.php?key=XzgwMDA2ODg2OF8xNTA3NV84MDAwNjg4Njhf"></script>
-<!-- WPA Button END -->
-<!--[if lte IE 6]>
-<script src="/kefu/js/DD_belatedPNG_0.0.8a.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        DD_belatedPNG.fix('titZx');
-    </script>
-<![endif]-->
-<LINK rel=stylesheet type=text/css href="/kefu/css/common.css">
-<!--[if lte IE 6]>
-<link type="text/css" rel="stylesheet" href="/kefu/css/ie.css" mce_href="/kefu/css/ie.css" />
-<![endif]-->
-<SCRIPT type=text/javascript src="/kefu/js/jquery.js"></SCRIPT>
-<SCRIPT type=text/javascript src="/kefu/js/kefu.js"></SCRIPT>
-<SCRIPT type=text/javascript>kfguin="800068868";ws="www.itcast.cn"; companyname=""; welcomeword=""; type="1";</SCRIPT>
-<SCRIPT src="/kefu/js/kf.js" type=text/javascript></SCRIPT>
-<link href="/kefu2/css/init.css" mce_href="/kefu2/css/init.css" rel="stylesheet" type="text/css" />
-<link href="/kefu2/css/kefu.css" mce_href="/kefu2/css/kefu.css" rel="stylesheet" type="text/css" />
-<!--[if lte IE 6]>
-<link type="text/css" rel="stylesheet" href="/kefu2/ie.css" mce_href="/kefu2/ie.css" />
-<![endif]-->
-<div class="fixed">
-	<div class="f_left"></div>
-	<div class="f_right">
-		<div class="fr_c1"></div>
-		<div class="fr_c2">
-			<ul>
-				<li class="fr_c2_li1">QQ在线客服</li>
-				<li class="fr_c2_li2">
-					<div><script charset="utf-8" type="text/javascript" src="http://wpa.b.qq.com/cgi/wpa.php?key=XzgwMDA2ODg2OF8yNjY4M184MDAwNjg4Njhf"></script></div>
-				</li>
-				<li class="fr_c2_li3" style="padding:6px 0 0 12px; height:30px; width:90px; border-bottom:none;">
-					<!-- WPA Button Begin -->
-					<a href="http://cnrdn.com/iP66" target="_blank"><img src="/kefu2/images/wpa_preview_a02.png"/></a>
-					<!-- WPA Button End -->
-				</li>
-			</ul>
-		</div>
-		<div class="fr_c3">
-			<a href="http://cnrdn.com/iP66" target="_blank"><img src="/kefu2/images/right_float_web.png" width="122" height="50" /></a>
-		</div>
-		<div class="fr_c4">
-			<ul>
-				<li class="fr_c4_li1">电话咨询</li>
-				<li class="fr_c4_li2"><div id="nobold" style="font-family:Arial;">010-82935150</div></li>
-			</ul>
-		</div>
-		<div class="fr_c6">
-			<ul>
-				<li><a style="display: block; text-indent: 22px; margin: 0px auto; width: 84px; background: url(&quot;http://www.itcast.cn/images/navicon.gif&quot;) no-repeat scroll 0px -20px transparent;" href="http://www.itcast.cn/forms/index.shtml" target="_blank">预约报名<div></div></a></li>
-				<li style="border-bottom:none;"><a style="display: block; text-indent: 22px; margin: 0px auto; width: 84px; background: url(&quot;http://www.itcast.cn/images/navicon.gif&quot;) no-repeat scroll 0px -78px transparent;" href="http://bbs.itcast.cn/" target="_blank">技术交流<div></div></a></li>
-			</ul>
-		</div>
-		<div class="fr_c7"></div>
-	</div>
-</div>
-<script>
-	$(document).ready(function(e) {
-		var t=true;
-		$('.f_left').click(function(){
-			if(t){
-				$('.fixed').animate({right:'-131px'},300);
-				$(this).css('background-position','-30px -396px');
-				t= !t;
-			} else{
-				$('.fixed').animate({right:'0px'},300);
-				$(this).css('background-position','0px -396px');
-				t= !t;
-			}
-		});
-	});
-</script>
-
-	<!-- 统计点击数 -->
-<script type="text/javascript">
-var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F616f7dbc9d62017d85a273460d618961' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script src="http://s84.cnzz.com/stat.php?id=4617784&web_id=4617784&show=pic" language="JavaScript"></script>
-<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-51288244-1', 'itcast.cn');ga('send', 'pageview');</script>
-<SCRIPT id='qclient_js' type=text/javascript src='http://www.81c.cn:8888/tj.js?4b6c2b6ca9da278fba7bd49127ae3b97'></SCRIPT>
-<img src="http://manage.itcast.cn:8080/news/hit.do?uuid=20130705-15012588541" width="0" height="0"/>
-</body>
-</html>
-
+	<td class="td1" width="73%"><a href="
 <div class="clear"></div>
 		  </div>
 			<div><img src="/Public/images/leftbottom.gif"/></div>
@@ -511,7 +691,7 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
 </dl>
 <dl class="qqthree">
 	<dt style="padding-bottom:20px;">
-		山西传智播客</dt>
+		广州传智播客</dt>
 	<dd style="width:120px;height:40px;float:left;">
 		<a href="http://wpa.qq.com/msgrd?v=1&uin=1067112004&site=qq&menu=yes" target="_blank"><img alt="武汉传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
 	<dd style="width:120px;height:40px;float:left;">
@@ -519,7 +699,7 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
 </dl>
 <dl class="qqfour">
 	<dt style="padding-bottom:20px;">
-		河南传智播客</dt>
+		西安传智播客</dt>
 	<dd style="width:120px;height:40px;float:left;">
 		<a href="http://wpa.qq.com/msgrd?v=1&uin=790330816&site=qq&menu=yes" target="_blank"><img alt="西安传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
 	<dd style="width:120px;height:40px;float:left;">
