@@ -1,0 +1,21 @@
+<div id="box">
+		<div id="left" class="fl">
+			<div><img src="/Public/images/lefttop.gif"/></div>
+			<div class="left_content">
+				<h2 class="title1"><span class="STYLE3">常见</span><span class="STYLE2">问题</span>({$laiyuan})</h2>
+				<h3 class="title2">相关问题</h3>
+				<ul class="links">
+﻿<ul>
+<foreach name='info' item='it'>
+<li><a href="/index.php/Home/problem/xq?id={$it.id}" target="_blank">{$it.title}</a>{$it.time}</li>
+</foreach>
+</ul>
+ 
+				</ul>
+				<h3 class="title2">PHP相关问题</h3>
+				
+			<div class="rightbottom"><img src="/Public/images/rightbottom.jpg"/></div>
+	  </div>
+	</div>
+	<div class="clear"></div>
+ <!-- 页面底部 -->
