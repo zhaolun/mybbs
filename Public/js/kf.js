@@ -1,5 +1,5 @@
 var online= new Array();
-var urlroot = "http://benboba.com/bbsGit/bbsGit/Public/images/";
+var urlroot = "http://www.mybbs.com/Public/images/";
 var tOut = -1;
 var drag = false;
 var g_safeNode = null;
@@ -9,7 +9,8 @@ var ws;
 var companyname;
 var welcomeword;
 var type;
-
+//var logo2=document.getElementById("logo2").value;
+//alert(logo2);
 if(kfguin)
 {
   rightDivHtml = '<div id="rightDiv" style="position:absolute; top:160px; right:1px;">';

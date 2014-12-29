@@ -31,3 +31,13 @@
 <?PHP exit;?>	1419552779	admin	1	192.168.1.7		GET={}; POST={};
 <?PHP exit;?>	1419552780	admin	1	192.168.1.7	index	GET={}; POST={};
 <?PHP exit;?>	1419552794	admin	1	192.168.1.7	nav	GET={}; POST={};
+<?PHP exit;?>	1419560455	admin	1	127.0.0.1		GET={}; POST={};
+<?PHP exit;?>	1419560455	admin	1	127.0.0.1	index	GET={}; POST={};
+<?PHP exit;?>	1419639089	admin	1	127.0.0.1		GET={}; POST={};
+<?PHP exit;?>	1419639092	admin	1	127.0.0.1	index	GET={}; POST={};
+<?PHP exit;?>	1419640871	admin	1	127.0.0.1		GET={}; POST={};
+<?PHP exit;?>	1419640871	admin	1	127.0.0.1	index	GET={}; POST={};
+<?PHP exit;?>	1419640939	admin	1	127.0.0.1		GET={}; POST={};
+<?PHP exit;?>	1419640939	admin	1	127.0.0.1	index	GET={}; POST={};
+<?PHP exit;?>	1419641309	admin	1	127.0.0.1		GET={}; POST={};
+<?PHP exit;?>	1419641309	admin	1	127.0.0.1	index	GET={}; POST={};

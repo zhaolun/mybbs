@@ -31,7 +31,7 @@ class MessageController extends Controller {
         $search=$_POST['com_name'];
         $sphinx = new \SphinxClient();
         //var_dump($sphinx);die;
-		$sphinx->SetServer("127.0.0.1",9312);
+		$sphinx->SetServer("192.168.1.2",9312);
 		$sphinx->SetMatchMode(SPH_MATCH_ANY);
 		$result = $sphinx->query($search,'*');
         echo "<pre>";var_dump($result);
