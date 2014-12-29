@@ -221,8 +221,9 @@ class MessageController extends Controller {
     public function student()
     {
         $model=M("student");
-        $data=$model->query("select * from bbs_student,bbs_school,bbs_company where bbs_student.school=bbs_school.s_id and bbs_student.company=bbs_company.com_id");
-       // var_dump($data);die;
+        $sql="select * from bbs_student join bbs_school on bbs_student.school=bbs_school.s_id join bbs_company on bbs_student.company=bbs_company.com_id";
+        //$sql="select * from bbs_student,bbs_school,bbs_company where bbs_student.school=bbs_school.s_id and bbs_student.company=bbs_company.com_id";
+        $data=$model->query($sql);
         $this->assign('list',$data);
     	$this->display();
     }

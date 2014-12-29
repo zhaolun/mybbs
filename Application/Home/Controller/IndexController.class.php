@@ -25,18 +25,12 @@ class IndexController extends Controller {
 		$userf = M('mingshi');
 		$useraa = M('zhaopin');
 		$userbb = M('question');
-
 		$data=$user->query("select * from bbs_company,bbs_student where bbs_student.company=bbs_company.com_id limit 7");
 		$aa=$data[0]['work_time'];
 		$bb=substr($aa,0,10);
 		$this->assign('cc',$bb);
-
-		$data1 = $usera->select();
-
-		$data = $user->select();
-        
+		$data1 = $usera->select();        
 		$data1 = $usera->order("id desc")->select();
-
 		$data2 = $userb->select();
 		$data3 = $userc->select();
 		$data4 = $userd->select();
