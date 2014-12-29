@@ -24,18 +24,11 @@
 <div id="header">
 	<!-- 页面顶部 -->
 <div class="top1">
-<<<<<<< HEAD
-	<a href='/index.php/Home/teshu/login'>登陆</a>
-	<a href='/index.php/Home/teshu/register'>注册</a>
-	<a href='/index.php/Home/teshu/zhaohui'>找回密码</a>
-=======
+
 	<p style="background:url(/Public/images/hot.png) 107px 10px no-repeat; padding-right:35px;" class="fl"><span class="blue">专业的IT培训机构！</span></p>
-	<p class="fr"><form method="post" action="">
-		用户名：<input type="text" name="">　密码：<input type="password" name="">　<input type="submit" value="登录">
-	</form>
 	
-	</p>
->>>>>>> 449a83c8f8debf8f1f965ae7390d94001a442df7
+
+
 </div>
 
 	<div class="clear"></div>
@@ -245,8 +238,6 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 <div class="clear"></div>
 <ul>
 <?php if(is_array($infoc)): foreach($infoc as $key=>$it): ?><li><span class="STYLE6">[php学员]</span><a href="http://php.itcast.cn/news/fb4ddfd4/3e47/496a/8c63/7fbe5463bfd3.shtml"><?php echo ($it["content"]); ?></a></li><?php endforeach; endif; ?>
-<<<<<<< HEAD
-=======
 <script type="text/javascript">
 			<!--
 				function register(){
@@ -279,7 +270,6 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 				}
 			//-->
 			</script>
->>>>>>> 449a83c8f8debf8f1f965ae7390d94001a442df7
 </ul>
 </div>
 <div class="ganyanleft fr3">
@@ -326,40 +316,6 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 				<div></div>
 		</div>		
 		<div id="right" class="fl">	
-<<<<<<< HEAD
-		<h4 class="righttitle1" style="margin-top:10px;"><span class="fl">PHP培训开班信息</span></h4>
-			<div class="jyjb-left" >
-			<ul>
-<li style="border-bottom: medium none; float: left; color: #515151"><a href="http://php.itcast.cn/php/course/base.shtml"><b><font style="color: #515151">PHP基础班</font></b></a></li>
-<br />
-</ul>
-<ul style="clear: both">
-<li><a href="http://php.itcast.cn/php/course/base.shtml" target="_blank"><span class="time jyjb-font2"><b>预约报名</b></span>北京--第34期(2015年01月10号)</a></li>
-<li><a href="http://php.itcast.cn/php/course/base.shtml" target="_blank"><span class="time jyjb-font1"><b>爆满已开班</b></span>北京--第33期(2014年11月27号)</a></li>
-<li><a href="http://php.itcast.cn/php/course/base.shtml" target="_blank"><span class="time jyjb-font2"><b>预约报名</b></span>广州--第08期(2014年12月25号)</a></li>
-</ul>
-<ul>
-<li style="border-bottom: medium none; float: left; color: #515151"><a href="http://php.itcast.cn/php/course/php.shtml"><b><font style="color: #515151">PHP就业班</font></b></a></li>
-<br />
-</ul>
-<ul style="clear: both">
-<li><a href="http://php.itcast.cn/php/course/php.shtml" target="_blank"><span class="time jyjb-font2"><b>预约报名</b></span>北京--第34期(2015年01月05号)</a></li>
-<li><a href="http://php.itcast.cn/php/course/php.shtml" target="_blank"><span class="time jyjb-font1"><b>爆满已开班</b></span>北京--第33期(2014年11月21号)</a></li>
-<li><a href="http://php.itcast.cn/php/course/php.shtml" target="_blank"><span class="time jyjb-font2"><b>预约报名</b></span>广州--第07期(2014年12月18号)</a></li>
-</ul>
-<ul>
-<li style="border-bottom: medium none; float: left; color: #515151"><a href="http://php.itcast.cn/news/981030b0/96d5/4005/9ae4/eba8bac4195a.shtml"><b><font style="color: #515151">PHP远程班</font></b></a></li>
-<br />
-</ul>
-<ul style="clear: both">
-<li><a href="http://php.itcast.cn/news/981030b0/96d5/4005/9ae4/eba8bac4195a.shtml" target="_blank"><span class="time jyjb-font2"><b>预约报名</b></span>基础班--第34期(2015年01月10号)</a></li>
-<li><a href="http://php.itcast.cn/news/981030b0/96d5/4005/9ae4/eba8bac4195a.shtml" target="_blank"><span class="time jyjb-font1"><b>爆满已开班</b></span>基础班--第33期(2014年11月27号)</a></li>
-<li><a href="http://php.itcast.cn/news/981030b0/96d5/4005/9ae4/eba8bac4195a.shtml" target="_blank"><span class="time jyjb-font2"><b>预约报名</b></span>就业班--第34期(2015年01月05号)</a></li>
-<li><a href="http://php.itcast.cn/news/981030b0/96d5/4005/9ae4/eba8bac4195a.shtml" target="_blank"><span class="time jyjb-font1"><b>爆满已开班</b></span>就业班--第33期(2014年11月21号)</a></li>
-</ul>
-
-            </div>
-=======
 		<h4 class="righttitle1" style="margin-top:10px;"><span class="fl">
 		<?php if($_SESSION["username"] == '' ): ?>用户登录<?php else: ?>用户中心<?php endif; ?></span></h4>
 			<div class="jyjb-left" ><?php if($_SESSION["username"] == '' ): ?><form method="post" action="/index.php/Home/index/login" id="myform">
@@ -423,7 +379,6 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 			</script>
 
 			
->>>>>>> 449a83c8f8debf8f1f965ae7390d94001a442df7
 			<div class="rightbottom"><img src="/Public/images/rightbottom.jpg"  /></div>		
 			<h4 class="righttitle1 zhaopin"><span class="blue">最新</span>企业招聘</h4>
 			<div class="rightkuang1">

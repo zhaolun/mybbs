@@ -24,18 +24,11 @@
 <div id="header">
 	<!-- 页面顶部 -->
 <div class="top1">
-<<<<<<< HEAD
-	<a href='/index.php/Home/teshu/login'>登陆</a>
-	<a href='/index.php/Home/teshu/register'>注册</a>
-	<a href='/index.php/Home/teshu/zhaohui'>找回密码</a>
-=======
+
 	<p style="background:url(/Public/images/hot.png) 107px 10px no-repeat; padding-right:35px;" class="fl"><span class="blue">专业的IT培训机构！</span></p>
-	<p class="fr"><form method="post" action="">
-		用户名：<input type="text" name="">　密码：<input type="password" name="">　<input type="submit" value="登录">
-	</form>
 	
-	</p>
->>>>>>> 449a83c8f8debf8f1f965ae7390d94001a442df7
+
+
 </div>
 
 	<div class="clear"></div>
@@ -131,11 +124,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 <?php if(is_array($info)): foreach($info as $key=>$vo): ?><UL>
   <LI style="width: 141px;" class="fl"><IMG src="/Public/images/phpjc.jpg"></LI>
   <LI style="width: 470px;" class="fl jyjb-11-font1"><B class="jyjb-11-font2"><A 
-<<<<<<< HEAD
   href="http://www.mybbs.com/index.php/Home/project/jichu" 
-=======
-  href="http://www.bbs.com/index.php/Home/project/jichu" 
->>>>>>> 449a83c8f8debf8f1f965ae7390d94001a442df7
   target="_blank"><?php echo ($vo["pei_class"]); ?></A></B>
   <P><?php echo ($vo["pei_intro"]); ?></P>
   </LI></UL>
