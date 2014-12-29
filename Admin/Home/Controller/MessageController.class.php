@@ -29,13 +29,14 @@ class MessageController extends Controller {
    		require_once("/Public/sphinxapi.php");
         $model = M("company");
         $search=$_POST['com_name'];
-        echo $search;
         $sphinx = new \SphinxClient();
         //var_dump($sphinx);die;
-		$sphinx->SetServer("192.168.1.2",9312);
+		$sphinx->SetServer("127.0.0.1",9312);
 		$sphinx->SetMatchMode(SPH_MATCH_ANY);
 		$result = $sphinx->query($search,'*');
+        echo "<pre>";var_dump($result);
         $key = array_keys($result['matches']);
+        echo "<pre>";var_dump($sphinx);die;
         //$id = implode(',',$key);
         var_dump($result);die;
         $ids = join(',',$key);
