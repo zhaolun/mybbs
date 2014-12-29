@@ -25,9 +25,16 @@
 			<td><input type="text" name="com_name" value="<?php echo $list['com_name']?>"></td>
 		</tr>
 		<tr>
+			<td align='right'>公司描述：</td>
+			<td>
+				<textarea name="com_desc" cols="40" rows="10">{$list.com_desc}</textarea>
+			</td>
+		</tr>
+		<tr>
 			<td align='right'>创建时间：</td>
 			<td><input type="text" name="r_time" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd',autoPickDate:true,skin:'default'})"  value="<?php echo $list['r_time']?>" /></td>
 		</tr>
+
 		<tr>
 			<td align='right'>公司网址：</td>
 			<td><input name="r_url" value="<?php echo $list['r_url']?>"></td>
@@ -35,7 +42,35 @@
 		<tr>
 			<td align='right'>招收人数：</td>
 			<td><input name="r_num" value="<?php echo $list['r_num']?>"></td>
-
+		</tr>
+			<tr>
+			<td align='right'>公司电话：</td>
+			<td><input name="com_tel" value="{$list.com_tel}"></td>
+		</tr><tr><td></td><td></td></tr>
+		<tr>
+			<td align='right'>公司email：</td>
+			<td><input name="email" value="{$list.email}"></td>
+		</tr><tr><td></td><td></td></tr>
+		<tr>
+			<td align='right'>公司联系人：</td>
+			<td><input name="com_mem" value="{$list.com_mem}"></td>
+		</tr><tr><td></td><td></td></tr>
+		<tr>
+			<td align='right'>公司地址：</td>
+			<td><input name="address" value="address"></td>
+		</tr>
+		<tr><td></td><td></td></tr>
+		<tr>
+			<td align='right'>招聘岗位：</td>
+			<td><input name="position" value="{$list.position}"></td>
+		</tr>
+		<tr><td></td><td></td></tr>
+		<tr>
+			<td align='right'>职位描述：</td>
+			<td>
+				<textarea name="pos_desc" cols="40" rows="10" value="$list.pos_desc">
+				{$list.pos_desc}</textarea>
+			</td>
 		</tr>
 		<tr>
 			<td align="right"><input type="submit" value='编辑公司信息'></td>	
