@@ -231,7 +231,7 @@
             var childWindow;
             function toQzoneLogin()
             {
-                childWindow = window.open("oauth/index.php","TencentLogin","width=450,height=320,menubar=0,scrollbars=1, resizable=1,status=1,titlebar=0,toolbar=0,location=1");
+                childWindow = window.open("http://zl12345.com133.com/qq","TencentLogin","width=450,height=320,menubar=0,scrollbars=1, resizable=1,status=1,titlebar=0,toolbar=0,location=1");
             } 
             
             function closeChildWindow()
@@ -239,7 +239,7 @@
                 childWindow.close();
             }
 			</script>
-			<else />欢迎您：<font color=red>{$_SESSION.username}</font>　<a href="/index.php/Home/index/loginout">退出</a></if>
+			<else />欢迎您：<if condition="$_SESSION.img neq '' "><img src="{$_SESSION.img}"></if><font color=red>{$_SESSION.username}</font>　<a href="/index.php/Home/index/loginout">退出</a></if>
 			
             </div>
 

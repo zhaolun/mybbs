@@ -55,6 +55,14 @@ class IndexController extends Controller {
 		$this->display('xueyuan_xq');
 	}
 	public function login(){
+		if(!empty($_GET['nickname'])&&!empty($_GET['img'])){
+			//echo $_GET['img'];die;
+			$img=str_replace("@","/",$_GET['img']);
+			//echo $img;die;
+			session("img",$img);
+			session("username",$_GET['nickname']);
+			$this->success("使用qq登陆成功","/index.php");
+		}
         $Verify = new Verify();
 		if($Verify->check($_POST['yzm'])){
 			$name=addslashes($_POST['username']);

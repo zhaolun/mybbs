@@ -280,6 +280,7 @@ H1 a {
 		</script>
 		<td width="87%" valign="top">
 			<div style="margin:10px;padding:10px;">
+<<<<<<< HEAD
 				<canvas id="myChart" width="1000" height="400"></canvas>
 <script src="/Public/js/Chart.js"></script>
 <script src="/Public/js/jquery.js"></script>
@@ -303,6 +304,31 @@ var myNewChart = new Chart(ctx).Bar(data);//new Chart(ctx).PolarArea(data);
 版权所有 &copy; 八维研修学院软件工程学院1308phpA班yi利小组，并保留所有权利。
 </div>
 </body>
+=======
+				<canvas id="myChart" width="1000" height="400"></canvas>
+<script src="/Public/js/Chart.js"></script>
+<script src="/Public/js/jquery.js"></script>
+	<script>
+       var data = {
+            
+                    labels : [<?php echo $json ?>],
+                    datasets : [
+                            {
+                                    fillColor : "red(220,20,220,0.5)",
+                                    strokeColor : "red(220,20,220,1)",
+                                    data : [<?php echo $pv?>]
+                            },
+                    ]
+            } 
+var ctx = document.getElementById("myChart").getContext("2d"); 
+var myNewChart = new Chart(ctx).Bar(data);//new Chart(ctx).PolarArea(data);
+</script>
+2014/12/26
+<div id="footer">
+版权所有 &copy; 八维研修学院软件工程学院1308phpA班yi利小组，并保留所有权利。
+</div>
+</body>
+>>>>>>> 290b077fa88a13c62418c403b6211f2ca7afb0ff
 </html>
 			</div>
 		</td>

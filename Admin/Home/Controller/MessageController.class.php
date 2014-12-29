@@ -17,28 +17,42 @@ class MessageController extends Controller {
 		$this->assign('page',$show);// 赋值分页输出
 		$this->display(); // 输出模板
     	 */
+         S(array(    
+                    'type'=>'memcache',   
+                    'host'=>'192.168.1.2',   
+                    'port'=>'11211',    
+                    'prefix'=>'think',    
+                    'expire'=>20));
+
     	$model=M("company");
-        $data=$model->select();
+        if(empty(S("aa")))
+        {
+            $data=$model->select();
+            S("aa",$data);
+            echo "来自数据库";
+        }else
+        {
+            $data = S("aa");
+             echo "来源于memcache";
+        }
        // var_dump($data);die;
         $this->assign('list',$data);
         $this->display();
        
     }
-    public function sphinx()
+    public function com_sphinx()
     {
-   		require_once("/Public/sphinxapi.php");
-        $model = M("company");
+        require_once "Public/sphinxapi.php";
         $search=$_POST['com_name'];
+        $model = M("company");
         $sphinx = new \SphinxClient();
         //var_dump($search);
 		$sphinx->SetServer("192.168.1.2",9312);
 		$sphinx->SetMatchMode(SPH_MATCH_ANY);
-		$result = $sphinx->query($search,'*');
+		$result = $sphinx->Query($search,'*');
         //echo "<pre>";var_dump($result);die;
         $key = array_keys($result['matches']);
-        echo "<pre>";var_dump($key);die;
-        //$id = implode(',',$key);
-       // var_dump($result);die;
+       // echo "<pre>";var_dump($key);die;
         $ids = join(',',$key);
         $where= '';
         if($search == '')
@@ -46,26 +60,14 @@ class MessageController extends Controller {
             $where.='1=1';
         }else
         {
-            $where.="com_id in ($key)";
+            $where.="com_id in ($ids)";
         }
-        $data = $model->where($where)->select();
-        //$data=$model->query("select * from bbs_company where com_name like '%".$where."%'");
-       // var_dump($data);die;
-        $this->assign('list',$data); 
+        $data = $model->where($ids)->select();
+        $data=$model->query("select * from bbs_company where com_name like '%".$search."%'");
+        $this->assign('info',$data); 
         $this->display();
- 	
     }
-    /*
-		if($keywords) {
-		$where .= " and goods_id in($ids)";
-		}
-		if($brand_id) {
-			$where .= " and brand_id = $brand_id";
-		}
-		if($cat_id) {
-			$where .= " and cat_id = $cat_id";
-		}
-    */
+   
     //显示公司添加表单
     public function com_addform()
     {
