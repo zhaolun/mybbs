@@ -30,6 +30,7 @@
 	</form>
 	
 	</p>
+	
 </div>
 
 	<div class="clear"></div>
@@ -125,7 +126,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 <?php if(is_array($info)): foreach($info as $key=>$vo): ?><UL>
   <LI style="width: 141px;" class="fl"><IMG src="/Public/images/phpjc.jpg"></LI>
   <LI style="width: 470px;" class="fl jyjb-11-font1"><B class="jyjb-11-font2"><A 
-  href="http://www.bbs.com/index.php/Home/project/jichu" 
+  href="http://www.mybbs.com/index.php/Home/project/jichu" 
   target="_blank"><?php echo ($vo["pei_class"]); ?></A></B>
   <P><?php echo ($vo["pei_intro"]); ?></P>
   </LI></UL>

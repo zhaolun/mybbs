@@ -118,4 +118,11 @@ class IndexController extends Controller {
 		else
 			echo 0;
 	}
+	function detail(){
+		$model=M("mingshi");
+        $data=$model->select();
+		//echo $data;die;
+        $this->assign('list',$data);
+        $this->display('detail');
+	}
 }

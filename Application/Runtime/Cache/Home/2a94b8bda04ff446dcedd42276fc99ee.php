@@ -24,18 +24,13 @@
 <div id="header">
 	<!-- 页面顶部 -->
 <div class="top1">
-<<<<<<< HEAD
 	<p style="background:url(/Public/images/hot.png) 107px 10px no-repeat; padding-right:35px;" class="fl"><span class="blue">专业的IT培训机构！</span></p>
 	<p class="fr"><form method="post" action="">
 		用户名：<input type="text" name="">　密码：<input type="password" name="">　<input type="submit" value="登录">
 	</form>
 	
 	</p>
-=======
-	<a href='/index.php/Home/teshu/login'>登陆</a>
-	<a href='/index.php/Home/teshu/register'>注册</a>
-	<a href='/index.php/Home/teshu/zhaohui'>找回密码</a>
->>>>>>> db202c80f477d63f4cb931dbc83559c8bb373ca5
+	
 </div>
 
 	<div class="clear"></div>
@@ -306,7 +301,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 			    <div class="msdy-left"><img src="/Public/images/wenhao-1.jpg" /></div>
 				<div class="msdy-right">
 <ul>
-<?php if(is_array($infoe)): foreach($infoe as $key=>$it): ?><li><a href="http://www.itcast.cn/news/20121005/12001594210.shtml"><span style="color:#ff0000;"><?php echo ($it["content"]); ?></span></a></li><?php endforeach; endif; ?>
+<?php if(is_array($infoe)): foreach($infoe as $key=>$it): ?><li><a href="/index.php/home/index/detail/id/<?php echo ($it["id"]); ?>"><span style="color:#ff0000;"><?php echo ($it["content"]); ?></span></a></li><?php endforeach; endif; ?>
 </ul>
 <ul>
 <?php if(is_array($infof)): foreach($infof as $key=>$it): ?><li><a href="http://php.itcast.cn/news/20130523/16573389409.shtml"><?php echo ($it["content"]); ?></a></li><?php endforeach; endif; ?>
