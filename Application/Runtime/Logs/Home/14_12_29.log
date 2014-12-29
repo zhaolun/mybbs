@@ -1,0 +1,1970 @@
+[ 2014-12-29T21:16:08+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\mybbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_pv` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_pv` WHERE ( time = '29' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `bbs_pv` SET `pv`=1912 WHERE ( time = '29' ) [ RunTime:0.458026s ]
+SQL: SHOW COLUMNS FROM `bbs_nav` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_nav`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_logo` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_logo`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaopin` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_zhaopin` ORDER BY time desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_class` [ RunTime:0.002001s ]
+SQL: SELECT * FROM `bbs_class` ORDER BY time desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_student` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_family` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_company` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_xueyuan` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_banji` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaolun` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `bbs_liujun` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `bbs_mingshi` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `bbs_question` [ RunTime:0.002000s ]
+SQL: select * from bbs_company,bbs_student where bbs_student.company=bbs_company.com_id limit 7 [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_xueyuan`  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_xueyuan` ORDER BY id desc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_banji`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_company`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_zhaolun` ORDER BY id desc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_liujun` ORDER BY id desc  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_mingshi`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_question` WHERE ( status=0 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_slide_image` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_slide_image`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_student` INNER JOIN bbs_school on bbs_studet.school=bbs_school.s_id  ORDER BY stu_id desc LIMIT 4   [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'bbs_studet.school' in 'on clause'
+ [ SQL语句 ] : SELECT * FROM `bbs_student` INNER JOIN bbs_school on bbs_studet.school=bbs_school.s_id  ORDER BY stu_id desc LIMIT 4  
+
+[ 2014-12-29T21:16:39+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\mybbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_pv` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_pv` WHERE ( time = '29' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `bbs_pv` SET `pv`=1919 WHERE ( time = '29' ) [ RunTime:0.104006s ]
+SQL: SHOW COLUMNS FROM `bbs_nav` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_nav`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_logo` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_logo`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaopin` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_zhaopin` ORDER BY time desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_class` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_class` ORDER BY time desc LIMIT 6   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_student` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_family` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_company` [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `bbs_xueyuan` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_banji` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaolun` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_liujun` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `bbs_mingshi` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_question` [ RunTime:0.001000s ]
+SQL: select * from bbs_company,bbs_student where bbs_student.company=bbs_company.com_id limit 7 [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_xueyuan`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_xueyuan` ORDER BY id desc  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_banji`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_company`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_zhaolun` ORDER BY id desc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_liujun` ORDER BY id desc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_mingshi`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_question` WHERE ( status=0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_slide_image` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_slide_image`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_student` INNER JOIN bbs_school on bbs_student.school=bbs_school.s_id  ORDER BY stu_id desc LIMIT 4   [ RunTime:0.000000s ]
+
+[ 2014-12-29T21:17:12+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\mybbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_pv` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_pv` WHERE ( time = '29' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `bbs_pv` SET `pv`=1923 WHERE ( time = '29' ) [ RunTime:0.083005s ]
+SQL: SHOW COLUMNS FROM `bbs_nav` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_nav`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_logo` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_logo`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaopin` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_zhaopin` ORDER BY time desc LIMIT 6   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_class` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_class` ORDER BY time desc LIMIT 6   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_student` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_family` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `bbs_company` [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `bbs_xueyuan` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_banji` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaolun` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_liujun` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_mingshi` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_question` [ RunTime:0.001000s ]
+SQL: select * from bbs_company,bbs_student where bbs_student.company=bbs_company.com_id limit 7 [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_xueyuan`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_xueyuan` ORDER BY id desc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_banji`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_company`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_zhaolun` ORDER BY id desc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_liujun` ORDER BY id desc  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_mingshi`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_question` WHERE ( status=0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_slide_image` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_slide_image`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_student` INNER JOIN bbs_school on bbs_student.school=bbs_school.s_id  ORDER BY stu_id desc LIMIT 4   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined variable: pic G:\mybbs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 322 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 323 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-12-29T21:18:40+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\mybbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_pv` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_pv` WHERE ( time = '29' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `bbs_pv` SET `pv`=1927 WHERE ( time = '29' ) [ RunTime:0.079005s ]
+SQL: SHOW COLUMNS FROM `bbs_nav` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_nav`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_logo` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_logo`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaopin` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_zhaopin` ORDER BY time desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_class` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_class` ORDER BY time desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_student` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_family` [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `bbs_company` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `bbs_xueyuan` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_banji` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaolun` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `bbs_liujun` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_mingshi` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_question` [ RunTime:0.001000s ]
+SQL: select * from bbs_company,bbs_student where bbs_student.company=bbs_company.com_id limit 7 [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_xueyuan`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_xueyuan` ORDER BY id desc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_banji`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_company`  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_zhaolun` ORDER BY id desc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_liujun` ORDER BY id desc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_mingshi`  [ RunTime:0.001001s ]
+SQL: SELECT * FROM `bbs_question` WHERE ( status=0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_slide_image` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_slide_image`  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_student` INNER JOIN bbs_school on bbs_student.school=bbs_school.s_id  ORDER BY stu_id desc LIMIT 4   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pic G:\mybbs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 311 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-12-29T21:19:04+08:00 ] 127.0.0.1 /index.php/Home/message/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\mybbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_pv` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_pv` WHERE ( time = '29' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `bbs_pv` SET `pv`=1929 WHERE ( time = '29' ) [ RunTime:0.056003s ]
+SQL: SHOW COLUMNS FROM `bbs_nav` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_nav`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_logo` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_logo`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaopin` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_zhaopin` ORDER BY time desc LIMIT 6   [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `bbs_class` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_class` ORDER BY time desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_student` [ RunTime:0.001000s ]
+SQL: select * from bbs_student,bbs_company,bbs_school where bbs_student.school=bbs_school.s_id and bbs_student.company=bbs_company.com_id [ RunTime:0.000000s ]
+SQL: select * from bbs_student,bbs_company,bbs_school where bbs_student.school=bbs_school.s_id and bbs_student.company=bbs_company.com_id limit 6 [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pic G:\mybbs\Application\Runtime\Cache\Home\455a6242d1c94ccc41106a388080363b.php 第 127 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\455a6242d1c94ccc41106a388080363b.php 第 206 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\455a6242d1c94ccc41106a388080363b.php 第 207 行.
+NOTIC: [8] Undefined variable: infobb G:\mybbs\Application\Runtime\Cache\Home\455a6242d1c94ccc41106a388080363b.php 第 310 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-29T21:19:05+08:00 ] 127.0.0.1 /index.php/home/message/video/stu_id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\mybbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_pv` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_pv` WHERE ( time = '29' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `bbs_pv` SET `pv`=1931 WHERE ( time = '29' ) [ RunTime:0.116007s ]
+SQL: SHOW COLUMNS FROM `bbs_nav` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_nav`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_logo` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_logo`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaopin` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_zhaopin` ORDER BY time desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_class` [ RunTime:0.002001s ]
+SQL: SELECT * FROM `bbs_class` ORDER BY time desc LIMIT 6   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_student` [ RunTime:0.001000s ]
+SQL: select * from bbs_student,bbs_company,bbs_school where bbs_student.school=bbs_school.s_id and bbs_student.company=bbs_company.com_id and stu_id=2 [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pic G:\mybbs\Application\Runtime\Cache\Home\46332caeb04b047fd87fdfb87d6df375.php 第 127 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\46332caeb04b047fd87fdfb87d6df375.php 第 183 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\46332caeb04b047fd87fdfb87d6df375.php 第 184 行.
+NOTIC: [8] Undefined variable: infobb G:\mybbs\Application\Runtime\Cache\Home\46332caeb04b047fd87fdfb87d6df375.php 第 287 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-29T21:19:37+08:00 ] 127.0.0.1 /index.php/Home/message/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\mybbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_pv` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_pv` WHERE ( time = '29' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: UPDATE `bbs_pv` SET `pv`=1934 WHERE ( time = '29' ) [ RunTime:0.077004s ]
+SQL: SHOW COLUMNS FROM `bbs_nav` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_nav`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_logo` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_logo`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaopin` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_zhaopin` ORDER BY time desc LIMIT 6   [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `bbs_class` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_class` ORDER BY time desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_student` [ RunTime:0.001000s ]
+SQL: select * from bbs_student,bbs_company,bbs_school where bbs_student.school=bbs_school.s_id and bbs_student.company=bbs_company.com_id [ RunTime:0.000000s ]
+SQL: select * from bbs_student,bbs_company,bbs_school where bbs_student.school=bbs_school.s_id and bbs_student.company=bbs_company.com_id limit 6 [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pic G:\mybbs\Application\Runtime\Cache\Home\455a6242d1c94ccc41106a388080363b.php 第 127 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\455a6242d1c94ccc41106a388080363b.php 第 206 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\455a6242d1c94ccc41106a388080363b.php 第 207 行.
+NOTIC: [8] Undefined variable: infobb G:\mybbs\Application\Runtime\Cache\Home\455a6242d1c94ccc41106a388080363b.php 第 310 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-29T21:19:40+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\mybbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_pv` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_pv` WHERE ( time = '29' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: UPDATE `bbs_pv` SET `pv`=1936 WHERE ( time = '29' ) [ RunTime:0.077004s ]
+SQL: SHOW COLUMNS FROM `bbs_nav` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_nav`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_logo` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_logo`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaopin` [ RunTime:0.001001s ]
+SQL: SELECT * FROM `bbs_zhaopin` ORDER BY time desc LIMIT 6   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_class` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_class` ORDER BY time desc LIMIT 6   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_student` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_family` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `bbs_company` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_xueyuan` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `bbs_banji` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaolun` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_liujun` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_mingshi` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_question` [ RunTime:0.001000s ]
+SQL: select * from bbs_company,bbs_student where bbs_student.company=bbs_company.com_id limit 7 [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_xueyuan`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_xueyuan` ORDER BY id desc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_banji`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_company`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_zhaolun` ORDER BY id desc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_liujun` ORDER BY id desc  [ RunTime:0.001001s ]
+SQL: SELECT * FROM `bbs_mingshi`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_question` WHERE ( status=0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_slide_image` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_slide_image`  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_student` INNER JOIN bbs_school on bbs_student.school=bbs_school.s_id  ORDER BY stu_id desc LIMIT 4   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pic G:\mybbs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 311 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-12-29T21:19:44+08:00 ] 127.0.0.1 /index.php/home/message/video/stu_id/17
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\mybbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_pv` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_pv` WHERE ( time = '29' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `bbs_pv` SET `pv`=1938 WHERE ( time = '29' ) [ RunTime:0.073004s ]
+SQL: SHOW COLUMNS FROM `bbs_nav` [ RunTime:0.002001s ]
+SQL: SELECT * FROM `bbs_nav`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_logo` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_logo`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaopin` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_zhaopin` ORDER BY time desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_class` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `bbs_class` ORDER BY time desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_student` [ RunTime:0.002000s ]
+SQL: select * from bbs_student,bbs_company,bbs_school where bbs_student.school=bbs_school.s_id and bbs_student.company=bbs_company.com_id and stu_id=17 [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pic G:\mybbs\Application\Runtime\Cache\Home\46332caeb04b047fd87fdfb87d6df375.php 第 127 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\46332caeb04b047fd87fdfb87d6df375.php 第 183 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\46332caeb04b047fd87fdfb87d6df375.php 第 184 行.
+NOTIC: [8] Undefined variable: infobb G:\mybbs\Application\Runtime\Cache\Home\46332caeb04b047fd87fdfb87d6df375.php 第 287 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-12-29T21:20:05+08:00 ] 127.0.0.1 /index.php/home/message/video/stu_id/19
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\mybbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_pv` [ RunTime:0.002001s ]
+SQL: SELECT * FROM `bbs_pv` WHERE ( time = '29' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `bbs_pv` SET `pv`=1941 WHERE ( time = '29' ) [ RunTime:0.066003s ]
+SQL: SHOW COLUMNS FROM `bbs_nav` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_nav`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_logo` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `bbs_logo`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaopin` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_zhaopin` ORDER BY time desc LIMIT 6   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_class` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_class` ORDER BY time desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_student` [ RunTime:0.002000s ]
+SQL: select * from bbs_student,bbs_company,bbs_school where bbs_student.school=bbs_school.s_id and bbs_student.company=bbs_company.com_id and stu_id=19 [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pic G:\mybbs\Application\Runtime\Cache\Home\46332caeb04b047fd87fdfb87d6df375.php 第 127 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\46332caeb04b047fd87fdfb87d6df375.php 第 183 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\46332caeb04b047fd87fdfb87d6df375.php 第 184 行.
+NOTIC: [8] Undefined variable: infobb G:\mybbs\Application\Runtime\Cache\Home\46332caeb04b047fd87fdfb87d6df375.php 第 287 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-29T21:21:19+08:00 ] 127.0.0.1 /index.php/home/message/video/stu_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\mybbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_pv` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_pv` WHERE ( time = '29' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `bbs_pv` SET `pv`=1946 WHERE ( time = '29' ) [ RunTime:0.078004s ]
+SQL: SHOW COLUMNS FROM `bbs_nav` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_nav`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_logo` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_logo`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaopin` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_zhaopin` ORDER BY time desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_class` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_class` ORDER BY time desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_student` [ RunTime:0.002000s ]
+SQL: select * from bbs_student,bbs_company,bbs_school where bbs_student.school=bbs_school.s_id and bbs_student.company=bbs_company.com_id and stu_id=1 [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: pic G:\mybbs\Application\Runtime\Cache\Home\46332caeb04b047fd87fdfb87d6df375.php 第 127 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\46332caeb04b047fd87fdfb87d6df375.php 第 183 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\46332caeb04b047fd87fdfb87d6df375.php 第 184 行.
+NOTIC: [8] Undefined variable: infobb G:\mybbs\Application\Runtime\Cache\Home\46332caeb04b047fd87fdfb87d6df375.php 第 287 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-12-29T21:21:26+08:00 ] 127.0.0.1 /index.php/home/message/video/stu_id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\mybbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_pv` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `bbs_pv` WHERE ( time = '29' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `bbs_pv` SET `pv`=1948 WHERE ( time = '29' ) [ RunTime:0.606035s ]
+SQL: SHOW COLUMNS FROM `bbs_nav` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_nav`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_logo` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_logo`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaopin` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_zhaopin` ORDER BY time desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_class` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_class` ORDER BY time desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_student` [ RunTime:0.001000s ]
+SQL: select * from bbs_student,bbs_company,bbs_school where bbs_student.school=bbs_school.s_id and bbs_student.company=bbs_company.com_id and stu_id=2 [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pic G:\mybbs\Application\Runtime\Cache\Home\46332caeb04b047fd87fdfb87d6df375.php 第 127 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\46332caeb04b047fd87fdfb87d6df375.php 第 183 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\46332caeb04b047fd87fdfb87d6df375.php 第 184 行.
+NOTIC: [8] Undefined variable: infobb G:\mybbs\Application\Runtime\Cache\Home\46332caeb04b047fd87fdfb87d6df375.php 第 287 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2014-12-29T21:21:30+08:00 ] 127.0.0.1 /index.php/home/message/video/stu_id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\mybbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_pv` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_pv` WHERE ( time = '29' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `bbs_pv` SET `pv`=1951 WHERE ( time = '29' ) [ RunTime:0.063004s ]
+SQL: SHOW COLUMNS FROM `bbs_nav` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_nav`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_logo` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_logo`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaopin` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_zhaopin` ORDER BY time desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_class` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_class` ORDER BY time desc LIMIT 6   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_student` [ RunTime:0.001000s ]
+SQL: select * from bbs_student,bbs_company,bbs_school where bbs_student.school=bbs_school.s_id and bbs_student.company=bbs_company.com_id and stu_id=3 [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pic G:\mybbs\Application\Runtime\Cache\Home\46332caeb04b047fd87fdfb87d6df375.php 第 127 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\46332caeb04b047fd87fdfb87d6df375.php 第 183 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\46332caeb04b047fd87fdfb87d6df375.php 第 184 行.
+NOTIC: [8] Undefined variable: infobb G:\mybbs\Application\Runtime\Cache\Home\46332caeb04b047fd87fdfb87d6df375.php 第 287 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-29T21:21:38+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\mybbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_pv` [ RunTime:0.001001s ]
+SQL: SELECT * FROM `bbs_pv` WHERE ( time = '29' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `bbs_pv` SET `pv`=1955 WHERE ( time = '29' ) [ RunTime:0.083004s ]
+SQL: SHOW COLUMNS FROM `bbs_nav` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_nav`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_logo` [ RunTime:0.001001s ]
+SQL: SELECT * FROM `bbs_logo`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaopin` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_zhaopin` ORDER BY time desc LIMIT 6   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_class` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_class` ORDER BY time desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_student` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `bbs_family` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `bbs_company` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `bbs_xueyuan` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `bbs_banji` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaolun` [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `bbs_liujun` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_mingshi` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_question` [ RunTime:0.001000s ]
+SQL: select * from bbs_company,bbs_student where bbs_student.company=bbs_company.com_id limit 7 [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_xueyuan`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_xueyuan` ORDER BY id desc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_banji`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_company`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_zhaolun` ORDER BY id desc  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_liujun` ORDER BY id desc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_mingshi`  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_question` WHERE ( status=0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_slide_image` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_slide_image`  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_student` INNER JOIN bbs_school on bbs_student.school=bbs_school.s_id  ORDER BY stu_id desc LIMIT 4   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: pic G:\mybbs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 311 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-29T21:21:48+08:00 ] 127.0.0.1 /index.php/home/message/video/stu_id/17
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\mybbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_pv` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_pv` WHERE ( time = '29' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `bbs_pv` SET `pv`=1958 WHERE ( time = '29' ) [ RunTime:0.669038s ]
+SQL: SHOW COLUMNS FROM `bbs_nav` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_nav`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_logo` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_logo`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaopin` [ RunTime:0.002001s ]
+SQL: SELECT * FROM `bbs_zhaopin` ORDER BY time desc LIMIT 6   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_class` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_class` ORDER BY time desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_student` [ RunTime:0.002000s ]
+SQL: select * from bbs_student,bbs_company,bbs_school where bbs_student.school=bbs_school.s_id and bbs_student.company=bbs_company.com_id and stu_id=17 [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pic G:\mybbs\Application\Runtime\Cache\Home\46332caeb04b047fd87fdfb87d6df375.php 第 127 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\46332caeb04b047fd87fdfb87d6df375.php 第 183 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\46332caeb04b047fd87fdfb87d6df375.php 第 184 行.
+NOTIC: [8] Undefined variable: infobb G:\mybbs\Application\Runtime\Cache\Home\46332caeb04b047fd87fdfb87d6df375.php 第 287 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-29T21:21:55+08:00 ] 127.0.0.1 /index.php/Home/index/company/id/6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\mybbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_pv` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_pv` WHERE ( time = '29' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `bbs_pv` SET `pv`=1961 WHERE ( time = '29' ) [ RunTime:0.072004s ]
+SQL: SHOW COLUMNS FROM `bbs_nav` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_nav`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_logo` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_logo`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaopin` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_zhaopin` ORDER BY time desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_class` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_class` ORDER BY time desc LIMIT 6   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_zhaopin` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: pic G:\mybbs\Application\Runtime\Cache\Home\bfc278d3a94da6d4c6f33cb788f985c8.php 第 127 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\bfc278d3a94da6d4c6f33cb788f985c8.php 第 215 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\bfc278d3a94da6d4c6f33cb788f985c8.php 第 216 行.
+NOTIC: [8] Undefined variable: infobb G:\mybbs\Application\Runtime\Cache\Home\bfc278d3a94da6d4c6f33cb788f985c8.php 第 319 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-29T21:22:26+08:00 ] 127.0.0.1 /index.php/Home/project/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\mybbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_pv` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_pv` WHERE ( time = '29' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `bbs_pv` SET `pv`=1963 WHERE ( time = '29' ) [ RunTime:0.091006s ]
+SQL: SHOW COLUMNS FROM `bbs_nav` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_nav`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_logo` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_logo`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaopin` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_zhaopin` ORDER BY time desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_class` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_class` ORDER BY time desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: select * from bbs_class join bbs_kecheng on bbs_class.pei_id = bbs_kecheng.bbs_banji join bbs_jieduan on bbs_kecheng.bbs_id=bbs_jieduan.bbs_kechengid [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pic G:\mybbs\Application\Runtime\Cache\Home\9d459e48cece1d7473e65af45d1fe54a.php 第 127 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\9d459e48cece1d7473e65af45d1fe54a.php 第 187 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\9d459e48cece1d7473e65af45d1fe54a.php 第 188 行.
+NOTIC: [8] Undefined variable: infobb G:\mybbs\Application\Runtime\Cache\Home\9d459e48cece1d7473e65af45d1fe54a.php 第 291 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-29T21:23:45+08:00 ] 127.0.0.1 /index.php/Home/project/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\mybbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_pv` [ RunTime:0.002001s ]
+SQL: SELECT * FROM `bbs_pv` WHERE ( time = '29' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `bbs_pv` SET `pv`=1965 WHERE ( time = '29' ) [ RunTime:0.081004s ]
+SQL: SHOW COLUMNS FROM `bbs_nav` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_nav`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_logo` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_logo`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaopin` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_zhaopin` ORDER BY time desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_class` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_class` ORDER BY time desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_question` [ RunTime:0.002001s ]
+SQL: SELECT * FROM `bbs_question` ORDER BY id desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: select * from bbs_class join bbs_kecheng on bbs_class.pei_id = bbs_kecheng.bbs_banji join bbs_jieduan on bbs_kecheng.bbs_id=bbs_jieduan.bbs_kechengid [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pic G:\mybbs\Application\Runtime\Cache\Home\9d459e48cece1d7473e65af45d1fe54a.php 第 127 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\9d459e48cece1d7473e65af45d1fe54a.php 第 187 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\9d459e48cece1d7473e65af45d1fe54a.php 第 188 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-12-29T21:24:04+08:00 ] 127.0.0.1 /index.php/Home/problem/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\mybbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_pv` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_pv` WHERE ( time = '29' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: UPDATE `bbs_pv` SET `pv`=1967 WHERE ( time = '29' ) [ RunTime:0.080004s ]
+SQL: SHOW COLUMNS FROM `bbs_nav` [ RunTime:0.002001s ]
+SQL: SELECT * FROM `bbs_nav`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_logo` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_logo`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaopin` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_zhaopin` ORDER BY time desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_class` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_class` ORDER BY time desc LIMIT 6   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_question` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_question` ORDER BY id desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_question` WHERE ( status=0 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_question` WHERE ( status=1 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pic G:\mybbs\Application\Runtime\Cache\Home\66e219a2cd4e1e4ec379eed18e194fd6.php 第 127 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\66e219a2cd4e1e4ec379eed18e194fd6.php 第 174 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\66e219a2cd4e1e4ec379eed18e194fd6.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-12-29T21:24:29+08:00 ] 127.0.0.1 /index.php/Home/project/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\mybbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_pv` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_pv` WHERE ( time = '29' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: UPDATE `bbs_pv` SET `pv`=1970 WHERE ( time = '29' ) [ RunTime:0.071004s ]
+SQL: SHOW COLUMNS FROM `bbs_nav` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_nav`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_logo` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_logo`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaopin` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_zhaopin` ORDER BY time desc LIMIT 6   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_class` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_class` ORDER BY time desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_question` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_question` ORDER BY id desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: select * from bbs_class join bbs_kecheng on bbs_class.pei_id = bbs_kecheng.bbs_banji join bbs_jieduan on bbs_kecheng.bbs_id=bbs_jieduan.bbs_kechengid [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pic G:\mybbs\Application\Runtime\Cache\Home\9d459e48cece1d7473e65af45d1fe54a.php 第 127 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\9d459e48cece1d7473e65af45d1fe54a.php 第 187 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\9d459e48cece1d7473e65af45d1fe54a.php 第 188 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-12-29T21:24:37+08:00 ] 127.0.0.1 /index.php/Home/project/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\mybbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_pv` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_pv` WHERE ( time = '29' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `bbs_pv` SET `pv`=1972 WHERE ( time = '29' ) [ RunTime:0.084005s ]
+SQL: SHOW COLUMNS FROM `bbs_nav` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_nav`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_logo` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_logo`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaopin` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_zhaopin` ORDER BY time desc LIMIT 6   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_class` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_class` ORDER BY time desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_question` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_question` ORDER BY id desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: select * from bbs_class join bbs_kecheng on bbs_class.pei_id = bbs_kecheng.bbs_banji join bbs_jieduan on bbs_kecheng.bbs_id=bbs_jieduan.bbs_kechengid [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pic G:\mybbs\Application\Runtime\Cache\Home\9d459e48cece1d7473e65af45d1fe54a.php 第 127 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\9d459e48cece1d7473e65af45d1fe54a.php 第 187 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\9d459e48cece1d7473e65af45d1fe54a.php 第 188 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-29T21:24:46+08:00 ] 127.0.0.1 /index.php/Home/project/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\mybbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_pv` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_pv` WHERE ( time = '29' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: UPDATE `bbs_pv` SET `pv`=1974 WHERE ( time = '29' ) [ RunTime:0.437025s ]
+SQL: SHOW COLUMNS FROM `bbs_nav` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_nav`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_logo` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_logo`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaopin` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_zhaopin` ORDER BY time desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_class` [ RunTime:0.002001s ]
+SQL: SELECT * FROM `bbs_class` ORDER BY time desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_question` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `bbs_question` ORDER BY id desc LIMIT 6   [ RunTime:0.001000s ]
+SQL: select * from bbs_class join bbs_kecheng on bbs_class.pei_id = bbs_kecheng.bbs_banji join bbs_jieduan on bbs_kecheng.bbs_id=bbs_jieduan.bbs_kechengid [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pic G:\mybbs\Application\Runtime\Cache\Home\9d459e48cece1d7473e65af45d1fe54a.php 第 127 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\9d459e48cece1d7473e65af45d1fe54a.php 第 187 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\9d459e48cece1d7473e65af45d1fe54a.php 第 188 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-29T21:25:03+08:00 ] 127.0.0.1 /index.php/Home/project/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\mybbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_pv` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_pv` WHERE ( time = '29' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: UPDATE `bbs_pv` SET `pv`=1976 WHERE ( time = '29' ) [ RunTime:0.080004s ]
+SQL: SHOW COLUMNS FROM `bbs_nav` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_nav`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_logo` [ RunTime:0.001001s ]
+SQL: SELECT * FROM `bbs_logo`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaopin` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_zhaopin` ORDER BY time desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_class` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_class` ORDER BY time desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_question` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_question` ORDER BY id desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: select * from bbs_class join bbs_kecheng on bbs_class.pei_id = bbs_kecheng.bbs_banji join bbs_jieduan on bbs_kecheng.bbs_id=bbs_jieduan.bbs_kechengid [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pic G:\mybbs\Application\Runtime\Cache\Home\9d459e48cece1d7473e65af45d1fe54a.php 第 127 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\9d459e48cece1d7473e65af45d1fe54a.php 第 187 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\9d459e48cece1d7473e65af45d1fe54a.php 第 188 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-29T21:25:25+08:00 ] 127.0.0.1 /index.php/Home/project/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\mybbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_pv` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_pv` WHERE ( time = '29' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `bbs_pv` SET `pv`=1979 WHERE ( time = '29' ) [ RunTime:0.145008s ]
+SQL: SHOW COLUMNS FROM `bbs_nav` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_nav`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_logo` [ RunTime:0.001001s ]
+SQL: SELECT * FROM `bbs_logo`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaopin` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_zhaopin` ORDER BY time desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_class` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `bbs_class` ORDER BY time desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_question` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_question` ORDER BY id desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: select * from bbs_class join bbs_kecheng on bbs_class.pei_id = bbs_kecheng.bbs_banji join bbs_jieduan on bbs_kecheng.bbs_id=bbs_jieduan.bbs_kechengid [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pic G:\mybbs\Application\Runtime\Cache\Home\9d459e48cece1d7473e65af45d1fe54a.php 第 127 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\9d459e48cece1d7473e65af45d1fe54a.php 第 187 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\9d459e48cece1d7473e65af45d1fe54a.php 第 188 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-12-29T21:29:00+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\mybbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_pv` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_pv` WHERE ( time = '29' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: UPDATE `bbs_pv` SET `pv`=1991 WHERE ( time = '29' ) [ RunTime:0.071004s ]
+SQL: SHOW COLUMNS FROM `bbs_nav` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_nav`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_logo` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_logo`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaopin` [ RunTime:0.001001s ]
+SQL: SELECT * FROM `bbs_zhaopin` ORDER BY time desc LIMIT 6   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_class` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_class` ORDER BY time desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_question` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_question` ORDER BY id desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_student` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_family` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_company` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `bbs_xueyuan` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_banji` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaolun` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_liujun` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `bbs_mingshi` [ RunTime:0.002001s ]
+SQL: select * from bbs_company,bbs_student where bbs_student.company=bbs_company.com_id limit 7 [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_xueyuan`  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_xueyuan` ORDER BY id desc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_banji`  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_company`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_zhaolun` ORDER BY id desc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_liujun` ORDER BY id desc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_mingshi`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_question` WHERE ( status=0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_slide_image` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_slide_image`  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_student` INNER JOIN bbs_school on bbs_student.school=bbs_school.s_id  ORDER BY stu_id desc LIMIT 4   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pic G:\mybbs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 311 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-12-29T21:32:31+08:00 ] 127.0.0.1 /index.php/home/message/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\mybbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_pv` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_pv` WHERE ( time = '29' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `bbs_pv` SET `pv`=1993 WHERE ( time = '29' ) [ RunTime:0.065004s ]
+SQL: SHOW COLUMNS FROM `bbs_nav` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_nav`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_logo` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_logo`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaopin` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_zhaopin` ORDER BY time desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_class` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_class` ORDER BY time desc LIMIT 6   [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `bbs_question` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_question` ORDER BY id desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_student` [ RunTime:0.001000s ]
+SQL: select * from bbs_student,bbs_company,bbs_school where bbs_student.school=bbs_school.s_id and bbs_student.company=bbs_company.com_id [ RunTime:0.000000s ]
+SQL: select * from bbs_student,bbs_company,bbs_school where bbs_student.school=bbs_school.s_id and bbs_student.company=bbs_company.com_id limit 6 [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: pic G:\mybbs\Application\Runtime\Cache\Home\455a6242d1c94ccc41106a388080363b.php 第 127 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\455a6242d1c94ccc41106a388080363b.php 第 206 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\455a6242d1c94ccc41106a388080363b.php 第 207 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-29T21:32:45+08:00 ] 127.0.0.1 /index.php/Home/index/zhaolun_xq?id=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\mybbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_pv` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_pv` WHERE ( time = '29' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: UPDATE `bbs_pv` SET `pv`=1995 WHERE ( time = '29' ) [ RunTime:0.232013s ]
+SQL: SHOW COLUMNS FROM `bbs_nav` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_nav`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_logo` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_logo`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaopin` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_zhaopin` ORDER BY time desc LIMIT 6   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_class` [ RunTime:0.001001s ]
+SQL: SELECT * FROM `bbs_class` ORDER BY time desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_question` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_question` ORDER BY id desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_xueyuan` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_xueyuan` WHERE ( id=6 )  [ RunTime:0.000000s ]
+ERR: 模板不存在:./Application/Home/View/Index/zhaolun_xq.html
+
+[ 2014-12-29T21:33:02+08:00 ] 127.0.0.1 /index.php/Home/index/zhaolun_xq?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\mybbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_pv` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_pv` WHERE ( time = '29' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: UPDATE `bbs_pv` SET `pv`=1997 WHERE ( time = '29' ) [ RunTime:0.080004s ]
+SQL: SHOW COLUMNS FROM `bbs_nav` [ RunTime:0.001001s ]
+SQL: SELECT * FROM `bbs_nav`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_logo` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_logo`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaopin` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_zhaopin` ORDER BY time desc LIMIT 6   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_class` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_class` ORDER BY time desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_question` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_question` ORDER BY id desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_xueyuan` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_xueyuan` WHERE ( id=1 )  [ RunTime:0.000000s ]
+ERR: 模板不存在:./Application/Home/View/Index/zhaolun_xq.html
+
+[ 2014-12-29T21:33:08+08:00 ] 127.0.0.1 /index.php/Home/index/xq?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\mybbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_pv` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_pv` WHERE ( time = '29' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `bbs_pv` SET `pv`=1998 WHERE ( time = '29' ) [ RunTime:0.090005s ]
+SQL: SHOW COLUMNS FROM `bbs_nav` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_nav`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_logo` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_logo`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaopin` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_zhaopin` ORDER BY time desc LIMIT 6   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_class` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_class` ORDER BY time desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_question` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_question` ORDER BY id desc LIMIT 6   [ RunTime:0.000000s ]
+ERR: 非法操作:xq
+
+[ 2014-12-29T21:33:14+08:00 ] 127.0.0.1 /index.php/Home/index/zhaolun_xq?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\mybbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_pv` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_pv` WHERE ( time = '29' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `bbs_pv` SET `pv`=1999 WHERE ( time = '29' ) [ RunTime:0.086005s ]
+SQL: SHOW COLUMNS FROM `bbs_nav` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_nav`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_logo` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_logo`  [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaopin` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_zhaopin` ORDER BY time desc LIMIT 6   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_class` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_class` ORDER BY time desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_question` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_question` ORDER BY id desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_xueyuan` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_xueyuan` WHERE ( id=1 )  [ RunTime:0.000000s ]
+ERR: 模板不存在:./Application/Home/View/Index/zhaolun_xq.html
+
+[ 2014-12-29T21:39:02+08:00 ] 127.0.0.1 /index.php/Home/message/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\mybbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_pv` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_pv` WHERE ( time = '29' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `bbs_pv` SET `pv`=2004 WHERE ( time = '29' ) [ RunTime:0.078004s ]
+SQL: SHOW COLUMNS FROM `bbs_nav` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_nav`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_logo` [ RunTime:0.001001s ]
+SQL: SELECT * FROM `bbs_logo`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaopin` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_zhaopin` ORDER BY id desc LIMIT 6   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_class` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_class` ORDER BY id desc LIMIT 6   [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'id' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `bbs_class` ORDER BY id desc LIMIT 6  
+SQL: SHOW COLUMNS FROM `bbs_question` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_question` ORDER BY id desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_student` [ RunTime:0.001000s ]
+SQL: select * from bbs_student,bbs_company,bbs_school where bbs_student.school=bbs_school.s_id and bbs_student.company=bbs_company.com_id [ RunTime:0.001000s ]
+SQL: select * from bbs_student,bbs_company,bbs_school where bbs_student.school=bbs_school.s_id and bbs_student.company=bbs_company.com_id limit 6 [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pic G:\mybbs\Application\Runtime\Cache\Home\455a6242d1c94ccc41106a388080363b.php 第 127 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\455a6242d1c94ccc41106a388080363b.php 第 206 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\455a6242d1c94ccc41106a388080363b.php 第 207 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-29T21:39:10+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\mybbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_pv` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_pv` WHERE ( time = '29' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `bbs_pv` SET `pv`=2006 WHERE ( time = '29' ) [ RunTime:0.068004s ]
+SQL: SHOW COLUMNS FROM `bbs_nav` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_nav`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_logo` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_logo`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaopin` [ RunTime:0.001001s ]
+SQL: SELECT * FROM `bbs_zhaopin` ORDER BY id desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_class` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_class` ORDER BY id desc LIMIT 6   [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'id' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `bbs_class` ORDER BY id desc LIMIT 6  
+SQL: SHOW COLUMNS FROM `bbs_question` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_question` ORDER BY id desc LIMIT 6   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_student` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `bbs_family` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `bbs_company` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `bbs_xueyuan` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `bbs_banji` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaolun` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_liujun` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_mingshi` [ RunTime:0.002000s ]
+SQL: select * from bbs_company,bbs_student where bbs_student.company=bbs_company.com_id limit 7 [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_xueyuan`  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_xueyuan` ORDER BY id desc  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_banji`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_company`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_zhaolun` ORDER BY id desc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_liujun` ORDER BY id desc  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_mingshi`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_question` WHERE ( status=0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_slide_image` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_slide_image`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_student` INNER JOIN bbs_school on bbs_student.school=bbs_school.s_id  ORDER BY stu_id desc LIMIT 4   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pic G:\mybbs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 311 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-29T21:49:32+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\mybbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_pv` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_pv` WHERE ( time = '29' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `bbs_pv` SET `pv`=2062 WHERE ( time = '29' ) [ RunTime:0.080005s ]
+SQL: SHOW COLUMNS FROM `bbs_nav` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_nav`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_logo` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_logo`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaopin` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_zhaopin` ORDER BY id desc LIMIT 6   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_class` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_class` ORDER BY id desc LIMIT 6   [ RunTime:0.001000s ]
+ERR: 1054:Unknown column 'id' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `bbs_class` ORDER BY id desc LIMIT 6  
+SQL: SHOW COLUMNS FROM `bbs_question` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_question` ORDER BY id desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_student` [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `bbs_family` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `bbs_company` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `bbs_xueyuan` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `bbs_banji` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaolun` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_liujun` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `bbs_mingshi` [ RunTime:0.001000s ]
+SQL: select * from bbs_company,bbs_student where bbs_student.company=bbs_company.com_id limit 7 [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_xueyuan`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_xueyuan` ORDER BY id desc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_banji`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_company`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_zhaolun` ORDER BY id desc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_liujun` ORDER BY id desc  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_mingshi`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_question` WHERE ( status=0 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_slide_image` [ RunTime:0.001001s ]
+SQL: SELECT * FROM `bbs_slide_image`  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_student` INNER JOIN bbs_school on bbs_student.school=bbs_school.s_id  ORDER BY stu_id desc LIMIT 4   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pic G:\mybbs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 311 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-29T21:49:36+08:00 ] 127.0.0.1 /index.php/Home/project/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\mybbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_pv` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_pv` WHERE ( time = '29' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: UPDATE `bbs_pv` SET `pv`=2064 WHERE ( time = '29' ) [ RunTime:0.066004s ]
+SQL: SHOW COLUMNS FROM `bbs_nav` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_nav`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_logo` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_logo`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaopin` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_zhaopin` ORDER BY id desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_class` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_class` ORDER BY id desc LIMIT 6   [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'id' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `bbs_class` ORDER BY id desc LIMIT 6  
+SQL: SHOW COLUMNS FROM `bbs_question` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_question` ORDER BY id desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: select * from bbs_class join bbs_kecheng on bbs_class.pei_id = bbs_kecheng.bbs_banji join bbs_jieduan on bbs_kecheng.bbs_id=bbs_jieduan.bbs_kechengid [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: pic G:\mybbs\Application\Runtime\Cache\Home\9d459e48cece1d7473e65af45d1fe54a.php 第 127 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\9d459e48cece1d7473e65af45d1fe54a.php 第 187 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\9d459e48cece1d7473e65af45d1fe54a.php 第 188 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-12-29T21:49:39+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\mybbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_pv` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_pv` WHERE ( time = '29' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `bbs_pv` SET `pv`=2066 WHERE ( time = '29' ) [ RunTime:0.226013s ]
+SQL: SHOW COLUMNS FROM `bbs_nav` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_nav`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_logo` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_logo`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaopin` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_zhaopin` ORDER BY id desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_class` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_class` ORDER BY id desc LIMIT 6   [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'id' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `bbs_class` ORDER BY id desc LIMIT 6  
+SQL: SHOW COLUMNS FROM `bbs_question` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_question` ORDER BY id desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_student` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_family` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_company` [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `bbs_xueyuan` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_banji` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaolun` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `bbs_liujun` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_mingshi` [ RunTime:0.002000s ]
+SQL: select * from bbs_company,bbs_student where bbs_student.company=bbs_company.com_id limit 7 [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_xueyuan`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_xueyuan` ORDER BY id desc  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_banji`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_company`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_zhaolun` ORDER BY id desc  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_liujun` ORDER BY id desc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_mingshi`  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_question` WHERE ( status=0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_slide_image` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_slide_image`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_student` INNER JOIN bbs_school on bbs_student.school=bbs_school.s_id  ORDER BY stu_id desc LIMIT 4   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pic G:\mybbs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 311 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-29T21:49:45+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\mybbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_pv` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_pv` WHERE ( time = '29' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: UPDATE `bbs_pv` SET `pv`=2068 WHERE ( time = '29' ) [ RunTime:0.148009s ]
+SQL: SHOW COLUMNS FROM `bbs_nav` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_nav`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_logo` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_logo`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaopin` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_zhaopin` ORDER BY id desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_class` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `bbs_class` ORDER BY id desc LIMIT 6   [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'id' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `bbs_class` ORDER BY id desc LIMIT 6  
+SQL: SHOW COLUMNS FROM `bbs_question` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_question` ORDER BY id desc LIMIT 6   [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `bbs_student` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_family` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `bbs_company` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `bbs_xueyuan` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `bbs_banji` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaolun` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_liujun` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_mingshi` [ RunTime:0.002001s ]
+SQL: select * from bbs_company,bbs_student where bbs_student.company=bbs_company.com_id limit 7 [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_xueyuan`  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_xueyuan` ORDER BY id desc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_banji`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_company`  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_zhaolun` ORDER BY id desc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_liujun` ORDER BY id desc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_mingshi`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_question` WHERE ( status=0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_slide_image` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_slide_image`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_student` INNER JOIN bbs_school on bbs_student.school=bbs_school.s_id  ORDER BY stu_id desc LIMIT 4   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: pic G:\mybbs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 311 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-29T21:49:47+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\mybbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_pv` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_pv` WHERE ( time = '29' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `bbs_pv` SET `pv`=2070 WHERE ( time = '29' ) [ RunTime:0.073004s ]
+SQL: SHOW COLUMNS FROM `bbs_nav` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_nav`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_logo` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_logo`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaopin` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_zhaopin` ORDER BY id desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_class` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_class` ORDER BY id desc LIMIT 6   [ RunTime:0.001000s ]
+ERR: 1054:Unknown column 'id' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `bbs_class` ORDER BY id desc LIMIT 6  
+SQL: SHOW COLUMNS FROM `bbs_question` [ RunTime:0.002001s ]
+SQL: SELECT * FROM `bbs_question` ORDER BY id desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_student` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_family` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_company` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `bbs_xueyuan` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_banji` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaolun` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `bbs_liujun` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_mingshi` [ RunTime:0.001000s ]
+SQL: select * from bbs_company,bbs_student where bbs_student.company=bbs_company.com_id limit 7 [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_xueyuan`  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_xueyuan` ORDER BY id desc  [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_banji`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_company`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_zhaolun` ORDER BY id desc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_liujun` ORDER BY id desc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_mingshi`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_question` WHERE ( status=0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_slide_image` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_slide_image`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_student` INNER JOIN bbs_school on bbs_student.school=bbs_school.s_id  ORDER BY stu_id desc LIMIT 4   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined variable: pic G:\mybbs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 311 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-29T21:49:50+08:00 ] 127.0.0.1 /index.php/Home/project/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\mybbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_pv` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_pv` WHERE ( time = '29' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `bbs_pv` SET `pv`=2072 WHERE ( time = '29' ) [ RunTime:0.163010s ]
+SQL: SHOW COLUMNS FROM `bbs_nav` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_nav`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_logo` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_logo`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaopin` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_zhaopin` ORDER BY id desc LIMIT 6   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_class` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `bbs_class` ORDER BY id desc LIMIT 6   [ RunTime:0.001000s ]
+ERR: 1054:Unknown column 'id' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `bbs_class` ORDER BY id desc LIMIT 6  
+SQL: SHOW COLUMNS FROM `bbs_question` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_question` ORDER BY id desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: select * from bbs_class join bbs_kecheng on bbs_class.pei_id = bbs_kecheng.bbs_banji join bbs_jieduan on bbs_kecheng.bbs_id=bbs_jieduan.bbs_kechengid [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: pic G:\mybbs\Application\Runtime\Cache\Home\9d459e48cece1d7473e65af45d1fe54a.php 第 127 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\9d459e48cece1d7473e65af45d1fe54a.php 第 187 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\9d459e48cece1d7473e65af45d1fe54a.php 第 188 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-29T21:50:15+08:00 ] 127.0.0.1 /index.php/Home/project/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\mybbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_pv` [ RunTime:0.001001s ]
+SQL: SELECT * FROM `bbs_pv` WHERE ( time = '29' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `bbs_pv` SET `pv`=2082 WHERE ( time = '29' ) [ RunTime:0.060003s ]
+SQL: SHOW COLUMNS FROM `bbs_nav` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_nav`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_logo` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_logo`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaopin` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_zhaopin` ORDER BY id desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_class` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_class` ORDER BY pei_id desc LIMIT 6   [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `bbs_question` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_question` ORDER BY id desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: select * from bbs_class join bbs_kecheng on bbs_class.pei_id = bbs_kecheng.bbs_banji join bbs_jieduan on bbs_kecheng.bbs_id=bbs_jieduan.bbs_kechengid [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pic G:\mybbs\Application\Runtime\Cache\Home\9d459e48cece1d7473e65af45d1fe54a.php 第 127 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\9d459e48cece1d7473e65af45d1fe54a.php 第 187 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\9d459e48cece1d7473e65af45d1fe54a.php 第 188 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-29T21:50:28+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\mybbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_pv` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_pv` WHERE ( time = '29' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `bbs_pv` SET `pv`=2085 WHERE ( time = '29' ) [ RunTime:0.064004s ]
+SQL: SHOW COLUMNS FROM `bbs_nav` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_nav`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_logo` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_logo`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaopin` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_zhaopin` ORDER BY id desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_class` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_class` ORDER BY pei_id desc LIMIT 6   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_question` [ RunTime:0.001001s ]
+SQL: SELECT * FROM `bbs_question` ORDER BY id desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_student` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `bbs_family` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `bbs_company` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_xueyuan` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `bbs_banji` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaolun` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `bbs_liujun` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_mingshi` [ RunTime:0.001000s ]
+SQL: select * from bbs_company,bbs_student where bbs_student.company=bbs_company.com_id limit 7 [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_xueyuan`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_xueyuan` ORDER BY id desc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_banji`  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_company`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_zhaolun` ORDER BY id desc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_liujun` ORDER BY id desc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_mingshi`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_question` WHERE ( status=0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_slide_image` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_slide_image`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_student` INNER JOIN bbs_school on bbs_student.school=bbs_school.s_id  ORDER BY stu_id desc LIMIT 4   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pic G:\mybbs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 310 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 311 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-29T22:06:58+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\mybbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_pv` [ RunTime:0.001001s ]
+SQL: SELECT * FROM `bbs_pv` WHERE ( time = '29' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `bbs_pv` SET `pv`=2137 WHERE ( time = '29' ) [ RunTime:0.068003s ]
+SQL: SHOW COLUMNS FROM `bbs_nav` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_nav`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_logo` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `bbs_logo`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaopin` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_zhaopin` ORDER BY id desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_class` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_class` ORDER BY pei_id desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_question` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_question` ORDER BY id desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_student` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `bbs_family` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `bbs_company` [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `bbs_xueyuan` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_banji` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaolun` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `bbs_liujun` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_mingshi` [ RunTime:0.001000s ]
+SQL: select * from bbs_company,bbs_student where bbs_student.company=bbs_company.com_id limit 7 [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_xueyuan`  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_xueyuan` ORDER BY id desc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_banji`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_company`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_zhaolun` ORDER BY id desc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_liujun` ORDER BY id desc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_mingshi`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_question` WHERE ( status=0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_slide_image` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_slide_image`  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_student` INNER JOIN bbs_school on bbs_student.school=bbs_school.s_id  ORDER BY stu_id desc LIMIT 4   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pic G:\mybbs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 341 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 342 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 556 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 557 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-29T22:07:24+08:00 ] 127.0.0.1 /index.php/Home/project/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\mybbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_pv` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_pv` WHERE ( time = '29' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `bbs_pv` SET `pv`=2141 WHERE ( time = '29' ) [ RunTime:0.066003s ]
+SQL: SHOW COLUMNS FROM `bbs_nav` [ RunTime:0.001001s ]
+SQL: SELECT * FROM `bbs_nav`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_logo` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_logo`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaopin` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_zhaopin` ORDER BY id desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_class` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_class` ORDER BY pei_id desc LIMIT 6   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_question` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_question` ORDER BY id desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: select * from bbs_class join bbs_kecheng on bbs_class.pei_id = bbs_kecheng.bbs_banji join bbs_jieduan on bbs_kecheng.bbs_id=bbs_jieduan.bbs_kechengid [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pic G:\mybbs\Application\Runtime\Cache\Home\9d459e48cece1d7473e65af45d1fe54a.php 第 127 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\9d459e48cece1d7473e65af45d1fe54a.php 第 187 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\9d459e48cece1d7473e65af45d1fe54a.php 第 188 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-29T22:07:30+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\mybbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_pv` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_pv` WHERE ( time = '29' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `bbs_pv` SET `pv`=2143 WHERE ( time = '29' ) [ RunTime:0.070004s ]
+SQL: SHOW COLUMNS FROM `bbs_nav` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_nav`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_logo` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_logo`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaopin` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_zhaopin` ORDER BY id desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_class` [ RunTime:0.002001s ]
+SQL: SELECT * FROM `bbs_class` ORDER BY pei_id desc LIMIT 6   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_question` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_question` ORDER BY id desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_student` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `bbs_family` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_company` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_xueyuan` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_banji` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaolun` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `bbs_liujun` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `bbs_mingshi` [ RunTime:0.001000s ]
+SQL: select * from bbs_company,bbs_student where bbs_student.company=bbs_company.com_id limit 7 [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_xueyuan`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_xueyuan` ORDER BY id desc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_banji`  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_company`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_zhaolun` ORDER BY id desc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_liujun` ORDER BY id desc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_mingshi`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_question` WHERE ( status=0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_slide_image` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_slide_image`  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_student` INNER JOIN bbs_school on bbs_student.school=bbs_school.s_id  ORDER BY stu_id desc LIMIT 4   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pic G:\mybbs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 341 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 342 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 556 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 557 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-29T22:08:02+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\mybbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_pv` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_pv` WHERE ( time = '29' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `bbs_pv` SET `pv`=2146 WHERE ( time = '29' ) [ RunTime:0.731042s ]
+SQL: SHOW COLUMNS FROM `bbs_nav` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_nav`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_logo` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_logo`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaopin` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_zhaopin` ORDER BY id desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_class` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_class` ORDER BY pei_id desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_question` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_question` ORDER BY id desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_student` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_family` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_company` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `bbs_xueyuan` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_banji` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaolun` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `bbs_liujun` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_mingshi` [ RunTime:0.001000s ]
+SQL: select * from bbs_company,bbs_student where bbs_student.company=bbs_company.com_id limit 7 [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_xueyuan`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_xueyuan` ORDER BY id desc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_banji`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_company`  [ RunTime:0.001001s ]
+SQL: SELECT * FROM `bbs_zhaolun` ORDER BY id desc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_liujun` ORDER BY id desc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_mingshi`  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_question` WHERE ( status=0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_slide_image` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `bbs_slide_image`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_student` INNER JOIN bbs_school on bbs_student.school=bbs_school.s_id  ORDER BY stu_id desc LIMIT 4   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: pic G:\mybbs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 340 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 341 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-12-29T22:08:24+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead G:\mybbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `bbs_pv` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_pv` WHERE ( time = '29' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: UPDATE `bbs_pv` SET `pv`=2148 WHERE ( time = '29' ) [ RunTime:0.049003s ]
+SQL: SHOW COLUMNS FROM `bbs_nav` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_nav`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_logo` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_logo`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaopin` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_zhaopin` ORDER BY id desc LIMIT 6   [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `bbs_class` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_class` ORDER BY pei_id desc LIMIT 6   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_question` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_question` ORDER BY id desc LIMIT 6   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_student` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `bbs_family` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_company` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_xueyuan` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_banji` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_zhaolun` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_liujun` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `bbs_mingshi` [ RunTime:0.001000s ]
+SQL: select * from bbs_company,bbs_student where bbs_student.company=bbs_company.com_id limit 7 [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_xueyuan`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_xueyuan` ORDER BY id desc  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_banji`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_company`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_zhaolun` ORDER BY id desc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_liujun` ORDER BY id desc  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `bbs_mingshi`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_question` WHERE ( status=0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `bbs_slide_image` [ RunTime:0.002001s ]
+SQL: SELECT * FROM `bbs_slide_image`  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `bbs_student` INNER JOIN bbs_school on bbs_student.school=bbs_school.s_id  ORDER BY stu_id desc LIMIT 4   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: pic G:\mybbs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 338 行.
+NOTIC: [8] Undefined index: username G:\mybbs\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 339 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
