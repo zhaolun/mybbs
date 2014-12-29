@@ -155,7 +155,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
                 <!--  校园消息  -->
 				<ul class="huodong11">
 
-				<?php if(is_array($infoa)): foreach($infoa as $key=>$it): ?><li><img src="/public/images/sanjiao-1.jpg" /><a href="http://php.itcast.cn/news/20141203/14264847561.shtml" target="_blank"><span style="color:#ff0000;"><?php echo ($it["content"]); ?></span></a></li><?php endforeach; endif; ?>
+				<?php if(is_array($infoa)): foreach($infoa as $key=>$it): ?><li><img src="/public/images/sanjiao-1.jpg" /><a href="http://www.mybbs.com/index.php/Home/index/xueyuan_xq?id=<?php echo ($it["id"]); ?>" target="_blank"><span style="color:#ff0000;"><?php echo ($it["title"]); ?></span></a></li><?php endforeach; endif; ?>
 </ul>
 </ul>
 
