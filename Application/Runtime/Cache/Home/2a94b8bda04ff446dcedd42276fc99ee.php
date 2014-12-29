@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "/www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "/www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="/www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -38,7 +38,7 @@
 
 	<div class="clear"></div>
 	<div class="top2">
-		<h1 class="fl"><a href="/index.php"><img border="0" class="png" alt="传智播客php培训学院" src="{$logoinfo.0.logo_path}"></a></h1>
+		<h1 class="fl"><a href="/index.php"><img border="0" class="png" alt="传智播客php培训学院" src="<?php echo ($logoinfo["0"]["logo_path"]); ?>"></a></h1>
 		<div class="fl toubu">
 		<div class="toubu-font1">PHP学院</div>
 			 <!-- 校区 -->
@@ -55,9 +55,7 @@
 	</div>
 	<div class="clear"></div>
 		<ul id="nav">
-		<foreach name="navinfo" item="vo">
-			<li><a id="nav_main" href="{$vo.nav_link}">{$vo.nav_name}</a></li>
-		</foreach>
+		<?php if(is_array($navinfo)): foreach($navinfo as $key=>$vo): ?><li><a id="nav_main" href="<?php echo ($vo["nav_link"]); ?>"><?php echo ($vo["nav_name"]); ?></a></li><?php endforeach; endif; ?>
 </ul>
 	</div>
 	<div id="box">
@@ -94,7 +92,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 <a class="jiathis_button_qzone">QQ空间</a>
 </div>
 <script type="text/javascript" src="http://v2.jiathis.com/code/jia.js" charset="utf-8"></script>
-<div id="qqwb_share__" data-appkey="801554695" data-counter_pos="top" data-content="BBS yi利一组项目" data-pic="{$pic}"></div>
+<div id="qqwb_share__" data-appkey="801554695" data-counter_pos="top" data-content="BBS yi利一组项目" data-pic="<?php echo ($pic); ?>"></div>
 
 <script src="http://mat1.gtimg.com/app/openjs/openjs.js#autoboot=no&debug=no"></script>
 
@@ -112,7 +110,204 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 	<a class="jiathis_counter_style"></a>
 </div>
 <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>-->
-{__CONTENT__}
+		  <div id="left" class="fl"  style="margin-top:3px;">
+		   
+		<div><img src="/Public/images/lefttop.gif"  /></div>
+		<div class="left_content2">
+		  <h4 class="title1"><span style="font-size:14px;float:right;padding-right:20px;">今天我终于来到了心中向往已久的神圣学府--八维研修学院，开始了改变命运的征途</span><span class="STYLE3">我们开学啦</span></h4>
+			<div class="ganyan1 huodong1" style="clear: both">
+<div class="fl">
+<div class="imagecontainer" id="idTransformView2">
+<ul class="slider slider2" id="idSlider2">
+<?php if(is_array($slide_image)): foreach($slide_image as $key=>$vo): ?><li><a href="<?php echo ($vo["img_link"]); ?>" target="_blank"><img title="<?php echo ($vo["img_desc"]); ?>" src="<?php echo ($vo["img_path"]); ?>" style="width: 297px; height: 216px;" /></a></li><?php endforeach; endif; ?>
+</ul>
+<ul class="num" id="idNum2">
+<li>1</li>
+<li>2</li>
+<li>3</li>
+<li>4</li>
+<li>5</li>
+</ul>
+</div>
+</div>
+<div class="fr shouye">
+<ul>
+<li><a href=""><img  src="/public/images/1.jpg" style="width:142px; height: 87px" /></a></li>
+<li><a class="style3" href="" src="/public/images/1.jpg">赵伦-玩酷我的程序人生</a></li>
+</ul>
+<ul>
+<li><a href=""><img src="/public/images/2.jpg" style="width: 142px; height: 87px;" /></a></li>
+<li><a class="style3" href="">刘俊-女生挑战PHP </a></li>
+</ul>
+<ul>
+<li><a href=""><img src="/public/images/5.jpg" style="width: 142px; height: 87px" /></a></li>
+<li><a class="style3" href="">雷金涛专题-因为爱情</a></li>
+</ul>
+<ul>
+<li><a href=""><img src="/public/images/3.jpg" style="width: 142px; height: 87px" /></a></li>
+<li><a class="style3" href="">崔萌泽专题-我有我原则 </a></li>
+</ul>
+</div>
+<div></div>
+</div>
+
+				<div class="clear"></div>
+                <p class="kxsy-font1"><img src="http://www.itcast.cn/images/kxsy-tu6.jpg" /></p>
+                <!--  校园消息  -->
+				<ul class="huodong11">
+
+				<?php if(is_array($infoa)): foreach($infoa as $key=>$it): ?><li><img src="/public/images/sanjiao-1.jpg" /><a href="http://www.mybbs.com/index.php/Home/index/xueyuan_xq?id=<?php echo ($it["id"]); ?>" target="_blank"><span style="color:#ff0000;"><?php echo ($it["title"]); ?></span></a></li><?php endforeach; endif; ?>
+</ul>
+</ul>
+
+
+              <!--  校园消息  -->
+             <div class="clear"></div>
+				  <p class="text-r"><a href="http://php.itcast.cn/news/list/48b817de-285d-4981-a85a-ccdb3f42b15b/1.shtml
+" ><img src="/Public/images/jiantoumore.gif"/></a></p>
+			  </div>
+			  <div><img src="/Public/images/leftbottom.gif"  /></div>
+			  <div class="clear"></div>
+			  <div><img src="/Public/images/lefttop.gif"  /></div>
+			  <div class="left_content2">
+			  <h4 class="title1"><span class="STYLE3">校园</span>动态</h4>
+			  	<dl class="ganyan1 huodong1">
+	<dt class="fl">
+		<a href="http://php.itcast.cn/news/20131117/14525122556.shtml" target="_blank"><img src="/public/images/6.jpg" style="width: 286px; height: 215px;" /><br />
+		开拓视野，展现自我，&ldquo;非你莫属&rdquo;我们来啦！</a></dt>
+	<dd class="huodongfr">
+		<h3 class="STYLE7">班级活动</h3>
+		<ul class="bjhd">
+		<?php if(is_array($infob)): foreach($infob as $key=>$it): ?><li><img src="http://php.itcast.cn/images/great.jpg" /><a href="http://php.itcast.cn/news/20140328/17081824603.shtml" target="_blank"><?php echo ($it["content"]); ?></a></li><?php endforeach; endif; ?>
+		</ul>
+	</dd>
+</dl>
+
+				<div class="clear"></div>
+                <p class="text-r"><img src="/Public/images/jiantoumore.gif"/></p>
+			  </div>
+			  <div class="clear"></div><div><img src="/Public/images/leftbottom.gif"/></div>
+			  <div><img src="/Public/images/lefttop.gif"  /></div>
+			<div class="left_content2">
+			  <h4 class="ganyan"><span class="STYLE3">论坛</span>热贴<span class="fr"><a href="http://bbs.itcast.cn">+MORE</a></span></h4>	
+<div class="tie">		  
+<script type="text/javascript" src="http://bbs.itcast.cn/api.php?mod=js&bid=67"></script>
+</div>
+			  <div class="clear"></div>
+		  </div>
+			<div><img src="/Public/images/leftbottom.gif"/></div>
+			<div><img src="/Public/images/lefttop.gif"/></div>
+			<div class="left_content2">
+			  <h4 class="ganyan"><span class="fl"><span class="STYLE3">PHP培训</span>学员呐喊</span><span class="fr"><a href="./index.php/home/message/index">+MORE</a></span></h4>
+			 <dl class="ganyan1 huodong1">
+	<dt class="fl">
+		<a href="./index.php/home/message/index" target="_blank"><img src="/public/images/4.jpg" style="width: 287px; height: 189px; " /></a><br />
+		<a href="" target="_blank">八维PHP学院就业明星-张肖云</a>
+		
+	</dt>
+	<dd class="huodongfr">
+		<h3 class="STYLE7">就业信息</h3>
+		<ul class="bjhd">
+		<?php if(is_array($info)): foreach($info as $key=>$val): ?><li>
+			<img src="http://www.itcast.cn/images/great.jpg" />
+			<a href="./index.php/home/message/video/stu_id/<?php echo ($val["stu_id"]); ?>"><?php echo ($val["stu_name"]); ?> &nbsp; <?php echo $cc;?>&nbsp;
+				<?php echo ($val["com_name"]); ?> &nbsp;<?php echo ($val["money"]); ?></a>
+		</li><?php endforeach; endif; ?>
+
+		</ul>
+	</dd>
+</dl>
+
+			 <div class="clear"></div>
+		  </div>
+		  <div class="clear"></div>
+			<div><img src="/Public/images/leftbottom.gif"  /></div>
+			
+			<div><img src="/Public/images/lefttop.gif"  /></div>
+			<div class="left_content2">
+			  <h4 class="ganyan"><span class="fl"><span class="STYLE3">学员</span>感言</span><span class="fr"><a href="http://php.itcast.cn/news/list/0b8acc29-7202-4e1d-a6db-f6dfd3a639bb/1.shtml
+">+MORE</a></span></h4>
+			  <div class="xygy">
+<div class="ganyanleft fl">
+<dl class="ganyan1">
+	<dt class="fl">
+		<a href="http://php.itcast.cn/news/6c558812/4811/4576/b342/2307b12ae09a.shtml"><img alt="" src="/public/images/1.jpg" style="width: 108px; height: 71px" /></a></dt>
+	<dd class="fr">
+		<span class="STYLE6"><a href="http://php.itcast.cn/news/6c558812/4811/4576/b342/2307b12ae09a.shtml">[php学员]</a></span><a href="http://php.itcast.cn/news/6c558812/4811/4576/b342/2307b12ae09a.shtml">赵伦：八维，我人生中重要的一站</a></dd>
+</dl>
+<div class="clear"></div>
+<ul>
+<?php if(is_array($infoc)): foreach($infoc as $key=>$it): ?><li><span class="STYLE6">[php学员]</span><a href="http://php.itcast.cn/news/fb4ddfd4/3e47/496a/8c63/7fbe5463bfd3.shtml"><?php echo ($it["content"]); ?></a></li><?php endforeach; endif; ?>
+<script type="text/javascript">
+			<!--
+				function register(){
+					$("#myform").attr("action","/index.php/Home/index/register");
+					$("#button").attr("value","注册");
+					$("#span").html("<span style='color:blue;' onclick='login()'>登录</span>");
+					$("#tele").show();
+				}
+				function forget(){
+					$("#forget").toggle();
+					$("#fname").focus();
+				}
+				function login(){
+					$("#myform").attr("action","/index.php/Home/index/login");
+					$("#button").attr("value","登录");
+					$("#tele").hide();
+					$("#span").html("<span style='color:blue;' onclick='register()'>注册</span>");
+				}
+				function telyzm(){
+					var name=$("#fname").val();
+					var tel=$("#ftel").val();
+					$.ajax({
+						type: "GET",
+						url: "/index.php/Home/index/send_message",
+						data: "name="+name+"&tel="+tel,
+						success: function(msg){
+							alert(msg);
+						}
+					}); 
+				}
+			//-->
+			</script>
+</ul>
+</div>
+<div class="ganyanleft fr3">
+<dl class="ganyan1">
+	<dt class="fl">
+		<a href="http://php.itcast.cn/news/20120913/11580550824.shtml"><img alt="" src="/public/images/2.jpg" style="width: 108px; height: 71px;" /></a></dt>
+	<dd class="fr">
+		<span class="STYLE6"><a href="http://php.itcast.cn/news/20120913/11580550824.shtml">[php学员]</a></span><a href="http://php.itcast.cn/news/20120913/11580550824.shtml">刘俊：美女网编,毕业薪水6500</a></dd>
+</dl>
+<div class="clear"></div>
+<ul>
+<?php if(is_array($infod)): foreach($infod as $key=>$it): ?><li><span class="STYLE6">[php学员]</span><a href="http://php.itcast.cn/news/20130902/14205610545.shtml"><?php echo ($it["content"]); ?></a></li><?php endforeach; endif; ?>
+<li><a href="http://php.itcast.cn/news/list/0b8acc29-7202-4e1d-a6db-f6dfd3a639bb/1.shtml"><font style="color: red"><b>&gt;&gt;查看更多学员感言</b></font></a></li>
+</ul>
+</div>
+</div>
+<br />
+
+			  <div class="clear"></div>
+		  </div>
+			<div><img src="/Public/images/leftbottom.gif"  /></div>
+			<div><img src="/Public/images/lefttop.gif"  /></div>
+			<div class="left_content2">
+			  <h4 class="ganyan"><span class="fl"><span class="STYLE3">PHP培训</span>名师答疑</span><span class="fr"><a href="http://php.itcast.cn/news/list/cba8c58c-b2d4-4f48-bf64-a10b59fb2666/1.shtml
+">+MORE</a></span></h4>
+			  <div class="msdy">
+			    <div class="msdy-left"><img src="/Public/images/wenhao-1.jpg" /></div>
+				<div class="msdy-right">
+<ul>
+<?php if(is_array($infof)): foreach($infof as $key=>$it): ?><li><a href="/index.php/home/index/detail/id/<?php echo ($it["id"]); ?>"><span style="color:#ff0000;"><?php echo ($it["title"]); ?></span></a></li>
+
+</ul>
+<ul><?php endforeach; endif; ?>
+<li><a href="http://php.itcast.cn/news/list/cba8c58c-b2d4-4f48-bf64-a10b59fb2666/1.shtml"><font style="color: red"><b>&gt;&gt;查看更多答疑信息</b></font></a></li>
+</ul>
+</div>
+<br />
+</div>
 <div class="clear"></div>
 		  </div>
 			<div><img src="/Public/images/leftbottom.gif"/></div>
@@ -120,9 +315,8 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 		</div>		
 		<div id="right" class="fl">	
 		<h4 class="righttitle1" style="margin-top:10px;"><span class="fl">
-		<if condition="$_SESSION.username eq '' ">用户登录<else />用户中心</if></span></h4>
-			<div class="jyjb-left" ><if condition="$_SESSION.username eq '' ">
-			<form method="post" action="/index.php/Home/index/login" id="myform">
+		<?php if($_SESSION["username"] == '' ): ?>用户登录<?php else: ?>用户中心<?php endif; ?></span></h4>
+			<div class="jyjb-left" ><?php if($_SESSION["username"] == '' ): ?><form method="post" action="/index.php/Home/index/login" id="myform">
 				用户名：<input type="text" name="username" id="name"><br>
 				密　码：<input type="password" name="password" id="pwd"><br>
 				<span style="display:none" id="tele">手　机：<input type="text" name="tel" id="tel"><br></span>
@@ -143,7 +337,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
                 childWindow.close();
             }
 			</script>
-			<else />欢迎您：<if condition="$_SESSION.img neq '' "><img src="{$_SESSION.img}"></if><font color=red>{$_SESSION.username}</font>　<a href="/index.php/Home/index/loginout">退出</a></if>
+			<?php else: ?>欢迎您：<?php if($_SESSION["img"] != '' ): ?><img src="<?php echo ($_SESSION["img"]); ?>"><?php endif; ?><font color=red><?php echo ($_SESSION["username"]); ?></font>　<a href="/index.php/Home/index/loginout">退出</a><?php endif; ?>
 			
             </div>
 
@@ -189,13 +383,11 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 			<p class="cent"> <img src="/Public/images/7.jpg"  width="256" height="66" /></p>
                       <table border="0" cellpadding="0" cellspacing="0" class="zhaopinlist" height="124" style="margin-top: 5px" width="98%">
 <tbody>
-<foreach name='infoaa' item='it'>
-	<tr>
-	<td class="td1" width="73%"><a href="http://www.itcast.cn/news/20141201/16233788127.shtml" target="_blank">{$it.company}</a></td>
+<?php if(is_array($infoaa)): foreach($infoaa as $key=>$it): ?><tr>
+	<td class="td1" width="73%"><a href="http://www.itcast.cn/news/20141201/16233788127.shtml" target="_blank"><?php echo ($it["company"]); ?></a></td>
 	<td width="11%">若干</td>
 	<td width="16%">11.28</td>
-	</tr>
-</foreach>	
+	</tr><?php endforeach; endif; ?>	
 	<tr>
 	<td class="td1" width="73%"><a href="http://www.itcast.cn/news/list/20c133c0-6635-421c-acae-6125b0702b34/1.shtml" target="_blank"><span style="color:#ff0000;">更多企业招聘信息请点击&hellip;&hellip;</span></a></td>
 	<td width="11%"><a href="http://www.itcast.cn/news/list/20c133c0-6635-421c-acae-6125b0702b34/1.shtml" target="_blank"><span style="color:#ff0000;">查看</span></a></td>
@@ -213,9 +405,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 		  <div class="rightkuang1" style="padding-top:18px;">
 			<ul class="zhaopinlist wenti">
               <ul class="zhaopinlist wenti">
-<foreach name='infobb' item='it'>
-<li><a href="/index.php/Home/problem/xq?id={$it.id}" target="_blank">{$it.title}</a><img height="15" src="/Public/images/new.gif" width="29" /></li>
-</foreach>
+<?php if(is_array($infobb)): foreach($infobb as $key=>$it): ?><li><a href="/index.php/Home/problem/xq?id=<?php echo ($it["id"]); ?>" target="_blank"><?php echo ($it["title"]); ?></a><img height="15" src="/Public/images/new.gif" width="29" /></li><?php endforeach; endif; ?>
 </ul>
 
           </ul> 
@@ -343,7 +533,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 <link type="text/css" rel="stylesheet" href="/kefu2/ie.css" mce_href="/kefu2/ie.css" />
 <![endif]-->
 <div class="fixed">
-<input type="hidden" id="logo2" value="{$logoinfo.1.logo_path}">
+<input type="hidden" id="logo2" value="<?php echo ($logoinfo["1"]["logo_path"]); ?>">
 	<div class="f_left"></div>
 	<div class="f_right">
 		<div class="fr_c1"></div>
@@ -406,7 +596,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 		<a href="/Public/images/104914z8lary1qv9vvv8fz.jpg" id="webim_link" target="_blank"><img id="webim_img" src="" style="width: 280px; height: 188px" /></a></dd>
 </dl>
 </div>
-<input type="hidden" id="logo3" value="{$logoinfo.2.logo_path}">
+<input type="hidden" id="logo3" value="<?php echo ($logoinfo["2"]["logo_path"]); ?>">
 <script type="text/javascript">
   var arr = new Array(); 
 var logo3=$("#logo3").val();
