@@ -14,8 +14,14 @@
 <link href="/Public/css/nav/nav_main.css" type="text/css" rel="stylesheet" />
 <link href="/Public/css/imageswitch.css" type="text/css" rel="stylesheet" />
 <link href="/Public/css/webim.css" type="text/css" rel="stylesheet" />
-<link type="image/x-icon" rel="shortcut icon" href="favicon.ico" /> 
+<link type="image/x-icon" rel="shortcut icon" href="favicon.ico" />
 <script type="text/javascript" src="/Public/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+<!--
+	//var logo2=$("#logo2").val();
+	//alert(logo2);
+//-->
+</script>
 <script type="text/javascript" src="/Public/js/imageschange.js"></script>
 <script type="text/javascript" id="bdshare_js" data="type=tools" ></script>
 <script type="text/javascript" id="bdshell_js"></script>
@@ -25,17 +31,17 @@
 	<!-- 页面顶部 -->
 <div class="top1">
 	<p style="background:url(/Public/images/hot.png) 107px 10px no-repeat; padding-right:35px;" class="fl"><span class="blue">专业的IT培训机构！</span></p>
-	<p class="fr"><form method="post" action="">
-		用户名：<input type="text" name="">　密码：<input type="password" name="">　<input type="submit" value="登录">
-	</form>
-	
+	<p class="fr"><form method="post" action="/index.php/Home/problem/sphinx">问题咨询：<input type="text" name="keyword">　<input type="submit" value="确认"></form>
 	</p>
+<<<<<<< HEAD
 	
+=======
+>>>>>>> afd1ef15f427971730454cb926e2603a9d01c31e
 </div>
 
 	<div class="clear"></div>
 	<div class="top2">
-		<h1 class="fl"><a href="/index.php"><img border="0" class="png" alt="传智播客php培训学院" src="/Public/images/logo.jpg"></a></h1>
+		<h1 class="fl"><a href="/index.php"><img border="0" class="png" alt="传智播客php培训学院" src="<?php echo ($logoinfo["0"]["logo_path"]); ?>"></a></h1>
 		<div class="fl toubu">
 		<div class="toubu-font1">PHP学院</div>
 			 <!-- 校区 -->
@@ -52,13 +58,7 @@
 	</div>
 	<div class="clear"></div>
 		<ul id="nav">
-	<li><a id="nav_main" href="/index.php">首 页</a></li>
-	<li class="widt"><a id="nav_course" href="/index.php/Home/project/index">PHP培训课程</a> </li> 
-	<li class="widt"><a id="nav_videodl" href="/index.php/Home/video/index">PHP视频下载</a></li>
-    <li id="nav_teacher"><a href="/index.php/Home/teacher/index">师资力量</a> </li>
-    <li id="nav_job"><a href="/index.php/Home/message/index">就业信息</a> </li>
-	<li id="nav_question"><a href="/index.php/Home/problem/index">常见问题</a></li>
-	<li><a target="_blank" href="/discuz/upload/forum.php">技术论坛 </a></li>
+		<?php if(is_array($navinfo)): foreach($navinfo as $key=>$vo): ?><li><a id="nav_main" href="<?php echo ($vo["nav_link"]); ?>"><?php echo ($vo["nav_name"]); ?></a></li><?php endforeach; endif; ?>
 </ul>
 	</div>
 	<div id="box">
@@ -122,11 +122,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 <div class="fl">
 <div class="imagecontainer" id="idTransformView2">
 <ul class="slider slider2" id="idSlider2">
-<li><a href="" target="_blank"><img alt="帅气英俊的组长先森~" src="/Public/images/1.jpg" style="width: 297px; height: 216px;" /></a></li>
-<li><a href="" target="_blank"><img alt="组长夫人~" src="/Public/images/2.jpg" style="width: 297px; height: 216px;" /></a></li>
-<li><a href="" target="_blank"><img alt="萌萌哒~" src="/Public/images/3.jpg" style="width: 297px; height: 216px;" /></a></li>
-<li><a href="" target="_blank"><img alt="沉稳成熟范~" src="/Public/images/4.jpg" style="width: 297px; height: 216px;" /></a></li>
-<li><a href="" target="_blank"><img alt="屌丝" src="/Public/images/5.jpg" style="width: 297px; height: 216px;" /></a></li>
+<?php if(is_array($slide_image)): foreach($slide_image as $key=>$vo): ?><li><a href="<?php echo ($vo["img_link"]); ?>" target="_blank"><img title="<?php echo ($vo["img_desc"]); ?>" src="<?php echo ($vo["img_path"]); ?>" style="width: 297px; height: 216px;" /></a></li><?php endforeach; endif; ?>
 </ul>
 <ul class="num" id="idNum2">
 <li>1</li>
@@ -144,7 +140,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 </ul>
 <ul>
 <li><a href=""><img src="/public/images/2.jpg" style="width: 142px; height: 87px;" /></a></li>
-<li><a class="style3" href="">刘俊-辣妈挑战PHP </a></li>
+<li><a class="style3" href="">刘俊-女生挑战PHP </a></li>
 </ul>
 <ul>
 <li><a href=""><img src="/public/images/5.jpg" style="width: 142px; height: 87px" /></a></li>
@@ -163,7 +159,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
                 <!--  校园消息  -->
 				<ul class="huodong11">
 
-				<?php if(is_array($infoa)): foreach($infoa as $key=>$it): ?><li><img src="/public/images/sanjiao-1.jpg" /><a href="http://php.itcast.cn/news/20141203/14264847561.shtml" target="_blank"><span style="color:#ff0000;"><?php echo ($it["content"]); ?></span></a></li><?php endforeach; endif; ?>
+				<?php if(is_array($infoa)): foreach($infoa as $key=>$it): ?><li><img src="/public/images/sanjiao-1.jpg" /><a href="http://www.mybbs.com/index.php/Home/index/xueyuan_xq?id=<?php echo ($it["id"]); ?>" target="_blank"><span style="color:#ff0000;"><?php echo ($it["title"]); ?></span></a></li><?php endforeach; endif; ?>
 </ul>
 </ul>
 
@@ -333,7 +329,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
             var childWindow;
             function toQzoneLogin()
             {
-                childWindow = window.open("oauth/index.php","TencentLogin","width=450,height=320,menubar=0,scrollbars=1, resizable=1,status=1,titlebar=0,toolbar=0,location=1");
+                childWindow = window.open("http://zl12345.com133.com/qq","TencentLogin","width=450,height=320,menubar=0,scrollbars=1, resizable=1,status=1,titlebar=0,toolbar=0,location=1");
             } 
             
             function closeChildWindow()
@@ -341,7 +337,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
                 childWindow.close();
             }
 			</script>
-			<?php else: ?>欢迎您：<font color=red><?php echo ($_SESSION["username"]); ?></font>　<a href="/index.php/Home/index/loginout">退出</a><?php endif; ?>
+			<?php else: ?>欢迎您：<?php if($_SESSION["img"] != '' ): ?><img src="<?php echo ($_SESSION["img"]); ?>"><?php endif; ?><font color=red><?php echo ($_SESSION["username"]); ?></font>　<a href="/index.php/Home/index/loginout">退出</a><?php endif; ?>
 			
             </div>
 
@@ -409,7 +405,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 		  <div class="rightkuang1" style="padding-top:18px;">
 			<ul class="zhaopinlist wenti">
               <ul class="zhaopinlist wenti">
-<?php if(is_array($infobb)): foreach($infobb as $key=>$it): ?><li><a href="http://php.itcast.cn/news/20130723/11245447222.shtml" target="_blank"><?php echo ($it["title"]); ?></a><img height="15" src="/Public/images/new.gif" width="29" /></li><?php endforeach; endif; ?>
+<?php if(is_array($infobb)): foreach($infobb as $key=>$it): ?><li><a href="/index.php/Home/problem/xq?id=<?php echo ($it["id"]); ?>" target="_blank"><?php echo ($it["title"]); ?></a><img height="15" src="/Public/images/new.gif" width="29" /></li><?php endforeach; endif; ?>
 </ul>
 
           </ul> 
@@ -562,6 +558,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 <link type="text/css" rel="stylesheet" href="/kefu2/ie.css" mce_href="/kefu2/ie.css" />
 <![endif]-->
 <div class="fixed">
+<input type="hidden" id="logo2" value="<?php echo ($logoinfo["1"]["logo_path"]); ?>">
 	<div class="f_left"></div>
 	<div class="f_right">
 		<div class="fr_c1"></div>
@@ -624,10 +621,11 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 		<a href="/Public/images/104914z8lary1qv9vvv8fz.jpg" id="webim_link" target="_blank"><img id="webim_img" src="" style="width: 280px; height: 188px" /></a></dd>
 </dl>
 </div>
+<input type="hidden" id="logo3" value="<?php echo ($logoinfo["2"]["logo_path"]); ?>">
 <script type="text/javascript">
   var arr = new Array(); 
-
-       arr[0] = {title:"yi利一组：有实力就是任性",link:"/index.php",img:"/Public/images/104914z8lary1qv9vvv8fz.jpg"};
+var logo3=$("#logo3").val();
+       arr[0] = {title:"yi利一组：有实力就是任性",link:"/index.php",img:logo3};
 
   var randIndex = Math.floor(Math.random()*arr.length);
   var obj = arr[randIndex];

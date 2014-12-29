@@ -108,6 +108,10 @@ class AdminController extends Controller {
 	//幻灯片修改操作数据库
 	function img_uppro(){
 		$db=M("slide_image");
+		//$data['img_id']=$_POST['img_id'];
+		//$data['img_title']=$_POST['img_title'];
+		//$data['img_link']=$_POST['img_link'];
+		//$data['img_desc']=$_POST['img_desc'];
 		$data=$db->create();
 		if(empty($_FILES['myfile']['name']))
 			$data['img_path']=$_POST['h_img_path'];
@@ -118,10 +122,15 @@ class AdminController extends Controller {
 			$upload->rootPath = './Public';
 			$upload->savePath = '/images/slide_image/';
 			$upload->saveName = 'time';
-			$data['logo_path']='/Public/images/slide_image/'.date('Y-m-d',time()).'/'.time().substr($_FILES['myfile']['name'],strrpos($_FILES['myfile']['name'],"."));
+			$data['img_path']='/Public/images/slide_image/'.date('Y-m-d',time()).'/'.time().substr($_FILES['myfile']['name'],strrpos($_FILES['myfile']['name'],"."));
+			//$data['path']='/Public/images/slide_image/'.date('Y-m-d',time()).'/'.$_FILES['myfile']['name'];
+			//echo $data['logo_path'];die;
 			$upload->upload();
 		}
-		if($db->save($data))
+		//echo "<pre>";
+		//print_r($data);
+		//die;
+		if($db->where("img_id=".$_POST['img_id'])->save($data))
 			$this->success('修改成功,正在跳转...','/admin.php/Home/admin/image',2);
 		else
 			$this->error('修改失败,正在跳转...','/admin.php/Home/admin/image',2);

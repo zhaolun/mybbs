@@ -14,8 +14,14 @@
 <link href="/Public/css/nav/nav_main.css" type="text/css" rel="stylesheet" />
 <link href="/Public/css/imageswitch.css" type="text/css" rel="stylesheet" />
 <link href="/Public/css/webim.css" type="text/css" rel="stylesheet" />
-<link type="image/x-icon" rel="shortcut icon" href="favicon.ico" /> 
+<link type="image/x-icon" rel="shortcut icon" href="favicon.ico" />
 <script type="text/javascript" src="/Public/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+<!--
+	//var logo2=$("#logo2").val();
+	//alert(logo2);
+//-->
+</script>
 <script type="text/javascript" src="/Public/js/imageschange.js"></script>
 <script type="text/javascript" id="bdshare_js" data="type=tools" ></script>
 <script type="text/javascript" id="bdshell_js"></script>
@@ -25,17 +31,17 @@
 	<!-- 页面顶部 -->
 <div class="top1">
 	<p style="background:url(/Public/images/hot.png) 107px 10px no-repeat; padding-right:35px;" class="fl"><span class="blue">专业的IT培训机构！</span></p>
-	<p class="fr"><form method="post" action="">
-		用户名：<input type="text" name="">　密码：<input type="password" name="">　<input type="submit" value="登录">
-	</form>
-	
+	<p class="fr"><form method="post" action="/index.php/Home/problem/sphinx">问题咨询：<input type="text" name="keyword">　<input type="submit" value="确认"></form>
 	</p>
+<<<<<<< HEAD
 	
+=======
+>>>>>>> afd1ef15f427971730454cb926e2603a9d01c31e
 </div>
 
 	<div class="clear"></div>
 	<div class="top2">
-		<h1 class="fl"><a href="/index.php"><img border="0" class="png" alt="传智播客php培训学院" src="/Public/images/logo.jpg"></a></h1>
+		<h1 class="fl"><a href="/index.php"><img border="0" class="png" alt="传智播客php培训学院" src="<?php echo ($logoinfo["0"]["logo_path"]); ?>"></a></h1>
 		<div class="fl toubu">
 		<div class="toubu-font1">PHP学院</div>
 			 <!-- 校区 -->
@@ -52,13 +58,7 @@
 	</div>
 	<div class="clear"></div>
 		<ul id="nav">
-	<li><a id="nav_main" href="/index.php">首 页</a></li>
-	<li class="widt"><a id="nav_course" href="/index.php/Home/project/index">PHP培训课程</a> </li> 
-	<li class="widt"><a id="nav_videodl" href="/index.php/Home/video/index">PHP视频下载</a></li>
-    <li id="nav_teacher"><a href="/index.php/Home/teacher/index">师资力量</a> </li>
-    <li id="nav_job"><a href="/index.php/Home/message/index">就业信息</a> </li>
-	<li id="nav_question"><a href="/index.php/Home/problem/index">常见问题</a></li>
-	<li><a target="_blank" href="/discuz/upload/forum.php">技术论坛 </a></li>
+		<?php if(is_array($navinfo)): foreach($navinfo as $key=>$vo): ?><li><a id="nav_main" href="<?php echo ($vo["nav_link"]); ?>"><?php echo ($vo["nav_name"]); ?></a></li><?php endforeach; endif; ?>
 </ul>
 	</div>
 	<div id="box">
@@ -119,12 +119,12 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
   <div id="left" class="fl" style="margin-top:8px;">
     <div class="infotop"><img src="/Public/images/infotop.gif"/></div>
     <div class="left_content1">
-<?php if(is_array($list)): foreach($list as $key=>$it): ?><div id="printarea">
-        <h1 class="infotitle"><?php echo ($it["title"]); ?></h1>
+      <div id="printarea">
+        <h1 class="infotitle"><?php echo ($list["title"]); ?></h1>
         <div class="editer">更新时间:2012年10月05日12时00分 来源:</div>
         <div class="infor">
          <span style="font-size:12px;"><span style="font-family: tahoma, geneva, sans-serif; "><span style="color: rgb(68, 68, 68); line-height: 21px; ">(</span><font style="word-wrap: break-word; color: rgb(68, 68, 68); font-size: 14px; line-height: 21px; ">转载请注明</font><span style="color: rgb(68, 68, 68); line-height: 21px; ">&nbsp;&nbsp;</span><font style="word-wrap: break-word; color: rgb(68, 68, 68); font-size: 14px; line-height: 21px; ">传智播客</font><span style="color: rgb(68, 68, 68); line-height: 21px; ">php</span><font style="word-wrap: break-word; color: rgb(68, 68, 68); font-size: 14px; line-height: 21px; ">学院</font><span style="color: rgb(68, 68, 68); line-height: 21px; ">-</span><font style="word-wrap: break-word; color: rgb(68, 68, 68); font-size: 14px; line-height: 21px; ">韩顺平</font><span style="color: rgb(68, 68, 68); line-height: 21px; ">&nbsp;&nbsp;</span><a href="http://php.itcast.cn/" style="word-wrap: break-word; color: rgb(51, 102, 153); font-family: Tahoma, Helvetica, SimSun, sans-serif; font-size: 14px; line-height: 21px; " target="_blank">http://php.itcast.cn</a><span style="color: rgb(68, 68, 68); line-height: 21px; ">&nbsp;)</span></span></span><br style="word-wrap: break-word; color: rgb(68, 68, 68); font-family: Tahoma, Helvetica, SimSun, sans-serif; font-size: 14px; line-height: 21px; " />
-		 <p align="left" style="margin: 0px; padding: 0px; text-indent: 2em; "><?php echo ($it["content"]); ?></p>
+		 <p align="left" style="margin: 0px; padding: 0px; text-indent: 2em; "><?php echo ($list["content"]); ?></p>
 
 <div align="left" style="word-wrap: break-word; color: rgb(68, 68, 68); font-family: Tahoma, Helvetica, SimSun, sans-serif; font-size: 14px; line-height: 21px; "><span style="font-size:12px;"><span style="font-family: tahoma, geneva, sans-serif; "><font style="word-wrap: break-word; ">温馨提示： 答案在&nbsp;</font><font color="blue" style="word-wrap: break-word; ">php.itcast.cn</font><font style="word-wrap: break-word; ">名师答疑。</font></span></span></div>
 
@@ -136,7 +136,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
        	  </div>
       <div class="next">
 	              下一篇：<a target="_blank" href="/index.php/home/index/detail/id/<?php echo ($it["id"]); ?>">传智播客PHP视频教程手册大全</a>
-      	  </div><?php endforeach; endif; ?>
+      	  </div>
 
       <div class="clear"></div>
       <div class="share">
@@ -245,6 +245,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 <link type="text/css" rel="stylesheet" href="/kefu2/ie.css" mce_href="/kefu2/ie.css" />
 <![endif]-->
 <div class="fixed">
+<input type="hidden" id="logo2" value="<?php echo ($logoinfo["1"]["logo_path"]); ?>">
 	<div class="f_left"></div>
 	<div class="f_right">
 		<div class="fr_c1"></div>
@@ -307,10 +308,11 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 		<a href="/Public/images/104914z8lary1qv9vvv8fz.jpg" id="webim_link" target="_blank"><img id="webim_img" src="" style="width: 280px; height: 188px" /></a></dd>
 </dl>
 </div>
+<input type="hidden" id="logo3" value="<?php echo ($logoinfo["2"]["logo_path"]); ?>">
 <script type="text/javascript">
   var arr = new Array(); 
-
-       arr[0] = {title:"yi利一组：有实力就是任性",link:"/index.php",img:"/Public/images/104914z8lary1qv9vvv8fz.jpg"};
+var logo3=$("#logo3").val();
+       arr[0] = {title:"yi利一组：有实力就是任性",link:"/index.php",img:logo3};
 
   var randIndex = Math.floor(Math.random()*arr.length);
   var obj = arr[randIndex];

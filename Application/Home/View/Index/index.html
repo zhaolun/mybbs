@@ -7,11 +7,9 @@
 <div class="fl">
 <div class="imagecontainer" id="idTransformView2">
 <ul class="slider slider2" id="idSlider2">
-<li><a href="" target="_blank"><img alt="帅气英俊的组长先森~" src="/Public/images/1.jpg" style="width: 297px; height: 216px;" /></a></li>
-<li><a href="" target="_blank"><img alt="组长夫人~" src="/Public/images/2.jpg" style="width: 297px; height: 216px;" /></a></li>
-<li><a href="" target="_blank"><img alt="萌萌哒~" src="/Public/images/3.jpg" style="width: 297px; height: 216px;" /></a></li>
-<li><a href="" target="_blank"><img alt="沉稳成熟范~" src="/Public/images/4.jpg" style="width: 297px; height: 216px;" /></a></li>
-<li><a href="" target="_blank"><img alt="屌丝" src="/Public/images/5.jpg" style="width: 297px; height: 216px;" /></a></li>
+<foreach name="slide_image" item="vo">
+<li><a href="{$vo.img_link}" target="_blank"><img title="{$vo.img_desc}" src="{$vo.img_path}" style="width: 297px; height: 216px;" /></a></li>
+</foreach>
 </ul>
 <ul class="num" id="idNum2">
 <li>1</li>
@@ -29,7 +27,7 @@
 </ul>
 <ul>
 <li><a href=""><img src="/public/images/2.jpg" style="width: 142px; height: 87px;" /></a></li>
-<li><a class="style3" href="">刘俊-辣妈挑战PHP </a></li>
+<li><a class="style3" href="">刘俊-女生挑战PHP </a></li>
 </ul>
 <ul>
 <li><a href=""><img src="/public/images/5.jpg" style="width: 142px; height: 87px" /></a></li>
@@ -49,7 +47,7 @@
 				<ul class="huodong11">
 
 				<foreach name='infoa' item='it'>
-<li><img src="/public/images/sanjiao-1.jpg" /><a href="http://php.itcast.cn/news/20141203/14264847561.shtml" target="_blank"><span style="color:#ff0000;">{$it.content}</span></a></li>
+<li><img src="/public/images/sanjiao-1.jpg" /><a href="http://www.mybbs.com/index.php/Home/index/xueyuan_xq?id={$it.id}" target="_blank"><span style="color:#ff0000;">{$it.title}</span></a></li>
 </foreach>
 </ul>
 </ul>
@@ -231,7 +229,7 @@
             var childWindow;
             function toQzoneLogin()
             {
-                childWindow = window.open("oauth/index.php","TencentLogin","width=450,height=320,menubar=0,scrollbars=1, resizable=1,status=1,titlebar=0,toolbar=0,location=1");
+                childWindow = window.open("http://zl12345.com133.com/qq","TencentLogin","width=450,height=320,menubar=0,scrollbars=1, resizable=1,status=1,titlebar=0,toolbar=0,location=1");
             } 
             
             function closeChildWindow()
@@ -239,7 +237,7 @@
                 childWindow.close();
             }
 			</script>
-			<else />欢迎您：<font color=red>{$_SESSION.username}</font>　<a href="/index.php/Home/index/loginout">退出</a></if>
+			<else />欢迎您：<if condition="$_SESSION.img neq '' "><img src="{$_SESSION.img}"></if><font color=red>{$_SESSION.username}</font>　<a href="/index.php/Home/index/loginout">退出</a></if>
 			
             </div>
 
@@ -310,7 +308,7 @@
 			<ul class="zhaopinlist wenti">
               <ul class="zhaopinlist wenti">
 <foreach name='infobb' item='it'>
-<li><a href="http://php.itcast.cn/news/20130723/11245447222.shtml" target="_blank">{$it.title}</a><img height="15" src="/Public/images/new.gif" width="29" /></li>
+<li><a href="/index.php/Home/problem/xq?id={$it.id}" target="_blank">{$it.title}</a><img height="15" src="/Public/images/new.gif" width="29" /></li>
 </foreach>
 </ul>
 

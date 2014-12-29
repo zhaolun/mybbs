@@ -4,7 +4,16 @@ use Think\Controller;
 use \Think\Verify;
 class IndexController extends Controller {
     public function index(){
+		/*$ip=['14','19'];
+		$pwd=['940614','root'];
+		$dk=['3306','3307'];
+		$key=rand(0,1);
+		$yip=$ip[$key];
+		$ypwd=$pwd[$key];
+		$ydk=$dk[$key];
+		echo $yip."@#@".$ypwd."@#@".$ydk;die;*/
         $user = M('family');//获取表总数据
+		//学院
         $usera = M('xueyuan');
 		$userb = M('banji');
 		$userc = M('zhaolun');
@@ -13,14 +22,17 @@ class IndexController extends Controller {
 		$useraa = M('zhaopin');
 		$userbb = M('question');
 		$data = $user->select();
-		$data1 = $usera->select();
+        
+		$data1 = $usera->order("id desc")->select();
 		$data2 = $userb->select();
 		$data3 = $userc->select();
 		$data4 = $userd->select();
 		$data6 = $userf->select();
 		$data7 = $useraa->select();
 		$data8 = $userbb->where('status=0')->select();
-		//print_r($data);die;
+		$db=M("slide_image");
+		$this->slide_image=$db->select();
+		//print_r($this->slide_image);die;
 		$this->assign('info',$data);
 		$this->assign('infoa',$data1);
 		$this->assign('infob',$data2);
@@ -31,7 +43,23 @@ class IndexController extends Controller {
 		$this->assign('infobb',$data8);
         $this->display('index');
     }
+	public function xueyuan_xq(){
+		$id = $_GET['id'];
+		$usera = M('xueyuan');
+		$data = $usera->where("id=$id")->select();
+		//print_r($data);die;
+        $this->assign('info',$data);
+		$this->display('xueyuan_xq');
+	}
 	public function login(){
+		if(!empty($_GET['nickname'])&&!empty($_GET['img'])){
+			//echo $_GET['img'];die;
+			$img=str_replace("@","/",$_GET['img']);
+			//echo $img;die;
+			session("img",$img);
+			session("username",$_GET['nickname']);
+			$this->success("使用qq登陆成功","/index.php");
+		}
         $Verify = new Verify();
 		if($Verify->check($_POST['yzm'])){
 			$name=addslashes($_POST['username']);
@@ -72,7 +100,7 @@ class IndexController extends Controller {
 
 	function loginout(){
 		//session("telyzm",rand(1000,9999));
-		echo $_SESSION['telyzm'];die;
+		//echo $_SESSION['telyzm'];die;
 		session_destroy();
 		$this->success("退出成功","/index.php");
 	}

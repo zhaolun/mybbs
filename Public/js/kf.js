@@ -1,5 +1,5 @@
 var online= new Array();
-var urlroot = "http://benboba.com/bbsGit/bbsGit/Public/images/";
+var urlroot = "http://www.mybbs.com/Public/images/";
 var tOut = -1;
 var drag = false;
 var g_safeNode = null;
@@ -9,7 +9,8 @@ var ws;
 var companyname;
 var welcomeword;
 var type;
-
+//var logo2=document.getElementById("logo2").value;
+//alert(logo2);
 if(kfguin)
 {
   rightDivHtml = '<div id="rightDiv" style="position:absolute; top:160px; right:1px;">';
@@ -126,7 +127,7 @@ function kf_getPopupDivHtml(kfguin,reference,companyname,welcomeword)
     temp += '<div style="clear: both;">';
     temp += '<a onclick="kf_hidekfpopup();return false;" href="#" style="float:left;background-image: url('+urlroot+'btn_5.gif);margin:223px 0 0 28px;_margin-top:206px;margin-left:65px;padding: 0px;border:0px;height: 50px;width:132px;display:inline; "></a>';
 <!--    temp += '<a onclick="kf_openChatWindow(1)" href="#" style="float:left;background-image: url('+urlroot+'btn_3.gif);margin:155px 0 0 8px;_margin-top:140px;padding: 0px;border:0px;height: 55px;width:161px;"></a>';-->
-	temp += '<a href="http://cnrdn.com/iP66" onclick="kf_openChatWindow();return false;" target="_blank" style="float:left;background-image: url('+urlroot+'btn_4.gif);margin: 223px 0 0 10px;_margin-top:206px;margin-left:110px;padding: 0px;border:0px;height: 50px;width:161px;display:inline;"></a></div>';
+	temp += '<a href="tencent://message/?uin=3117413729&amp;Site=service1&amp;Menu=yes" target="_self" style="float:left;background-image: url('+urlroot+'btn_4.gif);margin: 223px 0 0 10px;_margin-top:206px;margin-left:110px;padding: 0px;border:0px;height: 50px;width:161px;display:inline;"></a></div>';
     temp += '</div><div style="float: left;height: 430px;width: 8px;background-image: url('+urlroot+'bg_2.jpg);background-position: right;"></div>';
 
     return temp;
