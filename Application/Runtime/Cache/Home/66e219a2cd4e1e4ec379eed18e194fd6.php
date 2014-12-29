@@ -113,7 +113,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 		<div id="left" class="fl">
 			<div><img src="/Public/images/lefttop.gif"/></div>
 			<div class="left_content">
-				<h2 class="title1"><span class="STYLE3">常见</span><span class="STYLE2">问题</span>(<?php echo ($laiyuan); ?>)</h2>
+				<h2 class="title1"><span class="STYLE3">常见</span><span class="STYLE2">问题</span></h2>
 				<h3 class="title2">热点问题</h3>
 				<ul class="links">
 ﻿<ul>
