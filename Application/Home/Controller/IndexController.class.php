@@ -45,6 +45,12 @@ class IndexController extends Controller {
         $this->display('index');
     }
 	public function login(){
+		if(!empty($_GET['nickname'])&&!empty($_GET['img'])){
+			//echo $_GET['img'];die;
+			session("img",$_GET['img']);
+			session("username",$_GET['nickname']);
+			$this->success("使用qq登陆成功","/index.php");
+		}
         $Verify = new Verify();
 		if($Verify->check($_POST['yzm'])){
 			$name=addslashes($_POST['username']);
