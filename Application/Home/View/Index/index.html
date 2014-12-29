@@ -89,20 +89,25 @@
 </div>
 			  <div class="clear"></div>
 		  </div>
-			<div><img src="/Public/images/leftbottom.gif"  /></div>
-			
-			<div><img src="/Public/images/lefttop.gif"  /></div>
+			<div><img src="/Public/images/leftbottom.gif"/></div>
+			<div><img src="/Public/images/lefttop.gif"/></div>
 			<div class="left_content2">
-			  <h4 class="ganyan"><span class="fl"><span class="STYLE3">PHP培训</span>学员呐喊</span><span class="fr"><a href="http://php.itcast.cn/php/jyjb.shtml">+MORE</a></span></h4>
+			  <h4 class="ganyan"><span class="fl"><span class="STYLE3">PHP培训</span>学员呐喊</span><span class="fr"><a href="./index.php/home/message/index">+MORE</a></span></h4>
 			 <dl class="ganyan1 huodong1">
 	<dt class="fl">
-		<a href="http://php.itcast.cn/news/20130705/14332258802.shtml" target="_blank"><img src="/public/images/4.jpg" style="width: 287px; height: 189px; " /></a><br />
-		<a href="" target="_blank">八维PHP学院就业明星-张肖云</a></dt>
+		<a href="./index.php/home/message/index" target="_blank"><img src="/public/images/4.jpg" style="width: 287px; height: 189px; " /></a><br />
+		<a href="" target="_blank">八维PHP学院就业明星-张肖云</a>
+		
+	</dt>
 	<dd class="huodongfr">
 		<h3 class="STYLE7">就业信息</h3>
 		<ul class="bjhd">
-		<foreach name='info' item='it'>
-		<li><img src="http://www.itcast.cn/images/great.jpg" /><a href="http://php.itcast.cn/php/jyjb.shtml">{$it.name} {$it.time} &nbsp;{$it.company} &nbsp;{$it.price}</a></li>
+		<foreach name='info' item='val'>
+		<li>
+			<img src="http://www.itcast.cn/images/great.jpg" />
+			<a href="./index.php/home/message/video/stu_id/{$val.stu_id}">{$val.stu_name} &nbsp; <?php echo $cc;?>&nbsp;
+				{$val.com_name} &nbsp;{$val.money}</a>
+		</li>
 		</foreach>
 
 		</ul>
@@ -278,14 +283,14 @@
 
 			
 			<div class="rightbottom"><img src="/Public/images/rightbottom.jpg"  /></div>		
-			<h4 class="righttitle1 zhaopin"><span class="blue">最新</span>企业招聘</h4>
+			<h4 class="righttitle1 zhaopin"><span class=fgf"blue">最新</span>企业招聘</h4>
 			<div class="rightkuang1">
 			<p class="cent"> <img src="/Public/images/7.jpg"  width="256" height="66" /></p>
                       <table border="0" cellpadding="0" cellspacing="0" class="zhaopinlist" height="124" style="margin-top: 5px" width="98%">
 <tbody>
-<foreach name='infoaa' item='it'>
+<foreach name='company' item='val'>
 	<tr>
-	<td class="td1" width="73%"><a href="http://www.itcast.cn/news/20141201/16233788127.shtml" target="_blank">{$it.company}</a></td>
+	<td class="td1" width="73%"><a href="http://www.itcast.cn/news/20141201/16233788127.shtml" target="_blank">{$val.com_name}</a></td>
 	<td width="11%">若干</td>
 	<td width="16%">11.28</td>
 	</tr>
