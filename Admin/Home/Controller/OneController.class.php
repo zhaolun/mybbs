@@ -23,6 +23,7 @@ class OneController extends Controller {
         $b=trim($pv,",");
 		//echo $b;
 		//die;
+		$this->day=date("Y.m.d",time());
 		$this->assign('json',$a);
 		$this->assign('pv',$b);
         $this->display('list');

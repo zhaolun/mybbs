@@ -1,5 +1,6 @@
 <?php if(!defined('IN_DISCUZ')) exit('Access Denied'); hookscriptoutput('viewthread');
 0
+<<<<<<< HEAD
 || checktplrefresh('./template/default/forum/viewthread.htm', './template/default/forum/viewthread_node.htm', 1419937161, 'diy', './data/template/1_diy_forum_viewthread.tpl.php', './template/default', 'forum/viewthread')
 || checktplrefresh('./template/default/forum/viewthread.htm', './template/default/forum/viewthread_fastpost.htm', 1419937161, 'diy', './data/template/1_diy_forum_viewthread.tpl.php', './template/default', 'forum/viewthread')
 || checktplrefresh('./template/default/forum/viewthread.htm', './template/default/forum/viewthread_node_body.htm', 1419937161, 'diy', './data/template/1_diy_forum_viewthread.tpl.php', './template/default', 'forum/viewthread')
@@ -239,6 +240,247 @@
 </tr>
 </table><?php $postcount = 0;?><?php if(is_array($postlist)) foreach($postlist as $post) { if($rushreply && $_GET['checkrush'] && $post['rewardfloor'] != 1) { continue;?><?php } ?>
 <div id="post_<?php echo $post['pid'];?>" <?php if($_G['blockedpids'] && $post['inblacklist']) { ?>style="display:none;"<?php } ?>><?php $needhiddenreply = ($hiddenreplies && $_G['uid'] != $post['authorid'] && $_G['uid'] != $_G['forum_thread']['authorid'] && !$post['first'] && !$_G['forum']['ismoderator']);
+=======
+|| checktplrefresh('./template/default/forum/viewthread.htm', './template/default/forum/viewthread_node.htm', 1419936022, 'diy', './data/template/1_diy_forum_viewthread.tpl.php', './template/default', 'forum/viewthread')
+|| checktplrefresh('./template/default/forum/viewthread.htm', './template/default/forum/viewthread_fastpost.htm', 1419936022, 'diy', './data/template/1_diy_forum_viewthread.tpl.php', './template/default', 'forum/viewthread')
+|| checktplrefresh('./template/default/forum/viewthread.htm', './template/default/forum/viewthread_node_body.htm', 1419936022, 'diy', './data/template/1_diy_forum_viewthread.tpl.php', './template/default', 'forum/viewthread')
+|| checktplrefresh('./template/default/forum/viewthread.htm', './template/default/common/seditor.htm', 1419936022, 'diy', './data/template/1_diy_forum_viewthread.tpl.php', './template/default', 'forum/viewthread')
+|| checktplrefresh('./template/default/forum/viewthread.htm', './template/default/forum/seccheck_post.htm', 1419936022, 'diy', './data/template/1_diy_forum_viewthread.tpl.php', './template/default', 'forum/viewthread')
+|| checktplrefresh('./template/default/forum/viewthread.htm', './template/default/common/upload.htm', 1419936022, 'diy', './data/template/1_diy_forum_viewthread.tpl.php', './template/default', 'forum/viewthread')
+|| checktplrefresh('./template/default/forum/viewthread.htm', './template/default/common/seccheck.htm', 1419936022, 'diy', './data/template/1_diy_forum_viewthread.tpl.php', './template/default', 'forum/viewthread')
+;?><?php include template('common/header'); ?><script type="text/javascript">var fid = parseInt('<?php echo $_G['fid'];?>'), tid = parseInt('<?php echo $_G['tid'];?>');</script>
+<?php if($modmenu['thread'] || $modmenu['post']) { ?>
+<script src="<?php echo $_G['setting']['jspath'];?>forum_moderate.js?<?php echo VERHASH;?>" type="text/javascript"></script>
+<?php } ?>
+
+<script src="<?php echo $_G['setting']['jspath'];?>forum_viewthread.js?<?php echo VERHASH;?>" type="text/javascript"></script>
+<script type="text/javascript">zoomstatus = parseInt(<?php echo $_G['setting']['zoomstatus'];?>);var imagemaxwidth = '<?php echo $_G['setting']['imagemaxwidth'];?>';var aimgcount = new Array();</script>
+
+<style id="diy_style" type="text/css"></style>
+<!--[diy=diynavtop]--><div id="diynavtop" class="area"></div><!--[/diy]-->
+<div id="pt" class="bm cl">
+<div class="z">
+<a href="./" class="nvhm" title="首页"><?php echo $_G['setting']['bbname'];?></a><em>&raquo;</em><a href="forum.php"><?php echo $_G['setting']['navs']['2']['navname'];?></a><?php echo $navigation;?> <em>&rsaquo;</em> <a href="forum.php?mod=viewthread&amp;tid=<?php echo $_G['tid'];?>"><?php echo $_G['forum_thread']['short_subject'];?></a>
+</div>
+</div>
+
+<?php if(!empty($_G['setting']['pluginhooks']['viewthread_top'])) echo $_G['setting']['pluginhooks']['viewthread_top'];?><?php echo adshow("text/wp a_t");?><style id="diy_style" type="text/css"></style>
+<div class="wp">
+<!--[diy=diy1]--><div id="diy1" class="area"></div><!--[/diy]-->
+</div>
+
+<div id="ct" class="wp cl">
+<div id="pgt" class="pgs mbm cl <?php if($modmenu['thread']) { ?>pbm bbs<?php } ?>">
+<div class="pgt"><?php echo $multipage;?></div>
+<span class="y pgb"<?php if($_G['setting']['visitedforums']) { ?> id="visitedforums" onmouseover="$('visitedforums').id = 'visitedforumstmp';this.id = 'visitedforums';showMenu({'ctrlid':this.id,'pos':'34'})"<?php } ?>><a href="<?php echo $upnavlink;?>">返回列表</a></span>
+<?php if($_G['forum']['threadsorts'] && $_G['forum']['threadsorts']['templatelist']) { if(is_array($_G['forum']['threadsorts']['types'])) foreach($_G['forum']['threadsorts']['types'] as $id => $name) { ?><button id="newspecial" class="pn pnc" onclick="location.href='forum.php?mod=post&action=newthread&fid=<?php echo $_G['fid'];?>&extra=<?php echo $extra;?>&sortid=<?php echo $id;?>'"><strong>我要<?php echo $name;?></strong></button>
+<?php } } else { if(!$_G['forum_thread']['is_archived']) { ?><a id="newspecial" onmouseover="$('newspecial').id = 'newspecialtmp';this.id = 'newspecial';showMenu({'ctrlid':this.id})"<?php if(!$_G['forum']['allowspecialonly'] && empty($_G['forum']['picstyle']) && !$_G['forum']['threadsorts']['required']) { ?> onclick="showWindow('newthread', 'forum.php?mod=post&action=newthread&fid=<?php echo $_G['fid'];?>')"<?php } else { ?> onclick="location.href='forum.php?mod=post&action=newthread&fid=<?php echo $_G['fid'];?>';return false;"<?php } ?> href="javascript:;" title="发新帖"><img src="<?php echo IMGDIR;?>/pn_post.png" alt="发新帖" /></a><?php } } if($allowpostreply && !$_G['forum_thread']['archiveid']) { ?>
+<a id="post_reply" onclick="showWindow('reply', 'forum.php?mod=post&action=reply&fid=<?php echo $_G['fid'];?>&tid=<?php echo $_G['tid'];?>')" href="javascript:;" title="回复"><img src="<?php echo IMGDIR;?>/pn_reply.png" alt="回复" /></a>
+<?php } ?>
+<?php if(!empty($_G['setting']['pluginhooks']['viewthread_postbutton_top'])) echo $_G['setting']['pluginhooks']['viewthread_postbutton_top'];?>
+</div>
+
+<?php if($_G['group']['allowpost'] && ($_G['group']['allowposttrade'] || $_G['group']['allowpostpoll'] || $_G['group']['allowpostreward'] || $_G['group']['allowpostactivity'] || $_G['group']['allowpostdebate'] || $_G['setting']['threadplugins'] || $_G['forum']['threadsorts'])) { ?>
+<ul class="p_pop" id="newspecial_menu" style="display: none">
+<?php if(!$_G['forum']['allowspecialonly']) { ?><li><a href="forum.php?mod=post&amp;action=newthread&amp;fid=<?php echo $_G['fid'];?>">发表帖子</a></li><?php } if($_G['forum']['threadsorts'] && !$_G['forum']['allowspecialonly']) { if(is_array($_G['forum']['threadsorts']['types'])) foreach($_G['forum']['threadsorts']['types'] as $id => $threadsorts) { if($_G['forum']['threadsorts']['show'][$id]) { ?>
+<li class="popupmenu_option"><a href="forum.php?mod=post&amp;action=newthread&amp;fid=<?php echo $_G['fid'];?>&amp;sortid=<?php echo $id;?>"><?php echo $threadsorts;?></a></li>
+<?php } } } if($_G['group']['allowpostpoll']) { ?><li class="poll"><a href="forum.php?mod=post&amp;action=newthread&amp;fid=<?php echo $_G['fid'];?>&amp;special=1">发起投票</a></li><?php } if($_G['group']['allowpostreward']) { ?><li class="reward"><a href="forum.php?mod=post&amp;action=newthread&amp;fid=<?php echo $_G['fid'];?>&amp;special=3">发布悬赏</a></li><?php } if($_G['group']['allowpostdebate']) { ?><li class="debate"><a href="forum.php?mod=post&amp;action=newthread&amp;fid=<?php echo $_G['fid'];?>&amp;special=5">发起辩论</a></li><?php } if($_G['group']['allowpostactivity']) { ?><li class="activity"><a href="forum.php?mod=post&amp;action=newthread&amp;fid=<?php echo $_G['fid'];?>&amp;special=4">发起活动</a></li><?php } if($_G['group']['allowposttrade']) { ?><li class="trade"><a href="forum.php?mod=post&amp;action=newthread&amp;fid=<?php echo $_G['fid'];?>&amp;special=2">出售商品</a></li><?php } if($_G['setting']['threadplugins']) { if(is_array($_G['forum']['threadplugin'])) foreach($_G['forum']['threadplugin'] as $tpid) { if(array_key_exists($tpid, $_G['setting']['threadplugins']) && @in_array($tpid, $_G['group']['allowthreadplugin'])) { ?>
+<li class="popupmenu_option"<?php if($_G['setting']['threadplugins'][$tpid]['icon']) { ?> style="background-image:url(source/plugin/<?php echo $tpid;?>/<?php echo $_G['setting']['threadplugins'][$tpid]['icon'];?>)"<?php } ?>><a href="forum.php?mod=post&amp;action=newthread&amp;fid=<?php echo $_G['fid'];?>&amp;specialextra=<?php echo $tpid;?>"><?php echo $_G['setting']['threadplugins'][$tpid]['name'];?></a></li>
+<?php } } } ?>
+</ul>
+<?php } if($modmenu['post']) { ?>
+<div id="mdly" class="fwinmask" style="display:none;z-index:350;">
+<table cellspacing="0" cellpadding="0" class="fwin">
+<tr>
+<td class="t_l"></td>
+<td class="t_c"></td>
+<td class="t_r"></td>
+</tr>
+<tr>
+<td class="m_l">&nbsp;&nbsp;</td>
+<td class="m_c">
+<div class="f_c">
+<div class="c">
+<h3>选中&nbsp;<strong id="mdct" class="xi1"></strong>&nbsp;篇: </h3>
+<?php if($_G['forum']['ismoderator']) { if($_G['group']['allowwarnpost']) { ?><a href="javascript:;" onclick="modaction('warn')">警告</a><span class="pipe">|</span><?php } if($_G['group']['allowbanpost']) { ?><a href="javascript:;" onclick="modaction('banpost')">屏蔽</a><span class="pipe">|</span><?php } if($_G['group']['allowdelpost'] && !$rushreply) { ?><a href="javascript:;" onclick="modaction('delpost')">删除</a><span class="pipe">|</span><?php } } if($_G['forum']['ismoderator'] && $_G['group']['allowstickreply'] || $_G['forum_thread']['authorid'] == $_G['uid']) { ?><a href="javascript:;" onclick="modaction('stickreply')">置顶</a><span class="pipe">|</span><?php } if($_G['forum_thread']['pushedaid'] && $allowpostarticle) { ?><a href="javascript:;" onclick="modaction('pushplus', '', 'aid=<?php echo $_G['forum_thread']['pushedaid'];?>', 'portal.php?mod=portalcp&ac=article&op=pushplus')">文章连载</a><span class="pipe">|</span><?php } ?>
+</div>
+</div>
+</td>
+<td class="m_r"></td>
+</tr>
+<tr>
+<td class="b_l"></td>
+<td class="b_c"></td>
+<td class="b_r"></td>
+</tr>
+</table>
+</div>
+<?php } if($modmenu['thread']) { ?>
+<div id="modmenu" class="xi2 pbm"><?php $modopt=0;?><?php if($_G['forum']['ismoderator']) { if($_G['group']['allowdelpost']) { $modopt++?><a href="javascript:;" onclick="modthreads(3, 'delete')">删除主题</a><span class="pipe">|</span><?php } if($_G['group']['allowbumpthread'] && !$_G['forum_thread']['is_archived']) { $modopt++?><a href="javascript:;" onclick="modthreads(3, 'bump')">升降</a><span class="pipe">|</span><?php } if($_G['group']['allowstickthread'] && ($_G['forum_thread']['displayorder'] <= 3 || $_G['adminid'] == 1) && !$_G['forum_thread']['is_archived']) { $modopt++?><a href="javascript:;" onclick="modthreads(1, 'stick')">置顶</a><span class="pipe">|</span><?php } if($_G['group']['allowlivethread'] && !$_G['forum_thread']['is_archived']) { $modopt++?><a href="javascript:;" onclick="modaction('live')">直播</a><span class="pipe">|</span><?php } if($_G['group']['allowhighlightthread'] && !$_G['forum_thread']['is_archived']) { $modopt++?><a href="javascript:;" onclick="modthreads(1, 'highlight')">高亮</a><span class="pipe">|</span><?php } if($_G['group']['allowdigestthread'] && !$_G['forum_thread']['is_archived']) { $modopt++?><a href="javascript:;" onclick="modthreads(1, 'digest')">精华</a><span class="pipe">|</span><?php } if($_G['group']['allowrecommendthread'] && !empty($_G['forum']['modrecommend']['open']) && $_G['forum']['modrecommend']['sort'] != 1 && !$_G['forum_thread']['is_archived']) { $modopt++?><a href="javascript:;" onclick="modthreads(1, 'recommend')">推荐</a><span class="pipe">|</span><?php } if($_G['group']['allowstampthread'] && !$_G['forum_thread']['is_archived']) { $modopt++?><a href="javascript:;" onclick="modaction('stamp')">图章</a><span class="pipe">|</span><?php } if($_G['group']['allowstamplist'] && !$_G['forum_thread']['is_archived']) { $modopt++?><a href="javascript:;" onclick="modaction('stamplist')">图标</a><span class="pipe">|</span><?php } if($_G['group']['allowclosethread'] && !$_G['forum_thread']['is_archived'] && $_G['forum']['status'] != 3) { $modopt++?><a href="javascript:;" onclick="modthreads(4)"><?php if(!$_G['forum_thread']['closed']) { ?>关闭<?php } else { ?>打开<?php } ?></a><span class="pipe">|</span><?php } if($_G['group']['allowmovethread'] && !$_G['forum_thread']['is_archived'] && $_G['forum']['status'] != 3) { $modopt++?><a href="javascript:;" onclick="modthreads(2, 'move')">移动</a><span class="pipe">|</span><?php } if($_G['group']['allowedittypethread'] && !$_G['forum_thread']['is_archived']) { $modopt++?><a href="javascript:;" onclick="modthreads(2, 'type')">分类</a><span class="pipe">|</span><?php } if(!$_G['forum_thread']['special'] && !$_G['forum_thread']['is_archived']) { if($_G['group']['allowcopythread'] && $_G['forum']['status'] != 3) { $modopt++?><a href="javascript:;" onclick="modaction('copy')">复制</a><span class="pipe">|</span><?php } if($_G['group']['allowmergethread'] && $_G['forum']['status'] != 3) { $modopt++?><a href="javascript:;" onclick="modaction('merge')">合并</a><span class="pipe">|</span><?php } if($_G['group']['allowrefund'] && $_G['forum_thread']['price'] > 0) { $modopt++?><a href="javascript:;" onclick="modaction('refund')">撤销付费</a><span class="pipe">|</span><?php } } if($_G['group']['allowsplitthread'] && !$_G['forum_thread']['is_archived'] && $_G['forum']['status'] != 3) { $modopt++?><a href="javascript:;" onclick="modaction('split')">分割</a><span class="pipe">|</span><?php } if($_G['group']['allowrepairthread'] && !$_G['forum_thread']['is_archived']) { $modopt++?><a href="javascript:;" onclick="modaction('repair')">修复</a><span class="pipe">|</span><?php } if($_G['forum_thread']['is_archived'] && $_G['adminid'] == 1) { $modopt++?><a href="javascript:;" onclick="modaction('restore', '', 'archiveid=<?php echo $_G['forum_thread']['archiveid'];?>')">取消存档</a><span class="pipe">|</span><?php } if($_G['forum_firstpid']) { if($_G['group']['allowwarnpost']) { $modopt++?><a href="javascript:;" onclick="modaction('warn', '<?php echo $_G['forum_firstpid'];?>')">警告</a><span class="pipe">|</span><?php } if($_G['group']['allowbanpost']) { $modopt++?><a href="javascript:;" onclick="modaction('banpost', '<?php echo $_G['forum_firstpid'];?>')">屏蔽</a><span class="pipe">|</span><?php } } if($_G['group']['allowremovereward'] && $_G['forum_thread']['special'] == 3 && !$_G['forum_thread']['is_archived']) { $modopt++?><a href="javascript:;" onclick="modaction('removereward')">移除悬赏</a><span class="pipe">|</span><?php } if($_G['forum']['status'] == 3 && in_array($_G['adminid'], array('1','2')) && $_G['forum_thread']['closed'] < 1) { ?><a href="javascript:;" onclick="modthreads(5, 'recommend_group');return false;">推到版块</a><span class="pipe">|</span><?php } if($_G['group']['allowmanagetag']) { ?><a href="javascript:;" onclick="showWindow('mods', 'forum.php?mod=tag&op=manage&tid=<?php echo $_G['tid'];?>', 'get', 0)">标签</a><span class="pipe">|</span><?php } if($_G['group']['alloweditusertag']) { ?><a href="javascript:;" onclick="showWindow('usertag', 'forum.php?mod=misc&action=usertag&tid=<?php echo $_G['tid'];?>', 'get', 0)">用户标签</a><span class="pipe">|</span><?php } } if($allowpusharticle && $allowpostarticle) { $modopt++?><a href="portal.php?mod=portalcp&amp;ac=article&amp;from_idtype=tid&amp;from_id=<?php echo $_G['tid'];?>">生成文章</a><span class="pipe">|</span><?php } ?>
+<?php if(!empty($_G['setting']['pluginhooks']['viewthread_modoption'])) echo $_G['setting']['pluginhooks']['viewthread_modoption'];?>
+</div>
+<?php } ?>
+
+<?php if(!empty($_G['setting']['pluginhooks']['viewthread_beginline'])) echo $_G['setting']['pluginhooks']['viewthread_beginline'];?>
+
+<div id="postlist" class="pl bm">
+<table cellspacing="0" cellpadding="0">
+<tr>
+<?php if(!$close_leftinfo) { ?>
+<td class="pls ptn pbn">
+<?php if($_G['page'] > 1) { ?>
+<div id="tath" class="cl">
+<?php if($_G['forum_thread']['authorid'] && $_G['forum_thread']['author']) { ?>
+<a href="home.php?mod=space&amp;uid=<?php echo $_G['forum_thread']['authorid'];?>" title="<?php echo $_G['forum_thread']['author'];?>"><?php echo avatar($_G[forum_thread][authorid],small);?></a>
+楼主: <a href="home.php?mod=space&amp;uid=<?php echo $_G['forum_thread']['authorid'];?>" title="<?php echo $_G['forum_thread']['author'];?>"><?php echo $_G['forum_thread']['author'];?></a>
+<?php } else { ?>
+楼主:
+<?php if($_G['forum']['ismoderator']) { ?>
+<a href="home.php?mod=space&amp;uid=<?php echo $_G['forum_thread']['authorid'];?>">匿名</a>
+<?php } else { ?>
+匿名
+<?php } } ?>
+</div>
+<?php } else { ?>
+<div class="hm ptn">
+<span class="xg1">查看:</span> <span class="xi1"><?php echo $_G['forum_thread']['views'];?></span><span class="pipe">|</span><span class="xg1">回复:</span> <span class="xi1"><?php echo $_G['forum_thread']['allreplies'];?></span>
+</div>
+<?php } ?>
+</td>
+<?php } ?>
+<td class="plc ptm pbn vwthd">
+<?php if(!IS_ROBOT) { ?>
+<div class="y">
+<?php if($post['invisible'] == 0) { ?><a href="forum.php?mod=viewthread&amp;action=printable&amp;tid=<?php echo $_G['tid'];?>" title="打印" target="_blank"><img src="<?php echo IMGDIR;?>/print.png" alt="打印" class="vm" /></a>
+<?php } ?>
+<a href="forum.php?mod=redirect&amp;goto=nextoldset&amp;tid=<?php echo $_G['tid'];?>" title="上一主题"><img src="<?php echo IMGDIR;?>/thread-prev.png" alt="上一主题" class="vm" /></a>
+<a href="forum.php?mod=redirect&amp;goto=nextnewset&amp;tid=<?php echo $_G['tid'];?>" title="下一主题"><img src="<?php echo IMGDIR;?>/thread-next.png" alt="下一主题" class="vm" /></a>
+</div>
+<?php } if($_G['setting']['close_leftinfo_userctrl']) { ?>
+<span class="xg1 side_btn">
+<?php if(!$close_leftinfo) { ?>
+<a onclick="setcookie('close_leftinfo', 1);location.reload();" title="收起左侧" class="btn_s_close" href="javascript:;"><img src="<?php echo IMGDIR;?>/control_l.png" alt="收起左侧" class="vm" /></a>
+<?php } else { ?>
+<a onclick="setcookie('close_leftinfo', 2);location.reload();" title="开启左侧" class="btn_s_open" href="javascript:;"><img src="<?php echo IMGDIR;?>/control_r.png" alt="开启左侧" class="vm" /></a>
+<?php } ?>
+</span>
+<?php } ?>
+<h1 class="ts">
+<?php if($_G['forum_thread']['typeid'] && $_G['forum']['threadtypes']['types'][$_G['forum_thread']['typeid']]) { if(!IS_ROBOT && ($_G['forum']['threadtypes']['listable'] || $_G['forum']['status'] == 3)) { ?>
+<a href="forum.php?mod=forumdisplay&amp;fid=<?php echo $_G['fid'];?>&amp;filter=typeid&amp;typeid=<?php echo $_G['forum_thread']['typeid'];?>">[<?php echo $_G['forum']['threadtypes']['types'][$_G['forum_thread']['typeid']];?>]</a>
+<?php } else { ?>
+[<?php echo $_G['forum']['threadtypes']['types'][$_G['forum_thread']['typeid']];?>]
+<?php } } if($threadsorts && $_G['forum_thread']['sortid']) { ?>
+<a href="forum.php?mod=forumdisplay&amp;fid=<?php echo $_G['fid'];?>&amp;filter=sortid&amp;sortid=<?php echo $_G['forum_thread']['sortid'];?>">[<?php echo $_G['forum']['threadsorts']['types'][$_G['forum_thread']['sortid']];?>]</a>
+<?php } ?>
+<span id="thread_subject"><?php echo $_G['forum_thread']['subject'];?></span>
+</h1>
+<span class="xg1">
+<?php if($_G['forum_thread']['displayorder'] == -2) { ?>(审核中)
+<?php } elseif($_G['forum_thread']['displayorder'] == -3) { ?>(已忽略)
+<?php } elseif($_G['forum_thread']['displayorder'] == -4) { ?>(草稿)
+<?php if($post['first'] && $post['invisible'] == -3) { ?>
+<a class="psave" href="forum.php?mod=misc&amp;action=pubsave&amp;tid=<?php echo $_G['tid'];?>">发表</a>
+<?php } } if($_G['setting']['threadhidethreshold'] && $_G['forum_thread']['hidden'] >= $_G['setting']['threadhidethreshold']) { ?>						
+<?php if($_G['forum_thread']['authorid'] == $_G['uid']) { ?><a class="psave" id="hiderecover" title="点击恢复主题隐藏状态" href="forum.php?mod=misc&amp;action=hiderecover&amp;tid=<?php echo $_G['tid'];?>&amp;formhash=<?php echo FORMHASH;?>" onclick="showWindow(this.id, this.href, 'get', 0);">隐藏</a><?php } else { ?>(隐藏)<?php } ?>
+&nbsp;
+<?php } if($_G['forum_thread']['recommendlevel']) { ?>
+&nbsp;<img src="<?php echo IMGDIR;?>/recommend_<?php echo $_G['forum_thread']['recommendlevel'];?>.gif" alt="" title="评价指数 <?php echo $_G['forum_thread']['recommends'];?>" />
+<?php } if($_G['forum_thread']['heatlevel']) { ?>
+&nbsp;<img src="<?php echo IMGDIR;?>/hot_<?php echo $_G['forum_thread']['heatlevel'];?>.gif" alt="" title="热度: <?php echo $_G['forum_thread']['heats'];?>" />
+<?php } if($_G['forum_thread']['closed'] == 1) { ?>
+&nbsp;<img src="<?php echo IMGDIR;?>/locked.gif" alt="关闭" title="关闭" class="vm" />
+<?php } ?>
+<a href="forum.php?mod=viewthread&amp;tid=<?php echo $_G['tid'];?><?php echo $fromuid;?>" onclick="return copyThreadUrl(this, '<?php echo $_G['setting']['bbname'];?>')" <?php if($fromuid) { ?>title="您的朋友访问此链接后，您将获得相应的积分奖励"<?php } ?>>[复制链接]</a>
+</span>
+<?php if(!empty($_G['setting']['pluginhooks']['viewthread_title_extra'])) echo $_G['setting']['pluginhooks']['viewthread_title_extra'];?>
+</td>
+</tr>
+</table>
+<?php if($_G['forum_thread']['replycredit'] > 0 || $rushreply) { ?>
+<div id="pl_top">
+<table cellspacing="0" cellpadding="0">
+<tr class="ad">
+<td class="pls"></td>
+<td class="plc"></td>
+</tr>
+<?php if($_G['forum_thread']['replycredit'] > 0 ) { ?>
+<tr>
+<?php if(!$close_leftinfo) { ?>
+<td class="pls vm ptm">
+<?php } else { ?>
+<td class="pls ptm pbm xi1" colspan="2">
+<?php } ?>
+<img src="<?php echo IMGDIR;?>/thread_prize_s.png" class="hm" alt="回帖奖励" />
+<strong><?php echo $_G['forum_thread']['replycredit'];?> <?php echo $_G['setting']['extcredits'][$_G['forum_thread']['replycredit_rule']['extcreditstype']]['unit'];?><?php echo $_G['setting']['extcredits'][$_G['forum_thread']['replycredit_rule']['extcreditstype']]['title'];?></strong>
+<?php if(!$close_leftinfo) { ?>
+</td>
+<td class="plc ptm pbm xi1">
+<?php } else { ?>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<?php } ?>
+回复本帖可获得 <?php echo $_G['forum_thread']['replycredit_rule']['extcredits'];?> <?php echo $_G['setting']['extcredits'][$_G['forum_thread']['replycredit_rule']['extcreditstype']]['unit'];?><?php echo $_G['setting']['extcredits'][$_G['forum_thread']['replycredit_rule']['extcreditstype']]['title'];?>奖励! 每人限 <?php echo $_G['forum_thread']['replycredit_rule']['membertimes'];?> 次<?php if($_G['forum_thread']['replycredit_rule']['random'] > 0) { ?><span class="xg1">(中奖概率 <?php echo $_G['forum_thread']['replycredit_rule']['random'];?>%)</span><?php } ?>
+</td>
+</tr>
+<?php if($rushreply) { ?>
+<tr class="ad">
+<td class="pls"></td>
+<td class="plc"></td>
+</tr>
+<?php } } if($rushreply) { ?>
+<tr>
+<?php if(!$close_leftinfo) { ?>
+<td class="pls vm ptm">
+<img src="<?php echo IMGDIR;?>/rushreply_s.png" class="vm" alt="抢楼" />
+<strong>抢楼</strong>
+</td>
+<td class="plc ptm pbm xi1">
+<?php } else { ?>
+<td class="plc ptm pbm xi1" colspan="2">
+<img src="<?php echo IMGDIR;?>/rushreply_s.png" class="vm" alt="抢楼" />
+<?php } if($rushresult['rewardfloor']) { ?>
+<span class="y">
+<?php if($_G['uid'] == $_G['thread']['authorid'] || $_G['forum']['ismoderator']) { ?><a href="javascript:;" onclick="showWindow('membernum', 'forum.php?mod=ajax&action=get_rushreply_membernum&tid=<?php echo $_G['tid'];?>')" class="y pn xi2"><span>统计参与人数</span></a><?php } if(!$_GET['checkrush']) { ?>
+<a href="forum.php?mod=viewthread&amp;tid=<?php echo $post['tid'];?>&amp;checkrush=1" rel="nofollow" class="y pn xi2"><span>查看抢中楼层</span></a>
+<?php } ?>
+</span>
+<?php } if($rushresult['creditlimit'] == '') { ?>
+本帖为抢楼帖，欢迎抢楼!&nbsp;
+<?php } else { ?>
+本帖为抢楼帖，<?php echo $rushresult['creditlimit_title'];?>大于<?php echo $rushresult['creditlimit'];?>可以抢楼 &nbsp;
+<?php } if($rushresult['timer']) { ?>
+<span id="rushtimer_<?php echo $thread['tid'];?>"> 【还有 <span id="rushtimer_body_<?php echo $thread['tid'];?>"></span> <script language="javascript">settimer(<?php echo $rushresult['timer'];?>, 'rushtimer_body_<?php echo $thread['tid'];?>');</script><?php if($rushresult['timertype'] == 'start') { ?> 开始 <?php } else { ?> 结束 <?php } ?> 】</span>
+<?php } if($rushresult['stopfloor']) { ?>
+截止楼层：<?php echo $rushresult['stopfloor'];?>&nbsp;
+<?php } if($rushresult['rewardfloor']) { ?>
+奖励楼层: <?php echo $rushresult['rewardfloor'];?>&nbsp;
+<?php } if($rushresult['rewardfloor'] && $_GET['checkrush']) { ?>
+<p class="ptn">
+<?php if($countrushpost) { ?>[<strong><?php echo $countrushpost;?></strong>]个楼层已中奖<?php } else { ?> 暂时还没有楼层中奖 <?php } ?>&nbsp;&nbsp;
+<a href="forum.php?mod=viewthread&amp;tid=<?php echo $_G['tid'];?>" class="xi2">返回抢楼帖</a>
+</p>
+<?php } ?>
+</td>
+</tr>
+<?php } ?>
+</table>
+</div>
+<?php } ?>
+
+<?php if(!empty($_G['setting']['pluginhooks']['viewthread_title_row'])) echo $_G['setting']['pluginhooks']['viewthread_title_row'];?>
+
+<table cellspacing="0" cellpadding="0" class="ad">
+<tr>
+<td class="pls">
+<?php if(!$close_leftinfo) { ?>
+</td>
+<td class="plc">
+<?php } ?>
+</td>
+</tr>
+</table><?php $postcount = 0;?><?php if(is_array($postlist)) foreach($postlist as $post) { if($rushreply && $_GET['checkrush'] && $post['rewardfloor'] != 1) { continue;?><?php } ?>
+<div id="post_<?php echo $post['pid'];?>" <?php if($_G['blockedpids'] && $post['inblacklist']) { ?>style="display:none;"<?php } ?>><?php $needhiddenreply = ($hiddenreplies && $_G['uid'] != $post['authorid'] && $_G['uid'] != $_G['forum_thread']['authorid'] && !$post['first'] && !$_G['forum']['ismoderator']);
+>>>>>>> 7ee5c7a92cec2b56561f937553fc1649b89dbcce
 $postshowavatars = !($_G['setting']['bannedmessages'] & 2 && ($post['memberstatus'] == '-1' || ($post['authorid'] && !$post['username']) || ($post['groupid'] == 4 || $post['groupid'] == 5) || ($post['status'] & 1)));?><?php
 $authorverifys = <<<EOF
 
