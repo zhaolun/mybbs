@@ -1,0 +1,12 @@
+<div id="box">
+	<div id="left" class="fl">
+		<div></div>
+		<div class="left_content">
+			<h2 class="title1"><span class="STYLE3">企业招聘</span></h2>
+			<ul class="com_links">
+			<foreach name="info" item="vo">
+             <li><a href="/index.php/Home/index/company/id/{$vo.id}" target="_blank">{$vo.company}</a>  　　{$vo.time|substr=0,10}</li>
+			 </foreach>
+			</ul>
+			<div class="clear"></div>
+			<div class="pages"></div>

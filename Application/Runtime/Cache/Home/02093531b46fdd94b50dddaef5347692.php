@@ -25,38 +25,6 @@
 <script type="text/javascript" src="/Public/js/imageschange.js"></script>
 <script type="text/javascript" id="bdshare_js" data="type=tools" ></script>
 <script type="text/javascript" id="bdshell_js"></script>
-<script type="text/javascript">
-<!--
-	function register(){
-		$("#myform").attr("action","/index.php/Home/index/register");
-		$("#button").attr("value","注册");
-		$("#span").html("<span style='color:blue;' onclick='login()'>登录</span>");
-		$("#tele").show();
-	}
-	function forget(){
-		$("#forget").toggle();
-		$("#fname").focus();
-	}
-	function login(){
-		$("#myform").attr("action","/index.php/Home/index/login");
-		$("#button").attr("value","登录");
-		$("#tele").hide();
-		$("#span").html("<span style='color:blue;' onclick='register()'>注册</span>");
-	}
-	function telyzm(){
-		var name=$("#fname").val();
-		var tel=$("#ftel").val();
-		$.ajax({
-			type: "GET",
-			url: "/index.php/Home/index/send_message",
-			data: "name="+name+"&tel="+tel,
-			success: function(msg){
-				alert(msg);
-			}
-		}); 
-	}
-//-->
-</script>
 </head>
 <body>
 <div id="header">
@@ -142,48 +110,209 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 	<a class="jiathis_counter_style"></a>
 </div>
 <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>-->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "/www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="/www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=7" />
-<meta name="keywords" content="java培训,net培训,PHP培训,网页培训,平面培训" />
-<title>PHP学院新闻 -传智播客</title>
-<link href="/style/style.css" type="text/css" rel="stylesheet" />
-</head>
 
-<body>	
-<div id="header"> 
-  <!-- 页面顶部 -->
+	<div class="clear"></div>
+	<div id="lxwm">
 
-  <div class="clear"></div>
-  <div class="top2">
-
- 
-<div id="box">
-		<div id="left" class="fl">
-			<div class="left_content">
-				<h2 class="title1"><span class="STYLE3">PHP学院新闻</span></h2>
-				
-				<ul class="com_links">
-	  <!-- 列表 -->
-	  <?php if(is_array($info)): foreach($info as $key=>$it): ?><li><a href="http://www.mybbs.com/index.php/Home/index/xueyuan_xq?id=<?php echo ($it["id"]); ?>" target="_blank"><?php echo ($it["title"]); ?></a><?php echo ($it["time"]); ?></li><?php endforeach; endif; ?>
-            <!-- 列表 -->
-			    </ul>
-				<div class="clear"></div>
-				
-		  		
-
-
-<div class="clear"></div>
-		  </div>
-			<div><img src="/Public/images/leftbottom.gif"/></div>
-				<div></div>
-		</div>		
+	  <p><img src="/Public/images/lxwm-top.jpg" /></p>
+	  <div class="lxwm-wenben">
+	  <!-- 内容主体  -->
+<p class="kxdl-font1"><?php echo ($info["0"]["pei_class"]); ?>招生简章</p>
+<div class="kcnr-wenben">
+<?php echo ($info["0"]["bbs_zhangcheng"]); ?>
+</div>
+<div class="kcnr-title">培训目标</div>
+<p style="margin-top: 10px; text-indent: 2em"><?php echo ($info["0"]["mubiao"]); ?></p>
+<div class="kcnr-title">招生对象</div>
+<p style="margin-top: 10px; text-indent: 2em"><?php echo ($info["0"]["bbs_duixiang"]); ?></p>
+<p style="text-indent: 2em; margin-bottom: 10px"></p>
+<div class="kcnr-title">课程特色</div>
+<p class="kcnr-title1"><?php echo ($info["0"]["bbs_tese"]); ?></p>
+<div class="kcnr-title">课程安排</div>
+<p class="kcnr-font1"><?php echo ($info["0"]["pei_class"]); ?></p>
+<style type="text/css">
+.kcnr-table{ line-height:20px;}
+	.kcnr-table li{list-style-image:url(http://www.itcast.cn/files/image/201207/20120718144154342.jpg); margin-left:15px;;</style>
+<table border="0" cellpadding="0" cellspacing="0" class="kcnr-table" width="99%">
+<tbody>
+	<tr>
+	<td>课程名称</td>
+	<td>阶段课程</td>
+	<td width="40%">课程内容</td>
+	<td width="23%">学习目标</td>
+	</tr>
+	<?php if(is_array($info)): foreach($info as $key=>$vo): ?><tr>
+	<td width="17%"><strong><?php echo ($vo["bbs_name"]); ?></strong></td>
+	<td width="20%"><p style="text-indent: 2em"><?php echo ($vo["bbs_jieduan"]); ?></p></td>
+	<td><?php echo ($vo["neirong"]); ?></td>
+	<td><?php echo ($vo["mubiao"]); ?></td>
+	</tr><?php endforeach; endif; ?>
 	
+</tbody>
+</table>
+<div class="kcnr-title">培训方式</div>
+<table border="0" cellpadding="0" cellspacing="0" class="kcnr-table" width="99%">
+<tbody>
+	<tr>
+	<td width="19%"><img src="http://www.itcast.cn/Public/images/kcnr-tu5.jpg" /></td>
+	<td width="81%">
+	<p style="text-indent: 2em; color: #ff6600; font-size: 14px; font-weight: bold">培训时间：1个月</p>
+	<p style="text-indent: 2em; color: #ff6600; font-size: 14px; font-weight: bold">培训方式：全日制脱产，每周5天上课，早9：00－晚 8：00</p>
+	</td>
+	</tr>
+</tbody>
+</table>
+<br />
+
+<!-- 内容主体  -->
+	  </div>
+	  <p><img src="/Public/images/lxwm-bottom.jpg" /></p>
+	</div>		
+	<div class="clear"></div>
+<style>
+.bm{width:100%; background:#FFF; font-family:Microsoft Yahei; padding:50px 0;}
+.bm h2{height:70px; background:url('http://www.itcast.cn/xa/Public/images/h_bg.png') no-repeat center top; text-indent:-9999px;}
+.bm .bm_con{width:938px; margin:0 auto; overflow:hidden;}
+.bm .bm_con .left{width:720px; float:left;}
+.bm .bm_con .left ul li{float:left; width:360px; margin-bottom:20px; overflow:hidden; height:40px;}	
+.bm .bm_con .left ul li .l_text{float:left; font-size:18px; color:#666; padding-right:10px; line-height:40px;}
+.bm .bm_con .left ul li input{float:left; width:211px; padding:10px 0; border:1px solid #c9c9c9; border-radius:3px; padding-left:10px; box-shadow:inset 1px 2px 3px #f1f1f1; margin-top:2px;}	
+.bm .bm_con .right{width:218px; float:left;}
+.bm .bm_con .right input{display:block; width:216px; height:36px; color:#fff; font-size:16px; background:#4492dc; border:none; outline:none; border-radius:3px; font-family:Microsoft Yahei;}
+.bm .bm_con .right input:hover{ background:#5aa3e9;}
+.bm .bm_con .right p{font-size:12px; color:#666; margin-top:25px;}	
+</style>
+<script type="text/javascript" src="http://www.itcast.cn/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+function check(){
+	var realname=$("#realname");
+	var phone=$("#phone");
+	var email=$("#email");
+	var qq=$("#qq");
+	var address=$("#address");
+	
+	var realnamereg=/^[\u4E00-\u9FA5]+$/;
+	var phonereg=/^[1][3-9][0-9]{9}$/;
+	var qqreg=/^[1-9]\d{4,}$/;
+	var emailreg=/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+	var shuoreg=/(http[s]?|ftp):\/\/[^\/\.]+?\..+\w$/i;
+
+	
+	if(!realnamereg.test(realname.val())){
+		realname.focus().val('');
+		alert('请输入正确的中文名称！');
+		return false;
+	}else if(!phonereg.test(phone.val())){
+		phone.focus().val('');
+		alert('请输入正确的手机！');
+		return false;
+	}else if(address.val() == 0){
+		alert('请选择所在省份！');
+		return false;
+	}else if( typeof qq.val() != 'undefined' && !qqreg.test(qq.val()) ){
+		qq.focus().val('');
+		alert('请输入正确的QQ号码！');
+		return false;
+	}else if( typeof email.val() != 'undefined' && !emailreg.test(email.val())){
+		email.focus().val('');
+		alert('请输入正确的邮箱地址！');
+		return false;
+	}
+	else{
+	$.post("http://open.itcast.cn/Api/Subject/publicapply.html", {
+	realname: realname.val() , 
+	phone: phone.val(),
+	address: address.val(),
+	email: email.val(),
+	qq: qq.val(),
+	cid: 6,
+	t:new Date().getTime()
+	});
+	
+	alert('申请成功！\r\n咨询客服人员将会主动联系您，请耐心等待！');
+	realname.val('');
+	phone.val('');
+	address.val('');
+	email.val('');
+	qq.val('');
+	$("input[name='source']:checked").removeAttr("checked");
+	}
+}
+</script>
+<div class="bm">
+	<h2>每期开班座位有限,预报名可优先享有占座特权哦！</h2>
+	<div class="bm_con">
+	<form id="addform" action="/Api/Subject/networkapply.html" method="post">
+		<div class="left">
+			<ul>
+				<li>
+					<span class="l_text"><s style="color:#e00000; font-size:15px; text-decoration:none; line-height:40px; padding-right:5px;">*</s>真实姓名</span>
+					<input type="text" placeholder="我们期待更了解您" name="realname" id="realname" />
+				</li>
+				<li>
+					<span class="l_text"><s style="color:#e00000; font-size:15px; text-decoration:none; line-height:40px; padding-right:5px;">*</s>联系手机</span>
+					<input type="text" placeholder="我们和您一样讨厌骚扰电话" name="phone" id="phone" />
+				</li>
+				<li>
+					<span class="l_text"><s style="color:#e00000; font-size:15px; text-decoration:none; padding-right:5px;">*</s>所在地区</span>
+					<select name="address" id="address" style="width:222px; height:36px; display:block;" ><option value="0">选择省份</option><option value="北京">北京市</option><option value="天津">天津市</option><option value="上海">上海市</option><option value="重庆">重庆市</option><option value="河北">河北省</option><option value="山西">山西省</option><option value="内蒙古">内蒙古</option><option value="辽宁">辽宁省</option><option value="吉林">吉林省</option><option value="黑龙江">黑龙江</option><option value="江苏">江苏省</option><option value="浙江">浙江省</option><option value="安徽">安徽省</option><option value="福建">福建省</option><option value="江西">江西省</option><option value="山东">山东省</option><option value="河南">河南省</option><option value="湖北">湖北省</option><option value="湖南">湖南省</option><option value="广东">广东省</option><option value="广西">广西省</option><option value="海南">海南省</option><option value="四川">四川省</option><option value="贵州">贵州省</option><option value="云南">云南省</option><option value="西藏">西藏省</option><option value="陕西">陕西省</option><option value="甘肃">甘肃省</option><option value="青海">青海省</option><option value="宁夏">宁夏省</option><option value="新疆">新疆省</option><option value="香港">香港</option><option value="澳门">澳门</option><option value="台湾">台湾省</option></select>
+				</li>
+				<li>
+					<span class="l_text"><s style="color:#e00000; font-size:15px; text-decoration:none; line-height:40px; padding-right:11px;">*</s>QQ号码</span>
+					<input type="text" placeholder="我们将第一时间与您联系" name="qq" id="qq"/>
+				</li>
+			</ul>
+			<br />
+		</div>
+		<div class="right">
+			<input type="button" value="现在预报名"  onClick="check()" />
+			<p>温馨提示：请保持手机畅通，咨询老师将为您提供专属的一对一报名服务。</p>
+		</div>
+	</form>
+	</div>
+</div>
+
+	</div>		
 	<div class="clear"></div>
 
+<!-- 友情链接 -->
+<div class="content">
+  <div class="friendlink_con">
+<div class="friendlink">
+<div class="friendlink_style01"><img width="37" height="87" src="/Public/images/youqin.jpg"></div>
+<div class="friendlink_style03">
+ <ul>
+<li><a href="http://www.sietoo.com" target="_blank">深圳网站建设</a></li>
+<li><a href="http://www.ibeifeng.com" target="_blank">北风网</a></li>
+<li><a href="http://www.wangxiaowang.com/" target="_blank">网络教育</a></li>
+<li><a href="http://bbs.17liuxue.com" target="_blank">澳洲留学DIY</a></li>
+<li><a href="http://qd.jiajiao400.com" target="_blank">青岛家教网</a></li>
+<li><a href="http://www.028jq.com" target="_blank">英国留学</a></li>
+<li><a href="http://www.shisu-edu.com/" target="_blank">上外留学预科</a></li>
+<li><a href="http://lyg.ygjj.com/" target="_blank">连云港家教</a></li>
+<li><a href="http://www.wen5u.com" target="_blank">论文格式</a></li>
+<li><a href="http://edu.tianhenet.com.cn" target="_blank">CFO培训</a></li>
+<li><a href="http://baike.zidiantong.com" target="_blank">百科知识</a></li>
+<li><a href="http://www.xjc100.com" target="_blank">宁波电脑培训</a></li>
+<li><a href="http://jl.htexam.com" target="_blank">吉林省公务员考试网</a></li>
+<li><a href="http://bbs.xunkoo.com" target="_blank">大学生网</a></li>
+<li><a href="http://www.0755zixuekaoshi.com" target="_blank">深圳自学考试网</a></li>
+<li><a href="http://www.youzhikew.com" target="_blank">优质课网</a></li>
+<li><a href="http://www.youkao.com" target="_blank">优考网</a></li>
+<li><a href="http://www.fshuayue.com/" target="_blank">成人高考网</a></li>
+<li><a href="http://sz.gaofen.com" target="_blank">深圳教育网</a></li>
+<li><a href="http://cjcx.xygmed.com" target="_blank">执业医师成绩查询</a></li>
+<li><a href="http://zs.k8008.com" target="_blank">科技招商</a></li>
+<li><a href="http://www.jsnxs.com" target="_blank">江苏信用社招聘考试</a></li>
+<li><a href="http://www.peixunhu.com" target="_blank">武汉培训网</a></li>
+<li><a href="http://net.thea.cn" target="_blank">在线课程</a></li>
+<li><a href="http://zz.jiajiao400.com/" target="_blank">郑州家教</a></li>
+<li><a href="http://keji.3158.cn " target="_blank">网络教育</a></li>
+<li><a href="http://aia.lixinedu.com.cn" target="_blank">AIA培训</a></li>
+</ul>
 
+</div>
+</div>
 </div>
 </div>
 <div id="footer">

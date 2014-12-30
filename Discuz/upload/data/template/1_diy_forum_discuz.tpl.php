@@ -21,11 +21,15 @@
 
 <?php if(empty($gid)) { ?><?php echo adshow("text/wp a_t");?><?php } ?>
 
+<<<<<<< HEAD
 <style id="diy_style" type="text/css">#frameiS4UsZ { border:4px !important;}</style>
+=======
+<style id="diy_style" type="text/css"></style>
+>>>>>>> 9820e9875048c8be901aee69c268c519ca421160
 
 <?php if(empty($gid)) { ?>
 <div class="wp">
-<!--[diy=diy1]--><div id="diy1" class="area"><div id="frameiS4UsZ" class=" frame move-span cl frame-1"><div class="title frame-title"><span class="titletext" style="color:rgb(204, 0, 0);">~~~曾经的我们，不代表现在的我们~yi利一组，低头要有勇气，抬头要有底气。yi利一组，崛起崛起！</span></div><div id="frameiS4UsZ_left" class="column frame-1-c"><div id="frameiS4UsZ_left_temp" class="move-span temp"></div></div></div></div><!--[/diy]-->
+<!--[diy=diy1]--><div id="diy1" class="area"></div><!--[/diy]-->
 </div>
 <?php } ?>
 

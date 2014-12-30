@@ -1,8 +1,14 @@
 <?php if(!defined('IN_DISCUZ')) exit('Access Denied'); 
 0
+<<<<<<< HEAD
 || checktplrefresh('./template/default/common/header.htm', './template/default/common/header_common.htm', 1419908470, '1', './data/template/1_1_common_header_forum_post.tpl.php', './template/default', 'common/header_forum_post')
 || checktplrefresh('./template/default/common/header.htm', './template/default/common/header_qmenu.htm', 1419908470, '1', './data/template/1_1_common_header_forum_post.tpl.php', './template/default', 'common/header_forum_post')
 || checktplrefresh('./template/default/common/header.htm', './template/default/common/pubsearchform.htm', 1419908470, '1', './data/template/1_1_common_header_forum_post.tpl.php', './template/default', 'common/header_forum_post')
+=======
+|| checktplrefresh('./template/default/common/header.htm', './template/default/common/header_common.htm', 1419909244, '1', './data/template/1_1_common_header_forum_post.tpl.php', './template/default', 'common/header_forum_post')
+|| checktplrefresh('./template/default/common/header.htm', './template/default/common/header_qmenu.htm', 1419909244, '1', './data/template/1_1_common_header_forum_post.tpl.php', './template/default', 'common/header_forum_post')
+|| checktplrefresh('./template/default/common/header.htm', './template/default/common/pubsearchform.htm', 1419909244, '1', './data/template/1_1_common_header_forum_post.tpl.php', './template/default', 'common/header_forum_post')
+>>>>>>> 9820e9875048c8be901aee69c268c519ca421160
 ;?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -248,6 +254,7 @@ initSearchmenu('scbar', '<?php echo $searchparams['url'];?>');
 
 <?php if(!empty($_G['setting']['pluginhooks']['global_header'])) echo $_G['setting']['pluginhooks']['global_header'];?>
 <?php } ?>
+<<<<<<< HEAD
 <base href="http://bbs.itcast.cn/" /><link rel="stylesheet" type="text/css" href="data/cache/style_8_common.css?AjV" />
 <style type="text/css">
 .vk_nv_sub { width:978px; margin:0 auto; margin-top:0px; margin-bottom:10px; padding:10px 0px; background:#fff; border:1px solid #ccc; border-top:none;/* box-shadow:1px 1px 3px #ccc; */}
@@ -314,3 +321,7 @@ initSearchmenu('scbar', '<?php echo $searchparams['url'];?>');
  
 </div>
   </div>
+=======
+
+<div id="wp" class="wp">
+>>>>>>> 9820e9875048c8be901aee69c268c519ca421160

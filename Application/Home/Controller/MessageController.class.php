@@ -24,6 +24,14 @@ class MessageController extends Controller {
     }
 
 	function ganyanlist(){
+		$db=M("ganyan");
+		$this->info=$db->select();
+		$this->display();
+	}
+
+	function ganyandetail(){
+		$db=M("ganyan");
+		$this->info=$db->where("id=".$_GET['id'])->find();
 		$this->display();
 	}
 	

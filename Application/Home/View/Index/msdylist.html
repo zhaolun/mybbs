@@ -1,0 +1,13 @@
+<div id="box">
+	<div id="left" class="fl">
+		<div><img src="/Public/images/lefttop.gif"/></div>
+		<div class="left_content">
+		<h2 class="title1"><span class="STYLE3">PHP名师答疑</span></h2>
+		<div class="picnews"></div>
+			<ul class="com_links">
+			<foreach name="info" item="vo">
+				<li><a href="/index.php/home/index/detail/id/{$vo.id}" target="_blank">{$vo.title}</a>　　  {$vo.time|substr=0,10}</li>
+				</foreach>
+			</ul>
+		<div class="clear"></div>
+		<div class="pages"></div>

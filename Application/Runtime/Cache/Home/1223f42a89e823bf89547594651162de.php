@@ -207,6 +207,9 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
       <!--<a href="http://icd.itcast.cn"><img border="0" src="http://www.itcast.cn/images/ad/icdad.gif" width="620" /></a>--> 
       <!-- 广告区 -->
       </div>
+<<<<<<< HEAD
+
+=======
     </div>
     <div><img src="/Public/images/leftbottom.gif"/></div>
   </div>
@@ -235,6 +238,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
   </div>
 </div>
 <div class="clear"></div>
+>>>>>>> 751ff120ab5d4497f1a8b7bbd7f4b8179e659147
 
 <div class="clear"></div>
 		  </div>

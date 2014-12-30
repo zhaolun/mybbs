@@ -1,10 +1,20 @@
+<<<<<<< HEAD:Discuz/upload/data/template/3_diy_portal_index.tpl.php
+<<<<<<< HEAD
+<?php if(!defined('IN_DISCUZ')) exit('Access Denied'); hookscriptoutput('index');?><?php include template('common/header'); ?><style id="diy_style" type="text/css"></style>
+<div class="wp">
+<!--[diy=diy1]--><div id="diy1" class="area"></div><!--[/diy]-->
+</div><?php include template('common/footer'); ?>
+=======
+<?php if(!defined('IN_DISCUZ')) exit('Access Denied'); hookscriptoutput('index');
+=======
 <?php if(!defined('IN_DISCUZ')) exit('Access Denied'); hookscriptoutput('lev');
+>>>>>>> 191a3ddc0c26b6d1efeef8e3552b2bc36f668163:Discuz/upload/data/template/1_levpop_lev.tpl.php
 0
-|| checktplrefresh('./source/plugin/levpop/template/lev.htm', './template/default/common/header.htm', 1419907403, 'levpop', './data/template/1_levpop_lev.tpl.php', './source/plugin/levpop/template', 'lev')
-|| checktplrefresh('./source/plugin/levpop/template/lev.htm', './template/default/common/footer.htm', 1419907403, 'levpop', './data/template/1_levpop_lev.tpl.php', './source/plugin/levpop/template', 'lev')
-|| checktplrefresh('./source/plugin/levpop/template/lev.htm', './template/default/common/header_common.htm', 1419907403, 'levpop', './data/template/1_levpop_lev.tpl.php', './source/plugin/levpop/template', 'lev')
-|| checktplrefresh('./source/plugin/levpop/template/lev.htm', './template/default/common/header_qmenu.htm', 1419907403, 'levpop', './data/template/1_levpop_lev.tpl.php', './source/plugin/levpop/template', 'lev')
-|| checktplrefresh('./source/plugin/levpop/template/lev.htm', './template/default/common/pubsearchform.htm', 1419907403, 'levpop', './data/template/1_levpop_lev.tpl.php', './source/plugin/levpop/template', 'lev')
+|| checktplrefresh('./source/plugin/levpop/template/lev.htm', './template/default/common/header.htm', 1419907188, 'levpop', './data/template/1_levpop_lev.tpl.php', './source/plugin/levpop/template', 'lev')
+|| checktplrefresh('./source/plugin/levpop/template/lev.htm', './template/default/common/footer.htm', 1419907188, 'levpop', './data/template/1_levpop_lev.tpl.php', './source/plugin/levpop/template', 'lev')
+|| checktplrefresh('./source/plugin/levpop/template/lev.htm', './template/default/common/header_common.htm', 1419907188, 'levpop', './data/template/1_levpop_lev.tpl.php', './source/plugin/levpop/template', 'lev')
+|| checktplrefresh('./source/plugin/levpop/template/lev.htm', './template/default/common/header_qmenu.htm', 1419907188, 'levpop', './data/template/1_levpop_lev.tpl.php', './source/plugin/levpop/template', 'lev')
+|| checktplrefresh('./source/plugin/levpop/template/lev.htm', './template/default/common/pubsearchform.htm', 1419907188, 'levpop', './data/template/1_levpop_lev.tpl.php', './source/plugin/levpop/template', 'lev')
 ;?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -31,21 +41,32 @@
 <?php if($_G['setting']['groupstatus']) { ?><meta name="msapplication-task" content="name=<?php echo $_G['setting']['navs']['3']['navname'];?>;action-uri=<?php echo !empty($_G['setting']['domain']['app']['group']) ? 'http://'.$_G['setting']['domain']['app']['group'] : $_G['siteurl'].'group.php'; ?>;icon-uri=<?php echo $_G['siteurl'];?><?php echo IMGDIR;?>/group.ico" /><?php } if(helper_access::check_module('feed')) { ?><meta name="msapplication-task" content="name=<?php echo $_G['setting']['navs']['4']['navname'];?>;action-uri=<?php echo !empty($_G['setting']['domain']['app']['home']) ? 'http://'.$_G['setting']['domain']['app']['home'] : $_G['siteurl'].'home.php'; ?>;icon-uri=<?php echo $_G['siteurl'];?><?php echo IMGDIR;?>/home.ico" /><?php } if($_G['basescript'] == 'forum' && $_G['setting']['archiver']) { ?>
 <link rel="archives" title="<?php echo $_G['setting']['bbname'];?>" href="<?php echo $_G['siteurl'];?>archiver/" />
 <?php } if(!empty($rsshead)) { ?><?php echo $rsshead;?><?php } if(widthauto()) { ?>
+<<<<<<< HEAD:Discuz/upload/data/template/3_diy_portal_index.tpl.php
+<link rel="stylesheet" id="css_widthauto" type="text/css" href="<?php echo $_G['setting']['csspath'];?><?php echo STYLEID;?>_widthauto.css?<?php echo VERHASH;?>" />
+=======
 <link rel="stylesheet" id="css_widthauto" type="text/css" href='<?php echo $_G['setting']['csspath'];?><?php echo STYLEID;?>_widthauto.css?<?php echo VERHASH;?>' />
+>>>>>>> 191a3ddc0c26b6d1efeef8e3552b2bc36f668163:Discuz/upload/data/template/1_levpop_lev.tpl.php
 <script type="text/javascript">HTMLNODE.className += ' widthauto'</script>
 <?php } if($_G['basescript'] == 'forum' || $_G['basescript'] == 'group') { ?>
 <script src="<?php echo $_G['setting']['jspath'];?>forum.js?<?php echo VERHASH;?>" type="text/javascript"></script>
 <?php } elseif($_G['basescript'] == 'home' || $_G['basescript'] == 'userapp') { ?>
 <script src="<?php echo $_G['setting']['jspath'];?>home.js?<?php echo VERHASH;?>" type="text/javascript"></script>
+<<<<<<< HEAD:Discuz/upload/data/template/3_diy_portal_index.tpl.php
+<?php } if($_G['basescript'] != 'portal' || $_GET['diy'] == 'yes' && check_diy_perm($topic)) { ?>
+=======
 <?php } elseif($_G['basescript'] == 'portal') { ?>
 <script src="<?php echo $_G['setting']['jspath'];?>portal.js?<?php echo VERHASH;?>" type="text/javascript"></script>
 <?php } if($_G['basescript'] != 'portal' && $_GET['diy'] == 'yes' && check_diy_perm($topic)) { ?>
+>>>>>>> 191a3ddc0c26b6d1efeef8e3552b2bc36f668163:Discuz/upload/data/template/1_levpop_lev.tpl.php
 <script src="<?php echo $_G['setting']['jspath'];?>portal.js?<?php echo VERHASH;?>" type="text/javascript"></script>
 <?php } if($_GET['diy'] == 'yes' && check_diy_perm($topic)) { ?>
 <link rel="stylesheet" type="text/css" id="diy_common" href="<?php echo $_G['setting']['csspath'];?><?php echo STYLEID;?>_css_diy.css?<?php echo VERHASH;?>" />
 <?php } ?>
 </head>
+<<<<<<< HEAD:Discuz/upload/data/template/3_diy_portal_index.tpl.php
+=======
 
+>>>>>>> 191a3ddc0c26b6d1efeef8e3552b2bc36f668163:Discuz/upload/data/template/1_levpop_lev.tpl.php
 <body id="nv_<?php echo $_G['basescript'];?>" class="pg_<?php echo CURMODULE;?><?php if($_G['basescript'] === 'portal' && CURMODULE === 'list' && !empty($cat)) { ?> <?php echo $cat['bodycss'];?><?php } ?>" onkeydown="if(event.keyCode==27) return false;">
 <div id="append_parent"></div><div id="ajaxwaitid"></div>
 <?php if($_GET['diy'] == 'yes' && check_diy_perm($topic)) { include template('common/header_diy'); } if(check_diy_perm($topic)) { include template('common/header_diynav'); } if(CURMODULE == 'topic' && $topic && empty($topic['useheader']) && check_diy_perm($topic)) { ?>
@@ -55,11 +76,18 @@
     请选择 <a href="<?php echo $_G['siteurl'];?>forum.php?mobile=yes">进入手机版</a> <span class="xg1">|</span> <a href="<?php echo $_G['setting']['mobile']['nomobileurl'];?>">继续访问电脑版</a>
 </div>
 <?php } if($_G['setting']['shortcut'] && $_G['member']['credits'] >= $_G['setting']['shortcut']) { ?>
+<<<<<<< HEAD:Discuz/upload/data/template/3_diy_portal_index.tpl.php
+<div id="shortcut">111111
+<span><a href="javascript:;" id="shortcutcloseid" title="关闭">关闭</a></span>
+您经常访问 <?php echo $_G['setting']['bbname'];?>，试试添加到桌面，访问更方便！
+<a href="javascript:;" id="shortcuttip">添加 <?php echo $_G['setting']['bbname'];?> 到桌面</a>
+=======
 <div id="shortcut">
 <span><a href="javascript:;" id="shortcutcloseid" title="关闭">关闭</a></span>
 您经常访问 <?php echo $_G['setting']['bbname'];?>，试试添加到桌面，访问更方便！
 <a href="javascript:;" id="shortcuttip">添加 <?php echo $_G['setting']['bbname'];?> 到桌面</a>
 
+>>>>>>> 191a3ddc0c26b6d1efeef8e3552b2bc36f668163:Discuz/upload/data/template/1_levpop_lev.tpl.php
 </div>
 <script type="text/javascript">setTimeout(setShortcut, 2000);</script>
 <?php } ?>
@@ -70,7 +98,10 @@
 <?php if(!empty($_G['setting']['pluginhooks']['global_cpnav_extra1'])) echo $_G['setting']['pluginhooks']['global_cpnav_extra1'];?>
 </div>
 <div class="y">
+<<<<<<< HEAD:Discuz/upload/data/template/3_diy_portal_index.tpl.php
+=======
 
+>>>>>>> 191a3ddc0c26b6d1efeef8e3552b2bc36f668163:Discuz/upload/data/template/1_levpop_lev.tpl.php
 <a id="switchblind" href="javascript:;" onclick="toggleBlind(this)" title="开启辅助访问" class="switchblind">开启辅助访问</a>
 <?php if(!empty($_G['setting']['pluginhooks']['global_cpnav_extra2'])) echo $_G['setting']['pluginhooks']['global_cpnav_extra2'];?><?php if(is_array($_G['setting']['topnavs']['1'])) foreach($_G['setting']['topnavs']['1'] as $nav) { if($nav['available'] && (!$nav['level'] || ($nav['level'] == 1 && $_G['uid']) || ($nav['level'] == 2 && $_G['adminid'] > 0) || ($nav['level'] == 3 && $_G['adminid'] == 1))) { ?><?php echo $nav['code'];?><?php } } if(empty($_G['disabledwidthauto']) && $_G['setting']['switchwidthauto']) { ?>
 <a href="javascript:;" id="switchwidth" onclick="widthauto(this)" title="<?php if(widthauto()) { ?>切换到窄版<?php } else { ?>切换到宽版<?php } ?>" class="switchwidth"><?php if(widthauto()) { ?>切换到窄版<?php } else { ?>切换到宽版<?php } ?></a>
@@ -80,11 +111,16 @@
 </div>
 </div>
 </div>
+<<<<<<< HEAD:Discuz/upload/data/template/3_diy_portal_index.tpl.php
+<?php if(!IS_ROBOT) { if($_G['uid']) { ?>
+<ul id="myprompt_menu" class="p_pop" style="display: none;">
+=======
 
 <?php if(!IS_ROBOT) { if($_G['uid']) { ?>
 
 <ul id="myprompt_menu" class="p_pop" style="display: none;">
 
+>>>>>>> 191a3ddc0c26b6d1efeef8e3552b2bc36f668163:Discuz/upload/data/template/1_levpop_lev.tpl.php
 <li><a href="home.php?mod=space&amp;do=pm" id="pm_ntc" style="background-repeat: no-repeat; background-position: 0 50%;"><em class="prompt_news<?php if(empty($_G['member']['newpm'])) { ?>_0<?php } ?>"></em>消息</a></li>
 <li><a href="home.php?mod=follow&amp;do=follower"><em class="prompt_follower<?php if(empty($_G['member']['newprompt_num']['follower'])) { ?>_0<?php } ?>"></em>新听众<?php if($_G['member']['newprompt_num']['follower']) { ?>(<?php echo $_G['member']['newprompt_num']['follower'];?>)<?php } ?></a></li>
 <?php if($_G['member']['newprompt'] && $_G['member']['newprompt_num']['follow']) { ?>
@@ -126,7 +162,11 @@
 </div><?php } ?><?php echo adshow("headerbanner/wp a_h");?><div id="hd">
 <div class="wp">
 <div class="hdc cl"><?php $mnid = getcurrentnav();?><h2><?php if(!isset($_G['setting']['navlogos'][$mnid])) { ?><a href="<?php if($_G['setting']['domain']['app']['default']) { ?>http://<?php echo $_G['setting']['domain']['app']['default'];?>/<?php } else { ?>./<?php } ?>" title="<?php echo $_G['setting']['bbname'];?>"><?php echo $_G['style']['boardlogo'];?></a><?php } else { ?><?php echo $_G['setting']['navlogos'][$mnid];?><?php } ?></h2><?php include template('common/header_userstatus'); ?></div>
+<<<<<<< HEAD:Discuz/upload/data/template/3_diy_portal_index.tpl.php
+<div style="clear:both;"></div>
+=======
 
+>>>>>>> 191a3ddc0c26b6d1efeef8e3552b2bc36f668163:Discuz/upload/data/template/1_levpop_lev.tpl.php
 <div id="nv">
 <a href="javascript:;" id="qmenu" onmouseover="delayShow(this, function () {showMenu({'ctrlid':'qmenu','pos':'34!','ctrlclass':'a','duration':2});showForummenu(<?php echo $_G['fid'];?>);})">快捷导航</a>
 <ul><?php if(is_array($_G['setting']['navs'])) foreach($_G['setting']['navs'] as $nav) { if($nav['available'] && (!$nav['level'] || ($nav['level'] == 1 && $_G['uid']) || ($nav['level'] == 2 && $_G['adminid'] > 0) || ($nav['level'] == 3 && $_G['adminid'] == 1))) { ?><li <?php if($mnid == $nav['navid']) { ?>class="a" <?php } ?><?php echo $nav['nav'];?>></li><?php } } ?>
@@ -247,75 +287,206 @@ initSearchmenu('scbar', '<?php echo $searchparams['url'];?>');
 </script>
 <?php } ?></div>
 </div>
+<<<<<<< HEAD:Discuz/upload/data/template/3_diy_portal_index.tpl.php
+<?php if(!empty($_G['setting']['pluginhooks']['global_header'])) echo $_G['setting']['pluginhooks']['global_header'];?>
+<?php } ?>
+<div id="wp" class="wp">
+<style id="diy_style" type="text/css"></style>
+<!--[diy=comiis_pd_kuxw00]--><div id="comiis_pd_kuxw00" class="area"></div><!--[/diy]-->
+<!--[diy=comiis_pd_kuxw01]--><div id="comiis_pd_kuxw01" class="area"><div id="frameO6ei4x" class="cl_frame_bm frame move-span cl frame-1"><div id="frameO6ei4x_left" class="column frame-1-c"><div id="frameO6ei4x_left_temp" class="move-span temp"></div><?php block_display('22');?></div></div></div><!--[/diy]-->
+<div class="AntNewMain">
+  <div class="Left">
+  <!--[diy=comiis_pd_kuxw02]--><div id="comiis_pd_kuxw02" class="area"><div id="framegx3Xia" class="cl_frame_bm frame move-span cl frame-1"><div id="framegx3Xia_left" class="column frame-1-c"><div id="framegx3Xia_left_temp" class="move-span temp"></div><?php block_display('23');?></div></div></div><!--[/diy]-->
+  </div>
+  <div class="Right">
+    <div class="AntNewTop">
+      <div class="Lin">
+      <!--[diy=comiis_pd_kuxw03]--><div id="comiis_pd_kuxw03" class="area"><div id="frameKajax1" class="cl_frame_bm frame move-span cl frame-1"><div id="frameKajax1_left" class="column frame-1-c"><div id="frameKajax1_left_temp" class="move-span temp"></div><?php block_display('24');?></div></div></div><!--[/diy]-->
+      </div>
+    </div>
+    <div class="AntNewsPictures">
+      <div class="imgup">
+        <h2>热图推荐</h2>
+        <div style="clear:both;"></div>
+        <!--[diy=comiis_pd_kuxw04]--><div id="comiis_pd_kuxw04" class="area"><div id="frameE3IIfA" class="cl_frame_bm frame move-span cl frame-1"><div id="frameE3IIfA_left" class="column frame-1-c"><div id="frameE3IIfA_left_temp" class="move-span temp"></div><?php block_display('25');?></div></div></div><!--[/diy]-->
+      </div>
+      <div class="newslist">
+        <h2>热点推荐</h2>
+        <div class="comiie_lsx">
+        <!--[diy=comiis_pd_kuxw05]--><div id="comiis_pd_kuxw05" class="area"><div id="frameqn35ie" class="cl_frame_bm frame move-span cl frame-1"><div id="frameqn35ie_left" class="column frame-1-c"><div id="frameqn35ie_left_temp" class="move-span temp"></div><?php block_display('26');?></div></div></div><!--[/diy]-->
+        </div> 
+        <div class="Bottom"></div>       
+      </div>      
+    </div>    
+  </div>
+</div>
+<div class="AntClear"></div>
+<div class="AntNewsInfo">
+  <div class="AntTodayHot">
+    <div class="Titlekm"><a href="#" target="_blank" style="color:#777;">更多>></a>城市资讯</div>
+    <div class="Content">
+      <div class="l">
+      <!--[diy=comiis_pd_kuxw06]--><div id="comiis_pd_kuxw06" class="area"><div id="framepb36If" class="cl_frame_bm frame move-span cl frame-1"><div id="framepb36If_left" class="column frame-1-c"><div id="framepb36If_left_temp" class="move-span temp"></div><?php block_display('27');?></div></div></div><!--[/diy]-->
+     </div>
+     <div class="ldafd">
+     <!--[diy=comiis_pd_kuxw07]--><div id="comiis_pd_kuxw07" class="area"><div id="frameG4FIAX" class="cl_frame_bm frame move-span cl frame-1"><div id="frameG4FIAX_left" class="column frame-1-c"><div id="frameG4FIAX_left_temp" class="move-span temp"></div><?php block_display('28');?></div></div></div><!--[/diy]-->
+       </div>     
+    </div>
+    <div class="Bottom"></div>
+  </div>
+  <div class="AntTodayHot AntTodayHotR">
+    <div class="Titlekm"><a href="#" target="_blank" style="color:#777;">更多>></a>网友中心</div>
+    <div class="Content">
+      <div class="l">
+      <!--[diy=comiis_pd_kuxw08]--><div id="comiis_pd_kuxw08" class="area"><div id="framedfBEJI" class="cl_frame_bm frame move-span cl frame-1"><div id="framedfBEJI_left" class="column frame-1-c"><div id="framedfBEJI_left_temp" class="move-span temp"></div><?php block_display('29');?></div></div></div><!--[/diy]-->        
+      </div>
+      <div class="ldafd">
+      <!--[diy=comiis_pd_kuxw09]--><div id="comiis_pd_kuxw09" class="area"><div id="frameS9zJZ3" class="cl_frame_bm frame move-span cl frame-1"><div id="frameS9zJZ3_left" class="column frame-1-c"><div id="frameS9zJZ3_left_temp" class="move-span temp"></div><?php block_display('30');?></div></div></div><!--[/diy]-->     
+      </div>
+    </div>
+    <div class="Bottom"></div>
+  </div>
+</div>
+<!--[diy=comiis_pd_kuxw10]--><div id="comiis_pd_kuxw10" class="area"><div id="frameCz3Azv" class="cl_frame_bm frame move-span cl frame-1"><div id="frameCz3Azv_left" class="column frame-1-c"><div id="frameCz3Azv_left_temp" class="move-span temp"></div><?php block_display('31');?></div></div></div><!--[/diy]-->
+<div class="AntNewPicture">
+  <div class="Titlekm"><a href="#" target=_blank>更多>></a>图个痛快</div>
+  <div class="c">  
+<!--[diy=comiis_pd_kuxw11]--><div id="comiis_pd_kuxw11" class="area"><div id="framez5b9Bi" class="cl_frame_bm frame move-span cl frame-1"><div id="framez5b9Bi_left" class="column frame-1-c"><div id="framez5b9Bi_left_temp" class="move-span temp"></div><?php block_display('32');?></div></div></div><!--[/diy]-->     
+  </div>
+  <div class="Bottom"></div>
+</div>
+<div class="AntNewDB">
+  <div class="Left">
+    <div class="AntNewClass">
+      <div class="Titlekm">
+        <div><a href="#" target=_blank>自定内容</a> <a href="#" target=_blank>自定内容</a> <a href="#" target=_blank>自定内容</a> </div>
+        <b><a href="#" target=_blank>城市八卦</a></b></div> 
+<div class="Content">
+<!--[diy=comiis_pd_kuxw12]--><div id="comiis_pd_kuxw12" class="area"><div id="framee336Fn" class="cl_frame_bm frame move-span cl frame-1"><div id="framee336Fn_left" class="column frame-1-c"><div id="framee336Fn_left_temp" class="move-span temp"></div><?php block_display('33');?></div></div><div id="framene953j" class="cl_frame_bm frame move-span cl frame-1"><div id="framene953j_left" class="column frame-1-c"><div id="framene953j_left_temp" class="move-span temp"></div><?php block_display('34');?></div></div></div><!--[/diy]-->
+      </div>
+      <div class="Bottom"></div>
+    </div>
+    <div class="AntNewClass AntNewClassR">
+      <div class="Titlekm">
+        <div><a href="#" target=_blank>自定内容</a> <a href="#" target=_blank>自定内容</a> <a href="#" target=_blank>自定内容</a> </div>
+        <b><a href="#" target=_blank>休闲娱乐</a></b></div>
+      <div class="Content">
+      <!--[diy=comiis_pd_kuxw13]--><div id="comiis_pd_kuxw13" class="area"><div id="frameO16FIA" class="cl_frame_bm frame move-span cl frame-1"><div id="frameO16FIA_left" class="column frame-1-c"><div id="frameO16FIA_left_temp" class="move-span temp"></div><?php block_display('35');?></div></div><div id="frameinz1X1" class="cl_frame_bm frame move-span cl frame-1"><div id="frameinz1X1_left" class="column frame-1-c"><div id="frameinz1X1_left_temp" class="move-span temp"></div><?php block_display('42');?></div></div></div><!--[/diy]-->
+      </div>
+      <div class="Bottom"></div>
+    </div>
+    <div class="AntNewClass">
+      <div class="Titlekm">
+        <div><a href="#" target=_blank>自定内容</a> <a href="#" target=_blank>自定内容</a> <a href="#" target=_blank>自定内容</a> </div>
+        <b><a href="#" target=_blank>饮食男女</a></b></div>
+      <div class="Content">
+      <!--[diy=comiis_pd_kuxw14]--><div id="comiis_pd_kuxw14" class="area"><div id="framea9N3lJ" class="cl_frame_bm frame move-span cl frame-1"><div id="framea9N3lJ_left" class="column frame-1-c"><div id="framea9N3lJ_left_temp" class="move-span temp"></div><?php block_display('36');?></div></div><div id="framev5V366" class="cl_frame_bm frame move-span cl frame-1"><div id="framev5V366_left" class="column frame-1-c"><div id="framev5V366_left_temp" class="move-span temp"></div><?php block_display('43');?></div></div></div><!--[/diy]-->
+      </div>
+      <div class="Bottom"></div>
+    </div>
+    <div class="AntNewClass AntNewClassR">
+      <div class="Titlekm">
+        <div><a href="#" target=_blank>自定内容</a> <a href="#" target=_blank>自定内容</a> <a href="#" target=_blank>自定内容</a> </div>
+        <b><a href="#" target=_blank>旅游天地</a></b></div>
+      <div class="Content">
+      <!--[diy=comiis_pd_kuxw15]--><div id="comiis_pd_kuxw15" class="area"><div id="frameSZV3LN" class="cl_frame_bm frame move-span cl frame-1"><div id="frameSZV3LN_left" class="column frame-1-c"><div id="frameSZV3LN_left_temp" class="move-span temp"></div><?php block_display('37');?></div></div><div id="framea5F3n3" class="cl_frame_bm frame move-span cl frame-1"><div id="framea5F3n3_left" class="column frame-1-c"><div id="framea5F3n3_left_temp" class="move-span temp"></div><?php block_display('44');?></div></div></div><!--[/diy]-->    
+      </div>
+      <div class="Bottom"></div>
+    </div>
+    <div class="AntNewClass">
+      <div class="Titlekm">
+        <div><a href="#" target=_blank>自定内容</a> <a href="#" target=_blank>自定内容</a> <a href="#" target=_blank>自定内容</a> </div>
+        <b><a href="#" target=_blank>情感沙龙</a></b></div>
+      <div class="Content">
+      <!--[diy=comiis_pd_kuxw16]--><div id="comiis_pd_kuxw16" class="area"><div id="framekvH4Jf" class="cl_frame_bm frame move-span cl frame-1"><div id="framekvH4Jf_left" class="column frame-1-c"><div id="framekvH4Jf_left_temp" class="move-span temp"></div><?php block_display('38');?></div></div><div id="frameJjJnJ3" class="cl_frame_bm frame move-span cl frame-1"><div id="frameJjJnJ3_left" class="column frame-1-c"><div id="frameJjJnJ3_left_temp" class="move-span temp"></div><?php block_display('45');?></div></div></div><!--[/diy]-->   
+      </div>
+      <div class="Bottom"></div>
+    </div>
+    <div class="AntNewClass AntNewClassR">
+      <div class="Titlekm">
+        <div><a href="#" target=_blank>自定内容</a> <a href="#" target=_blank>自定内容</a> <a href="#" target=_blank>自定内容</a> </div>
+        <b><a href="#" target=_blank>娱乐八卦</a></b></div>
+      <div class="Content">
+     <!--[diy=comiis_pd_kuxw17]--><div id="comiis_pd_kuxw17" class="area"><div id="frameG2JX35" class="cl_frame_bm frame move-span cl frame-1"><div id="frameG2JX35_left" class="column frame-1-c"><div id="frameG2JX35_left_temp" class="move-span temp"></div><?php block_display('39');?></div></div><div id="framevhh23X" class="cl_frame_bm frame move-span cl frame-1"><div id="framevhh23X_left" class="column frame-1-c"><div id="framevhh23X_left_temp" class="move-span temp"></div><?php block_display('46');?></div></div></div><!--[/diy]--> 
+      </div>
+      <div class="Bottom"></div>
+    </div>
+    <div class="AntNewClass">
+      <div class="Titlekm">
+        <div><a href="#" target=_blank>自定内容</a> <a href="#" target=_blank>自定内容</a> <a href="#" target=_blank>自定内容</a> </div>
+        <b><a href="#" target=_blank>亲子乐园</a></b></div>
+      <div class="Content">
+      <!--[diy=comiis_pd_kuxw18]--><div id="comiis_pd_kuxw18" class="area"><div id="frameb95fbz" class="cl_frame_bm frame move-span cl frame-1"><div id="frameb95fbz_left" class="column frame-1-c"><div id="frameb95fbz_left_temp" class="move-span temp"></div><?php block_display('40');?></div></div><div id="frameXAzjfZ" class="cl_frame_bm frame move-span cl frame-1"><div id="frameXAzjfZ_left" class="column frame-1-c"><div id="frameXAzjfZ_left_temp" class="move-span temp"></div><?php block_display('47');?></div></div></div><!--[/diy]-->    
+      </div>
+      <div class="Bottom"></div>
+    </div>
+    <div class="AntNewClass AntNewClassR">
+      <div class="Titlekm">
+        <div><a href="#" target=_blank>自定内容</a> <a href="#" target=_blank>自定内容</a> <a href="#" target=_blank>自定内容</a> </div>
+        <b><a href="#" target=_blank>健康生活</a></b></div>
+      <div class="Content">
+      <!--[diy=comiis_pd_kuxw19]--><div id="comiis_pd_kuxw19" class="area"><div id="frameaLfI3E" class="cl_frame_bm frame move-span cl frame-1"><div id="frameaLfI3E_left" class="column frame-1-c"><div id="frameaLfI3E_left_temp" class="move-span temp"></div><?php block_display('41');?></div></div><div id="framenXi3Z5" class="cl_frame_bm frame move-span cl frame-1"><div id="framenXi3Z5_left" class="column frame-1-c"><div id="framenXi3Z5_left_temp" class="move-span temp"></div><?php block_display('48');?></div></div></div><!--[/diy]--> 
+      </div>
+      <div class="Bottom"></div>
+    </div>
+  </div>
+  <div class="Right">
+  <div class="comiis_rad comiis_mb8">
+  <!--[diy=comiis_pd_kuxw20]--><div id="comiis_pd_kuxw20" class="area"><div id="framevb43Zf" class="cl_frame_bm frame move-span cl frame-1"><div id="framevb43Zf_left" class="column frame-1-c"><div id="framevb43Zf_left_temp" class="move-span temp"></div><?php block_display('49');?></div></div></div><!--[/diy]-->
+  </div>
+    <div class="AntRightInfo">
+      <div class="Titlekm"><a href="#" target=_blank class="Mor">更多>></a>
+        <div class="Tabkm"><a href="#" id="SiteForum1" class="Current">最新发表</a></div>
+      </div>
+      <div class="Content">
+       <!--[diy=comiis_pd_kuxw21]--><div id="comiis_pd_kuxw21" class="area"><div id="framee42323" class="cl_frame_bm frame move-span cl frame-1"><div id="framee42323_left" class="column frame-1-c"><div id="framee42323_left_temp" class="move-span temp"></div><?php block_display('52');?></div></div></div><!--[/diy]-->
+      </div>
+      <div class="Bottom"></div>
+    </div>
+    <div class="comiis_rad comiis_mt8">
+     <!--[diy=comiis_pd_kuxw22]--><div id="comiis_pd_kuxw22" class="area"><div id="frameRL4Zfb" class="cl_frame_bm frame move-span cl frame-1"><div id="frameRL4Zfb_left" class="column frame-1-c"><div id="frameRL4Zfb_left_temp" class="move-span temp"></div><?php block_display('50');?></div></div></div><!--[/diy]-->
+     </div>
+    <div class="AntRightInfo comiis_mt8">
+      <div class="Titlekm"><a href="#" target=_blank class="Mor">更多>></a>
+        <div class="Tabkm"><a href="#" id="SiteForum1" class="Current">最新点评</a></div>
+      </div>
+      <div class="Content">
+      <!--[diy=comiis_pd_kuxw23]--><div id="comiis_pd_kuxw23" class="area"><div id="frameVIeZVb" class="cl_frame_bm frame move-span cl frame-1"><div id="frameVIeZVb_left" class="column frame-1-c"><div id="frameVIeZVb_left_temp" class="move-span temp"></div><?php block_display('53');?></div></div></div><!--[/diy]-->       
+      </div>
+      <div class="Bottom"></div>
+    </div>
+    <div class="comiis_rad comiis_mt8">
+    <!--[diy=comiis_pd_kuxw24]--><div id="comiis_pd_kuxw24" class="area"><div id="frameJ6v525" class="cl_frame_bm frame move-span cl frame-1"><div id="frameJ6v525_left" class="column frame-1-c"><div id="frameJ6v525_left_temp" class="move-span temp"></div><?php block_display('51');?></div></div></div><!--[/diy]-->
+    </div>
+    <div class="AntRightInfo comiis_mt8">
+      <div class="Titlekm"><a href="#" target=_blank class="Mor">更多>></a>
+        <div class="Tabkm"><a href="#" id="SiteForum1" class="Current">精华推荐</a></div>
+      </div>
+      <div class="Content">
+      <!--[diy=comiis_pd_kuxw25]--><div id="comiis_pd_kuxw25" class="area"><div id="framey32a9i" class="cl_frame_bm frame move-span cl frame-1"><div id="framey32a9i_left" class="column frame-1-c"><div id="framey32a9i_left_temp" class="move-span temp"></div><?php block_display('54');?></div></div></div><!--[/diy]-->
+      </div>
+      <div class="Bottom"></div>
+    </div>    
+  </div>
+</div>
+<div style="clear:both;"></div>
+<!--[diy=comiis_pd_kuxw26]--><div id="comiis_pd_kuxw26" class="area"><div id="frameB3J5b9" class="cl_frame_bm frame move-span cl frame-1"><div id="frameB3J5b9_left" class="column frame-1-c"><div id="frameB3J5b9_left_temp" class="move-span temp"></div><?php block_display('55');?></div></div></div><!--[/diy]-->
+<div style="clear:both;"></div>
+<div class="AntNewPicturekm">
+  <div class="Titlekm"><a href="#" target=_blank>+ 申请友情链接</a>友情链接</div>
+  <div class="c">
+    <!--[diy=comiis_pd_kuxw_link]--><div id="comiis_pd_kuxw_link" class="area"><div id="framen2iex3" class="cl_frame_bm frame move-span cl frame-1"><div id="framen2iex3_left" class="column frame-1-c"><div id="framen2iex3_left_temp" class="move-span temp"></div><?php block_display('56');?></div></div></div><!--[/diy]-->
+  </div>
+  <div class="Bottom comiis_mb8"></div>
+</div>
+</div>
+<div style="clear:both;"></div></div>
+=======
 
 <?php if(!empty($_G['setting']['pluginhooks']['global_header'])) echo $_G['setting']['pluginhooks']['global_header'];?>
 <?php } ?>
-<base href="http://bbs.itcast.cn/" /><link rel="stylesheet" type="text/css" href="data/cache/style_8_common.css?AjV" />
-<style type="text/css">
-.vk_nv_sub { width:978px; margin:0 auto; margin-top:0px; margin-bottom:10px; padding:10px 0px; background:#fff; border:1px solid #ccc; border-top:none;/* box-shadow:1px 1px 3px #ccc; */}
 
-.vk_nv_sub_item { float:left; display:inline-block; width: 320px; margin-left:5px; overflow:hidden;}
-.ie6 .vk_nv_sub_item { margin-left:2px;}
-
-.vk_nv_sub_item .icon { float:left; display:inline-block; padding-top:0px; width:60px;  height:60px; line-height:100px; overflow:hidden; color:#0ad;  font-size:14px; text-indent:5px; }
-
-.vk_nv_sub_item ul{ width: 260px; float:left; overflow:hidden;}
-.vk_nv_sub_item ul li { float:left; width:85px; height:30px; overflow:hidden;   padding:0px; margin:0px; background:url(template/veikei_dz_portal_20131130_texture/images/vk_nv_sub_li_bg.gif) no-repeat 100% 0; }
-.vk_nv_sub_item ul li a { float:left; width:65px; height:30px; line-height:30px; padding:0 10px; font-size:14px; }
-.vk_nv_sub_item ul li a:hover { color:#fff; background:#0ad; text-decoration:none; }
-.vk_nv_sub_item ul li.right { padding-right:0; background:none; }
-.vk_nv_sub_item ul li.left { padding-left:0; margin-left:0px; }
-.vk_nv_sub_item ul li.left1 a{color:#f00;}
-.vk_nv_sub_item ul li.left1 a:hover{color:#fff;}
-
-.vk_icon_1 .icon { background:url(template/veikei_dz_portal_20131130_texture/images/vk_icon_1.gif) no-repeat; }
-.vk_icon_2 .icon { background:url(template/veikei_dz_portal_20131130_texture/images/vk_icon_2.gif) no-repeat; }
-.vk_icon_3 .icon { background:url(template/veikei_dz_portal_20131130_texture/images/vk_icon_3.gif) no-repeat; }
-
-</style>
-<div id="wp" class="wp">
-<div class="vk_nv_sub png cl">
-  <div class="vk_nv_sub_item vk_icon_1 cl">
-    <div class="icon"></div>
-    <ul class="cl">
-      <li class="left"><a href="http://www.itcast.cn/channel/video.shtml" target="_blank" >免费教程</a></li>
-      <li><a href="http://www.itcast.cn/channel/job.shtml" target="_blank">就业宣言</a></li>
-      <li class="right"><a href="http://www.itcast.cn/channel/teacher.shtml" target="_blank">师资力量</a></li>
-      <li class="left left1"><a href="http://e.t.qq.com/itcast_cn?preview" target="_blank" >官方微博</a></li>
-      <li><a href="http://www.itcast.cn/channel/campus.shtml" target="_blank" >校园生活</a></li>
-      <li class="right"><a href="http://www.itcast.cn/channel/personnel.shtml" target="_blank">人才服务</a></li>
-    </ul>
-  </div>
-  <div class="vk_nv_sub_item vk_icon_2 cl">
-    <div class="icon"></div>
-    <ul class="cl">
-      <li class="left"><a href="http://bbs.itcast.cn/home.php?mod=spacecp&amp;ac=profile&amp;op=password" >邮箱认证</a></li>
-      <li><a href="http://bbs.itcast.cn/home.php?mod=spacecp&amp;ac=profile&amp;op=verify&amp;vid=6" >实名认证</a></li>
-      <li class="right"><a href="http://bbs.itcast.cn/home.php?mod=spacecp&amp;ac=profile&amp;op=verify&amp;vid=1" >大学认证</a></li>
-      <li class="left"><a href="http://bbs.itcast.cn/home.php?mod=spacecp&amp;ac=profile&amp;op=verify&amp;vid=2" >学员认证</a></li>
-      <li><a href="http://bbs.itcast.cn/thread-6158-1-1.html" >新手指南</a></li>
-      <li class="right"><a href="http://bbs.itcast.cn/thread-11691-1-1.html" >兼职招聘</a></li>
-    </ul>
-  </div>
-  <div class="vk_nv_sub_item vk_icon_3 cl">
-    <div class="icon"></div>
-    <ul class="cl">
-      <li class="left"><a href="http://java.itcast.cn" target="_blank">Java培训</a></li>
-      <li><a href="http://net.itcast.cn" target="_blank">.Net培训</a></li>
-      <li class="right"><a href="http://php.itcast.cn" target="_blank">PHP培训</a></li>
-      <li class="left"><a href="http://ios.itcast.cn" target="_blank">iOS培训</a></li>
-      <li><a href="http://c.itcast.cn"target="_blank" >C++培训</a></li>
-      <li class="right"><a href="http://icd.itcast.cn" target="_blank">网页培训</a></li>
-    </ul>
-  </div>
-
-</div> 
-   
-</div>
-
- 
-</div>
-  </div><?php include template($PLNAME.':js');?><div style="display:none">
+<div id="wp" class="wp"><?php include template($PLNAME.':js');?><div style="display:none">
 <span id="isaward5"><?php echo $lev_lang['minaward'];?></span>
 <span id="noaward5"><?php echo $lev_lang['noaward'];?></span>
 <span id="omsg"></span>
@@ -662,9 +833,8 @@ $$("#slotinfo5").show()
 <div class="levaward levaext">
 <div class="actv"><b><?php echo $lev_lang['awardgoods'];?></b></div><?php echo lev_class::$PL_G[awardgoods];?></div>
 <?php } ?>
-</div>
-    
-</div>
+</div>	</div>
+>>>>>>> 191a3ddc0c26b6d1efeef8e3552b2bc36f668163:Discuz/upload/data/template/1_levpop_lev.tpl.php
 <?php if(empty($topic) || ($topic['usefooter'])) { $focusid = getfocus_rand($_G[basescript]);?><?php if($focusid !== null) { $focus = $_G['cache']['focus']['data'][$focusid];?><?php $focusnum = count($_G['setting']['focus'][$_G[basescript]]);?><div class="focus" id="sitefocus">
 <div class="bm">
 <div class="bm_h cl">
@@ -702,6 +872,18 @@ var focusautoshow = window.setInterval('showfocus(\'next\', 1);', 5000);
 <?php } if($_G['uid'] && $_G['member']['allowadmincp'] == 1 && $_G['setting']['showpatchnotice'] == 1) { ?>
 <div class="focus patch" id="patch_notice"></div>
 <?php } ?><?php echo adshow("footerbanner/wp a_f/1");?><?php echo adshow("footerbanner/wp a_f/2");?><?php echo adshow("footerbanner/wp a_f/3");?><?php echo adshow("float/a_fl/1");?><?php echo adshow("float/a_fr/2");?><?php echo adshow("couplebanner/a_fl a_cb/1");?><?php echo adshow("couplebanner/a_fr a_cb/2");?><?php echo adshow("cornerbanner/a_cn");?><?php if(!empty($_G['setting']['pluginhooks']['global_footer'])) echo $_G['setting']['pluginhooks']['global_footer'];?>
+<<<<<<< HEAD:Discuz/upload/data/template/3_diy_portal_index.tpl.php
+<div style="clear:both;"></div>
+<div id="ft" class="comiis_footer wp">
+<div class="comiis_footertop"><?php if(is_array($_G['setting']['footernavs'])) foreach($_G['setting']['footernavs'] as $nav) { if($nav['available'] && ($nav['type'] && (!$nav['level'] || ($nav['level'] == 1 && $_G['uid']) || ($nav['level'] == 2 && $_G['adminid'] > 0) || ($nav['level'] == 3 && $_G['adminid'] == 1)) ||	!$nav['type'] && ($nav['id'] == 'stat' && $_G['group']['allowstatdata'] || $nav['id'] == 'report' && $_G['uid'] || $nav['id'] == 'archiver' || $nav['id'] == 'mobile' || $nav['id'] == 'darkroom'))) { ?><?php echo $nav['code'];?>|<?php } } ?></div>
+<div class="comiis_Copyright">
+Copyright &copy; 2008-2015 <a href="<?php echo $_G['setting']['siteurl'];?>" target="_blank"><?php echo $_G['setting']['sitename'];?></a>(<?php echo $_G['setting']['siteurl'];?>) 版权所有 All Rights Reserved.<br />
+风格购买及设计联系：13450110120  15813025137 QQ：21400445  8821775<br />
+Powered by <a href="http://www.discuz.net" target="_blank">Discuz!</a> <?php echo $_G['setting']['version'];?>&nbsp;
+<!---*感谢你对克米设计的支持, 为获得更多克米设计的技术支持和服务, 建议保留下面克米设计的版权连接，谢谢!*--->
+技术支持: <A href="http://www.comiis.com" rel="nofollow" target=_blank title="克米设计-商业技术认证客户">克米设计</A> <?php if($_G['setting']['icp']) { ?><a href="http://www.miibeian.gov.cn/" target="_blank"><?php echo $_G['setting']['icp'];?></a><?php } ?> <?php if($_G['setting']['statcode']) { ?><?php echo $_G['setting']['statcode'];?><?php } ?> <?php if(!empty($_G['setting']['pluginhooks']['global_footerlink'])) echo $_G['setting']['pluginhooks']['global_footerlink'];?> <?php if($_G['setting']['site_qq']) { ?><a href="http://wpa.qq.com/msgrd?V=3&amp;Uin=<?php echo $_G['setting']['site_qq'];?>&amp;Site=<?php echo $_G['setting']['bbname'];?>&amp;Menu=yes&amp;from=discuz" target="_blank" title="QQ"><img src="<?php echo IMGDIR;?>/site_qq.jpg" alt="QQ" /></a><?php } ?>
+</div>
+=======
 <div id="ft" class="wp cl">
 <div id="flk" class="y">
 <p>
@@ -724,15 +906,20 @@ GMT<?php echo $_G['timenow']['offset'];?>, <?php echo $_G['timenow']['time'];?>
 <div id="frt">
 <p>Powered by <strong><a href="http://www.discuz.net" target="_blank">Discuz!</a></strong> <em><?php echo $_G['setting']['version'];?></em><?php if(!empty($_G['setting']['boardlicensed'])) { ?> <a href="http://license.comsenz.com/?pid=1&amp;host=<?php echo $_SERVER['HTTP_HOST'];?>" target="_blank">Licensed</a><?php } ?></p>
 <p class="xs0">&copy; 2001-2013 <a href="http://www.comsenz.com" target="_blank">Comsenz Inc.</a></p>
+>>>>>>> 191a3ddc0c26b6d1efeef8e3552b2bc36f668163:Discuz/upload/data/template/1_levpop_lev.tpl.php
 </div><?php updatesession();?><?php if($_G['uid'] && $_G['group']['allowinvisible']) { ?>
 <script type="text/javascript">
 var invisiblestatus = '<?php if($_G['session']['invisible']) { ?>隐身<?php } else { ?>在线<?php } ?>';
 var loginstatusobj = $('loginstatusid');
 if(loginstatusobj != undefined && loginstatusobj != null) loginstatusobj.innerHTML = invisiblestatus;
 </script>
+<<<<<<< HEAD:Discuz/upload/data/template/3_diy_portal_index.tpl.php
+<?php } } if(!$_G['setting']['bbclosed'] && !$_G['member']['freeze'] && !$_G['member']['groupexpiry']) { if($_G['uid'] && !isset($_G['cookie']['checkpm'])) { ?>
+=======
 <?php } ?>
 </div>
 <?php } if(!$_G['setting']['bbclosed'] && !$_G['member']['freeze'] && !$_G['member']['groupexpiry']) { if($_G['uid'] && !isset($_G['cookie']['checkpm'])) { ?>
+>>>>>>> 191a3ddc0c26b6d1efeef8e3552b2bc36f668163:Discuz/upload/data/template/1_levpop_lev.tpl.php
 <script src="home.php?mod=spacecp&ac=pm&op=checknewpm&rand=<?php echo $_G['timestamp'];?>" type="text/javascript"></script>
 <?php } if($_G['uid'] && helper_access::check_module('follow') && !isset($_G['cookie']['checkfollow'])) { ?>
 <script src="home.php?mod=spacecp&ac=follow&op=checkfeed&rand=<?php echo $_G['timestamp'];?>" type="text/javascript"></script>
@@ -795,3 +982,7 @@ htmlCheckUpdate();
 </script>
 <?php } output();?></body>
 </html>
+<<<<<<< HEAD:Discuz/upload/data/template/3_diy_portal_index.tpl.php
+>>>>>>> 751ff120ab5d4497f1a8b7bbd7f4b8179e659147
+=======
+>>>>>>> 191a3ddc0c26b6d1efeef8e3552b2bc36f668163:Discuz/upload/data/template/1_levpop_lev.tpl.php

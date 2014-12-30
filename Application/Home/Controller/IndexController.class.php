@@ -30,7 +30,7 @@ class IndexController extends Controller {
 		$this->assign('cc',$bb);
 		$data1 = $usera->select();        
 		$data1 = $usera->order("id desc")->select();
-		$data2 = $userb->select();
+		$data2 = $userb->order("id desc")->select();
 		$comp=$com->select();
 		//var_dump($comp);die;
 
@@ -198,5 +198,38 @@ class IndexController extends Controller {
 		$db=M("zhaopin");
 		$this->info=$db->select();
 		$this->display();
+	}
+
+	function msdylist(){
+		$db=M("mingshi");
+		$this->info=$db->select();
+		$this->display();
+	}
+	public function banji(){
+		$model=M('banji');
+		$id=$_GET['id'];
+		$data = $model->where('id="'.$id.'"')->order("id desc")->select();
+		$data["s"] = $model->where("id<$id")->order("id desc")->find();
+        $data["x"] = $model->where("id>$id")->order("id asc")->find();
+		$this->assign('data',$data);
+		$model1=M('ping');
+		$data1 = $model1->where('wenid="'.$id.'"')->select();
+		$this->assign('data1',$data1);
+        $this->display('banji');
+
+	}
+	function ping(){
+		$id=$_POST['id'];
+		$content=$_POST['content'];
+		$db=M("ping");
+		$data['wenid']=$id;
+		$data['content']=$content;
+		$data['uid']=1;
+		$res=$db->add($data);
+		if(!$res){
+			$this->error("评论失败");
+		}else{
+			$this->success("评论成功","/index.php/Home/index/banji?id=".$id);
+		}
 	}
 }
