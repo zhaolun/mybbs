@@ -31,81 +31,11 @@
 <!--{if empty($gid)}-->
 	<div class="wp">
 		<!--[diy=diy1]--><div id="diy1" class="area"><div id="framesZ2B16" class="cl_frame_bm frame move-span cl frame-1"><div id="framesZ2B16_left" class="column frame-1-c"><div id="framesZ2B16_left_temp" class="move-span temp"></div><!--{block/12}--><!--{block/13}--></div></div><div id="frameVR4XU1" class="cl_frame_bm frame move-span cl frame-1"><div id="frameVR4XU1_left" class="column frame-1-c"><div id="frameVR4XU1_left_temp" class="move-span temp"></div><!--{block/10}--><!--{block/11}--></div></div><div id="framevuE144" class="cl_frame_bm frame move-span cl frame-1"><div id="framevuE144_left" class="column frame-1-c"><div id="framevuE144_left_temp" class="move-span temp"></div><!--{block/8}--><!--{block/9}--></div></div><div id="frameKro64E" class="cl_frame_bm frame move-span cl frame-1"><div id="frameKro64E_left" class="column frame-1-c"><div id="frameKro64E_left_temp" class="move-span temp"></div><!--{block/7}--></div></div><div id="frameu24pz4" class="cl_frame_bm frame move-span cl frame-1"><div id="frameu24pz4_left" class="column frame-1-c"><div id="frameu24pz4_left_temp" class="move-span temp"></div><!--{block/6}--></div></div><div id="frameyOeb11" class="cl_frame_bm frame move-span cl frame-1"><div id="frameyOeb11_left" class="column frame-1-c"><div id="frameyOeb11_left_temp" class="move-span temp"></div><!--{block/5}--></div></div><div id="framerNbW42" class="cl_frame_bm frame move-span cl frame-1"><div id="framerNbW42_left" class="column frame-1-c"><div id="framerNbW42_left_temp" class="move-span temp"></div><!--{block/4}--></div></div><div id="frameE8b51q" class="cl_frame_bm frame move-span cl frame-1"><div id="frameE8b51q_left" class="column frame-1-c"><div id="frameE8b51q_left_temp" class="move-span temp"></div><!--{block/3}--></div></div><div id="framezP8Ouq" class="cl_frame_bm frame move-span cl frame-1"><div id="framezP8Ouq_left" class="column frame-1-c"><div id="framezP8Ouq_left_temp" class="move-span temp"></div><!--{block/14}--></div></div></div><!--[/diy]-->
-        <!--论坛上部分-->
-
-  <div id="w8_forum">
-
-  <!--轮播图-->
-
-   <div id="w8_forum_left">
-   <!--[diy=diy072104]--><div id="diy072104" class="area"></div><!--[/diy]-->
-   
-   </div>
-
-  <!--轮播图end-->
-  
-  
-  <!--右侧-->
-  
-  <div id="w8_forum_right">
-  
-  
-  <!--上半部分-->
-  
-    <div class="w8_forum_righttop hd" >
-    
-    <ul>
-      <li><a href="javascript:;" class="for_a1">最新资讯</a></li>
-      <li><a href="javascript:;" class="for_a2">都市推荐</a></li>
-      <li><a href="javascript:;" class="for_a3">热门动向</a></li>
-      <li class="for_a4"></li>
-    </ul>
-    
-    </div>
-  
-  
-  <!--上半部分end-->
-  
-  
-  <!--下半部分-->
- <div class="bd">
-  <div class="w8_forum_rightbot">
-  <!--[diy=diy072101]--><div id="diy072101" class="area"></div><!--[/diy]-->
-  </div>
-  <!--11111111111-->
-    <div class="w8_forum_rightbot">
-  <!--[diy=diy072102]--><div id="diy072102" class="area"></div><!--[/diy]-->
-  </div>
-  <!--11111111111-->
-    <!--11111111111-->
-    <div class="w8_forum_rightbot">
-  <!--[diy=diy072103]--><div id="diy072103" class="area"></div><!--[/diy]-->
-  </div>
-  <!--11111111111-->
-
-</div>
-  	
-
-  
-  <!--下半部分end-->
-  
-  
-  </div>
-  
-  <!--右侧end-->
-<script type="text/javascript">
-jQuery("#w8_forum_right").slide();
-</script>
-  </div>
-
-<!--论坛上部分end-->
-
 	</div>
 <!--{/if}-->
 
 <div id="ct" class="wp cl{if $_G['setting']['forumallowside']} ct2{/if}">
 	<!--{if empty($gid)}-->
-    <div id="dushi_forumcount">
 		<div id="chart" class="bm bw0 cl">
 			<p class="chart z">{lang index_today}: <em>$todayposts</em><span class="pipe">|</span>{lang index_yesterday}: <em>$postdata[0]</em><span class="pipe">|</span>{lang index_posts}: <em>$posts</em><span class="pipe">|</span>{lang index_members}: <em>$_G['cache']['userstats']['totalmembers']</em><!--{if $_G['cache']['userstats']['newsetuser']}--><span class="pipe">|</span>{lang welcome_new_members}: <em><a href="home.php?mod=space&username={echo rawurlencode($_G['cache']['userstats']['newsetuser'])}" target="_blank" class="xi2">$_G['cache']['userstats']['newsetuser']</a></em><!--{/if}--></p>
 			<div class="y">
@@ -113,7 +43,6 @@ jQuery("#w8_forum_right").slide();
 				<!--{if $_G['uid']}--><a href="forum.php?mod=guide&view=my" title="{lang my_posts}" class="xi2">{lang my_posts}</a><!--{/if}--><!--{if !empty($_G['setting']['search']['forum']['status'])}--><!--{if $_G['uid']}--><span class="pipe">|</span><!--{/if}--><a href="forum.php?mod=guide&view=new" title="{lang show_newthreads}" class="xi2">{lang show_newthreads}</a><!--{/if}-->
 			</div>
 		</div>
-        </div>
 	<!--{/if}-->
 	<!--[diy=diy_chart]--><div id="diy_chart" class="area"></div><!--[/diy]-->
 	<div class="mn">
@@ -239,7 +168,7 @@ jQuery("#w8_forum_right").slide();
 		<!--{/if}-->
 
 		<!--{hook/index_catlist_top}-->
-		<div class="fl bm yudibm">
+		<div class="fl bm">
 			<!--{if !empty($collectiondata['follows'])}-->
 
 			<!--{eval $forumscount = count($collectiondata['follows']);}-->
@@ -406,14 +335,14 @@ jQuery("#w8_forum_right").slide();
 		<!--{/if}-->
 		<!--{loop $catlist $key $cat}-->
 			<!--{hook/index_catlist $cat[fid]}-->
-			<div class="bm bmw {if $cat['forumcolumns']} flg{/if} cl yudib">
+			<div class="bm bmw {if $cat['forumcolumns']} flg{/if} cl">
 				<div class="bm_h cl">
 					<span class="o">
 						<img id="category_$cat[fid]_img" src="{IMGDIR}/$cat[collapseimg]" title="{lang spread}" alt="{lang spread}" onclick="toggle_collapse('category_$cat[fid]');" />
 					</span>
 					<!--{if $cat['moderators']}--><span class="y">{lang forum_category_modedby}: $cat[moderators]</span><!--{/if}-->
 					<!--{eval $caturl = !empty($cat['domain']) && !empty($_G['setting']['domain']['root']['forum']) ? 'http://'.$cat['domain'].'.'.$_G['setting']['domain']['root']['forum'] : '';}-->
-					<h2><a href="{if !empty($caturl)}$caturl{else}forum.php?gid=$cat[fid]{/if}" style="color:#fff; font-size:15px;"><img src="template/yibai_d1/style/luntantu.jpg" style="margin-right:4px; float:left;"/> $cat[name]</a></h2>
+					<h2><a href="{if !empty($caturl)}$caturl{else}forum.php?gid=$cat[fid]{/if}" style="{if $cat[extra][namecolor]}color: {$cat[extra][namecolor]};{/if}">$cat[name]</a></h2>
 				</div>
 				<div id="category_$cat[fid]" class="bm_c" style="{echo $collapse['category_'.$cat[fid]]}">
 					<table cellspacing="0" cellpadding="0" class="fl_tb">
@@ -570,11 +499,11 @@ jQuery("#w8_forum_right").slide();
 
 		<!--{if empty($gid) && $_G['setting']['whosonlinestatus']}-->
 			<div id="online" class="bm oll">
-				<div class="bm_h" style="background:#02b7fe; color:#FFF;">
+				<div class="bm_h">
 				<!--{if $detailstatus}-->
 					<span class="o"><a href="forum.php?showoldetails=no#online" title="{lang spread}"><img src="{IMGDIR}/collapsed_no.gif" alt="{lang spread}" /></a></span>
 					<h3>
-						<strong><a href="home.php?mod=space&do=friend&view=online&type=member" style="color:#FFF;">{lang onlinemember}</a></strong>
+						<strong><a href="home.php?mod=space&do=friend&view=online&type=member">{lang onlinemember}</a></strong>
 						<span class="xs1">- <strong>$onlinenum</strong> {lang onlines}
 						- <strong>$membercount</strong> {lang index_members}(<strong>$invisiblecount</strong> {lang index_invisibles}),
 						<strong>$guestcount</strong> {lang index_guests}

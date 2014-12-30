@@ -1,10 +1,10 @@
 <?php if(!defined('IN_DISCUZ')) exit('Access Denied'); hookscriptoutput('index');
 0
-|| checktplrefresh('data/diy/./template/comiis_lssy//portal/index.htm', './template/comiis_lssy/common/header.htm', 1419899269, 'diy', './data/template/3_diy_portal_index.tpl.php', 'data/diy/./template/comiis_lssy/', 'portal/index')
-|| checktplrefresh('data/diy/./template/comiis_lssy//portal/index.htm', './template/comiis_lssy/common/footer.htm', 1419899269, 'diy', './data/template/3_diy_portal_index.tpl.php', 'data/diy/./template/comiis_lssy/', 'portal/index')
-|| checktplrefresh('data/diy/./template/comiis_lssy//portal/index.htm', './template/default/common/header_common.htm', 1419899269, 'diy', './data/template/3_diy_portal_index.tpl.php', 'data/diy/./template/comiis_lssy/', 'portal/index')
-|| checktplrefresh('data/diy/./template/comiis_lssy//portal/index.htm', './template/default/common/header_qmenu.htm', 1419899269, 'diy', './data/template/3_diy_portal_index.tpl.php', 'data/diy/./template/comiis_lssy/', 'portal/index')
-|| checktplrefresh('data/diy/./template/comiis_lssy//portal/index.htm', './template/default/common/pubsearchform.htm', 1419899269, 'diy', './data/template/3_diy_portal_index.tpl.php', 'data/diy/./template/comiis_lssy/', 'portal/index')
+|| checktplrefresh('data/diy/./template/comiis_lssy//portal/index.htm', './template/comiis_lssy/common/header.htm', 1419901943, 'diy', './data/template/3_diy_portal_index.tpl.php', 'data/diy/./template/comiis_lssy/', 'portal/index')
+|| checktplrefresh('data/diy/./template/comiis_lssy//portal/index.htm', './template/comiis_lssy/common/footer.htm', 1419901943, 'diy', './data/template/3_diy_portal_index.tpl.php', 'data/diy/./template/comiis_lssy/', 'portal/index')
+|| checktplrefresh('data/diy/./template/comiis_lssy//portal/index.htm', './template/default/common/header_common.htm', 1419901943, 'diy', './data/template/3_diy_portal_index.tpl.php', 'data/diy/./template/comiis_lssy/', 'portal/index')
+|| checktplrefresh('data/diy/./template/comiis_lssy//portal/index.htm', './template/default/common/header_qmenu.htm', 1419901943, 'diy', './data/template/3_diy_portal_index.tpl.php', 'data/diy/./template/comiis_lssy/', 'portal/index')
+|| checktplrefresh('data/diy/./template/comiis_lssy//portal/index.htm', './template/default/common/pubsearchform.htm', 1419901943, 'diy', './data/template/3_diy_portal_index.tpl.php', 'data/diy/./template/comiis_lssy/', 'portal/index')
 ;
 block_get('22,23,24,25,26,27,28,29,30,31,32,33,34,35,42,36,43,37,44,38,45,39,46,40,47,41,48,49,52,50,53,51,54,55,56');?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -53,7 +53,7 @@ block_get('22,23,24,25,26,27,28,29,30,31,32,33,34,35,42,36,43,37,44,38,45,39,46,
     请选择 <a href="<?php echo $_G['siteurl'];?>forum.php?mobile=yes">进入手机版</a> <span class="xg1">|</span> <a href="<?php echo $_G['setting']['mobile']['nomobileurl'];?>">继续访问电脑版</a>
 </div>
 <?php } if($_G['setting']['shortcut'] && $_G['member']['credits'] >= $_G['setting']['shortcut']) { ?>
-<div id="shortcut">
+<div id="shortcut">111111
 <span><a href="javascript:;" id="shortcutcloseid" title="关闭">关闭</a></span>
 您经常访问 <?php echo $_G['setting']['bbname'];?>，试试添加到桌面，访问更方便！
 <a href="javascript:;" id="shortcuttip">添加 <?php echo $_G['setting']['bbname'];?> 到桌面</a>
