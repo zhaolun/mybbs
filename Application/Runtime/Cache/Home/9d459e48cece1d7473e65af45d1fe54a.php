@@ -268,7 +268,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
                       <table border="0" cellpadding="0" cellspacing="0" class="zhaopinlist" height="124" style="margin-top: 5px" width="98%">
 <tbody>
 <?php if(is_array($newzhaopininfo)): foreach($newzhaopininfo as $key=>$val): ?><tr>
-	<td class="td1" width="73%"><a href=""><?php echo ($val["company"]); ?></a></td>
+	<td class="td1" width="73%"><a href="/index.php/Home/index/company/id/<?php echo ($val["id"]); ?>"><?php echo ($val["company"]); ?></a></td>
 
 	<td width="27%"><?php echo (substr($val["time"],0,10)); ?></td>
 	</tr><?php endforeach; endif; ?>	
