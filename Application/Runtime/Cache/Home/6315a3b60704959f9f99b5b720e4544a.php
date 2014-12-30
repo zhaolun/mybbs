@@ -142,41 +142,56 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 	<a class="jiathis_counter_style"></a>
 </div>
 <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>-->
-<DIV id="box">
-<DIV style="margin-top: 3px;" id="left" class="fl">
-<DIV><IMG src="/Public/images/lefttop.gif"></DIV>
-<DIV class="jyjb">
-<DIV><IMG src="/Public/images/kcjs-tu.jpg"></DIV>﻿
-<DIV class="kcjs">
-<STYLE type="text/css">
-.kcnr-table{ line-height:20px;}
-	.kcnr-table li{ list-style-image:url(http://www.itcast.cn/files/image/201207/20120718144154342.jpg); margin-left:15px;;</STYLE>
-</DIV>
-<?php if(is_array($info)): foreach($info as $key=>$vo): ?><UL>
-  <LI style="width: 141px;" class="fl"><IMG src="/Public/images/phpjc.jpg"></LI>
-  <LI style="width: 470px;" class="fl jyjb-11-font1"><B class="jyjb-11-font2"><A 
-  href="http://www.mybbs.com/index.php/Home/project/kecheng?id=<?php echo ($vo["pei_id"]); ?>" 
-  target="_blank"><?php echo ($vo["pei_class"]); ?></A></B>
-  <P><?php echo ($vo["pei_intro"]); ?></P>
-  </LI></UL>
-  
-<TABLE class="kcnr-table" border="0" cellSpacing="0" cellPadding="0" 
-  width="99%">
-  <TBODY>
-  <TR>
-    <TD><?php echo ($vo["pei_class"]); ?>课程名称</TD>
-    <TD><STRONG><a href="http://www.mybbs.com/index.php/Home/project/kecheng?id=<?php echo ($vo["pei_id"]); ?>" target="_blank">点击查看<?php echo ($vo["pei_class"]); ?>课程详细介绍</a></STRONG></TD></TR>
-  <TR>
-    <TD width="22%"><BR><?php echo ($vo["bbs_jieduan"]); ?></TD>
-    <TD width="78%">
-      <P></P>
-      <UL>
-        <?php echo ($vo["neirong"]); ?></UL></TD></TR>
-  
-  </TBODY></TABLE><?php endforeach; endif; ?>
-<BR>
-<BR>
 
+<!-- 主站导航 -->
+</div>
+<div id="box">
+  <div class="position"><a name="pagetop"/>您现在的位置：<span class="STYLE5"><a href="http://www.itcast.cn">首页</a> &gt;&gt; 常见问题 &gt;&gt; 正文</span></div>
+  <div id="left" class="fl" style="margin-top:8px;">
+    <div class="infotop"><img src="/Public/images/infotop.gif"/></div>
+    <div class="left_content1">
+      <div id="printarea">
+
+        <h1 class="infotitle"><?php echo $data['q']['title']?></h1>
+        <div class="editer">更新时间:<?php echo $data['q']['time']?> 来源:yi利战斗小组</div>
+        <div class="infor">
+         <?php echo $data['q']['content']?>
+
+        </div>
+      </div>
+        <?php if($data['s']){?>
+       <div class="pre">
+	               上一篇：<a target="_blank" href="/index.php/Home/problem/xq?id=<?php echo $data['s']['id']?>"><?php echo $data['s']["title"];?></a>
+       	  </div>
+        <?php }?>
+          <?php if($data['x']){?>
+      <div class="next">
+	              下一篇：<a target="_blank" href="/index.php/Home/problem/xq?id=<?php echo $data['x']['id']?>"><?php echo $data['x']["title"];?></a>
+      	  </div>
+          <?php }?>
+
+      <div class="clear"></div>
+      <div class="share">
+	  <!-- Baidu share BEGIN -->
+    <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+        <span class="bds_more">分享到：</span>
+        <a class="bds_sqq">QQ好友</a>
+		<a class="bds_qzone">QQ空间</a>
+		<a class="bds_tqq">腾讯微博</a>
+		<a class="bds_tsina">新浪微博</a>
+		<a class="bds_tieba">百度贴吧</a>
+		<a class="shareCount"></a>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="fanhui" href='/index.php/Home/problem/index'>返回目录</a>
+    </div>
+<!-- Baidu share END 需在页面底部添加baidushare.js -->	  
+	  </div>
+	  <div class="clear"></div>
+            <div class="clear"></div>
+      <div class="ad">
+      <!-- 广告区 -->
+      <a href="http://java.itcast.cn/news/e393b086/ebce/4f94/9d48/94ed86bcf5ef.shtml" target="_blank"><img border="0" src="http://www.itcast.cn/files/file/201206/20120620111629490.jpg" width="620" /></a> 
+      <!-- 广告区 -->
+      </div>    
 <div class="clear"></div>
 		  </div>
 			<div><img src="/Public/images/leftbottom.gif"/></div>

@@ -142,41 +142,125 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 	<a class="jiathis_counter_style"></a>
 </div>
 <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>-->
-<DIV id="box">
-<DIV style="margin-top: 3px;" id="left" class="fl">
-<DIV><IMG src="/Public/images/lefttop.gif"></DIV>
-<DIV class="jyjb">
-<DIV><IMG src="/Public/images/kcjs-tu.jpg"></DIV>﻿
-<DIV class="kcjs">
-<STYLE type="text/css">
-.kcnr-table{ line-height:20px;}
-	.kcnr-table li{ list-style-image:url(http://www.itcast.cn/files/image/201207/20120718144154342.jpg); margin-left:15px;;</STYLE>
-</DIV>
-<?php if(is_array($info)): foreach($info as $key=>$vo): ?><UL>
-  <LI style="width: 141px;" class="fl"><IMG src="/Public/images/phpjc.jpg"></LI>
-  <LI style="width: 470px;" class="fl jyjb-11-font1"><B class="jyjb-11-font2"><A 
-  href="http://www.mybbs.com/index.php/Home/project/kecheng?id=<?php echo ($vo["pei_id"]); ?>" 
-  target="_blank"><?php echo ($vo["pei_class"]); ?></A></B>
-  <P><?php echo ($vo["pei_intro"]); ?></P>
-  </LI></UL>
-  
-<TABLE class="kcnr-table" border="0" cellSpacing="0" cellPadding="0" 
-  width="99%">
-  <TBODY>
-  <TR>
-    <TD><?php echo ($vo["pei_class"]); ?>课程名称</TD>
-    <TD><STRONG><a href="http://www.mybbs.com/index.php/Home/project/kecheng?id=<?php echo ($vo["pei_id"]); ?>" target="_blank">点击查看<?php echo ($vo["pei_class"]); ?>课程详细介绍</a></STRONG></TD></TR>
-  <TR>
-    <TD width="22%"><BR><?php echo ($vo["bbs_jieduan"]); ?></TD>
-    <TD width="78%">
-      <P></P>
-      <UL>
-        <?php echo ($vo["neirong"]); ?></UL></TD></TR>
-  
-  </TBODY></TABLE><?php endforeach; endif; ?>
-<BR>
-<BR>
+<div id="box">
+  <div class="position"><a name="pagetop"/>您现在的位置：<span class="STYLE5"><a href="http://php.itcast.cn">PHP学院</a> &gt;&gt; PHP学院班级活动 &gt;&gt; 正文</span></div>
+  <div id="left" class="fl" style="margin-top:8px;">
+    <div class="infotop"><img src="/Public/images/infotop.gif"/></div>
+    <div class="left_content1">
+      <div id="printarea">
+        <h1 class="infotitle"><?php echo ($data["0"]["title"]); ?></h1>
+        <div class="editer">更新时间:<?php echo ($data["0"]["time"]); ?> 来源:yi利</div>
+        <div class="infor">
+         <div><span style="font-size:14px;"><?php echo ($data["0"]["content"]); ?></span></div>
+<div style="text-align: center;"><br />
+<span style="font-size:14px;"><strong><?php echo ($data["0"]["littitle"]); ?><br />
+<video width="320" height="240" controls="controls">
+  <source src="q.3gp" type="video/ogg">
+</video>
+<br />
+</strong></span></div>
 
+	<script type="text/javascript" src="http://bbs.itcast.cn/api.php?mod=js&bid=94"></script>
+        </div>
+      </div>
+      <div class="pre">
+	               上一篇：<a target="_blank" href="/index.php/Home/index/banji?id=<?php echo $data['s']['id']?>"><?php echo ($data['s']['title']); ?></a>
+				   下一篇：<a target="_blank" href="/index.php/Home/index/banji?id=<?php echo $data['x']['id']?>"><?php echo ($data['x']['title']); ?></a>
+       	  </div>
+      <div class="next">
+	  	  </div>
+
+      <div class="clear"></div>
+      <div class="share">
+	  <!-- Baidu share BEGIN -->
+    <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+        <span class="bds_more">分享到：</span>
+        <a class="bds_sqq">QQ好友</a>
+		<a class="bds_qzone">QQ空间</a>
+		<a class="bds_tqq">腾讯微博</a>
+		<a class="bds_tsina">新浪微博</a>
+		<a class="bds_tieba">百度贴吧</a>
+		<a class="shareCount"></a>
+    </div>
+<!-- Baidu share END 需在页面底部添加baidushare.js -->	  
+	  </div>
+	  <div class="clear"></div>
+      <div class="print"><a href="#" id="printbutton">【打印】</a> <a href="#pagetop">【返回顶部】</a></div>
+      	  <!-- 评论区 -->
+	    	<script type="text/javascript">
+	           $(document).ready(function(){
+	              	loadcomment('20140328-17081824603', 1);
+               });   
+	       </script>
+
+	 <div id="commentcontent">	  
+	 
+	 <div class="review">
+	  <!-- 评论列表 -->
+	  <?php if(is_array($data1)): foreach($data1 as $key=>$vo): ?><h3 class="reviewtitle"><span class="fl"><?php echo ($vo["uid"]); ?></span><span class="fr"><?php echo ($vo["time"]); ?>发表</span></h3>
+        <div class="reviewneirong">
+		   <?php echo ($vo["content"]); ?>  
+		  <!-- -- reply ---->
+		  		  <!-- -- reply ---->
+        </div><?php endforeach; endif; ?>
+              
+              
+            <!-- 评论列表 -->
+        <div class="febgye">
+				       					   <a href="javascript:goPage(1)" title="首页">&lt;&lt;</a>
+					   		                 			              <span>1</span>
+		                 		               					   					   		</div>
+      </div>
+
+   <div class="clear"></div>
+   <h4 class="have">已有3位网友发表了看法</h4>
+      </div>
+	  <form name="comment" style="padding:0;margin:0px;" action='ping' method='post'>
+        <input type="hidden" name="referenceSource" value="20140328-17081824603">
+        <input type="hidden" name="type" value="NEWS">
+        <textarea cols="85" rows="6" style="width:610px;" name="content"></textarea>
+        <div class="clear"></div>
+        <div class="fabiao">
+	      <span class="fl">请输入验证码：<input name="validatecode" type="text" style="width:80px;" />  <img src="http://manage.itcast.cn:8080/validatecode/comment.jpg" id="kaptchaImage" width="100" name='yz'/></span><span class="fr"><input type='submit' value="提 交" id="savebutton"/></span>
+	    </div>
+		<input type="hidden" name="id" value='<?php echo ($data["0"]["id"]); ?>'>
+	  </form>
+	  <div id="dialog" title="评论保存结果"></div><!-- 对话框内容 -->
+      <!-- 评论区 -->
+	        <div class="clear"></div>
+      <div class="ad">
+      <!-- 广告区 -->
+      <!--<a href="http://icd.itcast.cn"><img border="0" src="http://www.itcast.cn/images/ad/icdad.gif" width="620" /></a>--> 
+      <!-- 广告区 -->
+      </div>
+    </div>
+    <div><img src="/images/leftbottom.gif"/></div>
+  </div>
+  <div id="right" class="fl">
+    <h4 class="righttitle1"><span class="fl">PHP视频下载</span><span class="fr"><a href="/php/video.shtml">+MORE</a></span></h4>
+    <ul class="rightkuang">
+       <ul>
+<li><a href="http://php.itcast.cn/news/caa9b58b/37b1/47f6/98e3/bd3600c98cfc.shtml">PHP入门到精通教程</a></li>
+<li><a href="http://php.itcast.cn/news/7acb031c/5958/42d8/be84/47796e2c1243.shtml">zend framework</a></li>
+<li><a href="http://php.itcast.cn/news/a632aeea/df9a/46bf/92f1/896679400a37.shtml">smarty模板引擎 </a></li>
+<li><a href="http://php.itcast.cn/news/2889f5ee/060a/4014/a6a8/cff645e79925.shtml">Ajax技术 </a></li>
+<li><a href="http://php.itcast.cn/news/166b4e78/01b0/4017/96ae/764cd57432a8.shtml">页面静态化</a></li>
+<li><a href="http://php.itcast.cn/news/50b67f71/dba5/4302/8749/b62bcc314bd0.shtml">Memcached缓存技术</a></li>
+<li><a href="http://php.itcast.cn/news/61ee8515/a34e/477d/9d5d/662dbff5e161.shtml#">Mysql优化</a></li>
+<li><a href="http://php.itcast.cn/news/fd551fd3/9db4/4360/9afa/57f438973108.shtml">轻松搞定网页设计</a></li>
+<li><a href="http://php.itcast.cn/news/5805c1ea/1b18/41eb/8fcc/6234659d8b40.shtml">PHP数据库陷阱</a></li>
+<li><a href="http://php.itcast.cn/news/94c86c32/a7c1/4d2f/b2b4/ded74c6e1113.shtml">PHP网上支付技术</a></li>
+<li><a href="http://php.itcast.cn/news/47d47284/bd39/4322/8aa6/fd48cd51f9df.shtml">PHP报表视频教程</a></li>
+<li><a href="http://php.itcast.cn/news/42366bc5/fc13/43f1/a69b/bc57132cfdc7.shtml">Linux视频教程</a></li>
+<li><a href="http://php.itcast.cn/news/c31baf40/8fa5/4803/ac4d/6e27086d009f.shtml">Oracle视频教程</a></li>
+</ul>
+
+    </ul>
+    <div class="rightbottom"><img src="/images/rightbottom.jpg"/></div>
+   
+  </div>
+</div>
+<div class="clear"></div>
 <div class="clear"></div>
 		  </div>
 			<div><img src="/Public/images/leftbottom.gif"/></div>
