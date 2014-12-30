@@ -256,6 +256,35 @@ H1 a {
 							<li><a href="/admin.php/home/gy/lists" >感言添加</a></li>
 							</ul>
                             </div>
+
+
+
+
+							<h1 class="type"><a>班级活动</a></h1>
+							<div class="content">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+							<td><img src="/Public/admin/images/menu_topline.gif" width="182" height="5" /></td>
+							</tr>
+							</table>
+							<ul class="MM">
+							<li><a href="/admin.php/home/banji/add" >添加活动</a></li>
+							<li><a href="/admin.php/home/banji/addlist" >活动列表</a></li>
+							</ul>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 							<h1 class="type"><a>学院信息</a></h1>
 							<div class="content">
 							<table width="100%" border="0" cellspacing="0" cellpadding="0">

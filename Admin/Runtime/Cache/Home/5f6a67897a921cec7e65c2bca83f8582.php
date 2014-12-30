@@ -256,6 +256,35 @@ H1 a {
 							<li><a href="/admin.php/home/gy/lists" >感言添加</a></li>
 							</ul>
                             </div>
+
+
+
+
+							<h1 class="type"><a>班级活动</a></h1>
+							<div class="content">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+							<td><img src="/Public/admin/images/menu_topline.gif" width="182" height="5" /></td>
+							</tr>
+							</table>
+							<ul class="MM">
+							<li><a href="/admin.php/home/banji/add" >添加活动</a></li>
+							<li><a href="/admin.php/home/banji/addlist" >活动列表</a></li>
+							</ul>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 							<h1 class="type"><a>学院信息</a></h1>
 							<div class="content">
 							<table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -309,7 +338,7 @@ H1 a {
 var ctx = document.getElementById("myChart").getContext("2d"); 
 var myNewChart = new Chart(ctx).Bar(data);//new Chart(ctx).PolarArea(data);
 </script>
-2014/12/26
+<?php echo ($day); ?>
 <div id="footer">
 版权所有 &copy; 八维研修学院软件工程学院1308phpA班yi利小组，并保留所有权利。
 </div>

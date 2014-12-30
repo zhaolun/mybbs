@@ -164,8 +164,8 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 </div>
 <div class="fr shouye">
 <?php if(is_array($four)): foreach($four as $key=>$vo): ?><ul>
-<li><a href="/index.php/Home/project/kecheng?id=<?php echo ($vo["stu_id"]); ?>"><img  src="<?php echo ($vo["pic"]); ?>" style="width:142px; height: 87px" /></a></li>
-<li><a class="style3" href="/index.php/Home/project/kecheng?id=<?php echo ($vo["stu_id"]); ?>" src="/public/images/1.jpg"><?php echo ($vo["stu_name"]); ?>-<?php echo ($vo["s_name"]); ?></a></li>
+<li><a href="/index.php/Home/message/video?stu_id=<?php echo ($vo["stu_id"]); ?>"><img  src="<?php echo ($vo["pic"]); ?>" style="width:142px; height: 87px" /></a></li>
+<li><a class="style3" href="/index.php/Home/message/video?stu_id=<?php echo ($vo["stu_id"]); ?>" src="/public/images/1.jpg"><?php echo ($vo["stu_name"]); ?>-<?php echo ($vo["s_name"]); ?></a></li>
 </ul><?php endforeach; endif; ?>
 </div>
 <div></div>
@@ -389,7 +389,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
                       <table border="0" cellpadding="0" cellspacing="0" class="zhaopinlist" height="124" style="margin-top: 5px" width="98%">
 <tbody>
 <?php if(is_array($newzhaopininfo)): foreach($newzhaopininfo as $key=>$val): ?><tr>
-	<td class="td1" width="73%"><a href=""><?php echo ($val["company"]); ?></a></td>
+	<td class="td1" width="73%"><a href="/index.php/Home/index/company/id/<?php echo ($val["id"]); ?>"><?php echo ($val["company"]); ?></a></td>
 
 	<td width="27%"><?php echo (substr($val["time"],0,10)); ?></td>
 	</tr><?php endforeach; endif; ?>	

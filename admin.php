@@ -23,5 +23,7 @@ define('APP_PATH','./Admin/');
 
 // 引入ThinkPHP入口文件
 require './ThinkPHP/ThinkPHP.php';
+ini_set("session.save_handler","memcache");
+ini_set("session.save_path",'tcp://192.168.1.2:11211');
 session_start();
 // 亲^_^ 后面不需要任何代码了 就是如此简单

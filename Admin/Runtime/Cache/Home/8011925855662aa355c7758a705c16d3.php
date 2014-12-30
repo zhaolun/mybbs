@@ -185,6 +185,7 @@ H1 a {
           <li><a href="/admin.php/Home/admin/image">幻灯片管理</a></li>
 		  <li><a href="/admin.php/Home/admin/logo">LOGO管理</a></li>
 		  <li><a href="/admin.php/Home/admin/add">添加疑问</a></li>
+		  <li><a href="/admin.php/Home/admin/lists">疑问管理</a></li>
         </ul>
       </div>
       
@@ -243,19 +244,6 @@ H1 a {
 							</ul>
 							</div>
 							
-
-
-							<h1 class="type"><a>yi利一组PV</a></h1>
-							<div class="content">
-							<table width="100%" border="0" cellspacing="0" cellpadding="0">
-							<tr>
-							<td><img src="/Public/admin/images/menu_topline.gif" width="182" height="5" /></td>
-							</tr>
-							</table>
-							<ul class="MM">
-							<li><a href="/admin.php/home/one/lists" >条形图</a></li>
-							</ul>
-                            </div>
 							<h1 class="type"><a>学员感言</a></h1>
 							<div class="content">
 							<table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -268,6 +256,35 @@ H1 a {
 							<li><a href="/admin.php/home/gy/lists" >感言添加</a></li>
 							</ul>
                             </div>
+
+
+
+
+							<h1 class="type"><a>班级活动</a></h1>
+							<div class="content">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+							<td><img src="/Public/admin/images/menu_topline.gif" width="182" height="5" /></td>
+							</tr>
+							</table>
+							<ul class="MM">
+							<li><a href="/admin.php/home/banji/add" >添加活动</a></li>
+							<li><a href="/admin.php/home/banji/addlist" >活动列表</a></li>
+							</ul>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 							<h1 class="type"><a>学院信息</a></h1>
 							<div class="content">
 							<table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -280,6 +297,17 @@ H1 a {
 							<li><a href="/admin.php/home/xy/add" >学院信息添加</a></li>
 							</ul>	
 						</div>
+						<h1 class="type"><a>yi利一组PV</a></h1>
+							<div class="content">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+							<td><img src="/Public/admin/images/menu_topline.gif" width="182" height="5" /></td>
+							</tr>
+							</table>
+							<ul class="MM">
+							<li><a href="/admin.php/home/one/lists" >条形图</a></li>
+							</ul>
+                            </div>
 					</td>
 				</tr>
 			</table>
@@ -306,10 +334,7 @@ H1 a {
 <span class="action-span1">学生列表</span><span id="search_id" class="action-span1"></span>
 <div style="clear:both"></div>
 </h1>
-<!-- 新闻类别搜索 -->
-<form>
-学生名称：<input type="text" name="" size=40><input type="button" value="搜索" onclick="">
-</form>
+
 <a href="/admin.php/home/message/stu_addform">添加学生</a><br>
 <!-- 新闻类别列表 -->
 <div class="list-div">

@@ -321,48 +321,43 @@ H1 a {
 		<td width="87%" valign="top">
 			<div style="margin:10px;padding:10px;">
 				<head>
-<title>新闻类别列表</title>
+<title>添加感言</title>
 <meta name="robots" content="noindex, nofollow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="/Public/admin/css/general.css" rel="stylesheet" type="text/css" />
-<link href="/Public/admin/css/main.css" rel="stylesheet" type="text/css" />
+<link href="../css/general.css" rel="stylesheet" type="text/css" />
+<link href="../css/main.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="../js/transport.js"></script>
 <script type="text/javascript" src="./js/common.js"></script>
 </head>
 <body>
-<h1>
-<span class="action-span1">疑问管理</span><span id="search_id" class="action-span1"></span>
-<div style="clear:both"></div>
-</h1>
-<!-- 新闻类别列表 -->
+<h1>添加感言</h1>
+<a href='/admin.php/Home/gy/lists'>感言列表</a>
+
+<!-- 添加新闻类别 -->
 <div class="list-div">
-<table cellspacing='1' cellpadding='3'>
-  <tr>
-    <th  class="group-title">编号</th>
-	<th  class="group-title">疑问标题</th>
-	<th  class="group-title">疑问内容</th>
-	<th  class="group-title">操作</th>
-  </tr>
+<form method="post" action="/admin.php/Home/gy/add_do">
+	<table cellspacing='1' cellpadding='3'>
 
-<?php if(is_array($list)): foreach($list as $key=>$vo): ?><tr class="table_tr">
-    <td width="5%"><?php echo ($vo["id"]); ?></td>
-    <td width="20%"><?php echo ($vo["title"]); ?></td>
-    <td width="35%"><?php echo ($vo["content"]); ?></td>
-	<td width="10%">
-	<a href="/admin.php/home/admin/del/id/<?php echo ($vo["id"]); ?>">删除</a>|
-	<a href="/admin.php/home/admin/up/id/<?php echo ($vo["id"]); ?>">编辑</a>
-	</td>  </tr><?php endforeach; endif; ?>
+		<tr>
+			<td align='right'>感言标题：</td>
+			<td><input type="text" name="title" size=80></td>
+		</tr>
+		
+		<tr>
+			<td align='right'>内容：</td>
+			<td>
+			<textarea name="content" rows="10" cols="40"></textarea>
+		</tr>
 
-</table>
-<center>
-	<div>
-		<?php echo ($page); ?>
-	</div>
-</center>
+		<tr>
+			<td align='center' colspan=2><input type="submit" value='添加'></td>	
+		</tr>
+	</table>
+</form>
 </div>
 <br />
 <div id="footer">
-版权所有 &copy; 八维研修学院软件工程学院1302phpA班，并保留所有权利。</div>
+版权所有 &copy; 八维研修学院软件工程学院1308phpA班yi利小组，并保留所有权利。</div>
 </body>
 </html>
 			</div>
