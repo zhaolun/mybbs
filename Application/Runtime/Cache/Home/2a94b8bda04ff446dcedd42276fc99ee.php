@@ -164,8 +164,8 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 </div>
 <div class="fr shouye">
 <?php if(is_array($four)): foreach($four as $key=>$vo): ?><ul>
-<li><a href=""><img  src="<?php echo ($vo["pic"]); ?>" style="width:142px; height: 87px" /></a></li>
-<li><a class="style3" href="" src="/public/images/1.jpg"><?php echo ($vo["stu_name"]); ?>-<?php echo ($vo["s_name"]); ?></a></li>
+<li><a href="/index.php/Home/project/kecheng?id=<?php echo ($vo["stu_id"]); ?>"><img  src="<?php echo ($vo["pic"]); ?>" style="width:142px; height: 87px" /></a></li>
+<li><a class="style3" href="/index.php/Home/project/kecheng?id=<?php echo ($vo["stu_id"]); ?>" src="/public/images/1.jpg"><?php echo ($vo["stu_name"]); ?>-<?php echo ($vo["s_name"]); ?></a></li>
 </ul><?php endforeach; endif; ?>
 </div>
 <div></div>
@@ -370,7 +370,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 			<table border="0" cellpadding="0" cellspacing="0" class="zhaopinlist" height="124" style="margin-top: 5px" width="98%">
 <tbody>
 <?php if(is_array($banjiinfo)): foreach($banjiinfo as $key=>$val): ?><tr>
-	<td class="td1" width="73%"><a href="" target="_blank"><?php echo ($val["pei_class"]); ?></a></td>
+	<td class="td1" width="73%"><a href="/index.php/Home/project/kecheng?id=<?php echo ($val["pei_id"]); ?>" target="_blank"><?php echo ($val["pei_class"]); ?></a></td>
 	<td width="11%">若干</td>
 	<td width="16%">11.28</td>
 	</tr><?php endforeach; endif; ?>	
