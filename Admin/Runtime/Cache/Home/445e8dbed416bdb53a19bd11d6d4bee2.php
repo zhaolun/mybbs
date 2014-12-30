@@ -1,4 +1,4 @@
-<html>
+<?php if (!defined('THINK_PATH')) exit();?><html>
 <head>
 <title>MyBBS后台管理</title>
 </head>
@@ -146,7 +146,7 @@ H1 a {
 		<td width="39%" valign="top">
 			<table width="100%" border="0" cellspacing="0" cellpadding="0">
 				<tr>
-					<td width="74%" height="38" class="admin_txt">管理员：<b>{$_SESSION.username}</b> 您好,感谢登陆使用！</td>
+					<td width="74%" height="38" class="admin_txt">管理员：<b><?php echo ($_SESSION["username"]); ?></b> 您好,感谢登陆使用！</td>
 					<td width="22%"><a href="#" target="_self" onClick="logout();"><img src="/Public/admin/images/out.gif" alt="安全退出" width="46" height="20" border="0"></a></td>
 					<script type="text/javascript">
 					<!--
@@ -244,6 +244,19 @@ H1 a {
 							</ul>
 							</div>
 							
+
+
+							<h1 class="type"><a>yi利一组PV</a></h1>
+							<div class="content">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+							<td><img src="/Public/admin/images/menu_topline.gif" width="182" height="5" /></td>
+							</tr>
+							</table>
+							<ul class="MM">
+							<li><a href="/admin.php/home/one/lists" >条形图</a></li>
+							</ul>
+                            </div>
 							<h1 class="type"><a>学员感言</a></h1>
 							<div class="content">
 							<table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -268,17 +281,6 @@ H1 a {
 							<li><a href="/admin.php/home/xy/add" >学院信息添加</a></li>
 							</ul>	
 						</div>
-						<h1 class="type"><a>yi利一组PV</a></h1>
-							<div class="content">
-							<table width="100%" border="0" cellspacing="0" cellpadding="0">
-							<tr>
-							<td><img src="/Public/admin/images/menu_topline.gif" width="182" height="5" /></td>
-							</tr>
-							</table>
-							<ul class="MM">
-							<li><a href="/admin.php/home/one/lists" >条形图</a></li>
-							</ul>
-                            </div>
 					</td>
 				</tr>
 			</table>
@@ -291,7 +293,47 @@ H1 a {
 		</script>
 		<td width="87%" valign="top">
 			<div style="margin:10px;padding:10px;">
-				{__CONTENT__}
+				<head>
+<title>新闻类别列表</title>
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="/Public/admin/css/general.css" rel="stylesheet" type="text/css" />
+<link href="/Public/admin/css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/Public/admin/js/transport.js"></script>
+<script type="text/javascript" src="/Public/admin/js/common.js"></script>
+</head>
+<body>
+<h1>
+<span class="action-span1">新闻类别列表</span><span id="search_id" class="action-span1"></span>
+<div style="clear:both"></div>
+</h1>
+<!-- 新闻类别搜索 -->
+<form>
+学校名称：<input type="text" name=""><input type="button" value="ajax搜索" onclick="">
+</form>
+<!-- 新闻类别列表 -->
+<div class="list-div">
+<a href="/admin.php/home/message/sch_addform">添加学校</a>
+<table cellspacing='1' cellpadding='3'>
+  <tr>
+      <th>学校编号</th>
+      <th>学校名称</th>
+      <th>操作</th>
+  </tr>
+  <?php if(is_array($list)): foreach($list as $key=>$val): ?><tr>  
+      <td><?php echo ($val["s_id"]); ?></td>
+      <td><?php echo ($val["s_name"]); ?></td>
+      <td><a href="/admin.php/home/message/sch_del/s_id/<?php echo ($val["s_id"]); ?>">【删除】</a>
+<a href="/admin.php/home/message/sch_editform/s_id/<?php echo ($val["s_id"]); ?>">【编辑】</a></td>
+    </tr><?php endforeach; endif; ?>
+  
+</table>
+</div>
+<br />
+<div id="footer">
+版权所有 &copy; 八维研修学院软件工程学院1302phpA班，并保留所有权利。</div>
+</body>
+</html>
 			</div>
 		</td>
 	</tr>
