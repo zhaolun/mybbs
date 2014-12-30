@@ -256,8 +256,6 @@ H1 a {
 							<li><a href="/admin.php/home/gy/lists" >感言添加</a></li>
 							</ul>
                             </div>
-<<<<<<< HEAD
-=======
 
 
 
@@ -287,7 +285,6 @@ H1 a {
 
 
 
->>>>>>> 191a3ddc0c26b6d1efeef8e3552b2bc36f668163
 							<h1 class="type"><a>学院信息</a></h1>
 							<div class="content">
 							<table width="100%" border="0" cellspacing="0" cellpadding="0">
