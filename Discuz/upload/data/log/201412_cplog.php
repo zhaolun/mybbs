@@ -426,3 +426,13 @@
 <?PHP exit;?>	1419903478	admin	1	127.0.0.1	cloudaddons	GET={frames=yes; id=yibai_d1.template; }; POST={};
 <?PHP exit;?>	1419903479	admin	1	127.0.0.1	cloudaddons	GET={id=yibai_d1.template; }; POST={};
 >>>>>>> 1038034b602366d22c8db6abf282e984649797f8
+<?PHP exit;?>	1419906455	admin	1	127.0.0.1		GET={}; POST={};
+<?PHP exit;?>	1419906455	admin	1	127.0.0.1	index	GET={}; POST={};
+<?PHP exit;?>	1419907537	admin	1	127.0.0.1		GET={}; POST={};
+<?PHP exit;?>	1419907537	admin	1	127.0.0.1	index	GET={}; POST={};
+<?PHP exit;?>	1419908110	admin	1	127.0.0.1		GET={}; POST={};
+<?PHP exit;?>	1419908110	admin	1	127.0.0.1	index	GET={}; POST={};
+<?PHP exit;?>	1419908373	admin	1	127.0.0.1	logout	GET={}; POST={};
+<?PHP exit;?>	1419909101	admin	1	127.0.0.1		GET={}; POST={};
+<?PHP exit;?>	1419909102	admin	1	127.0.0.1	index	GET={}; POST={};
+<?PHP exit;?>	1419909228	admin	1	127.0.0.1	index	GET={}; POST={};

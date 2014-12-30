@@ -163,22 +163,10 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 </div>
 </div>
 <div class="fr shouye">
-<ul>
-<li><a href=""><img  src="/public/images/1.jpg" style="width:142px; height: 87px" /></a></li>
-<li><a class="style3" href="" src="/public/images/1.jpg">赵伦-玩酷我的程序人生</a></li>
-</ul>
-<ul>
-<li><a href=""><img src="/public/images/2.jpg" style="width: 142px; height: 87px;" /></a></li>
-<li><a class="style3" href="">刘俊-女生挑战PHP </a></li>
-</ul>
-<ul>
-<li><a href=""><img src="/public/images/5.jpg" style="width: 142px; height: 87px" /></a></li>
-<li><a class="style3" href="">雷金涛专题-因为爱情</a></li>
-</ul>
-<ul>
-<li><a href=""><img src="/public/images/3.jpg" style="width: 142px; height: 87px" /></a></li>
-<li><a class="style3" href="">崔萌泽专题-我有我原则 </a></li>
-</ul>
+<?php if(is_array($four)): foreach($four as $key=>$vo): ?><ul>
+<li><a href=""><img  src="<?php echo ($vo["pic"]); ?>" style="width:142px; height: 87px" /></a></li>
+<li><a class="style3" href="" src="/public/images/1.jpg"><?php echo ($vo["stu_name"]); ?>-<?php echo ($vo["s_name"]); ?></a></li>
+</ul><?php endforeach; endif; ?>
 </div>
 <div></div>
 </div>
@@ -310,6 +298,8 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 			  </div>
 			
 			  <div class="clear"></div>
+<div class="clear"></div>
+
 		  </div>
 			<div><img src="/Public/images/leftbottom.gif"/></div>
 				<div></div>
@@ -339,9 +329,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
             }
 			</script>
 			<?php else: ?>欢迎您：<?php if($_SESSION["img"] != '' ): ?><img src="<?php echo ($_SESSION["img"]); ?>"><?php endif; ?><font color=red><?php echo ($_SESSION["username"]); ?></font>　<a href="/index.php/Home/index/loginout">退出</a><?php endif; ?>
-			
             </div>
-
 		<span id="forget" style="display:none;"><h4 class="righttitle1" style="margin-top:10px;">密码找回</span></h4>
 			<div class="jyjb-left" >
 			<form method="post" action="/index.php/Home/index/findpwd" onsubmit="return sub()">
@@ -376,7 +364,25 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 				}
 			//-->
 			</script>
-
+		<h4 class="righttitle1" style="margin-top:10px;"><span class="fl">
+		开班信息</span></h4>
+			<div class="jyjb-left" >
+			<table border="0" cellpadding="0" cellspacing="0" class="zhaopinlist" height="124" style="margin-top: 5px" width="98%">
+<tbody>
+<?php if(is_array($banjiinfo)): foreach($banjiinfo as $key=>$val): ?><tr>
+	<td class="td1" width="73%"><a href="" target="_blank"><?php echo ($val["pei_class"]); ?></a></td>
+	<td width="11%">若干</td>
+	<td width="16%">11.28</td>
+	</tr><?php endforeach; endif; ?>	
+	<tr>
+	<td class="td1" width="73%"><a href="" target="_blank"><span style="color:#ff0000;">更多开班信息请点击&hellip;&hellip;</span></a></td>
+	<td width="11%"><a href=""><span style="color:#ff0000;">查看</span></a></td>
+	<td width="16%"><a href=""><span style="color:#ff0000;">更多</span></a></td>
+	</tr>
+	<tr></tr>
+</tbody>
+</table>
+            </div>
 			
 			<div class="rightbottom"><img src="/Public/images/rightbottom.jpg"  /></div>		
 			<h4 class="righttitle1 zhaopin"><span class=fgf"blue">最新</span>企业招聘</h4>
@@ -480,57 +486,6 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 	  </div>
 	</div>		
 	<div class="clear"></div>
-
-<!-- 友情链接 -->
-<div class="content">
-  <div class="friendlink_con">
-<div class="friendlink">
-<div class="friendlink_style01"><img width="37" height="87" src="/Public/images/youqin.jpg"></div>
-<div class="friendlink_style03">
- <ul>
-<li><a href="http://www.sietoo.com" target="_blank">深圳网站建设</a></li>
-<li><a href="http://www.ibeifeng.com" target="_blank">北风网</a></li>
-<li><a href="http://www.wangxiaowang.com/" target="_blank">网络教育</a></li>
-<li><a href="http://bbs.17liuxue.com" target="_blank">澳洲留学DIY</a></li>
-<li><a href="http://qd.jiajiao400.com" target="_blank">青岛家教网</a></li>
-<li><a href="http://www.028jq.com" target="_blank">英国留学</a></li>
-<li><a href="http://www.shisu-edu.com/" target="_blank">上外留学预科</a></li>
-<li><a href="http://lyg.ygjj.com/" target="_blank">连云港家教</a></li>
-<li><a href="http://www.wen5u.com" target="_blank">论文格式</a></li>
-<li><a href="http://edu.tianhenet.com.cn" target="_blank">CFO培训</a></li>
-<li><a href="http://baike.zidiantong.com" target="_blank">百科知识</a></li>
-<li><a href="http://www.xjc100.com" target="_blank">宁波电脑培训</a></li>
-<li><a href="http://jl.htexam.com" target="_blank">吉林省公务员考试网</a></li>
-<li><a href="http://bbs.xunkoo.com" target="_blank">大学生网</a></li>
-<li><a href="http://www.0755zixuekaoshi.com" target="_blank">深圳自学考试网</a></li>
-<li><a href="http://www.youzhikew.com" target="_blank">优质课网</a></li>
-<li><a href="http://www.youkao.com" target="_blank">优考网</a></li>
-<li><a href="http://www.fshuayue.com/" target="_blank">成人高考网</a></li>
-<li><a href="http://sz.gaofen.com" target="_blank">深圳教育网</a></li>
-<li><a href="http://cjcx.xygmed.com" target="_blank">执业医师成绩查询</a></li>
-<li><a href="http://zs.k8008.com" target="_blank">科技招商</a></li>
-<li><a href="http://www.jsnxs.com" target="_blank">江苏信用社招聘考试</a></li>
-<li><a href="http://www.peixunhu.com" target="_blank">武汉培训网</a></li>
-<li><a href="http://net.thea.cn" target="_blank">在线课程</a></li>
-<li><a href="http://zz.jiajiao400.com/" target="_blank">郑州家教</a></li>
-<li><a href="http://keji.3158.cn " target="_blank">网络教育</a></li>
-<li><a href="http://aia.lixinedu.com.cn" target="_blank">AIA培训</a></li>
-</ul>
-
-</div>
-</div>
-</div>
-</div>
-			 
-
-<div class="clear"></div>
-		  </div>
-			<div><img src="/Public/images/leftbottom.gif"/></div>
-				<div></div>
-		</div>		
-	
-	<div class="clear"></div>
-
 
 </div>
 </div>

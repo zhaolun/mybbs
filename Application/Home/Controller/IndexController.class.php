@@ -199,13 +199,12 @@ class IndexController extends Controller {
 		$this->info=$db->select();
 		$this->display();
 	}
-<<<<<<< HEAD
 
 	function msdylist(){
 		$db=M("mingshi");
 		$this->info=$db->select();
 		$this->display();
-=======
+	}
 	public function banji(){
 		$model=M('banji');
 		$id=$_GET['id'];
@@ -232,6 +231,5 @@ class IndexController extends Controller {
 		}else{
 			$this->success("评论成功","/index.php/Home/index/banji?id=".$id);
 		}
->>>>>>> dce4ec568dc03d8ee5bdd5d1214f00544b0cc296
 	}
 }

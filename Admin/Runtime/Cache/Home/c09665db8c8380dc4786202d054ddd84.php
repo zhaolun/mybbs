@@ -185,6 +185,7 @@ H1 a {
           <li><a href="/admin.php/Home/admin/image">幻灯片管理</a></li>
 		  <li><a href="/admin.php/Home/admin/logo">LOGO管理</a></li>
 		  <li><a href="/admin.php/Home/admin/add">添加疑问</a></li>
+		  <li><a href="/admin.php/Home/admin/lists">疑问管理</a></li>
         </ul>
       </div>
       
@@ -243,19 +244,6 @@ H1 a {
 							</ul>
 							</div>
 							
-
-
-							<h1 class="type"><a>yi利一组PV</a></h1>
-							<div class="content">
-							<table width="100%" border="0" cellspacing="0" cellpadding="0">
-							<tr>
-							<td><img src="/Public/admin/images/menu_topline.gif" width="182" height="5" /></td>
-							</tr>
-							</table>
-							<ul class="MM">
-							<li><a href="/admin.php/home/one/lists" >条形图</a></li>
-							</ul>
-                            </div>
 							<h1 class="type"><a>学员感言</a></h1>
 							<div class="content">
 							<table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -280,6 +268,17 @@ H1 a {
 							<li><a href="/admin.php/home/xy/add" >学院信息添加</a></li>
 							</ul>	
 						</div>
+						<h1 class="type"><a>yi利一组PV</a></h1>
+							<div class="content">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+							<td><img src="/Public/admin/images/menu_topline.gif" width="182" height="5" /></td>
+							</tr>
+							</table>
+							<ul class="MM">
+							<li><a href="/admin.php/home/one/lists" >条形图</a></li>
+							</ul>
+                            </div>
 					</td>
 				</tr>
 			</table>

@@ -297,43 +297,51 @@ H1 a {
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="/Public/admin/css/general.css" rel="stylesheet" type="text/css" />
 <link href="/Public/admin/css/main.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="../js/transport.js"></script>
-<script type="text/javascript" src="./js/common.js"></script>
+<script type="text/javascript" src="/Public/admin/js/transport.js"></script>
+<script type="text/javascript" src="/Public/admin/js/common.js"></script>
 </head>
 <body>
 <h1>
-<span class="action-span1">疑问管理</span><span id="search_id" class="action-span1"></span>
+<span class="action-span1">公司信息</span><span id="search_id" class="action-span1"></span>
 <div style="clear:both"></div>
 </h1>
+<!-- 新闻类别搜索 -->
+<form action="/admin.php/home/message/sphinx" method="post">
+  公司名称：
+  <input type="text" name="com_name">
+  <input type="submit" value="查询">
+</form>
+<a href="/admin.php/home/message/com_addform">添加公司</a>
+<br>
 <!-- 新闻类别列表 -->
 <div class="list-div">
 <table cellspacing='1' cellpadding='3'>
-  <tr>
-    <th  class="group-title">编号</th>
-	<th  class="group-title">疑问标题</th>
-	<th  class="group-title">疑问内容</th>
-	<th  class="group-title">操作</th>
-  </tr>
-
-<?php if(is_array($list)): foreach($list as $key=>$vo): ?><tr class="table_tr">
-    <td width="5%"><?php echo ($vo["id"]); ?></td>
-    <td width="20%"><?php echo ($vo["title"]); ?></td>
-    <td width="35%"><?php echo ($vo["content"]); ?></td>
-	<td width="10%">
-	<a href="/admin.php/home/admin/del/id/<?php echo ($vo["id"]); ?>">删除</a>|
-	<a href="/admin.php/home/admin/up/id/<?php echo ($vo["id"]); ?>">编辑</a>
-	</td>  </tr><?php endforeach; endif; ?>
-
+  <tr align="center">
+         <th>公司编号</th>
+         <th>公司名称</th>
+         <th>创办时间</th>
+         <th>公司网站</th>
+         <th>招收人数</th>
+         <th>操作</th>
+      </tr>
+     <?php if(is_array($list)): foreach($list as $key=>$val): ?><tr align="center">
+             <td><?php echo ($val["com_id"]); ?></td>
+             <td><?php echo ($val["com_name"]); ?></td>
+             <td><?php echo ($val["r_time"]); ?></td>
+             <td><?php echo ($val["r_url"]); ?></td>
+             <td><?php echo ($val["r_num"]); ?></td>
+             <td><a href="/admin.php/home/message/com_del/com_id/<?php echo ($val["com_id"]); ?>">【删除】</a>
+             <a href="/admin.php/home/message/com_editform/com_id/<?php echo $val['com_id']; ?>">【编辑】</a></td>
+          </tr><?php endforeach; endif; ?>
 </table>
-<center>
-	<div>
-		<?php echo ($page); ?>
-	</div>
-</center>
+
+</div>
+<div class="pagination">
+　　<?php echo ($page); ?>
 </div>
 <br />
 <div id="footer">
-版权所有 &copy; 八维研修学院软件工程学院1302phpA班，并保留所有权利。</div>
+版权所有 &copy; 八维研修学院软件工程学院1308phpA班，并保留所有权利。</div>
 </body>
 </html>
 			</div>

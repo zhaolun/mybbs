@@ -185,6 +185,7 @@ H1 a {
           <li><a href="/admin.php/Home/admin/image">幻灯片管理</a></li>
 		  <li><a href="/admin.php/Home/admin/logo">LOGO管理</a></li>
 		  <li><a href="/admin.php/Home/admin/add">添加疑问</a></li>
+		  <li><a href="/admin.php/Home/admin/lists">疑问管理</a></li>
         </ul>
       </div>
       
