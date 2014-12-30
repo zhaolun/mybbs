@@ -21,7 +21,7 @@
 
 <?php if(empty($gid)) { ?><?php echo adshow("text/wp a_t");?><?php } ?>
 
-<style id="diy_style" type="text/css">#frameiS4UsZ {  border:4px !important;}</style>
+<style id="diy_style" type="text/css">#frameiS4UsZ { border:4px !important;}</style>
 
 <?php if(empty($gid)) { ?>
 <div class="wp">
