@@ -16,6 +16,7 @@
 <!-- 新闻类别搜索 -->
 
 学校名称：<input type="text" name="s_name" id="s_name">
+秘钥：<input type="text" name="key" id="key">
 <input type="button" value="搜索" onclick="jiekou()">
 
 
@@ -43,28 +44,29 @@
 
 <div id="div"></div>
 <br />
-
 <script type="text/javascript">
  function jiekou()
  {
     name=$('#s_name').val();
-   // alert(name);
+    key=$('#key').val();
+    //alert($);
     $.ajax({
-      url:"http://www.shixun1.com/jiekou/stu.php",
-      data:{"s_name":name},
+      url:"http://www.mybbs.com/admin.php/home/message/jiekou_key",
+      data:{"s_name":name,"key":key},
       dataType:"jsonp",
       jsonp:"callback",
-      jsonpCallback:'showList',
+      //jsonpCallback:'showList',
       type:"get",
       success:function(e)
       {
-        //alert(e);
+        alert(e);
+        /*
         var str='<table><tr><th>s_id</th><th>s_name</th></tr>';
         for(a in e){
           str+="</tr><td>"+e[a]['s_id']+"</td><td>"+e[a]['s_name']+"</td><tr>";
         }
         str+='</table>';
-        $('#div').html(str);
+        $('#div').html(str);*/
       }
     })
  }

@@ -339,4 +339,18 @@ class MessageController extends Controller {
             $this->error($upload->getError());    
         }
     }
+    
+    public function jiekou_key()
+    {
+        $callback=$_GET['callback'];
+        $s_name=$_GET['s_name'];
+        $key=$_GET['key'];
+        
+        echo $callback."(".json_encode().")";
+    }
+    /*
+    public function key()
+    {
+        if()
+    }*/
 }

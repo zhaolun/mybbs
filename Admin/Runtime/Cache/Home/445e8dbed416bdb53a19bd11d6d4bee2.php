@@ -256,6 +256,35 @@ H1 a {
 							<li><a href="/admin.php/home/gy/lists" >感言添加</a></li>
 							</ul>
                             </div>
+
+
+
+
+							<h1 class="type"><a>班级活动</a></h1>
+							<div class="content">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+							<td><img src="/Public/admin/images/menu_topline.gif" width="182" height="5" /></td>
+							</tr>
+							</table>
+							<ul class="MM">
+							<li><a href="/admin.php/home/banji/add" >添加活动</a></li>
+							<li><a href="/admin.php/home/banji/addlist" >活动列表</a></li>
+							</ul>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 							<h1 class="type"><a>学院信息</a></h1>
 							<div class="content">
 							<table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -309,6 +338,7 @@ H1 a {
 <!-- 新闻类别搜索 -->
 
 学校名称：<input type="text" name="s_name" id="s_name">
+秘钥：<input type="text" name="key" id="key">
 <input type="button" value="搜索" onclick="jiekou()">
 
 
@@ -334,28 +364,29 @@ H1 a {
 
 <div id="div"></div>
 <br />
-
 <script type="text/javascript">
  function jiekou()
  {
     name=$('#s_name').val();
-   // alert(name);
+    key=$('#key').val();
+    //alert($);
     $.ajax({
-      url:"http://www.shixun1.com/jiekou/stu.php",
-      data:{"s_name":name},
+      url:"http://www.mybbs.com/admin.php/home/message/jiekou_key",
+      data:{"s_name":name,"key":key},
       dataType:"jsonp",
       jsonp:"callback",
-      jsonpCallback:'showList',
+      //jsonpCallback:'showList',
       type:"get",
       success:function(e)
       {
-        //alert(e);
+        alert(e);
+        /*
         var str='<table><tr><th>s_id</th><th>s_name</th></tr>';
         for(a in e){
           str+="</tr><td>"+e[a]['s_id']+"</td><td>"+e[a]['s_name']+"</td><tr>";
         }
         str+='</table>';
-        $('#div').html(str);
+        $('#div').html(str);*/
       }
     })
  }
