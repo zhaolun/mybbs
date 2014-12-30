@@ -1,4 +1,4 @@
-<html>
+<?php if (!defined('THINK_PATH')) exit();?><html>
 <head>
 <title>MyBBS后台管理</title>
 </head>
@@ -146,7 +146,7 @@ H1 a {
 		<td width="39%" valign="top">
 			<table width="100%" border="0" cellspacing="0" cellpadding="0">
 				<tr>
-					<td width="74%" height="38" class="admin_txt">管理员：<b>{$_SESSION.username}</b> 您好,感谢登陆使用！</td>
+					<td width="74%" height="38" class="admin_txt">管理员：<b><?php echo ($_SESSION["username"]); ?></b> 您好,感谢登陆使用！</td>
 					<td width="22%"><a href="#" target="_self" onClick="logout();"><img src="/Public/admin/images/out.gif" alt="安全退出" width="46" height="20" border="0"></a></td>
 					<script type="text/javascript">
 					<!--
@@ -320,7 +320,47 @@ H1 a {
 		</script>
 		<td width="87%" valign="top">
 			<div style="margin:10px;padding:10px;">
-				{__CONTENT__}
+				<head>
+<title>添加班级活动</title>
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="/Public/admin/css/general.css" rel="stylesheet" type="text/css" />
+<link href="/Public/admin/css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/transport.js"></script>
+<script type="text/javascript" src="./js/common.js"></script>
+</head>
+<body>
+<h1>
+<span class="action-span1">添加班级活动</span><span id="search_id" class="action-span1"></span>
+<div style="clear:both"></div>
+</h1>
+<!-- 添加新闻 -->
+<div class="list-div">
+<form method="post" action="add_pro" enctype="multipart/form-data">
+	<table cellspacing='1' cellpadding='3'>
+		<tr>
+			<td align='right'>活动标题：</td>
+			<td><input type="text" name="huodong" size=80></td>
+		</tr>
+			<tr>
+				<td align='right'>活动小标题：</td>
+				<td><input type="text" name="xhuodong" size=80></td>
+			</tr>
+		<tr>
+			<td align='right'>活动内容：</td>
+			<td><textarea name="content" rows="20" cols="100"></textarea></td>
+		</tr>	
+		<tr>
+			<td align='center' colspan=2><input type="submit" value='添加活动'></td>	
+		</tr>
+	</table>
+</form>
+</div>
+<br/>
+<div id="footer">
+版权所有 &copy; 八维研修学院软件工程学院1302phpA班，并保留所有权利。</div>
+</body>
+</html>
 			</div>
 		</td>
 	</tr>
