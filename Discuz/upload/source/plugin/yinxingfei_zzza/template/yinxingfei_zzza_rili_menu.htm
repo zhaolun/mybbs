@@ -1,0 +1,87 @@
+<!--{block return}-->
+<div id="zzzarili_menu" style="display:none;">
+	<div class="j_succ_info zzza_sign_succ2" style="">
+        <div class="j_zzza_sign_ad_mobi zzza_sign_ad_mobi">
+            <div class="zzza_sign_ad_mobi_wrapper">
+                <p class="j_zzza_sign_ad_mobi_text zzza_sign_ad_mobi_text">
+                    <span class="zzza_sign_ad_mobi_strong">
+                        <strong style="color:#666666;line-height:18px;position:relative;zoom:1;">
+                            {lang yinxingfei_zzza:zzzam7}
+                            <span>
+                                <a href="{$set['zzza_link']}" style="color:#ff0000;">{$set['zzza_t']}</a>&nbsp;
+                            </span>
+                            {lang yinxingfei_zzza:zzzam8888}
+                        </strong>
+                        <span class="zzza_sign_ad_mobi_hot">
+                        </span>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="zzza_sign_bottompart">
+            <div class="zzza_sign_succ_calendar_title clearfix">
+                    <span class="calendar_title_span">
+                        {lang yinxingfei_zzza:zzzam8}
+                    </span>
+                    <div class="calendar_title_month">
+                        <div class="calendar_month_span j_calendar_month">
+                            {$zzza_year}{lang yinxingfei_zzza:zzzam9}{$zzza_month}{lang yinxingfei_zzza:zzzam10}
+                        </div>
+                        
+                    </div>
+                </div>
+                <table class="zzza_sign_succ_table ">
+                    <thead align="center">
+                        <tr class="zzza_sign_succ_canlerdar_head">
+                            <td>
+								{lang yinxingfei_zzza:zzzam11}
+							</td>
+							<td>
+								{lang yinxingfei_zzza:zzzam12}
+							</td>
+							<td>
+								{lang yinxingfei_zzza:zzzam13}
+							</td>
+							<td>
+								{lang yinxingfei_zzza:zzzam14}
+							</td>
+							<td>
+								{lang yinxingfei_zzza:zzzam15}
+							</td>
+							<td>
+								{lang yinxingfei_zzza:zzzam16}
+							</td>
+							<td>
+								{lang yinxingfei_zzza:zzzam17}
+							</td>
+                        </tr>
+                    </thead>
+                    <tbody align="center" class="zzza_sign_succ_canlerdar_days">
+						{loop $ggprint $key $value}
+                        {if $value['index']%7 == 1 && $value['index']%7 != 0}<tr>{/if}
+                           <td class="zzza_{$value['data']} {if $value['yjyj'] > 0 && $value['yjdi'] == 1}zzza_signed_mob_day{elseif $value['yjyj'] > 0 && $value['yjdi'] != 1}zzza_signed_anime_day{/if}" {if $value['yjyj'] > 0 && $value['yjdi'] == 1}title="{lang yinxingfei_zzza:zzzam18}{$value['lasttime']}{lang yinxingfei_zzza:zzzam19}{$value['jf_jt']}{$value['jf_name']}"{elseif $value['yjyj'] > 0 && $value['yjdi'] != 1}title="{lang yinxingfei_zzza:zzzam20}{$value['yjdi']}{lang yinxingfei_zzza:zzzam21}{$value['lasttime']}{lang yinxingfei_zzza:zzzam19}{$value['jf_jt']}{$value['jf_name']}"{/if}>
+                                {$value['day']}
+                            </td>
+                         {if $value['index']%7 != 1 && $value['index']%7 == 0}<tr>{/if}
+						{/loop}
+                    </tbody>
+                    <tfoot align="center" class="zzza_sign_canlerdar_footer">
+                        <tr>
+                            <td colspan="7" class="zzza_sign_succ_info">
+                                {lang yinxingfei_zzza:zzzam22}
+								<span class="zzza_sign_succ_count_span j_zzza_sign_succ_keep">
+									{$value['lxcs']}
+								</span>
+								{lang yinxingfei_zzza:tian} {lang yinxingfei_zzza:zzzam23}
+								<span class="zzza_sign_succ_count_span j_zzza_sign_succ_count">
+									{$value['ljcs']}
+								</span>
+								{lang yinxingfei_zzza:tian}
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+        </div>
+    </div>
+</div>
+<!--{/block}-->	

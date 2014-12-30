@@ -1,0 +1,14 @@
+<!--{if CURMODULE != 'logging'}-->
+	<script type="text/javascript" src="{$_G[setting][jspath]}logging.js?{VERHASH}"></script>
+	<form method="post" autocomplete="off" id="lsform" action="member.php?mod=logging&action=login&loginsubmit=yes&infloat=yes&lssubmit=yes" onsubmit="{if $_G['setting']['pwdsafety']}pwmd5('ls_password');{/if}return lsSubmit();" style="float:left;">
+
+		<a onclick="showWindow('login', this.href);hideWindow('register');" href="member.php?mod=logging&action=login" >µÇÂ¼</a>
+        <span style="float:left;"> | </span><a href="member.php?mod=register">×¢²á</a>
+
+	</form>
+
+	<!--{if $_G['setting']['pwdsafety']}-->
+		<script type="text/javascript" src="{$_G['setting']['jspath']}md5.js?{VERHASH}" reload="1"></script>
+	<!--{/if}-->
+
+<!--{/if}-->
