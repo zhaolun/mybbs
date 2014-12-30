@@ -478,3 +478,18 @@
 <?PHP exit;?>	1419906487	admin	1	127.0.0.1	plugins	GET={operation=config; do=14; }; POST={};
 <?PHP exit;?>	1419906491	admin	1	127.0.0.1	plugins	GET={operation=config; do=13; }; POST={};
 <?PHP exit;?>	1419906492	admin	1	127.0.0.1	plugins	GET={operation=config; do=14; }; POST={};
+<?PHP exit;?>	1419906780	admin	1	127.0.0.1	plugins	GET={}; POST={};
+<?PHP exit;?>	1419906809	admin	1	127.0.0.1	plugins	GET={operation=import; dir=yinxingfei_zzza; }; POST={};
+<?PHP exit;?>	1419906809	admin	1	127.0.0.1	plugins	GET={operation=import; dir=yinxingfei_zzza; installtype=SC_UTF8; }; POST={};
+<?PHP exit;?>	1419906812	admin	1	127.0.0.1	plugins	GET={operation=import; dir=yinxingfei_zzza; installtype=SC_UTF8; license=yes; }; POST={};
+<?PHP exit;?>	1419906813	admin	1	127.0.0.1	plugins	GET={operation=plugininstall; dir=yinxingfei_zzza; installtype=SC_UTF8; pluginid=15; }; POST={};
+<?PHP exit;?>	1419906820	admin	1	127.0.0.1	plugins	GET={}; POST={};
+<?PHP exit;?>	1419906900	admin	1	127.0.0.1	upgrade	GET={frames=yes; }; POST={};
+<?PHP exit;?>	1419906900	admin	1	127.0.0.1	upgrade	GET={}; POST={};
+<?PHP exit;?>	1419906901	admin	1	127.0.0.1	upgrade	GET={operation=check; checking=1; }; POST={};
+<?PHP exit;?>	1419906902	admin	1	127.0.0.1	upgrade	GET={operation=showupgrade; }; POST={};
+<?PHP exit;?>	1419907170	admin	1	127.0.0.1	plugins	GET={}; POST={};
+<?PHP exit;?>	1419907170	admin	1	127.0.0.1	plugins	GET={frames=yes; }; POST={};
+<?PHP exit;?>	1419907171	admin	1	127.0.0.1	plugins	GET={}; POST={};
+<?PHP exit;?>	1419907173	admin	1	127.0.0.1	plugins	GET={operation=enable; pluginid=12; }; POST={};
+<?PHP exit;?>	1419907177	admin	1	127.0.0.1	plugins	GET={}; POST={};

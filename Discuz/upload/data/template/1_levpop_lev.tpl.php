@@ -1,10 +1,10 @@
 <?php if(!defined('IN_DISCUZ')) exit('Access Denied'); hookscriptoutput('lev');
 0
-|| checktplrefresh('./source/plugin/levpop/template/lev.htm', './template/default/common/header.htm', 1419906501, 'levpop', './data/template/1_levpop_lev.tpl.php', './source/plugin/levpop/template', 'lev')
-|| checktplrefresh('./source/plugin/levpop/template/lev.htm', './template/default/common/footer.htm', 1419906501, 'levpop', './data/template/1_levpop_lev.tpl.php', './source/plugin/levpop/template', 'lev')
-|| checktplrefresh('./source/plugin/levpop/template/lev.htm', './template/default/common/header_common.htm', 1419906501, 'levpop', './data/template/1_levpop_lev.tpl.php', './source/plugin/levpop/template', 'lev')
-|| checktplrefresh('./source/plugin/levpop/template/lev.htm', './template/default/common/header_qmenu.htm', 1419906501, 'levpop', './data/template/1_levpop_lev.tpl.php', './source/plugin/levpop/template', 'lev')
-|| checktplrefresh('./source/plugin/levpop/template/lev.htm', './template/default/common/pubsearchform.htm', 1419906501, 'levpop', './data/template/1_levpop_lev.tpl.php', './source/plugin/levpop/template', 'lev')
+|| checktplrefresh('./source/plugin/levpop/template/lev.htm', './template/default/common/header.htm', 1419907188, 'levpop', './data/template/1_levpop_lev.tpl.php', './source/plugin/levpop/template', 'lev')
+|| checktplrefresh('./source/plugin/levpop/template/lev.htm', './template/default/common/footer.htm', 1419907188, 'levpop', './data/template/1_levpop_lev.tpl.php', './source/plugin/levpop/template', 'lev')
+|| checktplrefresh('./source/plugin/levpop/template/lev.htm', './template/default/common/header_common.htm', 1419907188, 'levpop', './data/template/1_levpop_lev.tpl.php', './source/plugin/levpop/template', 'lev')
+|| checktplrefresh('./source/plugin/levpop/template/lev.htm', './template/default/common/header_qmenu.htm', 1419907188, 'levpop', './data/template/1_levpop_lev.tpl.php', './source/plugin/levpop/template', 'lev')
+|| checktplrefresh('./source/plugin/levpop/template/lev.htm', './template/default/common/pubsearchform.htm', 1419907188, 'levpop', './data/template/1_levpop_lev.tpl.php', './source/plugin/levpop/template', 'lev')
 ;?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
