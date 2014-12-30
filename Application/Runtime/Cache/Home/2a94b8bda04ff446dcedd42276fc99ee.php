@@ -268,44 +268,8 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 </dl>
 <div class="clear"></div>
 <ul>
-<<<<<<< HEAD
 <?php if(is_array($infoc)): foreach($infoc as $key=>$it): ?><li><span class="STYLE6">[php学员]</span><a href="/index.php/Home/message/ganyandetail?id=<?php echo ($it["id"]); ?>"><?php echo ($it["title"]); ?></a></li><?php endforeach; endif; ?>
-<script type="text/javascript">
-			<!--
-				function register(){
-					$("#myform").attr("action","/index.php/Home/index/register");
-					$("#button").attr("value","注册");
-					$("#span").html("<span style='color:blue;' onclick='login()'>登录</span>");
-					$("#tele").show();
-				}
-				function forget(){
-					$("#forget").toggle();
-					$("#fname").focus();
-				}
-				function login(){
-					$("#myform").attr("action","/index.php/Home/index/login");
-					$("#button").attr("value","登录");
-					$("#tele").hide();
-					$("#span").html("<span style='color:blue;' onclick='register()'>注册</span>");
-				}
-				function telyzm(){
-					var name=$("#fname").val();
-					var tel=$("#ftel").val();
-					$.ajax({
-						type: "GET",
-						url: "/index.php/Home/index/send_message",
-						data: "name="+name+"&tel="+tel,
-						success: function(msg){
-							alert(msg);
-						}
-					}); 
-				}
-			//-->
-			</script>
-=======
-<?php if(is_array($infoc)): foreach($infoc as $key=>$it): ?><li><span class="STYLE6">[php学员]</span><a href="http://www.mybbs.com/index.php/Home/index/zhaolun_xq?id=<?php echo ($it["id"]); ?>"><?php echo ($it["title"]); ?></a></li><?php endforeach; endif; ?>
 
->>>>>>> 751ff120ab5d4497f1a8b7bbd7f4b8179e659147
 </ul>
 </div>
 <div class="ganyanleft fr3">
