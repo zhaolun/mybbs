@@ -1,8 +1,8 @@
 <?php if(!defined('IN_DISCUZ')) exit('Access Denied'); 
 0
-|| checktplrefresh('./template/comiis_lssy/common/header.htm', './template/default/common/header_common.htm', 1419899195, '3', './data/template/3_3_common_header_forum_index.tpl.php', './template/comiis_lssy', 'common/header_forum_index')
-|| checktplrefresh('./template/comiis_lssy/common/header.htm', './template/default/common/header_qmenu.htm', 1419899195, '3', './data/template/3_3_common_header_forum_index.tpl.php', './template/comiis_lssy', 'common/header_forum_index')
-|| checktplrefresh('./template/comiis_lssy/common/header.htm', './template/default/common/pubsearchform.htm', 1419899195, '3', './data/template/3_3_common_header_forum_index.tpl.php', './template/comiis_lssy', 'common/header_forum_index')
+|| checktplrefresh('./template/comiis_lssy/common/header.htm', './template/default/common/header_common.htm', 1419901945, '3', './data/template/3_3_common_header_forum_index.tpl.php', './template/comiis_lssy', 'common/header_forum_index')
+|| checktplrefresh('./template/comiis_lssy/common/header.htm', './template/default/common/header_qmenu.htm', 1419901945, '3', './data/template/3_3_common_header_forum_index.tpl.php', './template/comiis_lssy', 'common/header_forum_index')
+|| checktplrefresh('./template/comiis_lssy/common/header.htm', './template/default/common/pubsearchform.htm', 1419901945, '3', './data/template/3_3_common_header_forum_index.tpl.php', './template/comiis_lssy', 'common/header_forum_index')
 ;?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -50,7 +50,7 @@
     请选择 <a href="<?php echo $_G['siteurl'];?>forum.php?mobile=yes">进入手机版</a> <span class="xg1">|</span> <a href="<?php echo $_G['setting']['mobile']['nomobileurl'];?>">继续访问电脑版</a>
 </div>
 <?php } if($_G['setting']['shortcut'] && $_G['member']['credits'] >= $_G['setting']['shortcut']) { ?>
-<div id="shortcut">
+<div id="shortcut">111111
 <span><a href="javascript:;" id="shortcutcloseid" title="关闭">关闭</a></span>
 您经常访问 <?php echo $_G['setting']['bbname'];?>，试试添加到桌面，访问更方便！
 <a href="javascript:;" id="shortcuttip">添加 <?php echo $_G['setting']['bbname'];?> 到桌面</a>
