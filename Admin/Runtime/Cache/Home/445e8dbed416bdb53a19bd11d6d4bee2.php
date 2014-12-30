@@ -244,19 +244,6 @@ H1 a {
 							</ul>
 							</div>
 							
-
-
-							<h1 class="type"><a>yi利一组PV</a></h1>
-							<div class="content">
-							<table width="100%" border="0" cellspacing="0" cellpadding="0">
-							<tr>
-							<td><img src="/Public/admin/images/menu_topline.gif" width="182" height="5" /></td>
-							</tr>
-							</table>
-							<ul class="MM">
-							<li><a href="/admin.php/home/one/lists" >条形图</a></li>
-							</ul>
-                            </div>
 							<h1 class="type"><a>学员感言</a></h1>
 							<div class="content">
 							<table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -281,6 +268,17 @@ H1 a {
 							<li><a href="/admin.php/home/xy/add" >学院信息添加</a></li>
 							</ul>	
 						</div>
+						<h1 class="type"><a>yi利一组PV</a></h1>
+							<div class="content">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+							<td><img src="/Public/admin/images/menu_topline.gif" width="182" height="5" /></td>
+							</tr>
+							</table>
+							<ul class="MM">
+							<li><a href="/admin.php/home/one/lists" >条形图</a></li>
+							</ul>
+                            </div>
 					</td>
 				</tr>
 			</table>
@@ -301,6 +299,7 @@ H1 a {
 <link href="/Public/admin/css/main.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="/Public/admin/js/transport.js"></script>
 <script type="text/javascript" src="/Public/admin/js/common.js"></script>
+<script type="text/javascript" src="/Public/js/jquery.js"></script>
 </head>
 <body>
 <h1>
@@ -308,9 +307,11 @@ H1 a {
 <div style="clear:both"></div>
 </h1>
 <!-- 新闻类别搜索 -->
-<form>
-学校名称：<input type="text" name=""><input type="button" value="ajax搜索" onclick="">
-</form>
+
+学校名称：<input type="text" name="s_name" id="s_name">
+<input type="button" value="搜索" onclick="jiekou()">
+
+
 <!-- 新闻类别列表 -->
 <div class="list-div">
 <a href="/admin.php/home/message/sch_addform">添加学校</a>
@@ -323,13 +324,42 @@ H1 a {
   <?php if(is_array($list)): foreach($list as $key=>$val): ?><tr>  
       <td><?php echo ($val["s_id"]); ?></td>
       <td><?php echo ($val["s_name"]); ?></td>
-      <td><a href="/admin.php/home/message/sch_del/s_id/<?php echo ($val["s_id"]); ?>">【删除】</a>
-<a href="/admin.php/home/message/sch_editform/s_id/<?php echo ($val["s_id"]); ?>">【编辑】</a></td>
+      <td>
+        <a href="/admin.php/home/message/sch_del/s_id/<?php echo ($val["s_id"]); ?>">【删除】</a>
+        <a href="/admin.php/home/message/sch_editform/s_id/<?php echo ($val["s_id"]); ?>">【编辑】</a></td>
     </tr><?php endforeach; endif; ?>
   
 </table>
 </div>
+
+<div id="div"></div>
 <br />
+
+<script type="text/javascript">
+ function jiekou()
+ {
+    name=$('#s_name').val();
+   // alert(name);
+    $.ajax({
+      url:"http://www.shixun1.com/jiekou/stu.php",
+      data:{"s_name":name},
+      dataType:"jsonp",
+      jsonp:"callback",
+      jsonpCallback:'showList',
+      type:"get",
+      success:function(e)
+      {
+        //alert(e);
+        var str='<table><tr><th>s_id</th><th>s_name</th></tr>';
+        for(a in e){
+          str+="</tr><td>"+e[a]['s_id']+"</td><td>"+e[a]['s_name']+"</td><tr>";
+        }
+        str+='</table>';
+        $('#div').html(str);
+      }
+    })
+ }
+</script>
 <div id="footer">
 版权所有 &copy; 八维研修学院软件工程学院1302phpA班，并保留所有权利。</div>
 </body>
