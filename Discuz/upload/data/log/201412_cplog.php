@@ -407,3 +407,12 @@
 <?PHP exit;?>	1419902027	admin	1	192.168.1.7	styles	GET={}; POST={};
 <?PHP exit;?>	1419902030	admin	1	192.168.1.7	styles	GET={namenew={1=默认风格; 2=yibai_d1; 3=克米设计-原创蓝色实用风格; }; defaultnew=1; defaultnew1=1; defaultnew2=1; defaultnew3=1; delete={0=3; }; stylesubmit=提交; }; POST={namenew={1=默认风格; 2=yibai_d1; 3=克米设计-原创蓝色实用风格; }; defaultnew=1; defaultnew1=1; defaultnew2=1; defaultnew3=1; delete={0=3; }; stylesubmit=提交; };
 <?PHP exit;?>	1419902034	admin	1	192.168.1.7	styles	GET={}; POST={};
+<?PHP exit;?>	1419903426	admin	1	127.0.0.1		GET={}; POST={};
+<?PHP exit;?>	1419903427	admin	1	127.0.0.1	index	GET={}; POST={};
+<?PHP exit;?>	1419903449	admin	1	127.0.0.1	nav	GET={}; POST={};
+<?PHP exit;?>	1419903454	admin	1	127.0.0.1	templates	GET={}; POST={};
+<?PHP exit;?>	1419903468	admin	1	127.0.0.1	templates	GET={namenew={1=默认模板套系; }; directorynew={1=./template/default; 2=./template/yibai_d1; }; copyrightnew={}; tplsubmit=提交; }; POST={namenew={1=默认模板套系; }; directorynew={1=./template/default; 2=./template/yibai_d1; }; copyrightnew={}; tplsubmit=提交; };
+<?PHP exit;?>	1419903472	admin	1	127.0.0.1	templates	GET={}; POST={};
+<?PHP exit;?>	1419903478	admin	1	127.0.0.1	cloudaddons	GET={id=yibai_d1.template; }; POST={};
+<?PHP exit;?>	1419903478	admin	1	127.0.0.1	cloudaddons	GET={frames=yes; id=yibai_d1.template; }; POST={};
+<?PHP exit;?>	1419903479	admin	1	127.0.0.1	cloudaddons	GET={id=yibai_d1.template; }; POST={};
