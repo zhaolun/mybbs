@@ -1,6 +1,10 @@
 <?php if(!defined('IN_DISCUZ')) exit('Access Denied'); hookscriptoutput('login');
 0
+<<<<<<< HEAD
 || checktplrefresh('./template/default/member/login.htm', './template/default/common/seccheck.htm', 1419907443, '1', './data/template/1_1_member_login.tpl.php', './template/default', 'member/login')
+=======
+|| checktplrefresh('./template/default/member/login.htm', './template/default/common/seccheck.htm', 1419907193, '1', './data/template/1_1_member_login.tpl.php', './template/default', 'member/login')
+>>>>>>> 191a3ddc0c26b6d1efeef8e3552b2bc36f668163
 ;?><?php include template('common/header'); $loginhash = 'L'.random(4);?><?php if(empty($_GET['infloat'])) { ?>
 <div id="ct" class="ptm wp w cl">
 <div class="nfl" id="main_succeed" style="display: none">
