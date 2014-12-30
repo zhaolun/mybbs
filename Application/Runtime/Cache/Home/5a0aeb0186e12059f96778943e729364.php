@@ -261,6 +261,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 				}
 			//-->
 			</script>
+<<<<<<< HEAD
 			<h4 class="righttitle1" style="margin-top:10px;"><span class="fl">开班信息</span></h4><div class="jyjb-left" >
 			<table border="0" cellpadding="0" cellspacing="0" class="zhaopinlist" height="124" style="margin-top: 5px" width="98%">
 <tbody>
@@ -275,6 +276,9 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 	<tr></tr>
 </tbody>
 </table>
+=======
+			<h4 class="righttitle1" style="margin-top:10px;"><span class="fl">开班信息</span></h4><div class="jyjb-left" >11111
+>>>>>>> 751ff120ab5d4497f1a8b7bbd7f4b8179e659147
             </div>
 			
 			<div class="rightbottom"><img src="/Public/images/rightbottom.jpg"  /></div>		
@@ -289,9 +293,15 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 	<td width="16%"><?php echo (substr($it["time"],0,10)); ?></td>
 	</tr><?php endforeach; endif; ?>	
 	<tr>
+<<<<<<< HEAD
 	<td class="td1" width="73%"><a href="http://www.itcast.cn/news/list/20c133c0-6635-421c-acae-6125b0702b34/1.shtml" target="_blank"><span style="color:#ff0000;">更多招聘信息点击&hellip;&hellip;</span></a></td>
 	<td></td>
 	<td width="27%"><a href="/index.php/Home/index/companylist" target="_blank"><span style="color:#ff0000;">查看更多</span></a></td>
+=======
+	<td class="td1" width="73%"><a href="http://www.itcast.cn/news/list/20c133c0-6635-421c-acae-6125b0702b34/1.shtml" target="_blank"><span style="color:#ff0000;">更多企业招聘信息请点击&hellip;&hellip;</span></a></td>
+	<td width="11%"><a href="http://www.itcast.cn/news/list/20c133c0-6635-421c-acae-6125b0702b34/1.shtml" target="_blank"><span style="color:#ff0000;">查看</span></a></td>
+	<td width="16%"><a href="http://www.itcast.cn/news/list/20c133c0-6635-421c-acae-6125b0702b34/1.shtml" target="_blank"><span style="color:#ff0000;">更多</span></a></td>
+>>>>>>> 751ff120ab5d4497f1a8b7bbd7f4b8179e659147
 	</tr>
 	<tr></tr>
 </tbody>
@@ -305,7 +315,11 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 		  <div class="rightkuang1" style="padding-top:18px;">
 			<ul class="zhaopinlist wenti">
               <ul class="zhaopinlist wenti">
+<<<<<<< HEAD
 <?php if(is_array($questioninfo)): foreach($questioninfo as $key=>$it): ?><li><a href="/index.php/Home/problem/xq?id=<?php echo ($it["id"]); ?>" target="_blank"><?php echo ($it["title"]); ?></a><img height="15" src="/Public/images/new.gif" width="29" /></li><?php endforeach; endif; ?>
+=======
+<?php if(is_array($infobb)): foreach($infobb as $key=>$it): ?><li><a href="/index.php/Home/problem/xq?id=<?php echo ($it["id"]); ?>" target="_blank"><?php echo ($it["title"]); ?></a><img height="15" src="/Public/images/new.gif" width="29" /></li><?php endforeach; endif; ?>
+>>>>>>> 751ff120ab5d4497f1a8b7bbd7f4b8179e659147
 </ul>
 
           </ul> 

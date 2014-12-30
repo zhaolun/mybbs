@@ -33,9 +33,15 @@ class IndexController extends Controller {
 		$data2 = $userb->select();
 		$comp=$com->select();
 		//var_dump($comp);die;
+
+		//$data3 = $userc->select();
+		//$data4 = $userd->select();
+		$data6 = $userf->order('id desc')->select();
+		//$data7 = $useraa->select();
+
 		$data3 = $userc->order("id desc")->select();
 		$data4 = $userd->order("id desc")->select();
-		$data6 = $userf->select();
+		//$data6 = $userf->select();
 		$data8 = $userbb->where('status=0')->select();
 		$db=M("slide_image");
 		$this->slide_image=$db->select();
@@ -127,6 +133,13 @@ class IndexController extends Controller {
 		//echo $_SESSION['telyzm'];die;
 		session_destroy();
 		$this->success("退出成功","/index.php");
+	}
+	//学院详情
+	function xuey_xq(){
+        $user = M('xueyuan');
+        $data = $user->select();
+		$this->assign('info',$data);
+		$this->display('xuey_xq');
 	}
 
 	function send_message(){

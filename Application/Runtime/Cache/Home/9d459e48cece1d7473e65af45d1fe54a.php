@@ -244,6 +244,9 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 				}
 			//-->
 			</script>
+<<<<<<< HEAD
+			<h4 class="righttitle1" style="margin-top:10px;"><span class="fl">开班信息</span></h4><div class="jyjb-left" >11111
+=======
 			<h4 class="righttitle1" style="margin-top:10px;"><span class="fl">开班信息</span></h4><div class="jyjb-left" >
 			<table border="0" cellpadding="0" cellspacing="0" class="zhaopinlist" height="124" style="margin-top: 5px" width="98%">
 <tbody>
@@ -258,6 +261,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 	<tr></tr>
 </tbody>
 </table>
+>>>>>>> 18f94eac21e94c142f260d09d3638f3d8111acc1
             </div>
 			
 			<div class="rightbottom"><img src="/Public/images/rightbottom.jpg"  /></div>		
