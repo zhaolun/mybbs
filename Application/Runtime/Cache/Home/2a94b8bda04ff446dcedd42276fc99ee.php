@@ -371,13 +371,11 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 <tbody>
 <?php if(is_array($banjiinfo)): foreach($banjiinfo as $key=>$val): ?><tr>
 	<td class="td1" width="73%"><a href="/index.php/Home/project/kecheng?id=<?php echo ($val["pei_id"]); ?>" target="_blank"><?php echo ($val["pei_class"]); ?></a></td>
-	<td width="11%">若干</td>
-	<td width="16%">11.28</td>
+	<td width="27%"><?php if($val["bbs_tese"] == 1): ?><font color=red>人员爆满</font><?php else: ?><font color=blue>尚有名额</font><?php endif; ?></td>
 	</tr><?php endforeach; endif; ?>	
 	<tr>
-	<td class="td1" width="73%"><a href="" target="_blank"><span style="color:#ff0000;">更多开班信息请点击&hellip;&hellip;</span></a></td>
-	<td width="11%"><a href=""><span style="color:#ff0000;">查看</span></a></td>
-	<td width="16%"><a href=""><span style="color:#ff0000;">更多</span></a></td>
+	<td class="td1" width="73%"><a href="/index.php/Home/project/index" target="_blank"><span style="color:#ff0000;">更多开班信息请点击&hellip;&hellip;</span></a></td>
+	<td width="11%"><a href="/index.php/Home/project/index"><span style="color:#ff0000;">查看更多</span></a></td>
 	</tr>
 	<tr></tr>
 </tbody>
@@ -390,15 +388,15 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 			<p class="cent"> <img src="/Public/images/7.jpg"  width="256" height="66" /></p>
                       <table border="0" cellpadding="0" cellspacing="0" class="zhaopinlist" height="124" style="margin-top: 5px" width="98%">
 <tbody>
-<?php if(is_array($company)): foreach($company as $key=>$val): ?><tr>
-	<td class="td1" width="73%"><a href="http://www.itcast.cn/news/20141201/16233788127.shtml" target="_blank"><?php echo ($val["com_name"]); ?></a></td>
-	<td width="11%">若干</td>
-	<td width="16%">11.28</td>
+<?php if(is_array($newzhaopininfo)): foreach($newzhaopininfo as $key=>$val): ?><tr>
+	<td class="td1" width="73%"><a href=""><?php echo ($val["company"]); ?></a></td>
+
+	<td width="27%"><?php echo (substr($val["time"],0,10)); ?></td>
 	</tr><?php endforeach; endif; ?>	
 	<tr>
-	<td class="td1" width="73%"><a href="http://www.itcast.cn/news/list/20c133c0-6635-421c-acae-6125b0702b34/1.shtml" target="_blank"><span style="color:#ff0000;">更多企业招聘信息请点击&hellip;&hellip;</span></a></td>
-	<td width="11%"><a href="http://www.itcast.cn/news/list/20c133c0-6635-421c-acae-6125b0702b34/1.shtml" target="_blank"><span style="color:#ff0000;">查看</span></a></td>
-	<td width="16%"><a href="http://www.itcast.cn/news/list/20c133c0-6635-421c-acae-6125b0702b34/1.shtml" target="_blank"><span style="color:#ff0000;">更多</span></a></td>
+	<td class="td1" width="73%"><a href="/index.php/Home/index/companylist"><span style="color:#ff0000;">更多企业招聘信息请点击&hellip;&hellip;</span></a></td>
+	<td width="11%"><a href="/index.php/Home/index/companylist"><span style="color:#ff0000;">查看更多</span></a></td>
+
 	</tr>
 	<tr></tr>
 </tbody>
@@ -412,7 +410,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 		  <div class="rightkuang1" style="padding-top:18px;">
 			<ul class="zhaopinlist wenti">
               <ul class="zhaopinlist wenti">
-<?php if(is_array($infobb)): foreach($infobb as $key=>$it): ?><li><a href="/index.php/Home/problem/xq?id=<?php echo ($it["id"]); ?>" target="_blank"><?php echo ($it["title"]); ?></a><img height="15" src="/Public/images/new.gif" width="29" /></li><?php endforeach; endif; ?>
+<?php if(is_array($questioninfo)): foreach($questioninfo as $key=>$it): ?><li><a href="/index.php/Home/problem/xq?id=<?php echo ($it["id"]); ?>" target="_blank"><?php echo ($it["title"]); ?></a><img height="15" src="/Public/images/new.gif" width="29" /></li><?php endforeach; endif; ?>
 </ul>
 
           </ul> 
@@ -434,7 +432,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 </dl>
 <dl class="qqtwo">
 	<dt style="padding-bottom:20px;">
-		广州传智播客</dt>
+		上海传智播客</dt>
 	<dd style=" width:120px;height:40px;float:left;">
 		<a href="http://wpa.qq.com/msgrd?v=1&uin=790330816&site=qq&menu=yes" target="_blank"><img alt="广州传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
 	<dd style=" width:120px;height:40px;float:left;">
@@ -442,7 +440,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 </dl>
 <dl class="qqthree">
 	<dt style="padding-bottom:20px;">
-		上海传智播客</dt>
+		山西传智播客</dt>
 	<dd style="width:120px;height:40px;float:left;">
 		<a href="http://wpa.qq.com/msgrd?v=1&uin=790330816&site=qq&menu=yes" target="_blank"><img alt="上海传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
 	<dd style="width:120px;height:40px;float:left;">
@@ -450,36 +448,12 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 </dl>
 <dl class="qqfour">
 	<dt style="padding-bottom:20px;">
-		武汉传智播客</dt>
+		河南传智播客</dt>
 	<dd style="width:120px;height:40px;float:left;">
 		<a href="http://wpa.qq.com/msgrd?v=1&uin=1067112004&site=qq&menu=yes" target="_blank"><img alt="武汉传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
 	<dd style="width:120px;height:40px;float:left;">
 		<a href="http://wpa.qq.com/msgrd?v=1&uin=1067112004&site=qq&menu=yes" target="_blank"><img alt="武汉传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqkczx.jpg" width="99" /></a></dd>
 </dl>
-<dl class="qqfive">
-	<dt style="padding-bottom:20px;">
-		郑州传智播客</dt>
-	<dd style="width:120px;height:40px;float:left;">
-		<a href="http://wpa.qq.com/msgrd?v=1&uin=1067112004&site=qq&menu=yes" target="_blank"><img alt="武汉传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
-	<dd style="width:120px;height:40px;float:left;">
-		<a href="http://wpa.qq.com/msgrd?v=1&uin=1067112004&site=qq&menu=yes" target="_blank"><img alt="武汉传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqkczx.jpg" width="99" /></a></dd>
-</dl>
-<dl class="qqsix">
-	<dt style="padding-bottom:20px;">
-		西安传智播客</dt>
-	<dd style="width:120px;height:40px;float:left;">
-		<a href="http://wpa.qq.com/msgrd?v=1&uin=790330816&site=qq&menu=yes" target="_blank"><img alt="西安传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
-	<dd style="width:120px;height:40px;float:left;">
-		<a href="http://wpa.qq.com/msgrd?v=1&uin=790330816&site=qq&menu=yes" target="_blank"><img alt="西安传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqkczx.jpg" width="99" /></a></dd>
-</dl>
-<!--<dl class="qqsev">
-	<dt style="padding-bottom:20px;">
-		西安传智播客</dt>
-	<dd style="width:120px;height:40px;float:left;">
-		<a href="http://cnrdn.com/iP66" target="_blank"><img alt="西安传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
-	<dd style="width:120px;height:40px;float:left;">
-		<a href="http://cnrdn.com/iP66" target="_blank"><img alt="西安传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqkczx.jpg" width="99" /></a></dd>
-</dl>-->
 			<div class="clear"></div>
 			</div>
 			<div class="rightbottom"><img src="/Public/images/rightbottom.jpg"  /></div>

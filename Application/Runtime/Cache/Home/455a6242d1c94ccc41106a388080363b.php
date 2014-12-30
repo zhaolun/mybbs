@@ -197,13 +197,167 @@ size:12px;background-color:#ecf6fd;">
 	
 		
 <div class="clear"></div>
+
 		  </div>
 			<div><img src="/Public/images/leftbottom.gif"/></div>
 				<div></div>
 		</div>		
-	
-	<div class="clear"></div>
+		<div id="right" class="fl">	
+		<h4 class="righttitle1" style="margin-top:10px;"><span class="fl">
+		<?php if($_SESSION["username"] == '' ): ?>用户登录<?php else: ?>用户中心<?php endif; ?></span></h4>
+			<div class="jyjb-left" ><?php if($_SESSION["username"] == '' ): ?><form method="post" action="/index.php/Home/index/login" id="myform">
+				用户名：<input type="text" name="username" id="name"><br>
+				密　码：<input type="password" name="password" id="pwd"><br>
+				<span style="display:none" id="tele">手　机：<input type="text" name="tel" id="tel"><br></span>
+				验证码：<input type="text" name="yzm" id="yzm" size=5><IMG src="/admin.php/Home/index/yzm" id="captcha"> <A style="cursor:pointer" onclick="$('#captcha').attr('src','/admin.php/Home/index/yzm?count=Math.random()');">换</A><br>
+				<input type="submit" value="登录" id="button"><span id="span"><span style="color:blue;" onclick="register()">注册</span></span><span style="color:blue;" onclick="forget()">忘记密码</span><br>
+			</form>
+			
+			合作登录：<img src="/Public/images/qq_login.png" style="cursor:pointer;" onclick='toQzoneLogin()'>
+			<script type="text/javascript">
+            var childWindow;
+            function toQzoneLogin()
+            {
+                childWindow = window.open("http://zl12345.com133.com/qq","TencentLogin","width=450,height=320,menubar=0,scrollbars=1, resizable=1,status=1,titlebar=0,toolbar=0,location=1");
+            } 
+            
+            function closeChildWindow()
+            {
+                childWindow.close();
+            }
+			</script>
+			<?php else: ?>欢迎您：<?php if($_SESSION["img"] != '' ): ?><img src="<?php echo ($_SESSION["img"]); ?>"><?php endif; ?><font color=red><?php echo ($_SESSION["username"]); ?></font>　<a href="/index.php/Home/index/loginout">退出</a><?php endif; ?>
+            </div>
+		<span id="forget" style="display:none;"><h4 class="righttitle1" style="margin-top:10px;">密码找回</span></h4>
+			<div class="jyjb-left" >
+			<form method="post" action="/index.php/Home/index/findpwd" onsubmit="return sub()">
+				用户名：<input type="text" name="username" id="fname"><br>
+				手　机：<input type="text" name="tel" id="ftel"><br>
+				验证码：<input type="text" name="yzm" id="fyzm" size=5>
+				<input type="button" value="获取验证码" onclick="telyzm()"><br>
+				新密码：<input type="password" name="password" id="newpwd"><br>
+				　　　　　<input type="submit" value=" 确定 " id="button">
+			</form>			
+            </div></span>
+			<script type="text/javascript">
+			<!--
+				function sub(){
+					var yzm=$("#fyzm").val();
+					var status=0;
+					$.ajax({
+						type: "GET",
+						url: "/index.php/Home/index/ajax_message",
+						data: "yzm="+yzm,
+						async:false,
+						success: function(msg){
+							status=msg;
+						}
+					});
+					if(status==0){
+						alert("验证码输入有误!");
+						return false;
+					}else{
+						return true;
+					}
+				}
+			//-->
+			</script>
+		<h4 class="righttitle1" style="margin-top:10px;"><span class="fl">
+		开班信息</span></h4>
+			<div class="jyjb-left" >
+			<table border="0" cellpadding="0" cellspacing="0" class="zhaopinlist" height="124" style="margin-top: 5px" width="98%">
+<tbody>
+<?php if(is_array($banjiinfo)): foreach($banjiinfo as $key=>$val): ?><tr>
+	<td class="td1" width="73%"><a href="/index.php/Home/project/kecheng?id=<?php echo ($val["pei_id"]); ?>" target="_blank"><?php echo ($val["pei_class"]); ?></a></td>
+	<td width="27%"><?php if($val["bbs_tese"] == 1): ?><font color=red>人员爆满</font><?php else: ?><font color=blue>尚有名额</font><?php endif; ?></td>
+	</tr><?php endforeach; endif; ?>	
+	<tr>
+	<td class="td1" width="73%"><a href="/index.php/Home/project/index" target="_blank"><span style="color:#ff0000;">更多开班信息请点击&hellip;&hellip;</span></a></td>
+	<td width="11%"><a href="/index.php/Home/project/index"><span style="color:#ff0000;">查看更多</span></a></td>
+	</tr>
+	<tr></tr>
+</tbody>
+</table>
+            </div>
+			
+			<div class="rightbottom"><img src="/Public/images/rightbottom.jpg"  /></div>		
+			<h4 class="righttitle1 zhaopin"><span class=fgf"blue">最新</span>企业招聘</h4>
+			<div class="rightkuang1">
+			<p class="cent"> <img src="/Public/images/7.jpg"  width="256" height="66" /></p>
+                      <table border="0" cellpadding="0" cellspacing="0" class="zhaopinlist" height="124" style="margin-top: 5px" width="98%">
+<tbody>
+<?php if(is_array($newzhaopininfo)): foreach($newzhaopininfo as $key=>$val): ?><tr>
+	<td class="td1" width="73%"><a href=""><?php echo ($val["company"]); ?></a></td>
 
+	<td width="27%"><?php echo (substr($val["time"],0,10)); ?></td>
+	</tr><?php endforeach; endif; ?>	
+	<tr>
+	<td class="td1" width="73%"><a href="/index.php/Home/index/companylist"><span style="color:#ff0000;">更多企业招聘信息请点击&hellip;&hellip;</span></a></td>
+	<td width="11%"><a href="/index.php/Home/index/companylist"><span style="color:#ff0000;">查看更多</span></a></td>
+
+	</tr>
+	<tr></tr>
+</tbody>
+</table>
+
+             <div class="clear"></div>
+				
+			</div>
+			<div class="rightbottom"><img src="/Public/images/bottom1.gif"  /></div>
+			<h4 class="righttitle1 zhaopin" style="margin-top:3px;"><span class="blue">常见</span>问题</h4>
+		  <div class="rightkuang1" style="padding-top:18px;">
+			<ul class="zhaopinlist wenti">
+              <ul class="zhaopinlist wenti">
+<?php if(is_array($questioninfo)): foreach($questioninfo as $key=>$it): ?><li><a href="/index.php/Home/problem/xq?id=<?php echo ($it["id"]); ?>" target="_blank"><?php echo ($it["title"]); ?></a><img height="15" src="/Public/images/new.gif" width="29" /></li><?php endforeach; endif; ?>
+</ul>
+
+          </ul> 
+			<div class="clear"></div>
+				 <p class="text-r"><a href="/index.php/Home/problem/index"><img src="/Public/images/jiantoumore.gif"  border="0" /></a></p>
+		  </div>
+			<div class="rightbottom"><img src="/Public/images/bottom1.gif"  /></div>
+			
+			<h4 class="righttitle1 lianxi"><span class="fl"><span class="blue">课程</span>咨询</span></h4>
+			
+			<div class="rightkuang">
+			 <dl>
+	<dt style="padding-bottom:20px;">
+		北京传智播客</dt>
+	<dd style="width:120px;height:40px;float:left;">
+		<a href="http://wpa.qq.com/msgrd?v=1&uin=790330816&site=qq&menu=yes"><img alt="北京传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
+	<dd style="width:120px;height:40px;float:left;">
+		<a href="http://wpa.qq.com/msgrd?v=1&uin=790330816&site=qq&menu=yes"><img alt="北京传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqkczx.jpg" width="99" /></a></dd>
+</dl>
+<dl class="qqtwo">
+	<dt style="padding-bottom:20px;">
+		上海传智播客</dt>
+	<dd style=" width:120px;height:40px;float:left;">
+		<a href="http://wpa.qq.com/msgrd?v=1&uin=790330816&site=qq&menu=yes" target="_blank"><img alt="广州传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
+	<dd style=" width:120px;height:40px;float:left;">
+		<a href="http://wpa.qq.com/msgrd?v=1&uin=790330816&site=qq&menu=yes" target="_blank"><img alt="广州传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqkczx.jpg" width="99" /></a></dd>
+</dl>
+<dl class="qqthree">
+	<dt style="padding-bottom:20px;">
+		山西传智播客</dt>
+	<dd style="width:120px;height:40px;float:left;">
+		<a href="http://wpa.qq.com/msgrd?v=1&uin=790330816&site=qq&menu=yes" target="_blank"><img alt="上海传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
+	<dd style="width:120px;height:40px;float:left;">
+		<a href="http://wpa.qq.com/msgrd?v=1&uin=790330816&site=qq&menu=yes" target="_blank"><img alt="上海传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqkczx.jpg" width="99" /></a></dd>
+</dl>
+<dl class="qqfour">
+	<dt style="padding-bottom:20px;">
+		河南传智播客</dt>
+	<dd style="width:120px;height:40px;float:left;">
+		<a href="http://wpa.qq.com/msgrd?v=1&uin=1067112004&site=qq&menu=yes" target="_blank"><img alt="武汉传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqmfst.jpg" width="99" /></a></dd>
+	<dd style="width:120px;height:40px;float:left;">
+		<a href="http://wpa.qq.com/msgrd?v=1&uin=1067112004&site=qq&menu=yes" target="_blank"><img alt="武汉传智播客QQ在线咨询" border="0" height="27" src="http://www.itcast.cn/images/qqkczx.jpg" width="99" /></a></dd>
+</dl>
+			<div class="clear"></div>
+			</div>
+			<div class="rightbottom"><img src="/Public/images/rightbottom.jpg"  /></div>
+	  </div>
+	</div>		
+	<div class="clear"></div>
 
 </div>
 </div>

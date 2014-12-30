@@ -305,10 +305,7 @@ H1 a {
 <span class="action-span1">问题列表</span><span id="search_id" class="action-span1"></span>
 <div style="clear:both"></div>
 </h1>
-<a href='/admin.php/Home/xy/add'>添加问题</a>
-<!-- 新闻类别搜索 -->
-<center>问题名称：<input type="text" name="" size=40><input type="button" value="搜索" onclick=""></center>
-<!-- 新闻类别列表 -->
+
 <div class="list-div">
 <table cellspacing='1' cellpadding='3'>
   <tr>
