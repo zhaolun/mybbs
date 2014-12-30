@@ -142,6 +142,40 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 	<a class="jiathis_counter_style"></a>
 </div>
 <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>-->
+<<<<<<< HEAD:Application/Runtime/Cache/Home/c6d0130b8fb4a4b38e7ae6f942cfa4fb.php
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "/www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="/www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+<meta name="keywords" content="java培训,net培训,PHP培训,网页培训,平面培训" />
+<title>PHP学院新闻 -传智播客</title>
+<link href="/style/style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>	
+<div id="header"> 
+  <!-- 页面顶部 -->
+
+  <div class="clear"></div>
+  <div class="top2">
+
+ 
+<div id="box">
+		<div id="left" class="fl">
+			<div class="left_content">
+				<h2 class="title1"><span class="STYLE3">PHP学院新闻</span></h2>
+				
+				<ul class="com_links">
+	  <!-- 列表 -->
+	  <?php if(is_array($info)): foreach($info as $key=>$it): ?><li><a href="http://www.mybbs.com/index.php/Home/index/xueyuan_xq?id=<?php echo ($it["id"]); ?>" target="_blank"><?php echo ($it["title"]); ?></a><?php echo ($it["time"]); ?></li><?php endforeach; endif; ?>
+            <!-- 列表 -->
+			    </ul>
+				<div class="clear"></div>
+				
+		  		
+
+=======
 <div id="box">
 	<div id="left" class="fl">
 		<div></div>
@@ -152,6 +186,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 			</ul>
 			<div class="clear"></div>
 			<div class="pages"></div>
+>>>>>>> 9820e9875048c8be901aee69c268c519ca421160:Application/Runtime/Cache/Home/9dda77d2e24c3b861068a56d09d97ad5.php
 
 <div class="clear"></div>
 
@@ -159,6 +194,12 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 			<div><img src="/Public/images/leftbottom.gif"/></div>
 				<div></div>
 		</div>		
+<<<<<<< HEAD:Application/Runtime/Cache/Home/c6d0130b8fb4a4b38e7ae6f942cfa4fb.php
+	
+	<div class="clear"></div>
+
+
+=======
 		<div id="right" class="fl">	
 		<h4 class="righttitle1" style="margin-top:10px;"><span class="fl">
 		<?php if($_SESSION["username"] == '' ): ?>用户登录<?php else: ?>用户中心<?php endif; ?></span></h4>
@@ -316,6 +357,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 	</div>		
 	<div class="clear"></div>
 
+>>>>>>> 9820e9875048c8be901aee69c268c519ca421160:Application/Runtime/Cache/Home/9dda77d2e24c3b861068a56d09d97ad5.php
 </div>
 </div>
 <div id="footer">

@@ -1,5 +1,10 @@
 <?php if(!defined('IN_DISCUZ')) exit('Access Denied'); 
 0
+<<<<<<< HEAD
+|| checktplrefresh('./template/default/common/header.htm', './template/default/common/header_common.htm', 1419906603, '1', './data/template/1_1_common_header_forum_index.tpl.php', './template/default', 'common/header_forum_index')
+|| checktplrefresh('./template/default/common/header.htm', './template/default/common/header_qmenu.htm', 1419906603, '1', './data/template/1_1_common_header_forum_index.tpl.php', './template/default', 'common/header_forum_index')
+|| checktplrefresh('./template/default/common/header.htm', './template/default/common/pubsearchform.htm', 1419906603, '1', './data/template/1_1_common_header_forum_index.tpl.php', './template/default', 'common/header_forum_index')
+=======
 <<<<<<< HEAD:Discuz/upload/data/template/3_3_common_header_forum_index.tpl.php
 <<<<<<< HEAD
 || checktplrefresh('./template/default/common/header.htm', './template/default/common/header_common.htm', 1419900564, '3', './data/template/3_3_common_header_forum_index.tpl.php', './template/comiis_lssy', 'common/header_forum_index')
@@ -15,6 +20,7 @@
 || checktplrefresh('./template/default/common/header.htm', './template/default/common/header_qmenu.htm', 1419907190, '1', './data/template/1_1_common_header_forum_index.tpl.php', './template/default', 'common/header_forum_index')
 || checktplrefresh('./template/default/common/header.htm', './template/default/common/pubsearchform.htm', 1419907190, '1', './data/template/1_1_common_header_forum_index.tpl.php', './template/default', 'common/header_forum_index')
 >>>>>>> 191a3ddc0c26b6d1efeef8e3552b2bc36f668163:Discuz/upload/data/template/1_1_common_header_forum_index.tpl.php
+>>>>>>> 9820e9875048c8be901aee69c268c519ca421160
 ;?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -34,10 +40,13 @@
 <base href="<?php echo $_G['siteurl'];?>" /><link rel="stylesheet" type="text/css" href="data/cache/style_1_common.css?<?php echo VERHASH;?>" /><link rel="stylesheet" type="text/css" href="data/cache/style_1_forum_index.css?<?php echo VERHASH;?>" /><?php if($_G['uid'] && isset($_G['cookie']['extstyle']) && strpos($_G['cookie']['extstyle'], TPLDIR) !== false) { ?><link rel="stylesheet" id="css_extstyle" type="text/css" href="<?php echo $_G['cookie']['extstyle'];?>/style.css" /><?php } elseif($_G['style']['defaultextstyle']) { ?><link rel="stylesheet" id="css_extstyle" type="text/css" href="<?php echo $_G['style']['defaultextstyle'];?>/style.css" /><?php } ?><script type="text/javascript">var STYLEID = '<?php echo STYLEID;?>', STATICURL = '<?php echo STATICURL;?>', IMGDIR = '<?php echo IMGDIR;?>', VERHASH = '<?php echo VERHASH;?>', charset = '<?php echo CHARSET;?>', discuz_uid = '<?php echo $_G['uid'];?>', cookiepre = '<?php echo $_G['config']['cookie']['cookiepre'];?>', cookiedomain = '<?php echo $_G['config']['cookie']['cookiedomain'];?>', cookiepath = '<?php echo $_G['config']['cookie']['cookiepath'];?>', showusercard = '<?php echo $_G['setting']['showusercard'];?>', attackevasive = '<?php echo $_G['config']['security']['attackevasive'];?>', disallowfloat = '<?php echo $_G['setting']['disallowfloat'];?>', creditnotice = '<?php if($_G['setting']['creditnotice']) { ?><?php echo $_G['setting']['creditnames'];?><?php } ?>', defaultstyle = '<?php echo $_G['style']['defaultextstyle'];?>', REPORTURL = '<?php echo $_G['currenturl_encode'];?>', SITEURL = '<?php echo $_G['siteurl'];?>', JSPATH = '<?php echo $_G['setting']['jspath'];?>', CSSPATH = '<?php echo $_G['setting']['csspath'];?>', DYNAMICURL = '<?php echo $_G['dynamicurl'];?>';</script>
 <script src="<?php echo $_G['setting']['jspath'];?>common.js?<?php echo VERHASH;?>" type="text/javascript"></script>
 <?php if(empty($_GET['diy'])) { $_GET['diy'] = '';?><?php } if(!isset($topic)) { $topic = array();?><?php } ?>
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD:Discuz/upload/data/template/3_3_common_header_forum_index.tpl.php
 <<<<<<< HEAD
 =======
 >>>>>>> 191a3ddc0c26b6d1efeef8e3552b2bc36f668163:Discuz/upload/data/template/1_1_common_header_forum_index.tpl.php
+>>>>>>> 9820e9875048c8be901aee69c268c519ca421160
 <meta name="application-name" content="<?php echo $_G['setting']['bbname'];?>" />
 <meta name="msapplication-tooltip" content="<?php echo $_G['setting']['bbname'];?>" />
 <?php if($_G['setting']['portalstatus']) { ?><meta name="msapplication-task" content="name=<?php echo $_G['setting']['navs']['1']['navname'];?>;action-uri=<?php echo !empty($_G['setting']['domain']['app']['portal']) ? 'http://'.$_G['setting']['domain']['app']['portal'] : $_G['siteurl'].'portal.php'; ?>;icon-uri=<?php echo $_G['siteurl'];?><?php echo IMGDIR;?>/portal.ico" /><?php } ?>
@@ -84,6 +93,9 @@
 <?php if(!empty($_G['setting']['pluginhooks']['global_cpnav_extra1'])) echo $_G['setting']['pluginhooks']['global_cpnav_extra1'];?>
 </div>
 <div class="y">
+<<<<<<< HEAD
+
+=======
 <<<<<<< HEAD:Discuz/upload/data/template/3_3_common_header_forum_index.tpl.php
 <a id="switchblind" href="javascript:;" onclick="toggleBlind(this)" title="开启辅助访问" class="switchblind">开启辅助访问</a>
 <?php if(!empty($_G['setting']['pluginhooks']['global_cpnav_extra2'])) echo $_G['setting']['pluginhooks']['global_cpnav_extra2'];?><?php if(is_array($_G['setting']['topnavs']['1'])) foreach($_G['setting']['topnavs']['1'] as $nav) { if($nav['available'] && (!$nav['level'] || ($nav['level'] == 1 && $_G['uid']) || ($nav['level'] == 2 && $_G['adminid'] > 0) || ($nav['level'] == 3 && $_G['adminid'] == 1))) { ?><?php echo $nav['code'];?><?php } } if(empty($_G['disabledwidthauto']) && $_G['setting']['switchwidthauto']) { ?>
@@ -164,6 +176,7 @@
 =======
 
 >>>>>>> 191a3ddc0c26b6d1efeef8e3552b2bc36f668163:Discuz/upload/data/template/1_1_common_header_forum_index.tpl.php
+>>>>>>> 9820e9875048c8be901aee69c268c519ca421160
 <a id="switchblind" href="javascript:;" onclick="toggleBlind(this)" title="开启辅助访问" class="switchblind">开启辅助访问</a>
 <?php if(!empty($_G['setting']['pluginhooks']['global_cpnav_extra2'])) echo $_G['setting']['pluginhooks']['global_cpnav_extra2'];?><?php if(is_array($_G['setting']['topnavs']['1'])) foreach($_G['setting']['topnavs']['1'] as $nav) { if($nav['available'] && (!$nav['level'] || ($nav['level'] == 1 && $_G['uid']) || ($nav['level'] == 2 && $_G['adminid'] > 0) || ($nav['level'] == 3 && $_G['adminid'] == 1))) { ?><?php echo $nav['code'];?><?php } } if(empty($_G['disabledwidthauto']) && $_G['setting']['switchwidthauto']) { ?>
 <a href="javascript:;" id="switchwidth" onclick="widthauto(this)" title="<?php if(widthauto()) { ?>切换到窄版<?php } else { ?>切换到宽版<?php } ?>" class="switchwidth"><?php if(widthauto()) { ?>切换到窄版<?php } else { ?>切换到宽版<?php } ?></a>
@@ -173,16 +186,22 @@
 </div>
 </div>
 </div>
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD:Discuz/upload/data/template/3_3_common_header_forum_index.tpl.php
 <?php if(!IS_ROBOT) { if($_G['uid']) { ?>
 <ul id="myprompt_menu" class="p_pop" style="display: none;">
 =======
+>>>>>>> 9820e9875048c8be901aee69c268c519ca421160
 
 <?php if(!IS_ROBOT) { if($_G['uid']) { ?>
 
 <ul id="myprompt_menu" class="p_pop" style="display: none;">
 
+<<<<<<< HEAD
+=======
 >>>>>>> 191a3ddc0c26b6d1efeef8e3552b2bc36f668163:Discuz/upload/data/template/1_1_common_header_forum_index.tpl.php
+>>>>>>> 9820e9875048c8be901aee69c268c519ca421160
 <li><a href="home.php?mod=space&amp;do=pm" id="pm_ntc" style="background-repeat: no-repeat; background-position: 0 50%;"><em class="prompt_news<?php if(empty($_G['member']['newpm'])) { ?>_0<?php } ?>"></em>消息</a></li>
 <li><a href="home.php?mod=follow&amp;do=follower"><em class="prompt_follower<?php if(empty($_G['member']['newprompt_num']['follower'])) { ?>_0<?php } ?>"></em>新听众<?php if($_G['member']['newprompt_num']['follower']) { ?>(<?php echo $_G['member']['newprompt_num']['follower'];?>)<?php } ?></a></li>
 <?php if($_G['member']['newprompt'] && $_G['member']['newprompt_num']['follow']) { ?>
@@ -204,10 +223,13 @@
 <li><a href="home.php?mod=space&amp;do=friend">好友</a></li>
 <?php if(!empty($_G['setting']['pluginhooks']['global_myitem_extra'])) echo $_G['setting']['pluginhooks']['global_myitem_extra'];?>
 </ul>
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD:Discuz/upload/data/template/3_3_common_header_forum_index.tpl.php
 >>>>>>> 751ff120ab5d4497f1a8b7bbd7f4b8179e659147
 =======
 >>>>>>> 191a3ddc0c26b6d1efeef8e3552b2bc36f668163:Discuz/upload/data/template/1_1_common_header_forum_index.tpl.php
+>>>>>>> 9820e9875048c8be901aee69c268c519ca421160
 <?php } ?><div id="qmenu_menu" class="p_pop <?php if(!$_G['uid']) { ?>blk<?php } ?>" style="display: none;">
 <?php if(!empty($_G['setting']['pluginhooks']['global_qmenu_top'])) echo $_G['setting']['pluginhooks']['global_qmenu_top'];?>
 <?php if($_G['uid']) { ?>
@@ -225,14 +247,19 @@
 </div>
 <?php } if($_G['setting']['showfjump']) { ?><div id="fjump_menu" class="btda"></div><?php } ?>
 <?php if(!empty($_G['setting']['pluginhooks']['global_qmenu_bottom'])) echo $_G['setting']['pluginhooks']['global_qmenu_bottom'];?>
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD:Discuz/upload/data/template/3_3_common_header_forum_index.tpl.php
 <<<<<<< HEAD
 =======
 >>>>>>> 191a3ddc0c26b6d1efeef8e3552b2bc36f668163:Discuz/upload/data/template/1_1_common_header_forum_index.tpl.php
+>>>>>>> 9820e9875048c8be901aee69c268c519ca421160
 </div><?php } ?><?php echo adshow("headerbanner/wp a_h");?><div id="hd">
 <div class="wp">
 <div class="hdc cl"><?php $mnid = getcurrentnav();?><h2><?php if(!isset($_G['setting']['navlogos'][$mnid])) { ?><a href="<?php if($_G['setting']['domain']['app']['default']) { ?>http://<?php echo $_G['setting']['domain']['app']['default'];?>/<?php } else { ?>./<?php } ?>" title="<?php echo $_G['setting']['bbname'];?>"><?php echo $_G['style']['boardlogo'];?></a><?php } else { ?><?php echo $_G['setting']['navlogos'][$mnid];?><?php } ?></h2><?php include template('common/header_userstatus'); ?></div>
 
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD:Discuz/upload/data/template/3_3_common_header_forum_index.tpl.php
 
 <?php if(!empty($_G['setting']['plugins']['jsmenu'])) { ?>
@@ -255,6 +282,7 @@
 <div style="clear:both;"></div>
 =======
 >>>>>>> 191a3ddc0c26b6d1efeef8e3552b2bc36f668163:Discuz/upload/data/template/1_1_common_header_forum_index.tpl.php
+>>>>>>> 9820e9875048c8be901aee69c268c519ca421160
 <div id="nv">
 <a href="javascript:;" id="qmenu" onmouseover="delayShow(this, function () {showMenu({'ctrlid':'qmenu','pos':'34!','ctrlclass':'a','duration':2});showForummenu(<?php echo $_G['fid'];?>);})">快捷导航</a>
 <ul><?php if(is_array($_G['setting']['navs'])) foreach($_G['setting']['navs'] as $nav) { if($nav['available'] && (!$nav['level'] || ($nav['level'] == 1 && $_G['uid']) || ($nav['level'] == 2 && $_G['adminid'] > 0) || ($nav['level'] == 3 && $_G['adminid'] == 1))) { ?><li <?php if($mnid == $nav['navid']) { ?>class="a" <?php } ?><?php echo $nav['nav'];?>></li><?php } } ?>
@@ -274,10 +302,13 @@
 <?php echo $subnav;?>
 </ul>
 <?php } } } ?>
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD:Discuz/upload/data/template/3_3_common_header_forum_index.tpl.php
 >>>>>>> 751ff120ab5d4497f1a8b7bbd7f4b8179e659147
 =======
 >>>>>>> 191a3ddc0c26b6d1efeef8e3552b2bc36f668163:Discuz/upload/data/template/1_1_common_header_forum_index.tpl.php
+>>>>>>> 9820e9875048c8be901aee69c268c519ca421160
 </div><?php echo adshow("subnavbanner/a_mu");?><?php if($_G['setting']['search']) { $slist = array();?><?php if($_G['fid'] && $_G['forum']['status'] != 3 && $mod != 'group') { ?><?php
 $slist[forumfid] = <<<EOF
 <li><a href="javascript:;" rel="curforum" fid="{$_G['fid']}" >本版</a></li>
@@ -377,15 +408,86 @@ EOF;
 <script type="text/javascript">
 initSearchmenu('scbar', '<?php echo $searchparams['url'];?>');
 </script>
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD:Discuz/upload/data/template/3_3_common_header_forum_index.tpl.php
 <<<<<<< HEAD
 =======
 >>>>>>> 191a3ddc0c26b6d1efeef8e3552b2bc36f668163:Discuz/upload/data/template/1_1_common_header_forum_index.tpl.php
+>>>>>>> 9820e9875048c8be901aee69c268c519ca421160
 <?php } ?></div>
 </div>
 
 <?php if(!empty($_G['setting']['pluginhooks']['global_header'])) echo $_G['setting']['pluginhooks']['global_header'];?>
 <?php } ?>
+<<<<<<< HEAD
+<base href="http://bbs.itcast.cn/" /><link rel="stylesheet" type="text/css" href="data/cache/style_8_common.css?AjV" />
+<style type="text/css">
+.vk_nv_sub { width:978px; margin:0 auto; margin-top:0px; margin-bottom:10px; padding:10px 0px; background:#fff; border:1px solid #ccc; border-top:none;/* box-shadow:1px 1px 3px #ccc; */}
+
+.vk_nv_sub_item { float:left; display:inline-block; width: 320px; margin-left:5px; overflow:hidden;}
+.ie6 .vk_nv_sub_item { margin-left:2px;}
+
+.vk_nv_sub_item .icon { float:left; display:inline-block; padding-top:0px; width:60px;  height:60px; line-height:100px; overflow:hidden; color:#0ad;  font-size:14px; text-indent:5px; }
+
+.vk_nv_sub_item ul{ width: 260px; float:left; overflow:hidden;}
+.vk_nv_sub_item ul li { float:left; width:85px; height:30px; overflow:hidden;   padding:0px; margin:0px; background:url(template/veikei_dz_portal_20131130_texture/images/vk_nv_sub_li_bg.gif) no-repeat 100% 0; }
+.vk_nv_sub_item ul li a { float:left; width:65px; height:30px; line-height:30px; padding:0 10px; font-size:14px; }
+.vk_nv_sub_item ul li a:hover { color:#fff; background:#0ad; text-decoration:none; }
+.vk_nv_sub_item ul li.right { padding-right:0; background:none; }
+.vk_nv_sub_item ul li.left { padding-left:0; margin-left:0px; }
+.vk_nv_sub_item ul li.left1 a{color:#f00;}
+.vk_nv_sub_item ul li.left1 a:hover{color:#fff;}
+
+.vk_icon_1 .icon { background:url(template/veikei_dz_portal_20131130_texture/images/vk_icon_1.gif) no-repeat; }
+.vk_icon_2 .icon { background:url(template/veikei_dz_portal_20131130_texture/images/vk_icon_2.gif) no-repeat; }
+.vk_icon_3 .icon { background:url(template/veikei_dz_portal_20131130_texture/images/vk_icon_3.gif) no-repeat; }
+
+</style>
+<div id="wp" class="wp">
+<div class="vk_nv_sub png cl">
+  <div class="vk_nv_sub_item vk_icon_1 cl">
+    <div class="icon"></div>
+    <ul class="cl">
+      <li class="left"><a href="http://www.itcast.cn/channel/video.shtml" target="_blank" >免费教程</a></li>
+      <li><a href="http://www.itcast.cn/channel/job.shtml" target="_blank">就业宣言</a></li>
+      <li class="right"><a href="http://www.itcast.cn/channel/teacher.shtml" target="_blank">师资力量</a></li>
+      <li class="left left1"><a href="http://e.t.qq.com/itcast_cn?preview" target="_blank" >官方微博</a></li>
+      <li><a href="http://www.itcast.cn/channel/campus.shtml" target="_blank" >校园生活</a></li>
+      <li class="right"><a href="http://www.itcast.cn/channel/personnel.shtml" target="_blank">人才服务</a></li>
+    </ul>
+  </div>
+  <div class="vk_nv_sub_item vk_icon_2 cl">
+    <div class="icon"></div>
+    <ul class="cl">
+      <li class="left"><a href="http://bbs.itcast.cn/home.php?mod=spacecp&amp;ac=profile&amp;op=password" >邮箱认证</a></li>
+      <li><a href="http://bbs.itcast.cn/home.php?mod=spacecp&amp;ac=profile&amp;op=verify&amp;vid=6" >实名认证</a></li>
+      <li class="right"><a href="http://bbs.itcast.cn/home.php?mod=spacecp&amp;ac=profile&amp;op=verify&amp;vid=1" >大学认证</a></li>
+      <li class="left"><a href="http://bbs.itcast.cn/home.php?mod=spacecp&amp;ac=profile&amp;op=verify&amp;vid=2" >学员认证</a></li>
+      <li><a href="http://bbs.itcast.cn/thread-6158-1-1.html" >新手指南</a></li>
+      <li class="right"><a href="http://bbs.itcast.cn/thread-11691-1-1.html" >兼职招聘</a></li>
+    </ul>
+  </div>
+  <div class="vk_nv_sub_item vk_icon_3 cl">
+    <div class="icon"></div>
+    <ul class="cl">
+      <li class="left"><a href="http://java.itcast.cn" target="_blank">Java培训</a></li>
+      <li><a href="http://net.itcast.cn" target="_blank">.Net培训</a></li>
+      <li class="right"><a href="http://php.itcast.cn" target="_blank">PHP培训</a></li>
+      <li class="left"><a href="http://ios.itcast.cn" target="_blank">iOS培训</a></li>
+      <li><a href="http://c.itcast.cn"target="_blank" >C++培训</a></li>
+      <li class="right"><a href="http://icd.itcast.cn" target="_blank">网页培训</a></li>
+    </ul>
+  </div>
+
+</div> 
+   
+</div>
+
+ 
+</div>
+  </div>
+=======
 
 <div id="wp" class="wp">
 <<<<<<< HEAD:Discuz/upload/data/template/3_3_common_header_forum_index.tpl.php
@@ -398,3 +500,4 @@ initSearchmenu('scbar', '<?php echo $searchparams['url'];?>');
 >>>>>>> 751ff120ab5d4497f1a8b7bbd7f4b8179e659147
 =======
 >>>>>>> 191a3ddc0c26b6d1efeef8e3552b2bc36f668163:Discuz/upload/data/template/1_1_common_header_forum_index.tpl.php
+>>>>>>> 9820e9875048c8be901aee69c268c519ca421160

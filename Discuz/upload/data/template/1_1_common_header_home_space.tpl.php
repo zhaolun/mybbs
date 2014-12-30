@@ -1,8 +1,14 @@
 <?php if(!defined('IN_DISCUZ')) exit('Access Denied'); 
 0
+<<<<<<< HEAD
+|| checktplrefresh('./template/default/common/header.htm', './template/default/common/header_common.htm', 1419912439, '1', './data/template/1_1_common_header_home_space.tpl.php', './template/default', 'common/header_home_space')
+|| checktplrefresh('./template/default/common/header.htm', './template/default/common/header_qmenu.htm', 1419912439, '1', './data/template/1_1_common_header_home_space.tpl.php', './template/default', 'common/header_home_space')
+|| checktplrefresh('./template/default/common/header.htm', './template/default/common/pubsearchform.htm', 1419912439, '1', './data/template/1_1_common_header_home_space.tpl.php', './template/default', 'common/header_home_space')
+=======
 || checktplrefresh('./template/default/common/header.htm', './template/default/common/header_common.htm', 1419908707, '1', './data/template/1_1_common_header_home_space.tpl.php', './template/default', 'common/header_home_space')
 || checktplrefresh('./template/default/common/header.htm', './template/default/common/header_qmenu.htm', 1419908707, '1', './data/template/1_1_common_header_home_space.tpl.php', './template/default', 'common/header_home_space')
 || checktplrefresh('./template/default/common/header.htm', './template/default/common/pubsearchform.htm', 1419908707, '1', './data/template/1_1_common_header_home_space.tpl.php', './template/default', 'common/header_home_space')
+>>>>>>> 9820e9875048c8be901aee69c268c519ca421160
 ;?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -248,5 +254,74 @@ initSearchmenu('scbar', '<?php echo $searchparams['url'];?>');
 
 <?php if(!empty($_G['setting']['pluginhooks']['global_header'])) echo $_G['setting']['pluginhooks']['global_header'];?>
 <?php } ?>
+<<<<<<< HEAD
+<base href="http://bbs.itcast.cn/" /><link rel="stylesheet" type="text/css" href="data/cache/style_8_common.css?AjV" />
+<style type="text/css">
+.vk_nv_sub { width:978px; margin:0 auto; margin-top:0px; margin-bottom:10px; padding:10px 0px; background:#fff; border:1px solid #ccc; border-top:none;/* box-shadow:1px 1px 3px #ccc; */}
+
+.vk_nv_sub_item { float:left; display:inline-block; width: 320px; margin-left:5px; overflow:hidden;}
+.ie6 .vk_nv_sub_item { margin-left:2px;}
+
+.vk_nv_sub_item .icon { float:left; display:inline-block; padding-top:0px; width:60px;  height:60px; line-height:100px; overflow:hidden; color:#0ad;  font-size:14px; text-indent:5px; }
+
+.vk_nv_sub_item ul{ width: 260px; float:left; overflow:hidden;}
+.vk_nv_sub_item ul li { float:left; width:85px; height:30px; overflow:hidden;   padding:0px; margin:0px; background:url(template/veikei_dz_portal_20131130_texture/images/vk_nv_sub_li_bg.gif) no-repeat 100% 0; }
+.vk_nv_sub_item ul li a { float:left; width:65px; height:30px; line-height:30px; padding:0 10px; font-size:14px; }
+.vk_nv_sub_item ul li a:hover { color:#fff; background:#0ad; text-decoration:none; }
+.vk_nv_sub_item ul li.right { padding-right:0; background:none; }
+.vk_nv_sub_item ul li.left { padding-left:0; margin-left:0px; }
+.vk_nv_sub_item ul li.left1 a{color:#f00;}
+.vk_nv_sub_item ul li.left1 a:hover{color:#fff;}
+
+.vk_icon_1 .icon { background:url(template/veikei_dz_portal_20131130_texture/images/vk_icon_1.gif) no-repeat; }
+.vk_icon_2 .icon { background:url(template/veikei_dz_portal_20131130_texture/images/vk_icon_2.gif) no-repeat; }
+.vk_icon_3 .icon { background:url(template/veikei_dz_portal_20131130_texture/images/vk_icon_3.gif) no-repeat; }
+
+</style>
+<div id="wp" class="wp">
+<div class="vk_nv_sub png cl">
+  <div class="vk_nv_sub_item vk_icon_1 cl">
+    <div class="icon"></div>
+    <ul class="cl">
+      <li class="left"><a href="http://www.itcast.cn/channel/video.shtml" target="_blank" >免费教程</a></li>
+      <li><a href="http://www.itcast.cn/channel/job.shtml" target="_blank">就业宣言</a></li>
+      <li class="right"><a href="http://www.itcast.cn/channel/teacher.shtml" target="_blank">师资力量</a></li>
+      <li class="left left1"><a href="http://e.t.qq.com/itcast_cn?preview" target="_blank" >官方微博</a></li>
+      <li><a href="http://www.itcast.cn/channel/campus.shtml" target="_blank" >校园生活</a></li>
+      <li class="right"><a href="http://www.itcast.cn/channel/personnel.shtml" target="_blank">人才服务</a></li>
+    </ul>
+  </div>
+  <div class="vk_nv_sub_item vk_icon_2 cl">
+    <div class="icon"></div>
+    <ul class="cl">
+      <li class="left"><a href="http://bbs.itcast.cn/home.php?mod=spacecp&amp;ac=profile&amp;op=password" >邮箱认证</a></li>
+      <li><a href="http://bbs.itcast.cn/home.php?mod=spacecp&amp;ac=profile&amp;op=verify&amp;vid=6" >实名认证</a></li>
+      <li class="right"><a href="http://bbs.itcast.cn/home.php?mod=spacecp&amp;ac=profile&amp;op=verify&amp;vid=1" >大学认证</a></li>
+      <li class="left"><a href="http://bbs.itcast.cn/home.php?mod=spacecp&amp;ac=profile&amp;op=verify&amp;vid=2" >学员认证</a></li>
+      <li><a href="http://bbs.itcast.cn/thread-6158-1-1.html" >新手指南</a></li>
+      <li class="right"><a href="http://bbs.itcast.cn/thread-11691-1-1.html" >兼职招聘</a></li>
+    </ul>
+  </div>
+  <div class="vk_nv_sub_item vk_icon_3 cl">
+    <div class="icon"></div>
+    <ul class="cl">
+      <li class="left"><a href="http://java.itcast.cn" target="_blank">Java培训</a></li>
+      <li><a href="http://net.itcast.cn" target="_blank">.Net培训</a></li>
+      <li class="right"><a href="http://php.itcast.cn" target="_blank">PHP培训</a></li>
+      <li class="left"><a href="http://ios.itcast.cn" target="_blank">iOS培训</a></li>
+      <li><a href="http://c.itcast.cn"target="_blank" >C++培训</a></li>
+      <li class="right"><a href="http://icd.itcast.cn" target="_blank">网页培训</a></li>
+    </ul>
+  </div>
+
+</div> 
+   
+</div>
+
+ 
+</div>
+  </div>
+=======
 
 <div id="wp" class="wp">
+>>>>>>> 9820e9875048c8be901aee69c268c519ca421160
