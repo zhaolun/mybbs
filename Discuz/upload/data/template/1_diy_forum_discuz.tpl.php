@@ -21,11 +21,7 @@
 
 <?php if(empty($gid)) { ?><?php echo adshow("text/wp a_t");?><?php } ?>
 
-<<<<<<< HEAD
-<style id="diy_style" type="text/css">#frameiS4UsZ { border:4px !important;}</style>
-=======
 <style id="diy_style" type="text/css"></style>
->>>>>>> 9820e9875048c8be901aee69c268c519ca421160
 
 <?php if(empty($gid)) { ?>
 <div class="wp">

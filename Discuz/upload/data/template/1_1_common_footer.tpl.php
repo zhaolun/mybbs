@@ -1,7 +1,5 @@
 <?php if(!defined('IN_DISCUZ')) exit('Access Denied'); ?>
-
-    
-</div>
+	</div>
 <?php if(empty($topic) || ($topic['usefooter'])) { $focusid = getfocus_rand($_G[basescript]);?><?php if($focusid !== null) { $focus = $_G['cache']['focus']['data'][$focusid];?><?php $focusnum = count($_G['setting']['focus'][$_G[basescript]]);?><div class="focus" id="sitefocus">
 <div class="bm">
 <div class="bm_h cl">

@@ -1,20 +1,8 @@
 <?php if(!defined('IN_DISCUZ')) exit('Access Denied'); 
 0
-<<<<<<< HEAD
-|| checktplrefresh('./template/default/common/header.htm', './template/default/common/header_common.htm', 1419905355, '1', './data/template/1_1_common_header_portal_index.tpl.php', './template/default', 'common/header_portal_index')
-|| checktplrefresh('./template/default/common/header.htm', './template/default/common/header_qmenu.htm', 1419905355, '1', './data/template/1_1_common_header_portal_index.tpl.php', './template/default', 'common/header_portal_index')
-|| checktplrefresh('./template/default/common/header.htm', './template/default/common/pubsearchform.htm', 1419905355, '1', './data/template/1_1_common_header_portal_index.tpl.php', './template/default', 'common/header_portal_index')
-=======
-<<<<<<< HEAD
-|| checktplrefresh('./template/default/common/header.htm', './template/default/common/header_common.htm', 1419909449, '1', './data/template/1_1_common_header_portal_index.tpl.php', './template/default', 'common/header_portal_index')
-|| checktplrefresh('./template/default/common/header.htm', './template/default/common/header_qmenu.htm', 1419909449, '1', './data/template/1_1_common_header_portal_index.tpl.php', './template/default', 'common/header_portal_index')
-|| checktplrefresh('./template/default/common/header.htm', './template/default/common/pubsearchform.htm', 1419909449, '1', './data/template/1_1_common_header_portal_index.tpl.php', './template/default', 'common/header_portal_index')
-=======
-|| checktplrefresh('./template/default/common/header.htm', './template/default/common/header_common.htm', 1419907181, '1', './data/template/1_1_common_header_portal_index.tpl.php', './template/default', 'common/header_portal_index')
-|| checktplrefresh('./template/default/common/header.htm', './template/default/common/header_qmenu.htm', 1419907181, '1', './data/template/1_1_common_header_portal_index.tpl.php', './template/default', 'common/header_portal_index')
-|| checktplrefresh('./template/default/common/header.htm', './template/default/common/pubsearchform.htm', 1419907181, '1', './data/template/1_1_common_header_portal_index.tpl.php', './template/default', 'common/header_portal_index')
->>>>>>> 191a3ddc0c26b6d1efeef8e3552b2bc36f668163
->>>>>>> 9820e9875048c8be901aee69c268c519ca421160
+|| checktplrefresh('./template/default/common/header.htm', './template/default/common/header_common.htm', 1419930724, '1', './data/template/1_1_common_header_portal_index.tpl.php', './template/default', 'common/header_portal_index')
+|| checktplrefresh('./template/default/common/header.htm', './template/default/common/header_qmenu.htm', 1419930724, '1', './data/template/1_1_common_header_portal_index.tpl.php', './template/default', 'common/header_portal_index')
+|| checktplrefresh('./template/default/common/header.htm', './template/default/common/pubsearchform.htm', 1419930724, '1', './data/template/1_1_common_header_portal_index.tpl.php', './template/default', 'common/header_portal_index')
 ;?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -80,7 +68,6 @@
 <?php if(!empty($_G['setting']['pluginhooks']['global_cpnav_extra1'])) echo $_G['setting']['pluginhooks']['global_cpnav_extra1'];?>
 </div>
 <div class="y">
-
 <a id="switchblind" href="javascript:;" onclick="toggleBlind(this)" title="开启辅助访问" class="switchblind">开启辅助访问</a>
 <?php if(!empty($_G['setting']['pluginhooks']['global_cpnav_extra2'])) echo $_G['setting']['pluginhooks']['global_cpnav_extra2'];?><?php if(is_array($_G['setting']['topnavs']['1'])) foreach($_G['setting']['topnavs']['1'] as $nav) { if($nav['available'] && (!$nav['level'] || ($nav['level'] == 1 && $_G['uid']) || ($nav['level'] == 2 && $_G['adminid'] > 0) || ($nav['level'] == 3 && $_G['adminid'] == 1))) { ?><?php echo $nav['code'];?><?php } } if(empty($_G['disabledwidthauto']) && $_G['setting']['switchwidthauto']) { ?>
 <a href="javascript:;" id="switchwidth" onclick="widthauto(this)" title="<?php if(widthauto()) { ?>切换到窄版<?php } else { ?>切换到宽版<?php } ?>" class="switchwidth"><?php if(widthauto()) { ?>切换到窄版<?php } else { ?>切换到宽版<?php } ?></a>
@@ -92,9 +79,7 @@
 </div>
 
 <?php if(!IS_ROBOT) { if($_G['uid']) { ?>
-
 <ul id="myprompt_menu" class="p_pop" style="display: none;">
-
 <li><a href="home.php?mod=space&amp;do=pm" id="pm_ntc" style="background-repeat: no-repeat; background-position: 0 50%;"><em class="prompt_news<?php if(empty($_G['member']['newpm'])) { ?>_0<?php } ?>"></em>消息</a></li>
 <li><a href="home.php?mod=follow&amp;do=follower"><em class="prompt_follower<?php if(empty($_G['member']['newprompt_num']['follower'])) { ?>_0<?php } ?>"></em>新听众<?php if($_G['member']['newprompt_num']['follower']) { ?>(<?php echo $_G['member']['newprompt_num']['follower'];?>)<?php } ?></a></li>
 <?php if($_G['member']['newprompt'] && $_G['member']['newprompt_num']['follow']) { ?>
@@ -260,12 +245,13 @@ initSearchmenu('scbar', '<?php echo $searchparams['url'];?>');
 
 <?php if(!empty($_G['setting']['pluginhooks']['global_header'])) echo $_G['setting']['pluginhooks']['global_header'];?>
 <?php } ?>
-<<<<<<< HEAD
+
+<div id="wp" class="wp">
 <base href="http://bbs.itcast.cn/" /><link rel="stylesheet" type="text/css" href="data/cache/style_8_common.css?AjV" />
 <style type="text/css">
-.vk_nv_sub { width:978px; margin:0 auto; margin-top:0px; margin-bottom:10px; padding:10px 0px; background:#fff; border:1px solid #ccc; border-top:none;/* box-shadow:1px 1px 3px #ccc; */}
+.vk_nv_sub { width:957px; margin:0 auto; margin-top:0px; margin-bottom:10px; padding:10px 0px; background:#fff; border:1px solid #ccc; border-top:none;/* box-shadow:1px 1px 3px #ccc; */}
 
-.vk_nv_sub_item { float:left; display:inline-block; width: 320px; margin-left:5px; overflow:hidden;}
+.vk_nv_sub_item { float:left; display:inline-block; width: 308px; margin-left:5px; overflow:hidden;}
 .ie6 .vk_nv_sub_item { margin-left:2px;}
 
 .vk_nv_sub_item .icon { float:left; display:inline-block; padding-top:0px; width:60px;  height:60px; line-height:100px; overflow:hidden; color:#0ad;  font-size:14px; text-indent:5px; }
@@ -287,7 +273,7 @@ initSearchmenu('scbar', '<?php echo $searchparams['url'];?>');
 <div id="wp" class="wp">
 <div class="vk_nv_sub png cl">
   <div class="vk_nv_sub_item vk_icon_1 cl">
-    <div class="icon"></div>
+
     <ul class="cl">
       <li class="left"><a href="http://www.itcast.cn/channel/video.shtml" target="_blank" >免费教程</a></li>
       <li><a href="http://www.itcast.cn/channel/job.shtml" target="_blank">就业宣言</a></li>
@@ -298,7 +284,6 @@ initSearchmenu('scbar', '<?php echo $searchparams['url'];?>');
     </ul>
   </div>
   <div class="vk_nv_sub_item vk_icon_2 cl">
-    <div class="icon"></div>
     <ul class="cl">
       <li class="left"><a href="http://bbs.itcast.cn/home.php?mod=spacecp&amp;ac=profile&amp;op=password" >邮箱认证</a></li>
       <li><a href="http://bbs.itcast.cn/home.php?mod=spacecp&amp;ac=profile&amp;op=verify&amp;vid=6" >实名认证</a></li>
@@ -309,7 +294,6 @@ initSearchmenu('scbar', '<?php echo $searchparams['url'];?>');
     </ul>
   </div>
   <div class="vk_nv_sub_item vk_icon_3 cl">
-    <div class="icon"></div>
     <ul class="cl">
       <li class="left"><a href="http://java.itcast.cn" target="_blank">Java培训</a></li>
       <li><a href="http://net.itcast.cn" target="_blank">.Net培训</a></li>
@@ -327,7 +311,3 @@ initSearchmenu('scbar', '<?php echo $searchparams['url'];?>');
  
 </div>
   </div>
-=======
-
-<div id="wp" class="wp">
->>>>>>> 9820e9875048c8be901aee69c268c519ca421160
