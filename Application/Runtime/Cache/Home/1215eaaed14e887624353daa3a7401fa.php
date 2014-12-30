@@ -144,24 +144,43 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>-->
 
 <div id="box">
-  <div class="position"><a name="pagetop"/>您现在的位置：<span class="STYLE5"><a href="/index.php">首页</a> &gt;&gt; 企业招聘 &gt;&gt; 正文</span></div>
+  <div class="position"><a name="pagetop"/>您现在的位置：<span class="STYLE5"><a href="http://php.itcast.cn">PHP学院</a> &gt;&gt; PHP学院新闻 &gt;&gt; 正文</span></div>
   <div id="left" class="fl" style="margin-top:8px;">
-    <div class="infotop"></div>
+    <div class="infotop"><img src="/Public/images/infotop.gif"/></div>
     <div class="left_content1">
       <div id="printarea">
-        <h1 class="infotitle"><?php echo ($info["company"]); ?></h1>
-        <div class="editer">更新时间:<?php echo ($info["time"]); ?> 来源:Yi利</div>
+        <h1 class="infotitle">李东超老师精彩视频  第1讲_贪食蛇</h1>
+        <div class="editer">更新时间:2013年04月02日11时17分 来源:</div>
         <div class="infor">
-         　　<?php echo ($info["content"]); ?>
+         <p style="text-indent:0em;"><img alt="" src="<?php echo ($list["img"]); ?>" style="float:left;margin-right:15px;height:189px;width:155px;" /><span style="font-size:12px;"><span class="blue" style=""><strong><?php echo ($list["t_name"]); ?></strong></span><br />
+<strong>职 务：<?php echo ($list["position"]); ?></strong><br />
+&nbsp; &nbsp; <?php echo ($list["t_desc"]); ?></span></p>
+<hr />
+<p></p>
+<p style="text-indent:0em;"><span style="font-size:12px;"><strong>课程内容介绍：</strong><br />
+&nbsp; &nbsp;javascript是学习网页编程必修的一门客户端脚本语言。 很多人认为js只能是做一些简单的网页特效和表单验证，其实不然。 在js中也有强大的面向（基本）对象的编程思想 这是李东超讲师的随堂所录视频，主要讲解使用javascript语言编写的贪食蛇小游戏，在本例中，使用的是面向对象的编程思想，可以让有基础的同学对js的掌握以及js面向对象的理解更加深入一层！</span></p>
+<div>
+<div><span style="font-size:12px;"><a href="http://php.itcast.cn/news/20130402/11170476269.shtml#">第1讲_贪食蛇 李东超</a></span></div>
+<div><span style="font-size:12px;"><a href="http://php.itcast.cn/news/20130402/11493672596.shtml">第2讲_贪食蛇 李东超</a></span></div>
+<div><span style="font-size:12px;"><a href="http://php.itcast.cn/news/20130402/11511910871.shtml">第3讲_贪食蛇 李东超</a></span></div>
+</div>
+<center>
+	<br />
+	<hr />
+	<br />
+	<p><span style="color:#0000cd;"><span style="font-size: 12px;">视频网站转码后分辨率不高，推荐同学们下载视频观看：<a href="http://dl.vmall.com/c0pl6iyjtd" target="_blank">点此下载</a></span></span></p>
+	<p style="text-indent:0em;">第1讲_贪食蛇</p>
+	<p style="text-indent:0em;"><embed src="http://player.youku.com/player.php/sid/XODQ2MTgyNDAw/v.swf" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed></p>
+</center>
 
-<script type="text/javascript" src="http://bbs.itcast.cn/api.php?mod=js&bid=94"></script>
+	<script type="text/javascript" src="http://bbs.itcast.cn/api.php?mod=js&bid=94"></script>
         </div>
       </div>
       <div class="pre">
-	               上一篇：<a target="_blank" href="/news/20141208/14061592998.shtml">北京大众在线网络技术有限公司招聘</a>
+	               上一篇：<a target="_blank" href="/news/20130316/22360746537.shtml">在这里，我们学到的是老师们多年的经验</a>
        	  </div>
       <div class="next">
-	              下一篇：<a target="_blank" href="/news/20141215/14353014587.shtml">北京智胜终端互联市场顾问有限公司招聘</a>
+	              下一篇：<a target="_blank" href="/news/20130402/11493672596.shtml">李东超老师精彩视频  第2讲_贪食蛇</a>
       	  </div>
 
       <div class="clear"></div>
@@ -183,12 +202,12 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
       	  <!-- 评论区 -->
 	    	<script type="text/javascript">
 	           $(document).ready(function(){
-	              	loadcomment('20141215-14223392440', 1);
+	              	loadcomment('20130402-11170476269', 1);
                });   
 	       </script>
 	  <div id="commentcontent"></div>
 	  <form name="comment" style="padding:0;margin:0px;">
-        <input type="hidden" name="referenceSource" value="20141215-14223392440">
+        <input type="hidden" name="referenceSource" value="20130402-11170476269">
         <input type="hidden" name="type" value="NEWS">
         <textarea cols="85" rows="6" style="width:610px;" name="content"></textarea>
         <div class="clear"></div>
@@ -200,11 +219,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
       <!-- 评论区 -->
 	        <div class="clear"></div>
       <div class="ad">
-      <!-- 广告区 -->
-      <a href="http://java.itcast.cn/news/e393b086/ebce/4f94/9d48/94ed86bcf5ef.shtml" target="_blank"><img border="0" src="http://www.itcast.cn/files/file/201206/20120620111629490.jpg" width="620" /></a> 
-      <!-- 广告区 -->
       </div>
-
 <div class="clear"></div>
 		  </div>
 			<div><img src="/Public/images/leftbottom.gif"/></div>

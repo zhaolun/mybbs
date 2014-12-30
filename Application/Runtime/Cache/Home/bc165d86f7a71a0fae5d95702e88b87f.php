@@ -142,27 +142,38 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 	<a class="jiathis_counter_style"></a>
 </div>
 <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>-->
-
 <div id="box">
-  <div class="position"><a name="pagetop"/>您现在的位置：<span class="STYLE5"><a href="/index.php">首页</a> &gt;&gt; 企业招聘 &gt;&gt; 正文</span></div>
+  <div class="position"><a name="pagetop"/>您现在的位置：<span class="STYLE5"><a href="http://php.itcast.cn">PHP学院</a> &gt;&gt; PHP学员感言 &gt;&gt; 正文</span></div>
   <div id="left" class="fl" style="margin-top:8px;">
     <div class="infotop"></div>
     <div class="left_content1">
       <div id="printarea">
-        <h1 class="infotitle"><?php echo ($info["company"]); ?></h1>
+        <h1 class="infotitle"><?php echo ($info["ganyan"]); ?> - <?php echo ($info["name"]); ?></h1>
         <div class="editer">更新时间:<?php echo ($info["time"]); ?> 来源:Yi利</div>
         <div class="infor">
-         　　<?php echo ($info["content"]); ?>
+         <div class="bigvideo">
+<p><embed align="middle" allowscriptaccess="always" height="400" quality="high" src="http://static.video.qq.com/TPout.swf?vid=q0135knyyjl&amp;auto=0" type="application/x-shockwave-flash" width="560"></embed></p>
+<p><?php echo ($info["name"]); ?> - <?php echo ($info["ganyan"]); ?></p>
+</div>
+<div class="clear"></div>
+<?php echo ($info["content"]); ?><br />
+<a href="http://www.itcast.cn/files/image/201409/20140904140400661.jpg"><img alt="" src="http://www.itcast.cn/files/image/201409/20140925155954139.jpg" style="width: 600px; height: 800px;" /></a><br />
+<a href="http://www.itcast.cn/files/image/201409/20140904140413765.jpg"><img alt="" src="http://www.itcast.cn/files/image/201409/20140925160030186.jpg" style="width: 600px; height: 800px;" /></a><br />
+<a href="http://www.itcast.cn/files/image/201409/20140904140428540.jpg"><img alt="" src="http://www.itcast.cn/files/image/201409/20140925160322909.jpg" style="width: 600px; height: 800px;" /></a><br />
+<br />
+<br />
+<div style="text-align: center;"><a href="http://www.itcast.cn/files/image/201409/20140904140452328.jpg"><img alt="" src="http://www.itcast.cn/files/image/201409/20140925160346706.jpg" style="width: 400px; height: 300px;" /></a></div>
+<br />
+<br />
 
-<script type="text/javascript" src="http://bbs.itcast.cn/api.php?mod=js&bid=94"></script>
+	<script type="text/javascript" src="http://bbs.itcast.cn/api.php?mod=js&bid=94"></script>
         </div>
       </div>
       <div class="pre">
-	               上一篇：<a target="_blank" href="/news/20141208/14061592998.shtml">北京大众在线网络技术有限公司招聘</a>
+	               上一篇：<a target="_blank" href="/news/20130902/14273649772.shtml">学员郝建设：短暂时光的改变</a>
        	  </div>
       <div class="next">
-	              下一篇：<a target="_blank" href="/news/20141215/14353014587.shtml">北京智胜终端互联市场顾问有限公司招聘</a>
-      	  </div>
+	  	  </div>
 
       <div class="clear"></div>
       <div class="share">
@@ -183,12 +194,12 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
       	  <!-- 评论区 -->
 	    	<script type="text/javascript">
 	           $(document).ready(function(){
-	              	loadcomment('20141215-14223392440', 1);
+	              	loadcomment('20140904-14020527929', 1);
                });   
 	       </script>
 	  <div id="commentcontent"></div>
 	  <form name="comment" style="padding:0;margin:0px;">
-        <input type="hidden" name="referenceSource" value="20141215-14223392440">
+        <input type="hidden" name="referenceSource" value="20140904-14020527929">
         <input type="hidden" name="type" value="NEWS">
         <textarea cols="85" rows="6" style="width:610px;" name="content"></textarea>
         <div class="clear"></div>
@@ -201,10 +212,9 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 	        <div class="clear"></div>
       <div class="ad">
       <!-- 广告区 -->
-      <a href="http://java.itcast.cn/news/e393b086/ebce/4f94/9d48/94ed86bcf5ef.shtml" target="_blank"><img border="0" src="http://www.itcast.cn/files/file/201206/20120620111629490.jpg" width="620" /></a> 
+      <!--<a href="http://icd.itcast.cn"><img border="0" src="http://www.itcast.cn/images/ad/icdad.gif" width="620" /></a>--> 
       <!-- 广告区 -->
       </div>
-
 <div class="clear"></div>
 		  </div>
 			<div><img src="/Public/images/leftbottom.gif"/></div>

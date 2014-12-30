@@ -144,24 +144,27 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>-->
 
 <div id="box">
-  <div class="position"><a name="pagetop"/>您现在的位置：<span class="STYLE5"><a href="/index.php">首页</a> &gt;&gt; 企业招聘 &gt;&gt; 正文</span></div>
+  <div class="position"><a name="pagetop"/>您现在的位置：<span class="STYLE5"><a href="http://php.itcast.cn">PHP学院</a> &gt;&gt; PHP名师答疑 &gt;&gt; 正文</span></div>
   <div id="left" class="fl" style="margin-top:8px;">
-    <div class="infotop"></div>
+    <div class="infotop"><img src="/Public/images/infotop.gif"/></div>
     <div class="left_content1">
       <div id="printarea">
-        <h1 class="infotitle"><?php echo ($info["company"]); ?></h1>
-        <div class="editer">更新时间:<?php echo ($info["time"]); ?> 来源:Yi利</div>
+        <h1 class="infotitle"><?php echo ($list["title"]); ?></h1>
+        <div class="editer">更新时间:<?php echo ($list["time"]); ?> 来源:</div>
         <div class="infor">
-         　　<?php echo ($info["content"]); ?>
+         <span style="font-size:12px;"><span style="font-family: tahoma, geneva, sans-serif; "><span style="color: rgb(68, 68, 68); line-height: 21px; ">(</span><font style="word-wrap: break-word; color: rgb(68, 68, 68); font-size: 14px; line-height: 21px; ">转载请注明</font><span style="color: rgb(68, 68, 68); line-height: 21px; ">&nbsp;&nbsp;</span><font style="word-wrap: break-word; color: rgb(68, 68, 68); font-size: 14px; line-height: 21px; ">传智播客</font><span style="color: rgb(68, 68, 68); line-height: 21px; ">php</span><font style="word-wrap: break-word; color: rgb(68, 68, 68); font-size: 14px; line-height: 21px; ">学院</font><span style="color: rgb(68, 68, 68); line-height: 21px; ">-</span><font style="word-wrap: break-word; color: rgb(68, 68, 68); font-size: 14px; line-height: 21px; ">韩顺平</font><span style="color: rgb(68, 68, 68); line-height: 21px; ">&nbsp;&nbsp;</span><a href="http://php.itcast.cn/" style="word-wrap: break-word; color: rgb(51, 102, 153); font-family: Tahoma, Helvetica, SimSun, sans-serif; font-size: 14px; line-height: 21px; " target="_blank">http://php.itcast.cn</a><span style="color: rgb(68, 68, 68); line-height: 21px; ">&nbsp;)</span></span></span><br style="word-wrap: break-word; color: rgb(68, 68, 68); font-family: Tahoma, Helvetica, SimSun, sans-serif; font-size: 14px; line-height: 21px; " />
+		 <p align="left" style="margin: 0px; padding: 0px; text-indent: 2em; "><?php echo ($list["content"]); ?></p>
 
-<script type="text/javascript" src="http://bbs.itcast.cn/api.php?mod=js&bid=94"></script>
+<div align="left" style="word-wrap: break-word; color: rgb(68, 68, 68); font-family: Tahoma, Helvetica, SimSun, sans-serif; font-size: 14px; line-height: 21px; "><span style="font-size:12px;"><span style="font-family: tahoma, geneva, sans-serif; "><font style="word-wrap: break-word; ">温馨提示： 答案在&nbsp;</font><font color="blue" style="word-wrap: break-word; ">php.itcast.cn</font><font style="word-wrap: break-word; ">名师答疑。</font></span></span></div>
+
+	<script type="text/javascript" src="http://bbs.itcast.cn/api.php?mod=js&bid=94"></script>
         </div>
       </div>
       <div class="pre">
-	               上一篇：<a target="_blank" href="/news/20141208/14061592998.shtml">北京大众在线网络技术有限公司招聘</a>
+	               上一篇：<a target="_blank" href="/index.php/home/index/detail/id/<?php echo ($it["id"]); ?>">PHP应该学什么，如何学好PHP(二) </a>
        	  </div>
       <div class="next">
-	              下一篇：<a target="_blank" href="/news/20141215/14353014587.shtml">北京智胜终端互联市场顾问有限公司招聘</a>
+	              下一篇：<a target="_blank" href="/index.php/home/index/detail/id/<?php echo ($it["id"]); ?>">传智播客PHP视频教程手册大全</a>
       	  </div>
 
       <div class="clear"></div>
@@ -183,12 +186,12 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
       	  <!-- 评论区 -->
 	    	<script type="text/javascript">
 	           $(document).ready(function(){
-	              	loadcomment('20141215-14223392440', 1);
+	              	loadcomment('20121005-12001594210', 1);
                });   
 	       </script>
 	  <div id="commentcontent"></div>
 	  <form name="comment" style="padding:0;margin:0px;">
-        <input type="hidden" name="referenceSource" value="20141215-14223392440">
+        <input type="hidden" name="referenceSource" value="20121005-12001594210">
         <input type="hidden" name="type" value="NEWS">
         <textarea cols="85" rows="6" style="width:610px;" name="content"></textarea>
         <div class="clear"></div>
@@ -201,9 +204,10 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 	        <div class="clear"></div>
       <div class="ad">
       <!-- 广告区 -->
-      <a href="http://java.itcast.cn/news/e393b086/ebce/4f94/9d48/94ed86bcf5ef.shtml" target="_blank"><img border="0" src="http://www.itcast.cn/files/file/201206/20120620111629490.jpg" width="620" /></a> 
+      <!--<a href="http://icd.itcast.cn"><img border="0" src="http://www.itcast.cn/images/ad/icdad.gif" width="620" /></a>--> 
       <!-- 广告区 -->
       </div>
+
 
 <div class="clear"></div>
 		  </div>

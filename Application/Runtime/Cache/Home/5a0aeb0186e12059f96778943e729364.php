@@ -142,69 +142,58 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 	<a class="jiathis_counter_style"></a>
 </div>
 <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>-->
-
 <div id="box">
-  <div class="position"><a name="pagetop"/>您现在的位置：<span class="STYLE5"><a href="/index.php">首页</a> &gt;&gt; 企业招聘 &gt;&gt; 正文</span></div>
-  <div id="left" class="fl" style="margin-top:8px;">
-    <div class="infotop"></div>
-    <div class="left_content1">
-      <div id="printarea">
-        <h1 class="infotitle"><?php echo ($info["company"]); ?></h1>
-        <div class="editer">更新时间:<?php echo ($info["time"]); ?> 来源:Yi利</div>
-        <div class="infor">
-         　　<?php echo ($info["content"]); ?>
+  <div style="width:960px; height:149px; margin:0 auto;"><img src="/Public/images/teacherpic.jpg"  /></div>
+  <div id="left" class="fl"  style="margin-top:3px;">
+    <div><img src="/Public/images/lefttop.gif"/></div>
+    <div class="left_content2">
+      <h4 class="ganyan"><span class="STYLE3">师资</span>介绍</h4>
+      <div class="teacher_z" style="height: auto; overflow: hidden">
+<!-- 第一位老师 -->
+<?php if(is_array($list)): foreach($list as $key=>$vo): ?><div class="teacher">
+<p class="fl"><img alt="" src="<?php echo ($vo["img"]); ?>" style="width: 155px; height: 189px;" /></p>
+<dl class="fr">
+	<dt>
+		<span class="blue"><strong><?php echo ($vo["t_name"]); ?></strong></span><strong>--<span style="color:#0000ff;"><a href="/index.php/home/teacher/video/id/<?php echo ($vo["id"]); ?>" target="_blank"><span style="color: rgb(0, 0, 255);">在线试听精彩课程</span></a></span></strong></dt>
+	<dt>
+		<strong>职 务：<?php echo ($vo["position"]); ?></strong></dt>
+	<dd><?php echo ($vo["t_desc"]); ?></dd>
+</dl>
+</div><?php endforeach; endif; ?>
 
-<script type="text/javascript" src="http://bbs.itcast.cn/api.php?mod=js&bid=94"></script>
-        </div>
-      </div>
-      <div class="pre">
-	               上一篇：<a target="_blank" href="/news/20141208/14061592998.shtml">北京大众在线网络技术有限公司招聘</a>
-       	  </div>
-      <div class="next">
-	              下一篇：<a target="_blank" href="/news/20141215/14353014587.shtml">北京智胜终端互联市场顾问有限公司招聘</a>
-      	  </div>
+<div></div>
+</div>
+<br />
 
-      <div class="clear"></div>
-      <div class="share">
-	  <!-- Baidu share BEGIN -->
-    <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
-        <span class="bds_more">分享到：</span>
-        <a class="bds_sqq">QQ好友</a>
-		<a class="bds_qzone">QQ空间</a>
-		<a class="bds_tqq">腾讯微博</a>
-		<a class="bds_tsina">新浪微博</a>
-		<a class="bds_tieba">百度贴吧</a>
-		<a class="shareCount"></a>
     </div>
-<!-- Baidu share END 需在页面底部添加baidushare.js -->	  
-	  </div>
-	  <div class="clear"></div>
-      <div class="print"><a href="#" id="printbutton">【打印】</a> <a href="#pagetop">【返回顶部】</a></div>
-      	  <!-- 评论区 -->
-	    	<script type="text/javascript">
-	           $(document).ready(function(){
-	              	loadcomment('20141215-14223392440', 1);
-               });   
-	       </script>
-	  <div id="commentcontent"></div>
-	  <form name="comment" style="padding:0;margin:0px;">
-        <input type="hidden" name="referenceSource" value="20141215-14223392440">
-        <input type="hidden" name="type" value="NEWS">
-        <textarea cols="85" rows="6" style="width:610px;" name="content"></textarea>
-        <div class="clear"></div>
-        <div class="fabiao">
-	      <span class="fl">请输入验证码：<input name="validatecode" type="text" style="width:80px;" />  <img src="http://manage.itcast.cn:8080/validatecode/comment.jpg" id="kaptchaImage" width="100"/></span><span class="fr"><input type='button' value="提 交" id="savebutton"/></span>
-	    </div>
-	  </form>
-	  <div id="dialog" title="评论保存结果"></div><!-- 对话框内容 -->
-      <!-- 评论区 -->
-	        <div class="clear"></div>
-      <div class="ad">
-      <!-- 广告区 -->
-      <a href="http://java.itcast.cn/news/e393b086/ebce/4f94/9d48/94ed86bcf5ef.shtml" target="_blank"><img border="0" src="http://www.itcast.cn/files/file/201206/20120620111629490.jpg" width="620" /></a> 
-      <!-- 广告区 -->
-      </div>
-
+    <div><img src="/Public/images/leftbottom.gif"/></div>
+  </div>
+  <div id="right" class="fl">
+    <h4 class="righttitle1 zhaopin"><span class="blue">讲师</span>招聘</h4>
+    <div class="rightkuang1">
+      <p class="cent"><img src="/Public/images/xuanze.jpg" width="256" height="66" /></p>
+      <div class="clear"> </div>
+      <p class="miaoshu"> 中国的软件教育已经坑害了不少软件工程师苗子，传智播客自成立之日起就立志于改变中国的软件教育，目前已经出版IT教程书籍十多本，教学视频几十套，发表各类技术文章几百篇，已经开始对中国的软件教育有所影响。随着传智播客的事业被越来越多的人认知，加盟到传智播客愿意为此事业奋斗终生的技术牛人也越来越多。尽管加盟到传智播客的技术牛人很多，但要从政策上改变中国的软件教育，我们的力量还很小，小到可以说是微不足道。所以我们需要各路英雄豪杰加盟传智播客，为改变中国的软件教育而奋斗不息。</p>
+      <p class="cent"><a href="/news/9838ccfe/74aa/4532/915e/f905284de34e.shtml" target="_blank"><img src="/Public/images/liulan.jpg" width="142" height="23"/></a></p>
+    </div>
+    <div class="rightbottom"><img src="/Public/images/bottom1.gif"/></div>
+    <h4 class="righttitle1"><span class="fl">我们出版的书籍</span><span class="fr"><a href="/channel/book.shtml">+MORE</a></span></h4>
+    <div class="rightkuang chuban" style="height:auto; overflow:hidden;">
+       <dl>
+        <dt><a href="http://product.dangdang.com/product.aspx?product_id=8758723" target="_blank"><img src="/Public/images/book04.jpg"/></a></dt>
+        <dd><span class="blue"><strong><a href="http://product.dangdang.com/product.aspx?product_id=8758723" target="_blank">《Java就业培训教程》</a></strong></span></dd>
+        <dd>作 者：<span class="STYLE4">张孝祥</span> </dd>
+        <dd>定价：<span class="STYLE6"><strong>￥39.00元</strong> </span></dd>
+        <dd>页数：<span class="STYLE4">394</span> </dd>
+</dl>
+<dl>
+        <dt><a href="http://product.dangdang.com/product.aspx?product_id=20280496" target="_blank"><img src="/Public/images/book01.jpg"/></a></dt>
+        <dd><span class="blue"><strong><a href="http://product.dangdang.com/product.aspx?product_id=20280496" target="_blank">《EJB3.0入门经典》</a></strong></span></dd>
+        <dd>作 者：<span class="STYLE4">黎活明</span> </dd>
+        <dd>定价：<span class="STYLE6"><strong>￥59.80 元</strong> </span></dd>
+        <dd>页数：<span class="STYLE4">479</span> </dd>
+</dl> 
+    
 <div class="clear"></div>
 		  </div>
 			<div><img src="/Public/images/leftbottom.gif"/></div>

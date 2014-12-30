@@ -186,4 +186,10 @@ class IndexController extends Controller {
 		$this->info=$db->select();
 		$this->display();
 	}
+
+	function msdylist(){
+		$db=M("mingshi");
+		$this->info=$db->select();
+		$this->display();
+	}
 }

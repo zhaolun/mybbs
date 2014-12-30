@@ -144,67 +144,347 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>-->
 
 <div id="box">
-  <div class="position"><a name="pagetop"/>您现在的位置：<span class="STYLE5"><a href="/index.php">首页</a> &gt;&gt; 企业招聘 &gt;&gt; 正文</span></div>
-  <div id="left" class="fl" style="margin-top:8px;">
-    <div class="infotop"></div>
-    <div class="left_content1">
-      <div id="printarea">
-        <h1 class="infotitle"><?php echo ($info["company"]); ?></h1>
-        <div class="editer">更新时间:<?php echo ($info["time"]); ?> 来源:Yi利</div>
-        <div class="infor">
-         　　<?php echo ($info["content"]); ?>
+  <div id="left" class="fl"  style="margin-top:3px; overflow:hidden;">
+    <div class="clear"></div>
+    <div><img src="/Public/images/lefttop.gif"/></div>
+    <div class="left_content3">
+<a href="http://dvd.itcast.cn/?php" target="_blank"><font color="red"><h4>下载网速不给力，来申请免费PHP学习光盘吧！全新2014版JAVA/.NET/PHP/网页平面UI设计/iOS入门必备教程光盘免费申领中！</h4></font></a>
+      <div class="zhanshi">
+        <h4 class="videotitle"><span class="fl">PHP视频下载(如果视频无法下载，请联系QQ:2449444817)</span></h4>
+		<div class="blueline1">
+<div class="blueline1">
+<table bgcolor="#e2f1f8" border="0" cellpadding="0" cellspacing="1" class="videodown" width="100%">
+<tbody>
+	<tr>
+	<td bgcolor="#ffffff" class="downpic" rowspan="2" width="106"><img alt="" height="71" src="http://www.itcast.cn/files/image/201410/20141020170847739.jpg" width="96" /></td>
+	<td bgcolor="#ffffff" width="272">
+	<div class="jiaochengmz"><a href="http://bbs.itcast.cn/thread-33681-1-1.html?php" target="_blank"><span style="color:#ff0000;">8小时打造专属电子留言板系统</span></a></div>
+	</td>
+	<td align="right" bgcolor="#ffffff" width="215"><a href="http://bbs.itcast.cn/thread-33681-1-1.html?php" target="_blank"><img border="0" height="26" src="/Public/images/download.jpg" width="56" /></a></td>
+	</tr>
+	<tr>
+	<td bgcolor="#ffffff">
+	<div class="jianshi">主讲：罗弟华 <span class="blue">PHP公开课 </span></div>
+	</td>
+	<td align="right" bgcolor="#ffffff">
+	<div class="bdshare_t bds_tools get-codes-bdshare" id="bdshare"></div>
+	</td>
+	</tr>
+</tbody>
+</table>
+<table bgcolor="#e2f1f8" border="0" cellpadding="0" cellspacing="1" class="videodown" width="100%">
+<tbody>
+	<tr>
+	<td bgcolor="#ffffff" class="downpic" rowspan="2" width="106"><img alt="" height="71" src="http://php.itcast.cn/images/video/php/phprm.jpg" width="96" /></td>
+	<td bgcolor="#ffffff" width="272">
+	<div class="jiaochengmz"><a href="http://php.itcast.cn/news/caa9b58b/37b1/47f6/98e3/bd3600c98cfc.shtml">PHP入门到精通教程</a></div>
+	</td>
+	<td align="right" bgcolor="#ffffff" width="215"><a href="http://php.itcast.cn/news/caa9b58b/37b1/47f6/98e3/bd3600c98cfc.shtml"><img border="0" height="26" src="/Public/images/download.jpg" width="56" /></a></td>
+	</tr>
+	<tr>
+	<td bgcolor="#ffffff">
+	<div class="jianshi">主讲：韩顺平 <span class="blue">php课程类 </span></div>
+	</td>
+	<td align="right" bgcolor="#ffffff">
+	<div class="bdshare_t bds_tools get-codes-bdshare" id="bdshare"></div>
+	</td>
+	</tr>
+</tbody>
+</table>
+<table bgcolor="#e2f1f8" border="0" cellpadding="0" cellspacing="1" class="videodown" width="100%">
+<tbody>
+	<tr>
+	<td bgcolor="#ffffff" class="downpic" rowspan="2" width="106"><img alt="" height="71" src="http://www.itcast.cn/files/image/201209/20120928154653630.jpg" width="96" /></td>
+	<td bgcolor="#ffffff" width="272">
+	<div class="jiaochengmz"><a href="http://www.itcast.cn/news/20120913/18063829105.shtml">PHP入门到精通教程配套笔记</a></div>
+	</td>
+	<td align="right" bgcolor="#ffffff" width="215"><a href="http://www.itcast.cn/news/20120913/18063829105.shtml"><img border="0" height="26" src="/Public/images/download.jpg" width="56" /></a></td>
+	</tr>
+	<tr>
+	<td bgcolor="#ffffff">
+	<div class="jianshi">主讲：韩顺平 <span class="blue">php课程类 </span></div>
+	</td>
+	<td align="right" bgcolor="#ffffff">
+	<div class="bdshare_t bds_tools get-codes-bdshare" id="bdshare"></div>
+	</td>
+	</tr>
+</tbody>
+</table>
+<table bgcolor="#e2f1f8" border="0" cellpadding="0" cellspacing="1" class="videodown" width="100%">
+<tbody>
+	<tr>
+	<td bgcolor="#ffffff" class="downpic" rowspan="2" width="106"><img alt="" src="http://www.itcast.cn/files/image/201306/20130624100512152.jpg" style="width: 96px; height: 71px;" /></td>
+	<td bgcolor="#ffffff" width="272">
+	<div class="jiaochengmz"><a href="http://php.itcast.cn/news/20130617/17423736508.shtml">第二版MYSQL视频教程</a><img height="5" src="/Public/images/news.jpg" width="24" />
+	<div></div>
+	</div>
+	</td>
+	<td align="right" bgcolor="#ffffff" width="215"><a href="http://php.itcast.cn/news/20130617/17423736508.shtml"><img alt="" border="0" height="26" src="/Public/images/download.jpg" width="56" /></a></td>
+	</tr>
+	<tr>
+	<td bgcolor="#ffffff">
+	<div class="jianshi">主讲：韩忠康 <span class="blue">php课程类 </span></div>
+	</td>
+	<td align="right" bgcolor="#ffffff">
+	<div class="bdshare_t bds_tools get-codes-bdshare" id="bdshare"></div>
+	</td>
+	</tr>
+</tbody>
+</table>
+<table bgcolor="#e2f1f8" border="0" cellpadding="0" cellspacing="1" class="videodown" width="100%">
+<tbody>
+	<tr>
+	<td bgcolor="#ffffff" class="downpic" rowspan="2" width="106"><img alt="" height="71" src="http://php.itcast.cn/images/video/php/ymjt.jpg" width="96" /></td>
+	<td bgcolor="#ffffff" width="272">
+	<div class="jiaochengmz"><a href="http://php.itcast.cn/news/166b4e78/01b0/4017/96ae/764cd57432a8.shtml">第二版页面静态化视频教程</a><img height="5" src="/Public/images/news.jpg" width="24" />
+	<div></div>
+	</div>
+	</td>
+	<td align="right" bgcolor="#ffffff" width="215"><a href="http://php.itcast.cn/news/166b4e78/01b0/4017/96ae/764cd57432a8.shtml"><img alt="" border="0" height="26" src="/Public/images/download.jpg" width="56" /></a></td>
+	</tr>
+	<tr>
+	<td bgcolor="#ffffff">
+	<div class="jianshi">主讲：韩顺平 <span class="blue">php课程类 </span></div>
+	</td>
+	<td align="right" bgcolor="#ffffff">
+	<div class="bdshare_t bds_tools get-codes-bdshare" id="bdshare"></div>
+	</td>
+	</tr>
+</tbody>
+</table>
+<table bgcolor="#e2f1f8" border="0" cellpadding="0" cellspacing="1" class="videodown" width="100%">
+<tbody>
+	<tr>
+	<td bgcolor="#ffffff" class="downpic" rowspan="2" width="106"><img alt="" height="71" src="http://php.itcast.cn/images/video/php/Memcached.jpg" width="96" /></td>
+	<td bgcolor="#ffffff" width="272">
+	<div class="jiaochengmz"><a href="http://php.itcast.cn/news/20140122/11330849183.shtml">第二版Memcached缓存技术</a><img height="5" src="/Public/images/news.jpg" width="24" /></div>
+	</td>
+	<td align="right" bgcolor="#ffffff" width="215"><a href="http://php.itcast.cn/news/20140122/11330849183.shtml"><img alt="" border="0" height="26" src="/Public/images/download.jpg" width="56" /></a></td>
+	</tr>
+	<tr>
+	<td bgcolor="#ffffff">
+	<div class="jianshi">主讲：韩顺平 <span class="blue">php课程类 </span></div>
+	</td>
+	<td align="right" bgcolor="#ffffff">
+	<div class="bdshare_t bds_tools get-codes-bdshare" id="bdshare"></div>
+	</td>
+	</tr>
+</tbody>
+</table>
+<table bgcolor="#e2f1f8" border="0" cellpadding="0" cellspacing="1" class="videodown" width="100%">
+<tbody>
+	<tr>
+	<td bgcolor="#ffffff" class="downpic" rowspan="2" width="106"><img alt="" height="71" src="http://php.itcast.cn/images/video/php/Mysqlyh.jpg" width="96" /></td>
+	<td bgcolor="#ffffff" width="272">
+	<div class="jiaochengmz"><a href="http://php.itcast.cn/news/61ee8515/a34e/477d/9d5d/662dbff5e161.shtml">第二版Mysql优化</a><img height="5" src="/Public/images/news.jpg" width="24" /></div>
+	</td>
+	<td align="right" bgcolor="#ffffff" width="215"><a href="http://php.itcast.cn/news/61ee8515/a34e/477d/9d5d/662dbff5e161.shtml#"><img alt="" border="0" height="26" src="/Public/images/download.jpg" width="56" /></a></td>
+	</tr>
+	<tr>
+	<td bgcolor="#ffffff">
+	<div class="jianshi">主讲：韩顺平 <span class="blue">php课程类 </span></div>
+	</td>
+	<td align="right" bgcolor="#ffffff">
+	<div class="bdshare_t bds_tools get-codes-bdshare" id="bdshare"></div>
+	</td>
+	</tr>
+</tbody>
+</table>
+<table bgcolor="#e2f1f8" border="0" cellpadding="0" cellspacing="1" class="videodown" width="100%">
+<tbody>
+	<tr>
+	<td bgcolor="#ffffff" class="downpic" rowspan="2" width="106"><img alt="" src="http://php.itcast.cn/files/image/201207/20120716135324509.jpg" style="width: 96px; height: 71px" /></td>
+	<td bgcolor="#ffffff" width="272">
+	<div class="jiaochengmz"><a href="http://php.itcast.cn/news/d54ff1cf/71d6/4181/b797/ff4584cf39ac.shtml">LAMP经典入门教程</a></div>
+	</td>
+	<td align="right" bgcolor="#ffffff" width="215"><a href="http://php.itcast.cn/news/d54ff1cf/71d6/4181/b797/ff4584cf39ac.shtml"><img alt="" border="0" height="26" src="/Public/images/download.jpg" width="56" /></a></td>
+	</tr>
+	<tr>
+	<td bgcolor="#ffffff">
+	<div class="jianshi">主讲：李东超 <span class="blue">php课程类 </span></div>
+	</td>
+	<td align="right" bgcolor="#ffffff">
+	<div class="bdshare_t bds_tools get-codes-bdshare" id="bdshare"></div>
+	</td>
+	</tr>
+</tbody>
+</table>
+<table bgcolor="#e2f1f8" border="0" cellpadding="0" cellspacing="1" class="videodown" width="100%">
+<tbody>
+	<tr>
+	<td bgcolor="#ffffff" class="downpic" rowspan="2" width="106"><img alt="" height="71" src="http://php.itcast.cn/images/video/php/zend.jpg" width="96" /></td>
+	<td bgcolor="#ffffff" width="272">
+	<div class="jiaochengmz"><a href="http://php.itcast.cn/news/7acb031c/5958/42d8/be84/47796e2c1243.shtml">zend framework</a></div>
+	</td>
+	<td align="right" bgcolor="#ffffff" width="215"><a href="http://php.itcast.cn/news/7acb031c/5958/42d8/be84/47796e2c1243.shtml"><img alt="" border="0" height="26" src="/Public/images/download.jpg" width="56" /></a></td>
+	</tr>
+	<tr>
+	<td bgcolor="#ffffff">
+	<div class="jianshi">主讲：韩顺平 <span class="blue">php课程类 </span></div>
+	</td>
+	<td align="right" bgcolor="#ffffff">
+	<div class="bdshare_t bds_tools get-codes-bdshare" id="bdshare"></div>
+	</td>
+	</tr>
+</tbody>
+</table>
+<table bgcolor="#e2f1f8" border="0" cellpadding="0" cellspacing="1" class="videodown" width="100%">
+<tbody>
+	<tr>
+	<td bgcolor="#ffffff" class="downpic" rowspan="2" width="106"><img alt="" height="71" src="http://php.itcast.cn/images/video/php/smarty.jpg" width="96" /></td>
+	<td bgcolor="#ffffff" width="272">
+	<div class="jiaochengmz"><a href="http://php.itcast.cn/news/a632aeea/df9a/46bf/92f1/896679400a37.shtml">smarty模板引擎</a></div>
+	</td>
+	<td align="right" bgcolor="#ffffff" width="215"><a href="http://php.itcast.cn/news/a632aeea/df9a/46bf/92f1/896679400a37.shtml"><img alt="" border="0" height="26" src="/Public/images/download.jpg" width="56" /></a></td>
+	</tr>
+	<tr>
+	<td bgcolor="#ffffff">
+	<div class="jianshi">主讲：韩顺平 <span class="blue">php课程类 </span></div>
+	</td>
+	<td align="right" bgcolor="#ffffff">
+	<div class="bdshare_t bds_tools get-codes-bdshare" id="bdshare"></div>
+	</td>
+	</tr>
+</tbody>
+</table>
+<table bgcolor="#e2f1f8" border="0" cellpadding="0" cellspacing="1" class="videodown" width="100%">
+<tbody>
+	<tr>
+	<td bgcolor="#ffffff" class="downpic" rowspan="2" width="106"><img alt="" height="71" src="http://php.itcast.cn/images/video/php/ajax.jpg" width="96" /></td>
+	<td bgcolor="#ffffff" width="272">
+	<div class="jiaochengmz"><a href="http://php.itcast.cn/news/20140122/11080487596.shtml">Ajax技术</a></div>
+	</td>
+	<td align="right" bgcolor="#ffffff" width="215"><a href="http://php.itcast.cn/news/20140122/11080487596.shtml"><img alt="" border="0" height="26" src="/Public/images/download.jpg" width="56" /></a></td>
+	</tr>
+	<tr>
+	<td bgcolor="#ffffff">
+	<div class="jianshi">主讲：韩顺平 <span class="blue">php课程类 </span></div>
+	</td>
+	<td align="right" bgcolor="#ffffff">
+	<div class="bdshare_t bds_tools get-codes-bdshare" id="bdshare"></div>
+	</td>
+	</tr>
+</tbody>
+</table>
+<table bgcolor="#e2f1f8" border="0" cellpadding="0" cellspacing="1" class="videodown" width="100%">
+<tbody>
+	<tr>
+	<td bgcolor="#ffffff" class="downpic" rowspan="2" width="106"><img alt="" height="71" src="http://php.itcast.cn/images/video/php/qsgd.jpg" width="96" /></td>
+	<td bgcolor="#ffffff" class="jiaochengmz" div="" width="272"><a href="http://php.itcast.cn/news/fd551fd3/9db4/4360/9afa/57f438973108.shtml">轻松搞定网页设计</a>
+	<div></div>
+	</td>
+	<td align="right" bgcolor="#ffffff" width="215"><a href="http://php.itcast.cn/news/fd551fd3/9db4/4360/9afa/57f438973108.shtml"><img alt="" border="0" height="26" src="/Public/images/download.jpg" width="56" /></a></td>
+	</tr>
+	<tr>
+	<td bgcolor="#ffffff">
+	<div class="jianshi">主讲：韩顺平 <span class="blue">php课程类 </span></div>
+	</td>
+	<td align="right" bgcolor="#ffffff">
+	<div class="bdshare_t bds_tools get-codes-bdshare" id="bdshare"></div>
+	</td>
+	</tr>
+</tbody>
+</table>
+<table bgcolor="#e2f1f8" border="0" cellpadding="0" cellspacing="1" class="videodown" width="100%">
+<tbody>
+	<tr>
+	<td bgcolor="#ffffff" class="downpic" rowspan="2" width="106"><img alt="" height="71" src="http://php.itcast.cn/images/video/php/php01.jpg" width="96" /></td>
+	<td bgcolor="#ffffff" width="272">
+	<div class="jiaochengmz"><a href="http://php.itcast.cn/news/20140122/11014822461.shtml">PHP数据库陷阱</a></div>
+	</td>
+	<td align="right" bgcolor="#ffffff" width="215"><a href="http://php.itcast.cn/news/20140122/11014822461.shtml"><img alt="" border="0" height="26" src="/Public/images/download.jpg" width="56" /></a></td>
+	</tr>
+	<tr>
+	<td bgcolor="#ffffff">
+	<div class="jianshi">主讲：韩顺平 <span class="blue">php课程类 </span></div>
+	</td>
+	<td align="right" bgcolor="#ffffff">
+	<div class="bdshare_t bds_tools get-codes-bdshare" id="bdshare"></div>
+	</td>
+	</tr>
+</tbody>
+</table>
+<table bgcolor="#e2f1f8" border="0" cellpadding="0" cellspacing="1" class="videodown" width="100%">
+<tbody>
+	<tr>
+	<td bgcolor="#ffffff" class="downpic" rowspan="2" width="106"><img alt="" height="71" src="http://php.itcast.cn/images/video/php/phpzf.jpg" width="96" /></td>
+	<td bgcolor="#ffffff" width="272">
+	<div class="jiaochengmz"><a href="http://php.itcast.cn/news/94c86c32/a7c1/4d2f/b2b4/ded74c6e1113.shtml">PHP网上支付技术</a></div>
+	</td>
+	<td align="right" bgcolor="#ffffff" width="215"><a href="http://php.itcast.cn/news/94c86c32/a7c1/4d2f/b2b4/ded74c6e1113.shtml"><img alt="" border="0" height="26" src="/Public/images/download.jpg" width="56" /></a></td>
+	</tr>
+	<tr>
+	<td bgcolor="#ffffff">
+	<div class="jianshi">主讲：韩顺平 <span class="blue">php课程类 </span></div>
+	</td>
+	<td align="right" bgcolor="#ffffff">
+	<div class="bdshare_t bds_tools get-codes-bdshare" id="bdshare"></div>
+	</td>
+	</tr>
+</tbody>
+</table>
+<table bgcolor="#e2f1f8" border="0" cellpadding="0" cellspacing="1" class="videodown" width="100%">
+<tbody>
+	<tr>
+	<td bgcolor="#ffffff" class="downpic" rowspan="2" width="106"><img alt="" height="71" src="http://php.itcast.cn/images/video/php/phpbb.jpg" width="96" /></td>
+	<td bgcolor="#ffffff" width="272">
+	<div class="jiaochengmz"><a href="http://php.itcast.cn/news/20140122/10573060821.shtml">PHP报表视频教程</a></div>
+	</td>
+	<td align="right" bgcolor="#ffffff" width="215"><a href="http://php.itcast.cn/news/20140122/10573060821.shtml"><img alt="" border="0" height="26" src="/Public/images/download.jpg" width="56" /></a></td>
+	</tr>
+	<tr>
+	<td bgcolor="#ffffff">
+	<div class="jianshi">主讲：韩顺平 <span class="blue">php课程类 </span></div>
+	</td>
+	<td align="right" bgcolor="#ffffff">
+	<div class="bdshare_t bds_tools get-codes-bdshare" id="bdshare"></div>
+	</td>
+	</tr>
+</tbody>
+</table>
+<table bgcolor="#e2f1f8" border="0" cellpadding="0" cellspacing="1" class="videodown" width="100%">
+<tbody>
+	<tr>
+	<td bgcolor="#ffffff" class="downpic" rowspan="2" width="106"><img alt="" height="71" src="http://php.itcast.cn/images/video/php/Linux.jpg" width="96" /></td>
+	<td bgcolor="#ffffff" width="272">
+	<div class="jiaochengmz"><a href="http://php.itcast.cn/news/20140122/10545671409.shtml">Linux视频教程</a></div>
+	</td>
+	<td align="right" bgcolor="#ffffff" width="215"><a href="http://php.itcast.cn/news/20140122/10545671409.shtml"><img alt="" border="0" height="26" src="/Public/images/download.jpg" width="56" /></a></td>
+	</tr>
+	<tr>
+	<td bgcolor="#ffffff">
+	<div class="jianshi">主讲：韩顺平 <span class="blue">php课程类 </span></div>
+	</td>
+	<td align="right" bgcolor="#ffffff">
+	<div class="bdshare_t bds_tools get-codes-bdshare" id="bdshare"></div>
+	</td>
+	</tr>
+</tbody>
+</table>
+<table bgcolor="#e2f1f8" border="0" cellpadding="0" cellspacing="1" class="videodown" width="100%">
+<tbody>
+	<tr>
+	<td bgcolor="#ffffff" class="downpic" rowspan="2" width="106"><img alt="" height="71" src="http://php.itcast.cn/images/video/php/Oracl.jpg" width="96" /></td>
+	<td bgcolor="#ffffff" width="272">
+	<div class="jiaochengmz"><a href="http://php.itcast.cn/news/c31baf40/8fa5/4803/ac4d/6e27086d009f.shtml">Oracle视频教程</a></div>
+	</td>
+	<td align="right" bgcolor="#ffffff" width="215"><a href="http://php.itcast.cn/news/c31baf40/8fa5/4803/ac4d/6e27086d009f.shtml"><img alt="" border="0" height="26" src="/Public/images/download.jpg" width="56" /></a></td>
+	</tr>
+	<tr>
+	<td bgcolor="#ffffff">
+	<div class="jianshi">主讲：韩顺平 <span class="blue">php课程类 </span></div>
+	</td>
+	<td align="right" bgcolor="#ffffff">
+	<div class="bdshare_t bds_tools get-codes-bdshare" id="bdshare"></div>
+	</td>
+	</tr>
+</tbody>
+</table>
+</div>
+<br />
 
-<script type="text/javascript" src="http://bbs.itcast.cn/api.php?mod=js&bid=94"></script>
         </div>
-      </div>
-      <div class="pre">
-	               上一篇：<a target="_blank" href="/news/20141208/14061592998.shtml">北京大众在线网络技术有限公司招聘</a>
-       	  </div>
-      <div class="next">
-	              下一篇：<a target="_blank" href="/news/20141215/14353014587.shtml">北京智胜终端互联市场顾问有限公司招聘</a>
-      	  </div>
-
-      <div class="clear"></div>
-      <div class="share">
-	  <!-- Baidu share BEGIN -->
-    <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
-        <span class="bds_more">分享到：</span>
-        <a class="bds_sqq">QQ好友</a>
-		<a class="bds_qzone">QQ空间</a>
-		<a class="bds_tqq">腾讯微博</a>
-		<a class="bds_tsina">新浪微博</a>
-		<a class="bds_tieba">百度贴吧</a>
-		<a class="shareCount"></a>
-    </div>
-<!-- Baidu share END 需在页面底部添加baidushare.js -->	  
-	  </div>
-	  <div class="clear"></div>
-      <div class="print"><a href="#" id="printbutton">【打印】</a> <a href="#pagetop">【返回顶部】</a></div>
-      	  <!-- 评论区 -->
-	    	<script type="text/javascript">
-	           $(document).ready(function(){
-	              	loadcomment('20141215-14223392440', 1);
-               });   
-	       </script>
-	  <div id="commentcontent"></div>
-	  <form name="comment" style="padding:0;margin:0px;">
-        <input type="hidden" name="referenceSource" value="20141215-14223392440">
-        <input type="hidden" name="type" value="NEWS">
-        <textarea cols="85" rows="6" style="width:610px;" name="content"></textarea>
-        <div class="clear"></div>
-        <div class="fabiao">
-	      <span class="fl">请输入验证码：<input name="validatecode" type="text" style="width:80px;" />  <img src="http://manage.itcast.cn:8080/validatecode/comment.jpg" id="kaptchaImage" width="100"/></span><span class="fr"><input type='button' value="提 交" id="savebutton"/></span>
-	    </div>
-	  </form>
-	  <div id="dialog" title="评论保存结果"></div><!-- 对话框内容 -->
-      <!-- 评论区 -->
-	        <div class="clear"></div>
-      <div class="ad">
-      <!-- 广告区 -->
-      <a href="http://java.itcast.cn/news/e393b086/ebce/4f94/9d48/94ed86bcf5ef.shtml" target="_blank"><img border="0" src="http://www.itcast.cn/files/file/201206/20120620111629490.jpg" width="620" /></a> 
-      <!-- 广告区 -->
-      </div>
-
+      </div>    
 <div class="clear"></div>
 		  </div>
 			<div><img src="/Public/images/leftbottom.gif"/></div>

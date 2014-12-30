@@ -293,3 +293,7 @@
 <?PHP exit;?>	1419860105	admin	1	192.168.1.7	plugins	GET={}; POST={};
 <?PHP exit;?>	1419860115	admin	1	192.168.1.7	plugins	GET={}; POST={};
 <?PHP exit;?>	1419860119	admin	1	192.168.1.7	cloudaddons	GET={}; POST={};
+<?PHP exit;?>	1419900309	admin	1	127.0.0.1		GET={}; POST={};
+<?PHP exit;?>	1419900310	admin	1	127.0.0.1	index	GET={}; POST={};
+<?PHP exit;?>	1419900312	admin	1	127.0.0.1	nav	GET={}; POST={};
+<?PHP exit;?>	1419900314	admin	1	127.0.0.1	templates	GET={}; POST={};

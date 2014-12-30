@@ -253,11 +253,11 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 	<dt class="fl">
 		<a href="http://php.itcast.cn/news/6c558812/4811/4576/b342/2307b12ae09a.shtml"><img alt="" src="/public/images/1.jpg" style="width: 108px; height: 71px" /></a></dt>
 	<dd class="fr">
-		<span class="STYLE6"><a href="http://php.itcast.cn/news/6c558812/4811/4576/b342/2307b12ae09a.shtml">[php学员]</a></span><a href="http://php.itcast.cn/news/6c558812/4811/4576/b342/2307b12ae09a.shtml">赵伦：八维，我人生中重要的一站</a></dd>
+		<span class="STYLE6"><a href="">[php学员]</a></span><a href="">赵伦：八维，我人生中重要的一站</a></dd>
 </dl>
 <div class="clear"></div>
 <ul>
-<?php if(is_array($infoc)): foreach($infoc as $key=>$it): ?><li><span class="STYLE6">[php学员]</span><a href="http://www.mybbs.com/index.php/Home/index/zhaolun_xq?id=<?php echo ($it["id"]); ?>"><?php echo ($it["title"]); ?></a></li><?php endforeach; endif; ?>
+<?php if(is_array($infoc)): foreach($infoc as $key=>$it): ?><li><span class="STYLE6">[php学员]</span><a href="/index.php/Home/message/ganyandetail?id=<?php echo ($it["id"]); ?>"><?php echo ($it["title"]); ?></a></li><?php endforeach; endif; ?>
 <script type="text/javascript">
 			<!--
 				function register(){
@@ -295,14 +295,14 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 <div class="ganyanleft fr3">
 <dl class="ganyan1">
 	<dt class="fl">
-		<a href="http://php.itcast.cn/news/20120913/11580550824.shtml"><img alt="" src="/public/images/2.jpg" style="width: 108px; height: 71px;" /></a></dt>
+		<a href=""><img alt="" src="/public/images/2.jpg" style="width: 108px; height: 71px;" /></a></dt>
 	<dd class="fr">
-		<span class="STYLE6"><a href="http://php.itcast.cn/news/20120913/11580550824.shtml">[php学员]</a></span><a href="http://php.itcast.cn/news/20120913/11580550824.shtml">刘俊：美女网编,毕业薪水6500</a></dd>
+		<span class="STYLE6"><a href="">[php学员]</a></span><a href="">刘俊：美女网编,毕业薪水6500</a></dd>
 </dl>
 <div class="clear"></div>
 <ul>
-<?php if(is_array($infod)): foreach($infod as $key=>$it): ?><li><span class="STYLE6">[php学员]</span><a href="http://www.mybbs.com/index.php/Home/index/liujun_xq?id=<?php echo ($it["id"]); ?>"><?php echo ($it["title"]); ?></a></li><?php endforeach; endif; ?>
-<li><a href="http://php.itcast.cn/news/list/0b8acc29-7202-4e1d-a6db-f6dfd3a639bb/1.shtml"><font style="color: red"><b>&gt;&gt;查看更多学员感言</b></font></a></li>
+<?php if(is_array($infod)): foreach($infod as $key=>$it): ?><li><span class="STYLE6">[php学员]</span><a href="/index.php/Home/message/ganyandetail?id=<?php echo ($it["id"]); ?>"><?php echo ($it["title"]); ?></a></li><?php endforeach; endif; ?>
+<li><a href="/index.php/Home/message/ganyanlist"><font style="color: red"><b>&gt;&gt;查看更多学员感言</b></font></a></li>
 </ul>
 </div>
 </div>
@@ -313,8 +313,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 			<div><img src="/Public/images/leftbottom.gif"  /></div>
 			<div><img src="/Public/images/lefttop.gif"  /></div>
 			<div class="left_content2">
-			  <h4 class="ganyan"><span class="fl"><span class="STYLE3">PHP培训</span>名师答疑</span><span class="fr"><a href="http://php.itcast.cn/news/list/cba8c58c-b2d4-4f48-bf64-a10b59fb2666/1.shtml
-">+MORE</a></span></h4>
+			  <h4 class="ganyan"><span class="fl"><span class="STYLE3">PHP培训</span>名师答疑</span><span class="fr"><a href="">+MORE</a></span></h4>
 			  <div class="msdy">
 			    <div class="msdy-left"><img src="/Public/images/wenhao-1.jpg" /></div>
 				<div class="msdy-right">
@@ -323,7 +322,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 
 </ul>
 <ul><?php endforeach; endif; ?>
-<li><a href="http://php.itcast.cn/news/list/cba8c58c-b2d4-4f48-bf64-a10b59fb2666/1.shtml"><font style="color: red"><b>&gt;&gt;查看更多答疑信息</b></font></a></li>
+<li><a href="/index.php/Home/index/msdylist"><font style="color: red"><b>&gt;&gt;查看更多答疑信息</b></font></a></li>
 </ul>
 </div>
 <br />

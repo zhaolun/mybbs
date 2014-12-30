@@ -142,69 +142,16 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 	<a class="jiathis_counter_style"></a>
 </div>
 <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>-->
-
 <div id="box">
-  <div class="position"><a name="pagetop"/>您现在的位置：<span class="STYLE5"><a href="/index.php">首页</a> &gt;&gt; 企业招聘 &gt;&gt; 正文</span></div>
-  <div id="left" class="fl" style="margin-top:8px;">
-    <div class="infotop"></div>
-    <div class="left_content1">
-      <div id="printarea">
-        <h1 class="infotitle"><?php echo ($info["company"]); ?></h1>
-        <div class="editer">更新时间:<?php echo ($info["time"]); ?> 来源:Yi利</div>
-        <div class="infor">
-         　　<?php echo ($info["content"]); ?>
-
-<script type="text/javascript" src="http://bbs.itcast.cn/api.php?mod=js&bid=94"></script>
-        </div>
-      </div>
-      <div class="pre">
-	               上一篇：<a target="_blank" href="/news/20141208/14061592998.shtml">北京大众在线网络技术有限公司招聘</a>
-       	  </div>
-      <div class="next">
-	              下一篇：<a target="_blank" href="/news/20141215/14353014587.shtml">北京智胜终端互联市场顾问有限公司招聘</a>
-      	  </div>
-
-      <div class="clear"></div>
-      <div class="share">
-	  <!-- Baidu share BEGIN -->
-    <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
-        <span class="bds_more">分享到：</span>
-        <a class="bds_sqq">QQ好友</a>
-		<a class="bds_qzone">QQ空间</a>
-		<a class="bds_tqq">腾讯微博</a>
-		<a class="bds_tsina">新浪微博</a>
-		<a class="bds_tieba">百度贴吧</a>
-		<a class="shareCount"></a>
-    </div>
-<!-- Baidu share END 需在页面底部添加baidushare.js -->	  
-	  </div>
-	  <div class="clear"></div>
-      <div class="print"><a href="#" id="printbutton">【打印】</a> <a href="#pagetop">【返回顶部】</a></div>
-      	  <!-- 评论区 -->
-	    	<script type="text/javascript">
-	           $(document).ready(function(){
-	              	loadcomment('20141215-14223392440', 1);
-               });   
-	       </script>
-	  <div id="commentcontent"></div>
-	  <form name="comment" style="padding:0;margin:0px;">
-        <input type="hidden" name="referenceSource" value="20141215-14223392440">
-        <input type="hidden" name="type" value="NEWS">
-        <textarea cols="85" rows="6" style="width:610px;" name="content"></textarea>
-        <div class="clear"></div>
-        <div class="fabiao">
-	      <span class="fl">请输入验证码：<input name="validatecode" type="text" style="width:80px;" />  <img src="http://manage.itcast.cn:8080/validatecode/comment.jpg" id="kaptchaImage" width="100"/></span><span class="fr"><input type='button' value="提 交" id="savebutton"/></span>
-	    </div>
-	  </form>
-	  <div id="dialog" title="评论保存结果"></div><!-- 对话框内容 -->
-      <!-- 评论区 -->
-	        <div class="clear"></div>
-      <div class="ad">
-      <!-- 广告区 -->
-      <a href="http://java.itcast.cn/news/e393b086/ebce/4f94/9d48/94ed86bcf5ef.shtml" target="_blank"><img border="0" src="http://www.itcast.cn/files/file/201206/20120620111629490.jpg" width="620" /></a> 
-      <!-- 广告区 -->
-      </div>
-
+	<div id="left" class="fl">
+	<div></div>
+	<div class="left_content">
+		<h2 class="title1"><span class="STYLE3">PHP学员感言</span></h2>
+		<ul class="com_links">
+			<?php if(is_array($info)): foreach($info as $key=>$vo): ?><li><a href="/index.php/Home/message/ganyandetail/id/<?php echo ($vo["id"]); ?>" target="_blank"><?php echo ($vo["ganyan"]); ?>&nbsp;-&nbsp;<?php echo ($vo["name"]); ?></a>　　<?php echo ($vo["time"]); ?></li><?php endforeach; endif; ?>
+		</ul>
+	<div class="clear"></div>
+	<div class="pages"></div>
 <div class="clear"></div>
 		  </div>
 			<div><img src="/Public/images/leftbottom.gif"/></div>
