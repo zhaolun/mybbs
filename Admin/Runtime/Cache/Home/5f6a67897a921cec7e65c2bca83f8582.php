@@ -1,4 +1,4 @@
-<html>
+<?php if (!defined('THINK_PATH')) exit();?><html>
 <head>
 <title>MyBBS后台管理</title>
 </head>
@@ -146,7 +146,7 @@ H1 a {
 		<td width="39%" valign="top">
 			<table width="100%" border="0" cellspacing="0" cellpadding="0">
 				<tr>
-					<td width="74%" height="38" class="admin_txt">管理员：<b>{$_SESSION.username}</b> 您好,感谢登陆使用！</td>
+					<td width="74%" height="38" class="admin_txt">管理员：<b><?php echo ($_SESSION["username"]); ?></b> 您好,感谢登陆使用！</td>
 					<td width="22%"><a href="#" target="_self" onClick="logout();"><img src="/Public/admin/images/out.gif" alt="安全退出" width="46" height="20" border="0"></a></td>
 					<script type="text/javascript">
 					<!--
@@ -185,7 +185,6 @@ H1 a {
           <li><a href="/admin.php/Home/admin/image">幻灯片管理</a></li>
 		  <li><a href="/admin.php/Home/admin/logo">LOGO管理</a></li>
 		  <li><a href="/admin.php/Home/admin/add">添加疑问</a></li>
-		  <li><a href="/admin.php/Home/admin/lists">疑问管理</a></li>
         </ul>
       </div>
       
@@ -291,7 +290,30 @@ H1 a {
 		</script>
 		<td width="87%" valign="top">
 			<div style="margin:10px;padding:10px;">
-				{__CONTENT__}
+				<canvas id="myChart" width="1000" height="400"></canvas>
+<script src="/Public/js/Chart.js"></script>
+<script src="/Public/js/jquery.js"></script>
+	<script>
+       var data = {
+            
+                    labels : [<?php echo $json ?>],
+                    datasets : [
+                            {
+                                    fillColor : "red(220,20,220,0.5)",
+                                    strokeColor : "red(220,20,220,1)",
+                                    data : [<?php echo $pv?>]
+                            },
+                    ]
+            } 
+var ctx = document.getElementById("myChart").getContext("2d"); 
+var myNewChart = new Chart(ctx).Bar(data);//new Chart(ctx).PolarArea(data);
+</script>
+2014/12/26
+<div id="footer">
+版权所有 &copy; 八维研修学院软件工程学院1308phpA班yi利小组，并保留所有权利。
+</div>
+</body>
+</html>
 			</div>
 		</td>
 	</tr>

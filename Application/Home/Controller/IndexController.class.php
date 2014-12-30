@@ -134,6 +134,13 @@ class IndexController extends Controller {
 		session_destroy();
 		$this->success("退出成功","/index.php");
 	}
+	//学院详情
+	function xuey_xq(){
+        $user = M('xueyuan');
+        $data = $user->select();
+		$this->assign('info',$data);
+		$this->display('xuey_xq');
+	}
 
 	function send_message(){
 		$db=M("admin_user");

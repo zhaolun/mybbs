@@ -143,27 +143,57 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 </div>
 <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>-->
 <div id="box">
-		<div id="left" class="fl">
-			<div><img src="/Public/images/lefttop.gif"/></div>
-			<div class="left_content">
-				<h2 class="title1"><span class="STYLE3">常见</span><span class="STYLE2">问题</span>(<?php echo ($laiyuan); ?>)</h2>
-				<h3 class="title2">热点问题</h3>
-				<ul class="links">
-﻿<ul>
-<?php if(is_array($info)): foreach($info as $key=>$it): ?><li><a href="/index.php/Home/problem/xq?id=<?php echo ($it["id"]); ?>" target="_blank"><?php echo ($it["title"]); ?></a><?php echo ($it["time"]); ?></li><?php endforeach; endif; ?>
-</ul>
- 
-				</ul>
-				<h3 class="title2">PHP相关问题</h3>
-				<ul class="links">
-<ul>
-<?php if(is_array($list)): foreach($list as $key=>$it): ?><li><a href="/index.php/Home/problem/xq?id=<?php echo ($it["id"]); ?>"><?php echo ($it["title"]); ?></a><img height="15" src="/Public/images/new.gif" width="29" /></li><?php endforeach; endif; ?>
-</ul>
+  <div style="width:960px; height:149px; margin:0 auto;"><img src="/Public/images/teacherpic.jpg"  /></div>
+  <div id="left" class="fl"  style="margin-top:3px;">
+    <div><img src="/Public/images/lefttop.gif"/></div>
+    <div class="left_content2">
+      <h4 class="ganyan"><span class="STYLE3">师资</span>介绍</h4>
+      <div class="teacher_z" style="height: auto; overflow: hidden">
+<!-- 第一位老师 -->
+<?php if(is_array($list)): foreach($list as $key=>$vo): ?><div class="teacher">
+<p class="fl"><img alt="" src="<?php echo ($vo["img"]); ?>" style="width: 155px; height: 189px;" /></p>
+<dl class="fr">
+	<dt>
+		<span class="blue"><strong><?php echo ($vo["t_name"]); ?></strong></span><strong>--<span style="color:#0000ff;"><a href="/index.php/home/teacher/video/id/<?php echo ($vo["id"]); ?>" target="_blank"><span style="color: rgb(0, 0, 255);">在线试听精彩课程</span></a></span></strong></dt>
+	<dt>
+		<strong>职 务：<?php echo ($vo["position"]); ?></strong></dt>
+	<dd><?php echo ($vo["t_desc"]); ?></dd>
+</dl>
+</div><?php endforeach; endif; ?>
 
-			</ul>
-			<div class="rightbottom"><img src="/Public/images/rightbottom.jpg"/></div>
+<div></div>
+</div>
+<br />
 
-	
+    </div>
+    <div><img src="/Public/images/leftbottom.gif"/></div>
+  </div>
+  <div id="right" class="fl">
+    <h4 class="righttitle1 zhaopin"><span class="blue">讲师</span>招聘</h4>
+    <div class="rightkuang1">
+      <p class="cent"><img src="/Public/images/xuanze.jpg" width="256" height="66" /></p>
+      <div class="clear"> </div>
+      <p class="miaoshu"> 中国的软件教育已经坑害了不少软件工程师苗子，传智播客自成立之日起就立志于改变中国的软件教育，目前已经出版IT教程书籍十多本，教学视频几十套，发表各类技术文章几百篇，已经开始对中国的软件教育有所影响。随着传智播客的事业被越来越多的人认知，加盟到传智播客愿意为此事业奋斗终生的技术牛人也越来越多。尽管加盟到传智播客的技术牛人很多，但要从政策上改变中国的软件教育，我们的力量还很小，小到可以说是微不足道。所以我们需要各路英雄豪杰加盟传智播客，为改变中国的软件教育而奋斗不息。</p>
+      <p class="cent"><a href="/news/9838ccfe/74aa/4532/915e/f905284de34e.shtml" target="_blank"><img src="/Public/images/liulan.jpg" width="142" height="23"/></a></p>
+    </div>
+    <div class="rightbottom"><img src="/Public/images/bottom1.gif"/></div>
+    <h4 class="righttitle1"><span class="fl">我们出版的书籍</span><span class="fr"><a href="/channel/book.shtml">+MORE</a></span></h4>
+    <div class="rightkuang chuban" style="height:auto; overflow:hidden;">
+       <dl>
+        <dt><a href="http://product.dangdang.com/product.aspx?product_id=8758723" target="_blank"><img src="/Public/images/book04.jpg"/></a></dt>
+        <dd><span class="blue"><strong><a href="http://product.dangdang.com/product.aspx?product_id=8758723" target="_blank">《Java就业培训教程》</a></strong></span></dd>
+        <dd>作 者：<span class="STYLE4">张孝祥</span> </dd>
+        <dd>定价：<span class="STYLE6"><strong>￥39.00元</strong> </span></dd>
+        <dd>页数：<span class="STYLE4">394</span> </dd>
+</dl>
+<dl>
+        <dt><a href="http://product.dangdang.com/product.aspx?product_id=20280496" target="_blank"><img src="/Public/images/book01.jpg"/></a></dt>
+        <dd><span class="blue"><strong><a href="http://product.dangdang.com/product.aspx?product_id=20280496" target="_blank">《EJB3.0入门经典》</a></strong></span></dd>
+        <dd>作 者：<span class="STYLE4">黎活明</span> </dd>
+        <dd>定价：<span class="STYLE6"><strong>￥59.80 元</strong> </span></dd>
+        <dd>页数：<span class="STYLE4">479</span> </dd>
+</dl> 
+    
 <div class="clear"></div>
 		  </div>
 			<div><img src="/Public/images/leftbottom.gif"/></div>
@@ -231,20 +261,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 				}
 			//-->
 			</script>
-			<h4 class="righttitle1" style="margin-top:10px;"><span class="fl">开班信息</span></h4><div class="jyjb-left" >
-			<table border="0" cellpadding="0" cellspacing="0" class="zhaopinlist" height="124" style="margin-top: 5px" width="98%">
-<tbody>
-<?php if(is_array($banjiinfo)): foreach($banjiinfo as $key=>$it): ?><tr>
-	<td class="td1" width="73%"><a href="/index.php/Home/project/kecheng/id/<?php echo ($it["pei_id"]); ?>" ><?php echo ($it["pei_class"]); ?></a></td>
-	<td width="27%"><?php if($it["bbs_tese"] == 1): ?><font color=red>人员爆满</font><?php else: ?><font color=blue>人员未满</font><?php endif; ?></td>
-	</tr><?php endforeach; endif; ?>
-	<tr>
-	<td class="td1" width="73%"><a><span style="color:#ff0000;">更多开班信息请点击&hellip;&hellip;</span></a></td>
-	<td width="27%"><a href="/index.php/Home/project/index"><span style="color:#ff0000;">查看更多</span></a></td>
-	</tr>
-	<tr></tr>
-</tbody>
-</table>
+			<h4 class="righttitle1" style="margin-top:10px;"><span class="fl">开班信息</span></h4><div class="jyjb-left" >11111
             </div>
 			
 			<div class="rightbottom"><img src="/Public/images/rightbottom.jpg"  /></div>		
@@ -275,7 +292,7 @@ document.write(['<a class="qcShareQQDiv" href="http://connect.qq.com/widget/shar
 		  <div class="rightkuang1" style="padding-top:18px;">
 			<ul class="zhaopinlist wenti">
               <ul class="zhaopinlist wenti">
-<?php if(is_array($questioninfo)): foreach($questioninfo as $key=>$it): ?><li><a href="/index.php/Home/problem/xq?id=<?php echo ($it["id"]); ?>" target="_blank"><?php echo ($it["title"]); ?></a><img height="15" src="/Public/images/new.gif" width="29" /></li><?php endforeach; endif; ?>
+<?php if(is_array($infobb)): foreach($infobb as $key=>$it): ?><li><a href="/index.php/Home/problem/xq?id=<?php echo ($it["id"]); ?>" target="_blank"><?php echo ($it["title"]); ?></a><img height="15" src="/Public/images/new.gif" width="29" /></li><?php endforeach; endif; ?>
 </ul>
 
           </ul> 
