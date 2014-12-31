@@ -339,18 +339,31 @@ class MessageController extends Controller {
             $this->error($upload->getError());    
         }
     }
-    
     public function jiekou_key()
-    {
+    { 
+        $key=$_GET['key'];
         $callback=$_GET['callback'];
         $s_name=$_GET['s_name'];
-        $key=$_GET['key'];
-        
-        echo $callback."(".json_encode().")";
+        $aa= $this->keys($key);
+        if(!$aa)
+        {
+            echo $callback."(".json_encode(0).")";
+        }else
+        {
+            $model=M("school");
+            $data=$model->where("s_name like '%".$s_name."%'")->select();
+            echo $callback."(".json_encode($data).")";
+        }
     }
-    /*
-    public function key()
+    public function keys($key)
     {
-        if()
-    }*/
+        $miyao=sha1("521521");
+        if($miyao==$key)
+        {
+            return true;
+        }else
+        {
+            return false;
+        }
+    }
 }
